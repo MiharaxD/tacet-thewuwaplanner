@@ -1,5 +1,10 @@
 import { clone,integer,validateGoal } from './engine.js';
 export const STORAGE_KEY='tacet-planner:v1';
+export const CONFLICT_MESSAGE='Dados alterados em outra aba. Esta aba não pode salvar. Exporte um backup desta aba, se necessário, e recarregue para continuar.';
+export function getStorage(host){try{return host.localStorage;}catch{return null;}}
+// Serialize browser writes across tabs; the snapshot check also protects callers
+// without Web Locks and detects changes made before a storage event is delivered.
+export function withStorageLock(locks,action){return locks?.request?locks.request(STORAGE_KEY,action):Promise.resolve().then(action);}
 export const defaultState=()=>({version:1,inventory:{},goals:[],events:[],settings:{server:'America',timeZone:'America/Sao_Paulo',unionLevel:1,dailyWaveplates:240,weeklyClaimsUsed:0,weeklyPeriod:null,yields:{}}});
 function record(value){return value&&typeof value==='object'&&!Array.isArray(value);}
 function instant(value){return typeof value==='string'&&/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(?::\d{2}(?:\.\d{1,3})?)?(?:Z|[+-]\d{2}:\d{2})$/.test(value)&&Number.isFinite(Date.parse(value));}
@@ -65,10 +70,25 @@ export function claimRewards(state,eventId){
  event.claimed=true;return next;
 }
 export class Store{
- constructor(state,db,storage){this.state=state;this.db=db;this.storage=storage;this.history=[];this.saveError=null;}
- commit(next){
-  next=validateState(next,this.db);this.history.push(clone(this.state));if(this.history.length>20)this.history.shift();this.state=next;this.persist();return this.state;
+ constructor(state,db,storage){
+  this.state=state;this.db=db;this.storage=storage;this.history=[];this.saveError=null;this.conflicted=false;
+  try{this.snapshot=storage.getItem(STORAGE_KEY);}catch{this.storage=null;this.saveError='Armazenamento indisponível. Exporte um backup antes de fechar.';}
  }
- persist(){try{saveState(this.storage,this.state,this.db);this.saveError=null;}catch{this.saveError='Não foi possível salvar. Exporte um backup antes de fechar.';}}
- undo(){if(!this.history.length)throw Error('Nada para desfazer.');this.state=this.history.pop();this.persist();return this.state;}
+ markConflict(){this.conflicted=true;this.saveError=CONFLICT_MESSAGE;}
+ assertWritable(){
+  if(this.conflicted)throw Error(CONFLICT_MESSAGE);
+  if(!this.storage)return;
+  let raw;try{raw=this.storage.getItem(STORAGE_KEY);}catch{this.storage=null;this.saveError='Armazenamento indisponível. Exporte um backup antes de fechar.';return;}
+  if(raw!==this.snapshot){this.markConflict();throw Error(CONFLICT_MESSAGE);}
+ }
+ observeStorage(event){
+  if(this.storage&&event.storageArea===this.storage&&(event.key===STORAGE_KEY||event.key===null)){
+   try{this.assertWritable();}catch{}
+  }
+ }
+ commit(next){
+  this.assertWritable();next=validateState(next,this.db);this.history.push(clone(this.state));if(this.history.length>20)this.history.shift();this.state=next;this.persist();return this.state;
+ }
+ persist(){this.assertWritable();try{const raw=JSON.stringify(validateState(this.state,this.db));this.storage.setItem(STORAGE_KEY,raw);this.snapshot=raw;this.saveError=null;}catch{this.saveError='Não foi possível salvar. Exporte um backup antes de fechar.';}}
+ undo(){this.assertWritable();if(!this.history.length)throw Error('Nada para desfazer.');this.state=this.history.pop();this.persist();return this.state;}
 }

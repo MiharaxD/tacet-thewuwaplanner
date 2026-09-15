@@ -4,7 +4,9 @@ Data: 15/09/2026. Ambiente Windows, Node.js 24, navegador integrado com JavaScri
 
 ## Testes automatizados
 
-Executado `node --test tests/*.test.mjs`: **54 testes, 54 aprovados, 0 falhas**.
+Verificação inicial: `node --test tests/*.test.mjs`, **54 testes aprovados**.
+
+Revisão de persistência e formulários em 15/09/2026: **68 testes, 68 aprovados, 0 falhas**, executados com Node.js 24.19.0. O executável foi localizado fora do PATH; não foi necessário instalar dependências. `node scripts/build.mjs` também passou.
 
 Cobertura:
 
@@ -35,3 +37,23 @@ Cobertura:
 ## Limites da verificação
 
 Não foi feita auditoria formal WCAG, teste com leitor de tela, teste de todos os navegadores/dispositivos ou validação do catálogo inteiro do jogo. O catálogo local contém seis personagens e quatro armas. Bloqueios de fontes, regras não verificadas, eventos pessoais e limites das estimativas estão descritos em `DATA.md` e no README. Os testes verificam os cálculos para as tabelas locais; não certificam que futuras atualizações do jogo mantenham esses valores.
+
+## Regressões de persistência e formulários
+
+Os 14 novos testes cobrem:
+
+- Rejeição de gravação por uma aba antiga, inclusive antes da chegada do evento `storage`.
+- Proteção de desfazer, histórico e salvamento automático; remoção do salvamento; identificação da área de armazenamento correta; retomada após recarregar.
+- Serialização das operações usando uma fila que simula Web Locks e comparação de versões sem essa API.
+- Acesso a `localStorage` bloqueado, falha de leitura durante a sessão, falta de espaço e recuperação de gravação após a quota voltar a permitir.
+- Inicialização e edição de inventário pelo código real de `app.js`, com acesso ao armazenamento bloqueado e as interfaces do navegador simuladas.
+- Edição de evento importado com cinco recompensas, manutenção de recompensas já resgatadas e restauração do rascunho de configurações.
+
+Validação adicional no Brave, em `http://localhost:5173`:
+
+1. Alterar Waveplates/dia de 240 para 123, tirar o foco do campo e deixar a página aberta por 70 segundos: o rascunho permaneceu em 123 e pôde ser salvo.
+2. Abrir duas abas antes da alteração: a segunda recebeu um aviso fixo. Tentar salvar 200 na aba antiga foi rejeitado; **Recarregar dados** trouxe 123, preservando a gravação da primeira aba.
+3. Mesclar um evento pessoal com cinco recompensas, abrir o editor e alterar apenas o título: as cinco recompensas e quantidades permaneceram no evento salvo.
+4. O log de erros do navegador não apresentou erros. As alterações de teste foram desfeitas ao final.
+
+O bloqueio do armazenamento foi simulado nos testes automatizados; as configurações de segurança do navegador não foram alteradas. O teste de fila usa uma simulação de exclusão mútua; o fluxo de conflito entre duas abas foi verificado também no navegador real.

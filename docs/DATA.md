@@ -45,6 +45,8 @@ Os desbloqueios ainda não têm um motor de custos. Confirmar suas fontes exige 
 
 ## Eventos
 
+Ao editar um evento importado, o formulário apresenta todos os materiais de recompensa existentes, mesmo quando são mais de três. Eventos já resgatados mantêm as recompensas bloqueadas para edição.
+
 **Atualização disponível sem programação:** crie/edite um evento na página Eventos usando datas do servidor configurado. A interface converte para um instante UTC e exibe no fuso selecionado. Cadastre apenas recompensas que você conferir no jogo. O backup leva esses eventos para outro navegador.
 
 `data/events.json` permanece vazio como reserva de catálogo; preencher esse arquivo sozinho não publica eventos na interface atual. Para oferecer um catálogo oficial no futuro, adicione ingestão e validação de registros com fonte, data de consulta, servidor, início/fim com fuso e recompensas verificadas; mantenha o progresso do usuário separado dos registros oficiais e preserve a distinção visual `official`/`personal`. O estado atual aceita somente eventos pessoais para impedir que uma importação se passe por catálogo oficial. Não existe atualização automática nem API pública presumida.
@@ -52,3 +54,10 @@ Os desbloqueios ainda não têm um motor de custos. Confirmar suas fontes exige 
 ## Retratos e ícones
 
 Retratos locais atribuídos à KURO GAMES, obtidos via Wutheringlab; URLs e metadados estão em `assets/character-portraits.json`. A aplicação mostra uma alternativa visual quando uma imagem falha. Os ícones de materiais são identificadores estilizados próprios, acompanhados do nome e da raridade, e não reproduções das artes oficiais.
+
+## Salvamento e edição
+
+- Uma aba compara o salvamento atual com a cópia que carregou ou gravou por último. Se outra aba alterou ou removeu os dados, novas gravações, desfazer e salvamentos automáticos são bloqueados. Um aviso fixo permite recarregar; a exportação do estado em memória continua disponível.
+- As operações de gravação da interface usam um bloqueio compartilhado entre abas quando `navigator.locks` está disponível. Sem essa API, a comparação ainda detecta estados desatualizados, mas não oferece exclusão mútua para gravações exatamente simultâneas.
+- As configurações em edição são preservadas em um rascunho durante as atualizações da interface e a navegação interna. O rascunho só entra no salvamento ao clicar em **Salvar configurações**; recarregar ou fechar a página descarta o rascunho, e a exportação contém apenas o estado já confirmado.
+- Se o navegador bloquear o acesso ao armazenamento, a aplicação continua em memória e mostra um aviso para exportar backup antes de fechar. Se o acesso de leitura falhar durante a sessão, novas gravações no armazenamento ficam desativadas até recarregar, para evitar sobrescrever dados desconhecidos.
