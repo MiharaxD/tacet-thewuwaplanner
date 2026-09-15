@@ -140,3 +140,6 @@ dialog::backdrop{background:#06080cd1}
 
  .page-heading>.button-group{flex-wrap:wrap;justify-content:flex-end}
 }
+
+/* Portraits open the existing goal editor. */
+button.character-photo{display:block;width:100%;padding:0;border:0;border-radius:0;background:transparent;color:inherit;text-align:inherit}button.character-photo:hover{background:transparent}button.character-photo:focus-visible{outline-offset:-4px}button.goal-photo{display:block;flex-shrink:0;padding:0;border:0;border-radius:10px;background:transparent;line-height:0}button.goal-photo:hover{background:transparent}
