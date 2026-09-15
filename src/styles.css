@@ -143,3 +143,7 @@ dialog::backdrop{background:#06080cd1}
 
 /* Portraits open the existing goal editor. */
 button.character-photo{display:block;width:100%;padding:0;border:0;border-radius:0;background:transparent;color:inherit;text-align:inherit}button.character-photo:hover{background:transparent}button.character-photo:focus-visible{outline-offset:-4px}button.goal-photo{display:block;flex-shrink:0;padding:0;border:0;border-radius:10px;background:transparent;line-height:0}button.goal-photo:hover{background:transparent}
+
+.level-field{position:relative;min-width:0;display:flex;flex-direction:column;gap:7px}.level-options{position:absolute;top:100%;left:0;right:0;z-index:30;max-height:220px;overflow-y:auto;margin-top:4px;padding:4px;border:1px solid var(--line);border-radius:8px;background:#0d121a;box-shadow:0 10px 24px #0008}.level-options[hidden]{display:none}.level-options button{display:block;width:100%;padding:8px 12px;border:0;background:transparent;text-align:left}.level-options button:hover,.level-options button[aria-selected="true"]{background:#233044;color:var(--text)}
+
+.level-field{align-self:start}
