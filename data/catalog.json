@@ -3,96 +3,324 @@
   "consultedAt": "2026-09-15",
   "characters": [
     {
-      "id": "jinhsi",
-      "name": "Jinhsi",
-      "element": "Spectro",
-      "weapon": "Broadblade",
-      "rarity": 5,
-      "enemy": "howler",
-      "forgery": "waveworn",
-      "flower": "pearl",
-      "boss": "elegy",
-      "weekly": "dagger",
-      "image": "./assets/jinhsi.png",
-      "sources": [
-        "jinhsi",
-        "jinhsi-cost"
-      ],
-      "ascensionVerified": true,
-      "forteVerified": true
-    },
-    {
-      "id": "jiyan",
-      "name": "Jiyan",
+      "id": "aalto",
+      "name": "Aalto",
       "element": "Aero",
-      "weapon": "Broadblade",
-      "rarity": 5,
+      "weapon": "Pistols",
+      "rarity": 4,
       "enemy": "howler",
-      "forgery": "waveworn",
-      "flower": "pecok",
+      "forgery": "impure-phlogiston",
+      "flower": "wintry",
       "boss": "rock",
       "weekly": "bell",
-      "image": "./assets/jiyan.png",
+      "image": "./assets/WUWA%20Assets/Aalto/Aalto_Convene_Draw.webp",
       "sources": [
-        "jiyan",
-        "jiyan-cost"
+        "assets-aalto",
+        "wuwa-akademiya"
       ],
       "ascensionVerified": true,
       "forteVerified": true
     },
     {
-      "id": "verina",
-      "name": "Verina",
-      "element": "Spectro",
-      "weapon": "Rectifier",
+      "id": "aemeath",
+      "name": "Aemeath",
+      "element": "Fusion",
+      "weapon": "Sword",
       "rarity": 5,
+      "enemy": "exoswarm-core",
+      "forgery": "broken-wing-polarizer",
+      "flower": "moss-amber",
+      "boss": "our-choice",
+      "weekly": "gold-in-memory",
+      "image": "./assets/WUWA%20Assets/Aemeth/Aemeath_Convene_Draw.webp",
+      "sources": [
+        "assets-aemeath",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "augusta",
+      "name": "Augusta",
+      "element": "Electro",
+      "weapon": "Broadblade",
+      "rarity": 5,
+      "enemy": "tidal-residuum",
+      "forgery": "waveworn",
+      "flower": "luminous-calendula",
+      "boss": "blighted-crown-of-puppet-king",
+      "weekly": "when-irises-bloom",
+      "image": "./assets/WUWA%20Assets/Augusta/Augusta_Convene_Draw.webp",
+      "sources": [
+        "assets-augusta",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "baizhi",
+      "name": "Baizhi",
+      "element": "Glacio",
+      "weapon": "Rectifier",
+      "rarity": 4,
       "enemy": "howler",
       "forgery": "helix",
-      "flower": "poppy",
-      "boss": "elegy",
+      "flower": "lanternberry",
+      "boss": "sound",
       "weekly": "bell",
-      "image": "./assets/verina.webp",
+      "image": "./assets/WUWA%20Assets/Baizhi/Baizhi_Convene_Draw.webp",
       "sources": [
-        "verina",
-        "verina-cost"
+        "assets-baizhi",
+        "wuwa-akademiya"
       ],
       "ascensionVerified": true,
       "forteVerified": true
     },
     {
-      "id": "yinlin",
-      "name": "Yinlin",
+      "id": "brant",
+      "name": "Brant",
+      "element": "Fusion",
+      "weapon": "Sword",
+      "rarity": 5,
+      "enemy": "tidal-residuum",
+      "forgery": "drip",
+      "flower": "golden-fleece",
+      "boss": "blazing-bone",
+      "weekly": "the-netherworlds-stare",
+      "image": "./assets/WUWA%20Assets/Brant/Brant_Convene_Draw.webp",
+      "sources": [
+        "assets-brant",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "buling",
+      "name": "Buling",
       "element": "Electro",
       "weapon": "Rectifier",
-      "rarity": 5,
+      "rarity": 4,
       "enemy": "whisper",
       "forgery": "helix",
-      "flower": "coriolus",
-      "boss": "abomination",
-      "weekly": "feather",
-      "image": "./assets/yinlin.png",
+      "flower": "pecok",
+      "boss": "blighted-crown-of-puppet-king",
+      "weekly": "curse-of-the-abyss",
+      "image": "./assets/WUWA%20Assets/Bulling/Buling_Convene_Draw.webp",
       "sources": [
-        "yinlin",
-        "yinlin-cost"
+        "assets-buling",
+        "wuwa-akademiya"
       ],
       "ascensionVerified": true,
       "forteVerified": true
     },
     {
-      "id": "sanhua",
-      "name": "Sanhua",
-      "element": "Glacio",
+      "id": "calcharo",
+      "name": "Calcharo",
+      "element": "Electro",
+      "weapon": "Broadblade",
+      "rarity": 5,
+      "enemy": "ring",
+      "forgery": "waveworn",
+      "flower": "iris",
+      "boss": "thundering-tacet-core",
+      "weekly": "bell",
+      "image": "./assets/WUWA%20Assets/Calcharo/Calcharo_Convene_Draw.webp",
+      "sources": [
+        "assets-calcharo",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "camellya",
+      "name": "Camellya",
+      "element": "Havoc",
       "weapon": "Sword",
-      "rarity": 4,
+      "rarity": 5,
       "enemy": "whisper",
       "forgery": "drip",
-      "flower": "wintry",
-      "boss": "sound",
-      "weekly": "destruction",
-      "image": "./assets/sanhua.png",
+      "flower": "nova",
+      "boss": "topological-confinement",
+      "weekly": "feather",
+      "image": "./assets/WUWA%20Assets/Camellya/Camellya_Convene_Draw.webp",
       "sources": [
-        "sanhua",
-        "sanhua-cost"
+        "assets-camellya",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "cantarella",
+      "name": "Cantarella",
+      "element": "Havoc",
+      "weapon": "Rectifier",
+      "rarity": 5,
+      "enemy": "polygon-core",
+      "forgery": "helix",
+      "flower": "seaside-cendrelis",
+      "boss": "cleansing-conch",
+      "weekly": "when-irises-bloom",
+      "image": "./assets/WUWA%20Assets/Cantarella/Cantarella_Convene_Draw.webp",
+      "sources": [
+        "assets-cantarella",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "carlotta",
+      "name": "Carlotta",
+      "element": "Glacio",
+      "weapon": "Pistols",
+      "rarity": 5,
+      "enemy": "polygon-core",
+      "forgery": "impure-phlogiston",
+      "flower": "sword-acorus",
+      "boss": "platinum-core",
+      "weekly": "the-netherworlds-stare",
+      "image": "./assets/WUWA%20Assets/Carlotta/Carlotta.webp",
+      "sources": [
+        "assets-carlotta",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "cartethyia",
+      "name": "Cartethyia",
+      "element": "Aero",
+      "weapon": "Sword",
+      "rarity": 5,
+      "enemy": "tidal-residuum",
+      "forgery": "drip",
+      "flower": "bamboo-iris",
+      "boss": "unfading-glory",
+      "weekly": "when-irises-bloom",
+      "image": "./assets/WUWA%20Assets/Cartethyia/Cartethyia_Convene_Draw.webp",
+      "sources": [
+        "assets-cartethyia",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "changli",
+      "name": "Changli",
+      "element": "Fusion",
+      "weapon": "Sword",
+      "rarity": 5,
+      "enemy": "ring",
+      "forgery": "drip",
+      "flower": "pavo-plum",
+      "boss": "rage",
+      "weekly": "dagger",
+      "image": "./assets/WUWA%20Assets/Changli/Changli_Convene_Draw.webp",
+      "sources": [
+        "assets-changli",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "chisa",
+      "name": "Chisa",
+      "element": "Havoc",
+      "weapon": "Broadblade",
+      "rarity": 5,
+      "enemy": "polygon-core",
+      "forgery": "waveworn",
+      "flower": "summer-flower",
+      "boss": "abyssal-husk",
+      "weekly": "when-irises-bloom",
+      "image": "./assets/WUWA%20Assets/Chisa/Chisa_Convene_Draw.webp",
+      "sources": [
+        "assets-chisa",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "chixia",
+      "name": "Chixia",
+      "element": "Fusion",
+      "weapon": "Pistols",
+      "rarity": 4,
+      "enemy": "whisper",
+      "forgery": "impure-phlogiston",
+      "flower": "poppy",
+      "boss": "rage",
+      "weekly": "bell",
+      "image": "./assets/WUWA%20Assets/Chixia/Chixia_Convene_Draw.webp",
+      "sources": [
+        "assets-chixia",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "ciaccona",
+      "name": "Ciaccona",
+      "element": "Aero",
+      "weapon": "Pistols",
+      "rarity": 5,
+      "enemy": "tidal-residuum",
+      "forgery": "impure-phlogiston",
+      "flower": "golden-fleece",
+      "boss": "blazing-bone",
+      "weekly": "when-irises-bloom",
+      "image": "./assets/WUWA%20Assets/Ciaccona/Ciaccona_Convene_Draw.webp",
+      "sources": [
+        "assets-ciaccona",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "danjin",
+      "name": "Danjin",
+      "element": "Havoc",
+      "weapon": "Sword",
+      "rarity": 4,
+      "enemy": "ring",
+      "forgery": "drip",
+      "flower": "poppy",
+      "boss": "strife-tacet-core",
+      "weekly": "feather",
+      "image": "./assets/WUWA%20Assets/Danjin/Danjin_Convene_Draw.webp",
+      "sources": [
+        "assets-danjin",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "denia",
+      "name": "Denia",
+      "element": "Fusion",
+      "weapon": "Rectifier",
+      "rarity": 5,
+      "enemy": "mech-core",
+      "forgery": "spliced-string",
+      "flower": "dream-of-stars",
+      "boss": "burning-judgment",
+      "weekly": "we-who-question",
+      "image": "./assets/WUWA%20Assets/Denia/Denia_Convene_Draw.webp",
+      "sources": [
+        "assets-denia",
+        "wuwa-akademiya"
       ],
       "ascensionVerified": true,
       "forteVerified": true
@@ -108,10 +336,898 @@
       "flower": "pecok",
       "boss": "rage",
       "weekly": "destruction",
-      "image": "./assets/encore.png",
+      "image": "./assets/WUWA%20Assets/Encore/Encore.webp",
       "sources": [
         "encore",
-        "encore-cost"
+        "encore-cost",
+        "assets-encore",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "galbrena",
+      "name": "Galbrena",
+      "element": "Fusion",
+      "weapon": "Pistols",
+      "rarity": 5,
+      "enemy": "tidal-residuum",
+      "forgery": "impure-phlogiston",
+      "flower": "stone-rose",
+      "boss": "blighted-crown-of-puppet-king",
+      "weekly": "curse-of-the-abyss",
+      "image": "./assets/WUWA%20Assets/Galbrena/Galbrena_Convene_Draw.webp",
+      "sources": [
+        "assets-galbrena",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "hiyuki",
+      "name": "Hiyuki",
+      "element": "Glacio",
+      "weapon": "Sword",
+      "rarity": 5,
+      "enemy": "exoswarm-core",
+      "forgery": "broken-wing-polarizer",
+      "flower": "redbell",
+      "boss": "our-choice",
+      "weekly": "we-who-question",
+      "image": "./assets/WUWA%20Assets/Hiyuki/Hiyuki_Convene_Draw.webp",
+      "sources": [
+        "assets-hiyuki",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "iuno",
+      "name": "Iuno",
+      "element": "Aero",
+      "weapon": "Gauntlets",
+      "rarity": 5,
+      "enemy": "polygon-core",
+      "forgery": "cadence-seed",
+      "flower": "sliverglow-bloom",
+      "boss": "abyssal-husk",
+      "weekly": "the-netherworlds-stare",
+      "image": "./assets/WUWA%20Assets/Iuno/Iuno_Convene_Draw.webp",
+      "sources": [
+        "assets-iuno",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "jianxin",
+      "name": "Jianxin",
+      "element": "Aero",
+      "weapon": "Gauntlets",
+      "rarity": 5,
+      "enemy": "whisper",
+      "forgery": "cadence-seed",
+      "flower": "lanternberry",
+      "boss": "rock",
+      "weekly": "destruction",
+      "image": "./assets/WUWA%20Assets/Jianxin/Jianxin_Convene_Draw.webp",
+      "sources": [
+        "assets-jianxin",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "jingran",
+      "name": "Jingran",
+      "element": "Fusion",
+      "weapon": "Broadblade",
+      "rarity": 5,
+      "enemy": "whisper",
+      "forgery": "carved-crystal",
+      "flower": "cloudperch-seed",
+      "boss": "forged-empyreans-sigh",
+      "weekly": "skyward-glazed-heart",
+      "image": "./assets/WUWA%20Assets/Jingran/Resonator_Jingran.webp",
+      "sources": [
+        "assets-jingran",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "jinhsi",
+      "name": "Jinhsi",
+      "element": "Spectro",
+      "weapon": "Broadblade",
+      "rarity": 5,
+      "enemy": "howler",
+      "forgery": "waveworn",
+      "flower": "pearl",
+      "boss": "elegy",
+      "weekly": "dagger",
+      "image": "./assets/WUWA%20Assets/Jinhsi/Jinhsi_Convene_Draw.webp",
+      "sources": [
+        "jinhsi",
+        "jinhsi-cost",
+        "assets-jinhsi",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "jiyan",
+      "name": "Jiyan",
+      "element": "Aero",
+      "weapon": "Broadblade",
+      "rarity": 5,
+      "enemy": "howler",
+      "forgery": "waveworn",
+      "flower": "pecok",
+      "boss": "rock",
+      "weekly": "bell",
+      "image": "./assets/WUWA%20Assets/Jiyan/Jiyan_Convene_Draw.webp",
+      "sources": [
+        "jiyan",
+        "jiyan-cost",
+        "assets-jiyan",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "lingyang",
+      "name": "Lingyang",
+      "element": "Glacio",
+      "weapon": "Gauntlets",
+      "rarity": 5,
+      "enemy": "whisper",
+      "forgery": "cadence-seed",
+      "flower": "coriolus",
+      "boss": "sound",
+      "weekly": "destruction",
+      "image": "./assets/WUWA%20Assets/Lingyang/Lingyang_Convene_Draw.webp",
+      "sources": [
+        "assets-lingyang",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "lucilla",
+      "name": "Lucilla",
+      "element": "Glacio",
+      "weapon": "Rectifier",
+      "rarity": 5,
+      "enemy": "mech-core",
+      "forgery": "spliced-string",
+      "flower": "forget-me-not",
+      "boss": "suncoveters-reach",
+      "weekly": "we-who-question",
+      "image": "./assets/WUWA%20Assets/Lucilla/Lucilla_Convene_Draw.webp",
+      "sources": [
+        "assets-lucilla",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "lucy",
+      "name": "Lucy",
+      "element": "Spectro",
+      "weapon": "Pistols",
+      "rarity": 5,
+      "enemy": "exoswarm-core",
+      "forgery": "incomplete-combustor",
+      "flower": "past-reveries",
+      "boss": "nightmare-flashdrive",
+      "weekly": "gold-in-memory",
+      "image": "./assets/WUWA%20Assets/Lucy/Lucy_Convene_Draw.webp",
+      "sources": [
+        "assets-lucy",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "lumi",
+      "name": "Lumi",
+      "element": "Electro",
+      "weapon": "Broadblade",
+      "rarity": 4,
+      "enemy": "howler",
+      "forgery": "waveworn",
+      "flower": "terraspawn-fungus",
+      "boss": "thundering-tacet-core",
+      "weekly": "dagger",
+      "image": "./assets/WUWA%20Assets/Lumi/Lumi_Convene_Draw.webp",
+      "sources": [
+        "assets-lumi",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "lupa",
+      "name": "Lupa",
+      "element": "Fusion",
+      "weapon": "Broadblade",
+      "rarity": 5,
+      "enemy": "howler",
+      "forgery": "waveworn",
+      "flower": "bloodleaf-viburnum",
+      "boss": "unfading-glory",
+      "weekly": "the-netherworlds-stare",
+      "image": "./assets/WUWA%20Assets/Lupa/Lupa_Convene_Draw.webp",
+      "sources": [
+        "assets-lupa",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "luuk-herssen",
+      "name": "Luuk Herssen",
+      "element": "Spectro",
+      "weapon": "Gauntlets",
+      "rarity": 5,
+      "enemy": "fractured-exoswarm-pendant",
+      "forgery": "waveworn-shard",
+      "flower": "edelschnee",
+      "boss": "suncoveters-reach",
+      "weekly": "gold-in-memory",
+      "image": "./assets/WUWA%20Assets/Luuk/Luuk_Herssen_Convene_Draw.webp",
+      "sources": [
+        "assets-luuk-herssen",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "lynae",
+      "name": "Lynae",
+      "element": "Spectro",
+      "weapon": "Pistols",
+      "rarity": 5,
+      "enemy": "exoswarm-core",
+      "forgery": "incomplete-combustor",
+      "flower": "rimewisp",
+      "boss": "suncoveters-reach",
+      "weekly": "feather",
+      "image": "./assets/WUWA%20Assets/Lynae/Lynae_Convene_Draw.webp",
+      "sources": [
+        "assets-lynae",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "mornye",
+      "name": "Mornye",
+      "element": "Fusion",
+      "weapon": "Broadblade",
+      "rarity": 5,
+      "enemy": "mech-core",
+      "forgery": "carved-crystal",
+      "flower": "gemini-spore",
+      "boss": "burning-judgment",
+      "weekly": "the-netherworlds-stare",
+      "image": "./assets/WUWA%20Assets/Mornye/Mornye_Convene_Draw.webp",
+      "sources": [
+        "assets-mornye",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "mortefi",
+      "name": "Mortefi",
+      "element": "Fusion",
+      "weapon": "Pistols",
+      "rarity": 4,
+      "enemy": "whisper",
+      "forgery": "impure-phlogiston",
+      "flower": "coriolus",
+      "boss": "rage",
+      "weekly": "bell",
+      "image": "./assets/WUWA%20Assets/Mortefi/Mortefi_Convene_Draw.webp",
+      "sources": [
+        "assets-mortefi",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "phoebe",
+      "name": "Phoebe",
+      "element": "Spectro",
+      "weapon": "Rectifier",
+      "rarity": 5,
+      "enemy": "whisper",
+      "forgery": "helix",
+      "flower": "firecracker-jewelweed",
+      "boss": "cleansing-conch",
+      "weekly": "dagger",
+      "image": "./assets/WUWA%20Assets/Proebe/Phoebe_Convene_Draw.webp",
+      "sources": [
+        "assets-phoebe",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "phrolova",
+      "name": "Phrolova",
+      "element": "Havoc",
+      "weapon": "Rectifier",
+      "rarity": 5,
+      "enemy": "polygon-core",
+      "forgery": "helix",
+      "flower": "afterlife",
+      "boss": "truth-in-lies",
+      "weekly": "the-netherworlds-stare",
+      "image": "./assets/WUWA%20Assets/Phrolova/Phrolova_Convene_Draw.webp",
+      "sources": [
+        "assets-phrolova",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "qingxiao",
+      "name": "Qingxiao",
+      "element": "Aero",
+      "weapon": "Sword",
+      "rarity": 5,
+      "enemy": "autopuppet-kernel",
+      "forgery": "broken-wing-polarizer",
+      "flower": "blade-blossom",
+      "boss": "forged-empyreans-sigh",
+      "weekly": "we-who-question",
+      "image": "./assets/WUWA%20Assets/Qingxiao/Qingxiao_Convene_Draw.webp",
+      "sources": [
+        "assets-qingxiao",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "qiuyuan",
+      "name": "Qiuyuan",
+      "element": "Aero",
+      "weapon": "Sword",
+      "rarity": 5,
+      "enemy": "whisper",
+      "forgery": "drip",
+      "flower": "wintry",
+      "boss": "truth-in-lies",
+      "weekly": "curse-of-the-abyss",
+      "image": "./assets/WUWA%20Assets/Qiuyuan/Qiuyuan_Convene_Draw.webp",
+      "sources": [
+        "assets-qiuyuan",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "rebecca",
+      "name": "Rebecca",
+      "element": "Electro",
+      "weapon": "Pistols",
+      "rarity": 5,
+      "enemy": "mech-core",
+      "forgery": "incomplete-combustor",
+      "flower": "past-reveries",
+      "boss": "nightmare-flashdrive",
+      "weekly": "we-who-question",
+      "image": "./assets/WUWA%20Assets/Rebecca/Rebecca_Convene_Draw.webp",
+      "sources": [
+        "assets-rebecca",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "roccia",
+      "name": "Roccia",
+      "element": "Havoc",
+      "weapon": "Gauntlets",
+      "rarity": 5,
+      "enemy": "tidal-residuum",
+      "forgery": "cadence-seed",
+      "flower": "firecracker-jewelweed",
+      "boss": "cleansing-conch",
+      "weekly": "the-netherworlds-stare",
+      "image": "./assets/WUWA%20Assets/Roccia/Roccia_Convene_Draw.webp",
+      "sources": [
+        "assets-roccia",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "rover-aero",
+      "name": "Rover (Aero)",
+      "element": "Aero",
+      "weapon": "Sword",
+      "rarity": 5,
+      "enemy": "whisper",
+      "forgery": "drip",
+      "flower": "pecok",
+      "boss": "mysterious-code",
+      "weekly": "when-irises-bloom",
+      "image": "./assets/WUWA%20Assets/Rover/Rover_1.webp",
+      "sources": [
+        "assets-rover-aero",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true,
+      "ascension": [
+        [
+          5000,
+          0,
+          0,
+          0,
+          4
+        ],
+        [
+          10000,
+          4,
+          1,
+          1,
+          4
+        ],
+        [
+          15000,
+          8,
+          1,
+          1,
+          8
+        ],
+        [
+          20000,
+          12,
+          1,
+          2,
+          4
+        ],
+        [
+          40000,
+          16,
+          1,
+          2,
+          8
+        ],
+        [
+          80000,
+          20,
+          1,
+          3,
+          4
+        ]
+      ],
+      "sharedProgress": "rover"
+    },
+    {
+      "id": "rover-havoc",
+      "name": "Rover (Havoc)",
+      "element": "Havoc",
+      "weapon": "Sword",
+      "rarity": 5,
+      "enemy": "whisper",
+      "forgery": "drip",
+      "flower": "pecok",
+      "boss": "mysterious-code",
+      "weekly": "feather",
+      "image": "./assets/WUWA%20Assets/Rover/Rover_1.webp",
+      "sources": [
+        "assets-rover-havoc",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true,
+      "ascension": [
+        [
+          5000,
+          0,
+          0,
+          0,
+          4
+        ],
+        [
+          10000,
+          4,
+          1,
+          1,
+          4
+        ],
+        [
+          15000,
+          8,
+          1,
+          1,
+          8
+        ],
+        [
+          20000,
+          12,
+          1,
+          2,
+          4
+        ],
+        [
+          40000,
+          16,
+          1,
+          2,
+          8
+        ],
+        [
+          80000,
+          20,
+          1,
+          3,
+          4
+        ]
+      ],
+      "sharedProgress": "rover"
+    },
+    {
+      "id": "rover-spectro",
+      "name": "Rover (Spectro)",
+      "element": "Spectro",
+      "weapon": "Sword",
+      "rarity": 5,
+      "enemy": "whisper",
+      "forgery": "drip",
+      "flower": "pecok",
+      "boss": "mysterious-code",
+      "weekly": "destruction",
+      "image": "./assets/WUWA%20Assets/Rover/Rover_1.webp",
+      "sources": [
+        "assets-rover-spectro",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true,
+      "ascension": [
+        [
+          5000,
+          0,
+          0,
+          0,
+          4
+        ],
+        [
+          10000,
+          4,
+          1,
+          1,
+          4
+        ],
+        [
+          15000,
+          8,
+          1,
+          1,
+          8
+        ],
+        [
+          20000,
+          12,
+          1,
+          2,
+          4
+        ],
+        [
+          40000,
+          16,
+          1,
+          2,
+          8
+        ],
+        [
+          80000,
+          20,
+          1,
+          3,
+          4
+        ]
+      ],
+      "sharedProgress": "rover"
+    },
+    {
+      "id": "sanhua",
+      "name": "Sanhua",
+      "element": "Glacio",
+      "weapon": "Sword",
+      "rarity": 4,
+      "enemy": "whisper",
+      "forgery": "drip",
+      "flower": "wintry",
+      "boss": "sound",
+      "weekly": "destruction",
+      "image": "./assets/WUWA%20Assets/Sanhua/Sanhua_Convene_Draw.webp",
+      "sources": [
+        "sanhua",
+        "sanhua-cost",
+        "assets-sanhua",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "shorekeeper",
+      "name": "Shorekeeper",
+      "element": "Spectro",
+      "weapon": "Rectifier",
+      "rarity": 5,
+      "enemy": "whisper",
+      "forgery": "helix",
+      "flower": "nova",
+      "boss": "topological-confinement",
+      "weekly": "dagger",
+      "image": "./assets/WUWA%20Assets/Shorekeeper/Shorekeeper_Convene_Draw.webp",
+      "sources": [
+        "assets-shorekeeper",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "sigrika",
+      "name": "Sigrika",
+      "element": "Aero",
+      "weapon": "Gauntlets",
+      "rarity": 5,
+      "enemy": "fractured-exoswarm-pendant",
+      "forgery": "waveworn-shard",
+      "flower": "arithmetic-shell",
+      "boss": "our-choice",
+      "weekly": "gold-in-memory",
+      "image": "./assets/WUWA%20Assets/Sigrika/Sigrika_Convene_Draw.webp",
+      "sources": [
+        "assets-sigrika",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "suisui",
+      "name": "Suisui",
+      "element": "Glacio",
+      "weapon": "Rectifier",
+      "rarity": 5,
+      "enemy": "autopuppet-kernel",
+      "forgery": "spliced-string",
+      "flower": "flowborne-dream",
+      "boss": "solidaritys-loneflame",
+      "weekly": "skyward-glazed-heart",
+      "image": "./assets/WUWA%20Assets/Suisui/Suisui_Convene_Draw.webp",
+      "sources": [
+        "assets-suisui",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "taoqi",
+      "name": "Taoqi",
+      "element": "Havoc",
+      "weapon": "Broadblade",
+      "rarity": 4,
+      "enemy": "howler",
+      "forgery": "waveworn",
+      "flower": "iris",
+      "boss": "gold-dissolving-feather",
+      "weekly": "feather",
+      "image": "./assets/WUWA%20Assets/Taoqi/Taoqi_Convene_Draw.webp",
+      "sources": [
+        "assets-taoqi",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "verina",
+      "name": "Verina",
+      "element": "Spectro",
+      "weapon": "Rectifier",
+      "rarity": 5,
+      "enemy": "howler",
+      "forgery": "helix",
+      "flower": "poppy",
+      "boss": "elegy",
+      "weekly": "bell",
+      "image": "./assets/WUWA%20Assets/Verina/Verina_Convene_Draw.webp",
+      "sources": [
+        "verina",
+        "verina-cost",
+        "assets-verina",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "xiangli-yao",
+      "name": "Xiangli Yao",
+      "element": "Electro",
+      "weapon": "Gauntlets",
+      "rarity": 5,
+      "enemy": "whisper",
+      "forgery": "cadence-seed",
+      "flower": "violet-coral",
+      "boss": "hidden-thunder-tacet-core",
+      "weekly": "destruction",
+      "image": "./assets/WUWA%20Assets/Xiangli/Xiangli_Yao_Convene_Draw.webp",
+      "sources": [
+        "assets-xiangli-yao",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "yangyang",
+      "name": "Yangyang",
+      "element": "Aero",
+      "weapon": "Sword",
+      "rarity": 4,
+      "enemy": "ring",
+      "forgery": "drip",
+      "flower": "wintry",
+      "boss": "rock",
+      "weekly": "destruction",
+      "image": "./assets/WUWA%20Assets/Yangyang/Yangyang_Convene_Draw.webp",
+      "sources": [
+        "assets-yangyang",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "yangyang-xuanling",
+      "name": "Yangyang Xuanling",
+      "element": "Havoc",
+      "weapon": "Sword",
+      "rarity": 5,
+      "enemy": "autopuppet-kernel",
+      "forgery": "broken-wing-polarizer",
+      "flower": "cloudperch-seed",
+      "boss": "solidaritys-loneflame",
+      "weekly": "skyward-glazed-heart",
+      "image": "./assets/WUWA%20Assets/Yangyang%20Xuanling/Yangyang_Xuanling_Convene_Draw.webp",
+      "sources": [
+        "assets-yangyang-xuanling",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "yinlin",
+      "name": "Yinlin",
+      "element": "Electro",
+      "weapon": "Rectifier",
+      "rarity": 5,
+      "enemy": "whisper",
+      "forgery": "helix",
+      "flower": "coriolus",
+      "boss": "abomination",
+      "weekly": "feather",
+      "image": "./assets/WUWA%20Assets/Yinlin/Yinlin_Convene_Draw.webp",
+      "sources": [
+        "yinlin",
+        "yinlin-cost",
+        "assets-yinlin",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "youhu",
+      "name": "Youhu",
+      "element": "Glacio",
+      "weapon": "Gauntlets",
+      "rarity": 4,
+      "enemy": "ring",
+      "forgery": "cadence-seed",
+      "flower": "violet-coral",
+      "boss": "topological-confinement",
+      "weekly": "bell",
+      "image": "./assets/WUWA%20Assets/Youhu/Youhu_Convene_Draw.webp",
+      "sources": [
+        "assets-youhu",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "yuanwu",
+      "name": "Yuanwu",
+      "element": "Electro",
+      "weapon": "Gauntlets",
+      "rarity": 4,
+      "enemy": "ring",
+      "forgery": "cadence-seed",
+      "flower": "terraspawn-fungus",
+      "boss": "hidden-thunder-tacet-core",
+      "weekly": "destruction",
+      "image": "./assets/WUWA%20Assets/Yuanwu/Yuanwu_Convene_Draw.webp",
+      "sources": [
+        "assets-yuanwu",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "zani",
+      "name": "Zani",
+      "element": "Spectro",
+      "weapon": "Gauntlets",
+      "rarity": 5,
+      "enemy": "polygon-core",
+      "forgery": "cadence-seed",
+      "flower": "sword-acorus",
+      "boss": "platinum-core",
+      "weekly": "the-netherworlds-stare",
+      "image": "./assets/WUWA%20Assets/Zani/Zani_Convene_Draw.webp",
+      "sources": [
+        "assets-zani",
+        "wuwa-akademiya"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "zhezhi",
+      "name": "Zhezhi",
+      "element": "Glacio",
+      "weapon": "Rectifier",
+      "rarity": 5,
+      "enemy": "howler",
+      "forgery": "helix",
+      "flower": "lanternberry",
+      "boss": "sound",
+      "weekly": "bell",
+      "image": "./assets/WUWA%20Assets/Zhezhi/Zhezhi_Convene_Draw.webp",
+      "sources": [
+        "assets-zhezhi",
+        "wuwa-akademiya"
       ],
       "ascensionVerified": true,
       "forteVerified": true
@@ -182,7 +1298,8 @@
       "sources": [
         "wave"
       ],
-      "verified": true
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Shell%20Credit.webp"
     },
     {
       "id": "howler-0",
@@ -194,7 +1311,8 @@
       "sources": [
         "howler-recipe"
       ],
-      "verified": true
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/LF%20Howler%20Core.webp"
     },
     {
       "id": "howler-1",
@@ -206,7 +1324,8 @@
       "sources": [
         "howler-recipe"
       ],
-      "verified": true
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/MF%20Howler%20Core.webp"
     },
     {
       "id": "howler-2",
@@ -218,7 +1337,8 @@
       "sources": [
         "howler-recipe"
       ],
-      "verified": true
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/HF%20Howler%20Core.webp"
     },
     {
       "id": "howler-3",
@@ -230,7 +1350,8 @@
       "sources": [
         "howler-recipe"
       ],
-      "verified": true
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/FF%20Howler%20Core.webp"
     },
     {
       "id": "whisper-0",
@@ -242,7 +1363,8 @@
       "sources": [
         "whisper-recipe"
       ],
-      "verified": true
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/LF%20Whisperin%20Core.webp"
     },
     {
       "id": "whisper-1",
@@ -254,7 +1376,8 @@
       "sources": [
         "whisper-recipe"
       ],
-      "verified": true
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/MF%20Whisperin%20Core.webp"
     },
     {
       "id": "whisper-2",
@@ -266,7 +1389,8 @@
       "sources": [
         "whisper-recipe"
       ],
-      "verified": true
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/HF%20Whisperin%20Core.webp"
     },
     {
       "id": "whisper-3",
@@ -278,7 +1402,8 @@
       "sources": [
         "whisper-recipe"
       ],
-      "verified": true
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/FF%20Whisperin%20Core.webp"
     },
     {
       "id": "waveworn-0",
@@ -290,7 +1415,8 @@
       "sources": [
         "jiyan-cost"
       ],
-      "verified": true
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Waveworn%20Residue%20210.webp"
     },
     {
       "id": "waveworn-1",
@@ -302,7 +1428,8 @@
       "sources": [
         "jiyan-cost"
       ],
-      "verified": true
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Waveworn%20Residue%20226.webp"
     },
     {
       "id": "waveworn-2",
@@ -314,7 +1441,8 @@
       "sources": [
         "jiyan-cost"
       ],
-      "verified": true
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Waveworn%20Residue%20235.webp"
     },
     {
       "id": "waveworn-3",
@@ -326,7 +1454,8 @@
       "sources": [
         "jiyan-cost"
       ],
-      "verified": true
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Waveworn%20Residue%20239.webp"
     },
     {
       "id": "helix-0",
@@ -338,7 +1467,8 @@
       "sources": [
         "verina-cost"
       ],
-      "verified": true
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Lento%20Helix.webp"
     },
     {
       "id": "helix-1",
@@ -350,7 +1480,8 @@
       "sources": [
         "verina-cost"
       ],
-      "verified": true
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Adagio%20Helix.webp"
     },
     {
       "id": "helix-2",
@@ -362,7 +1493,8 @@
       "sources": [
         "verina-cost"
       ],
-      "verified": true
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Andante%20Helix.webp"
     },
     {
       "id": "helix-3",
@@ -374,7 +1506,8 @@
       "sources": [
         "verina-cost"
       ],
-      "verified": true
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Presto%20Helix.webp"
     },
     {
       "id": "drip-0",
@@ -386,7 +1519,8 @@
       "sources": [
         "sanhua-cost"
       ],
-      "verified": true
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Inert%20Metallic%20Drip.webp"
     },
     {
       "id": "drip-1",
@@ -398,7 +1532,8 @@
       "sources": [
         "sanhua-cost"
       ],
-      "verified": true
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Reactive%20Metallic%20Drip.webp"
     },
     {
       "id": "drip-2",
@@ -410,7 +1545,8 @@
       "sources": [
         "sanhua-cost"
       ],
-      "verified": true
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Polarized%20Metallic%20Drip.webp"
     },
     {
       "id": "drip-3",
@@ -422,7 +1558,8 @@
       "sources": [
         "sanhua-cost"
       ],
-      "verified": true
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Heterized%20Metallic%20Drip.webp"
     },
     {
       "id": "pearl",
@@ -434,7 +1571,8 @@
       "sources": [
         "pearl"
       ],
-      "verified": true
+      "verified": true,
+      "image": "./assets/materials/pearl.webp"
     },
     {
       "id": "pecok",
@@ -446,7 +1584,8 @@
       "sources": [
         "jiyan-cost"
       ],
-      "verified": true
+      "verified": true,
+      "image": "./assets/materials/pecok.webp"
     },
     {
       "id": "poppy",
@@ -458,7 +1597,8 @@
       "sources": [
         "verina-cost"
       ],
-      "verified": true
+      "verified": true,
+      "image": "./assets/materials/poppy.webp"
     },
     {
       "id": "coriolus",
@@ -470,7 +1610,8 @@
       "sources": [
         "yinlin-cost"
       ],
-      "verified": true
+      "verified": true,
+      "image": "./assets/materials/coriolus.webp"
     },
     {
       "id": "wintry",
@@ -482,7 +1623,8 @@
       "sources": [
         "sanhua-cost"
       ],
-      "verified": true
+      "verified": true,
+      "image": "./assets/materials/wintry.webp"
     },
     {
       "id": "elegy",
@@ -494,7 +1636,8 @@
       "sources": [
         "jinhsi-cost"
       ],
-      "verified": true
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Elegy%20Tacet%20Core.webp"
     },
     {
       "id": "rock",
@@ -506,7 +1649,8 @@
       "sources": [
         "jiyan-cost"
       ],
-      "verified": true
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Roaring%20Rock%20Fist.webp"
     },
     {
       "id": "abomination",
@@ -518,7 +1662,8 @@
       "sources": [
         "yinlin-cost"
       ],
-      "verified": true
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Group%20Abomination%20Tacet%20Core.webp"
     },
     {
       "id": "sound",
@@ -530,7 +1675,8 @@
       "sources": [
         "sanhua-cost"
       ],
-      "verified": true
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Sound.webp"
     },
     {
       "id": "rage",
@@ -542,7 +1688,8 @@
       "sources": [
         "encore-cost"
       ],
-      "verified": true
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Rage%20Tacet%20Core.webp"
     },
     {
       "id": "dagger",
@@ -554,7 +1701,8 @@
       "sources": [
         "jinhsi-cost"
       ],
-      "verified": true
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Sentine's%20Dagger.webp"
     },
     {
       "id": "bell",
@@ -566,7 +1714,8 @@
       "sources": [
         "jiyan-cost"
       ],
-      "verified": true
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Monument%20Bell.webp"
     },
     {
       "id": "feather",
@@ -578,7 +1727,8 @@
       "sources": [
         "yinlin-cost"
       ],
-      "verified": true
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Dreamless%20Feather.webp"
     },
     {
       "id": "destruction",
@@ -590,7 +1740,8 @@
       "sources": [
         "encore-cost"
       ],
-      "verified": true
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Unending%20Destruction.webp"
     },
     {
       "id": "potion-0",
@@ -604,7 +1755,8 @@
       ],
       "verified": true,
       "xp": 1000,
-      "xpKind": "potion"
+      "xpKind": "potion",
+      "image": "./assets/WUWA%20Assets/Materials/Basic%20Resonance%20Potion.webp"
     },
     {
       "id": "potion-1",
@@ -618,7 +1770,8 @@
       ],
       "verified": true,
       "xp": 3000,
-      "xpKind": "potion"
+      "xpKind": "potion",
+      "image": "./assets/WUWA%20Assets/Materials/Medium%20Resonance%20Potion.webp"
     },
     {
       "id": "potion-2",
@@ -632,7 +1785,8 @@
       ],
       "verified": true,
       "xp": 8000,
-      "xpKind": "potion"
+      "xpKind": "potion",
+      "image": "./assets/WUWA%20Assets/Materials/Advanced%20Resonance%20Potion.webp"
     },
     {
       "id": "potion-3",
@@ -646,7 +1800,8 @@
       ],
       "verified": true,
       "xp": 20000,
-      "xpKind": "potion"
+      "xpKind": "potion",
+      "image": "./assets/WUWA%20Assets/Materials/Premium%20Resonance%20Potion.webp"
     },
     {
       "id": "energy-0",
@@ -660,7 +1815,8 @@
       ],
       "verified": true,
       "xp": 1000,
-      "xpKind": "energy"
+      "xpKind": "energy",
+      "image": "./assets/WUWA%20Assets/Materials/Basic%20Energy%20Core.webp"
     },
     {
       "id": "energy-1",
@@ -674,7 +1830,8 @@
       ],
       "verified": true,
       "xp": 3000,
-      "xpKind": "energy"
+      "xpKind": "energy",
+      "image": "./assets/WUWA%20Assets/Materials/Medium%20Energy%20Core.webp"
     },
     {
       "id": "energy-2",
@@ -688,7 +1845,8 @@
       ],
       "verified": true,
       "xp": 8000,
-      "xpKind": "energy"
+      "xpKind": "energy",
+      "image": "./assets/WUWA%20Assets/Materials/Advanced%20Energy%20Core.webp"
     },
     {
       "id": "energy-3",
@@ -702,7 +1860,8 @@
       ],
       "verified": true,
       "xp": 20000,
-      "xpKind": "energy"
+      "xpKind": "energy",
+      "image": "./assets/WUWA%20Assets/Materials/Premium%20Energy%20Core.webp"
     },
     {
       "id": "ring-0",
@@ -714,7 +1873,8 @@
       "sources": [
         "stringmaster-detail"
       ],
-      "verified": true
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Crude%20Ring.webp"
     },
     {
       "id": "ring-1",
@@ -726,7 +1886,8 @@
       "sources": [
         "stringmaster-detail"
       ],
-      "verified": true
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Basic%20Ring.webp"
     },
     {
       "id": "ring-2",
@@ -738,7 +1899,8 @@
       "sources": [
         "stringmaster-detail"
       ],
-      "verified": true
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Improved%20Ring.webp"
     },
     {
       "id": "ring-3",
@@ -750,7 +1912,1386 @@
       "sources": [
         "stringmaster-detail"
       ],
-      "verified": true
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Tailored%20Ring.webp"
+    },
+    {
+      "id": "impure-phlogiston-0",
+      "name": "Impure Phlogiston",
+      "category": "Forja",
+      "rarity": 2,
+      "origin": "Forgery Challenge",
+      "activity": "forgery",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Impure%20Phlogiston.webp"
+    },
+    {
+      "id": "impure-phlogiston-1",
+      "name": "Extracted Phlogiston",
+      "category": "Forja",
+      "rarity": 3,
+      "origin": "Forgery Challenge",
+      "activity": "forgery",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Extracted%20Phlogiston.webp"
+    },
+    {
+      "id": "impure-phlogiston-2",
+      "name": "Refined Phlogiston",
+      "category": "Forja",
+      "rarity": 4,
+      "origin": "Forgery Challenge",
+      "activity": "forgery",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Refined%20Phlogiston.webp"
+    },
+    {
+      "id": "impure-phlogiston-3",
+      "name": "Flawless Phlogiston",
+      "category": "Forja",
+      "rarity": 5,
+      "origin": "Forgery Challenge",
+      "activity": "forgery",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Flawless%20Phlogiston.webp"
+    },
+    {
+      "id": "exoswarm-core-0",
+      "name": "LF Exoswarm Core",
+      "category": "Inimigos",
+      "rarity": 2,
+      "origin": "Inimigos · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/LF%20Exoswarm%20Core.webp"
+    },
+    {
+      "id": "exoswarm-core-1",
+      "name": "MF Exoswarm Core",
+      "category": "Inimigos",
+      "rarity": 3,
+      "origin": "Inimigos · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/MF%20Exoswarm%20Core.webp"
+    },
+    {
+      "id": "exoswarm-core-2",
+      "name": "HF Exoswarm Core",
+      "category": "Inimigos",
+      "rarity": 4,
+      "origin": "Inimigos · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/HF%20Exoswarm%20Core.webp"
+    },
+    {
+      "id": "exoswarm-core-3",
+      "name": "FF Exoswarm Core",
+      "category": "Inimigos",
+      "rarity": 5,
+      "origin": "Inimigos · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/FF%20Exoswarm%20Core.webp"
+    },
+    {
+      "id": "broken-wing-polarizer-0",
+      "name": "Broken Wing Polarizer",
+      "category": "Forja",
+      "rarity": 2,
+      "origin": "Forgery Challenge",
+      "activity": "forgery",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Broken%20Wing%20Polarizer.webp"
+    },
+    {
+      "id": "broken-wing-polarizer-1",
+      "name": "Monowing Polarizer",
+      "category": "Forja",
+      "rarity": 3,
+      "origin": "Forgery Challenge",
+      "activity": "forgery",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Monowing%20Polarizer.webp"
+    },
+    {
+      "id": "broken-wing-polarizer-2",
+      "name": "Polywing Polarizer",
+      "category": "Forja",
+      "rarity": 4,
+      "origin": "Forgery Challenge",
+      "activity": "forgery",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Polywing%20Polarizer.webp"
+    },
+    {
+      "id": "broken-wing-polarizer-3",
+      "name": "Layered Wing Polarizer",
+      "category": "Forja",
+      "rarity": 5,
+      "origin": "Forgery Challenge",
+      "activity": "forgery",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Layered%20Wing%20Polarizer.webp"
+    },
+    {
+      "id": "our-choice",
+      "name": "Our Choice",
+      "category": "Chefe",
+      "rarity": 4,
+      "origin": "Chefe de mundo",
+      "activity": "boss",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Our%20Choice.webp"
+    },
+    {
+      "id": "moss-amber",
+      "name": "Moss Amber",
+      "category": "Coleta",
+      "rarity": 1,
+      "origin": "Coleta · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/materials/moss-amber.webp"
+    },
+    {
+      "id": "gold-in-memory",
+      "name": "Gold in Memory",
+      "category": "Semanal",
+      "rarity": 4,
+      "origin": "Desafio semanal",
+      "activity": "weekly",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Gold%20in%20Memory.webp"
+    },
+    {
+      "id": "tidal-residuum-0",
+      "name": "LF Tidal Residuum",
+      "category": "Inimigos",
+      "rarity": 2,
+      "origin": "Inimigos · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/LF%20Tidal%20Residuum.webp"
+    },
+    {
+      "id": "tidal-residuum-1",
+      "name": "MF Tidal Residuum",
+      "category": "Inimigos",
+      "rarity": 3,
+      "origin": "Inimigos · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/MF%20Tidal%20Residuum.webp"
+    },
+    {
+      "id": "tidal-residuum-2",
+      "name": "HF Tidal Residuum",
+      "category": "Inimigos",
+      "rarity": 4,
+      "origin": "Inimigos · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/HF%20Tidal%20Residuum.webp"
+    },
+    {
+      "id": "tidal-residuum-3",
+      "name": "FF Tidal Residuum",
+      "category": "Inimigos",
+      "rarity": 5,
+      "origin": "Inimigos · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/FF%20Tidal%20Residuum.webp"
+    },
+    {
+      "id": "blighted-crown-of-puppet-king",
+      "name": "Blighted Crown of Puppet King",
+      "category": "Chefe",
+      "rarity": 4,
+      "origin": "Chefe de mundo",
+      "activity": "boss",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Blighted%20Crown%20of%20Puppet%20King.webp"
+    },
+    {
+      "id": "luminous-calendula",
+      "name": "Luminous Calendula",
+      "category": "Coleta",
+      "rarity": 1,
+      "origin": "Coleta · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/materials/luminous-calendula.webp"
+    },
+    {
+      "id": "when-irises-bloom",
+      "name": "When Irises Bloom",
+      "category": "Semanal",
+      "rarity": 4,
+      "origin": "Desafio semanal",
+      "activity": "weekly",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/When%20Irises%20Bloom.webp"
+    },
+    {
+      "id": "lanternberry",
+      "name": "Lanternberry",
+      "category": "Coleta",
+      "rarity": 1,
+      "origin": "Coleta · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/materials/lanternberry.webp"
+    },
+    {
+      "id": "blazing-bone",
+      "name": "Blazing Bone",
+      "category": "Chefe",
+      "rarity": 4,
+      "origin": "Chefe de mundo",
+      "activity": "boss",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Blazing%20Bone.webp"
+    },
+    {
+      "id": "golden-fleece",
+      "name": "Golden Fleece",
+      "category": "Coleta",
+      "rarity": 1,
+      "origin": "Coleta · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/materials/golden-fleece.webp"
+    },
+    {
+      "id": "the-netherworlds-stare",
+      "name": "The Netherworld's Stare",
+      "category": "Semanal",
+      "rarity": 4,
+      "origin": "Desafio semanal",
+      "activity": "weekly",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/The%20Netheworld's%20Stare.webp"
+    },
+    {
+      "id": "curse-of-the-abyss",
+      "name": "Curse of the Abyss",
+      "category": "Semanal",
+      "rarity": 4,
+      "origin": "Desafio semanal",
+      "activity": "weekly",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Curse%20of%20the%20Abyss.webp"
+    },
+    {
+      "id": "thundering-tacet-core",
+      "name": "Thundering Tacet Core",
+      "category": "Chefe",
+      "rarity": 4,
+      "origin": "Chefe de mundo",
+      "activity": "boss",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Thundering%20Tacet%20Core.webp"
+    },
+    {
+      "id": "iris",
+      "name": "Iris",
+      "category": "Coleta",
+      "rarity": 1,
+      "origin": "Coleta · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/materials/iris.webp"
+    },
+    {
+      "id": "topological-confinement",
+      "name": "Topological Confinement",
+      "category": "Chefe",
+      "rarity": 4,
+      "origin": "Chefe de mundo",
+      "activity": "boss",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Topological%20Confinement.webp"
+    },
+    {
+      "id": "nova",
+      "name": "Nova",
+      "category": "Coleta",
+      "rarity": 1,
+      "origin": "Coleta · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/materials/nova.webp"
+    },
+    {
+      "id": "polygon-core-0",
+      "name": "LF Polygon Core",
+      "category": "Inimigos",
+      "rarity": 2,
+      "origin": "Inimigos · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/LF%20Polygon%20Core.webp"
+    },
+    {
+      "id": "polygon-core-1",
+      "name": "MF Polygon Core",
+      "category": "Inimigos",
+      "rarity": 3,
+      "origin": "Inimigos · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/MF%20Polygon%20Core.webp"
+    },
+    {
+      "id": "polygon-core-2",
+      "name": "HF Polygon Core",
+      "category": "Inimigos",
+      "rarity": 4,
+      "origin": "Inimigos · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/HF%20Polygon%20Core.webp"
+    },
+    {
+      "id": "polygon-core-3",
+      "name": "FF Polygon Core",
+      "category": "Inimigos",
+      "rarity": 5,
+      "origin": "Inimigos · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/FF%20Polygon%20Core.webp"
+    },
+    {
+      "id": "cleansing-conch",
+      "name": "Cleansing Conch",
+      "category": "Chefe",
+      "rarity": 4,
+      "origin": "Chefe de mundo",
+      "activity": "boss",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Cleansing%20Conch.webp"
+    },
+    {
+      "id": "seaside-cendrelis",
+      "name": "Seaside Cendrelis",
+      "category": "Coleta",
+      "rarity": 1,
+      "origin": "Coleta · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/materials/seaside-cendrelis.webp"
+    },
+    {
+      "id": "platinum-core",
+      "name": "Platinum Core",
+      "category": "Chefe",
+      "rarity": 4,
+      "origin": "Chefe de mundo",
+      "activity": "boss",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Platinum%20Core.webp"
+    },
+    {
+      "id": "sword-acorus",
+      "name": "Sword Acorus",
+      "category": "Coleta",
+      "rarity": 1,
+      "origin": "Coleta · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/materials/sword-acorus.webp"
+    },
+    {
+      "id": "unfading-glory",
+      "name": "Unfading Glory",
+      "category": "Chefe",
+      "rarity": 4,
+      "origin": "Chefe de mundo",
+      "activity": "boss",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Unfanding%20Glory.webp"
+    },
+    {
+      "id": "bamboo-iris",
+      "name": "Bamboo Iris",
+      "category": "Coleta",
+      "rarity": 1,
+      "origin": "Coleta · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/materials/bamboo-iris.webp"
+    },
+    {
+      "id": "pavo-plum",
+      "name": "Pavo Plum",
+      "category": "Coleta",
+      "rarity": 1,
+      "origin": "Coleta · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/materials/pavo-plum.webp"
+    },
+    {
+      "id": "abyssal-husk",
+      "name": "Abyssal Husk",
+      "category": "Chefe",
+      "rarity": 4,
+      "origin": "Chefe de mundo",
+      "activity": "boss",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Abyssal%20Husk.webp"
+    },
+    {
+      "id": "summer-flower",
+      "name": "Summer Flower",
+      "category": "Coleta",
+      "rarity": 1,
+      "origin": "Coleta · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/materials/summer-flower.webp"
+    },
+    {
+      "id": "strife-tacet-core",
+      "name": "Strife Tacet Core",
+      "category": "Chefe",
+      "rarity": 4,
+      "origin": "Chefe de mundo",
+      "activity": "boss",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Strife%20Tacet%20Core.webp"
+    },
+    {
+      "id": "mech-core-0",
+      "name": "LF Mech Core",
+      "category": "Inimigos",
+      "rarity": 2,
+      "origin": "Inimigos · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/LF%20Merch%20Core.webp"
+    },
+    {
+      "id": "mech-core-1",
+      "name": "MF Mech Core",
+      "category": "Inimigos",
+      "rarity": 3,
+      "origin": "Inimigos · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/MF%20Merch%20Core.webp"
+    },
+    {
+      "id": "mech-core-2",
+      "name": "HF Mech Core",
+      "category": "Inimigos",
+      "rarity": 4,
+      "origin": "Inimigos · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/HF%20Merch%20Core.webp"
+    },
+    {
+      "id": "mech-core-3",
+      "name": "FF Mech Core",
+      "category": "Inimigos",
+      "rarity": 5,
+      "origin": "Inimigos · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/FF%20Merch%20Core.webp"
+    },
+    {
+      "id": "spliced-string-0",
+      "name": "Spliced String",
+      "category": "Forja",
+      "rarity": 2,
+      "origin": "Forgery Challenge",
+      "activity": "forgery",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Spliced%20String.webp"
+    },
+    {
+      "id": "spliced-string-1",
+      "name": "Broken String",
+      "category": "Forja",
+      "rarity": 3,
+      "origin": "Forgery Challenge",
+      "activity": "forgery",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Broken%20String.webp"
+    },
+    {
+      "id": "spliced-string-2",
+      "name": "Solidified String",
+      "category": "Forja",
+      "rarity": 4,
+      "origin": "Forgery Challenge",
+      "activity": "forgery",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Solidified%20String.webp"
+    },
+    {
+      "id": "spliced-string-3",
+      "name": "Melodic String",
+      "category": "Forja",
+      "rarity": 5,
+      "origin": "Forgery Challenge",
+      "activity": "forgery",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Melodic%20String.webp"
+    },
+    {
+      "id": "burning-judgment",
+      "name": "Burning Judgment",
+      "category": "Chefe",
+      "rarity": 4,
+      "origin": "Chefe de mundo",
+      "activity": "boss",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Burning%20Judgment.webp"
+    },
+    {
+      "id": "dream-of-stars",
+      "name": "Dream of Stars",
+      "category": "Coleta",
+      "rarity": 1,
+      "origin": "Coleta · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/materials/dream-of-stars.webp"
+    },
+    {
+      "id": "we-who-question",
+      "name": "We Who Question",
+      "category": "Semanal",
+      "rarity": 4,
+      "origin": "Desafio semanal",
+      "activity": "weekly",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/We%20Who%20Question.webp"
+    },
+    {
+      "id": "stone-rose",
+      "name": "Stone Rose",
+      "category": "Coleta",
+      "rarity": 1,
+      "origin": "Coleta · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/materials/stone-rose.webp"
+    },
+    {
+      "id": "redbell",
+      "name": "Redbell",
+      "category": "Coleta",
+      "rarity": 1,
+      "origin": "Coleta · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/materials/redbell.webp"
+    },
+    {
+      "id": "cadence-seed-0",
+      "name": "Cadence Seed",
+      "category": "Forja",
+      "rarity": 2,
+      "origin": "Forgery Challenge",
+      "activity": "forgery",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Cadence%20Seed.webp"
+    },
+    {
+      "id": "cadence-seed-1",
+      "name": "Cadence Bud",
+      "category": "Forja",
+      "rarity": 3,
+      "origin": "Forgery Challenge",
+      "activity": "forgery",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Cadence%20Bud.webp"
+    },
+    {
+      "id": "cadence-seed-2",
+      "name": "Cadence Leaf",
+      "category": "Forja",
+      "rarity": 4,
+      "origin": "Forgery Challenge",
+      "activity": "forgery",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Cadence%20Leaf.webp"
+    },
+    {
+      "id": "cadence-seed-3",
+      "name": "Cadence Blossom",
+      "category": "Forja",
+      "rarity": 5,
+      "origin": "Forgery Challenge",
+      "activity": "forgery",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Cadence%20Blossom.webp"
+    },
+    {
+      "id": "sliverglow-bloom",
+      "name": "Sliverglow Bloom",
+      "category": "Coleta",
+      "rarity": 1,
+      "origin": "Coleta · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/materials/sliverglow-bloom.webp"
+    },
+    {
+      "id": "carved-crystal-0",
+      "name": "LF Carved Crystal",
+      "category": "Forja",
+      "rarity": 2,
+      "origin": "Forgery Challenge",
+      "activity": "forgery",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/LF%20Carved%20Crystal.webp"
+    },
+    {
+      "id": "carved-crystal-1",
+      "name": "MF Carved Crystal",
+      "category": "Forja",
+      "rarity": 3,
+      "origin": "Forgery Challenge",
+      "activity": "forgery",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/MF%20Carved%20Crystal.webp"
+    },
+    {
+      "id": "carved-crystal-2",
+      "name": "HF Carved Crystal",
+      "category": "Forja",
+      "rarity": 4,
+      "origin": "Forgery Challenge",
+      "activity": "forgery",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/HF%20Carved%20Crystal.webp"
+    },
+    {
+      "id": "carved-crystal-3",
+      "name": "FF Carved Crystal",
+      "category": "Forja",
+      "rarity": 5,
+      "origin": "Forgery Challenge",
+      "activity": "forgery",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/FF%20Carved%20Crystal.webp"
+    },
+    {
+      "id": "forged-empyreans-sigh",
+      "name": "Forged Empyrean's Sigh",
+      "category": "Chefe",
+      "rarity": 4,
+      "origin": "Chefe de mundo",
+      "activity": "boss",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Forged%20Empyrean's%20Sigh.webp"
+    },
+    {
+      "id": "cloudperch-seed",
+      "name": "Cloudperch Seed",
+      "category": "Coleta",
+      "rarity": 1,
+      "origin": "Coleta · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/materials/cloudperch-seed.webp"
+    },
+    {
+      "id": "skyward-glazed-heart",
+      "name": "Skyward Glazed Heart",
+      "category": "Semanal",
+      "rarity": 4,
+      "origin": "Desafio semanal",
+      "activity": "weekly",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Skyward%20Glazed%20Heart.webp"
+    },
+    {
+      "id": "suncoveters-reach",
+      "name": "Suncoveter's Reach",
+      "category": "Chefe",
+      "rarity": 4,
+      "origin": "Chefe de mundo",
+      "activity": "boss",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Suncoveter's%20Reach.webp"
+    },
+    {
+      "id": "forget-me-not",
+      "name": "Forget-Me-Not",
+      "category": "Coleta",
+      "rarity": 1,
+      "origin": "Coleta · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/materials/forget-me-not.webp"
+    },
+    {
+      "id": "incomplete-combustor-0",
+      "name": "Incomplete Combustor",
+      "category": "Forja",
+      "rarity": 2,
+      "origin": "Forgery Challenge",
+      "activity": "forgery",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Incomplete%20Combustor.webp"
+    },
+    {
+      "id": "incomplete-combustor-1",
+      "name": "Aftertune Combustor",
+      "category": "Forja",
+      "rarity": 3,
+      "origin": "Forgery Challenge",
+      "activity": "forgery",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Aftertune%20Combustor.webp"
+    },
+    {
+      "id": "incomplete-combustor-2",
+      "name": "Remnant Combustor",
+      "category": "Forja",
+      "rarity": 4,
+      "origin": "Forgery Challenge",
+      "activity": "forgery",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Remnant%20Combustor.webp"
+    },
+    {
+      "id": "incomplete-combustor-3",
+      "name": "Reverb Combustor",
+      "category": "Forja",
+      "rarity": 5,
+      "origin": "Forgery Challenge",
+      "activity": "forgery",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Reverb%20Combustor.webp"
+    },
+    {
+      "id": "nightmare-flashdrive",
+      "name": "Nightmare Flashdrive",
+      "category": "Chefe",
+      "rarity": 4,
+      "origin": "Chefe de mundo",
+      "activity": "boss",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Nightmare%20Flashdrive.webp"
+    },
+    {
+      "id": "past-reveries",
+      "name": "Past Reveries",
+      "category": "Coleta",
+      "rarity": 1,
+      "origin": "Coleta · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/materials/past-reveries.webp"
+    },
+    {
+      "id": "terraspawn-fungus",
+      "name": "Terraspawn Fungus",
+      "category": "Coleta",
+      "rarity": 1,
+      "origin": "Coleta · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/materials/terraspawn-fungus.webp"
+    },
+    {
+      "id": "bloodleaf-viburnum",
+      "name": "Bloodleaf Viburnum",
+      "category": "Coleta",
+      "rarity": 1,
+      "origin": "Coleta · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/materials/bloodleaf-viburnum.webp"
+    },
+    {
+      "id": "fractured-exoswarm-pendant-0",
+      "name": "Fractured Exoswarm Pendant",
+      "category": "Inimigos",
+      "rarity": 2,
+      "origin": "Inimigos · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Fractured%20Exoswarm%20Pendant.webp"
+    },
+    {
+      "id": "fractured-exoswarm-pendant-1",
+      "name": "Worn Exoswarm Pendant",
+      "category": "Inimigos",
+      "rarity": 3,
+      "origin": "Inimigos · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Worn%20Exoswarm%20Pendant.webp"
+    },
+    {
+      "id": "fractured-exoswarm-pendant-2",
+      "name": "Chipped Exoswarm Pendant",
+      "category": "Inimigos",
+      "rarity": 4,
+      "origin": "Inimigos · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Chipped%20Exoswarm%20Pendant.webp"
+    },
+    {
+      "id": "fractured-exoswarm-pendant-3",
+      "name": "Intact Exoswarm Pendant",
+      "category": "Inimigos",
+      "rarity": 5,
+      "origin": "Inimigos · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Intact%20Exoswarm%20Pendant.webp"
+    },
+    {
+      "id": "waveworn-shard-0",
+      "name": "LF Waveworn Shard",
+      "category": "Forja",
+      "rarity": 2,
+      "origin": "Forgery Challenge",
+      "activity": "forgery",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/LF%20Waveworn%20Shard.webp"
+    },
+    {
+      "id": "waveworn-shard-1",
+      "name": "MF Waveworn Shard",
+      "category": "Forja",
+      "rarity": 3,
+      "origin": "Forgery Challenge",
+      "activity": "forgery",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/MF%20Waveworn%20Shard.webp"
+    },
+    {
+      "id": "waveworn-shard-2",
+      "name": "HF Waveworn Shard",
+      "category": "Forja",
+      "rarity": 4,
+      "origin": "Forgery Challenge",
+      "activity": "forgery",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/HF%20Waveworn%20Shard.webp"
+    },
+    {
+      "id": "waveworn-shard-3",
+      "name": "FF Waveworn Shard",
+      "category": "Forja",
+      "rarity": 5,
+      "origin": "Forgery Challenge",
+      "activity": "forgery",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/FF%20Waveworn%20Shard.webp"
+    },
+    {
+      "id": "edelschnee",
+      "name": "Edelschnee",
+      "category": "Coleta",
+      "rarity": 1,
+      "origin": "Coleta · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/materials/edelschnee.webp"
+    },
+    {
+      "id": "rimewisp",
+      "name": "Rimewisp",
+      "category": "Coleta",
+      "rarity": 1,
+      "origin": "Coleta · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/materials/rimewisp.webp"
+    },
+    {
+      "id": "gemini-spore",
+      "name": "Gemini Spore",
+      "category": "Coleta",
+      "rarity": 1,
+      "origin": "Coleta · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/materials/gemini-spore.webp"
+    },
+    {
+      "id": "truth-in-lies",
+      "name": "Truth in Lies",
+      "category": "Chefe",
+      "rarity": 4,
+      "origin": "Chefe de mundo",
+      "activity": "boss",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Truth%20in%20Lies.webp"
+    },
+    {
+      "id": "afterlife",
+      "name": "Afterlife",
+      "category": "Coleta",
+      "rarity": 1,
+      "origin": "Coleta · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/materials/afterlife.webp"
+    },
+    {
+      "id": "firecracker-jewelweed",
+      "name": "Firecracker Jewelweed",
+      "category": "Coleta",
+      "rarity": 1,
+      "origin": "Coleta · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/materials/firecracker-jewelweed.webp"
+    },
+    {
+      "id": "autopuppet-kernel-0",
+      "name": "LF Autopuppet Kernel",
+      "category": "Inimigos",
+      "rarity": 2,
+      "origin": "Inimigos · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/LF%20Autopuppet%20Kernel.webp"
+    },
+    {
+      "id": "autopuppet-kernel-1",
+      "name": "MF Autopuppet Kernel",
+      "category": "Inimigos",
+      "rarity": 3,
+      "origin": "Inimigos · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/MF%20Autopuppet%20Kernel.webp"
+    },
+    {
+      "id": "autopuppet-kernel-2",
+      "name": "HF Autopuppet Kernel",
+      "category": "Inimigos",
+      "rarity": 4,
+      "origin": "Inimigos · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/HF%20Autopuppet%20Kernel.webp"
+    },
+    {
+      "id": "autopuppet-kernel-3",
+      "name": "FF Autopuppet Kernel",
+      "category": "Inimigos",
+      "rarity": 5,
+      "origin": "Inimigos · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/FF%20Autopuppet%20Kernel.webp"
+    },
+    {
+      "id": "blade-blossom",
+      "name": "Blade Blossom",
+      "category": "Coleta",
+      "rarity": 1,
+      "origin": "Coleta · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/materials/blade-blossom.webp"
+    },
+    {
+      "id": "mysterious-code",
+      "name": "Mysterious Code",
+      "category": "Especial",
+      "rarity": 5,
+      "origin": "Progressão da história",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Mysterious%20Code.webp"
+    },
+    {
+      "id": "arithmetic-shell",
+      "name": "Arithmetic Shell",
+      "category": "Coleta",
+      "rarity": 1,
+      "origin": "Coleta · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/materials/arithmetic-shell.webp"
+    },
+    {
+      "id": "solidaritys-loneflame",
+      "name": "Solidarity's Loneflame",
+      "category": "Chefe",
+      "rarity": 4,
+      "origin": "Chefe de mundo",
+      "activity": "boss",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Solidarity's%20Loneflame.webp"
+    },
+    {
+      "id": "flowborne-dream",
+      "name": "Flowborne Dream",
+      "category": "Coleta",
+      "rarity": 1,
+      "origin": "Coleta · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/materials/flowborne-dream.webp"
+    },
+    {
+      "id": "gold-dissolving-feather",
+      "name": "Gold-Dissolving Feather",
+      "category": "Chefe",
+      "rarity": null,
+      "origin": "Chefe de mundo",
+      "activity": "boss",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Gold.webp"
+    },
+    {
+      "id": "hidden-thunder-tacet-core",
+      "name": "Hidden Thunder Tacet Core",
+      "category": "Chefe",
+      "rarity": 4,
+      "origin": "Chefe de mundo",
+      "activity": "boss",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/WUWA%20Assets/Materials/Hidden%20Thunder%20Tacet%20Core.webp"
+    },
+    {
+      "id": "violet-coral",
+      "name": "Violet Coral",
+      "category": "Coleta",
+      "rarity": 1,
+      "origin": "Coleta · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "wuwa-materials"
+      ],
+      "verified": true,
+      "image": "./assets/materials/violet-coral.webp"
     }
   ]
 }

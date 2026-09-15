@@ -1,0 +1,69 @@
+Total Ascension Materials for Phrolova
+How to Get	Materials
+Normal Enemies	
+LF Polygon Core LF Polygon Core x4
+MF Polygon Core MF Polygon Core x12
+HF Polygon Core HF Polygon Core x12
+FF Polygon Core FF Polygon Core x4
+World Boss	
+Truth in Lies Truth in Lies x46
+Overworld Material	
+Afterlife Afterlife x60
+Currency	
+Shell Credit Shell Credit x170,000
+Phrolova's ascension materials are composed of the Afterlife, Truth in Lies, and the Polygon Core materials from echoes in Rinascita. In addition, you will need a total of 170,000 Shell Credits to fully upgrade Phrolova.
+
+Total Forte Materials for Phrolova
+How to Get	Materials
+Normal Enemies	
+LF Polygon Core LF Polygon Core x25
+MF Polygon Core MF Polygon Core x28
+HF Polygon Core HF Polygon Core x40
+FF Polygon Core FF Polygon Core x57
+Forgery Challenge	
+Lento Helix Lento Helix x25
+Adagio Helix Adagio Helix x28
+Andante Helix Andante Helix x55
+Presto Helix Presto Helix x67
+Weekly Boss	
+The Netherworld The Netherworld's Stare x26
+Currency	
+Shell Credit Shell Credit x2,030,000
+To upgrade Phrolova's Forte, you will need Helix materials from Forgery Challenge, the weekly boss drop from Hecate, and more Polygon Core materials from echoes in Rinascita. You will also need 2,030,000 Shell Credits to fully upgrade all the Forte Skills.
+
+Phrolova Ascension Materials
+Character Ascension Materials
+Rank 1
+20 ? 40	
+LF Polygon Core LF Polygon Core x4
+Shell Credit Shell Credit x5,000
+Rank 2
+40 ? 50	
+Truth in Lies Truth in Lies x3
+Afterlife Afterlife x4
+MF Polygon Core MF Polygon Core x4
+Shell Credit Shell Credit x10,000
+Rank 3
+50 ? 60	
+Truth in Lies Truth in Lies x6
+Afterlife Afterlife x8
+MF Polygon Core MF Polygon Core x8
+Shell Credit Shell Credit x15,000
+Rank 4
+60 ? 70	
+Truth in Lies Truth in Lies x9
+Afterlife Afterlife x12
+HF Polygon Core HF Polygon Core x4
+Shell Credit Shell Credit x20,000
+Rank 5
+70 ? 80	
+Truth in Lies Truth in Lies x12
+Afterlife Afterlife x16
+HF Polygon Core HF Polygon Core x8
+Shell Credit Shell Credit x40,000
+Rank 6
+80 ? 90	
+Truth in Lies Truth in Lies x16
+Afterlife Afterlife x20
+FF Polygon Core FF Polygon Core x4
+Shell Credit Shell Credit x80,000

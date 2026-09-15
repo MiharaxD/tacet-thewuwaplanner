@@ -1,0 +1,69 @@
+Total Ascension Materials for Shorekeeper
+How to Get	Materials
+Normal Enemies	
+LF Whisperin Core LF Whisperin Core x4
+MF Whisperin Core MF Whisperin Core x12
+HF Whisperin Core HF Whisperin Core x12
+FF Whisperin Core FF Whisperin Core x4
+World Boss	
+Topological Confinement Topological Confinement x46
+Overworld Material	
+Nova Nova x60
+Currency	
+Shell Credit Shell Credit x170,000
+Shorekeeper's ascension materials are composed of the Nova, Topological Confinement, and the Whisperin Core materials from echoes in Huanglong and the Black Shores. In addition, you will need a total of 170,000 Shell Credits to fully upgrade Shorekeeper.
+
+Total Forte Materials for Shorekeeper
+How to Get	Materials
+Normal Enemies	
+LF Whisperin Core LF Whisperin Core x25
+MF Whisperin Core MF Whisperin Core x28
+HF Whisperin Core HF Whisperin Core x40
+FF Whisperin Core FF Whisperin Core x57
+Forgery Challenge	
+Lento Helix Lento Helix x25
+Adagio Helix Adagio Helix x28
+Andante Helix Andante Helix x55
+Presto Helix Presto Helix x67
+Weekly Boss	
+Sentinel Sentinel's Dagger x26
+Currency	
+Shell Credit Shell Credit x2,030,000
+To upgrade Shorekeeper's Forte, you will need Helix from Forgery Challenge, the weekly boss drop from Jué, and more Whisperin Core materials from echoes in Huanglong and the Black Shores. You will also need 2,030,000 Shell Credits to fully upgrade all the Forte Skills.
+
+Shorekeeper Ascension Materials
+Character Ascension Materials
+Rank 1
+20 ? 40	
+LF Whisperin Core LF Whisperin Core x4
+Shell Credit Shell Credit x5,000
+Rank 2
+40 ? 50	
+Topological Confinement Topological Confinement x3
+Nova Nova x4
+MF Whisperin Core MF Whisperin Core x4
+Shell Credit Shell Credit x10,000
+Rank 3
+50 ? 60	
+Topological Confinement Topological Confinement x6
+Nova Nova x8
+MF Whisperin Core MF Whisperin Core x8
+Shell Credit Shell Credit x15,000
+Rank 4
+60 ? 70	
+Topological Confinement Topological Confinement x9
+Nova Nova x12
+HF Whisperin Core HF Whisperin Core x4
+Shell Credit Shell Credit x20,000
+Rank 5
+70 ? 80	
+Topological Confinement Topological Confinement x12
+Nova Nova x16
+HF Whisperin Core HF Whisperin Core x8
+Shell Credit Shell Credit x40,000
+Rank 6
+80 ? 90	
+Topological Confinement Topological Confinement x16
+Nova Nova x20
+FF Whisperin Core FF Whisperin Core x4
+Shell Credit Shell Credit x80,000

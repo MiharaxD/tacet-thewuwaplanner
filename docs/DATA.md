@@ -4,6 +4,10 @@ Data da revisão: **15/09/2026**. URLs, escopos, observações e versão dispon�
 
 ## Fontes e conferências
 
+- **Expansão WUWA Assets:** 57 personagens/formas (51 adicionados) e 153 materiais com imagens locais. Os textos fornecidos em `assets/WUWA Assets` determinam as famílias e materiais; a listagem pública do [Akademiya](https://wuwa.akademiya.app/en/characters) complementa nomes, elementos, armas e raridades. O catálogo inclui todas as pastas fornecidas, com Rover Aero, Havoc e Spectro; não implica que todas as entradas estejam em banners atuais.
+- A pasta de Luuk Herssen não contém texto. Materiais complementados pelo [guia Game8](https://game8.co/games/Wuthering-Waves/archives/575852): Exoswarm Pendant, Waveworn Shard, Edelschnee, Suncoveter's Reach e Gold in Memory.
+- Imagens ausentes vieram da CDN indicada pela página de [materiais do Akademiya](https://wuwa.akademiya.app/en/materials). Os arquivos ficam em `assets/materials`; a aplicação não precisa acessar a CDN em execução.
+
 - Principal: páginas individuais de [Wutheringlab](https://wutheringlab.com/) para Jinhsi, Jiyan, Verina, Yinlin, Sanhua, Encore e as quatro armas. Os links exatos são vinculados aos registros no catálogo.
 - Complementar: páginas individuais do Game8, como [Jinhsi](https://game8.co/games/Wuthering-Waves/archives/494451), [Jiyan](https://game8.co/games/Wuthering-Waves/archives/504555) e [Ages of Harvest](https://game8.co/games/Wuthering-Waves/archives/458249).
 - EXP e regras: [Resonator/Leveling](https://wutheringwaves.fandom.com/wiki/Resonator/Leveling), [Weapon/Leveling](https://wutheringwaves.fandom.com/wiki/Weapon/Leveling), [Luminal Synthesis](https://wutheringwaves.fandom.com/wiki/Luminal_Synthesis), [Reset](https://wutheringwaves.fandom.com/wiki/Reset) e páginas dos materiais. Algumas páginas diretas da wiki foram bloqueadas; os trechos indexados das tabelas foram consultados. Isso está registrado nas notas.
@@ -25,6 +29,10 @@ As listas de ascensão/Forte são custos **por etapa**, nunca totais cumulativos
 
 ### Divergências e lacunas
 
+- O texto fornecido da Jinhsi tem totais corretos, mas a tabela por etapa foi copiada da Roccia. A importação usa os materiais corretos do resumo e a tabela previamente conferida da Jinhsi; o arquivo original foi preservado.
+- Rover usa um Mysterious Code em cada ascensão de 2 a 6 (cinco no total), em vez de 46 materiais de chefe. Nível/ascensão são compartilhados no planejamento por prioridade e sincronizados ao registrar evolução; Fortes permanecem separados. Metas dependentes aguardam o registro da evolução anterior.
+- Os totais de Forte dos textos incluem habilidades inerentes e bônus. O motor continua calculando os cinco Fortes por nível; não usa o total completo como custo de cada habilidade. Nós inerentes/bônus continuam sendo uma lacuna explícita.
+
 - Uma imagem residual na página de Jinhsi indicava Gloom Slough; a página dedicada e a confirmação Game8 indicam Loong Pearl. O catálogo usa Loong Pearl e registra a divergência.
 - Nós inerentes/bônus apresentaram divergências de custos ou pré-requisitos. Seus aumentos geram `missingData` e bloqueiam a conclusão. Os valores atuais digitados pelo usuário são registros pessoais, não uma verificação dos pré-requisitos desses nós.
 - Só duas receitas de síntese foram verificadas: LF → MF Howler/Whisperin, proporção 3:1. Não há conversões inversas, equivalências genéricas nem supostos custos adicionais.
@@ -35,11 +43,13 @@ As listas de ascensão/Forte são custos **por etapa**, nunca totais cumulativos
 ## Manutenção do catálogo
 
 1. Consulte a página individual, uma confirmação complementar quando necessário e registre a data/versão real.
-2. Edite `scripts/catalog.mjs`: acrescente fontes, materiais com IDs estáveis, personagem/arma e referências. Não renomeie IDs já usados em backups sem criar uma migração explícita.
+2. `scripts/catalog.mjs` gera a base original e chama `scripts/import-wuwa.mjs`, que importa a pasta WUWA Assets. `scripts/wuwa-reference.json` preserva o snapshot de identidades e imagens para regeneração offline. Não renomeie IDs já usados em backups sem criar uma migração explícita.
 3. Identifique se cada tabela é incremental ou acumulada. Confira um intervalo curto e um total completo independentemente do motor.
 4. Defina os indicadores `ascensionVerified`/`forteVerified` somente quando a tabela e o vínculo dos materiais estiverem confirmados. Para dados não disponíveis, mantenha o indicador falso.
 5. Execute `node scripts/catalog.mjs`, revise `data/`, acrescente testes de fronteira e execute os testes e o build.
 6. Recarregue o site e teste uma meta nova. Se a forma do estado mudar, incremente o formato e implemente migração em `src/state.js` antes de publicar.
+
+Use `node scripts/catalog.mjs --refresh` para consultar o Akademiya novamente e baixar imagens ausentes. Sem `--refresh`, a geração não acessa a rede. A importação exige quatro raridades por família, valida as seis etapas de ascensão e rejeita materiais sem imagem/referência. A exceção explícita da Jinhsi está documentada no importador. Os IDs originais e o formato de backup versão 1 foram preservados.
 
 Os desbloqueios ainda não têm um motor de custos. Confirmar suas fontes exige adicionar as tabelas, validação de pré-requisitos e cálculo em `engine.js`; trocar uma etiqueta da interface não basta.
 
@@ -53,7 +63,7 @@ Ao editar um evento importado, o formulário apresenta todos os materiais de rec
 
 ## Retratos e ícones
 
-Retratos locais atribuídos à KURO GAMES, obtidos via Wutheringlab; URLs e metadados estão em `assets/character-portraits.json`. A aplicação mostra uma alternativa visual quando uma imagem falha. Os ícones de materiais são identificadores estilizados próprios, acompanhados do nome e da raridade, e não reproduções das artes oficiais.
+Retratos locais atribuídos à KURO GAMES, fornecidos na pasta WUWA Assets. `assets/character-portraits.json` registra apenas os seis retratos históricos da base original; os caminhos atuais estão em `data/catalog.json`. Os materiais usam imagens dessa pasta ou baixadas do Akademiya, acompanhadas do nome e raridade. A aplicação mantém uma alternativa visual quando uma imagem falha, inclusive nos diálogos.
 
 ## Salvamento e edição
 

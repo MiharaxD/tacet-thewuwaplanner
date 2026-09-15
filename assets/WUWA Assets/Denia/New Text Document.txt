@@ -1,0 +1,69 @@
+Total Ascension Materials for Denia
+How to Get	Materials
+Normal Enemies	
+LF Mech Core LF Mech Core x4
+MF Mech Core MF Mech Core x12
+HF Mech Core HF Mech Core x12
+FF Mech Core FF Mech Core x4
+World Boss	
+Burning Judgment Burning Judgment x46
+Overworld Material	
+Dream of Stars Dream of Stars x60
+Currency	
+Shell Credit Shell Credit x170,000
+Denia's ascension materials are composed of the Dream of Stars, Burning Judgment, and the Mech Core materials from echoes in Lahai-Roi. In addition, you will need a total of 170,000 Shell Credits to fully upgrade Denia.
+
+Total Forte Materials for Denia
+How to Get	Materials
+Normal Enemies	
+LF Mech Core LF Mech Core x25
+MF Mech Core MF Mech Core x28
+HF Mech Core HF Mech Core x40
+FF Mech Core FF Mech Core x57
+Forgery Challenge	
+Spliced String Spliced String x25
+Broken String Broken String x28
+Solidified String Solidified String x55
+Melodic String Melodic String x67
+Weekly Boss	
+We Who Question We Who Question x26
+Currency	
+Shell Credit Shell Credit x2,030,000
+To upgrade Denia's Forte, you will need String Materials from Forgery Challenges in Lahai-Roi, We Who Question from the Denia weekly boss, and more Mech Core materials from echoes in Lahai-Roi. You will also need 2,030,000 Shell Credits to fully upgrade all the Forte Skills.
+
+Denia Ascension Materials
+Character Ascension Materials
+Rank 1
+20 ? 40	
+LF Mech Core LF Mech Core x4
+Shell Credit Shell Credit x5,000
+Rank 2
+40 ? 50	
+Burning Judgment Burning Judgment x3
+Dream of Stars Dream of Stars x4
+MF Mech Core MF Mech Core x4
+Shell Credit Shell Credit x10,000
+Rank 3
+50 ? 60	
+Burning Judgment Burning Judgment x6
+Dream of Stars Dream of Stars x8
+MF Mech Core MF Mech Core x8
+Shell Credit Shell Credit x15,000
+Rank 4
+60 ? 70	
+Burning Judgment Burning Judgment x9
+Dream of Stars Dream of Stars x12
+HF Mech Core HF Mech Core x4
+Shell Credit Shell Credit x20,000
+Rank 5
+70 ? 80	
+Burning Judgment Burning Judgment x12
+Dream of Stars Dream of Stars x16
+HF Mech Core HF Mech Core x8
+Shell Credit Shell Credit x40,000
+Rank 6
+80 ? 90	
+Burning Judgment Burning Judgment x16
+Dream of Stars Dream of Stars x20
+FF Mech Core FF Mech Core x4
+Shell Credit Shell Credit x80,000

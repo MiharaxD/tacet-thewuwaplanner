@@ -1,0 +1,69 @@
+Total Ascension Materials for Mornye
+How to Get	Materials
+Normal Enemies	
+LF Mech Core LF Mech Core x4
+MF Mech Core MF Mech Core x12
+HF Mech Core HF Mech Core x12
+FF Mech Core FF Mech Core x4
+World Boss	
+Burning Judgment Burning Judgment x46
+Overworld Material	
+Gemini Spore Gemini Spore x60
+Currency	
+Shell Credit Shell Credit x170,000
+Mornye's ascension materials are composed of the Gemini Spore, Burning Judgment, and the Mech Core materials from echoes in Lahai-Roi. In addition, you will need a total of 170,000 Shell Credits to fully upgrade Mornye.
+
+Total Forte Materials for Mornye
+How to Get	Materials
+Normal Enemies	
+LF Mech Core LF Mech Core x25
+MF Mech Core MF Mech Core x28
+HF Mech Core HF Mech Core x40
+FF Mech Core FF Mech Core x57
+Forgery Challenge	
+LF Carved Crystal LF Carved Crystal x25
+MF Carved Crystal MF Carved Crystal x28
+HF Carved Crystal HF Carved Crystal x55
+FF Carved Crystal FF Carved Crystal x67
+Weekly Boss	
+The Netherworld The Netherworld's Stare x26
+Currency	
+Shell Credit Shell Credit x2,030,000
+To upgrade Mornye's Forte, you will need Carved Crystals from Forgery Challenge, the weekly boss drop from Hecate, and more Mech Core materials from echoes in Lahai-Roi. You will also need 2,030,000 Shell Credits to fully upgrade all the Forte Skills.
+
+Mornye Ascension Materials
+Character Ascension Materials
+Rank 1
+20 ? 40	
+LF Mech Core LF Mech Core x4
+Shell Credit Shell Credit x5,000
+Rank 2
+40 ? 50	
+Burning Judgment Burning Judgment x3
+Gemini Spore Gemini Spore x4
+MF Mech Core MF Mech Core x4
+Shell Credit Shell Credit x10,000
+Rank 3
+50 ? 60	
+Burning Judgment Burning Judgment x6
+Gemini Spore Gemini Spore x8
+MF Mech Core MF Mech Core x8
+Shell Credit Shell Credit x15,000
+Rank 4
+60 ? 70	
+Burning Judgment Burning Judgment x9
+Gemini Spore Gemini Spore x12
+HF Mech Core HF Mech Core x4
+Shell Credit Shell Credit x20,000
+Rank 5
+70 ? 80	
+Burning Judgment Burning Judgment x12
+Gemini Spore Gemini Spore x16
+HF Mech Core HF Mech Core x8
+Shell Credit Shell Credit x40,000
+Rank 6
+80 ? 90	
+Burning Judgment Burning Judgment x16
+Gemini Spore Gemini Spore x20
+FF Mech Core FF Mech Core x4
+Shell Credit Shell Credit x80,000

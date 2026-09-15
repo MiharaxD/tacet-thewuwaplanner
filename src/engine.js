@@ -37,8 +37,8 @@ export function requirements(goal,db){
  const c=db.catalog.characters.find(c=>c.id===goal.charId),cost={},missingData=[],r=db.rules;
  if(goal.done) return {cost,missingData,xp:0,weaponXp:0};
  for(let i=goal.current.ascension;i<goal.target.ascension;i++){
-  if(!c.ascensionVerified||!r.ascension[i]) {missingData.push('Ascensão do personagem: não verificado');continue;}
-  const [credit,flower,boss,tier,enemy]=r.ascension[i];
+  if(!c.ascensionVerified||!(c.ascension||r.ascension)[i]) {missingData.push('Ascensão do personagem: não verificado');continue;}
+  const [credit,flower,boss,tier,enemy]=(c.ascension||r.ascension)[i];
   add(cost,'shell',credit);add(cost,c.flower,flower);add(cost,c.boss,boss);add(cost,`${c.enemy}-${tier}`,enemy);
  }
  for(let s=0;s<5;s++) for(let i=goal.current.skills[s];i<goal.target.skills[s];i++){
@@ -89,10 +89,34 @@ export function selectExperience(required,stock,materials){
  return {items:dp[selected].items,provided,allocated:Math.min(provided,required),missing:Math.max(0,required-provided),surplus:Math.max(0,provided-required)};
 }
 
+// Rover's attributes share level/ascension, while their Fortes remain independent.
+function sharedGoal(goal,goals,db){
+ const group=db.catalog.characters.find(c=>c.id===goal.charId)?.sharedProgress;
+ if(!group)return {goal,dependencies:[]};
+ const peers=goals.filter(g=>db.catalog.characters.find(c=>c.id===g.charId)?.sharedProgress===group);
+ const effective=clone(goal),dependencies=[];
+ const advance=p=>{
+  const a=effective.current;
+  if(p.level>a.level){a.level=p.level;a.xp=p.xp;}
+  else if(p.level===a.level)a.xp=Math.max(a.xp,p.xp);
+  a.ascension=Math.max(a.ascension,p.ascension);
+ };
+ for(const peer of peers)advance(peer.current);
+ for(const peer of goals.slice(0,goals.indexOf(goal))){
+  if(!peers.includes(peer)||peer.done)continue;
+  if(peer.target.level>effective.current.level||peer.target.ascension>effective.current.ascension){dependencies.push(peer.id);advance(peer.target);}
+ }
+ effective.target.level=Math.max(effective.target.level,effective.current.level);
+ effective.target.ascension=Math.max(effective.target.ascension,effective.current.ascension);
+ return {goal:effective,dependencies};
+}
 export function allocate(goals,inventory,db){
  const bank={...inventory},totals={},results=[];
  for(const goal of goals){
-  const req=requirements(goal,db),rows=[],consumption={};
+  validateGoal(goal,db);
+  const shared=sharedGoal(goal,goals,db);
+  const req=requirements(shared.goal,db),rows=[],consumption={};
+  if(!goal.done&&shared.dependencies.length)req.missingData.push('Nível e ascensão compartilhados: registre primeiro a meta anterior do Rover.');
   for(const [id,needed] of Object.entries(req.cost)){
    const available=bank[id]||0,allocated=Math.min(available,needed);bank[id]=available-allocated;add(consumption,id,allocated);
    rows.push({id,needed,available,allocated,missing:needed-allocated});
@@ -159,6 +183,8 @@ export function completeGoal(state,id,db,actual={}){
   if(!db.catalog.materials.some(m=>m.id===material&&m.xp)||!integer(n))throw Error('Devolução de EXP inválida.');
   next.inventory[material]=(next.inventory[material]||0)+n;
  }
+ const shared=sharedGoal(state.goals.find(g=>g.id===id),state.goals,db);
+ goal.current=clone(shared.goal.current);goal.target=clone(shared.goal.target);
  const req=requirements(goal,db);
  const characterXp=actual.characterXp??(goal.current.level===goal.target.level?goal.current.xp:0);
  const weaponXp=actual.weaponXp??(goal.weapon?.current.level===goal.weapon?.target.level?goal.weapon?.current.xp||0:0);
@@ -173,7 +199,16 @@ export function completeGoal(state,id,db,actual={}){
  if((consumption.shell||0)<minimumShell)throw Error('Os créditos consumidos não cobrem a evolução registrada.');
  goal.current=clone(goal.target);goal.current.xp=characterXp;
  if(goal.weapon){goal.weapon.current=clone(goal.weapon.target);goal.weapon.current.xp=weaponXp;}
- validateGoal(goal,db);goal.done=true;return next;
+ validateGoal(goal,db);goal.done=true;
+ const group=db.catalog.characters.find(c=>c.id===goal.charId)?.sharedProgress;
+ if(group)for(const peer of next.goals){
+  if(peer===goal||db.catalog.characters.find(c=>c.id===peer.charId)?.sharedProgress!==group)continue;
+  peer.current.level=goal.current.level;peer.current.ascension=goal.current.ascension;peer.current.xp=goal.current.xp;
+  peer.target.level=Math.max(peer.target.level,peer.current.level);
+  peer.target.ascension=Math.max(peer.target.ascension,peer.current.ascension);
+  validateGoal(peer,db);
+ }
+ return next;
 }
 export function estimateFarm(missing,average,waveplates,dailyBudget){
  if(missing===0)return {runs:0,waveplates:0,days:0};

@@ -1,0 +1,69 @@
+Total Ascension Materials for Cantarella
+How to Get	Materials
+Normal Enemies	
+LF Polygon Core LF Polygon Core x4
+MF Polygon Core MF Polygon Core x12
+HF Polygon Core HF Polygon Core x12
+FF Polygon Core FF Polygon Core x4
+World Boss	
+Cleansing Conch Cleansing Conch x46
+Overworld Material	
+Seaside Cendrelis Seaside Cendrelis x60
+Currency	
+Shell Credit Shell Credit x170,000
+Cantarella's ascension materials are composed of the Seaside Cendrelis, Cleansing Conch, and the Polygon Core materials from echoes in Rinascita. In addition, you will need a total of 170,000 Shell Credits to fully upgrade Cantarella.
+
+Total Forte Materials for Cantarella
+How to Get	Materials
+Normal Enemies	
+LF Polygon Core LF Polygon Core x25
+MF Polygon Core MF Polygon Core x28
+HF Polygon Core HF Polygon Core x40
+FF Polygon Core FF Polygon Core x57
+Forgery Challenge	
+Lento Helix Lento Helix x25
+Adagio Helix Adagio Helix x28
+Andante Helix Andante Helix x55
+Presto Helix Presto Helix x67
+Weekly Boss	
+When Irises Bloom When Irises Bloom x26
+Currency	
+Shell Credit Shell Credit x2,030,000
+To upgrade Cantarella's Forte, you will need Helix materials from Forgery Challenges, the potential weekly boss drop from Fleurdelys, and more Polygon Core materials from echoes in Rinascita. You will also need 2,030,000 Shell Credits to fully upgrade all the Forte Skills.
+
+Cantarella Ascension Materials
+Character Ascension Materials
+Rank 1
+20 ? 40	
+LF Polygon Core LF Polygon Core x4
+Shell Credit Shell Credit x5,000
+Rank 2
+40 ? 50	
+Cleansing Conch Cleansing Conch x3
+Seaside Cendrelis Seaside Cendrelis x4
+MF Polygon Core MF Polygon Core x4
+Shell Credit Shell Credit x10,000
+Rank 3
+50 ? 60	
+Cleansing Conch Cleansing Conch x6
+Seaside Cendrelis Seaside Cendrelis x8
+MF Polygon Core MF Polygon Core x8
+Shell Credit Shell Credit x15,000
+Rank 4
+60 ? 70	
+Cleansing Conch Cleansing Conch x9
+Seaside Cendrelis Seaside Cendrelis x12
+HF Polygon Core HF Polygon Core x4
+Shell Credit Shell Credit x20,000
+Rank 5
+70 ? 80	
+Cleansing Conch Cleansing Conch x12
+Seaside Cendrelis Seaside Cendrelis x16
+HF Polygon Core HF Polygon Core x8
+Shell Credit Shell Credit x40,000
+Rank 6
+80 ? 90	
+Cleansing Conch Cleansing Conch x16
+Seaside Cendrelis Seaside Cendrelis x20
+FF Polygon Core FF Polygon Core x4
+Shell Credit Shell Credit x80,000

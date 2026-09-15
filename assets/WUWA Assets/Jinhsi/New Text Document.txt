@@ -1,0 +1,69 @@
+Total Ascension Materials for Jinhsi
+How to Get	Materials
+Normal Enemies	
+LF Howler Core LF Howler Core x4
+MF Howler Core MF Howler Core x12
+HF Howler Core HF Howler Core x12
+FF Howler Core FF Howler Core x4
+World Boss	
+Elegy Tacet Core Elegy Tacet Core x46
+Overworld Material	
+Loong Loong's Pearl x60
+Currency	
+Shell Credit Shell Credit x170,000
+Jinhsi's ascension materials are composed of the Loong's Pearl, Elegy Tacet Core, and the Howler Core materials from echoes in Huanglong. In addition, you will need a total of 170,000 Shell Credits to fully upgrade Jinhsi.
+
+Total Forte Materials for Jinhsi
+How to Get	Materials
+Normal Enemies	
+LF Howler Core LF Howler Core x25
+MF Howler Core MF Howler Core x28
+HF Howler Core HF Howler Core x40
+FF Howler Core FF Howler Core x57
+Forgery Challenge	
+Waveworn Residue 210 Waveworn Residue 210 x25
+Waveworn Residue 226 Waveworn Residue 226 x28
+Waveworn Residue 235 Waveworn Residue 235 x55
+Waveworn Residue 239 Waveworn Residue 239 x67
+Weekly Boss	
+Sentinel Sentinel's Dagger x26
+Currency	
+Shell Credit Shell Credit x2,030,000
+To upgrade Jinhsi's Forte, you will need Waveworn Residue materials from Forgery Challenge, the weekly boss drop from Jue, and more Howler Core materials from echoes in Huanglong. You will also need 2,030,000 Shell Credits to fully upgrade all the Forte Skills.
+
+Jinhsi Ascension Materials
+Character Ascension Materials
+Rank 1
+20 ? 40	
+LF Tidal Residuum LF Tidal Residuum x4
+Shell Credit Shell Credit x5,000
+Rank 2
+40 ? 50	
+Cleansing Conch Cleansing Conch x3
+Firecracker Jewelweed Firecracker Jewelweed x4
+MF Tidal Residuum MF Tidal Residuum x4
+Shell Credit Shell Credit x10,000
+Rank 3
+50 ? 60	
+Cleansing Conch Cleansing Conch x6
+Firecracker Jewelweed Firecracker Jewelweed x8
+MF Tidal Residuum MF Tidal Residuum x8
+Shell Credit Shell Credit x15,000
+Rank 4
+60 ? 70	
+Cleansing Conch Cleansing Conch x9
+Firecracker Jewelweed Firecracker Jewelweed x12
+HF Tidal Residuum HF Tidal Residuum x4
+Shell Credit Shell Credit x20,000
+Rank 5
+70 ? 80	
+Cleansing Conch Cleansing Conch x12
+Firecracker Jewelweed Firecracker Jewelweed x16
+HF Tidal Residuum HF Tidal Residuum x8
+Shell Credit Shell Credit x40,000
+Rank 6
+80 ? 90	
+Cleansing Conch Cleansing Conch x16
+Firecracker Jewelweed Firecracker Jewelweed x20
+FF Tidal Residuum FF Tidal Residuum x4
+Shell Credit Shell Credit x80,000

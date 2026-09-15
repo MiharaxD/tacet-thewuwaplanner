@@ -1,0 +1,72 @@
+Total Upgrade Materials for Galbrena
+Total Ascension Materials for Galbrena
+How to Get	Materials
+Normal Enemies	
+LF Tidal Residuum LF Tidal Residuum x4
+MF Tidal Residuum MF Tidal Residuum x12
+HF Tidal Residuum HF Tidal Residuum x12
+FF Tidal Residuum FF Tidal Residuum x4
+World Boss	
+Blighted Crown of Puppet King Blighted Crown of Puppet King x46
+Overworld Material	
+Stone Rose Stone Rose x60
+Currency	
+Shell Credit Shell Credit x170,000
+Galbrena's ascension materials are composed of the Stone Rose, Blighted Crown of the Puppet King, and the Tidal Residuum materials from echoes mostly in Rinascita. In addition, you will need a total of 170,000 Shell Credits to fully upgrade Galbrena.
+
+Total Forte Materials for Galbrena
+How to Get	Materials
+Normal Enemies	
+LF Tidal Residuum LF Tidal Residuum x25
+MF Tidal Residuum MF Tidal Residuum x28
+HF Tidal Residuum HF Tidal Residuum x40
+FF Tidal Residuum FF Tidal Residuum x57
+Forgery Challenge	
+Impure Phlogiston Impure Phlogiston x25
+Extracted Phlogiston Extracted Phlogiston x28
+Refined Phlogiston Refined Phlogiston x55
+Flawless Phlogiston Flawless Phlogiston x67
+Weekly Boss	
+Curse of the Abyss Curse of the Abyss x26
+Currency	
+Shell Credit Shell Credit x2,030,000
+To upgrade Galbrena's Forte, you will need Phlogiston materials from Forgery Challenges, and more Tidal Residuum materials from echoes mostly in Rinascita. You will also need 2,030,000 Shell Credits to fully upgrade all the Forte Skills.
+
+The material Curse of the Abyss is a new drop from a new weekly boss in Version 2.7. There is no announcement on who this new boss is, but expect some updates when we know more!
+
+Galbrena Ascension Materials
+Character Ascension Materials
+Rank 1
+20 ? 40	
+LF Tidal Residuum LF Tidal Residuum x4
+Shell Credit Shell Credit x5,000
+Rank 2
+40 ? 50	
+Blighted Crown of Puppet King Blighted Crown of Puppet King x3
+Stone Rose Stone Rose x4
+MF Tidal Residuum MF Tidal Residuum x4
+Shell Credit Shell Credit x10,000
+Rank 3
+50 ? 60	
+Blighted Crown of Puppet King Blighted Crown of Puppet King x6
+Stone Rose Stone Rose x8
+MF Tidal Residuum MF Tidal Residuum x8
+Shell Credit Shell Credit x15,000
+Rank 4
+60 ? 70	
+Blighted Crown of Puppet King Blighted Crown of Puppet King x9
+Stone Rose Stone Rose x12
+HF Tidal Residuum HF Tidal Residuum x4
+Shell Credit Shell Credit x20,000
+Rank 5
+70 ? 80	
+Blighted Crown of Puppet King Blighted Crown of Puppet King x12
+Stone Rose Stone Rose x16
+HF Tidal Residuum HF Tidal Residuum x8
+Shell Credit Shell Credit x40,000
+Rank 6
+80 ? 90	
+Blighted Crown of Puppet King Blighted Crown of Puppet King x16
+Stone Rose Stone Rose x20
+FF Tidal Residuum FF Tidal Residuum x4
+Shell Credit Shell Credit x80,000

@@ -13,7 +13,7 @@ export function materialMeta(id,db){
  if(id.startsWith('xp-'))return {name:id==='xp-potion'?'EXP de personagem':'EXP de arma',category:'Experiência',origin:'Simulation Training',activity:'simulation',sources:[id==='xp-potion'?'level':'weapon-level'],rarity:null};
  return db.catalog.materials.find(m=>m.id===id)||{name:id,origin:'Não verificado',category:'Não verificado',sources:[]};
 }
-export function materialIcon(m){return `<span class="material-icon rarity-${m.rarity||0}" aria-hidden="true">${icon(m.category==='Coleta'?'leaf':m.category==='Experiência'?'inventory':m.category==='Moeda'?'diamond':m.category==='Semanal'?'events':'farm')}</span>`;}
+export function materialIcon(m){return `<span class="material-icon rarity-${m.rarity||0}" aria-hidden="true">${icon(m.category==='Coleta'?'leaf':m.category==='Experiência'?'inventory':m.category==='Moeda'?'diamond':m.category==='Semanal'?'events':'farm')}${m.image?`<img src="${escape(m.image)}" alt="" loading="lazy" width="40" height="40">`:''}</span>`;}
 export function materialTable(rows,db,{compactView=false}={}){
  if(!rows.length)return empty('Nenhum material necessário','Adicione uma meta ou ajuste o nível desejado.');
  return `<div class="table-scroll"><table class="materials-table"><thead><tr><th>Material / origem</th><th>Necessário</th>${compactView?'':'<th>Disponível¹</th>'}<th>Reservado</th><th>Falta</th></tr></thead><tbody>${rows.map(row=>{

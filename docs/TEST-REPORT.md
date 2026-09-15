@@ -57,3 +57,21 @@ Validação adicional no Brave, em `http://localhost:5173`:
 4. O log de erros do navegador não apresentou erros. As alterações de teste foram desfeitas ao final.
 
 O bloqueio do armazenamento foi simulado nos testes automatizados; as configurações de segurança do navegador não foram alteradas. O teste de fila usa uma simulação de exclusão mútua; o fluxo de conflito entre duas abas foi verificado também no navegador real.
+# Expansão WUWA Assets — 15/09/2026
+
+- `node --test tests/*.test.mjs`: **76 testes passaram**, incluindo oito novos testes do catálogo.
+- Cobertura: todas as pastas fornecidas; 57 personagens/formas; arquivos de imagem de todos os personagens e 153 materiais; builds completos com IDs válidos; backup dos novos materiais; correção da tabela colada na Jinhsi; materiais de Luuk Herssen; compartilhamento de nível/ascensão do Rover com Fortes independentes, sem consumo duplicado.
+- `node scripts/catalog.mjs`: regeneração offline concluída com os 57 personagens e 153 materiais.
+- `node scripts/build.mjs`: build validado em `dist/`.
+- Navegador: catálogo com 57 opções carregou; retratos do início da lista conferidos por screenshot; busca por Rover retornou as três formas.
+- Limitação da verificação visual: após alterações finais no seletor e na integração WebMCP, a conexão do navegador ao localhost falhou com `ERR_CONNECTION_REFUSED`. O servidor respondeu HTTP 200 na verificação pelo terminal. Diálogos, inventário e mobile não tiveram conferência visual final nesta execução.
+
+---
+
+## Tema do logo — 15/09/2026
+
+Logo sem subtítulo conferido no desktop e no topo mobile a 390 × 844. Tipografia original (DM Sans/Manrope) restaurada conforme pedido. Inventário conferido visualmente com o tema azul e marfim. Build concluído; os 76 testes existentes passaram.
+
+## Menu e retratos — 15/09/2026
+
+Destaque móvel do menu com duração de 320 ms e preferência de movimento reduzido respeitada. Navegação até Inventário conferida com indicador alinhado ao destino. Retratos com preenchimento e zoom conferidos por screenshot no desktop e a 390 × 844. Os 76 testes existentes passaram; build e diff check concluídos.

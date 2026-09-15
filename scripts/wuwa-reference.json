@@ -1,0 +1,3130 @@
+{
+  "consultedAt": "2026-09-15",
+  "characters": [
+    {
+      "characterId": 1403,
+      "rarity": 4,
+      "name": "Aalto",
+      "element": {
+        "text": "Aero",
+        "common": "Wind",
+        "id": 4
+      },
+      "weapon": {
+        "text": "Pistols",
+        "common": "Gun",
+        "id": 3
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_12_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_qiushui_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_qiushui_UI.webp"
+      }
+    },
+    {
+      "characterId": 1210,
+      "rarity": 5,
+      "name": "Aemeath",
+      "element": {
+        "text": "Fusion",
+        "common": "Fire",
+        "id": 2
+      },
+      "weapon": {
+        "text": "Sword",
+        "common": "Knife",
+        "id": 2
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_53_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Aimisi_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Aimisi_UI.webp"
+      }
+    },
+    {
+      "characterId": 1306,
+      "rarity": 5,
+      "name": "Augusta",
+      "element": {
+        "text": "Electro",
+        "common": "Thunder",
+        "id": 3
+      },
+      "weapon": {
+        "text": "Broadblade",
+        "common": "Sword",
+        "id": 1
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_51_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_aogusita_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_aogusita_UI.webp"
+      }
+    },
+    {
+      "characterId": 1103,
+      "rarity": 4,
+      "name": "Baizhi",
+      "element": {
+        "text": "Glacio",
+        "common": "Ice",
+        "id": 1
+      },
+      "weapon": {
+        "text": "Rectifier",
+        "common": "Magic",
+        "id": 5
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_6_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_bailian_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_bailian_UI.webp"
+      }
+    },
+    {
+      "characterId": 1206,
+      "rarity": 5,
+      "name": "Brant",
+      "element": {
+        "text": "Fusion",
+        "common": "Fire",
+        "id": 2
+      },
+      "weapon": {
+        "text": "Sword",
+        "common": "Knife",
+        "id": 2
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_44_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Bulante_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Bulante_UI.webp"
+      }
+    },
+    {
+      "characterId": 1307,
+      "rarity": 4,
+      "name": "Buling",
+      "element": {
+        "text": "Electro",
+        "common": "Thunder",
+        "id": 3
+      },
+      "weapon": {
+        "text": "Rectifier",
+        "common": "Magic",
+        "id": 5
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_58_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Buling_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Buling_UI.webp"
+      }
+    },
+    {
+      "characterId": 1301,
+      "rarity": 5,
+      "name": "Calcharo",
+      "element": {
+        "text": "Electro",
+        "common": "Thunder",
+        "id": 3
+      },
+      "weapon": {
+        "text": "Broadblade",
+        "common": "Sword",
+        "id": 1
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_18_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_kakaluo_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_kakaluo_UI.webp"
+      }
+    },
+    {
+      "characterId": 1603,
+      "rarity": 5,
+      "name": "Camellya",
+      "element": {
+        "text": "Havoc",
+        "common": "Dark",
+        "id": 6
+      },
+      "weapon": {
+        "text": "Sword",
+        "common": "Knife",
+        "id": 2
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_29_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_chun_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_chun_UI.webp"
+      }
+    },
+    {
+      "characterId": 1607,
+      "rarity": 5,
+      "name": "Cantarella",
+      "element": {
+        "text": "Havoc",
+        "common": "Dark",
+        "id": 6
+      },
+      "weapon": {
+        "text": "Rectifier",
+        "common": "Magic",
+        "id": 5
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_34_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_kanteleila_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_kanteleila_UI.webp"
+      }
+    },
+    {
+      "characterId": 1107,
+      "rarity": 5,
+      "name": "Carlotta",
+      "element": {
+        "text": "Glacio",
+        "common": "Ice",
+        "id": 1
+      },
+      "weapon": {
+        "text": "Pistols",
+        "common": "Gun",
+        "id": 3
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_32_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_kelaita_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_kelaita_UI.webp"
+      }
+    },
+    {
+      "characterId": 1409,
+      "rarity": 5,
+      "name": "Cartethyia",
+      "element": {
+        "text": "Aero",
+        "common": "Wind",
+        "id": 4
+      },
+      "weapon": {
+        "text": "Sword",
+        "common": "Knife",
+        "id": 2
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_40_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_katixiya_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_katixiya_UI.webp"
+      }
+    },
+    {
+      "characterId": 1205,
+      "rarity": 5,
+      "name": "Changli",
+      "element": {
+        "text": "Fusion",
+        "common": "Fire",
+        "id": 2
+      },
+      "weapon": {
+        "text": "Sword",
+        "common": "Knife",
+        "id": 2
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_26_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_changli_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_changli_UI.webp"
+      }
+    },
+    {
+      "characterId": 1508,
+      "rarity": 5,
+      "name": "Chisa",
+      "element": {
+        "text": "Havoc",
+        "common": "Dark",
+        "id": 6
+      },
+      "weapon": {
+        "text": "Broadblade",
+        "common": "Sword",
+        "id": 1
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_57_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Qianxiao_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Qianxiao_UI.webp"
+      }
+    },
+    {
+      "characterId": 1202,
+      "rarity": 4,
+      "name": "Chixia",
+      "element": {
+        "text": "Fusion",
+        "common": "Fire",
+        "id": 2
+      },
+      "weapon": {
+        "text": "Pistols",
+        "common": "Gun",
+        "id": 3
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_2_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_maxiaofang_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_maxiaofang_UI.webp"
+      }
+    },
+    {
+      "characterId": 1407,
+      "rarity": 5,
+      "name": "Ciaccona",
+      "element": {
+        "text": "Aero",
+        "common": "Wind",
+        "id": 4
+      },
+      "weapon": {
+        "text": "Pistols",
+        "common": "Gun",
+        "id": 3
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_37_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_xiakong_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_xiakong_UI.webp"
+      }
+    },
+    {
+      "characterId": 1602,
+      "rarity": 4,
+      "name": "Danjin",
+      "element": {
+        "text": "Havoc",
+        "common": "Dark",
+        "id": 6
+      },
+      "weapon": {
+        "text": "Sword",
+        "common": "Knife",
+        "id": 2
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_10_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_micai_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_micai_UI.webp"
+      }
+    },
+    {
+      "characterId": 1211,
+      "rarity": 5,
+      "name": "Denia",
+      "element": {
+        "text": "Fusion",
+        "common": "Fire",
+        "id": 2
+      },
+      "weapon": {
+        "text": "Rectifier",
+        "common": "Magic",
+        "id": 5
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_64_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_daniya_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_daniya_UI.webp"
+      }
+    },
+    {
+      "characterId": 1203,
+      "rarity": 5,
+      "name": "Encore",
+      "element": {
+        "text": "Fusion",
+        "common": "Fire",
+        "id": 2
+      },
+      "weapon": {
+        "text": "Rectifier",
+        "common": "Magic",
+        "id": 5
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_8_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_anke_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_anke_UI.webp"
+      }
+    },
+    {
+      "characterId": 1208,
+      "rarity": 5,
+      "name": "Galbrena",
+      "element": {
+        "text": "Fusion",
+        "common": "Fire",
+        "id": 2
+      },
+      "weapon": {
+        "text": "Pistols",
+        "common": "Gun",
+        "id": 3
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_55_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_jiabeilina_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_jiabeilina_UI.webp"
+      }
+    },
+    {
+      "characterId": 1108,
+      "rarity": 5,
+      "name": "Hiyuki",
+      "element": {
+        "text": "Glacio",
+        "common": "Ice",
+        "id": 1
+      },
+      "weapon": {
+        "text": "Sword",
+        "common": "Knife",
+        "id": 2
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_67_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Feixue_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Feixue_UI.webp"
+      }
+    },
+    {
+      "characterId": 1410,
+      "rarity": 5,
+      "name": "Iuno",
+      "element": {
+        "text": "Aero",
+        "common": "Wind",
+        "id": 4
+      },
+      "weapon": {
+        "text": "Gauntlets",
+        "common": "Fist",
+        "id": 4
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_48_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_younuo_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_younuo_UI.webp"
+      }
+    },
+    {
+      "characterId": 1405,
+      "rarity": 5,
+      "name": "Jianxin",
+      "element": {
+        "text": "Aero",
+        "common": "Wind",
+        "id": 4
+      },
+      "weapon": {
+        "text": "Gauntlets",
+        "common": "Fist",
+        "id": 4
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_23_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_jiexin_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_jiexin_UI.webp"
+      }
+    },
+    {
+      "characterId": 1212,
+      "rarity": 5,
+      "name": "Jingran",
+      "element": {
+        "text": "Fusion",
+        "common": "Fire",
+        "id": 2
+      },
+      "weapon": {
+        "text": "Broadblade",
+        "common": "Sword",
+        "id": 1
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_74_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_jingran_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_jingran_UI.webp"
+      }
+    },
+    {
+      "characterId": 1304,
+      "rarity": 5,
+      "name": "Jinhsi",
+      "element": {
+        "text": "Spectro",
+        "common": "Light",
+        "id": 5
+      },
+      "weapon": {
+        "text": "Broadblade",
+        "common": "Sword",
+        "id": 1
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_24_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_jinxi_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_jinxi_UI.webp"
+      }
+    },
+    {
+      "characterId": 1404,
+      "rarity": 5,
+      "name": "Jiyan",
+      "element": {
+        "text": "Aero",
+        "common": "Wind",
+        "id": 4
+      },
+      "weapon": {
+        "text": "Broadblade",
+        "common": "Sword",
+        "id": 1
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_11_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_jiyan_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_jiyan_UI.webp"
+      }
+    },
+    {
+      "characterId": 1104,
+      "rarity": 5,
+      "name": "Lingyang",
+      "element": {
+        "text": "Glacio",
+        "common": "Ice",
+        "id": 1
+      },
+      "weapon": {
+        "text": "Gauntlets",
+        "common": "Fist",
+        "id": 4
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_14_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_lingyang_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_lingyang_UI.webp"
+      }
+    },
+    {
+      "characterId": 1109,
+      "rarity": 5,
+      "name": "Lucilla",
+      "element": {
+        "text": "Glacio",
+        "common": "Ice",
+        "id": 1
+      },
+      "weapon": {
+        "text": "Rectifier",
+        "common": "Magic",
+        "id": 5
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_66_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Luosela_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Luosela_UI.webp"
+      }
+    },
+    {
+      "characterId": 1511,
+      "rarity": 5,
+      "name": "Lucy",
+      "element": {
+        "text": "Spectro",
+        "common": "Light",
+        "id": 5
+      },
+      "weapon": {
+        "text": "Pistols",
+        "common": "Gun",
+        "id": 3
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_68_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Luxi_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Luxi_UI.webp"
+      }
+    },
+    {
+      "characterId": 1504,
+      "rarity": 4,
+      "name": "Lumi",
+      "element": {
+        "text": "Electro",
+        "common": "Thunder",
+        "id": 3
+      },
+      "weapon": {
+        "text": "Broadblade",
+        "common": "Sword",
+        "id": 1
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_30_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_dengdeng_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_dengdeng_UI.webp"
+      }
+    },
+    {
+      "characterId": 1207,
+      "rarity": 5,
+      "name": "Lupa",
+      "element": {
+        "text": "Fusion",
+        "common": "Fire",
+        "id": 2
+      },
+      "weapon": {
+        "text": "Broadblade",
+        "common": "Sword",
+        "id": 1
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_46_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_lupa_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_lupa_UI.webp"
+      }
+    },
+    {
+      "characterId": 1510,
+      "rarity": 5,
+      "name": "Luuk Herssen",
+      "element": {
+        "text": "Spectro",
+        "common": "Light",
+        "id": 5
+      },
+      "weapon": {
+        "text": "Gauntlets",
+        "common": "Fist",
+        "id": 4
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_54_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Luhesi_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Luhesi_UI.webp"
+      }
+    },
+    {
+      "characterId": 1509,
+      "rarity": 5,
+      "name": "Lynae",
+      "element": {
+        "text": "Spectro",
+        "common": "Light",
+        "id": 5
+      },
+      "weapon": {
+        "text": "Pistols",
+        "common": "Gun",
+        "id": 3
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_60_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Linnai_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Linnai_UI.webp"
+      }
+    },
+    {
+      "characterId": 1209,
+      "rarity": 5,
+      "name": "Mornye",
+      "element": {
+        "text": "Fusion",
+        "common": "Fire",
+        "id": 2
+      },
+      "weapon": {
+        "text": "Broadblade",
+        "common": "Sword",
+        "id": 1
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_61_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Moning_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Moning_UI.webp"
+      }
+    },
+    {
+      "characterId": 1204,
+      "rarity": 4,
+      "name": "Mortefi",
+      "element": {
+        "text": "Fusion",
+        "common": "Fire",
+        "id": 2
+      },
+      "weapon": {
+        "text": "Pistols",
+        "common": "Gun",
+        "id": 3
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_13_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_baer_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_baer_UI.webp"
+      }
+    },
+    {
+      "characterId": 1506,
+      "rarity": 5,
+      "name": "Phoebe",
+      "element": {
+        "text": "Spectro",
+        "common": "Light",
+        "id": 5
+      },
+      "weapon": {
+        "text": "Rectifier",
+        "common": "Magic",
+        "id": 5
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_45_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Feibi_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Feibi_UI.webp"
+      }
+    },
+    {
+      "characterId": 1608,
+      "rarity": 5,
+      "name": "Phrolova",
+      "element": {
+        "text": "Havoc",
+        "common": "Dark",
+        "id": 6
+      },
+      "weapon": {
+        "text": "Rectifier",
+        "common": "Magic",
+        "id": 5
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_41_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_fuluoluo_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_fuluoluo_UI.webp"
+      }
+    },
+    {
+      "characterId": 1413,
+      "rarity": 5,
+      "name": "Qingxiao",
+      "element": {
+        "text": "Aero",
+        "common": "Wind",
+        "id": 4
+      },
+      "weapon": {
+        "text": "Sword",
+        "common": "Knife",
+        "id": 2
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_73_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_qingxiao_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_qingxiao_UI.webp"
+      }
+    },
+    {
+      "characterId": 1411,
+      "rarity": 5,
+      "name": "Qiuyuan",
+      "element": {
+        "text": "Aero",
+        "common": "Wind",
+        "id": 4
+      },
+      "weapon": {
+        "text": "Sword",
+        "common": "Knife",
+        "id": 2
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_56_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Qiuyuan_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Qiuyuan_UI.webp"
+      }
+    },
+    {
+      "characterId": 1308,
+      "rarity": 5,
+      "name": "Rebecca",
+      "element": {
+        "text": "Electro",
+        "common": "Thunder",
+        "id": 3
+      },
+      "weapon": {
+        "text": "Pistols",
+        "common": "Gun",
+        "id": 3
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_69_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Libeika_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Libeika_UI.webp"
+      }
+    },
+    {
+      "characterId": 1606,
+      "rarity": 5,
+      "name": "Roccia",
+      "element": {
+        "text": "Havoc",
+        "common": "Dark",
+        "id": 6
+      },
+      "weapon": {
+        "text": "Gauntlets",
+        "common": "Fist",
+        "id": 4
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_33_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_luokeke_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_luokeke_UI.webp"
+      }
+    },
+    {
+      "characterId": 1408,
+      "rarity": 5,
+      "name": "Rover: Aero",
+      "element": {
+        "text": "Aero",
+        "common": "Wind",
+        "id": 4
+      },
+      "weapon": {
+        "text": "Sword",
+        "common": "Knife",
+        "id": 2
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_5_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_zhujue_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_zhujue_UI.webp"
+      }
+    },
+    {
+      "characterId": 1310,
+      "rarity": 5,
+      "name": "Rover: Electro",
+      "element": {
+        "text": "Electro",
+        "common": "Thunder",
+        "id": 3
+      },
+      "weapon": {
+        "text": "Sword",
+        "common": "Knife",
+        "id": 2
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_5_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_zhujue_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_zhujue_UI.webp"
+      }
+    },
+    {
+      "characterId": 1604,
+      "rarity": 5,
+      "name": "Rover: Havoc",
+      "element": {
+        "text": "Havoc",
+        "common": "Dark",
+        "id": 6
+      },
+      "weapon": {
+        "text": "Sword",
+        "common": "Knife",
+        "id": 2
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_5_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_zhujue_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_zhujue_UI.webp"
+      }
+    },
+    {
+      "characterId": 1502,
+      "rarity": 5,
+      "name": "Rover: Spectro",
+      "element": {
+        "text": "Spectro",
+        "common": "Light",
+        "id": 5
+      },
+      "weapon": {
+        "text": "Sword",
+        "common": "Knife",
+        "id": 2
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_5_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_zhujue_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_zhujue_UI.webp"
+      }
+    },
+    {
+      "characterId": 1102,
+      "rarity": 4,
+      "name": "Sanhua",
+      "element": {
+        "text": "Glacio",
+        "common": "Ice",
+        "id": 1
+      },
+      "weapon": {
+        "text": "Sword",
+        "common": "Knife",
+        "id": 2
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_7_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_shanhua_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_shanhua_UI.webp"
+      }
+    },
+    {
+      "characterId": 1505,
+      "rarity": 5,
+      "name": "Shorekeeper",
+      "element": {
+        "text": "Spectro",
+        "common": "Light",
+        "id": 5
+      },
+      "weapon": {
+        "text": "Rectifier",
+        "common": "Magic",
+        "id": 5
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_28_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_shouanren_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_shouanren_UI.webp"
+      }
+    },
+    {
+      "characterId": 1412,
+      "rarity": 5,
+      "name": "Sigrika",
+      "element": {
+        "text": "Aero",
+        "common": "Wind",
+        "id": 4
+      },
+      "weapon": {
+        "text": "Gauntlets",
+        "common": "Fist",
+        "id": 4
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_65_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_xigelika_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_xigelika_UI.webp"
+      }
+    },
+    {
+      "characterId": 1110,
+      "rarity": 5,
+      "name": "Suisui",
+      "element": {
+        "text": "Glacio",
+        "common": "Ice",
+        "id": 1
+      },
+      "weapon": {
+        "text": "Rectifier",
+        "common": "Magic",
+        "id": 5
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_71_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Suisui_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Suisui_UI.webp"
+      }
+    },
+    {
+      "characterId": 1601,
+      "rarity": 4,
+      "name": "Taoqi",
+      "element": {
+        "text": "Havoc",
+        "common": "Dark",
+        "id": 6
+      },
+      "weapon": {
+        "text": "Broadblade",
+        "common": "Sword",
+        "id": 1
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_9_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_taohua_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_taohua_UI.webp"
+      }
+    },
+    {
+      "characterId": 1503,
+      "rarity": 5,
+      "name": "Verina",
+      "element": {
+        "text": "Spectro",
+        "common": "Light",
+        "id": 5
+      },
+      "weapon": {
+        "text": "Rectifier",
+        "common": "Magic",
+        "id": 5
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_3_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_jueyuan_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_jueyuan_UI.webp"
+      }
+    },
+    {
+      "characterId": 1305,
+      "rarity": 5,
+      "name": "Xiangli Yao",
+      "element": {
+        "text": "Electro",
+        "common": "Thunder",
+        "id": 3
+      },
+      "weapon": {
+        "text": "Gauntlets",
+        "common": "Fist",
+        "id": 4
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_25_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_xiangliyao_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_xiangliyao_UI.webp"
+      }
+    },
+    {
+      "characterId": 1402,
+      "rarity": 4,
+      "name": "Yangyang",
+      "element": {
+        "text": "Aero",
+        "common": "Wind",
+        "id": 4
+      },
+      "weapon": {
+        "text": "Sword",
+        "common": "Knife",
+        "id": 2
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_1_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_yangyang_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_yangyang_UI.webp"
+      }
+    },
+    {
+      "characterId": 1610,
+      "rarity": 5,
+      "name": "Yangyang: Xuanling",
+      "element": {
+        "text": "Havoc",
+        "common": "Dark",
+        "id": 6
+      },
+      "weapon": {
+        "text": "Sword",
+        "common": "Knife",
+        "id": 2
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_70_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Xuanling_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Xuanling_UI.webp"
+      }
+    },
+    {
+      "characterId": 1302,
+      "rarity": 5,
+      "name": "Yinlin",
+      "element": {
+        "text": "Electro",
+        "common": "Thunder",
+        "id": 3
+      },
+      "weapon": {
+        "text": "Rectifier",
+        "common": "Magic",
+        "id": 5
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_17_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_yinlin_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_yinlin_UI.webp"
+      }
+    },
+    {
+      "characterId": 1106,
+      "rarity": 4,
+      "name": "Youhu",
+      "element": {
+        "text": "Glacio",
+        "common": "Ice",
+        "id": 1
+      },
+      "weapon": {
+        "text": "Gauntlets",
+        "common": "Fist",
+        "id": 4
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_31_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Youhu_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Youhu_UI.webp"
+      }
+    },
+    {
+      "characterId": 1303,
+      "rarity": 4,
+      "name": "Yuanwu",
+      "element": {
+        "text": "Electro",
+        "common": "Thunder",
+        "id": 3
+      },
+      "weapon": {
+        "text": "Gauntlets",
+        "common": "Fist",
+        "id": 4
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_15_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_yuanwu_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_yuanwu_UI.webp"
+      }
+    },
+    {
+      "characterId": 1507,
+      "rarity": 5,
+      "name": "Zani",
+      "element": {
+        "text": "Spectro",
+        "common": "Light",
+        "id": 5
+      },
+      "weapon": {
+        "text": "Gauntlets",
+        "common": "Fist",
+        "id": 4
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_38_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_zanni_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_zanni_UI.webp"
+      }
+    },
+    {
+      "characterId": 1105,
+      "rarity": 5,
+      "name": "Zhezhi",
+      "element": {
+        "text": "Glacio",
+        "common": "Ice",
+        "id": 1
+      },
+      "weapon": {
+        "text": "Rectifier",
+        "common": "Magic",
+        "id": 5
+      },
+      "assets": {
+        "icon": "UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_27_UI.webp",
+        "image": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_zhezhi_UI.webp",
+        "gacha": "UIResources/Common/Image/IconRolePile/T_IconRole_Pile_zhezhi_UI.webp"
+      }
+    }
+  ],
+  "materials": [
+    {
+      "itemId": 41100021,
+      "rarity": 2,
+      "name": "LF Howler Core",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_E_002_1_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 41100022,
+      "rarity": 3,
+      "name": "MF Howler Core",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_E_002_2_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 41100023,
+      "rarity": 4,
+      "name": "HF Howler Core",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_E_002_3_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 41100024,
+      "rarity": 5,
+      "name": "FF Howler Core",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_E_002_4_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 43020021,
+      "rarity": 2,
+      "name": "Impure Phlogiston",
+      "icon": "UIResources/Common/Image/IconWup/T_IconWup_01_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 43020022,
+      "rarity": 3,
+      "name": "Extracted Phlogiston",
+      "icon": "UIResources/Common/Image/IconWup/T_IconWup_02_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 43020023,
+      "rarity": 4,
+      "name": "Refined Phlogiston",
+      "icon": "UIResources/Common/Image/IconWup/T_IconWup_03_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 43020024,
+      "rarity": 5,
+      "name": "Flawless Phlogiston",
+      "icon": "UIResources/Common/Image/IconWup/T_IconWup_04_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 41400054,
+      "rarity": 4,
+      "name": "Roaring Rock Fist",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_L_011_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Resonator Ascension Material"
+      ]
+    },
+    {
+      "itemId": 42300090,
+      "rarity": 1,
+      "name": "Wintry Bell",
+      "icon": "UIResources/Common/Image/IconRup/T_IconRup_SM_Gat_31A_UI.webp",
+      "type": {
+        "typeId": 5,
+        "text": "Resources"
+      },
+      "tags": [
+        "Ascension Material"
+      ]
+    },
+    {
+      "itemId": 41400094,
+      "rarity": 4,
+      "name": "Monument Bell",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_L_003_1_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Skill Upgrade Material"
+      ]
+    },
+    {
+      "itemId": 41100061,
+      "rarity": 2,
+      "name": "LF Exoswarm Core",
+      "icon": "UIResources/Common/Image/IconWup/T_IconWup_021_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 41100062,
+      "rarity": 3,
+      "name": "MF Exoswarm Core",
+      "icon": "UIResources/Common/Image/IconWup/T_IconWup_022_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 41100063,
+      "rarity": 4,
+      "name": "HF Exoswarm Core",
+      "icon": "UIResources/Common/Image/IconWup/T_IconWup_023_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 41100064,
+      "rarity": 5,
+      "name": "FF Exoswarm Core",
+      "icon": "UIResources/Common/Image/IconWup/T_IconWup_024_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 43021011,
+      "rarity": 2,
+      "name": "Broken Wing Polarizer",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_O_010_1_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 43021012,
+      "rarity": 3,
+      "name": "Monowing Polarizer",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_O_010_2_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 43021013,
+      "rarity": 4,
+      "name": "Polywing Polarizer",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_O_010_3_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 43021014,
+      "rarity": 5,
+      "name": "Layered Wing Polarizer",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_O_010_4_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 41400284,
+      "rarity": 4,
+      "name": "Our Choice",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_L_024_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Resonator Ascension Material"
+      ]
+    },
+    {
+      "itemId": 42601420,
+      "rarity": 1,
+      "name": "Moss Amber",
+      "icon": "UIResources/Common/Image/IconC/T_IconC_072_UI.webp",
+      "type": {
+        "typeId": 5,
+        "text": "Resources"
+      },
+      "tags": [
+        "Ascension Material"
+      ]
+    },
+    {
+      "itemId": 41400294,
+      "rarity": 4,
+      "name": "Gold in Memory",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_L_025_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Skill Upgrade Material"
+      ]
+    },
+    {
+      "itemId": 41100051,
+      "rarity": 2,
+      "name": "LF Tidal Residuum",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_O_005_1_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 41100052,
+      "rarity": 3,
+      "name": "MF Tidal Residuum",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_O_005_2_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 41100053,
+      "rarity": 4,
+      "name": "HF Tidal Residuum",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_O_005_3_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 41100054,
+      "rarity": 5,
+      "name": "FF Tidal Residuum",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_O_005_4_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 43020041,
+      "rarity": 2,
+      "name": "Waveworn Residue 210",
+      "icon": "UIResources/Common/Image/IconWup/T_IconWup_009_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 43020042,
+      "rarity": 3,
+      "name": "Waveworn Residue 226",
+      "icon": "UIResources/Common/Image/IconWup/T_IconWup_010_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 43020043,
+      "rarity": 4,
+      "name": "Waveworn Residue 235",
+      "icon": "UIResources/Common/Image/IconWup/T_IconWup_011_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 43020044,
+      "rarity": 5,
+      "name": "Waveworn Residue 239",
+      "icon": "UIResources/Common/Image/IconWup/T_IconWup_012_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 41400234,
+      "rarity": 4,
+      "name": "Blighted Crown of Puppet King",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_L_020_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Resonator Ascension Material"
+      ]
+    },
+    {
+      "itemId": 42601300,
+      "rarity": 1,
+      "name": "Luminous Calendula",
+      "icon": "UIResources/Common/Image/IconC/T_IconC_058_UI.webp",
+      "type": {
+        "typeId": 5,
+        "text": "Resources"
+      },
+      "tags": [
+        "Ascension Material"
+      ]
+    },
+    {
+      "itemId": 41400204,
+      "rarity": 4,
+      "name": "When Irises Bloom",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_L_017_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Skill Upgrade Material"
+      ]
+    },
+    {
+      "itemId": 43020031,
+      "rarity": 2,
+      "name": "Lento Helix",
+      "icon": "UIResources/Common/Image/IconWup/T_IconWup_005_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 43020032,
+      "rarity": 3,
+      "name": "Adagio Helix",
+      "icon": "UIResources/Common/Image/IconWup/T_IconWup_006_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 43020033,
+      "rarity": 4,
+      "name": "Andante Helix",
+      "icon": "UIResources/Common/Image/IconWup/T_IconWup_007_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 43020034,
+      "rarity": 5,
+      "name": "Presto Helix",
+      "icon": "UIResources/Common/Image/IconWup/T_IconWup_008_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 42300050,
+      "rarity": 1,
+      "name": "Lanternberry",
+      "icon": "UIResources/Common/Image/IconC/T_IconC_denglongguo_UI.webp",
+      "type": {
+        "typeId": 5,
+        "text": "Resources"
+      },
+      "tags": [
+        "Ascension Material"
+      ]
+    },
+    {
+      "itemId": 43020011,
+      "rarity": 2,
+      "name": "Inert Metallic Drip",
+      "icon": "UIResources/Common/Image/IconWup/T_IconWup_Setpup_004_1_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 43020012,
+      "rarity": 3,
+      "name": "Reactive Metallic Drip",
+      "icon": "UIResources/Common/Image/IconWup/T_IconWup_Setpup_004_2_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 43020013,
+      "rarity": 4,
+      "name": "Polarized Metallic Drip",
+      "icon": "UIResources/Common/Image/IconWup/T_IconWup_Setpup_004_3_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 43020014,
+      "rarity": 5,
+      "name": "Heterized Metallic Drip",
+      "icon": "UIResources/Common/Image/IconWup/T_IconWup_Setpup_004_4_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 41400184,
+      "rarity": 4,
+      "name": "Blazing Bone",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_008_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Resonator Ascension Material"
+      ]
+    },
+    {
+      "itemId": 42601140,
+      "rarity": 1,
+      "name": "Golden Fleece",
+      "icon": "UIResources/Common/Image/IconC/T_IconC_045_UI.webp",
+      "type": {
+        "typeId": 5,
+        "text": "Resources"
+      },
+      "tags": [
+        "Ascension Material"
+      ]
+    },
+    {
+      "itemId": 41400194,
+      "rarity": 4,
+      "name": "The Netherworld's Stare",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_007_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Skill Upgrade Material"
+      ]
+    },
+    {
+      "itemId": 41100011,
+      "rarity": 2,
+      "name": "LF Whisperin Core",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_O_002_1_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 41100012,
+      "rarity": 3,
+      "name": "MF Whisperin Core",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_O_002_2_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 41100013,
+      "rarity": 4,
+      "name": "HF Whisperin Core",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_O_002_3_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 41100014,
+      "rarity": 5,
+      "name": "FF Whisperin Core",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_O_002_4_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 42300060,
+      "rarity": 1,
+      "name": "Pecok Flower",
+      "icon": "UIResources/Common/Image/IconRup/T_IconRup_SM_Gat_18A_UI.webp",
+      "type": {
+        "typeId": 5,
+        "text": "Resources"
+      },
+      "tags": [
+        "Ascension Material"
+      ]
+    },
+    {
+      "itemId": 41400254,
+      "rarity": 4,
+      "name": "Curse of the Abyss",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_L_021_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Skill Upgrade Material"
+      ]
+    },
+    {
+      "itemId": 41100031,
+      "rarity": 2,
+      "name": "Crude Ring",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_O_003_1_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 41100032,
+      "rarity": 3,
+      "name": "Basic Ring",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_O_003_2_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 41100033,
+      "rarity": 4,
+      "name": "Improved Ring",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_O_003_3_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 41100034,
+      "rarity": 5,
+      "name": "Tailored Ring",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_O_003_4_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 41400024,
+      "rarity": 4,
+      "name": "Thundering Tacet Core",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_L_001_1_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Resonator Ascension Material"
+      ]
+    },
+    {
+      "itemId": 42300030,
+      "rarity": 1,
+      "name": "Iris",
+      "icon": "UIResources/Common/Image/IconRup/T_IconRup_SM_Gat_33A_UI.webp",
+      "type": {
+        "typeId": 5,
+        "text": "Resources"
+      },
+      "tags": [
+        "Ascension Material"
+      ]
+    },
+    {
+      "itemId": 41400154,
+      "rarity": 4,
+      "name": "Topological Confinement",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_L_015_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Resonator Ascension Material"
+      ]
+    },
+    {
+      "itemId": 42310230,
+      "rarity": 1,
+      "name": "Nova",
+      "icon": "UIResources/Common/Image/IconTask/T_IconTask_Task_084_UI.webp",
+      "type": {
+        "typeId": 5,
+        "text": "Resources"
+      },
+      "tags": [
+        "Ascension Material"
+      ]
+    },
+    {
+      "itemId": 41400124,
+      "rarity": 4,
+      "name": "Dreamless Feather",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_L_013_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Skill Upgrade Material"
+      ]
+    },
+    {
+      "itemId": 41100041,
+      "rarity": 2,
+      "name": "LF Polygon Core",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_O_004_1_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 41100042,
+      "rarity": 3,
+      "name": "MF Polygon Core",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_O_004_2_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 41100043,
+      "rarity": 4,
+      "name": "HF Polygon Core",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_O_004_3_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 41100044,
+      "rarity": 5,
+      "name": "FF Polygon Core",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_O_004_4_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 41400164,
+      "rarity": 4,
+      "name": "Cleansing Conch",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_009_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Resonator Ascension Material"
+      ]
+    },
+    {
+      "itemId": 42601170,
+      "rarity": 1,
+      "name": "Seaside Cendrelis",
+      "icon": "UIResources/Common/Image/IconTask/T_IconTask_Task_144_UI.webp",
+      "type": {
+        "typeId": 5,
+        "text": "Resources"
+      },
+      "tags": [
+        "Ascension Material"
+      ]
+    },
+    {
+      "itemId": 41400174,
+      "rarity": 4,
+      "name": "Platinum Core",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_006_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Resonator Ascension Material"
+      ]
+    },
+    {
+      "itemId": 42601150,
+      "rarity": 1,
+      "name": "Sword Acorus",
+      "icon": "UIResources/Common/Image/IconC/T_IconC_044_UI.webp",
+      "type": {
+        "typeId": 5,
+        "text": "Resources"
+      },
+      "tags": [
+        "Ascension Material"
+      ]
+    },
+    {
+      "itemId": 41400214,
+      "rarity": 4,
+      "name": "Unfading Glory",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_L_018_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Resonator Ascension Material"
+      ]
+    },
+    {
+      "itemId": 42601220,
+      "rarity": 1,
+      "name": "Bamboo Iris",
+      "icon": "UIResources/Common/Image/IconC/T_IconC_bianzhuhua_UI.webp",
+      "type": {
+        "typeId": 5,
+        "text": "Resources"
+      },
+      "tags": [
+        "Ascension Material"
+      ]
+    },
+    {
+      "itemId": 41400044,
+      "rarity": 4,
+      "name": "Rage Tacet Core",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_L_008_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Resonator Ascension Material"
+      ]
+    },
+    {
+      "itemId": 42300120,
+      "rarity": 1,
+      "name": "Pavo Plum",
+      "icon": "UIResources/Common/Image/IconC/T_IconC_028_UI.webp",
+      "type": {
+        "typeId": 5,
+        "text": "Resources"
+      },
+      "tags": [
+        "Ascension Material"
+      ]
+    },
+    {
+      "itemId": 41400144,
+      "rarity": 4,
+      "name": "Sentinel's Dagger",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_005_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Skill Upgrade Material"
+      ]
+    },
+    {
+      "itemId": 41400244,
+      "rarity": 4,
+      "name": "Abyssal Husk",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_010_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Resonator Ascension Material"
+      ]
+    },
+    {
+      "itemId": 42601310,
+      "rarity": 1,
+      "name": "Summer Flower",
+      "icon": "UIResources/Common/Image/IconC/T_IconC_060_UI.webp",
+      "type": {
+        "typeId": 5,
+        "text": "Resources"
+      },
+      "tags": [
+        "Ascension Material"
+      ]
+    },
+    {
+      "itemId": 42300070,
+      "rarity": 1,
+      "name": "Belle Poppy",
+      "icon": "UIResources/Common/Image/IconRup/T_IconRup_SM_Gat_29A_UI.webp",
+      "type": {
+        "typeId": 5,
+        "text": "Resources"
+      },
+      "tags": [
+        "Ascension Material"
+      ]
+    },
+    {
+      "itemId": 41400014,
+      "rarity": 4,
+      "name": "Strife Tacet Core",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_L_004_1_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Resonator Ascension Material"
+      ]
+    },
+    {
+      "itemId": 41100071,
+      "rarity": 2,
+      "name": "LF Mech Core",
+      "icon": "UIResources/Common/Image/IconWup/T_IconWup_025_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 41100072,
+      "rarity": 3,
+      "name": "MF Mech Core",
+      "icon": "UIResources/Common/Image/IconWup/T_IconWup_026_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 41100073,
+      "rarity": 4,
+      "name": "HF Mech Core",
+      "icon": "UIResources/Common/Image/IconWup/T_IconWup_027_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 41100074,
+      "rarity": 5,
+      "name": "FF Mech Core",
+      "icon": "UIResources/Common/Image/IconWup/T_IconWup_028_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 43021031,
+      "rarity": 2,
+      "name": "Spliced String",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_O_012_1_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 43021032,
+      "rarity": 3,
+      "name": "Broken String",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_O_012_2_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 43021033,
+      "rarity": 4,
+      "name": "Solidified String",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_O_012_3_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 43021034,
+      "rarity": 5,
+      "name": "Melodic String",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_O_012_4_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 41400274,
+      "rarity": 4,
+      "name": "Burning Judgment",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_L_022_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Resonator Ascension Material"
+      ]
+    },
+    {
+      "itemId": 42601480,
+      "rarity": 1,
+      "name": "Dream of Stars",
+      "icon": "UIResources/Common/Image/IconC/T_IconC_075_UI.webp",
+      "type": {
+        "typeId": 5,
+        "text": "Resources"
+      },
+      "tags": [
+        "Ascension Material"
+      ]
+    },
+    {
+      "itemId": 41400304,
+      "rarity": 4,
+      "name": "We Who Question",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_L_026_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Skill Upgrade Material"
+      ]
+    },
+    {
+      "itemId": 41400114,
+      "rarity": 4,
+      "name": "Unending Destruction",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_L_014_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Skill Upgrade Material"
+      ]
+    },
+    {
+      "itemId": 42601280,
+      "rarity": 1,
+      "name": "Stone Rose",
+      "icon": "UIResources/Common/Image/IconC/T_IconC_056_UI.webp",
+      "type": {
+        "typeId": 5,
+        "text": "Resources"
+      },
+      "tags": [
+        "Ascension Material"
+      ]
+    },
+    {
+      "itemId": 42601490,
+      "rarity": 1,
+      "name": "Redbell",
+      "icon": "UIResources/Common/Image/IconC/T_IconC_076_UI.webp",
+      "type": {
+        "typeId": 5,
+        "text": "Resources"
+      },
+      "tags": [
+        "Ascension Material"
+      ]
+    },
+    {
+      "itemId": 43020051,
+      "rarity": 2,
+      "name": "Cadence Seed",
+      "icon": "UIResources/Common/Image/IconWup/T_IconWup_013_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 43020052,
+      "rarity": 3,
+      "name": "Cadence Bud",
+      "icon": "UIResources/Common/Image/IconWup/T_IconWup_014_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 43020053,
+      "rarity": 4,
+      "name": "Cadence Leaf",
+      "icon": "UIResources/Common/Image/IconWup/T_IconWup_015_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 43020054,
+      "rarity": 5,
+      "name": "Cadence Blossom",
+      "icon": "UIResources/Common/Image/IconWup/T_IconWup_016_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 42601290,
+      "rarity": 1,
+      "name": "Sliverglow Bloom",
+      "icon": "UIResources/Common/Image/IconC/T_IconC_057_UI.webp",
+      "type": {
+        "typeId": 5,
+        "text": "Resources"
+      },
+      "tags": [
+        "Ascension Material"
+      ]
+    },
+    {
+      "itemId": 43021041,
+      "rarity": 2,
+      "name": "LF Carved Crystal",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_O_011_1_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 43021042,
+      "rarity": 3,
+      "name": "MF Carved Crystal",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_O_011_2_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 43021043,
+      "rarity": 4,
+      "name": "HF Carved Crystal",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_O_011_3_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 43021044,
+      "rarity": 5,
+      "name": "FF Carved Crystal",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_O_011_4_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 41400344,
+      "rarity": 4,
+      "name": "Forged Empyrean's Sigh",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_L_030_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Resonator Ascension Material"
+      ]
+    },
+    {
+      "itemId": 42601600,
+      "rarity": 1,
+      "name": "Cloudperch Seed",
+      "icon": "UIResources/Common/Image/IconC/T_IconC_083_UI.webp",
+      "type": {
+        "typeId": 5,
+        "text": "Resources"
+      },
+      "tags": [
+        "Ascension Material"
+      ]
+    },
+    {
+      "itemId": 41400324,
+      "rarity": 4,
+      "name": "Skyward Glazed Heart",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_L_028_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Skill Upgrade Material"
+      ]
+    },
+    {
+      "itemId": 41400034,
+      "rarity": 4,
+      "name": "Elegy Tacet Core",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_L_006_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Resonator Ascension Material"
+      ]
+    },
+    {
+      "itemId": 42310210,
+      "rarity": 1,
+      "name": "Loong's Pearl",
+      "icon": "UIResources/Common/Image/IconC/T_IconC_030_UI.webp",
+      "type": {
+        "typeId": 5,
+        "text": "Resources"
+      },
+      "tags": [
+        "Ascension Material"
+      ]
+    },
+    {
+      "itemId": 42300080,
+      "rarity": 1,
+      "name": "Coriolus",
+      "icon": "UIResources/Common/Image/IconRup/T_IconRup_SM_Gat_30A_UI.webp",
+      "type": {
+        "typeId": 5,
+        "text": "Resources"
+      },
+      "tags": [
+        "Ascension Material"
+      ]
+    },
+    {
+      "itemId": 41400264,
+      "rarity": 4,
+      "name": "Suncoveter's Reach",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_L_023_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Resonator Ascension Material"
+      ]
+    },
+    {
+      "itemId": 42601500,
+      "rarity": 1,
+      "name": "Forget-Me-Not",
+      "icon": "UIResources/Common/Image/IconC/T_IconC_077_UI.webp",
+      "type": {
+        "typeId": 5,
+        "text": "Resources"
+      },
+      "tags": [
+        "Ascension Material"
+      ]
+    },
+    {
+      "itemId": 43021021,
+      "rarity": 2,
+      "name": "Incomplete Combustor",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_O_009_1_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 43021022,
+      "rarity": 3,
+      "name": "Aftertune Combustor",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_O_009_2_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 43021023,
+      "rarity": 4,
+      "name": "Remnant Combustor",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_O_009_3_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 43021024,
+      "rarity": 5,
+      "name": "Reverb Combustor",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_O_009_4_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 41400314,
+      "rarity": 4,
+      "name": "Nightmare Flashdrive",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_L_027_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Resonator Ascension Material"
+      ]
+    },
+    {
+      "itemId": 42601510,
+      "rarity": 1,
+      "name": "Past Reveries",
+      "icon": "UIResources/Common/Image/IconA/T_IconA_23_UI.webp",
+      "type": {
+        "typeId": 5,
+        "text": "Resources"
+      },
+      "tags": [
+        "Ascension Material"
+      ]
+    },
+    {
+      "itemId": 42300040,
+      "rarity": 1,
+      "name": "Terraspawn Fungus",
+      "icon": "UIResources/Common/Image/IconC/T_IconC_HuiYanGu_UI.webp",
+      "type": {
+        "typeId": 5,
+        "text": "Resources"
+      },
+      "tags": [
+        "Ascension Material"
+      ]
+    },
+    {
+      "itemId": 42601230,
+      "rarity": 1,
+      "name": "Bloodleaf Viburnum",
+      "icon": "UIResources/Common/Image/IconC/T_IconC_xueyejiami_UI.webp",
+      "type": {
+        "typeId": 5,
+        "text": "Resources"
+      },
+      "tags": [
+        "Ascension Material"
+      ]
+    },
+    {
+      "itemId": 41100081,
+      "rarity": 2,
+      "name": "Fractured Exoswarm Pendant",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_O_007_1_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 41100082,
+      "rarity": 3,
+      "name": "Worn Exoswarm Pendant",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_O_007_2_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 41100083,
+      "rarity": 4,
+      "name": "Chipped Exoswarm Pendant",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_O_007_3_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 41100084,
+      "rarity": 5,
+      "name": "Intact Exoswarm Pendant",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_O_007_4_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 43021051,
+      "rarity": 2,
+      "name": "LF Waveworn Shard",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_O_008_1_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 43021052,
+      "rarity": 3,
+      "name": "MF Waveworn Shard",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_O_008_2_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 43021053,
+      "rarity": 4,
+      "name": "HF Waveworn Shard",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_O_008_3_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 43021054,
+      "rarity": 5,
+      "name": "FF Waveworn Shard",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_O_008_4_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 42601430,
+      "rarity": 1,
+      "name": "Edelschnee",
+      "icon": "UIResources/Common/Image/IconC/T_IconC_074_UI.webp",
+      "type": {
+        "typeId": 5,
+        "text": "Resources"
+      },
+      "tags": [
+        "Ascension Material"
+      ]
+    },
+    {
+      "itemId": 42601390,
+      "rarity": 1,
+      "name": "Rimewisp",
+      "icon": "UIResources/Common/Image/IconC/T_IconC_067_UI.webp",
+      "type": {
+        "typeId": 5,
+        "text": "Resources"
+      },
+      "tags": [
+        "Ascension Material"
+      ]
+    },
+    {
+      "itemId": 42601380,
+      "rarity": 1,
+      "name": "Gemini Spore",
+      "icon": "UIResources/Common/Image/IconC/T_IconC_066_UI.webp",
+      "type": {
+        "typeId": 5,
+        "text": "Resources"
+      },
+      "tags": [
+        "Ascension Material"
+      ]
+    },
+    {
+      "itemId": 41400224,
+      "rarity": 4,
+      "name": "Truth in Lies",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_L_019_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Resonator Ascension Material"
+      ]
+    },
+    {
+      "itemId": 42601250,
+      "rarity": 1,
+      "name": "\"Afterlife\"",
+      "icon": "UIResources/Common/Image/IconC/T_IconC_054_UI.webp",
+      "type": {
+        "typeId": 5,
+        "text": "Resources"
+      },
+      "tags": [
+        "Ascension Material"
+      ]
+    },
+    {
+      "itemId": 42601160,
+      "rarity": 1,
+      "name": "Firecracker Jewelweed",
+      "icon": "UIResources/Common/Image/IconC/T_IconC_043_UI.webp",
+      "type": {
+        "typeId": 5,
+        "text": "Resources"
+      },
+      "tags": [
+        "Ascension Material"
+      ]
+    },
+    {
+      "itemId": 41100091,
+      "rarity": 2,
+      "name": "LF Autopuppet Kernel",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_O_013_1_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 41100092,
+      "rarity": 3,
+      "name": "MF Autopuppet Kernel",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_O_013_2_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 41100093,
+      "rarity": 4,
+      "name": "HF Autopuppet Kernel",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_O_013_3_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 41100094,
+      "rarity": 5,
+      "name": "FF Autopuppet Kernel",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_O_013_4_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Weapon and Skill Material"
+      ]
+    },
+    {
+      "itemId": 42601620,
+      "rarity": 1,
+      "name": "Blade Blossom",
+      "icon": "UIResources/Common/Image/IconC/T_IconC_078_UI.webp",
+      "type": {
+        "typeId": 5,
+        "text": "Resources"
+      },
+      "tags": [
+        "Ascension Material"
+      ]
+    },
+    {
+      "itemId": 41300005,
+      "rarity": 5,
+      "name": "Mysterious Code",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_L_002_1_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Resonator Ascension Material"
+      ]
+    },
+    {
+      "itemId": 42601400,
+      "rarity": 1,
+      "name": "Arithmetic Shell",
+      "icon": "UIResources/Common/Image/IconC/T_IconC_063_UI.webp",
+      "type": {
+        "typeId": 5,
+        "text": "Resources"
+      },
+      "tags": [
+        "Ascension Material"
+      ]
+    },
+    {
+      "itemId": 41400334,
+      "rarity": 4,
+      "name": "Solidarity's Loneflame",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_L_029_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Resonator Ascension Material"
+      ]
+    },
+    {
+      "itemId": 42601610,
+      "rarity": 1,
+      "name": "Flowborne Dream",
+      "icon": "UIResources/Common/Image/IconC/T_IconC_087_UI.webp",
+      "type": {
+        "typeId": 5,
+        "text": "Resources"
+      },
+      "tags": [
+        "Ascension Material"
+      ]
+    },
+    {
+      "itemId": 41400134,
+      "rarity": 4,
+      "name": "Hidden Thunder Tacet Core",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_L_012_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Resonator Ascension Material"
+      ]
+    },
+    {
+      "itemId": 42300100,
+      "rarity": 1,
+      "name": "Violet Coral",
+      "icon": "UIResources/Common/Image/IconC/T_IconC_Sep_061_UI.webp",
+      "type": {
+        "typeId": 5,
+        "text": "Resources"
+      },
+      "tags": [
+        "Ascension Material"
+      ]
+    },
+    {
+      "itemId": 41400084,
+      "rarity": 4,
+      "name": "Group Abomination Tacet Core",
+      "icon": "UIResources/Common/Image/IconMout/T_IconMout_L_009_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Resonator Ascension Material"
+      ]
+    },
+    {
+      "itemId": 2,
+      "rarity": 3,
+      "name": "Shell Credit",
+      "icon": "UIResources/Common/Image/IconA/T_IconA_hsb_UI.webp",
+      "type": {
+        "typeId": 0,
+        "text": "Other"
+      },
+      "tags": [
+        "Universal Currency"
+      ]
+    },
+    {
+      "itemId": 43010001,
+      "rarity": 2,
+      "name": "Basic Resonance Potion",
+      "icon": "UIResources/Common/Image/IconRup/T_IconRup_exp_1_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Resonator EXP Material"
+      ]
+    },
+    {
+      "itemId": 43010002,
+      "rarity": 3,
+      "name": "Medium Resonance Potion",
+      "icon": "UIResources/Common/Image/IconRup/T_IconRup_exp_2_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Resonator EXP Material"
+      ]
+    },
+    {
+      "itemId": 43010003,
+      "rarity": 4,
+      "name": "Advanced Resonance Potion",
+      "icon": "UIResources/Common/Image/IconRup/T_IconRup_exp_3_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Resonator EXP Material"
+      ]
+    },
+    {
+      "itemId": 43010004,
+      "rarity": 5,
+      "name": "Premium Resonance Potion",
+      "icon": "UIResources/Common/Image/IconRup/T_IconRup_exp_4_UI.webp",
+      "type": {
+        "typeId": 4,
+        "text": "Development Materials"
+      },
+      "tags": [
+        "Resonator EXP Material"
+      ]
+    },
+    {
+      "itemId": 43020001,
+      "rarity": 2,
+      "name": "Basic Energy Core",
+      "icon": "UIResources/Common/Image/IconWup/T_IconWup_Exp_1_UI.webp",
+      "type": {
+        "typeId": 2,
+        "text": "Weapons"
+      },
+      "tags": [
+        "Weapon EXP Material"
+      ]
+    },
+    {
+      "itemId": 43020002,
+      "rarity": 3,
+      "name": "Medium Energy Core",
+      "icon": "UIResources/Common/Image/IconWup/T_IconWup_Exp_2_UI.webp",
+      "type": {
+        "typeId": 2,
+        "text": "Weapons"
+      },
+      "tags": [
+        "Weapon EXP Material"
+      ]
+    },
+    {
+      "itemId": 43020003,
+      "rarity": 4,
+      "name": "Advanced Energy Core",
+      "icon": "UIResources/Common/Image/IconWup/T_IconWup_Exp_3_UI.webp",
+      "type": {
+        "typeId": 2,
+        "text": "Weapons"
+      },
+      "tags": [
+        "Weapon EXP Material"
+      ]
+    },
+    {
+      "itemId": 43020004,
+      "rarity": 5,
+      "name": "Premium Energy Core",
+      "icon": "UIResources/Common/Image/IconWup/T_IconWup_Exp_4_UI.webp",
+      "type": {
+        "typeId": 2,
+        "text": "Weapons"
+      },
+      "tags": [
+        "Weapon EXP Material"
+      ]
+    }
+  ]
+}
