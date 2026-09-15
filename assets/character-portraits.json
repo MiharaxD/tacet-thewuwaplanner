@@ -1,0 +1,12 @@
+{
+  "credit": "Personagens e retratos © KURO GAMES; imagens obtidas via Wutheringlab",
+  "consultedAt": "2026-09-15",
+  "portraits": [
+    { "character": "Jinhsi", "file": "jinhsi.png", "source": "https://wutheringlab.com/wp-content/uploads/Jinshi_icon.png" },
+    { "character": "Jiyan", "file": "jiyan.png", "source": "https://wutheringlab.com/wp-content/uploads/2023/06/Wuthering-Waves-Jiyan.png" },
+    { "character": "Verina", "file": "verina.webp", "source": "https://wutheringlab.com/wp-content/uploads/Wuthering-Waves-Verina.webp" },
+    { "character": "Yinlin", "file": "yinlin.png", "source": "https://wutheringlab.com/wp-content/uploads/yinlin-1.png" },
+    { "character": "Sanhua", "file": "sanhua.png", "source": "https://wutheringlab.com/wp-content/uploads/2023/06/Wuthering-Waves-Sanhua.png" },
+    { "character": "Encore", "file": "encore.png", "source": "https://wutheringlab.com/wp-content/uploads/2023/06/Wuthering-Waves-Anke.png" }
+  ]
+}

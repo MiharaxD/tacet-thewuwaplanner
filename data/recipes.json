@@ -1,0 +1,28 @@
+[
+  {
+    "id": "howler-lf-mf",
+    "inputs": {
+      "howler-0": 3
+    },
+    "outputs": {
+      "howler-1": 1
+    },
+    "sources": [
+      "howler-recipe"
+    ],
+    "verified": true
+  },
+  {
+    "id": "whisper-lf-mf",
+    "inputs": {
+      "whisper-0": 3
+    },
+    "outputs": {
+      "whisper-1": 1
+    },
+    "sources": [
+      "whisper-recipe"
+    ],
+    "verified": true
+  }
+]

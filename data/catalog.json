@@ -1,0 +1,756 @@
+{
+  "version": 1,
+  "consultedAt": "2026-09-15",
+  "characters": [
+    {
+      "id": "jinhsi",
+      "name": "Jinhsi",
+      "element": "Spectro",
+      "weapon": "Broadblade",
+      "rarity": 5,
+      "enemy": "howler",
+      "forgery": "waveworn",
+      "flower": "pearl",
+      "boss": "elegy",
+      "weekly": "dagger",
+      "image": "./assets/jinhsi.png",
+      "sources": [
+        "jinhsi",
+        "jinhsi-cost"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "jiyan",
+      "name": "Jiyan",
+      "element": "Aero",
+      "weapon": "Broadblade",
+      "rarity": 5,
+      "enemy": "howler",
+      "forgery": "waveworn",
+      "flower": "pecok",
+      "boss": "rock",
+      "weekly": "bell",
+      "image": "./assets/jiyan.png",
+      "sources": [
+        "jiyan",
+        "jiyan-cost"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "verina",
+      "name": "Verina",
+      "element": "Spectro",
+      "weapon": "Rectifier",
+      "rarity": 5,
+      "enemy": "howler",
+      "forgery": "helix",
+      "flower": "poppy",
+      "boss": "elegy",
+      "weekly": "bell",
+      "image": "./assets/verina.webp",
+      "sources": [
+        "verina",
+        "verina-cost"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "yinlin",
+      "name": "Yinlin",
+      "element": "Electro",
+      "weapon": "Rectifier",
+      "rarity": 5,
+      "enemy": "whisper",
+      "forgery": "helix",
+      "flower": "coriolus",
+      "boss": "abomination",
+      "weekly": "feather",
+      "image": "./assets/yinlin.png",
+      "sources": [
+        "yinlin",
+        "yinlin-cost"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "sanhua",
+      "name": "Sanhua",
+      "element": "Glacio",
+      "weapon": "Sword",
+      "rarity": 4,
+      "enemy": "whisper",
+      "forgery": "drip",
+      "flower": "wintry",
+      "boss": "sound",
+      "weekly": "destruction",
+      "image": "./assets/sanhua.png",
+      "sources": [
+        "sanhua",
+        "sanhua-cost"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    },
+    {
+      "id": "encore",
+      "name": "Encore",
+      "element": "Fusion",
+      "weapon": "Rectifier",
+      "rarity": 5,
+      "enemy": "whisper",
+      "forgery": "helix",
+      "flower": "pecok",
+      "boss": "rage",
+      "weekly": "destruction",
+      "image": "./assets/encore.png",
+      "sources": [
+        "encore",
+        "encore-cost"
+      ],
+      "ascensionVerified": true,
+      "forteVerified": true
+    }
+  ],
+  "weapons": [
+    {
+      "id": "ages",
+      "name": "Ages of Harvest",
+      "type": "Broadblade",
+      "forgery": "waveworn",
+      "enemy": "whisper",
+      "rarity": 5,
+      "sources": [
+        "ages",
+        "ages-cost"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "verdant",
+      "name": "Verdant Summit",
+      "type": "Broadblade",
+      "forgery": "waveworn",
+      "enemy": "whisper",
+      "rarity": 5,
+      "sources": [
+        "verdant",
+        "verdant-cost"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "stringmaster",
+      "name": "Stringmaster",
+      "type": "Rectifier",
+      "forgery": "helix",
+      "enemy": "ring",
+      "rarity": 5,
+      "sources": [
+        "stringmaster",
+        "stringmaster-cost"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "emerald",
+      "name": "Emerald of Genesis",
+      "type": "Sword",
+      "forgery": "drip",
+      "enemy": "howler",
+      "rarity": 5,
+      "sources": [
+        "emerald",
+        "emerald-cost"
+      ],
+      "ascensionVerified": true
+    }
+  ],
+  "materials": [
+    {
+      "id": "shell",
+      "name": "Shell Credit",
+      "category": "Moeda",
+      "rarity": null,
+      "origin": "Simulation Training: Shell Credit",
+      "activity": "simulation",
+      "sources": [
+        "wave"
+      ],
+      "verified": true
+    },
+    {
+      "id": "howler-0",
+      "name": "LF Howler Core",
+      "category": "Inimigos",
+      "rarity": 2,
+      "origin": "Howlers · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "howler-recipe"
+      ],
+      "verified": true
+    },
+    {
+      "id": "howler-1",
+      "name": "MF Howler Core",
+      "category": "Inimigos",
+      "rarity": 3,
+      "origin": "Howlers · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "howler-recipe"
+      ],
+      "verified": true
+    },
+    {
+      "id": "howler-2",
+      "name": "HF Howler Core",
+      "category": "Inimigos",
+      "rarity": 4,
+      "origin": "Howlers · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "howler-recipe"
+      ],
+      "verified": true
+    },
+    {
+      "id": "howler-3",
+      "name": "FF Howler Core",
+      "category": "Inimigos",
+      "rarity": 5,
+      "origin": "Howlers · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "howler-recipe"
+      ],
+      "verified": true
+    },
+    {
+      "id": "whisper-0",
+      "name": "LF Whisperin Core",
+      "category": "Inimigos",
+      "rarity": 2,
+      "origin": "Whisperins · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "whisper-recipe"
+      ],
+      "verified": true
+    },
+    {
+      "id": "whisper-1",
+      "name": "MF Whisperin Core",
+      "category": "Inimigos",
+      "rarity": 3,
+      "origin": "Whisperins · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "whisper-recipe"
+      ],
+      "verified": true
+    },
+    {
+      "id": "whisper-2",
+      "name": "HF Whisperin Core",
+      "category": "Inimigos",
+      "rarity": 4,
+      "origin": "Whisperins · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "whisper-recipe"
+      ],
+      "verified": true
+    },
+    {
+      "id": "whisper-3",
+      "name": "FF Whisperin Core",
+      "category": "Inimigos",
+      "rarity": 5,
+      "origin": "Whisperins · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "whisper-recipe"
+      ],
+      "verified": true
+    },
+    {
+      "id": "waveworn-0",
+      "name": "Waveworn Residue 210",
+      "category": "Forja",
+      "rarity": 2,
+      "origin": "Eroded Ruins · Wuming Bay",
+      "activity": "forgery",
+      "sources": [
+        "jiyan-cost"
+      ],
+      "verified": true
+    },
+    {
+      "id": "waveworn-1",
+      "name": "Waveworn Residue 226",
+      "category": "Forja",
+      "rarity": 3,
+      "origin": "Eroded Ruins · Wuming Bay",
+      "activity": "forgery",
+      "sources": [
+        "jiyan-cost"
+      ],
+      "verified": true
+    },
+    {
+      "id": "waveworn-2",
+      "name": "Waveworn Residue 235",
+      "category": "Forja",
+      "rarity": 4,
+      "origin": "Eroded Ruins · Wuming Bay",
+      "activity": "forgery",
+      "sources": [
+        "jiyan-cost"
+      ],
+      "verified": true
+    },
+    {
+      "id": "waveworn-3",
+      "name": "Waveworn Residue 239",
+      "category": "Forja",
+      "rarity": 5,
+      "origin": "Eroded Ruins · Wuming Bay",
+      "activity": "forgery",
+      "sources": [
+        "jiyan-cost"
+      ],
+      "verified": true
+    },
+    {
+      "id": "helix-0",
+      "name": "Lento Helix",
+      "category": "Forja",
+      "rarity": 2,
+      "origin": "Misty Forest · Dim Forest",
+      "activity": "forgery",
+      "sources": [
+        "verina-cost"
+      ],
+      "verified": true
+    },
+    {
+      "id": "helix-1",
+      "name": "Adagio Helix",
+      "category": "Forja",
+      "rarity": 3,
+      "origin": "Misty Forest · Dim Forest",
+      "activity": "forgery",
+      "sources": [
+        "verina-cost"
+      ],
+      "verified": true
+    },
+    {
+      "id": "helix-2",
+      "name": "Andante Helix",
+      "category": "Forja",
+      "rarity": 4,
+      "origin": "Misty Forest · Dim Forest",
+      "activity": "forgery",
+      "sources": [
+        "verina-cost"
+      ],
+      "verified": true
+    },
+    {
+      "id": "helix-3",
+      "name": "Presto Helix",
+      "category": "Forja",
+      "rarity": 5,
+      "origin": "Misty Forest · Dim Forest",
+      "activity": "forgery",
+      "sources": [
+        "verina-cost"
+      ],
+      "verified": true
+    },
+    {
+      "id": "drip-0",
+      "name": "Inert Metallic Drip",
+      "category": "Forja",
+      "rarity": 2,
+      "origin": "Flaming Remnants · Port City of Guixu",
+      "activity": "forgery",
+      "sources": [
+        "sanhua-cost"
+      ],
+      "verified": true
+    },
+    {
+      "id": "drip-1",
+      "name": "Reactive Metallic Drip",
+      "category": "Forja",
+      "rarity": 3,
+      "origin": "Flaming Remnants · Port City of Guixu",
+      "activity": "forgery",
+      "sources": [
+        "sanhua-cost"
+      ],
+      "verified": true
+    },
+    {
+      "id": "drip-2",
+      "name": "Polarized Metallic Drip",
+      "category": "Forja",
+      "rarity": 4,
+      "origin": "Flaming Remnants · Port City of Guixu",
+      "activity": "forgery",
+      "sources": [
+        "sanhua-cost"
+      ],
+      "verified": true
+    },
+    {
+      "id": "drip-3",
+      "name": "Heterized Metallic Drip",
+      "category": "Forja",
+      "rarity": 5,
+      "origin": "Flaming Remnants · Port City of Guixu",
+      "activity": "forgery",
+      "sources": [
+        "sanhua-cost"
+      ],
+      "verified": true
+    },
+    {
+      "id": "pearl",
+      "name": "Loong’s Pearl",
+      "category": "Coleta",
+      "rarity": null,
+      "origin": "Mt. Firmament",
+      "activity": "overworld",
+      "sources": [
+        "pearl"
+      ],
+      "verified": true
+    },
+    {
+      "id": "pecok",
+      "name": "Pecok Flower",
+      "category": "Coleta",
+      "rarity": null,
+      "origin": "Central Plains · Huanglong",
+      "activity": "overworld",
+      "sources": [
+        "jiyan-cost"
+      ],
+      "verified": true
+    },
+    {
+      "id": "poppy",
+      "name": "Belle Poppy",
+      "category": "Coleta",
+      "rarity": null,
+      "origin": "Port City of Guixu · arredores",
+      "activity": "overworld",
+      "sources": [
+        "verina-cost"
+      ],
+      "verified": true
+    },
+    {
+      "id": "coriolus",
+      "name": "Coriolus",
+      "category": "Coleta",
+      "rarity": null,
+      "origin": "Dim Forest · Huanglong",
+      "activity": "overworld",
+      "sources": [
+        "yinlin-cost"
+      ],
+      "verified": true
+    },
+    {
+      "id": "wintry",
+      "name": "Wintry Bell",
+      "category": "Coleta",
+      "rarity": null,
+      "origin": "Gorges of Spirits · Huanglong",
+      "activity": "overworld",
+      "sources": [
+        "sanhua-cost"
+      ],
+      "verified": true
+    },
+    {
+      "id": "elegy",
+      "name": "Elegy Tacet Core",
+      "category": "Chefe",
+      "rarity": 4,
+      "origin": "Mourning Aix · Whining Aix’s Mire",
+      "activity": "boss",
+      "sources": [
+        "jinhsi-cost"
+      ],
+      "verified": true
+    },
+    {
+      "id": "rock",
+      "name": "Roaring Rock Fist",
+      "category": "Chefe",
+      "rarity": 4,
+      "origin": "Feilian Beringal · Dim Forest",
+      "activity": "boss",
+      "sources": [
+        "jiyan-cost"
+      ],
+      "verified": true
+    },
+    {
+      "id": "abomination",
+      "name": "Group Abomination Tacet Core",
+      "category": "Chefe",
+      "rarity": 4,
+      "origin": "Mech Abomination · Court of Savantae Ruins",
+      "activity": "boss",
+      "sources": [
+        "yinlin-cost"
+      ],
+      "verified": true
+    },
+    {
+      "id": "sound",
+      "name": "Sound-Keeping Tacet Core",
+      "category": "Chefe",
+      "rarity": 4,
+      "origin": "Lampylumen Myriad · Tiger’s Maw",
+      "activity": "boss",
+      "sources": [
+        "sanhua-cost"
+      ],
+      "verified": true
+    },
+    {
+      "id": "rage",
+      "name": "Rage Tacet Core",
+      "category": "Chefe",
+      "rarity": 4,
+      "origin": "Inferno Rider · Sea of Flames",
+      "activity": "boss",
+      "sources": [
+        "encore-cost"
+      ],
+      "verified": true
+    },
+    {
+      "id": "dagger",
+      "name": "Sentinel’s Dagger",
+      "category": "Semanal",
+      "rarity": 4,
+      "origin": "Jué · Mt. Firmament",
+      "activity": "weekly",
+      "sources": [
+        "jinhsi-cost"
+      ],
+      "verified": true
+    },
+    {
+      "id": "bell",
+      "name": "Monument Bell",
+      "category": "Semanal",
+      "rarity": 4,
+      "origin": "Bell-borne Geochelone · Bell-borne Ravine",
+      "activity": "weekly",
+      "sources": [
+        "jiyan-cost"
+      ],
+      "verified": true
+    },
+    {
+      "id": "feather",
+      "name": "Dreamless Feather",
+      "category": "Semanal",
+      "rarity": 4,
+      "origin": "Dreamless · Norfall Barrens",
+      "activity": "weekly",
+      "sources": [
+        "yinlin-cost"
+      ],
+      "verified": true
+    },
+    {
+      "id": "destruction",
+      "name": "Unending Destruction",
+      "category": "Semanal",
+      "rarity": 4,
+      "origin": "Scar · Chaotic Juncture",
+      "activity": "weekly",
+      "sources": [
+        "encore-cost"
+      ],
+      "verified": true
+    },
+    {
+      "id": "potion-0",
+      "name": "Basic Resonance Potion",
+      "category": "Experiência",
+      "rarity": 2,
+      "origin": "Simulation Training: Resonance Potion",
+      "activity": "simulation",
+      "sources": [
+        "potions"
+      ],
+      "verified": true,
+      "xp": 1000,
+      "xpKind": "potion"
+    },
+    {
+      "id": "potion-1",
+      "name": "Medium Resonance Potion",
+      "category": "Experiência",
+      "rarity": 3,
+      "origin": "Simulation Training: Resonance Potion",
+      "activity": "simulation",
+      "sources": [
+        "potions"
+      ],
+      "verified": true,
+      "xp": 3000,
+      "xpKind": "potion"
+    },
+    {
+      "id": "potion-2",
+      "name": "Advanced Resonance Potion",
+      "category": "Experiência",
+      "rarity": 4,
+      "origin": "Simulation Training: Resonance Potion",
+      "activity": "simulation",
+      "sources": [
+        "potions"
+      ],
+      "verified": true,
+      "xp": 8000,
+      "xpKind": "potion"
+    },
+    {
+      "id": "potion-3",
+      "name": "Premium Resonance Potion",
+      "category": "Experiência",
+      "rarity": 5,
+      "origin": "Simulation Training: Resonance Potion",
+      "activity": "simulation",
+      "sources": [
+        "potions"
+      ],
+      "verified": true,
+      "xp": 20000,
+      "xpKind": "potion"
+    },
+    {
+      "id": "energy-0",
+      "name": "Basic Energy Core",
+      "category": "Experiência",
+      "rarity": 2,
+      "origin": "Simulation Training: Energy Core",
+      "activity": "simulation",
+      "sources": [
+        "cores"
+      ],
+      "verified": true,
+      "xp": 1000,
+      "xpKind": "energy"
+    },
+    {
+      "id": "energy-1",
+      "name": "Medium Energy Core",
+      "category": "Experiência",
+      "rarity": 3,
+      "origin": "Simulation Training: Energy Core",
+      "activity": "simulation",
+      "sources": [
+        "cores"
+      ],
+      "verified": true,
+      "xp": 3000,
+      "xpKind": "energy"
+    },
+    {
+      "id": "energy-2",
+      "name": "Advanced Energy Core",
+      "category": "Experiência",
+      "rarity": 4,
+      "origin": "Simulation Training: Energy Core",
+      "activity": "simulation",
+      "sources": [
+        "cores"
+      ],
+      "verified": true,
+      "xp": 8000,
+      "xpKind": "energy"
+    },
+    {
+      "id": "energy-3",
+      "name": "Premium Energy Core",
+      "category": "Experiência",
+      "rarity": 5,
+      "origin": "Simulation Training: Energy Core",
+      "activity": "simulation",
+      "sources": [
+        "cores"
+      ],
+      "verified": true,
+      "xp": 20000,
+      "xpKind": "energy"
+    },
+    {
+      "id": "ring-0",
+      "name": "Crude Ring",
+      "category": "Inimigos",
+      "rarity": 2,
+      "origin": "Exiles · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "stringmaster-detail"
+      ],
+      "verified": true
+    },
+    {
+      "id": "ring-1",
+      "name": "Basic Ring",
+      "category": "Inimigos",
+      "rarity": 3,
+      "origin": "Exiles · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "stringmaster-detail"
+      ],
+      "verified": true
+    },
+    {
+      "id": "ring-2",
+      "name": "Improved Ring",
+      "category": "Inimigos",
+      "rarity": 4,
+      "origin": "Exiles · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "stringmaster-detail"
+      ],
+      "verified": true
+    },
+    {
+      "id": "ring-3",
+      "name": "Tailored Ring",
+      "category": "Inimigos",
+      "rarity": 5,
+      "origin": "Exiles · mundo aberto",
+      "activity": "overworld",
+      "sources": [
+        "stringmaster-detail"
+      ],
+      "verified": true
+    }
+  ]
+}

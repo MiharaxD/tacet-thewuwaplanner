@@ -1,0 +1,298 @@
+[
+  {
+    "id": "lab",
+    "url": "https://wutheringlab.com/",
+    "scope": "Identidade dos personagens e fonte principal",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Cabeçalho anuncia 3.6; não prova que todas as tabelas foram revistas para 3.6."
+  },
+  {
+    "id": "level",
+    "url": "https://wutheringwaves.fandom.com/wiki/Resonator/Leveling",
+    "scope": "EXP por nível, limites e custo de 0,35 Shell Credit por EXP",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Valores de EXP armazenados acumulados. Trechos da tabela disponíveis no índice de busca; página direta bloqueada."
+  },
+  {
+    "id": "weapon-level",
+    "url": "https://wutheringwaves.fandom.com/wiki/Weapon/Leveling",
+    "scope": "EXP de armas de 5 estrelas; 0,4 Shell Credit/EXP",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Tabela de 5 estrelas separada das demais raridades. Valores acumulados."
+  },
+  {
+    "id": "forte",
+    "url": "https://wutheringwaves.fandom.com/wiki/Luminal_Synthesis",
+    "scope": "Custos incrementais e ascensão exigida para os cinco Fortes",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Tabela principal confirmada com Game8. Custos de habilidades inerentes divergem; excluídos até revisão."
+  },
+  {
+    "id": "wave",
+    "url": "https://wutheringwaves.fandom.com/wiki/Waveplate",
+    "scope": "Custos de atividades e regeneração",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "40: simulação/forja. 60: chefes/semanal. 1 a cada 6 min, capacidade 240."
+  },
+  {
+    "id": "reset",
+    "url": "https://wutheringwaves.fandom.com/wiki/Reset",
+    "scope": "Reset diário 04:00 e segunda-feira 04:00",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Fusos fixos: América UTC−5, Europa UTC+1, Ásia UTC+8."
+  },
+  {
+    "id": "weekly",
+    "url": "https://wutheringwaves.fandom.com/wiki/Weekly_Challenge",
+    "scope": "Três resgates de recompensas semanais compartilhados",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": ""
+  },
+  {
+    "id": "potions",
+    "url": "https://wutheringwaves.fandom.com/wiki/Resonator_EXP_Material",
+    "scope": "Poções de 1.000, 3.000, 8.000 e 20.000 EXP",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": ""
+  },
+  {
+    "id": "cores",
+    "url": "https://wutheringwaves.fandom.com/wiki/Weapon_EXP_Material",
+    "scope": "Consumíveis de EXP de arma",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": ""
+  },
+  {
+    "id": "howler-recipe",
+    "url": "https://wutheringwaves.fandom.com/wiki/MF_Howler_Core",
+    "scope": "Síntese 3 LF Howler Core → 1 MF Howler Core",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Nenhum custo adicional listado na receita. Direção única nesta base."
+  },
+  {
+    "id": "whisper-recipe",
+    "url": "https://wutheringwaves.fandom.com/wiki/MF_Whisperin_Core",
+    "scope": "Síntese 3 LF Whisperin Core → 1 MF Whisperin Core",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": ""
+  },
+  {
+    "id": "official",
+    "url": "https://wutheringwaves.kurogames.com/en/main/news",
+    "scope": "Notícias oficiais",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Página dinâmica sem calendário verificável nesta consulta; nenhum evento oficial foi inventado."
+  },
+  {
+    "id": "jinhsi",
+    "url": "https://wutheringlab.com/character/jinhsi-build/",
+    "scope": "Identidade, retrato e ascensão por etapa",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "HTML contém imagem residual de Gloom Slough; Loong’s Pearl confirmado no guia dedicado e Game8."
+  },
+  {
+    "id": "jinhsi-cost",
+    "url": "https://game8.co/games/Wuthering-Waves/archives/494451",
+    "scope": "Materiais, ascensão e Fortes por etapa",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": ""
+  },
+  {
+    "id": "jiyan",
+    "url": "https://wutheringlab.com/character/jiyan-build/",
+    "scope": "Identidade, retrato e ascensão por etapa",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": ""
+  },
+  {
+    "id": "jiyan-cost",
+    "url": "https://game8.co/games/Wuthering-Waves/archives/504555",
+    "scope": "Materiais, ascensão e Fortes por etapa",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": ""
+  },
+  {
+    "id": "verina",
+    "url": "https://wutheringlab.com/character/verina-build/",
+    "scope": "Identidade, retrato e ascensão por etapa",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": ""
+  },
+  {
+    "id": "verina-cost",
+    "url": "https://game8.co/games/Wuthering-Waves/archives/504557",
+    "scope": "Materiais, ascensão e Fortes por etapa",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": ""
+  },
+  {
+    "id": "yinlin",
+    "url": "https://wutheringlab.com/character/yinlin-build/",
+    "scope": "Identidade, retrato e ascensão por etapa",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": ""
+  },
+  {
+    "id": "yinlin-cost",
+    "url": "https://game8.co/games/Wuthering-Waves/archives/504556",
+    "scope": "Materiais, ascensão e Fortes por etapa",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": ""
+  },
+  {
+    "id": "sanhua",
+    "url": "https://wutheringlab.com/character/sanhua-build/",
+    "scope": "Identidade, retrato e ascensão por etapa",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": ""
+  },
+  {
+    "id": "sanhua-cost",
+    "url": "https://game8.co/games/Wuthering-Waves/archives/504777",
+    "scope": "Materiais, ascensão e Fortes por etapa",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": ""
+  },
+  {
+    "id": "encore",
+    "url": "https://wutheringlab.com/character/encore-build/",
+    "scope": "Identidade, retrato e ascensão por etapa",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": ""
+  },
+  {
+    "id": "encore-cost",
+    "url": "https://game8.co/games/Wuthering-Waves/archives/504782",
+    "scope": "Materiais, ascensão e Fortes por etapa",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": ""
+  },
+  {
+    "id": "pearl",
+    "url": "https://wutheringlab.com/guide/jinhsi-material-loongs-pearl-routes-amp-best-farming-guide/",
+    "scope": "Loong’s Pearl: Mt. Firmament",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": ""
+  },
+  {
+    "id": "stringmaster-detail",
+    "url": "https://theriagames.com/guide/wuthering-waves-stringmaster-guide/",
+    "scope": "Stringmaster: anéis e Helix por etapa; corroborado com Wiki",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": ""
+  },
+  {
+    "id": "emerald-detail",
+    "url": "https://wutheringwaves.fandom.com/wiki/Emerald_of_Genesis",
+    "scope": "Emerald of Genesis: Howler, Metallic Drip e créditos por etapa",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": ""
+  },
+  {
+    "id": "stringmaster-credit",
+    "url": "https://wutheringwaves.fandom.com/wiki/Stringmaster",
+    "scope": "Stringmaster: créditos de ascensão por etapa",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": ""
+  },
+  {
+    "id": "ages",
+    "url": "https://wutheringlab.com/weapon/ages-of-harvest/",
+    "scope": "Identidade da arma",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": ""
+  },
+  {
+    "id": "ages-cost",
+    "url": "https://game8.co/games/Wuthering-Waves/archives/458249",
+    "scope": "Materiais de ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Créditos complementados pela tabela individual da Wiki."
+  },
+  {
+    "id": "verdant",
+    "url": "https://wutheringlab.com/weapon/verdant-summit/",
+    "scope": "Identidade da arma",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": ""
+  },
+  {
+    "id": "verdant-cost",
+    "url": "https://game8.co/games/Wuthering-Waves/archives/455951",
+    "scope": "Materiais de ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Créditos complementados pela tabela individual da Wiki."
+  },
+  {
+    "id": "stringmaster",
+    "url": "https://wutheringlab.com/weapon/stringmaster/",
+    "scope": "Identidade da arma",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": ""
+  },
+  {
+    "id": "stringmaster-cost",
+    "url": "https://game8.co/games/Wuthering-Waves/archives/455927",
+    "scope": "Materiais de ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Créditos complementados pela tabela individual da Wiki."
+  },
+  {
+    "id": "emerald",
+    "url": "https://wutheringlab.com/weapon/emerald-of-genesis/",
+    "scope": "Identidade da arma",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": ""
+  },
+  {
+    "id": "emerald-cost",
+    "url": "https://game8.co/games/Wuthering-Waves/archives/455939",
+    "scope": "Materiais de ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Créditos complementados pela tabela individual da Wiki."
+  },
+  {
+    "id": "ages-credit",
+    "url": "https://wutheringwaves.fandom.com/wiki/Ages_of_Harvest",
+    "scope": "Créditos de ascensão 10000/20000/40000/60000/80000/120000",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": ""
+  }
+]
