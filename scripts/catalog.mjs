@@ -62,3 +62,5 @@ const recipes=[{id:'howler-lf-mf',inputs:{'howler-0':3},outputs:{'howler-1':1},s
 await mkdir('data',{recursive:true});
 for(const [name,value] of Object.entries({catalog:{version:1,consultedAt:date,characters,weapons,materials:mats},rules,sources,recipes,events:{version:1,consultedAt:date,events:[],note:'Nenhum calendário oficial atual verificado. Cadastro pessoal disponível.'}})) await writeFile(`data/${name}.json`,JSON.stringify(value,null,2)+'\n');
 await import('./import-wuwa.mjs');
+
+await import('./import-weapons.mjs');

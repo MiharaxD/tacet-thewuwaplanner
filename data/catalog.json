@@ -1235,6 +1235,54 @@
   ],
   "weapons": [
     {
+      "id": "abyss-surges",
+      "name": "Abyss Surges",
+      "type": "Gauntlets",
+      "rarity": 5,
+      "enemy": "howler",
+      "forgery": "cadence-seed",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 10000,
+          "howler-0": 6
+        },
+        {
+          "shell": 20000,
+          "cadence-seed-0": 6,
+          "howler-1": 6
+        },
+        {
+          "shell": 40000,
+          "cadence-seed-1": 8,
+          "howler-2": 4
+        },
+        {
+          "shell": 60000,
+          "cadence-seed-2": 6,
+          "howler-2": 6
+        },
+        {
+          "shell": 80000,
+          "cadence-seed-3": 8,
+          "howler-3": 4
+        },
+        {
+          "shell": 120000,
+          "cadence-seed-3": 12,
+          "howler-3": 8
+        }
+      ],
+      "image": "./assets/weapons/21040015.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21040015",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
       "id": "ages",
       "name": "Ages of Harvest",
       "type": "Broadblade",
@@ -1243,33 +1291,428 @@
       "rarity": 5,
       "sources": [
         "ages",
-        "ages-cost"
+        "ages-cost",
+        "weapon-skill-materials",
+        "weapon-21010026",
+        "weapon-xp-rarities"
       ],
-      "ascensionVerified": true
+      "ascensionVerified": true,
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 10000,
+          "whisper-0": 6
+        },
+        {
+          "shell": 20000,
+          "waveworn-0": 6,
+          "whisper-1": 6
+        },
+        {
+          "shell": 40000,
+          "waveworn-1": 8,
+          "whisper-2": 4
+        },
+        {
+          "shell": 60000,
+          "waveworn-2": 6,
+          "whisper-2": 6
+        },
+        {
+          "shell": 80000,
+          "waveworn-3": 8,
+          "whisper-3": 4
+        },
+        {
+          "shell": 120000,
+          "waveworn-3": 12,
+          "whisper-3": 8
+        }
+      ],
+      "image": "./assets/weapons/21010026.webp"
     },
     {
-      "id": "verdant",
-      "name": "Verdant Summit",
-      "type": "Broadblade",
-      "forgery": "waveworn",
-      "enemy": "whisper",
+      "id": "azure-oath",
+      "name": "Azure Oath",
+      "type": "Sword",
       "rarity": 5,
+      "enemy": "mech-core",
+      "forgery": "broken-wing-polarizer",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 10000,
+          "mech-core-0": 6
+        },
+        {
+          "shell": 20000,
+          "broken-wing-polarizer-0": 6,
+          "mech-core-1": 6
+        },
+        {
+          "shell": 40000,
+          "broken-wing-polarizer-1": 8,
+          "mech-core-2": 4
+        },
+        {
+          "shell": 60000,
+          "broken-wing-polarizer-2": 6,
+          "mech-core-2": 6
+        },
+        {
+          "shell": 80000,
+          "broken-wing-polarizer-3": 8,
+          "mech-core-3": 4
+        },
+        {
+          "shell": 120000,
+          "broken-wing-polarizer-3": 12,
+          "mech-core-3": 8
+        }
+      ],
+      "image": "./assets/weapons/21020096.webp",
       "sources": [
-        "verdant",
-        "verdant-cost"
+        "weapon-skill-materials",
+        "weapon-21020096",
+        "weapon-xp-rarities"
       ],
       "ascensionVerified": true
     },
     {
-      "id": "stringmaster",
-      "name": "Stringmaster",
+      "id": "blazing-brilliance",
+      "name": "Blazing Brilliance",
+      "type": "Sword",
+      "rarity": 5,
+      "enemy": "howler",
+      "forgery": "drip",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 10000,
+          "howler-0": 6
+        },
+        {
+          "shell": 20000,
+          "drip-0": 6,
+          "howler-1": 6
+        },
+        {
+          "shell": 40000,
+          "drip-1": 8,
+          "howler-2": 4
+        },
+        {
+          "shell": 60000,
+          "drip-2": 6,
+          "howler-2": 6
+        },
+        {
+          "shell": 80000,
+          "drip-3": 8,
+          "howler-3": 4
+        },
+        {
+          "shell": 120000,
+          "drip-3": 12,
+          "howler-3": 8
+        }
+      ],
+      "image": "./assets/weapons/21020016.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21020016",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "blazing-justice",
+      "name": "Blazing Justice",
+      "type": "Gauntlets",
+      "rarity": 5,
+      "enemy": "howler",
+      "forgery": "cadence-seed",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 10000,
+          "howler-0": 6
+        },
+        {
+          "shell": 20000,
+          "cadence-seed-0": 6,
+          "howler-1": 6
+        },
+        {
+          "shell": 40000,
+          "cadence-seed-1": 8,
+          "howler-2": 4
+        },
+        {
+          "shell": 60000,
+          "cadence-seed-2": 6,
+          "howler-2": 6
+        },
+        {
+          "shell": 80000,
+          "cadence-seed-3": 8,
+          "howler-3": 4
+        },
+        {
+          "shell": 120000,
+          "cadence-seed-3": 12,
+          "howler-3": 8
+        }
+      ],
+      "image": "./assets/weapons/21040036.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21040036",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "bloodpact-s-pledge",
+      "name": "Bloodpact's Pledge",
+      "type": "Sword",
+      "rarity": 5,
+      "enemy": "howler",
+      "forgery": "drip",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 10000,
+          "howler-0": 6
+        },
+        {
+          "shell": 20000,
+          "drip-0": 6,
+          "howler-1": 6
+        },
+        {
+          "shell": 40000,
+          "drip-1": 8,
+          "howler-2": 4
+        },
+        {
+          "shell": 60000,
+          "drip-2": 6,
+          "howler-2": 6
+        },
+        {
+          "shell": 80000,
+          "drip-3": 8,
+          "howler-3": 4
+        },
+        {
+          "shell": 120000,
+          "drip-3": 12,
+          "howler-3": 8
+        }
+      ],
+      "image": "./assets/weapons/21020046.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21020046",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "boson-astrolabe",
+      "name": "Boson Astrolabe",
       "type": "Rectifier",
-      "forgery": "helix",
-      "enemy": "ring",
       "rarity": 5,
+      "enemy": "exoswarm-core",
+      "forgery": "spliced-string",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 10000,
+          "exoswarm-core-0": 6
+        },
+        {
+          "shell": 20000,
+          "exoswarm-core-1": 6,
+          "spliced-string-0": 6
+        },
+        {
+          "shell": 40000,
+          "exoswarm-core-2": 4,
+          "spliced-string-1": 8
+        },
+        {
+          "shell": 60000,
+          "exoswarm-core-2": 6,
+          "spliced-string-2": 6
+        },
+        {
+          "shell": 80000,
+          "exoswarm-core-3": 4,
+          "spliced-string-3": 8
+        },
+        {
+          "shell": 120000,
+          "exoswarm-core-3": 8,
+          "spliced-string-3": 12
+        }
+      ],
+      "image": "./assets/weapons/21050045.webp",
       "sources": [
-        "stringmaster",
-        "stringmaster-cost"
+        "weapon-skill-materials",
+        "weapon-21050045",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "cosmic-ripples",
+      "name": "Cosmic Ripples",
+      "type": "Rectifier",
+      "rarity": 5,
+      "enemy": "ring",
+      "forgery": "helix",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 10000,
+          "ring-0": 6
+        },
+        {
+          "shell": 20000,
+          "helix-0": 6,
+          "ring-1": 6
+        },
+        {
+          "shell": 40000,
+          "helix-1": 8,
+          "ring-2": 4
+        },
+        {
+          "shell": 60000,
+          "helix-2": 6,
+          "ring-2": 6
+        },
+        {
+          "shell": 80000,
+          "helix-3": 8,
+          "ring-3": 4
+        },
+        {
+          "shell": 120000,
+          "helix-3": 12,
+          "ring-3": 8
+        }
+      ],
+      "image": "./assets/weapons/21050015.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21050015",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "daybreaker-s-spine",
+      "name": "Daybreaker's Spine",
+      "type": "Gauntlets",
+      "rarity": 5,
+      "enemy": "mech-core",
+      "forgery": "waveworn-shard",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 10000,
+          "mech-core-0": 6
+        },
+        {
+          "shell": 20000,
+          "waveworn-shard-0": 6,
+          "mech-core-1": 6
+        },
+        {
+          "shell": 40000,
+          "waveworn-shard-1": 8,
+          "mech-core-2": 4
+        },
+        {
+          "shell": 60000,
+          "waveworn-shard-2": 6,
+          "mech-core-2": 6
+        },
+        {
+          "shell": 80000,
+          "waveworn-shard-3": 8,
+          "mech-core-3": 4
+        },
+        {
+          "shell": 120000,
+          "waveworn-shard-3": 12,
+          "mech-core-3": 8
+        }
+      ],
+      "image": "./assets/weapons/21040056.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21040056",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "defier-s-thorn",
+      "name": "Defier's Thorn",
+      "type": "Sword",
+      "rarity": 5,
+      "enemy": "howler",
+      "forgery": "drip",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 10000,
+          "howler-0": 6
+        },
+        {
+          "shell": 20000,
+          "drip-0": 6,
+          "howler-1": 6
+        },
+        {
+          "shell": 40000,
+          "drip-1": 8,
+          "howler-2": 4
+        },
+        {
+          "shell": 60000,
+          "drip-2": 6,
+          "howler-2": 6
+        },
+        {
+          "shell": 80000,
+          "drip-3": 8,
+          "howler-3": 4
+        },
+        {
+          "shell": 120000,
+          "drip-3": 12,
+          "howler-3": 8
+        }
+      ],
+      "image": "./assets/weapons/21020056.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21020056",
+        "weapon-xp-rarities"
       ],
       "ascensionVerified": true
     },
@@ -1282,7 +1725,5180 @@
       "rarity": 5,
       "sources": [
         "emerald",
-        "emerald-cost"
+        "emerald-cost",
+        "weapon-skill-materials",
+        "weapon-21020015",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true,
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 10000,
+          "howler-0": 6
+        },
+        {
+          "shell": 20000,
+          "drip-0": 6,
+          "howler-1": 6
+        },
+        {
+          "shell": 40000,
+          "drip-1": 8,
+          "howler-2": 4
+        },
+        {
+          "shell": 60000,
+          "drip-2": 6,
+          "howler-2": 6
+        },
+        {
+          "shell": 80000,
+          "drip-3": 8,
+          "howler-3": 4
+        },
+        {
+          "shell": 120000,
+          "drip-3": 12,
+          "howler-3": 8
+        }
+      ],
+      "image": "./assets/weapons/21020015.webp"
+    },
+    {
+      "id": "emerald-sentence",
+      "name": "Emerald Sentence",
+      "type": "Sword",
+      "rarity": 5,
+      "enemy": "howler",
+      "forgery": "drip",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 10000,
+          "howler-0": 6
+        },
+        {
+          "shell": 20000,
+          "drip-0": 6,
+          "howler-1": 6
+        },
+        {
+          "shell": 40000,
+          "drip-1": 8,
+          "howler-2": 4
+        },
+        {
+          "shell": 60000,
+          "drip-2": 6,
+          "howler-2": 6
+        },
+        {
+          "shell": 80000,
+          "drip-3": 8,
+          "howler-3": 4
+        },
+        {
+          "shell": 120000,
+          "drip-3": 12,
+          "howler-3": 8
+        }
+      ],
+      "image": "./assets/weapons/21020066.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21020066",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "everbright-polestar",
+      "name": "Everbright Polestar",
+      "type": "Sword",
+      "rarity": 5,
+      "enemy": "mech-core",
+      "forgery": "broken-wing-polarizer",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 10000,
+          "mech-core-0": 6
+        },
+        {
+          "shell": 20000,
+          "broken-wing-polarizer-0": 6,
+          "mech-core-1": 6
+        },
+        {
+          "shell": 40000,
+          "broken-wing-polarizer-1": 8,
+          "mech-core-2": 4
+        },
+        {
+          "shell": 60000,
+          "broken-wing-polarizer-2": 6,
+          "mech-core-2": 6
+        },
+        {
+          "shell": 80000,
+          "broken-wing-polarizer-3": 8,
+          "mech-core-3": 4
+        },
+        {
+          "shell": 120000,
+          "broken-wing-polarizer-3": 12,
+          "mech-core-3": 8
+        }
+      ],
+      "image": "./assets/weapons/21020076.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21020076",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "firstlight-s-herald",
+      "name": "Firstlight's Herald",
+      "type": "Rectifier",
+      "rarity": 5,
+      "enemy": "exoswarm-core",
+      "forgery": "spliced-string",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 10000,
+          "exoswarm-core-0": 6
+        },
+        {
+          "shell": 20000,
+          "spliced-string-0": 6,
+          "exoswarm-core-1": 6
+        },
+        {
+          "shell": 40000,
+          "spliced-string-1": 8,
+          "exoswarm-core-2": 4
+        },
+        {
+          "shell": 60000,
+          "spliced-string-2": 6,
+          "exoswarm-core-2": 6
+        },
+        {
+          "shell": 80000,
+          "spliced-string-3": 8,
+          "exoswarm-core-3": 4
+        },
+        {
+          "shell": 120000,
+          "spliced-string-3": 12,
+          "exoswarm-core-3": 8
+        }
+      ],
+      "image": "./assets/weapons/21050096.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21050096",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "forged-dwarf-star",
+      "name": "Forged Dwarf Star",
+      "type": "Rectifier",
+      "rarity": 5,
+      "enemy": "exoswarm-core",
+      "forgery": "spliced-string",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 10000,
+          "exoswarm-core-0": 6
+        },
+        {
+          "shell": 20000,
+          "spliced-string-0": 6,
+          "exoswarm-core-1": 6
+        },
+        {
+          "shell": 40000,
+          "spliced-string-1": 8,
+          "exoswarm-core-2": 4
+        },
+        {
+          "shell": 60000,
+          "spliced-string-2": 6,
+          "exoswarm-core-2": 6
+        },
+        {
+          "shell": 80000,
+          "spliced-string-3": 8,
+          "exoswarm-core-3": 4
+        },
+        {
+          "shell": 120000,
+          "spliced-string-3": 12,
+          "exoswarm-core-3": 8
+        }
+      ],
+      "image": "./assets/weapons/21050076.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21050076",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "freeze-frame",
+      "name": "Freeze Frame",
+      "type": "Rectifier",
+      "rarity": 5,
+      "enemy": "exoswarm-core",
+      "forgery": "spliced-string",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 10000,
+          "exoswarm-core-0": 6
+        },
+        {
+          "shell": 20000,
+          "spliced-string-0": 6,
+          "exoswarm-core-1": 6
+        },
+        {
+          "shell": 40000,
+          "spliced-string-1": 8,
+          "exoswarm-core-2": 4
+        },
+        {
+          "shell": 60000,
+          "spliced-string-2": 6,
+          "exoswarm-core-2": 6
+        },
+        {
+          "shell": 80000,
+          "spliced-string-3": 8,
+          "exoswarm-core-3": 4
+        },
+        {
+          "shell": 120000,
+          "spliced-string-3": 12,
+          "exoswarm-core-3": 8
+        }
+      ],
+      "image": "./assets/weapons/21050086.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21050086",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "frostburn",
+      "name": "Frostburn",
+      "type": "Sword",
+      "rarity": 5,
+      "enemy": "mech-core",
+      "forgery": "broken-wing-polarizer",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 10000,
+          "mech-core-0": 6
+        },
+        {
+          "shell": 20000,
+          "broken-wing-polarizer-0": 6,
+          "mech-core-1": 6
+        },
+        {
+          "shell": 40000,
+          "broken-wing-polarizer-1": 8,
+          "mech-core-2": 4
+        },
+        {
+          "shell": 60000,
+          "broken-wing-polarizer-2": 6,
+          "mech-core-2": 6
+        },
+        {
+          "shell": 80000,
+          "broken-wing-polarizer-3": 8,
+          "mech-core-3": 4
+        },
+        {
+          "shell": 120000,
+          "broken-wing-polarizer-3": 12,
+          "mech-core-3": 8
+        }
+      ],
+      "image": "./assets/weapons/21020086.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21020086",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "glint-of-clouds",
+      "name": "Glint of Clouds",
+      "type": "Sword",
+      "rarity": 5,
+      "enemy": "mech-core",
+      "forgery": "broken-wing-polarizer",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 10000,
+          "mech-core-0": 6
+        },
+        {
+          "shell": 20000,
+          "broken-wing-polarizer-0": 6,
+          "mech-core-1": 6
+        },
+        {
+          "shell": 40000,
+          "broken-wing-polarizer-1": 8,
+          "mech-core-2": 4
+        },
+        {
+          "shell": 60000,
+          "broken-wing-polarizer-2": 6,
+          "mech-core-2": 6
+        },
+        {
+          "shell": 80000,
+          "broken-wing-polarizer-3": 8,
+          "mech-core-3": 4
+        },
+        {
+          "shell": 120000,
+          "broken-wing-polarizer-3": 12,
+          "mech-core-3": 8
+        }
+      ],
+      "image": "./assets/weapons/21020106.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21020106",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "kumokiri",
+      "name": "Kumokiri",
+      "type": "Broadblade",
+      "rarity": 5,
+      "enemy": "whisper",
+      "forgery": "waveworn",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 10000,
+          "whisper-0": 6
+        },
+        {
+          "shell": 20000,
+          "waveworn-0": 6,
+          "whisper-1": 6
+        },
+        {
+          "shell": 40000,
+          "waveworn-1": 8,
+          "whisper-2": 4
+        },
+        {
+          "shell": 60000,
+          "waveworn-2": 6,
+          "whisper-2": 6
+        },
+        {
+          "shell": 80000,
+          "waveworn-3": 8,
+          "whisper-3": 4
+        },
+        {
+          "shell": 120000,
+          "waveworn-3": 12,
+          "whisper-3": 8
+        }
+      ],
+      "image": "./assets/weapons/21010056.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21010056",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "lethean-elegy",
+      "name": "Lethean Elegy",
+      "type": "Rectifier",
+      "rarity": 5,
+      "enemy": "ring",
+      "forgery": "helix",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 10000,
+          "ring-0": 6
+        },
+        {
+          "shell": 20000,
+          "helix-0": 6,
+          "ring-1": 6
+        },
+        {
+          "shell": 40000,
+          "helix-1": 8,
+          "ring-2": 4
+        },
+        {
+          "shell": 60000,
+          "helix-2": 6,
+          "ring-2": 6
+        },
+        {
+          "shell": 80000,
+          "helix-3": 8,
+          "ring-3": 4
+        },
+        {
+          "shell": 120000,
+          "helix-3": 12,
+          "ring-3": 8
+        }
+      ],
+      "image": "./assets/weapons/21050066.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21050066",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "luminous-hymn",
+      "name": "Luminous Hymn",
+      "type": "Rectifier",
+      "rarity": 5,
+      "enemy": "ring",
+      "forgery": "helix",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 10000,
+          "ring-0": 6
+        },
+        {
+          "shell": 20000,
+          "helix-0": 6,
+          "ring-1": 6
+        },
+        {
+          "shell": 40000,
+          "helix-1": 8,
+          "ring-2": 4
+        },
+        {
+          "shell": 60000,
+          "helix-2": 6,
+          "ring-2": 6
+        },
+        {
+          "shell": 80000,
+          "helix-3": 8,
+          "ring-3": 4
+        },
+        {
+          "shell": 120000,
+          "helix-3": 12,
+          "ring-3": 8
+        }
+      ],
+      "image": "./assets/weapons/21050046.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21050046",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "lustrous-razor",
+      "name": "Lustrous Razor",
+      "type": "Broadblade",
+      "rarity": 5,
+      "enemy": "whisper",
+      "forgery": "waveworn",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 10000,
+          "whisper-0": 6
+        },
+        {
+          "shell": 20000,
+          "waveworn-0": 6,
+          "whisper-1": 6
+        },
+        {
+          "shell": 40000,
+          "waveworn-1": 8,
+          "whisper-2": 4
+        },
+        {
+          "shell": 60000,
+          "waveworn-2": 6,
+          "whisper-2": 6
+        },
+        {
+          "shell": 80000,
+          "waveworn-3": 8,
+          "whisper-3": 4
+        },
+        {
+          "shell": 120000,
+          "waveworn-3": 12,
+          "whisper-3": 8
+        }
+      ],
+      "image": "./assets/weapons/21010015.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21010015",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "lux-umbra",
+      "name": "Lux & Umbra",
+      "type": "Pistols",
+      "rarity": 5,
+      "enemy": "ring",
+      "forgery": "impure-phlogiston",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 10000,
+          "ring-0": 6
+        },
+        {
+          "shell": 20000,
+          "impure-phlogiston-0": 6,
+          "ring-1": 6
+        },
+        {
+          "shell": 40000,
+          "impure-phlogiston-1": 8,
+          "ring-2": 4
+        },
+        {
+          "shell": 60000,
+          "impure-phlogiston-2": 6,
+          "ring-2": 6
+        },
+        {
+          "shell": 80000,
+          "impure-phlogiston-3": 8,
+          "ring-3": 4
+        },
+        {
+          "shell": 120000,
+          "impure-phlogiston-3": 12,
+          "ring-3": 8
+        }
+      ],
+      "image": "./assets/weapons/21030036.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21030036",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "moongazer-s-sigil",
+      "name": "Moongazer's Sigil",
+      "type": "Gauntlets",
+      "rarity": 5,
+      "enemy": "howler",
+      "forgery": "cadence-seed",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 10000,
+          "howler-0": 6
+        },
+        {
+          "shell": 20000,
+          "cadence-seed-0": 6,
+          "howler-1": 6
+        },
+        {
+          "shell": 40000,
+          "cadence-seed-1": 8,
+          "howler-2": 4
+        },
+        {
+          "shell": 60000,
+          "cadence-seed-2": 6,
+          "howler-2": 6
+        },
+        {
+          "shell": 80000,
+          "cadence-seed-3": 8,
+          "howler-3": 4
+        },
+        {
+          "shell": 120000,
+          "cadence-seed-3": 12,
+          "howler-3": 8
+        }
+      ],
+      "image": "./assets/weapons/21040046.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21040046",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "pulsation-bracer",
+      "name": "Pulsation Bracer",
+      "type": "Gauntlets",
+      "rarity": 5,
+      "enemy": "mech-core",
+      "forgery": "waveworn-shard",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 10000,
+          "mech-core-0": 6
+        },
+        {
+          "shell": 20000,
+          "mech-core-1": 6,
+          "waveworn-shard-0": 6
+        },
+        {
+          "shell": 40000,
+          "mech-core-2": 4,
+          "waveworn-shard-1": 8
+        },
+        {
+          "shell": 60000,
+          "mech-core-2": 6,
+          "waveworn-shard-2": 6
+        },
+        {
+          "shell": 80000,
+          "mech-core-3": 4,
+          "waveworn-shard-3": 8
+        },
+        {
+          "shell": 120000,
+          "mech-core-3": 8,
+          "waveworn-shard-3": 12
+        }
+      ],
+      "image": "./assets/weapons/21040045.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21040045",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "radiance-cleaver",
+      "name": "Radiance Cleaver",
+      "type": "Broadblade",
+      "rarity": 5,
+      "enemy": "fractured-exoswarm-pendant",
+      "forgery": "carved-crystal",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 10000,
+          "fractured-exoswarm-pendant-0": 6
+        },
+        {
+          "shell": 20000,
+          "fractured-exoswarm-pendant-1": 6,
+          "carved-crystal-0": 6
+        },
+        {
+          "shell": 40000,
+          "fractured-exoswarm-pendant-2": 4,
+          "carved-crystal-1": 8
+        },
+        {
+          "shell": 60000,
+          "fractured-exoswarm-pendant-2": 6,
+          "carved-crystal-2": 6
+        },
+        {
+          "shell": 80000,
+          "fractured-exoswarm-pendant-3": 4,
+          "carved-crystal-3": 8
+        },
+        {
+          "shell": 120000,
+          "fractured-exoswarm-pendant-3": 8,
+          "carved-crystal-3": 12
+        }
+      ],
+      "image": "./assets/weapons/21010045.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21010045",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "red-spring",
+      "name": "Red Spring",
+      "type": "Sword",
+      "rarity": 5,
+      "enemy": "howler",
+      "forgery": "drip",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 10000,
+          "howler-0": 6
+        },
+        {
+          "shell": 20000,
+          "drip-0": 6,
+          "howler-1": 6
+        },
+        {
+          "shell": 40000,
+          "drip-1": 8,
+          "howler-2": 4
+        },
+        {
+          "shell": 60000,
+          "drip-2": 6,
+          "howler-2": 6
+        },
+        {
+          "shell": 80000,
+          "drip-3": 8,
+          "howler-3": 4
+        },
+        {
+          "shell": 120000,
+          "drip-3": 12,
+          "howler-3": 8
+        }
+      ],
+      "image": "./assets/weapons/21020026.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21020026",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "rime-draped-sprouts",
+      "name": "Rime-Draped Sprouts",
+      "type": "Rectifier",
+      "rarity": 5,
+      "enemy": "ring",
+      "forgery": "helix",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 10000,
+          "ring-0": 6
+        },
+        {
+          "shell": 20000,
+          "helix-0": 6,
+          "ring-1": 6
+        },
+        {
+          "shell": 40000,
+          "helix-1": 8,
+          "ring-2": 4
+        },
+        {
+          "shell": 60000,
+          "helix-2": 6,
+          "ring-2": 6
+        },
+        {
+          "shell": 80000,
+          "helix-3": 8,
+          "ring-3": 4
+        },
+        {
+          "shell": 120000,
+          "helix-3": 12,
+          "ring-3": 8
+        }
+      ],
+      "image": "./assets/weapons/21050026.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21050026",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "skull-thrasher",
+      "name": "Skull Thrasher",
+      "type": "Pistols",
+      "rarity": 5,
+      "enemy": "fractured-exoswarm-pendant",
+      "forgery": "incomplete-combustor",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 10000,
+          "fractured-exoswarm-pendant-0": 6
+        },
+        {
+          "shell": 20000,
+          "incomplete-combustor-0": 6,
+          "fractured-exoswarm-pendant-1": 6
+        },
+        {
+          "shell": 40000,
+          "incomplete-combustor-1": 8,
+          "fractured-exoswarm-pendant-2": 4
+        },
+        {
+          "shell": 60000,
+          "incomplete-combustor-2": 6,
+          "fractured-exoswarm-pendant-2": 6
+        },
+        {
+          "shell": 80000,
+          "incomplete-combustor-3": 8,
+          "fractured-exoswarm-pendant-3": 4
+        },
+        {
+          "shell": 120000,
+          "incomplete-combustor-3": 12,
+          "fractured-exoswarm-pendant-3": 8
+        }
+      ],
+      "image": "./assets/weapons/21030066.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21030066",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "solsworn-ciphers",
+      "name": "Solsworn Ciphers",
+      "type": "Gauntlets",
+      "rarity": 5,
+      "enemy": "mech-core",
+      "forgery": "waveworn-shard",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 10000,
+          "mech-core-0": 6
+        },
+        {
+          "shell": 20000,
+          "waveworn-shard-0": 6,
+          "mech-core-1": 6
+        },
+        {
+          "shell": 40000,
+          "waveworn-shard-1": 8,
+          "mech-core-2": 4
+        },
+        {
+          "shell": 60000,
+          "waveworn-shard-2": 6,
+          "mech-core-2": 6
+        },
+        {
+          "shell": 80000,
+          "waveworn-shard-3": 8,
+          "mech-core-3": 4
+        },
+        {
+          "shell": 120000,
+          "waveworn-shard-3": 12,
+          "mech-core-3": 8
+        }
+      ],
+      "image": "./assets/weapons/21040066.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21040066",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "spectral-trigger",
+      "name": "Spectral Trigger",
+      "type": "Pistols",
+      "rarity": 5,
+      "enemy": "fractured-exoswarm-pendant",
+      "forgery": "incomplete-combustor",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 10000,
+          "fractured-exoswarm-pendant-0": 6
+        },
+        {
+          "shell": 20000,
+          "incomplete-combustor-0": 6,
+          "fractured-exoswarm-pendant-1": 6
+        },
+        {
+          "shell": 40000,
+          "incomplete-combustor-1": 8,
+          "fractured-exoswarm-pendant-2": 4
+        },
+        {
+          "shell": 60000,
+          "incomplete-combustor-2": 6,
+          "fractured-exoswarm-pendant-2": 6
+        },
+        {
+          "shell": 80000,
+          "incomplete-combustor-3": 8,
+          "fractured-exoswarm-pendant-3": 4
+        },
+        {
+          "shell": 120000,
+          "incomplete-combustor-3": 12,
+          "fractured-exoswarm-pendant-3": 8
+        }
+      ],
+      "image": "./assets/weapons/21030056.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21030056",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "spectrum-blaster",
+      "name": "Spectrum Blaster",
+      "type": "Pistols",
+      "rarity": 5,
+      "enemy": "fractured-exoswarm-pendant",
+      "forgery": "incomplete-combustor",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 10000,
+          "fractured-exoswarm-pendant-0": 6
+        },
+        {
+          "shell": 20000,
+          "incomplete-combustor-0": 6,
+          "fractured-exoswarm-pendant-1": 6
+        },
+        {
+          "shell": 40000,
+          "incomplete-combustor-1": 8,
+          "fractured-exoswarm-pendant-2": 4
+        },
+        {
+          "shell": 60000,
+          "incomplete-combustor-2": 6,
+          "fractured-exoswarm-pendant-2": 6
+        },
+        {
+          "shell": 80000,
+          "incomplete-combustor-3": 8,
+          "fractured-exoswarm-pendant-3": 4
+        },
+        {
+          "shell": 120000,
+          "incomplete-combustor-3": 12,
+          "fractured-exoswarm-pendant-3": 8
+        }
+      ],
+      "image": "./assets/weapons/21030046.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21030046",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "starfield-calibrator",
+      "name": "Starfield Calibrator",
+      "type": "Broadblade",
+      "rarity": 5,
+      "enemy": "fractured-exoswarm-pendant",
+      "forgery": "carved-crystal",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 10000,
+          "fractured-exoswarm-pendant-0": 6
+        },
+        {
+          "shell": 20000,
+          "carved-crystal-0": 6,
+          "fractured-exoswarm-pendant-1": 6
+        },
+        {
+          "shell": 40000,
+          "carved-crystal-1": 8,
+          "fractured-exoswarm-pendant-2": 4
+        },
+        {
+          "shell": 60000,
+          "carved-crystal-2": 6,
+          "fractured-exoswarm-pendant-2": 6
+        },
+        {
+          "shell": 80000,
+          "carved-crystal-3": 8,
+          "fractured-exoswarm-pendant-3": 4
+        },
+        {
+          "shell": 120000,
+          "carved-crystal-3": 12,
+          "fractured-exoswarm-pendant-3": 8
+        }
+      ],
+      "image": "./assets/weapons/21010066.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21010066",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "static-mist",
+      "name": "Static Mist",
+      "type": "Pistols",
+      "rarity": 5,
+      "enemy": "ring",
+      "forgery": "impure-phlogiston",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 10000,
+          "ring-0": 6
+        },
+        {
+          "shell": 20000,
+          "impure-phlogiston-0": 6,
+          "ring-1": 6
+        },
+        {
+          "shell": 40000,
+          "impure-phlogiston-1": 8,
+          "ring-2": 4
+        },
+        {
+          "shell": 60000,
+          "impure-phlogiston-2": 6,
+          "ring-2": 6
+        },
+        {
+          "shell": 80000,
+          "impure-phlogiston-3": 8,
+          "ring-3": 4
+        },
+        {
+          "shell": 120000,
+          "impure-phlogiston-3": 12,
+          "ring-3": 8
+        }
+      ],
+      "image": "./assets/weapons/21030015.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21030015",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "stellar-symphony",
+      "name": "Stellar Symphony",
+      "type": "Rectifier",
+      "rarity": 5,
+      "enemy": "ring",
+      "forgery": "helix",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 10000,
+          "ring-0": 6
+        },
+        {
+          "shell": 20000,
+          "helix-0": 6,
+          "ring-1": 6
+        },
+        {
+          "shell": 40000,
+          "helix-1": 8,
+          "ring-2": 4
+        },
+        {
+          "shell": 60000,
+          "helix-2": 6,
+          "ring-2": 6
+        },
+        {
+          "shell": 80000,
+          "helix-3": 8,
+          "ring-3": 4
+        },
+        {
+          "shell": 120000,
+          "helix-3": 12,
+          "ring-3": 8
+        }
+      ],
+      "image": "./assets/weapons/21050036.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21050036",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "stringmaster",
+      "name": "Stringmaster",
+      "type": "Rectifier",
+      "forgery": "helix",
+      "enemy": "ring",
+      "rarity": 5,
+      "sources": [
+        "stringmaster",
+        "stringmaster-cost",
+        "weapon-skill-materials",
+        "weapon-21050016",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true,
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 10000,
+          "ring-0": 6
+        },
+        {
+          "shell": 20000,
+          "helix-0": 6,
+          "ring-1": 6
+        },
+        {
+          "shell": 40000,
+          "helix-1": 8,
+          "ring-2": 4
+        },
+        {
+          "shell": 60000,
+          "helix-2": 6,
+          "ring-2": 6
+        },
+        {
+          "shell": 80000,
+          "helix-3": 8,
+          "ring-3": 4
+        },
+        {
+          "shell": 120000,
+          "helix-3": 12,
+          "ring-3": 8
+        }
+      ],
+      "image": "./assets/weapons/21050016.webp"
+    },
+    {
+      "id": "the-last-dance",
+      "name": "The Last Dance",
+      "type": "Pistols",
+      "rarity": 5,
+      "enemy": "ring",
+      "forgery": "impure-phlogiston",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 10000,
+          "ring-0": 6
+        },
+        {
+          "shell": 20000,
+          "impure-phlogiston-0": 6,
+          "ring-1": 6
+        },
+        {
+          "shell": 40000,
+          "impure-phlogiston-1": 8,
+          "ring-2": 4
+        },
+        {
+          "shell": 60000,
+          "impure-phlogiston-2": 6,
+          "ring-2": 6
+        },
+        {
+          "shell": 80000,
+          "impure-phlogiston-3": 8,
+          "ring-3": 4
+        },
+        {
+          "shell": 120000,
+          "impure-phlogiston-3": 12,
+          "ring-3": 8
+        }
+      ],
+      "image": "./assets/weapons/21030016.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21030016",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "thousandfold-deliverance",
+      "name": "Thousandfold Deliverance",
+      "type": "Broadblade",
+      "rarity": 5,
+      "enemy": "fractured-exoswarm-pendant",
+      "forgery": "carved-crystal",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 10000,
+          "fractured-exoswarm-pendant-0": 6
+        },
+        {
+          "shell": 20000,
+          "carved-crystal-0": 6,
+          "fractured-exoswarm-pendant-1": 6
+        },
+        {
+          "shell": 40000,
+          "carved-crystal-1": 8,
+          "fractured-exoswarm-pendant-2": 4
+        },
+        {
+          "shell": 60000,
+          "carved-crystal-2": 6,
+          "fractured-exoswarm-pendant-2": 6
+        },
+        {
+          "shell": 80000,
+          "carved-crystal-3": 8,
+          "fractured-exoswarm-pendant-3": 4
+        },
+        {
+          "shell": 120000,
+          "carved-crystal-3": 12,
+          "fractured-exoswarm-pendant-3": 8
+        }
+      ],
+      "image": "./assets/weapons/21010076.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21010076",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "thunderflare-dominion",
+      "name": "Thunderflare Dominion",
+      "type": "Broadblade",
+      "rarity": 5,
+      "enemy": "whisper",
+      "forgery": "waveworn",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 10000,
+          "whisper-0": 6
+        },
+        {
+          "shell": 20000,
+          "waveworn-0": 6,
+          "whisper-1": 6
+        },
+        {
+          "shell": 40000,
+          "waveworn-1": 8,
+          "whisper-2": 4
+        },
+        {
+          "shell": 60000,
+          "waveworn-2": 6,
+          "whisper-2": 6
+        },
+        {
+          "shell": 80000,
+          "waveworn-3": 8,
+          "whisper-3": 4
+        },
+        {
+          "shell": 120000,
+          "waveworn-3": 12,
+          "whisper-3": 8
+        }
+      ],
+      "image": "./assets/weapons/21010046.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21010046",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "tragicomedy",
+      "name": "Tragicomedy",
+      "type": "Gauntlets",
+      "rarity": 5,
+      "enemy": "howler",
+      "forgery": "cadence-seed",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 10000,
+          "howler-0": 6
+        },
+        {
+          "shell": 20000,
+          "cadence-seed-0": 6,
+          "howler-1": 6
+        },
+        {
+          "shell": 40000,
+          "cadence-seed-1": 8,
+          "howler-2": 4
+        },
+        {
+          "shell": 60000,
+          "cadence-seed-2": 6,
+          "howler-2": 6
+        },
+        {
+          "shell": 80000,
+          "cadence-seed-3": 8,
+          "howler-3": 4
+        },
+        {
+          "shell": 120000,
+          "cadence-seed-3": 12,
+          "howler-3": 8
+        }
+      ],
+      "image": "./assets/weapons/21040026.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21040026",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "unflickering-valor",
+      "name": "Unflickering Valor",
+      "type": "Sword",
+      "rarity": 5,
+      "enemy": "howler",
+      "forgery": "drip",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 10000,
+          "howler-0": 6
+        },
+        {
+          "shell": 20000,
+          "drip-0": 6,
+          "howler-1": 6
+        },
+        {
+          "shell": 40000,
+          "drip-1": 8,
+          "howler-2": 4
+        },
+        {
+          "shell": 60000,
+          "drip-2": 6,
+          "howler-2": 6
+        },
+        {
+          "shell": 80000,
+          "drip-3": 8,
+          "howler-3": 4
+        },
+        {
+          "shell": 120000,
+          "drip-3": 12,
+          "howler-3": 8
+        }
+      ],
+      "image": "./assets/weapons/21020036.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21020036",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "verdant",
+      "name": "Verdant Summit",
+      "type": "Broadblade",
+      "forgery": "waveworn",
+      "enemy": "whisper",
+      "rarity": 5,
+      "sources": [
+        "verdant",
+        "verdant-cost",
+        "weapon-skill-materials",
+        "weapon-21010016",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true,
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 10000,
+          "whisper-0": 6
+        },
+        {
+          "shell": 20000,
+          "waveworn-0": 6,
+          "whisper-1": 6
+        },
+        {
+          "shell": 40000,
+          "waveworn-1": 8,
+          "whisper-2": 4
+        },
+        {
+          "shell": 60000,
+          "waveworn-2": 6,
+          "whisper-2": 6
+        },
+        {
+          "shell": 80000,
+          "waveworn-3": 8,
+          "whisper-3": 4
+        },
+        {
+          "shell": 120000,
+          "waveworn-3": 12,
+          "whisper-3": 8
+        }
+      ],
+      "image": "./assets/weapons/21010016.webp"
+    },
+    {
+      "id": "verity-s-handle",
+      "name": "Verity's Handle",
+      "type": "Gauntlets",
+      "rarity": 5,
+      "enemy": "howler",
+      "forgery": "cadence-seed",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 10000,
+          "howler-0": 6
+        },
+        {
+          "shell": 20000,
+          "cadence-seed-0": 6,
+          "howler-1": 6
+        },
+        {
+          "shell": 40000,
+          "cadence-seed-1": 8,
+          "howler-2": 4
+        },
+        {
+          "shell": 60000,
+          "cadence-seed-2": 6,
+          "howler-2": 6
+        },
+        {
+          "shell": 80000,
+          "cadence-seed-3": 8,
+          "howler-3": 4
+        },
+        {
+          "shell": 120000,
+          "cadence-seed-3": 12,
+          "howler-3": 8
+        }
+      ],
+      "image": "./assets/weapons/21040016.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21040016",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "whispers-of-sirens",
+      "name": "Whispers of Sirens",
+      "type": "Rectifier",
+      "rarity": 5,
+      "enemy": "ring",
+      "forgery": "helix",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 10000,
+          "ring-0": 6
+        },
+        {
+          "shell": 20000,
+          "helix-0": 6,
+          "ring-1": 6
+        },
+        {
+          "shell": 40000,
+          "helix-1": 8,
+          "ring-2": 4
+        },
+        {
+          "shell": 60000,
+          "helix-2": 6,
+          "ring-2": 6
+        },
+        {
+          "shell": 80000,
+          "helix-3": 8,
+          "ring-3": 4
+        },
+        {
+          "shell": 120000,
+          "helix-3": 12,
+          "ring-3": 8
+        }
+      ],
+      "image": "./assets/weapons/21050056.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21050056",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "wildfire-mark",
+      "name": "Wildfire Mark",
+      "type": "Broadblade",
+      "rarity": 5,
+      "enemy": "whisper",
+      "forgery": "waveworn",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 10000,
+          "whisper-0": 6
+        },
+        {
+          "shell": 20000,
+          "waveworn-0": 6,
+          "whisper-1": 6
+        },
+        {
+          "shell": 40000,
+          "waveworn-1": 8,
+          "whisper-2": 4
+        },
+        {
+          "shell": 60000,
+          "waveworn-2": 6,
+          "whisper-2": 6
+        },
+        {
+          "shell": 80000,
+          "waveworn-3": 8,
+          "whisper-3": 4
+        },
+        {
+          "shell": 120000,
+          "waveworn-3": 12,
+          "whisper-3": 8
+        }
+      ],
+      "image": "./assets/weapons/21010036.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21010036",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "woodland-aria",
+      "name": "Woodland Aria",
+      "type": "Pistols",
+      "rarity": 5,
+      "enemy": "ring",
+      "forgery": "impure-phlogiston",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 10000,
+          "ring-0": 6
+        },
+        {
+          "shell": 20000,
+          "impure-phlogiston-0": 6,
+          "ring-1": 6
+        },
+        {
+          "shell": 40000,
+          "impure-phlogiston-1": 8,
+          "ring-2": 4
+        },
+        {
+          "shell": 60000,
+          "impure-phlogiston-2": 6,
+          "ring-2": 6
+        },
+        {
+          "shell": 80000,
+          "impure-phlogiston-3": 8,
+          "ring-3": 4
+        },
+        {
+          "shell": 120000,
+          "impure-phlogiston-3": 12,
+          "ring-3": 8
+        }
+      ],
+      "image": "./assets/weapons/21030026.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21030026",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "aether-strike",
+      "name": "Aether Strike",
+      "type": "Gauntlets",
+      "rarity": 4,
+      "enemy": "howler",
+      "forgery": "cadence-seed",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 8000,
+          "howler-0": 5
+        },
+        {
+          "shell": 16000,
+          "cadence-seed-0": 5,
+          "howler-1": 5
+        },
+        {
+          "shell": 32000,
+          "cadence-seed-1": 7,
+          "howler-2": 4
+        },
+        {
+          "shell": 48000,
+          "cadence-seed-2": 5,
+          "howler-2": 5
+        },
+        {
+          "shell": 64000,
+          "cadence-seed-3": 7,
+          "howler-3": 4
+        },
+        {
+          "shell": 96000,
+          "cadence-seed-3": 10,
+          "howler-3": 7
+        }
+      ],
+      "image": "./assets/weapons/21040104.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21040104",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "amity-accord",
+      "name": "Amity Accord",
+      "type": "Gauntlets",
+      "rarity": 4,
+      "enemy": "howler",
+      "forgery": "cadence-seed",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 8000,
+          "howler-0": 5
+        },
+        {
+          "shell": 16000,
+          "cadence-seed-0": 5,
+          "howler-1": 5
+        },
+        {
+          "shell": 32000,
+          "cadence-seed-1": 7,
+          "howler-2": 4
+        },
+        {
+          "shell": 48000,
+          "cadence-seed-2": 5,
+          "howler-2": 5
+        },
+        {
+          "shell": 64000,
+          "cadence-seed-3": 7,
+          "howler-3": 4
+        },
+        {
+          "shell": 96000,
+          "cadence-seed-3": 10,
+          "howler-3": 7
+        }
+      ],
+      "image": "./assets/weapons/21040044.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21040044",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "augment",
+      "name": "Augment",
+      "type": "Rectifier",
+      "rarity": 4,
+      "enemy": "ring",
+      "forgery": "helix",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 8000,
+          "ring-0": 5
+        },
+        {
+          "shell": 16000,
+          "helix-0": 5,
+          "ring-1": 5
+        },
+        {
+          "shell": 32000,
+          "helix-1": 7,
+          "ring-2": 4
+        },
+        {
+          "shell": 48000,
+          "helix-2": 5,
+          "ring-2": 5
+        },
+        {
+          "shell": 64000,
+          "helix-3": 7,
+          "ring-3": 4
+        },
+        {
+          "shell": 96000,
+          "helix-3": 10,
+          "ring-3": 7
+        }
+      ],
+      "image": "./assets/weapons/21050074.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21050074",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "aureate-zenith",
+      "name": "Aureate Zenith",
+      "type": "Broadblade",
+      "rarity": 4,
+      "enemy": "whisper",
+      "forgery": "waveworn",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 8000,
+          "whisper-0": 5
+        },
+        {
+          "shell": 16000,
+          "waveworn-0": 5,
+          "whisper-1": 5
+        },
+        {
+          "shell": 32000,
+          "waveworn-1": 7,
+          "whisper-2": 4
+        },
+        {
+          "shell": 48000,
+          "waveworn-2": 5,
+          "whisper-2": 5
+        },
+        {
+          "shell": 64000,
+          "waveworn-3": 7,
+          "whisper-3": 4
+        },
+        {
+          "shell": 96000,
+          "waveworn-3": 10,
+          "whisper-3": 7
+        }
+      ],
+      "image": "./assets/weapons/21010104.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21010104",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "autumntrace",
+      "name": "Autumntrace",
+      "type": "Broadblade",
+      "rarity": 4,
+      "enemy": "whisper",
+      "forgery": "waveworn",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 8000,
+          "whisper-0": 5
+        },
+        {
+          "shell": 16000,
+          "waveworn-0": 5,
+          "whisper-1": 5
+        },
+        {
+          "shell": 32000,
+          "waveworn-1": 7,
+          "whisper-2": 4
+        },
+        {
+          "shell": 48000,
+          "waveworn-2": 5,
+          "whisper-2": 5
+        },
+        {
+          "shell": 64000,
+          "waveworn-3": 7,
+          "whisper-3": 4
+        },
+        {
+          "shell": 96000,
+          "waveworn-3": 10,
+          "whisper-3": 7
+        }
+      ],
+      "image": "./assets/weapons/21010074.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21010074",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "broadblade-41",
+      "name": "Broadblade#41",
+      "type": "Broadblade",
+      "rarity": 4,
+      "enemy": "whisper",
+      "forgery": "waveworn",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 8000,
+          "whisper-0": 5
+        },
+        {
+          "shell": 16000,
+          "waveworn-0": 5,
+          "whisper-1": 5
+        },
+        {
+          "shell": 32000,
+          "waveworn-1": 7,
+          "whisper-2": 4
+        },
+        {
+          "shell": 48000,
+          "waveworn-2": 5,
+          "whisper-2": 5
+        },
+        {
+          "shell": 64000,
+          "waveworn-3": 7,
+          "whisper-3": 4
+        },
+        {
+          "shell": 96000,
+          "waveworn-3": 10,
+          "whisper-3": 7
+        }
+      ],
+      "image": "./assets/weapons/21010034.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21010034",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "cadenza",
+      "name": "Cadenza",
+      "type": "Pistols",
+      "rarity": 4,
+      "enemy": "ring",
+      "forgery": "impure-phlogiston",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 8000,
+          "ring-0": 5
+        },
+        {
+          "shell": 16000,
+          "impure-phlogiston-0": 5,
+          "ring-1": 5
+        },
+        {
+          "shell": 32000,
+          "impure-phlogiston-1": 7,
+          "ring-2": 4
+        },
+        {
+          "shell": 48000,
+          "impure-phlogiston-2": 5,
+          "ring-2": 5
+        },
+        {
+          "shell": 64000,
+          "impure-phlogiston-3": 7,
+          "ring-3": 4
+        },
+        {
+          "shell": 96000,
+          "impure-phlogiston-3": 10,
+          "ring-3": 7
+        }
+      ],
+      "image": "./assets/weapons/21030024.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21030024",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "call-of-the-abyss",
+      "name": "Call of the Abyss",
+      "type": "Rectifier",
+      "rarity": 4,
+      "enemy": "ring",
+      "forgery": "helix",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 8000,
+          "ring-0": 5
+        },
+        {
+          "shell": 16000,
+          "helix-0": 5,
+          "ring-1": 5
+        },
+        {
+          "shell": 32000,
+          "helix-1": 7,
+          "ring-2": 4
+        },
+        {
+          "shell": 48000,
+          "helix-2": 5,
+          "ring-2": 5
+        },
+        {
+          "shell": 64000,
+          "helix-3": 7,
+          "ring-3": 4
+        },
+        {
+          "shell": 96000,
+          "helix-3": 10,
+          "ring-3": 7
+        }
+      ],
+      "image": "./assets/weapons/21050017.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21050017",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "celestial-spiral",
+      "name": "Celestial Spiral",
+      "type": "Gauntlets",
+      "rarity": 4,
+      "enemy": "howler",
+      "forgery": "cadence-seed",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 8000,
+          "howler-0": 5
+        },
+        {
+          "shell": 16000,
+          "cadence-seed-0": 5,
+          "howler-1": 5
+        },
+        {
+          "shell": 32000,
+          "cadence-seed-1": 7,
+          "howler-2": 4
+        },
+        {
+          "shell": 48000,
+          "cadence-seed-2": 5,
+          "howler-2": 5
+        },
+        {
+          "shell": 64000,
+          "cadence-seed-3": 7,
+          "howler-3": 4
+        },
+        {
+          "shell": 96000,
+          "cadence-seed-3": 10,
+          "howler-3": 7
+        }
+      ],
+      "image": "./assets/weapons/21040084.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21040084",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "comet-flare",
+      "name": "Comet Flare",
+      "type": "Rectifier",
+      "rarity": 4,
+      "enemy": "ring",
+      "forgery": "helix",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 8000,
+          "ring-0": 5
+        },
+        {
+          "shell": 16000,
+          "helix-0": 5,
+          "ring-1": 5
+        },
+        {
+          "shell": 32000,
+          "helix-1": 7,
+          "ring-2": 4
+        },
+        {
+          "shell": 48000,
+          "helix-2": 5,
+          "ring-2": 5
+        },
+        {
+          "shell": 64000,
+          "helix-3": 7,
+          "ring-3": 4
+        },
+        {
+          "shell": 96000,
+          "helix-3": 10,
+          "ring-3": 7
+        }
+      ],
+      "image": "./assets/weapons/21050064.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21050064",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "commando-of-conviction",
+      "name": "Commando of Conviction",
+      "type": "Sword",
+      "rarity": 4,
+      "enemy": "howler",
+      "forgery": "drip",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 8000,
+          "howler-0": 5
+        },
+        {
+          "shell": 16000,
+          "drip-0": 5,
+          "howler-1": 5
+        },
+        {
+          "shell": 32000,
+          "drip-1": 7,
+          "howler-2": 4
+        },
+        {
+          "shell": 48000,
+          "drip-2": 5,
+          "howler-2": 5
+        },
+        {
+          "shell": 64000,
+          "drip-3": 7,
+          "howler-3": 4
+        },
+        {
+          "shell": 96000,
+          "drip-3": 10,
+          "howler-3": 7
+        }
+      ],
+      "image": "./assets/weapons/21020044.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21020044",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "dauntless-evernight",
+      "name": "Dauntless Evernight",
+      "type": "Broadblade",
+      "rarity": 4,
+      "enemy": "whisper",
+      "forgery": "waveworn",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 8000,
+          "whisper-0": 5
+        },
+        {
+          "shell": 16000,
+          "waveworn-0": 5,
+          "whisper-1": 5
+        },
+        {
+          "shell": 32000,
+          "waveworn-1": 7,
+          "whisper-2": 4
+        },
+        {
+          "shell": 48000,
+          "waveworn-2": 5,
+          "whisper-2": 5
+        },
+        {
+          "shell": 64000,
+          "waveworn-3": 7,
+          "whisper-3": 4
+        },
+        {
+          "shell": 96000,
+          "waveworn-3": 10,
+          "whisper-3": 7
+        }
+      ],
+      "image": "./assets/weapons/21010044.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21010044",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "discord",
+      "name": "Discord",
+      "type": "Broadblade",
+      "rarity": 4,
+      "enemy": "whisper",
+      "forgery": "waveworn",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 8000,
+          "whisper-0": 5
+        },
+        {
+          "shell": 16000,
+          "waveworn-0": 5,
+          "whisper-1": 5
+        },
+        {
+          "shell": 32000,
+          "waveworn-1": 7,
+          "whisper-2": 4
+        },
+        {
+          "shell": 48000,
+          "waveworn-2": 5,
+          "whisper-2": 5
+        },
+        {
+          "shell": 64000,
+          "waveworn-3": 7,
+          "whisper-3": 4
+        },
+        {
+          "shell": 96000,
+          "waveworn-3": 10,
+          "whisper-3": 7
+        }
+      ],
+      "image": "./assets/weapons/21010024.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21010024",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "endless-collapse",
+      "name": "Endless Collapse",
+      "type": "Sword",
+      "rarity": 4,
+      "enemy": "howler",
+      "forgery": "drip",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 8000,
+          "howler-0": 5
+        },
+        {
+          "shell": 16000,
+          "drip-0": 5,
+          "howler-1": 5
+        },
+        {
+          "shell": 32000,
+          "drip-1": 7,
+          "howler-2": 4
+        },
+        {
+          "shell": 48000,
+          "drip-2": 5,
+          "howler-2": 5
+        },
+        {
+          "shell": 64000,
+          "drip-3": 7,
+          "howler-3": 4
+        },
+        {
+          "shell": 96000,
+          "drip-3": 10,
+          "howler-3": 7
+        }
+      ],
+      "image": "./assets/weapons/21020084.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21020084",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "fables-of-wisdom",
+      "name": "Fables of Wisdom",
+      "type": "Sword",
+      "rarity": 4,
+      "enemy": "howler",
+      "forgery": "drip",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 8000,
+          "howler-0": 5
+        },
+        {
+          "shell": 16000,
+          "drip-0": 5,
+          "howler-1": 5
+        },
+        {
+          "shell": 32000,
+          "drip-1": 7,
+          "howler-2": 4
+        },
+        {
+          "shell": 48000,
+          "drip-2": 5,
+          "howler-2": 5
+        },
+        {
+          "shell": 64000,
+          "drip-3": 7,
+          "howler-3": 4
+        },
+        {
+          "shell": 96000,
+          "drip-3": 10,
+          "howler-3": 7
+        }
+      ],
+      "image": "./assets/weapons/21020094.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21020094",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "feather-edge",
+      "name": "Feather Edge",
+      "type": "Sword",
+      "rarity": 4,
+      "enemy": "howler",
+      "forgery": "drip",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 8000,
+          "howler-0": 5
+        },
+        {
+          "shell": 16000,
+          "drip-0": 5,
+          "howler-1": 5
+        },
+        {
+          "shell": 32000,
+          "drip-1": 7,
+          "howler-2": 4
+        },
+        {
+          "shell": 48000,
+          "drip-2": 5,
+          "howler-2": 5
+        },
+        {
+          "shell": 64000,
+          "drip-3": 7,
+          "howler-3": 4
+        },
+        {
+          "shell": 96000,
+          "drip-3": 10,
+          "howler-3": 7
+        }
+      ],
+      "image": "./assets/weapons/21020104.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21020104",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "fusion-accretion",
+      "name": "Fusion Accretion",
+      "type": "Rectifier",
+      "rarity": 4,
+      "enemy": "ring",
+      "forgery": "helix",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 8000,
+          "ring-0": 5
+        },
+        {
+          "shell": 16000,
+          "helix-0": 5,
+          "ring-1": 5
+        },
+        {
+          "shell": 32000,
+          "helix-1": 7,
+          "ring-2": 4
+        },
+        {
+          "shell": 48000,
+          "helix-2": 5,
+          "ring-2": 5
+        },
+        {
+          "shell": 64000,
+          "helix-3": 7,
+          "ring-3": 4
+        },
+        {
+          "shell": 96000,
+          "helix-3": 10,
+          "ring-3": 7
+        }
+      ],
+      "image": "./assets/weapons/21050084.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21050084",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "gauntlets-21d",
+      "name": "Gauntlets#21D",
+      "type": "Gauntlets",
+      "rarity": 4,
+      "enemy": "howler",
+      "forgery": "cadence-seed",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 8000,
+          "howler-0": 5
+        },
+        {
+          "shell": 16000,
+          "cadence-seed-0": 5,
+          "howler-1": 5
+        },
+        {
+          "shell": 32000,
+          "cadence-seed-1": 7,
+          "howler-2": 4
+        },
+        {
+          "shell": 48000,
+          "cadence-seed-2": 5,
+          "howler-2": 5
+        },
+        {
+          "shell": 64000,
+          "cadence-seed-3": 7,
+          "howler-3": 4
+        },
+        {
+          "shell": 96000,
+          "cadence-seed-3": 10,
+          "howler-3": 7
+        }
+      ],
+      "image": "./assets/weapons/21040034.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21040034",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "helios-cleaver",
+      "name": "Helios Cleaver",
+      "type": "Broadblade",
+      "rarity": 4,
+      "enemy": "whisper",
+      "forgery": "waveworn",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 8000,
+          "whisper-0": 5
+        },
+        {
+          "shell": 16000,
+          "waveworn-0": 5,
+          "whisper-1": 5
+        },
+        {
+          "shell": 32000,
+          "waveworn-1": 7,
+          "whisper-2": 4
+        },
+        {
+          "shell": 48000,
+          "waveworn-2": 5,
+          "whisper-2": 5
+        },
+        {
+          "shell": 64000,
+          "waveworn-3": 7,
+          "whisper-3": 4
+        },
+        {
+          "shell": 96000,
+          "waveworn-3": 10,
+          "whisper-3": 7
+        }
+      ],
+      "image": "./assets/weapons/21010064.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21010064",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "hollow-mirage",
+      "name": "Hollow Mirage",
+      "type": "Gauntlets",
+      "rarity": 4,
+      "enemy": "howler",
+      "forgery": "cadence-seed",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 8000,
+          "howler-0": 5
+        },
+        {
+          "shell": 16000,
+          "cadence-seed-0": 5,
+          "howler-1": 5
+        },
+        {
+          "shell": 32000,
+          "cadence-seed-1": 7,
+          "howler-2": 4
+        },
+        {
+          "shell": 48000,
+          "cadence-seed-2": 5,
+          "howler-2": 5
+        },
+        {
+          "shell": 64000,
+          "cadence-seed-3": 7,
+          "howler-3": 4
+        },
+        {
+          "shell": 96000,
+          "cadence-seed-3": 10,
+          "howler-3": 7
+        }
+      ],
+      "image": "./assets/weapons/21040064.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21040064",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "jinzhou-keeper",
+      "name": "Jinzhou Keeper",
+      "type": "Rectifier",
+      "rarity": 4,
+      "enemy": "ring",
+      "forgery": "helix",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 8000,
+          "ring-0": 5
+        },
+        {
+          "shell": 16000,
+          "helix-0": 5,
+          "ring-1": 5
+        },
+        {
+          "shell": 32000,
+          "helix-1": 7,
+          "ring-2": 4
+        },
+        {
+          "shell": 48000,
+          "helix-2": 5,
+          "ring-2": 5
+        },
+        {
+          "shell": 64000,
+          "helix-3": 7,
+          "ring-3": 4
+        },
+        {
+          "shell": 96000,
+          "helix-3": 10,
+          "ring-3": 7
+        }
+      ],
+      "image": "./assets/weapons/21050044.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21050044",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "legend-of-drunken-hero",
+      "name": "Legend of Drunken Hero",
+      "type": "Gauntlets",
+      "rarity": 4,
+      "enemy": "howler",
+      "forgery": "cadence-seed",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 8000,
+          "howler-0": 5
+        },
+        {
+          "shell": 16000,
+          "cadence-seed-0": 5,
+          "howler-1": 5
+        },
+        {
+          "shell": 32000,
+          "cadence-seed-1": 7,
+          "howler-2": 4
+        },
+        {
+          "shell": 48000,
+          "cadence-seed-2": 5,
+          "howler-2": 5
+        },
+        {
+          "shell": 64000,
+          "cadence-seed-3": 7,
+          "howler-3": 4
+        },
+        {
+          "shell": 96000,
+          "cadence-seed-3": 10,
+          "howler-3": 7
+        }
+      ],
+      "image": "./assets/weapons/21040094.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21040094",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "lumingloss",
+      "name": "Lumingloss",
+      "type": "Sword",
+      "rarity": 4,
+      "enemy": "howler",
+      "forgery": "drip",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 8000,
+          "howler-0": 5
+        },
+        {
+          "shell": 16000,
+          "drip-0": 5,
+          "howler-1": 5
+        },
+        {
+          "shell": 32000,
+          "drip-1": 7,
+          "howler-2": 4
+        },
+        {
+          "shell": 48000,
+          "drip-2": 5,
+          "howler-2": 5
+        },
+        {
+          "shell": 64000,
+          "drip-3": 7,
+          "howler-3": 4
+        },
+        {
+          "shell": 96000,
+          "drip-3": 10,
+          "howler-3": 7
+        }
+      ],
+      "image": "./assets/weapons/21020074.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21020074",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "lunar-cutter",
+      "name": "Lunar Cutter",
+      "type": "Sword",
+      "rarity": 4,
+      "enemy": "howler",
+      "forgery": "drip",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 8000,
+          "howler-0": 5
+        },
+        {
+          "shell": 16000,
+          "drip-0": 5,
+          "howler-1": 5
+        },
+        {
+          "shell": 32000,
+          "drip-1": 7,
+          "howler-2": 4
+        },
+        {
+          "shell": 48000,
+          "drip-2": 5,
+          "howler-2": 5
+        },
+        {
+          "shell": 64000,
+          "drip-3": 7,
+          "howler-3": 4
+        },
+        {
+          "shell": 96000,
+          "drip-3": 10,
+          "howler-3": 7
+        }
+      ],
+      "image": "./assets/weapons/21020064.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21020064",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "marcato",
+      "name": "Marcato",
+      "type": "Gauntlets",
+      "rarity": 4,
+      "enemy": "howler",
+      "forgery": "cadence-seed",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 8000,
+          "howler-0": 5
+        },
+        {
+          "shell": 16000,
+          "cadence-seed-0": 5,
+          "howler-1": 5
+        },
+        {
+          "shell": 32000,
+          "cadence-seed-1": 7,
+          "howler-2": 4
+        },
+        {
+          "shell": 48000,
+          "cadence-seed-2": 5,
+          "howler-2": 5
+        },
+        {
+          "shell": 64000,
+          "cadence-seed-3": 7,
+          "howler-3": 4
+        },
+        {
+          "shell": 96000,
+          "cadence-seed-3": 10,
+          "howler-3": 7
+        }
+      ],
+      "image": "./assets/weapons/21040024.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21040024",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "meditations-on-mercy",
+      "name": "Meditations on Mercy",
+      "type": "Broadblade",
+      "rarity": 4,
+      "enemy": "whisper",
+      "forgery": "waveworn",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 8000,
+          "whisper-0": 5
+        },
+        {
+          "shell": 16000,
+          "waveworn-0": 5,
+          "whisper-1": 5
+        },
+        {
+          "shell": 32000,
+          "waveworn-1": 7,
+          "whisper-2": 4
+        },
+        {
+          "shell": 48000,
+          "waveworn-2": 5,
+          "whisper-2": 5
+        },
+        {
+          "shell": 64000,
+          "waveworn-3": 7,
+          "whisper-3": 4
+        },
+        {
+          "shell": 96000,
+          "waveworn-3": 10,
+          "whisper-3": 7
+        }
+      ],
+      "image": "./assets/weapons/21010094.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21010094",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "novaburst",
+      "name": "Novaburst",
+      "type": "Pistols",
+      "rarity": 4,
+      "enemy": "ring",
+      "forgery": "impure-phlogiston",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 8000,
+          "ring-0": 5
+        },
+        {
+          "shell": 16000,
+          "impure-phlogiston-0": 5,
+          "ring-1": 5
+        },
+        {
+          "shell": 32000,
+          "impure-phlogiston-1": 7,
+          "ring-2": 4
+        },
+        {
+          "shell": 48000,
+          "impure-phlogiston-2": 5,
+          "ring-2": 5
+        },
+        {
+          "shell": 64000,
+          "impure-phlogiston-3": 7,
+          "ring-3": 4
+        },
+        {
+          "shell": 96000,
+          "impure-phlogiston-3": 10,
+          "ring-3": 7
+        }
+      ],
+      "image": "./assets/weapons/21030064.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21030064",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "ocean-s-gift",
+      "name": "Ocean's Gift",
+      "type": "Rectifier",
+      "rarity": 4,
+      "enemy": "ring",
+      "forgery": "helix",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 8000,
+          "ring-0": 5
+        },
+        {
+          "shell": 16000,
+          "helix-0": 5,
+          "ring-1": 5
+        },
+        {
+          "shell": 32000,
+          "helix-1": 7,
+          "ring-2": 4
+        },
+        {
+          "shell": 48000,
+          "helix-2": 5,
+          "ring-2": 5
+        },
+        {
+          "shell": 64000,
+          "helix-3": 7,
+          "ring-3": 4
+        },
+        {
+          "shell": 96000,
+          "helix-3": 10,
+          "ring-3": 7
+        }
+      ],
+      "image": "./assets/weapons/21050027.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21050027",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "overture",
+      "name": "Overture",
+      "type": "Sword",
+      "rarity": 4,
+      "enemy": "howler",
+      "forgery": "drip",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 8000,
+          "howler-0": 5
+        },
+        {
+          "shell": 16000,
+          "drip-0": 5,
+          "howler-1": 5
+        },
+        {
+          "shell": 32000,
+          "drip-1": 7,
+          "howler-2": 4
+        },
+        {
+          "shell": 48000,
+          "drip-2": 5,
+          "howler-2": 5
+        },
+        {
+          "shell": 64000,
+          "drip-3": 7,
+          "howler-3": 4
+        },
+        {
+          "shell": 96000,
+          "drip-3": 10,
+          "howler-3": 7
+        }
+      ],
+      "image": "./assets/weapons/21020024.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21020024",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "pistols-26",
+      "name": "Pistols#26",
+      "type": "Pistols",
+      "rarity": 4,
+      "enemy": "ring",
+      "forgery": "impure-phlogiston",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 8000,
+          "ring-0": 5
+        },
+        {
+          "shell": 16000,
+          "impure-phlogiston-0": 5,
+          "ring-1": 5
+        },
+        {
+          "shell": 32000,
+          "impure-phlogiston-1": 7,
+          "ring-2": 4
+        },
+        {
+          "shell": 48000,
+          "impure-phlogiston-2": 5,
+          "ring-2": 5
+        },
+        {
+          "shell": 64000,
+          "impure-phlogiston-3": 7,
+          "ring-3": 4
+        },
+        {
+          "shell": 96000,
+          "impure-phlogiston-3": 10,
+          "ring-3": 7
+        }
+      ],
+      "image": "./assets/weapons/21030034.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21030034",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "radiant-dawn",
+      "name": "Radiant Dawn",
+      "type": "Rectifier",
+      "rarity": 4,
+      "enemy": "ring",
+      "forgery": "helix",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 8000,
+          "ring-0": 5
+        },
+        {
+          "shell": 16000,
+          "helix-0": 5,
+          "ring-1": 5
+        },
+        {
+          "shell": 32000,
+          "helix-1": 7,
+          "ring-2": 4
+        },
+        {
+          "shell": 48000,
+          "helix-2": 5,
+          "ring-2": 5
+        },
+        {
+          "shell": 64000,
+          "helix-3": 7,
+          "ring-3": 4
+        },
+        {
+          "shell": 96000,
+          "helix-3": 10,
+          "ring-3": 7
+        }
+      ],
+      "image": "./assets/weapons/21050104.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21050104",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "rectifier-25",
+      "name": "Rectifier#25",
+      "type": "Rectifier",
+      "rarity": 4,
+      "enemy": "ring",
+      "forgery": "helix",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 8000,
+          "ring-0": 5
+        },
+        {
+          "shell": 16000,
+          "helix-0": 5,
+          "ring-1": 5
+        },
+        {
+          "shell": 32000,
+          "helix-1": 7,
+          "ring-2": 4
+        },
+        {
+          "shell": 48000,
+          "helix-2": 5,
+          "ring-2": 5
+        },
+        {
+          "shell": 64000,
+          "helix-3": 7,
+          "ring-3": 4
+        },
+        {
+          "shell": 96000,
+          "helix-3": 10,
+          "ring-3": 7
+        }
+      ],
+      "image": "./assets/weapons/21050034.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21050034",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "relativistic-jet",
+      "name": "Relativistic Jet",
+      "type": "Pistols",
+      "rarity": 4,
+      "enemy": "ring",
+      "forgery": "impure-phlogiston",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 8000,
+          "ring-0": 5
+        },
+        {
+          "shell": 16000,
+          "impure-phlogiston-0": 5,
+          "ring-1": 5
+        },
+        {
+          "shell": 32000,
+          "impure-phlogiston-1": 7,
+          "ring-2": 4
+        },
+        {
+          "shell": 48000,
+          "impure-phlogiston-2": 5,
+          "ring-2": 5
+        },
+        {
+          "shell": 64000,
+          "impure-phlogiston-3": 7,
+          "ring-3": 4
+        },
+        {
+          "shell": 96000,
+          "impure-phlogiston-3": 10,
+          "ring-3": 7
+        }
+      ],
+      "image": "./assets/weapons/21030084.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21030084",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "romance-in-farewell",
+      "name": "Romance in Farewell",
+      "type": "Pistols",
+      "rarity": 4,
+      "enemy": "ring",
+      "forgery": "impure-phlogiston",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 8000,
+          "ring-0": 5
+        },
+        {
+          "shell": 16000,
+          "impure-phlogiston-0": 5,
+          "ring-1": 5
+        },
+        {
+          "shell": 32000,
+          "impure-phlogiston-1": 7,
+          "ring-2": 4
+        },
+        {
+          "shell": 48000,
+          "impure-phlogiston-2": 5,
+          "ring-2": 5
+        },
+        {
+          "shell": 64000,
+          "impure-phlogiston-3": 7,
+          "ring-3": 4
+        },
+        {
+          "shell": 96000,
+          "impure-phlogiston-3": 10,
+          "ring-3": 7
+        }
+      ],
+      "image": "./assets/weapons/21030094.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21030094",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "solar-flame",
+      "name": "Solar Flame",
+      "type": "Pistols",
+      "rarity": 4,
+      "enemy": "ring",
+      "forgery": "impure-phlogiston",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 8000,
+          "ring-0": 5
+        },
+        {
+          "shell": 16000,
+          "impure-phlogiston-0": 5,
+          "ring-1": 5
+        },
+        {
+          "shell": 32000,
+          "impure-phlogiston-1": 7,
+          "ring-2": 4
+        },
+        {
+          "shell": 48000,
+          "impure-phlogiston-2": 5,
+          "ring-2": 5
+        },
+        {
+          "shell": 64000,
+          "impure-phlogiston-3": 7,
+          "ring-3": 4
+        },
+        {
+          "shell": 96000,
+          "impure-phlogiston-3": 10,
+          "ring-3": 7
+        }
+      ],
+      "image": "./assets/weapons/21030104.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21030104",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "somnoire-anchor",
+      "name": "Somnoire Anchor",
+      "type": "Sword",
+      "rarity": 4,
+      "enemy": "howler",
+      "forgery": "drip",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 8000,
+          "howler-0": 5
+        },
+        {
+          "shell": 16000,
+          "drip-0": 5,
+          "howler-1": 5
+        },
+        {
+          "shell": 32000,
+          "drip-1": 7,
+          "howler-2": 4
+        },
+        {
+          "shell": 48000,
+          "drip-2": 5,
+          "howler-2": 5
+        },
+        {
+          "shell": 64000,
+          "drip-3": 7,
+          "howler-3": 4
+        },
+        {
+          "shell": 96000,
+          "drip-3": 10,
+          "howler-3": 7
+        }
+      ],
+      "image": "./assets/weapons/21020017.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21020017",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "stonard",
+      "name": "Stonard",
+      "type": "Gauntlets",
+      "rarity": 4,
+      "enemy": "howler",
+      "forgery": "cadence-seed",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 8000,
+          "howler-0": 5
+        },
+        {
+          "shell": 16000,
+          "cadence-seed-0": 5,
+          "howler-1": 5
+        },
+        {
+          "shell": 32000,
+          "cadence-seed-1": 7,
+          "howler-2": 4
+        },
+        {
+          "shell": 48000,
+          "cadence-seed-2": 5,
+          "howler-2": 5
+        },
+        {
+          "shell": 64000,
+          "cadence-seed-3": 7,
+          "howler-3": 4
+        },
+        {
+          "shell": 96000,
+          "cadence-seed-3": 10,
+          "howler-3": 7
+        }
+      ],
+      "image": "./assets/weapons/21040074.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21040074",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "sword-18",
+      "name": "Sword#18",
+      "type": "Sword",
+      "rarity": 4,
+      "enemy": "howler",
+      "forgery": "drip",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 8000,
+          "howler-0": 5
+        },
+        {
+          "shell": 16000,
+          "drip-0": 5,
+          "howler-1": 5
+        },
+        {
+          "shell": 32000,
+          "drip-1": 7,
+          "howler-2": 4
+        },
+        {
+          "shell": 48000,
+          "drip-2": 5,
+          "howler-2": 5
+        },
+        {
+          "shell": 64000,
+          "drip-3": 7,
+          "howler-3": 4
+        },
+        {
+          "shell": 96000,
+          "drip-3": 10,
+          "howler-3": 7
+        }
+      ],
+      "image": "./assets/weapons/21020034.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21020034",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "thunderbolt",
+      "name": "Thunderbolt",
+      "type": "Pistols",
+      "rarity": 4,
+      "enemy": "ring",
+      "forgery": "impure-phlogiston",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 8000,
+          "ring-0": 5
+        },
+        {
+          "shell": 16000,
+          "impure-phlogiston-0": 5,
+          "ring-1": 5
+        },
+        {
+          "shell": 32000,
+          "impure-phlogiston-1": 7,
+          "ring-2": 4
+        },
+        {
+          "shell": 48000,
+          "impure-phlogiston-2": 5,
+          "ring-2": 5
+        },
+        {
+          "shell": 64000,
+          "impure-phlogiston-3": 7,
+          "ring-3": 4
+        },
+        {
+          "shell": 96000,
+          "impure-phlogiston-3": 10,
+          "ring-3": 7
+        }
+      ],
+      "image": "./assets/weapons/21030074.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21030074",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "undying-flame",
+      "name": "Undying Flame",
+      "type": "Pistols",
+      "rarity": 4,
+      "enemy": "ring",
+      "forgery": "impure-phlogiston",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 8000,
+          "ring-0": 5
+        },
+        {
+          "shell": 16000,
+          "impure-phlogiston-0": 5,
+          "ring-1": 5
+        },
+        {
+          "shell": 32000,
+          "impure-phlogiston-1": 7,
+          "ring-2": 4
+        },
+        {
+          "shell": 48000,
+          "impure-phlogiston-2": 5,
+          "ring-2": 5
+        },
+        {
+          "shell": 64000,
+          "impure-phlogiston-3": 7,
+          "ring-3": 4
+        },
+        {
+          "shell": 96000,
+          "impure-phlogiston-3": 10,
+          "ring-3": 7
+        }
+      ],
+      "image": "./assets/weapons/21030044.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21030044",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "variation",
+      "name": "Variation",
+      "type": "Rectifier",
+      "rarity": 4,
+      "enemy": "ring",
+      "forgery": "helix",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 8000,
+          "ring-0": 5
+        },
+        {
+          "shell": 16000,
+          "helix-0": 5,
+          "ring-1": 5
+        },
+        {
+          "shell": 32000,
+          "helix-1": 7,
+          "ring-2": 4
+        },
+        {
+          "shell": 48000,
+          "helix-2": 5,
+          "ring-2": 5
+        },
+        {
+          "shell": 64000,
+          "helix-3": 7,
+          "ring-3": 4
+        },
+        {
+          "shell": 96000,
+          "helix-3": 10,
+          "ring-3": 7
+        }
+      ],
+      "image": "./assets/weapons/21050024.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21050024",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "waltz-in-masquerade",
+      "name": "Waltz in Masquerade",
+      "type": "Rectifier",
+      "rarity": 4,
+      "enemy": "ring",
+      "forgery": "helix",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 8000,
+          "ring-0": 5
+        },
+        {
+          "shell": 16000,
+          "helix-0": 5,
+          "ring-1": 5
+        },
+        {
+          "shell": 32000,
+          "helix-1": 7,
+          "ring-2": 4
+        },
+        {
+          "shell": 48000,
+          "helix-2": 5,
+          "ring-2": 5
+        },
+        {
+          "shell": 64000,
+          "helix-3": 7,
+          "ring-3": 4
+        },
+        {
+          "shell": 96000,
+          "helix-3": 10,
+          "ring-3": 7
+        }
+      ],
+      "image": "./assets/weapons/21050094.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21050094",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "waning-redshift",
+      "name": "Waning Redshift",
+      "type": "Broadblade",
+      "rarity": 4,
+      "enemy": "whisper",
+      "forgery": "waveworn",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 8000,
+          "whisper-0": 5
+        },
+        {
+          "shell": 16000,
+          "waveworn-0": 5,
+          "whisper-1": 5
+        },
+        {
+          "shell": 32000,
+          "waveworn-1": 7,
+          "whisper-2": 4
+        },
+        {
+          "shell": 48000,
+          "waveworn-2": 5,
+          "whisper-2": 5
+        },
+        {
+          "shell": 64000,
+          "waveworn-3": 7,
+          "whisper-3": 4
+        },
+        {
+          "shell": 96000,
+          "waveworn-3": 10,
+          "whisper-3": 7
+        }
+      ],
+      "image": "./assets/weapons/21010084.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21010084",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "beguiling-melody",
+      "name": "Beguiling Melody",
+      "type": "Broadblade",
+      "rarity": 3,
+      "enemy": "whisper",
+      "forgery": "waveworn",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 6000,
+          "whisper-0": 4
+        },
+        {
+          "shell": 12000,
+          "waveworn-0": 4,
+          "whisper-1": 4
+        },
+        {
+          "shell": 24000,
+          "waveworn-1": 5,
+          "whisper-2": 3
+        },
+        {
+          "shell": 36000,
+          "waveworn-2": 4,
+          "whisper-2": 4
+        },
+        {
+          "shell": 48000,
+          "waveworn-3": 5,
+          "whisper-3": 3
+        },
+        {
+          "shell": 72000,
+          "waveworn-3": 8,
+          "whisper-3": 5
+        }
+      ],
+      "image": "./assets/weapons/21010063.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21010063",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "broadblade-of-night",
+      "name": "Broadblade of Night",
+      "type": "Broadblade",
+      "rarity": 3,
+      "enemy": "whisper",
+      "forgery": "waveworn",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 6000,
+          "whisper-0": 4
+        },
+        {
+          "shell": 12000,
+          "waveworn-0": 4,
+          "whisper-1": 4
+        },
+        {
+          "shell": 24000,
+          "waveworn-1": 5,
+          "whisper-2": 3
+        },
+        {
+          "shell": 36000,
+          "waveworn-2": 4,
+          "whisper-2": 4
+        },
+        {
+          "shell": 48000,
+          "waveworn-3": 5,
+          "whisper-3": 3
+        },
+        {
+          "shell": 72000,
+          "waveworn-3": 8,
+          "whisper-3": 5
+        }
+      ],
+      "image": "./assets/weapons/21010013.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21010013",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "broadblade-of-voyager",
+      "name": "Broadblade of Voyager",
+      "type": "Broadblade",
+      "rarity": 3,
+      "enemy": "whisper",
+      "forgery": "waveworn",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 6000,
+          "whisper-0": 4
+        },
+        {
+          "shell": 12000,
+          "waveworn-0": 4,
+          "whisper-1": 4
+        },
+        {
+          "shell": 24000,
+          "waveworn-1": 5,
+          "whisper-2": 3
+        },
+        {
+          "shell": 36000,
+          "waveworn-2": 4,
+          "whisper-2": 4
+        },
+        {
+          "shell": 48000,
+          "waveworn-3": 5,
+          "whisper-3": 3
+        },
+        {
+          "shell": 72000,
+          "waveworn-3": 8,
+          "whisper-3": 5
+        }
+      ],
+      "image": "./assets/weapons/21010043.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21010043",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "gauntlets-of-night",
+      "name": "Gauntlets of Night",
+      "type": "Gauntlets",
+      "rarity": 3,
+      "enemy": "howler",
+      "forgery": "cadence-seed",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 6000,
+          "howler-0": 4
+        },
+        {
+          "shell": 12000,
+          "cadence-seed-0": 4,
+          "howler-1": 4
+        },
+        {
+          "shell": 24000,
+          "cadence-seed-1": 5,
+          "howler-2": 3
+        },
+        {
+          "shell": 36000,
+          "cadence-seed-2": 4,
+          "howler-2": 4
+        },
+        {
+          "shell": 48000,
+          "cadence-seed-3": 5,
+          "howler-3": 3
+        },
+        {
+          "shell": 72000,
+          "cadence-seed-3": 8,
+          "howler-3": 5
+        }
+      ],
+      "image": "./assets/weapons/21040013.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21040013",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "gauntlets-of-voyager",
+      "name": "Gauntlets of Voyager",
+      "type": "Gauntlets",
+      "rarity": 3,
+      "enemy": "howler",
+      "forgery": "cadence-seed",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 6000,
+          "howler-0": 4
+        },
+        {
+          "shell": 12000,
+          "cadence-seed-0": 4,
+          "howler-1": 4
+        },
+        {
+          "shell": 24000,
+          "cadence-seed-1": 5,
+          "howler-2": 3
+        },
+        {
+          "shell": 36000,
+          "cadence-seed-2": 4,
+          "howler-2": 4
+        },
+        {
+          "shell": 48000,
+          "cadence-seed-3": 5,
+          "howler-3": 3
+        },
+        {
+          "shell": 72000,
+          "cadence-seed-3": 8,
+          "howler-3": 5
+        }
+      ],
+      "image": "./assets/weapons/21040043.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21040043",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "guardian-broadblade",
+      "name": "Guardian Broadblade",
+      "type": "Broadblade",
+      "rarity": 3,
+      "enemy": "whisper",
+      "forgery": "waveworn",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 6000,
+          "whisper-0": 4
+        },
+        {
+          "shell": 12000,
+          "waveworn-0": 4,
+          "whisper-1": 4
+        },
+        {
+          "shell": 24000,
+          "waveworn-1": 5,
+          "whisper-2": 3
+        },
+        {
+          "shell": 36000,
+          "waveworn-2": 4,
+          "whisper-2": 4
+        },
+        {
+          "shell": 48000,
+          "waveworn-3": 5,
+          "whisper-3": 3
+        },
+        {
+          "shell": 72000,
+          "waveworn-3": 8,
+          "whisper-3": 5
+        }
+      ],
+      "image": "./assets/weapons/21010053.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21010053",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "guardian-gauntlets",
+      "name": "Guardian Gauntlets",
+      "type": "Gauntlets",
+      "rarity": 3,
+      "enemy": "howler",
+      "forgery": "cadence-seed",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 6000,
+          "howler-0": 4
+        },
+        {
+          "shell": 12000,
+          "cadence-seed-0": 4,
+          "howler-1": 4
+        },
+        {
+          "shell": 24000,
+          "cadence-seed-1": 5,
+          "howler-2": 3
+        },
+        {
+          "shell": 36000,
+          "cadence-seed-2": 4,
+          "howler-2": 4
+        },
+        {
+          "shell": 48000,
+          "cadence-seed-3": 5,
+          "howler-3": 3
+        },
+        {
+          "shell": 72000,
+          "cadence-seed-3": 8,
+          "howler-3": 5
+        }
+      ],
+      "image": "./assets/weapons/21040053.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21040053",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "guardian-pistols",
+      "name": "Guardian Pistols",
+      "type": "Pistols",
+      "rarity": 3,
+      "enemy": "ring",
+      "forgery": "impure-phlogiston",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 6000,
+          "ring-0": 4
+        },
+        {
+          "shell": 12000,
+          "impure-phlogiston-0": 4,
+          "ring-1": 4
+        },
+        {
+          "shell": 24000,
+          "impure-phlogiston-1": 5,
+          "ring-2": 3
+        },
+        {
+          "shell": 36000,
+          "impure-phlogiston-2": 4,
+          "ring-2": 4
+        },
+        {
+          "shell": 48000,
+          "impure-phlogiston-3": 5,
+          "ring-3": 3
+        },
+        {
+          "shell": 72000,
+          "impure-phlogiston-3": 8,
+          "ring-3": 5
+        }
+      ],
+      "image": "./assets/weapons/21030053.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21030053",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "guardian-rectifier",
+      "name": "Guardian Rectifier",
+      "type": "Rectifier",
+      "rarity": 3,
+      "enemy": "ring",
+      "forgery": "helix",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 6000,
+          "ring-0": 4
+        },
+        {
+          "shell": 12000,
+          "helix-0": 4,
+          "ring-1": 4
+        },
+        {
+          "shell": 24000,
+          "helix-1": 5,
+          "ring-2": 3
+        },
+        {
+          "shell": 36000,
+          "helix-2": 4,
+          "ring-2": 4
+        },
+        {
+          "shell": 48000,
+          "helix-3": 5,
+          "ring-3": 3
+        },
+        {
+          "shell": 72000,
+          "helix-3": 8,
+          "ring-3": 5
+        }
+      ],
+      "image": "./assets/weapons/21050053.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21050053",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "guardian-sword",
+      "name": "Guardian Sword",
+      "type": "Sword",
+      "rarity": 3,
+      "enemy": "howler",
+      "forgery": "drip",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 6000,
+          "howler-0": 4
+        },
+        {
+          "shell": 12000,
+          "drip-0": 4,
+          "howler-1": 4
+        },
+        {
+          "shell": 24000,
+          "drip-1": 5,
+          "howler-2": 3
+        },
+        {
+          "shell": 36000,
+          "drip-2": 4,
+          "howler-2": 4
+        },
+        {
+          "shell": 48000,
+          "drip-3": 5,
+          "howler-3": 3
+        },
+        {
+          "shell": 72000,
+          "drip-3": 8,
+          "howler-3": 5
+        }
+      ],
+      "image": "./assets/weapons/21020053.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21020053",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "originite-type-i",
+      "name": "Originite: Type I",
+      "type": "Broadblade",
+      "rarity": 3,
+      "enemy": "whisper",
+      "forgery": "waveworn",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 6000,
+          "whisper-0": 4
+        },
+        {
+          "shell": 12000,
+          "waveworn-0": 4,
+          "whisper-1": 4
+        },
+        {
+          "shell": 24000,
+          "waveworn-1": 5,
+          "whisper-2": 3
+        },
+        {
+          "shell": 36000,
+          "waveworn-2": 4,
+          "whisper-2": 4
+        },
+        {
+          "shell": 48000,
+          "waveworn-3": 5,
+          "whisper-3": 3
+        },
+        {
+          "shell": 72000,
+          "waveworn-3": 8,
+          "whisper-3": 5
+        }
+      ],
+      "image": "./assets/weapons/21010023.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21010023",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "originite-type-ii",
+      "name": "Originite: Type II",
+      "type": "Sword",
+      "rarity": 3,
+      "enemy": "howler",
+      "forgery": "drip",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 6000,
+          "howler-0": 4
+        },
+        {
+          "shell": 12000,
+          "drip-0": 4,
+          "howler-1": 4
+        },
+        {
+          "shell": 24000,
+          "drip-1": 5,
+          "howler-2": 3
+        },
+        {
+          "shell": 36000,
+          "drip-2": 4,
+          "howler-2": 4
+        },
+        {
+          "shell": 48000,
+          "drip-3": 5,
+          "howler-3": 3
+        },
+        {
+          "shell": 72000,
+          "drip-3": 8,
+          "howler-3": 5
+        }
+      ],
+      "image": "./assets/weapons/21020023.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21020023",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "originite-type-iii",
+      "name": "Originite: Type III",
+      "type": "Pistols",
+      "rarity": 3,
+      "enemy": "ring",
+      "forgery": "impure-phlogiston",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 6000,
+          "ring-0": 4
+        },
+        {
+          "shell": 12000,
+          "impure-phlogiston-0": 4,
+          "ring-1": 4
+        },
+        {
+          "shell": 24000,
+          "impure-phlogiston-1": 5,
+          "ring-2": 3
+        },
+        {
+          "shell": 36000,
+          "impure-phlogiston-2": 4,
+          "ring-2": 4
+        },
+        {
+          "shell": 48000,
+          "impure-phlogiston-3": 5,
+          "ring-3": 3
+        },
+        {
+          "shell": 72000,
+          "impure-phlogiston-3": 8,
+          "ring-3": 5
+        }
+      ],
+      "image": "./assets/weapons/21030023.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21030023",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "originite-type-iv",
+      "name": "Originite: Type IV",
+      "type": "Gauntlets",
+      "rarity": 3,
+      "enemy": "howler",
+      "forgery": "cadence-seed",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 6000,
+          "howler-0": 4
+        },
+        {
+          "shell": 12000,
+          "cadence-seed-0": 4,
+          "howler-1": 4
+        },
+        {
+          "shell": 24000,
+          "cadence-seed-1": 5,
+          "howler-2": 3
+        },
+        {
+          "shell": 36000,
+          "cadence-seed-2": 4,
+          "howler-2": 4
+        },
+        {
+          "shell": 48000,
+          "cadence-seed-3": 5,
+          "howler-3": 3
+        },
+        {
+          "shell": 72000,
+          "cadence-seed-3": 8,
+          "howler-3": 5
+        }
+      ],
+      "image": "./assets/weapons/21040023.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21040023",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "originite-type-v",
+      "name": "Originite: Type V",
+      "type": "Rectifier",
+      "rarity": 3,
+      "enemy": "ring",
+      "forgery": "helix",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 6000,
+          "ring-0": 4
+        },
+        {
+          "shell": 12000,
+          "helix-0": 4,
+          "ring-1": 4
+        },
+        {
+          "shell": 24000,
+          "helix-1": 5,
+          "ring-2": 3
+        },
+        {
+          "shell": 36000,
+          "helix-2": 4,
+          "ring-2": 4
+        },
+        {
+          "shell": 48000,
+          "helix-3": 5,
+          "ring-3": 3
+        },
+        {
+          "shell": 72000,
+          "helix-3": 8,
+          "ring-3": 5
+        }
+      ],
+      "image": "./assets/weapons/21050023.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21050023",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "pistols-of-night",
+      "name": "Pistols of Night",
+      "type": "Pistols",
+      "rarity": 3,
+      "enemy": "ring",
+      "forgery": "impure-phlogiston",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 6000,
+          "ring-0": 4
+        },
+        {
+          "shell": 12000,
+          "impure-phlogiston-0": 4,
+          "ring-1": 4
+        },
+        {
+          "shell": 24000,
+          "impure-phlogiston-1": 5,
+          "ring-2": 3
+        },
+        {
+          "shell": 36000,
+          "impure-phlogiston-2": 4,
+          "ring-2": 4
+        },
+        {
+          "shell": 48000,
+          "impure-phlogiston-3": 5,
+          "ring-3": 3
+        },
+        {
+          "shell": 72000,
+          "impure-phlogiston-3": 8,
+          "ring-3": 5
+        }
+      ],
+      "image": "./assets/weapons/21030013.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21030013",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "pistols-of-voyager",
+      "name": "Pistols of Voyager",
+      "type": "Pistols",
+      "rarity": 3,
+      "enemy": "ring",
+      "forgery": "impure-phlogiston",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 6000,
+          "ring-0": 4
+        },
+        {
+          "shell": 12000,
+          "impure-phlogiston-0": 4,
+          "ring-1": 4
+        },
+        {
+          "shell": 24000,
+          "impure-phlogiston-1": 5,
+          "ring-2": 3
+        },
+        {
+          "shell": 36000,
+          "impure-phlogiston-2": 4,
+          "ring-2": 4
+        },
+        {
+          "shell": 48000,
+          "impure-phlogiston-3": 5,
+          "ring-3": 3
+        },
+        {
+          "shell": 72000,
+          "impure-phlogiston-3": 8,
+          "ring-3": 5
+        }
+      ],
+      "image": "./assets/weapons/21030043.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21030043",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "rectifier-of-night",
+      "name": "Rectifier of Night",
+      "type": "Rectifier",
+      "rarity": 3,
+      "enemy": "ring",
+      "forgery": "helix",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 6000,
+          "ring-0": 4
+        },
+        {
+          "shell": 12000,
+          "helix-0": 4,
+          "ring-1": 4
+        },
+        {
+          "shell": 24000,
+          "helix-1": 5,
+          "ring-2": 3
+        },
+        {
+          "shell": 36000,
+          "helix-2": 4,
+          "ring-2": 4
+        },
+        {
+          "shell": 48000,
+          "helix-3": 5,
+          "ring-3": 3
+        },
+        {
+          "shell": 72000,
+          "helix-3": 8,
+          "ring-3": 5
+        }
+      ],
+      "image": "./assets/weapons/21050013.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21050013",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "rectifier-of-voyager",
+      "name": "Rectifier of Voyager",
+      "type": "Rectifier",
+      "rarity": 3,
+      "enemy": "ring",
+      "forgery": "helix",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 6000,
+          "ring-0": 4
+        },
+        {
+          "shell": 12000,
+          "helix-0": 4,
+          "ring-1": 4
+        },
+        {
+          "shell": 24000,
+          "helix-1": 5,
+          "ring-2": 3
+        },
+        {
+          "shell": 36000,
+          "helix-2": 4,
+          "ring-2": 4
+        },
+        {
+          "shell": 48000,
+          "helix-3": 5,
+          "ring-3": 3
+        },
+        {
+          "shell": 72000,
+          "helix-3": 8,
+          "ring-3": 5
+        }
+      ],
+      "image": "./assets/weapons/21050043.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21050043",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "sword-of-night",
+      "name": "Sword of Night",
+      "type": "Sword",
+      "rarity": 3,
+      "enemy": "howler",
+      "forgery": "drip",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 6000,
+          "howler-0": 4
+        },
+        {
+          "shell": 12000,
+          "drip-0": 4,
+          "howler-1": 4
+        },
+        {
+          "shell": 24000,
+          "drip-1": 5,
+          "howler-2": 3
+        },
+        {
+          "shell": 36000,
+          "drip-2": 4,
+          "howler-2": 4
+        },
+        {
+          "shell": 48000,
+          "drip-3": 5,
+          "howler-3": 3
+        },
+        {
+          "shell": 72000,
+          "drip-3": 8,
+          "howler-3": 5
+        }
+      ],
+      "image": "./assets/weapons/21020013.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21020013",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "sword-of-voyager",
+      "name": "Sword of Voyager",
+      "type": "Sword",
+      "rarity": 3,
+      "enemy": "howler",
+      "forgery": "drip",
+      "maxLevel": 90,
+      "maxAscension": 6,
+      "ascensionCosts": [
+        {
+          "shell": 6000,
+          "howler-0": 4
+        },
+        {
+          "shell": 12000,
+          "drip-0": 4,
+          "howler-1": 4
+        },
+        {
+          "shell": 24000,
+          "drip-1": 5,
+          "howler-2": 3
+        },
+        {
+          "shell": 36000,
+          "drip-2": 4,
+          "howler-2": 4
+        },
+        {
+          "shell": 48000,
+          "drip-3": 5,
+          "howler-3": 3
+        },
+        {
+          "shell": 72000,
+          "drip-3": 8,
+          "howler-3": 5
+        }
+      ],
+      "image": "./assets/weapons/21020043.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21020043",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "tyro-broadblade",
+      "name": "Tyro Broadblade",
+      "type": "Broadblade",
+      "rarity": 2,
+      "enemy": "whisper",
+      "forgery": "waveworn",
+      "maxLevel": 70,
+      "maxAscension": 4,
+      "ascensionCosts": [
+        {
+          "shell": 4000,
+          "whisper-0": 3
+        },
+        {
+          "shell": 8000,
+          "waveworn-0": 3,
+          "whisper-1": 3
+        },
+        {
+          "shell": 16000,
+          "waveworn-1": 4,
+          "whisper-2": 2
+        },
+        {
+          "shell": 24000,
+          "waveworn-2": 3,
+          "whisper-2": 3
+        }
+      ],
+      "image": "./assets/weapons/21010012.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21010012",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "tyro-gauntlets",
+      "name": "Tyro Gauntlets",
+      "type": "Gauntlets",
+      "rarity": 2,
+      "enemy": "howler",
+      "forgery": "cadence-seed",
+      "maxLevel": 70,
+      "maxAscension": 4,
+      "ascensionCosts": [
+        {
+          "shell": 4000,
+          "howler-0": 3
+        },
+        {
+          "shell": 8000,
+          "cadence-seed-0": 3,
+          "howler-1": 3
+        },
+        {
+          "shell": 16000,
+          "cadence-seed-1": 4,
+          "howler-2": 2
+        },
+        {
+          "shell": 24000,
+          "cadence-seed-2": 3,
+          "howler-2": 3
+        }
+      ],
+      "image": "./assets/weapons/21040012.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21040012",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "tyro-pistols",
+      "name": "Tyro Pistols",
+      "type": "Pistols",
+      "rarity": 2,
+      "enemy": "ring",
+      "forgery": "impure-phlogiston",
+      "maxLevel": 70,
+      "maxAscension": 4,
+      "ascensionCosts": [
+        {
+          "shell": 4000,
+          "ring-0": 3
+        },
+        {
+          "shell": 8000,
+          "impure-phlogiston-0": 3,
+          "ring-1": 3
+        },
+        {
+          "shell": 16000,
+          "impure-phlogiston-1": 4,
+          "ring-2": 2
+        },
+        {
+          "shell": 24000,
+          "impure-phlogiston-2": 3,
+          "ring-2": 3
+        }
+      ],
+      "image": "./assets/weapons/21030012.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21030012",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "tyro-rectifier",
+      "name": "Tyro Rectifier",
+      "type": "Rectifier",
+      "rarity": 2,
+      "enemy": "ring",
+      "forgery": "helix",
+      "maxLevel": 70,
+      "maxAscension": 4,
+      "ascensionCosts": [
+        {
+          "shell": 4000,
+          "ring-0": 3
+        },
+        {
+          "shell": 8000,
+          "helix-0": 3,
+          "ring-1": 3
+        },
+        {
+          "shell": 16000,
+          "helix-1": 4,
+          "ring-2": 2
+        },
+        {
+          "shell": 24000,
+          "helix-2": 3,
+          "ring-2": 3
+        }
+      ],
+      "image": "./assets/weapons/21050012.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21050012",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "tyro-sword",
+      "name": "Tyro Sword",
+      "type": "Sword",
+      "rarity": 2,
+      "enemy": "howler",
+      "forgery": "drip",
+      "maxLevel": 70,
+      "maxAscension": 4,
+      "ascensionCosts": [
+        {
+          "shell": 4000,
+          "howler-0": 3
+        },
+        {
+          "shell": 8000,
+          "drip-0": 3,
+          "howler-1": 3
+        },
+        {
+          "shell": 16000,
+          "drip-1": 4,
+          "howler-2": 2
+        },
+        {
+          "shell": 24000,
+          "drip-2": 3,
+          "howler-2": 3
+        }
+      ],
+      "image": "./assets/weapons/21020012.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21020012",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "training-broadblade",
+      "name": "Training Broadblade",
+      "type": "Broadblade",
+      "rarity": 1,
+      "enemy": "whisper",
+      "forgery": "waveworn",
+      "maxLevel": 70,
+      "maxAscension": 4,
+      "ascensionCosts": [
+        {
+          "shell": 2000,
+          "whisper-0": 2
+        },
+        {
+          "shell": 4000,
+          "waveworn-0": 2,
+          "whisper-1": 2
+        },
+        {
+          "shell": 8000,
+          "waveworn-1": 2,
+          "whisper-2": 1
+        },
+        {
+          "shell": 12000,
+          "waveworn-2": 2,
+          "whisper-2": 2
+        }
+      ],
+      "image": "./assets/weapons/21010011.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21010011",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "training-gauntlets",
+      "name": "Training Gauntlets",
+      "type": "Gauntlets",
+      "rarity": 1,
+      "enemy": "howler",
+      "forgery": "cadence-seed",
+      "maxLevel": 70,
+      "maxAscension": 4,
+      "ascensionCosts": [
+        {
+          "shell": 2000,
+          "howler-0": 2
+        },
+        {
+          "shell": 4000,
+          "cadence-seed-0": 2,
+          "howler-1": 2
+        },
+        {
+          "shell": 8000,
+          "cadence-seed-1": 2,
+          "howler-2": 1
+        },
+        {
+          "shell": 12000,
+          "cadence-seed-2": 2,
+          "howler-2": 2
+        }
+      ],
+      "image": "./assets/weapons/21040011.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21040011",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "training-pistols",
+      "name": "Training Pistols",
+      "type": "Pistols",
+      "rarity": 1,
+      "enemy": "ring",
+      "forgery": "impure-phlogiston",
+      "maxLevel": 70,
+      "maxAscension": 4,
+      "ascensionCosts": [
+        {
+          "shell": 2000,
+          "ring-0": 2
+        },
+        {
+          "shell": 4000,
+          "impure-phlogiston-0": 2,
+          "ring-1": 2
+        },
+        {
+          "shell": 8000,
+          "impure-phlogiston-1": 2,
+          "ring-2": 1
+        },
+        {
+          "shell": 12000,
+          "impure-phlogiston-2": 2,
+          "ring-2": 2
+        }
+      ],
+      "image": "./assets/weapons/21030011.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21030011",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "training-rectifier",
+      "name": "Training Rectifier",
+      "type": "Rectifier",
+      "rarity": 1,
+      "enemy": "ring",
+      "forgery": "helix",
+      "maxLevel": 70,
+      "maxAscension": 4,
+      "ascensionCosts": [
+        {
+          "shell": 2000,
+          "ring-0": 2
+        },
+        {
+          "shell": 4000,
+          "helix-0": 2,
+          "ring-1": 2
+        },
+        {
+          "shell": 8000,
+          "helix-1": 2,
+          "ring-2": 1
+        },
+        {
+          "shell": 12000,
+          "helix-2": 2,
+          "ring-2": 2
+        }
+      ],
+      "image": "./assets/weapons/21050011.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21050011",
+        "weapon-xp-rarities"
+      ],
+      "ascensionVerified": true
+    },
+    {
+      "id": "training-sword",
+      "name": "Training Sword",
+      "type": "Sword",
+      "rarity": 1,
+      "enemy": "howler",
+      "forgery": "drip",
+      "maxLevel": 70,
+      "maxAscension": 4,
+      "ascensionCosts": [
+        {
+          "shell": 2000,
+          "howler-0": 2
+        },
+        {
+          "shell": 4000,
+          "drip-0": 2,
+          "howler-1": 2
+        },
+        {
+          "shell": 8000,
+          "drip-1": 2,
+          "howler-2": 1
+        },
+        {
+          "shell": 12000,
+          "drip-2": 2,
+          "howler-2": 2
+        }
+      ],
+      "image": "./assets/weapons/21020011.webp",
+      "sources": [
+        "weapon-skill-materials",
+        "weapon-21020011",
+        "weapon-xp-rarities"
       ],
       "ascensionVerified": true
     }

@@ -1,7 +1,7 @@
 const levels=[1,10,20,30,40,50,60,70,80,90];
-export function levelField(prefix,value){
+export function levelField(prefix,value,max=90){
  const id=`${prefix}-level`;
- return `<div class="level-field"><label for="${id}">Nível</label><input id="${id}" name="${id}" type="number" min="1" max="90" value="${value}" required autocomplete="off" role="combobox" aria-autocomplete="none" aria-haspopup="listbox" aria-expanded="false" aria-controls="${id}-options"><div id="${id}-options" class="level-options" role="listbox" aria-label="Sugestões de nível" hidden>${levels.map(n=>`<button type="button" role="option" tabindex="-1" id="${id}-option-${n}" data-level="${n}" aria-selected="false">${n}</button>`).join('')}</div></div>`;
+ return `<div class="level-field"><label for="${id}">Nível</label><input id="${id}" name="${id}" type="number" min="1" max="${max}" value="${value}" required autocomplete="off" role="combobox" aria-autocomplete="none" aria-haspopup="listbox" aria-expanded="false" aria-controls="${id}-options"><div id="${id}-options" class="level-options" role="listbox" aria-label="Sugestões de nível" hidden>${levels.filter(n=>n<=max).map(n=>`<button type="button" role="option" tabindex="-1" id="${id}-option-${n}" data-level="${n}" aria-selected="false">${n}</button>`).join('')}</div></div>`;
 }
 let active=null,index=-1;
 function options(){return [...active.querySelectorAll('[data-level]')];}
@@ -17,6 +17,6 @@ document.addEventListener('keydown',e=>{
  if(!e.target.matches('.level-field input'))return;
  if(e.key==='Escape'&&active){e.preventDefault();e.stopPropagation();close();return;}
  if(e.key==='Tab'){close();return;}
- if(e.key==='ArrowDown'||e.key==='ArrowUp'){e.preventDefault();open(e.target.closest('.level-field'));highlight(index<0?(e.key==='ArrowDown'?0:levels.length-1):(index+(e.key==='ArrowDown'?1:-1)+levels.length)%levels.length);}
+ if(e.key==='ArrowDown'||e.key==='ArrowUp'){e.preventDefault();open(e.target.closest('.level-field'));highlight(index<0?(e.key==='ArrowDown'?0:options().length-1):(index+(e.key==='ArrowDown'?1:-1)+levels.length)%levels.length);}
  if(e.key==='Enter'&&active&&index>=0){e.preventDefault();select(options()[index]);}
 });

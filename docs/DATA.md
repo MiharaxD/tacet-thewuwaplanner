@@ -71,3 +71,11 @@ Retratos locais atribuídos à KURO GAMES, fornecidos na pasta WUWA Assets. `ass
 - As operações de gravação da interface usam um bloqueio compartilhado entre abas quando `navigator.locks` está disponível. Sem essa API, a comparação ainda detecta estados desatualizados, mas não oferece exclusão mútua para gravações exatamente simultâneas.
 - As configurações em edição são preservadas em um rascunho durante as atualizações da interface e a navegação interna. O rascunho só entra no salvamento ao clicar em **Salvar configurações**; recarregar ou fechar a página descarta o rascunho, e a exportação contém apenas o estado já confirmado.
 - Se o navegador bloquear o acesso ao armazenamento, a aplicação continua em memória e mostra um aviso para exportar backup antes de fechar. Se o acesso de leitura falhar durante a sessão, novas gravações no armazenamento ficam desativadas até recarregar, para evitar sobrescrever dados desconhecidos.
+
+## Expansão de armas — 16/09/2026
+
+120 armas de 1–5★, com imagens locais, custos por etapa e EXP por raridade. A página Weapon and Skill Material da Wiki orienta as famílias; as páginas individuais do Akademiya fornecem as tabelas do snapshot scripts/weapons-reference.json. Boson Astrolabe, Pulsation Bracer e Radiance Cleaver têm complemento das tabelas individuais da Wiki, registrado nas fontes. Laser Shearer e Phasic Homogenizer foram excluídas por falta de custos confirmados.
+
+Para 1–2★, o limite é nível 70/ascensão 4, confirmado na Wiki. O custo anexado à última linha de nível 70 do Akademiya é ignorado: não existe próxima faixa de evolução. EXP de 3★, 2★ e 1★ usa respectivamente 60%, 50% e 40% da tabela de 4★.
+
+O campo EXP parcial foi retirado do planejamento. Valores antigos são preservados quando nível e ascensão atuais não mudam; novos estados começam com zero EXP parcial. A confirmação de evolução mantém seu registro de EXP final. Os IDs das quatro armas originais foram preservados.

@@ -1,0 +1,12 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync,existsSync} from 'node:fs';
+import {newGoal,requirements,validateGoal} from '../src/engine.js';
+const db=Object.fromEntries(['catalog','rules','recipes','sources'].map(k=>[k,JSON.parse(readFileSync(`data/${k}.json`))]));
+function goal(name){const w=db.catalog.weapons.find(w=>w.name===name);const c=db.catalog.characters.find(c=>c.weapon===w.type);const g=newGoal(c.id,'test');g.target=structuredClone(g.current);g.weapon={id:w.id,current:{level:1,ascension:0,xp:0},target:{level:20,ascension:0,xp:0}};return g;}
+test('weapon EXP uses the selected rarity instead of the five-star table',()=>{for(const [name,xp]of [['Static Mist',38700],['Autumntrace',36900],['Guardian Broadblade',22140],['Tyro Broadblade',18450],['Training Broadblade',14760]]){assert.equal(requirements(goal(name),db).weaponXp,xp);}});
+test('four-star ascension consumes the individually verified costs',()=>{const g=goal('Autumntrace');g.weapon.current.level=20;g.weapon.target.ascension=1;assert.deepEqual(requirements(g,db).cost,{shell:8000,'whisper-0':5});});
+test('one- and two-star weapons cannot pass level 70 or ascension 4',()=>{for(const name of ['Tyro Broadblade','Training Broadblade']){const g=goal(name);g.weapon.target={level:70,ascension:4,xp:0};assert.doesNotThrow(()=>validateGoal(g,db));g.weapon.target={level:80,ascension:5,xp:0};assert.throws(()=>validateGoal(g,db));}});
+test('every imported weapon reaches its supported cap with local material IDs and artwork',()=>{assert.equal(db.catalog.weapons.length,120);for(const w of db.catalog.weapons){const g=goal(w.name);g.weapon.target={level:w.maxLevel,ascension:w.maxAscension,xp:0};const r=requirements(g,db);assert.deepEqual(r.missingData,[],w.name);assert.ok(r.weaponXp>0,w.name);for(const id of Object.keys(r.cost))assert.ok(db.catalog.materials.some(m=>m.id===id),`${w.name}/${id}`);assert.ok(existsSync(w.image),w.name);}});
+test('supplemental Synth Armament weapons use their own material families',()=>{for(const [name,enemy]of [['Boson Astrolabe','exoswarm-core-0'],['Pulsation Bracer','mech-core-0'],['Radiance Cleaver','fractured-exoswarm-pendant-0']]){const g=goal(name);g.weapon.current.level=20;g.weapon.target.ascension=1;assert.deepEqual(requirements(g,db).cost,{shell:10000,[enemy]:6});}});
+test('legacy weapon IDs remain valid for existing backups',()=>{for(const id of ['ages','verdant','stringmaster','emerald'])assert.ok(db.catalog.weapons.some(w=>w.id===id));});

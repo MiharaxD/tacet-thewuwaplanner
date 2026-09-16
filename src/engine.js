@@ -6,8 +6,9 @@ const add=(map,key,n)=>{if(n>0) map[key]=(map[key]||0)+n;};
 export function emptyProgress(){return {level:1,ascension:0,xp:0,skills:[1,1,1,1,1],unlocks:[0,0,0,0,0,0]};}
 export function newGoal(charId,id){return {id,charId,current:emptyProgress(),target:{...emptyProgress(),level:20},weapon:null,done:false};}
 
+export function weaponRules(w,rules){return {...rules,caps:rules.caps.slice(0,(w.maxAscension??6)+1),floors:rules.floors.slice(0,(w.maxAscension??6)+1),weaponXp:rules.weaponXpByRarity?.[w.rarity]||rules.weaponXp};}
 export function validateProgress(p,rules,weapon=false){
- if(!p||!integer(p.level,1,90)||!integer(p.ascension,0,6)||!integer(p.xp,0,3000000)) throw Error('Nível, ascensão ou EXP inválidos.');
+ if(!p||!integer(p.level,1,rules.caps.at(-1))||!integer(p.ascension,0,rules.caps.length-1)||!integer(p.xp,0,3000000)) throw Error('Nível, ascensão ou EXP inválidos.');
  if(p.level>rules.caps[p.ascension]||p.level<rules.floors[p.ascension]) throw Error(`Nível ${p.level} incompatível com ascensão ${p.ascension}.`);
  const table=weapon?rules.weaponXp:rules.resonatorXp;
  if(p.level===rules.caps[p.ascension] ? p.xp!==0 : p.xp>=table[p.level]-table[p.level-1]) throw Error('EXP parcial deve ser menor que a EXP para o próximo nível e zero no limite de ascensão.');
@@ -18,8 +19,8 @@ export function validateProgress(p,rules,weapon=false){
 }
 export function validateGoal(goal,db){
  if(!goal||typeof goal.id!=='string'||!/^[a-zA-Z0-9_-]{1,80}$/.test(goal.id)||!db.catalog.characters.some(c=>c.id===goal.charId)||typeof goal.done!=='boolean') throw Error('Meta ou personagem inválido.');
- const pair=(a,b,weapon=false)=>{
-  validateProgress(a,db.rules,weapon);validateProgress(b,db.rules,weapon);
+ const pair=(a,b,weapon=false,rules=db.rules)=>{
+  validateProgress(a,rules,weapon);validateProgress(b,rules,weapon);
   if(b.xp!==0) throw Error('A meta de EXP parcial deve ser zero.');
   if(b.level<a.level||b.ascension<a.ascension||(!weapon&&(b.skills.some((v,i)=>v<a.skills[i])||b.unlocks.some((v,i)=>v<a.unlocks[i])))) throw Error('A meta não pode ser inferior ao estado atual.');
  };
@@ -27,7 +28,7 @@ export function validateGoal(goal,db){
  if(goal.weapon){
   const w=db.catalog.weapons.find(w=>w.id===goal.weapon.id),c=db.catalog.characters.find(c=>c.id===goal.charId);
   if(!w||w.type!==c.weapon) throw Error('Arma incompatível com o personagem.');
-  pair(goal.weapon.current,goal.weapon.target,true);
+  pair(goal.weapon.current,goal.weapon.target,true,weaponRules(w,db.rules));
  }
  return true;
 }
@@ -58,11 +59,16 @@ export function requirements(goal,db){
  if(goal.weapon){
   const w=db.catalog.weapons.find(w=>w.id===goal.weapon.id),a=goal.weapon.current,b=goal.weapon.target;
   for(let i=a.ascension;i<b.ascension;i++){
+   if(w.ascensionCosts){
+    if(!w.ascensionVerified||!w.ascensionCosts[i]){missingData.push(`${w.name}: custos de ascensão não verificados`);continue;}
+    for(const [id,n] of Object.entries(w.ascensionCosts[i]))add(cost,id,n);
+    continue;
+   }
    if(!w.ascensionVerified||!r.weaponAscension[i]){missingData.push(`${w.name}: custos de ascensão não verificados`);continue;}
    const [credit,tier,enemy,ft,forgery]=r.weaponAscension[i];
    add(cost,'shell',credit);add(cost,`${w.enemy}-${tier}`,enemy);if(ft!==null)add(cost,`${w.forgery}-${ft}`,forgery);
   }
-  weaponXp=getXp(a,b,r.weaponXp);add(cost,'shell',Math.ceil(weaponXp*r.weaponCreditPerXp));
+  weaponXp=getXp(a,b,weaponRules(w,r).weaponXp);add(cost,'shell',Math.ceil(weaponXp*r.weaponCreditPerXp));
  }
  return {cost,missingData:[...new Set(missingData)],xp,weaponXp};
 }
