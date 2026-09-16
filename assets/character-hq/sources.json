@@ -1,0 +1,344 @@
+[
+  {
+    "id": "aemeath",
+    "path": "assets/character-hq/aemeath.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Aimisi_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Aemeth/Aemeath_Convene_Draw.webp"
+  },
+  {
+    "id": "augusta",
+    "path": "assets/character-hq/augusta.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_aogusita_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Augusta/Augusta_Convene_Draw.webp"
+  },
+  {
+    "id": "calcharo",
+    "path": "assets/character-hq/calcharo.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_kakaluo_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Calcharo/Calcharo_Convene_Draw.webp"
+  },
+  {
+    "id": "buling",
+    "path": "assets/character-hq/buling.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Buling_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Bulling/Buling_Convene_Draw.webp"
+  },
+  {
+    "id": "brant",
+    "path": "assets/character-hq/brant.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Bulante_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Brant/Brant_Convene_Draw.webp"
+  },
+  {
+    "id": "baizhi",
+    "path": "assets/character-hq/baizhi.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_bailian_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Baizhi/Baizhi_Convene_Draw.webp"
+  },
+  {
+    "id": "aalto",
+    "path": "assets/character-hq/aalto.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_qiushui_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Aalto/Aalto_Convene_Draw.webp"
+  },
+  {
+    "id": "camellya",
+    "path": "assets/character-hq/camellya.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_chun_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Camellya/Camellya_Convene_Draw.webp"
+  },
+  {
+    "id": "cantarella",
+    "path": "assets/character-hq/cantarella.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_kanteleila_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Cantarella/Cantarella_Convene_Draw.webp"
+  },
+  {
+    "id": "carlotta",
+    "path": "assets/character-hq/carlotta.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_kelaita_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Carlotta/Carlotta.webp"
+  },
+  {
+    "id": "changli",
+    "path": "assets/character-hq/changli.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_changli_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Changli/Changli_Convene_Draw.webp"
+  },
+  {
+    "id": "cartethyia",
+    "path": "assets/character-hq/cartethyia.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_katixiya_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Cartethyia/Cartethyia_Convene_Draw.webp"
+  },
+  {
+    "id": "chisa",
+    "path": "assets/character-hq/chisa.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Qianxiao_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Chisa/Chisa_Convene_Draw.webp"
+  },
+  {
+    "id": "chixia",
+    "path": "assets/character-hq/chixia.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_maxiaofang_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Chixia/Chixia_Convene_Draw.webp"
+  },
+  {
+    "id": "danjin",
+    "path": "assets/character-hq/danjin.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_micai_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Danjin/Danjin_Convene_Draw.webp"
+  },
+  {
+    "id": "ciaccona",
+    "path": "assets/character-hq/ciaccona.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_xiakong_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Ciaccona/Ciaccona_Convene_Draw.webp"
+  },
+  {
+    "id": "denia",
+    "path": "assets/character-hq/denia.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_daniya_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Denia/Denia_Convene_Draw.webp"
+  },
+  {
+    "id": "encore",
+    "path": "assets/character-hq/encore.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_anke_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Encore/Encore.webp"
+  },
+  {
+    "id": "galbrena",
+    "path": "assets/character-hq/galbrena.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_jiabeilina_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Galbrena/Galbrena_Convene_Draw.webp"
+  },
+  {
+    "id": "iuno",
+    "path": "assets/character-hq/iuno.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_younuo_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Iuno/Iuno_Convene_Draw.webp"
+  },
+  {
+    "id": "hiyuki",
+    "path": "assets/character-hq/hiyuki.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Feixue_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Hiyuki/Hiyuki_Convene_Draw.webp"
+  },
+  {
+    "id": "jingran",
+    "path": "assets/character-hq/jingran.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_jingran_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Jingran/Resonator_Jingran.webp"
+  },
+  {
+    "id": "jianxin",
+    "path": "assets/character-hq/jianxin.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_jiexin_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Jianxin/Jianxin_Convene_Draw.webp"
+  },
+  {
+    "id": "jinhsi",
+    "path": "assets/character-hq/jinhsi.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_jinxi_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Jinhsi/Jinhsi_Convene_Draw.webp"
+  },
+  {
+    "id": "jiyan",
+    "path": "assets/character-hq/jiyan.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_jiyan_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Jiyan/Jiyan_Convene_Draw.webp"
+  },
+  {
+    "id": "lucilla",
+    "path": "assets/character-hq/lucilla.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Luosela_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Lucilla/Lucilla_Convene_Draw.webp"
+  },
+  {
+    "id": "lumi",
+    "path": "assets/character-hq/lumi.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_dengdeng_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Lumi/Lumi_Convene_Draw.webp"
+  },
+  {
+    "id": "lingyang",
+    "path": "assets/character-hq/lingyang.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_lingyang_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Lingyang/Lingyang_Convene_Draw.webp"
+  },
+  {
+    "id": "lucy",
+    "path": "assets/character-hq/lucy.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Luxi_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Lucy/Lucy_Convene_Draw.webp"
+  },
+  {
+    "id": "lupa",
+    "path": "assets/character-hq/lupa.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_lupa_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Lupa/Lupa_Convene_Draw.webp"
+  },
+  {
+    "id": "luuk-herssen",
+    "path": "assets/character-hq/luuk-herssen.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Luhesi_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Luuk/Luuk_Herssen_Convene_Draw.webp"
+  },
+  {
+    "id": "mornye",
+    "path": "assets/character-hq/mornye.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Moning_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Mornye/Mornye_Convene_Draw.webp"
+  },
+  {
+    "id": "lynae",
+    "path": "assets/character-hq/lynae.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Linnai_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Lynae/Lynae_Convene_Draw.webp"
+  },
+  {
+    "id": "mortefi",
+    "path": "assets/character-hq/mortefi.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_baer_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Mortefi/Mortefi_Convene_Draw.webp"
+  },
+  {
+    "id": "phoebe",
+    "path": "assets/character-hq/phoebe.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Feibi_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Proebe/Phoebe_Convene_Draw.webp"
+  },
+  {
+    "id": "phrolova",
+    "path": "assets/character-hq/phrolova.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_fuluoluo_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Phrolova/Phrolova_Convene_Draw.webp"
+  },
+  {
+    "id": "qingxiao",
+    "path": "assets/character-hq/qingxiao.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_qingxiao_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Qingxiao/Qingxiao_Convene_Draw.webp"
+  },
+  {
+    "id": "rebecca",
+    "path": "assets/character-hq/rebecca.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Libeika_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Rebecca/Rebecca_Convene_Draw.webp"
+  },
+  {
+    "id": "qiuyuan",
+    "path": "assets/character-hq/qiuyuan.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Qiuyuan_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Qiuyuan/Qiuyuan_Convene_Draw.webp"
+  },
+  {
+    "id": "roccia",
+    "path": "assets/character-hq/roccia.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_luokeke_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Roccia/Roccia_Convene_Draw.webp"
+  },
+  {
+    "id": "rover-aero",
+    "path": "assets/character-hq/rover-aero.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_zhujue_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Rover/Rover_1.webp"
+  },
+  {
+    "id": "rover-havoc",
+    "path": "assets/character-hq/rover-havoc.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_zhujue_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Rover/Rover_1.webp"
+  },
+  {
+    "id": "rover-spectro",
+    "path": "assets/character-hq/rover-spectro.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_zhujue_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Rover/Rover_1.webp"
+  },
+  {
+    "id": "shorekeeper",
+    "path": "assets/character-hq/shorekeeper.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_shouanren_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Shorekeeper/Shorekeeper_Convene_Draw.webp"
+  },
+  {
+    "id": "sanhua",
+    "path": "assets/character-hq/sanhua.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_shanhua_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Sanhua/Sanhua_Convene_Draw.webp"
+  },
+  {
+    "id": "sigrika",
+    "path": "assets/character-hq/sigrika.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_xigelika_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Sigrika/Sigrika_Convene_Draw.webp"
+  },
+  {
+    "id": "suisui",
+    "path": "assets/character-hq/suisui.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Suisui_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Suisui/Suisui_Convene_Draw.webp"
+  },
+  {
+    "id": "taoqi",
+    "path": "assets/character-hq/taoqi.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_taohua_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Taoqi/Taoqi_Convene_Draw.webp"
+  },
+  {
+    "id": "verina",
+    "path": "assets/character-hq/verina.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_jueyuan_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Verina/Verina_Convene_Draw.webp"
+  },
+  {
+    "id": "xiangli-yao",
+    "path": "assets/character-hq/xiangli-yao.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_xiangliyao_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Xiangli/Xiangli_Yao_Convene_Draw.webp"
+  },
+  {
+    "id": "yangyang",
+    "path": "assets/character-hq/yangyang.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_yangyang_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Yangyang/Yangyang_Convene_Draw.webp"
+  },
+  {
+    "id": "yangyang-xuanling",
+    "path": "assets/character-hq/yangyang-xuanling.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Xuanling_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Yangyang%20Xuanling/Yangyang_Xuanling_Convene_Draw.webp"
+  },
+  {
+    "id": "yinlin",
+    "path": "assets/character-hq/yinlin.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_yinlin_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Yinlin/Yinlin_Convene_Draw.webp"
+  },
+  {
+    "id": "youhu",
+    "path": "assets/character-hq/youhu.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Youhu_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Youhu/Youhu_Convene_Draw.webp"
+  },
+  {
+    "id": "yuanwu",
+    "path": "assets/character-hq/yuanwu.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_yuanwu_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Yuanwu/Yuanwu_Convene_Draw.webp"
+  },
+  {
+    "id": "zani",
+    "path": "assets/character-hq/zani.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_zanni_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Zani/Zani_Convene_Draw.webp"
+  },
+  {
+    "id": "zhezhi",
+    "path": "assets/character-hq/zhezhi.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_zhezhi_UI.webp",
+    "previous": "./assets/WUWA%20Assets/Zhezhi/Zhezhi_Convene_Draw.webp"
+  }
+]

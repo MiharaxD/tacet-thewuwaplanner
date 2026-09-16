@@ -89,3 +89,7 @@ Os 57 ícones oficiais de personagem foram baixados da CDN referenciada pelo sna
 ## Grid de armas
 
 A seleção no modal usa cartões com imagem e raridade. Hover/foco revela ATQ e atributo secundário no nível 1 e efeito passivo no refinamento 1; o texto do efeito é preservado em inglês conforme a fonte. data/weapon-stats.json registra os 120 conjuntos de atributos, URL e data de consulta. Atualize explicitamente com node scripts/refresh-weapon-stats.mjs. Esses atributos são informativos e não alteram o cálculo de materiais.
+
+## Resolução dos retratos
+
+Os cards e banners usam artes originais de 696 × 960 em assets/character-hq, obtidas da CDN referenciada pelo Akademiya. data/character-art.json vincula essas versões sem substituir os arquivos fornecidos pelo usuário. assets/character-hq/sources.json registra origem e caminho anterior. Ícones das armas têm 256 × 256 e são exibidos a 64 × 64.

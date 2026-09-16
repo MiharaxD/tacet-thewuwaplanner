@@ -8,7 +8,7 @@ export const badge=(text,type='')=>`<span class="badge ${type}">${escape(text)}<
 export const empty=(title,text,action='')=>`<div class="empty"><span class="empty-icon">${icon('diamond')}</span><h3>${escape(title)}</h3><p>${escape(text)}</p>${action}</div>`;
 export const bar=(value,label='Materiais reservados')=>`<div class="progress" role="progressbar" aria-label="${escape(label)}" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${value}"><span style="width:${value}%"></span></div>`;
 export const weaponLabel=type=>({Broadblade:'Lâmina larga',Rectifier:'Retificador',Sword:'Espada',Pistols:'Pistolas',Gauntlets:'Manoplas'}[type]||type);
-export function portrait(c,size=''){return `<span class="portrait ${size} ${c.element.toLowerCase()}"><span class="portrait-fallback">${escape(c.name.slice(0,2))}</span><img src="${escape(c.image)}" alt="${escape(c.name)}" loading="lazy" width="256" height="256"></span>`;}
+export function portrait(c,size=''){return `<span class="portrait ${size} ${c.element.toLowerCase()}"><span class="portrait-fallback">${escape(c.name.slice(0,2))}</span><img src="${escape(c.imageHighRes||c.image)}" alt="${escape(c.name)}" loading="lazy" width="256" height="256"></span>`;}
 export function materialMeta(id,db){
  if(id.startsWith('xp-')){
   const character=id==='xp-potion';
