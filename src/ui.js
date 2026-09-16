@@ -13,7 +13,7 @@ export function materialMeta(id,db){
  if(id.startsWith('xp-')){
   const character=id==='xp-potion';
   const representative=db.catalog.materials.find(m=>m.id===(character?'potion-2':'energy-2'));
-  return {name:character?'EXP de personagem':'EXP de arma',category:'Experiência',origin:'Simulation Training',activity:'simulation',sources:[character?'level':'weapon-level'],rarity:null,image:representative?.image};
+  return {id,name:character?'EXP de personagem':'EXP de arma',category:'Experiência',origin:'Simulation Training',activity:'simulation',sources:[character?'level':'weapon-level'],rarity:null,image:representative?.image};
  }
  return db.catalog.materials.find(m=>m.id===id)||{name:id,origin:'Não verificado',category:'Não verificado',sources:[]};
 }
