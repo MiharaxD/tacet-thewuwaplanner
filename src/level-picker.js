@@ -1,4 +1,8 @@
 import {ascensionChoices} from './progress-input.js';
+import {escape} from './ui.js';
+export function skillField(id,value,label){
+ return `<div class="level-field skill-field"><input id="${id}" name="${id}" type="number" min="1" max="10" value="${value}" required autocomplete="off" role="combobox" aria-label="${escape(label)}" aria-autocomplete="none" aria-haspopup="listbox" aria-expanded="false" aria-controls="${id}-options"><div id="${id}-options" class="level-options" role="listbox" aria-label="${escape(label)}: escolher nível" hidden>${Array.from({length:10},(_,i)=>`<button type="button" role="option" tabindex="-1" id="${id}-option-${i+1}" data-level="${i+1}" aria-selected="false">${i+1}</button>`).join('')}</div></div>`;
+}
 const caps=[20,40,50,60,70,80,90];
 const levels=[1,10,20,30,40,50,60,70,80,90];
 export function levelField(prefix,value,max=90){
