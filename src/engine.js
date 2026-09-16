@@ -4,7 +4,7 @@ export const clone=value=>structuredClone(value);
 export function integer(value,min=0,max=1e9){return Number.isSafeInteger(value)&&value>=min&&value<=max;}
 const add=(map,key,n)=>{if(n>0) map[key]=(map[key]||0)+n;};
 export function emptyProgress(){return {level:1,ascension:0,xp:0,skills:[1,1,1,1,1],unlocks:[0,0,0,0,0,0]};}
-export function newGoal(charId,id){return {id,charId,current:emptyProgress(),target:{...emptyProgress(),level:20},weapon:null,done:false};}
+export function newGoal(charId,id){return {id,charId,sequence:0,current:emptyProgress(),target:{...emptyProgress(),level:20},weapon:null,done:false};}
 
 export function weaponRules(w,rules){return {...rules,caps:rules.caps.slice(0,(w.maxAscension??6)+1),floors:rules.floors.slice(0,(w.maxAscension??6)+1),weaponXp:rules.weaponXpByRarity?.[w.rarity]||rules.weaponXp};}
 export function validateProgress(p,rules,weapon=false){
@@ -18,6 +18,7 @@ export function validateProgress(p,rules,weapon=false){
  }
 }
 export function validateGoal(goal,db){
+ if(goal?.sequence!==undefined&&!integer(goal.sequence,0,6))throw Error('Cadeia de Ressonância deve estar entre S0 e S6.');
  if(!goal||typeof goal.id!=='string'||!/^[a-zA-Z0-9_-]{1,80}$/.test(goal.id)||!db.catalog.characters.some(c=>c.id===goal.charId)||typeof goal.done!=='boolean') throw Error('Meta ou personagem inválido.');
  const pair=(a,b,weapon=false,rules=db.rules)=>{
   validateProgress(a,rules,weapon);validateProgress(b,rules,weapon);

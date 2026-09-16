@@ -1,0 +1,344 @@
+{
+  "aemeath": {
+    "icon": "./assets/character-icons/aemeath.webp",
+    "banner": "./assets/WUWA%20Assets/Aemeth/Aemeath_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_53_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Aemeath/Gallery"
+  },
+  "augusta": {
+    "icon": "./assets/character-icons/augusta.webp",
+    "banner": "./assets/WUWA%20Assets/Augusta/Augusta_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_51_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Augusta/Gallery"
+  },
+  "buling": {
+    "icon": "./assets/character-icons/buling.webp",
+    "banner": "./assets/WUWA%20Assets/Bulling/Buling_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_58_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Buling/Gallery"
+  },
+  "baizhi": {
+    "icon": "./assets/character-icons/baizhi.webp",
+    "banner": "./assets/WUWA%20Assets/Baizhi/Baizhi_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_6_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Baizhi/Gallery"
+  },
+  "brant": {
+    "icon": "./assets/character-icons/brant.webp",
+    "banner": "./assets/WUWA%20Assets/Brant/Brant_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_44_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Brant/Gallery"
+  },
+  "aalto": {
+    "icon": "./assets/character-icons/aalto.webp",
+    "banner": "./assets/WUWA%20Assets/Aalto/Aalto_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_12_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Aalto/Gallery"
+  },
+  "camellya": {
+    "icon": "./assets/character-icons/camellya.webp",
+    "banner": "./assets/WUWA%20Assets/Camellya/Camellya_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_29_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Camellya/Gallery"
+  },
+  "cantarella": {
+    "icon": "./assets/character-icons/cantarella.webp",
+    "banner": "./assets/WUWA%20Assets/Cantarella/Cantarella_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_34_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Cantarella/Gallery"
+  },
+  "cartethyia": {
+    "icon": "./assets/character-icons/cartethyia.webp",
+    "banner": "./assets/WUWA%20Assets/Cartethyia/Cartethyia_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_40_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Cartethyia/Gallery"
+  },
+  "carlotta": {
+    "icon": "./assets/character-icons/carlotta.webp",
+    "banner": "./assets/WUWA%20Assets/Carlotta/Carlotta.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_32_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Carlotta/Gallery"
+  },
+  "changli": {
+    "icon": "./assets/character-icons/changli.webp",
+    "banner": "./assets/WUWA%20Assets/Changli/Changli_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_26_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Changli/Gallery"
+  },
+  "chisa": {
+    "icon": "./assets/character-icons/chisa.webp",
+    "banner": "./assets/WUWA%20Assets/Chisa/Chisa_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_57_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Chisa/Gallery"
+  },
+  "chixia": {
+    "icon": "./assets/character-icons/chixia.webp",
+    "banner": "./assets/WUWA%20Assets/Chixia/Chixia_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_2_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Chixia/Gallery"
+  },
+  "ciaccona": {
+    "icon": "./assets/character-icons/ciaccona.webp",
+    "banner": "./assets/WUWA%20Assets/Ciaccona/Ciaccona_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_37_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Ciaccona/Gallery"
+  },
+  "danjin": {
+    "icon": "./assets/character-icons/danjin.webp",
+    "banner": "./assets/WUWA%20Assets/Danjin/Danjin_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_10_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Danjin/Gallery"
+  },
+  "denia": {
+    "icon": "./assets/character-icons/denia.webp",
+    "banner": "./assets/WUWA%20Assets/Denia/Denia_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_64_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Denia/Gallery"
+  },
+  "calcharo": {
+    "icon": "./assets/character-icons/calcharo.webp",
+    "banner": "./assets/WUWA%20Assets/Calcharo/Calcharo_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_18_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Calcharo/Gallery"
+  },
+  "encore": {
+    "icon": "./assets/character-icons/encore.webp",
+    "banner": "./assets/WUWA%20Assets/Encore/Encore.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_8_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Encore/Gallery"
+  },
+  "galbrena": {
+    "icon": "./assets/character-icons/galbrena.webp",
+    "banner": "./assets/WUWA%20Assets/Galbrena/Galbrena_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_55_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Galbrena/Gallery"
+  },
+  "hiyuki": {
+    "icon": "./assets/character-icons/hiyuki.webp",
+    "banner": "./assets/WUWA%20Assets/Hiyuki/Hiyuki_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_67_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Hiyuki/Gallery"
+  },
+  "iuno": {
+    "icon": "./assets/character-icons/iuno.webp",
+    "banner": "./assets/WUWA%20Assets/Iuno/Iuno_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_48_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Iuno/Gallery"
+  },
+  "jianxin": {
+    "icon": "./assets/character-icons/jianxin.webp",
+    "banner": "./assets/WUWA%20Assets/Jianxin/Jianxin_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_23_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Jianxin/Gallery"
+  },
+  "jingran": {
+    "icon": "./assets/character-icons/jingran.webp",
+    "banner": "./assets/WUWA%20Assets/Jingran/Resonator_Jingran.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_74_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Jingran/Gallery"
+  },
+  "jiyan": {
+    "icon": "./assets/character-icons/jiyan.webp",
+    "banner": "./assets/WUWA%20Assets/Jiyan/Jiyan_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_11_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Jiyan/Gallery"
+  },
+  "jinhsi": {
+    "icon": "./assets/character-icons/jinhsi.webp",
+    "banner": "./assets/WUWA%20Assets/Jinhsi/Jinhsi_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_24_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Jinhsi/Gallery"
+  },
+  "lingyang": {
+    "icon": "./assets/character-icons/lingyang.webp",
+    "banner": "./assets/WUWA%20Assets/Lingyang/Lingyang_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_14_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Lingyang/Gallery"
+  },
+  "lucilla": {
+    "icon": "./assets/character-icons/lucilla.webp",
+    "banner": "./assets/WUWA%20Assets/Lucilla/Lucilla_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_66_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Lucilla/Gallery"
+  },
+  "lucy": {
+    "icon": "./assets/character-icons/lucy.webp",
+    "banner": "./assets/WUWA%20Assets/Lucy/Lucy_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_68_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Lucy/Gallery"
+  },
+  "lumi": {
+    "icon": "./assets/character-icons/lumi.webp",
+    "banner": "./assets/WUWA%20Assets/Lumi/Lumi_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_30_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Lumi/Gallery"
+  },
+  "lupa": {
+    "icon": "./assets/character-icons/lupa.webp",
+    "banner": "./assets/WUWA%20Assets/Lupa/Lupa_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_46_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Lupa/Gallery"
+  },
+  "luuk-herssen": {
+    "icon": "./assets/character-icons/luuk-herssen.webp",
+    "banner": "./assets/WUWA%20Assets/Luuk/Luuk_Herssen_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_54_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Luuk_Herssen/Gallery"
+  },
+  "lynae": {
+    "icon": "./assets/character-icons/lynae.webp",
+    "banner": "./assets/WUWA%20Assets/Lynae/Lynae_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_60_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Lynae/Gallery"
+  },
+  "mornye": {
+    "icon": "./assets/character-icons/mornye.webp",
+    "banner": "./assets/WUWA%20Assets/Mornye/Mornye_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_61_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Mornye/Gallery"
+  },
+  "mortefi": {
+    "icon": "./assets/character-icons/mortefi.webp",
+    "banner": "./assets/WUWA%20Assets/Mortefi/Mortefi_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_13_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Mortefi/Gallery"
+  },
+  "phoebe": {
+    "icon": "./assets/character-icons/phoebe.webp",
+    "banner": "./assets/WUWA%20Assets/Proebe/Phoebe_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_45_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Phoebe/Gallery"
+  },
+  "phrolova": {
+    "icon": "./assets/character-icons/phrolova.webp",
+    "banner": "./assets/WUWA%20Assets/Phrolova/Phrolova_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_41_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Phrolova/Gallery"
+  },
+  "qingxiao": {
+    "icon": "./assets/character-icons/qingxiao.webp",
+    "banner": "./assets/WUWA%20Assets/Qingxiao/Qingxiao_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_73_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Qingxiao/Gallery"
+  },
+  "qiuyuan": {
+    "icon": "./assets/character-icons/qiuyuan.webp",
+    "banner": "./assets/WUWA%20Assets/Qiuyuan/Qiuyuan_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_56_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Qiuyuan/Gallery"
+  },
+  "rebecca": {
+    "icon": "./assets/character-icons/rebecca.webp",
+    "banner": "./assets/WUWA%20Assets/Rebecca/Rebecca_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_69_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Rebecca/Gallery"
+  },
+  "roccia": {
+    "icon": "./assets/character-icons/roccia.webp",
+    "banner": "./assets/WUWA%20Assets/Roccia/Roccia_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_33_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Roccia/Gallery"
+  },
+  "rover-aero": {
+    "icon": "./assets/character-icons/rover-aero.webp",
+    "banner": "./assets/WUWA%20Assets/Rover/Rover_1.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_5_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Rover%3A_Aero/Gallery"
+  },
+  "rover-havoc": {
+    "icon": "./assets/character-icons/rover-havoc.webp",
+    "banner": "./assets/WUWA%20Assets/Rover/Rover_1.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_5_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Rover%3A_Havoc/Gallery"
+  },
+  "rover-spectro": {
+    "icon": "./assets/character-icons/rover-spectro.webp",
+    "banner": "./assets/WUWA%20Assets/Rover/Rover_1.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_5_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Rover%3A_Spectro/Gallery"
+  },
+  "sanhua": {
+    "icon": "./assets/character-icons/sanhua.webp",
+    "banner": "./assets/WUWA%20Assets/Sanhua/Sanhua_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_7_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Sanhua/Gallery"
+  },
+  "shorekeeper": {
+    "icon": "./assets/character-icons/shorekeeper.webp",
+    "banner": "./assets/WUWA%20Assets/Shorekeeper/Shorekeeper_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_28_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Shorekeeper/Gallery"
+  },
+  "sigrika": {
+    "icon": "./assets/character-icons/sigrika.webp",
+    "banner": "./assets/WUWA%20Assets/Sigrika/Sigrika_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_65_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Sigrika/Gallery"
+  },
+  "suisui": {
+    "icon": "./assets/character-icons/suisui.webp",
+    "banner": "./assets/WUWA%20Assets/Suisui/Suisui_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_71_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Suisui/Gallery"
+  },
+  "verina": {
+    "icon": "./assets/character-icons/verina.webp",
+    "banner": "./assets/WUWA%20Assets/Verina/Verina_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_3_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Verina/Gallery"
+  },
+  "taoqi": {
+    "icon": "./assets/character-icons/taoqi.webp",
+    "banner": "./assets/WUWA%20Assets/Taoqi/Taoqi_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_9_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Taoqi/Gallery"
+  },
+  "xiangli-yao": {
+    "icon": "./assets/character-icons/xiangli-yao.webp",
+    "banner": "./assets/WUWA%20Assets/Xiangli/Xiangli_Yao_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_25_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Xiangli_Yao/Gallery"
+  },
+  "yangyang": {
+    "icon": "./assets/character-icons/yangyang.webp",
+    "banner": "./assets/WUWA%20Assets/Yangyang/Yangyang_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_1_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Yangyang/Gallery"
+  },
+  "yangyang-xuanling": {
+    "icon": "./assets/character-icons/yangyang-xuanling.webp",
+    "banner": "./assets/WUWA%20Assets/Yangyang%20Xuanling/Yangyang_Xuanling_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_70_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Yangyang%3A_Xuanling/Gallery"
+  },
+  "yinlin": {
+    "icon": "./assets/character-icons/yinlin.webp",
+    "banner": "./assets/WUWA%20Assets/Yinlin/Yinlin_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_17_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Yinlin/Gallery"
+  },
+  "yuanwu": {
+    "icon": "./assets/character-icons/yuanwu.webp",
+    "banner": "./assets/WUWA%20Assets/Yuanwu/Yuanwu_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_15_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Yuanwu/Gallery"
+  },
+  "youhu": {
+    "icon": "./assets/character-icons/youhu.webp",
+    "banner": "./assets/WUWA%20Assets/Youhu/Youhu_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_31_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Youhu/Gallery"
+  },
+  "zani": {
+    "icon": "./assets/character-icons/zani.webp",
+    "banner": "./assets/WUWA%20Assets/Zani/Zani_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_38_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Zani/Gallery"
+  },
+  "zhezhi": {
+    "icon": "./assets/character-icons/zhezhi.webp",
+    "banner": "./assets/WUWA%20Assets/Zhezhi/Zhezhi_Convene_Draw.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_27_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Zhezhi/Gallery"
+  }
+}

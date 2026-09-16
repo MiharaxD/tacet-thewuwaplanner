@@ -1,0 +1,44 @@
+/* The planner keeps all fields mounted so switching tabs preserves drafts. */
+.planner-modal{width:min(760px,calc(100vw - 24px));border-radius:20px;background:#0c1119}
+.planner-modal[open]{display:flex;flex-direction:column;max-height:92dvh;overflow:hidden}
+.planner-modal #goal-form{display:flex;flex-direction:column;min-height:0}
+.planner-modal .planner-hero,.planner-modal .sequence-bar,.planner-modal .planner-tabs,.planner-modal .modal-footer{flex-shrink:0}
+.planner-modal .planner-content{overflow-y:auto;min-height:0;scrollbar-gutter:stable}
+.planner-hero{height:164px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 75% 20%,#364c65,#111b29 70%);border-bottom:1px solid #40516a}
+.planner-banner{position:absolute;width:70%;height:340%;object-fit:contain;object-position:center top;right:-8%;top:-45%;opacity:.8;pointer-events:none}
+.planner-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#101823 12%,#101823dc 36%,#10182318 85%),linear-gradient(0deg,#10182390,transparent 55%);pointer-events:none}
+.planner-identity{position:relative;z-index:1;height:100%;display:flex;align-items:center;gap:18px;padding:24px 30px}
+.planner-avatar{width:88px;height:88px;object-fit:contain;background:#151f2d;border:1px solid #b7bdc78c;border-radius:50%;box-shadow:0 5px 20px #0005}
+.planner-identity h2{font-size:1.8rem;margin:5px 0}
+.planner-identity p{font-size:.875rem;color:#b7c6d9}
+.planner-identity .eyebrow{font-size:.65rem;letter-spacing:.18em;color:#adbed2}
+.planner-stars{display:block;margin-top:6px;color:#e8ce8a;letter-spacing:3px;font-size:.75rem}
+.planner-close{position:absolute;right:14px;top:14px;z-index:2;background:#0c1119a6;border-radius:50%}
+.sequence-bar{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 26px;background:#101722}
+.sequence-bar strong{font-size:.875rem;font-weight:500}.sequence-bar>div>span{display:block;font-size:.75rem;color:#8e9eb2;margin-top:4px}
+.sequence-options{display:flex;gap:5px}.sequence-options label{position:relative;cursor:pointer}
+.sequence-options input{position:absolute;opacity:0;width:1px;height:1px;min-height:0;padding:0}
+.sequence-options label>span{display:grid;place-items:center;width:36px;height:36px;border:1px solid #36465c;border-radius:8px;color:#8e9eb2;font-size:.8rem;transition:background .15s}
+.sequence-options input:checked+span{background:#e4e8ee;color:#101722;border-color:#e4e8ee;font-weight:700;box-shadow:0 0 15px #d6dfea18}
+.sequence-options input:focus-visible+span{outline:2px solid #98bcf0;outline-offset:3px}.sequence-options label:hover>span{border-color:#b2c5df}
+.planner-tabs{display:grid;grid-template-columns:repeat(3,1fr);padding:0 26px;background:#101722;border-bottom:1px solid #2b3749;gap:8px}
+.planner-tabs button{display:flex;justify-content:center;align-items:center;gap:9px;border:0;border-bottom:2px solid transparent;border-radius:0;background:transparent;color:#8595aa;padding:15px 6px;font-size:.95rem}
+.planner-tabs img{width:27px;height:27px;object-fit:contain;opacity:.5}
+.planner-tabs [aria-selected=true]{border-bottom-color:#e0e6ee;color:#f3f5f8;background:linear-gradient(0deg,#ffffff08,transparent)}
+.planner-tabs [aria-selected=true] img{opacity:1}.planner-tabs button:hover{color:#e0e6ee;background:#ffffff05}
+.planner-content{padding:24px 26px 14px}.planner-content [hidden]{display:none!important}
+.planner-content [role=tabpanel]{min-height:224px}.planner-content .form-section-heading{margin-bottom:20px}.planner-content .form-section-heading h3{font-size:1rem}
+.planner-content .form-section-heading>span{font-size:.75rem}.planner-content fieldset{background:#101925;border-color:#344359;border-radius:12px;padding:18px 15px}
+.planner-content fieldset:nth-child(2){background:#142030;border-color:#617c9e}
+.planner-content legend{font-size:.8rem;color:#becbdb}.planner-content fieldset label{font-size:.8rem}
+.planner-content fieldset input,.planner-content fieldset select{background:#0c131e;border-color:#344962;border-radius:8px;min-height:44px}
+.planner-content .level-field input{font-size:1.1rem;font-weight:600}.planner-content .footnote{font-size:.75rem;line-height:1.65;margin-top:16px;color:#8e9eb2}
+.planner-content .skills-grid{margin-top:0;grid-template-columns:minmax(0,1fr) 82px 82px;gap:12px}
+.planner-content .skills-grid input{min-height:42px;text-align:center;background:#111c2a;border-color:#354a66}
+.planner-content .skills-grid label{font-size:.875rem;padding:9px 0}
+.planner-content .goal-preview{margin-top:22px;padding:14px 16px;background:#101925;border:1px solid #2c3d53}
+.planner-sources{font-size:.75rem;margin-top:14px;color:#8292a9}.planner-sources summary{cursor:pointer}.planner-sources p{overflow-wrap:anywhere}
+.planner-modal .modal-footer{padding:16px 26px;background:#101722}.planner-modal .modal-footer button{font-size:.875rem}
+.planner-content #weapon-progress{margin-top:20px}.planner-content .weapon-heading{padding:12px;border:1px solid #344359;background:#101925;border-radius:12px}
+.planner-content .weapon-heading h3{margin:0 0 7px}.planner-content .weapon-materials{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(max-width:600px){.planner-hero{height:140px}.planner-identity{padding:18px;gap:12px}.planner-avatar{width:70px;height:70px}.planner-identity h2{font-size:1.5rem}.planner-identity p{font-size:.75rem}.sequence-bar{padding:14px 18px;flex-wrap:wrap;gap:12px}.sequence-bar>div:first-child{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.sequence-bar>div>span{margin:0}.sequence-options{width:100%;justify-content:space-between}.sequence-options label>span{width:38px;height:36px}.planner-tabs{padding:0 12px;gap:0}.planner-content{padding:20px 16px 12px}.planner-content>.form-columns,.planner-content [role=tabpanel]>.form-columns{gap:12px}.planner-content fieldset{padding:12px}.planner-content fieldset .form-columns{grid-template-columns:1fr;gap:10px}.planner-content .skills-grid{grid-template-columns:minmax(0,1fr) 58px 58px;gap:8px}.planner-content .form-section-heading>span{display:none}.planner-modal .modal-footer{padding:13px 16px;gap:8px}.planner-modal .modal-footer>div{gap:7px}.planner-modal .modal-footer button{padding:10px 12px}.planner-content .goal-preview>div{flex-wrap:wrap}.planner-content .weapon-materials{grid-template-columns:1fr}}

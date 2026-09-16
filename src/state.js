@@ -28,7 +28,7 @@ export function validateState(input,db){
   for(const [id,n]of Object.entries(e.rewards))if(!validMaterials.has(id)||!integer(n,0))throw Error('Recompensa inválida.');
  }
  // Rebuild only approved keys. Imported objects never become prototypes or DOM code.
- return {version:1,inventory:{...input.inventory},goals:input.goals.map(g=>({id:g.id,charId:g.charId,current:clone(g.current),target:clone(g.target),weapon:g.weapon?clone(g.weapon):null,done:g.done})),events:input.events.map(e=>({id:e.id,title:e.title,kind:'personal',start:e.start,end:e.end,tasks:e.tasks.map(t=>({text:t.text,done:t.done})),rewards:{...e.rewards},claimed:e.claimed})),settings:{server:settings.server,timeZone:settings.timeZone,unionLevel:settings.unionLevel,dailyWaveplates:settings.dailyWaveplates,weeklyClaimsUsed:settings.weeklyClaimsUsed,weeklyPeriod:settings.weeklyPeriod,yields:{...settings.yields}}};
+ return {version:1,inventory:{...input.inventory},goals:input.goals.map(g=>({id:g.id,charId:g.charId,sequence:g.sequence??0,current:clone(g.current),target:clone(g.target),weapon:g.weapon?clone(g.weapon):null,done:g.done})),events:input.events.map(e=>({id:e.id,title:e.title,kind:'personal',start:e.start,end:e.end,tasks:e.tasks.map(t=>({text:t.text,done:t.done})),rewards:{...e.rewards},claimed:e.claimed})),settings:{server:settings.server,timeZone:settings.timeZone,unionLevel:settings.unionLevel,dailyWaveplates:settings.dailyWaveplates,weeklyClaimsUsed:settings.weeklyClaimsUsed,weeklyPeriod:settings.weeklyPeriod,yields:{...settings.yields}}};
 }
 export function parseBackup(text,db){
  if(typeof text!=='string'||text.length>2000000)throw Error('Backup muito grande (limite: 2 MB).');

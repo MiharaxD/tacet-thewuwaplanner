@@ -79,3 +79,9 @@ Retratos locais atribuídos à KURO GAMES, fornecidos na pasta WUWA Assets. `ass
 Para 1–2★, o limite é nível 70/ascensão 4, confirmado na Wiki. O custo anexado à última linha de nível 70 do Akademiya é ignorado: não existe próxima faixa de evolução. EXP de 3★, 2★ e 1★ usa respectivamente 60%, 50% e 40% da tabela de 4★.
 
 O campo EXP parcial foi retirado do planejamento. Valores antigos são preservados quando nível e ascensão atuais não mudam; novos estados começam com zero EXP parcial. A confirmação de evolução mantém seu registro de EXP final. Os IDs das quatro armas originais foram preservados.
+
+## Modal visual e cópias — 16/09/2026
+
+O modal usa abas Nível, Fortes e Arma, mantendo os campos montados durante a troca. A Cadeia de Ressonância (sequence, S0–S6) registra cópias extras, sem alterar os custos de evolução. Backups antigos sem esse campo recebem S0.
+
+Os 57 ícones oficiais de personagem foram baixados da CDN referenciada pelo snapshot público do Akademiya; data/character-art.json registra as URLs. A galeria Fandom solicitada bloqueou o acesso direto (403); o banner usa a arte Convene Draw local existente, em vez de afirmar que é uma Convene Still. Artes de personagens © KURO GAMES. Os três símbolos de aba foram restaurados das imagens enviadas pelo usuário e salvos em PNG RGBA com fundo transparente.
