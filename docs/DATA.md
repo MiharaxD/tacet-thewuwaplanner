@@ -85,3 +85,7 @@ O campo EXP parcial foi retirado do planejamento. Valores antigos são preservad
 O modal usa abas Nível, Fortes e Arma, mantendo os campos montados durante a troca. A Cadeia de Ressonância (sequence, S0–S6) registra cópias extras, sem alterar os custos de evolução. Backups antigos sem esse campo recebem S0.
 
 Os 57 ícones oficiais de personagem foram baixados da CDN referenciada pelo snapshot público do Akademiya; data/character-art.json registra as URLs. A galeria Fandom solicitada bloqueou o acesso direto (403); o banner usa a arte Convene Draw local existente, em vez de afirmar que é uma Convene Still. Artes de personagens © KURO GAMES. Os três símbolos de aba foram restaurados das imagens enviadas pelo usuário e salvos em PNG RGBA com fundo transparente.
+
+## Grid de armas
+
+A seleção no modal usa cartões com imagem e raridade. Hover/foco revela ATQ e atributo secundário no nível 1 e efeito passivo no refinamento 1; o texto do efeito é preservado em inglês conforme a fonte. data/weapon-stats.json registra os 120 conjuntos de atributos, URL e data de consulta. Atualize explicitamente com node scripts/refresh-weapon-stats.mjs. Esses atributos são informativos e não alteram o cálculo de materiais.
