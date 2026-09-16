@@ -10,7 +10,11 @@ export const bar=(value,label='Materiais reservados')=>`<div class="progress" ro
 export const weaponLabel=type=>({Broadblade:'Lâmina larga',Rectifier:'Retificador',Sword:'Espada',Pistols:'Pistolas',Gauntlets:'Manoplas'}[type]||type);
 export function portrait(c,size=''){return `<span class="portrait ${size} ${c.element.toLowerCase()}"><span class="portrait-fallback">${escape(c.name.slice(0,2))}</span><img src="${escape(c.image)}" alt="${escape(c.name)}" loading="lazy" width="256" height="256"></span>`;}
 export function materialMeta(id,db){
- if(id.startsWith('xp-'))return {name:id==='xp-potion'?'EXP de personagem':'EXP de arma',category:'Experiência',origin:'Simulation Training',activity:'simulation',sources:[id==='xp-potion'?'level':'weapon-level'],rarity:null};
+ if(id.startsWith('xp-')){
+  const character=id==='xp-potion';
+  const representative=db.catalog.materials.find(m=>m.id===(character?'potion-2':'energy-2'));
+  return {name:character?'EXP de personagem':'EXP de arma',category:'Experiência',origin:'Simulation Training',activity:'simulation',sources:[character?'level':'weapon-level'],rarity:null,image:representative?.image};
+ }
  return db.catalog.materials.find(m=>m.id===id)||{name:id,origin:'Não verificado',category:'Não verificado',sources:[]};
 }
 export function materialIcon(m){return `<span class="material-icon rarity-${m.rarity||0}" aria-hidden="true">${icon(m.category==='Coleta'?'leaf':m.category==='Experiência'?'inventory':m.category==='Moeda'?'diamond':m.category==='Semanal'?'events':'farm')}${m.image?`<img src="${escape(m.image)}" alt="" loading="lazy" width="40" height="40">`:''}</span>`;}
