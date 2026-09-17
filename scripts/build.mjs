@@ -1,5 +1,7 @@
 import { cp, mkdir, readFile, readdir } from 'node:fs/promises';
 import { execFileSync } from 'node:child_process';
+import {validateEventCatalog} from '../src/official-events.js';
+validateEventCatalog(JSON.parse(await readFile('data/events.json','utf8')));
 await mkdir('dist',{recursive:true});
 for (const dir of ['src','data','assets']) await cp(dir,`dist/${dir}`,{recursive:true});
 await cp('index.html','dist/index.html');

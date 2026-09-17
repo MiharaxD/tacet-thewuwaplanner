@@ -25,6 +25,10 @@ dialog{padding:0;border:1px solid #3d5370;border-radius:15px;width:min(820px,cal
 .sidebar nav a.active .sidebar-symbol{filter:brightness(0) saturate(100%) invert(19%);opacity:1}
 @media(max-width:760px){.sidebar nav .sidebar-symbol{width:20px;height:20px;flex-basis:20px}.sidebar nav a.active .sidebar-symbol{filter:none}}
 
+.event-completion{display:flex;align-items:center;gap:12px;padding-top:18px;margin-top:18px;border-top:1px solid var(--line);cursor:pointer;font-size:16px}
+.event-completion input{width:20px;height:20px;accent-color:#b7d9bd;flex:none}
+.event-card.event-is-complete{border-color:#668a71}.event-is-complete .event-completion{color:#b7d9bd}
+
 /* A single highlight moves between destinations, including after a full render. */
 .sidebar nav{position:relative;isolation:isolate}
 .nav-indicator{position:absolute;pointer-events:none;z-index:-1;left:0;top:calc(var(--nav-index)*53px);width:100%;height:46px;border-radius:24px;background:#eef0f5;border:1px solid #fff8}

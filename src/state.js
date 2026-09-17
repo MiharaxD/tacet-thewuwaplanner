@@ -5,7 +5,7 @@ export function getStorage(host){try{return host.localStorage;}catch{return null
 // Serialize browser writes across tabs; the snapshot check also protects callers
 // without Web Locks and detects changes made before a storage event is delivered.
 export function withStorageLock(locks,action){return locks?.request?locks.request(STORAGE_KEY,action):Promise.resolve().then(action);}
-export const defaultState=()=>({version:1,inventory:{},goals:[],events:[],settings:{server:'America',timeZone:'America/Sao_Paulo',unionLevel:1,dailyWaveplates:240,weeklyClaimsUsed:0,weeklyPeriod:null,yields:{}}});
+export const defaultState=()=>({version:1,inventory:{},goals:[],events:[],eventCompletions:{},settings:{server:'America',timeZone:'America/Sao_Paulo',unionLevel:1,dailyWaveplates:240,weeklyClaimsUsed:0,weeklyPeriod:null,yields:{}}});
 function record(value){return value&&typeof value==='object'&&!Array.isArray(value);}
 function instant(value){return typeof value==='string'&&/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(?::\d{2}(?:\.\d{1,3})?)?(?:Z|[+-]\d{2}:\d{2})$/.test(value)&&Number.isFinite(Date.parse(value));}
 export function validateState(input,db){
@@ -20,6 +20,8 @@ export function validateState(input,db){
  try{new Intl.DateTimeFormat('pt-BR',{timeZone:settings.timeZone});}catch{throw Error('Fuso horário inválido.');}
  if(settings.weeklyPeriod!==null&&!instant(settings.weeklyPeriod))throw Error('Período semanal inválido.');
  for(const [id,n]of Object.entries(settings.yields))if((!validMaterials.has(id)&&!['xp-potion','xp-energy'].includes(id))||!Number.isFinite(n)||n<0||n>1e9)throw Error('Rendimento inválido.');
+ const eventCompletions=input.eventCompletions??{};
+ if(!record(eventCompletions)||Object.keys(eventCompletions).length>5000||Object.entries(eventCompletions).some(([id,done])=>!/^[a-zA-Z0-9_-]{1,80}$/.test(id)||typeof done!=='boolean'))throw Error('Conclusões de eventos inválidas.');
  const eventIds=new Set();
  for(const e of input.events){
   if(!e||typeof e.id!=='string'||!/^[a-zA-Z0-9_-]{1,80}$/.test(e.id)||eventIds.has(e.id)||typeof e.title!=='string'||!e.title.trim()||e.title.length>120||e.kind!=='personal'||!instant(e.start)||!instant(e.end)||Date.parse(e.end)<=Date.parse(e.start)||!Array.isArray(e.tasks)||e.tasks.length>50||!record(e.rewards)||typeof e.claimed!=='boolean')throw Error('Evento inválido.');
@@ -28,7 +30,7 @@ export function validateState(input,db){
   for(const [id,n]of Object.entries(e.rewards))if(!validMaterials.has(id)||!integer(n,0))throw Error('Recompensa inválida.');
  }
  // Rebuild only approved keys. Imported objects never become prototypes or DOM code.
- return {version:1,inventory:{...input.inventory},goals:input.goals.map(g=>({id:g.id,charId:g.charId,sequence:g.sequence??0,current:clone(g.current),target:clone(g.target),weapon:g.weapon?clone(g.weapon):null,done:g.done})),events:input.events.map(e=>({id:e.id,title:e.title,kind:'personal',start:e.start,end:e.end,tasks:e.tasks.map(t=>({text:t.text,done:t.done})),rewards:{...e.rewards},claimed:e.claimed})),settings:{server:settings.server,timeZone:settings.timeZone,unionLevel:settings.unionLevel,dailyWaveplates:settings.dailyWaveplates,weeklyClaimsUsed:settings.weeklyClaimsUsed,weeklyPeriod:settings.weeklyPeriod,yields:{...settings.yields}}};
+ return {version:1,inventory:{...input.inventory},goals:input.goals.map(g=>({id:g.id,charId:g.charId,sequence:g.sequence??0,current:clone(g.current),target:clone(g.target),weapon:g.weapon?clone(g.weapon):null,done:g.done})),events:input.events.map(e=>({id:e.id,title:e.title,kind:'personal',start:e.start,end:e.end,tasks:e.tasks.map(t=>({text:t.text,done:t.done})),rewards:{...e.rewards},claimed:e.claimed})),eventCompletions:{...eventCompletions},settings:{server:settings.server,timeZone:settings.timeZone,unionLevel:settings.unionLevel,dailyWaveplates:settings.dailyWaveplates,weeklyClaimsUsed:settings.weeklyClaimsUsed,weeklyPeriod:settings.weeklyPeriod,yields:{...settings.yields}}};
 }
 export function parseBackup(text,db){
  if(typeof text!=='string'||text.length>2000000)throw Error('Backup muito grande (limite: 2 MB).');
@@ -50,6 +52,8 @@ export function mergeState(current,incoming,db){
  for(const [id,n]of Object.entries(incoming.inventory))next.inventory[id]=Math.max(next.inventory[id]||0,n);
  for(const goal of incoming.goals)if(!next.goals.some(g=>g.id===goal.id||g.charId===goal.charId))next.goals.push(clone(goal));
  for(const event of incoming.events)if(!next.events.some(e=>e.id===event.id))next.events.push(clone(event));
+ next.eventCompletions={...(next.eventCompletions||{})};
+ for(const [id,done]of Object.entries(incoming.eventCompletions||{}))next.eventCompletions[id]=next.eventCompletions[id]===true||done;
  return validateState(next,db);
 }
 export function loadState(storage,db){

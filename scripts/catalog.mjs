@@ -60,7 +60,7 @@ const rules={caps:[20,40,50,60,70,80,90],floors:[1,20,40,50,60,70,80],union:[1,1
  activities:{overworld:{waveplates:0},simulation:{waveplates:40},forgery:{waveplates:40},boss:{waveplates:60},weekly:{waveplates:60,weeklyLimit:3}},servers:{America:-5,Europe:1,Asia:8,SEA:8},dailyResetHour:4,weeklyResetDay:1};
 const recipes=[{id:'howler-lf-mf',inputs:{'howler-0':3},outputs:{'howler-1':1},sources:['howler-recipe'],verified:true},{id:'whisper-lf-mf',inputs:{'whisper-0':3},outputs:{'whisper-1':1},sources:['whisper-recipe'],verified:true}];
 await mkdir('data',{recursive:true});
-for(const [name,value] of Object.entries({catalog:{version:1,consultedAt:date,characters,weapons,materials:mats},rules,sources,recipes,events:{version:1,consultedAt:date,events:[],note:'Nenhum calendário oficial atual verificado. Cadastro pessoal disponível.'}})) await writeFile(`data/${name}.json`,JSON.stringify(value,null,2)+'\n');
+for(const [name,value] of Object.entries({catalog:{version:1,consultedAt:date,characters,weapons,materials:mats},rules,sources,recipes})) await writeFile(`data/${name}.json`,JSON.stringify(value,null,2)+'\n');
 await import('./import-wuwa.mjs');
 
 await import('./import-weapons.mjs');
