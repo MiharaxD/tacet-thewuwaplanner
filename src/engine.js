@@ -48,7 +48,15 @@ export function requirements(goal,db){
   const [credit,tier,forgery,enemy,weekly]=r.skills[i-1];
   add(cost,'shell',credit);add(cost,`${c.forgery}-${tier}`,forgery);add(cost,`${c.enemy}-${tier}`,enemy);add(cost,c.weekly,weekly);
  }
- if(goal.target.unlocks.some((n,i)=>n>goal.current.unlocks[i])) missingData.push(r.unlocksNote);
+ for(let u=0;u<6;u++)for(let step=goal.current.unlocks[u];step<goal.target.unlocks[u];step++){
+  const kind=u<2?'inherent':'stat',stage=u<2?u:step,entry=r.unlockCosts?.[kind]?.[stage];
+  if(!r.unlocksVerified||!entry||!c.forgery||!c.enemy||!c.weekly){missingData.push('Materiais das passivas não verificados.');continue;}
+  const [credit,tier,forgery,enemy,weekly]=entry;
+  add(cost,'shell',credit);add(cost,`${c.forgery}-${tier}`,forgery);add(cost,`${c.enemy}-${tier}`,enemy);add(cost,c.weekly,weekly);
+  const required=r.unlockAscensions?.[kind]?.[stage];
+  if(required!==undefined&&goal.target.ascension<required)missingData.push(`${UNLOCKS[u]}: requer ascensão ${required} na meta.`);
+ }
+ if(goal.target.unlocks[1]&&!goal.target.unlocks[0])missingData.push('A segunda passiva única requer a primeira.');
  const getXp=(a,b,table)=>{
   if(a.level===b.level) return 0;
   if(table[a.level-1]==null||table[b.level-1]==null){missingData.push('Tabela de EXP: não verificado');return 0;}

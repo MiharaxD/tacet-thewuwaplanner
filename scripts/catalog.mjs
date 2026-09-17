@@ -56,7 +56,7 @@ const rules={caps:[20,40,50,60,70,80,90],floors:[1,20,40,50,60,70,80],union:[1,1
  ascensionMode:'incremental',ascension:[ [5000,0,0,0,4],[10000,4,3,1,4],[15000,8,6,1,8],[20000,12,9,2,4],[40000,16,12,2,8],[80000,20,16,3,4] ],
  weaponAscension:[ [10000,0,6,null,0],[20000,1,6,0,6],[40000,2,4,1,8],[60000,2,6,2,6],[80000,3,4,3,8],[120000,3,8,3,12] ],
  skillMode:'incremental',skills:[[1500,0,2,2,0],[2000,0,3,3,0],[4500,1,2,2,0],[6000,1,3,3,0],[16000,2,3,2,0],[30000,2,5,3,1],[50000,3,2,2,1],[70000,3,3,3,1],[100000,3,6,4,1]],
- unlocksVerified:false,unlocksNote:'Custos ou pré-requisitos dos nós inerentes e bônus não verificados: há divergência entre as fontes. Metas podem ser salvas, mas esses nós bloqueiam o registro automático de conclusão.',
+ unlocksVerified:true,unlockCosts:{inherent:[[10000,1,3,3,1],[20000,2,3,3,1]],stat:[[50000,2,3,3,0],[100000,3,3,3,1]]},unlockAscensions:{inherent:[2,4],stat:[3,4]},
  activities:{overworld:{waveplates:0},simulation:{waveplates:40},forgery:{waveplates:40},boss:{waveplates:60},weekly:{waveplates:60,weeklyLimit:3}},servers:{America:-5,Europe:1,Asia:8,SEA:8},dailyResetHour:4,weeklyResetDay:1};
 const recipes=[{id:'howler-lf-mf',inputs:{'howler-0':3},outputs:{'howler-1':1},sources:['howler-recipe'],verified:true},{id:'whisper-lf-mf',inputs:{'whisper-0':3},outputs:{'whisper-1':1},sources:['whisper-recipe'],verified:true}];
 await mkdir('data',{recursive:true});

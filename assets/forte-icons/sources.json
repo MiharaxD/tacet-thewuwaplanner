@@ -1,0 +1,7 @@
+{
+ "normal.webp":"https://static.nanoka.cc/assets/ww/UIResources/Common/Atlas/SkillIcon/SkillIconNor/SP_IconNorSword.webp",
+ "intro.webp":"https://static.nanoka.cc/assets/ww/UIResources/Common/Atlas/SkillIcon/SkillIconJinxi/SP_IconJinxiQTE.webp",
+ "attack.webp":"https://wuwa.akademiya.app/games/wuwa/attributes/T_Iconpropertyredattack_UI.webp",
+ "stat.webp":"https://wuwa.akademiya.app/games/wuwa/attributes/T_Iconpropertyredbaoji_UI.webp",
+ "note":"Original KURO GAMES assets. Intro is Jinhsi's icon, used as requested to match the supplied reference. Skill, Forte, Liberation and unique passive glyphs are generic interface symbols."
+}
