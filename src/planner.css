@@ -97,6 +97,7 @@
 .stock-stepper:has(.synthesis-button){grid-template-columns:32px minmax(0,1fr) 32px 36px}
 
 .material-tiles{display:flex;flex-wrap:wrap;gap:9px;margin:16px 0}
+.goal-preview>.material-tiles{flex-direction:row;justify-content:flex-start;gap:9px}
 .material-tile{position:relative;display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;gap:0;width:68px;min-width:68px;padding:0;border:1px solid #48596d;border-radius:7px;overflow:hidden;background:#243448;color:#fff}
 .material-tile .material-icon{width:100%;height:60px;border:0;border-radius:0;display:grid;place-items:center}
 .material-tile .material-icon img{position:absolute;inset:0;margin:auto;display:block;width:48px;height:48px;object-fit:contain;object-position:center}
