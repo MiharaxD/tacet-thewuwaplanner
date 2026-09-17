@@ -32,7 +32,7 @@ function toast(text){clearTimeout(toastTimer);const el=document.querySelector('#
 function commit(next,message){store.commit(next);render();if(message)toast(message);}
 function openModal(content){modal.classList.toggle('planner-modal',content.includes('id="goal-form"'));modal.innerHTML=content;if(!modal.open)modal.showModal();modal.querySelector('input,select,button')?.focus();}
 const modalHeader=(title,sub='')=>`<header class="modal-header"><div><span class="eyebrow">TACET / PLANEJAMENTO</span><h2 id="modal-title">${h(title)}</h2>${sub?`<p>${h(sub)}</p>`:''}</div>${button(icon('close'),'close','aria-label="Fechar janela"','icon-button')}</header>`;
-function closeModal(){modal.close();editingGoal=null;editingEvent=null;pendingImport=null;}
+function closeModal(){modal.close();editingGoal=null;pendingImport=null;}
 function topHeader(title,subtitle,action=''){return `<div class="page-heading"><div><span class="eyebrow">WUTHERING WAVES / PLANEJADOR</span><h1>${title}</h1><p>${subtitle}</p></div>${action}</div>`;}
 function resultFor(goal){return plan.goals.find(g=>g.goalId===goal.id);}
 function filteredCharacters(){return db.catalog.characters.filter(c=>(!search||c.name.toLowerCase().includes(search.toLowerCase()))&&(!element||c.element===element)&&(!weaponFilter||c.weapon===weaponFilter));}

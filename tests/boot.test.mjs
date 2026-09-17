@@ -14,12 +14,12 @@ import * as official from '../src/official-events.js';
 test('the actual app boots and accepts inventory edits when the storage getter throws',async()=>{
  const listeners=new Map(),app={innerHTML:'',querySelectorAll:()=>[]};
  const toast={textContent:'',classList:{add(){},remove(){}}};
- const modal={open:false,addEventListener(){}};
+ const modal={open:false,addEventListener(){},close(){this.open=false;},showModal(){this.open=true;},querySelector(){return null;},classList:{toggle(){}}};
  const elements={'#app':app,'#modal':modal,'#toast':toast};
  const window={addEventListener(){},get localStorage(){throw new DOMException('Blocked','SecurityError');}};
  const context=vm.createContext({
   ...farmRates,...materials,...engine,...state,...time,...ui,...forms,...official,h:ui.escape,window,navigator:{},location:{hash:''},
-  document:{querySelector:key=>elements[key]||null,querySelectorAll:()=>[],addEventListener:(name,fn)=>listeners.set(name,fn),activeElement:null},
+  document:{querySelector:key=>elements[key]||null,querySelectorAll:()=>[],addEventListener:(name,fn)=>{if(name!=='click'||!listeners.has(name))listeners.set(name,fn);},activeElement:null},
   registerPlannerTools(){},structuredClone,Intl,URL,crypto,
   setInterval(){},setTimeout(){},clearTimeout(){},
   fetch:async path=>({ok:true,json:async()=>JSON.parse(await readFile(new URL(`../${path}`,import.meta.url),'utf8'))})
@@ -27,7 +27,7 @@ test('the actual app boots and accepts inventory edits when the storage getter t
  // Run the real boot and event handlers with only browser I/O replaced.
  const source=(await readFile(new URL('../src/app.js',import.meta.url),'utf8'))
   .replace(/^import .*;\r?\n/gm,'').replace(/boot\(\);\s*$/,'globalThis.bootResult=boot();');
- vm.runInContext(source,context);await context.bootResult;
+ vm.runInContext('"use strict";\n'+source,context);await context.bootResult;
  assert.match(app.innerHTML,/Seu próximo avanço/);
  assert.match(app.innerHTML,/Armazenamento indisponível/);
  assert.doesNotMatch(app.innerHTML,/boot-error/);
@@ -67,4 +67,12 @@ test('the actual app boots and accepts inventory edits when the storage getter t
   assert.match(app.innerHTML,/goal-farm-grid/);assert.match(app.innerHTML,/tentativas/);assert.match(app.innerHTML,/Waveplates/);
   vm.runInContext(`route='characters';render();`,context);assert.match(app.innerHTML,/goal-farm-grid/);
   const tiles=vm.runInContext('previewMaterials(plan.goals[0].itemRows)',context);assert.match(tiles,/tile-owned/);assert.match(tiles,/tile-needed/);assert.match(tiles,/edit-goal-stock/);
+  const inventoryBeforeDelete=vm.runInContext('JSON.stringify(state().inventory)',context);
+  const clickAction=async(action,id)=>{listeners.get('click')({target:{closest:()=>({dataset:{action,id}})}});await new Promise(resolve=>setImmediate(resolve));};
+  await clickAction('remove','goal-farm-test');assert.match(modal.innerHTML,/confirm-remove/);assert.equal(modal.open,true);
+  await clickAction('confirm-remove','goal-farm-test');assert.equal(vm.runInContext('state().goals.length',context),0);assert.equal(modal.open,false);
+  assert.equal(vm.runInContext('JSON.stringify(state().inventory)',context),inventoryBeforeDelete);
+  await clickAction('undo');assert.equal(vm.runInContext('state().goals[0].id',context),'goal-farm-test');
+  assert.equal(vm.runInContext('JSON.stringify(state().inventory)',context),inventoryBeforeDelete);
 });
+
