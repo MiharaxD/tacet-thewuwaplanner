@@ -62,3 +62,19 @@ test('unmet tiny requirements never render as 100 percent',()=>{const g=ascGoal(
 test('actual ledger cannot claim free EXP or unbacked partial EXP',()=>{const s=defaultState(),g=make();g.target.level=2;s.goals=[g];s.inventory={shell:1000,'potion-0':1};assert.throws(()=>completeGoal(s,g.id,db,{consumption:{shell:0}}),/créditos/);assert.throws(()=>completeGoal(s,g.id,db,{characterXp:NaN}),/EXP parcial/);assert.throws(()=>completeGoal(s,g.id,db,{characterXp:700}),/líquido/);});
 test('skill-only completion preserves existing partial EXP',()=>{const s=defaultState(),g=make();g.current={...g.current,level:41,ascension:2,xp:100};g.target={...clone(g.current),xp:0,skills:[2,1,1,1,1]};s.goals=[g];s.settings.unionLevel=30;s.inventory={...requirements(g,db).cost};const next=completeGoal(s,g.id,db);assert.equal(next.goals[0].current.xp,100);});
 test('imported timestamps require an explicit timezone',()=>{const s=defaultState();s.events=[{...event,start:'2026-09-15T00:00:00'}];assert.throws(()=>validateState(s,db),/Evento/);});
+
+test('experience item rows cover the deficit, reserve real units once and match consumption',()=>{
+ const g=newGoal(db.catalog.characters[0].id,'units-a');g.target.level=20;
+ const second=clone(g);second.id='units-b';
+ const stock={'potion-0':4,'potion-1':2,'potion-2':1,'potion-3':1};
+ const plan=allocate([g,second],stock,db);
+ for(const result of plan.goals){
+  const rows=result.itemRows.filter(r=>r.id.startsWith('potion-'));
+  assert.equal(rows.length,4);assert.ok(result.itemRows.every(r=>!r.id.startsWith('xp-')));
+  const supplied=rows.reduce((sum,r)=>sum+r.needed*db.catalog.materials.find(m=>m.id===r.id).xp,0);
+  assert.ok(supplied>=result.exp[0].needed);
+  for(const row of rows){assert.equal(row.allocated,result.consumption[row.id]||0);assert.equal(row.needed,row.allocated+row.missing);assert.ok(Number.isSafeInteger(row.needed));}
+ }
+ for(const row of plan.itemTotals.filter(r=>r.id.startsWith('potion-')))assert.ok(row.allocated<=(stock[row.id]||0));
+ const empty=allocate([g],{},db);assert.ok(empty.goals[0].itemRows.some(r=>r.id.startsWith('potion-')&&r.missing>0));
+});

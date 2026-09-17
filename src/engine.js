@@ -126,7 +126,7 @@ function sharedGoal(goal,goals,db){
  return {goal:effective,dependencies};
 }
 export function allocate(goals,inventory,db){
- const bank={...inventory},totals={},results=[];
+ const bank={...inventory},totals={},itemTotals={},results=[];
  for(const goal of goals){
   validateGoal(goal,db);
   const shared=sharedGoal(goal,goals,db);
@@ -136,11 +136,13 @@ export function allocate(goals,inventory,db){
    const available=bank[id]||0,allocated=Math.min(available,needed);bank[id]=available-allocated;add(consumption,id,allocated);
    rows.push({id,needed,available,allocated,missing:needed-allocated});
   }
-  const exp=[];
+  const exp=[],itemRows=[...rows];
   for(const [kind,needed] of [['potion',req.xp],['energy',req.weaponXp]]){
    if(!needed)continue;
    const materials=db.catalog.materials.filter(m=>m.xpKind===kind),available=materials.reduce((s,m)=>s+(bank[m.id]||0)*m.xp,0);
    const selection=selectExperience(needed,bank,materials);
+   const suggested=selectExperience(selection.missing,Object.fromEntries(materials.map(m=>[m.id,Math.ceil(selection.missing/m.xp)])),materials);
+   for(const m of materials){const allocated=selection.items[m.id]||0,missing=suggested.items[m.id]||0;itemRows.push({id:m.id,needed:allocated+missing,available:bank[m.id]||0,allocated,missing});}
    for(const [id,n] of Object.entries(selection.items)){bank[id]-=n;add(consumption,id,n);}
    rows.push({id:`xp-${kind}`,needed,available,allocated:selection.allocated,missing:selection.missing});
    exp.push({kind,needed,...selection});
@@ -151,9 +153,10 @@ export function allocate(goals,inventory,db){
   }
   let progress=rows.length?Math.round(rows.reduce((s,row)=>s+row.allocated/row.needed,0)/rows.length*100):(req.missingData.length?0:100);
   if(rows.some(r=>r.missing>0)||req.missingData.length)progress=Math.min(progress,99);
-  results.push({goalId:goal.id,rows,consumption,exp,missingData:req.missingData,progress,ready:!req.missingData.length&&rows.every(r=>r.missing===0),hasWork:rows.length>0||req.missingData.length>0});
+  for(const row of itemRows){if(!itemTotals[row.id])itemTotals[row.id]={id:row.id,needed:0,allocated:0,missing:0,available:inventory[row.id]||0};for(const key of ['needed','allocated','missing'])itemTotals[row.id][key]+=row[key];}
+  results.push({goalId:goal.id,rows,itemRows,consumption,exp,missingData:req.missingData,progress,ready:!req.missingData.length&&rows.every(r=>r.missing===0),hasWork:rows.length>0||req.missingData.length>0});
  }
- return {goals:results,totals:Object.values(totals),unallocated:bank};
+ return {goals:results,totals:Object.values(totals),itemTotals:Object.values(itemTotals),unallocated:bank};
 }
 
 export function synthesisSuggestions(plan,db){
