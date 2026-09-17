@@ -64,3 +64,5 @@ for(const [name,value] of Object.entries({catalog:{version:1,consultedAt:date,ch
 await import('./import-wuwa.mjs');
 
 await import('./import-weapons.mjs');
+
+await import('./expand-recipes.mjs');

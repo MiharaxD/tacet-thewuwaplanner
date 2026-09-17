@@ -24,5 +24,720 @@
       "whisper-recipe"
     ],
     "verified": true
+  },
+  {
+    "id": "purify-howler-2",
+    "inputs": {
+      "howler-1": 3
+    },
+    "outputs": {
+      "howler-2": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-howler-3",
+    "inputs": {
+      "howler-2": 3
+    },
+    "outputs": {
+      "howler-3": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-whisper-2",
+    "inputs": {
+      "whisper-1": 3
+    },
+    "outputs": {
+      "whisper-2": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-whisper-3",
+    "inputs": {
+      "whisper-2": 3
+    },
+    "outputs": {
+      "whisper-3": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-waveworn-1",
+    "inputs": {
+      "waveworn-0": 3
+    },
+    "outputs": {
+      "waveworn-1": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-waveworn-2",
+    "inputs": {
+      "waveworn-1": 3
+    },
+    "outputs": {
+      "waveworn-2": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-waveworn-3",
+    "inputs": {
+      "waveworn-2": 3
+    },
+    "outputs": {
+      "waveworn-3": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-helix-1",
+    "inputs": {
+      "helix-0": 3
+    },
+    "outputs": {
+      "helix-1": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-helix-2",
+    "inputs": {
+      "helix-1": 3
+    },
+    "outputs": {
+      "helix-2": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-helix-3",
+    "inputs": {
+      "helix-2": 3
+    },
+    "outputs": {
+      "helix-3": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-drip-1",
+    "inputs": {
+      "drip-0": 3
+    },
+    "outputs": {
+      "drip-1": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-drip-2",
+    "inputs": {
+      "drip-1": 3
+    },
+    "outputs": {
+      "drip-2": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-drip-3",
+    "inputs": {
+      "drip-2": 3
+    },
+    "outputs": {
+      "drip-3": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-ring-1",
+    "inputs": {
+      "ring-0": 3
+    },
+    "outputs": {
+      "ring-1": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-ring-2",
+    "inputs": {
+      "ring-1": 3
+    },
+    "outputs": {
+      "ring-2": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-ring-3",
+    "inputs": {
+      "ring-2": 3
+    },
+    "outputs": {
+      "ring-3": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-impure-phlogiston-1",
+    "inputs": {
+      "impure-phlogiston-0": 3
+    },
+    "outputs": {
+      "impure-phlogiston-1": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-impure-phlogiston-2",
+    "inputs": {
+      "impure-phlogiston-1": 3
+    },
+    "outputs": {
+      "impure-phlogiston-2": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-impure-phlogiston-3",
+    "inputs": {
+      "impure-phlogiston-2": 3
+    },
+    "outputs": {
+      "impure-phlogiston-3": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-exoswarm-core-1",
+    "inputs": {
+      "exoswarm-core-0": 3
+    },
+    "outputs": {
+      "exoswarm-core-1": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-exoswarm-core-2",
+    "inputs": {
+      "exoswarm-core-1": 3
+    },
+    "outputs": {
+      "exoswarm-core-2": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-exoswarm-core-3",
+    "inputs": {
+      "exoswarm-core-2": 3
+    },
+    "outputs": {
+      "exoswarm-core-3": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-broken-wing-polarizer-1",
+    "inputs": {
+      "broken-wing-polarizer-0": 3
+    },
+    "outputs": {
+      "broken-wing-polarizer-1": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-broken-wing-polarizer-2",
+    "inputs": {
+      "broken-wing-polarizer-1": 3
+    },
+    "outputs": {
+      "broken-wing-polarizer-2": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-broken-wing-polarizer-3",
+    "inputs": {
+      "broken-wing-polarizer-2": 3
+    },
+    "outputs": {
+      "broken-wing-polarizer-3": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-tidal-residuum-1",
+    "inputs": {
+      "tidal-residuum-0": 3
+    },
+    "outputs": {
+      "tidal-residuum-1": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-tidal-residuum-2",
+    "inputs": {
+      "tidal-residuum-1": 3
+    },
+    "outputs": {
+      "tidal-residuum-2": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-tidal-residuum-3",
+    "inputs": {
+      "tidal-residuum-2": 3
+    },
+    "outputs": {
+      "tidal-residuum-3": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-polygon-core-1",
+    "inputs": {
+      "polygon-core-0": 3
+    },
+    "outputs": {
+      "polygon-core-1": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-polygon-core-2",
+    "inputs": {
+      "polygon-core-1": 3
+    },
+    "outputs": {
+      "polygon-core-2": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-polygon-core-3",
+    "inputs": {
+      "polygon-core-2": 3
+    },
+    "outputs": {
+      "polygon-core-3": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-mech-core-1",
+    "inputs": {
+      "mech-core-0": 3
+    },
+    "outputs": {
+      "mech-core-1": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-mech-core-2",
+    "inputs": {
+      "mech-core-1": 3
+    },
+    "outputs": {
+      "mech-core-2": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-mech-core-3",
+    "inputs": {
+      "mech-core-2": 3
+    },
+    "outputs": {
+      "mech-core-3": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-spliced-string-1",
+    "inputs": {
+      "spliced-string-0": 3
+    },
+    "outputs": {
+      "spliced-string-1": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-spliced-string-2",
+    "inputs": {
+      "spliced-string-1": 3
+    },
+    "outputs": {
+      "spliced-string-2": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-spliced-string-3",
+    "inputs": {
+      "spliced-string-2": 3
+    },
+    "outputs": {
+      "spliced-string-3": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-cadence-seed-1",
+    "inputs": {
+      "cadence-seed-0": 3
+    },
+    "outputs": {
+      "cadence-seed-1": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-cadence-seed-2",
+    "inputs": {
+      "cadence-seed-1": 3
+    },
+    "outputs": {
+      "cadence-seed-2": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-cadence-seed-3",
+    "inputs": {
+      "cadence-seed-2": 3
+    },
+    "outputs": {
+      "cadence-seed-3": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-carved-crystal-1",
+    "inputs": {
+      "carved-crystal-0": 3
+    },
+    "outputs": {
+      "carved-crystal-1": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-carved-crystal-2",
+    "inputs": {
+      "carved-crystal-1": 3
+    },
+    "outputs": {
+      "carved-crystal-2": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-carved-crystal-3",
+    "inputs": {
+      "carved-crystal-2": 3
+    },
+    "outputs": {
+      "carved-crystal-3": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-incomplete-combustor-1",
+    "inputs": {
+      "incomplete-combustor-0": 3
+    },
+    "outputs": {
+      "incomplete-combustor-1": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-incomplete-combustor-2",
+    "inputs": {
+      "incomplete-combustor-1": 3
+    },
+    "outputs": {
+      "incomplete-combustor-2": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-incomplete-combustor-3",
+    "inputs": {
+      "incomplete-combustor-2": 3
+    },
+    "outputs": {
+      "incomplete-combustor-3": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-fractured-exoswarm-pendant-1",
+    "inputs": {
+      "fractured-exoswarm-pendant-0": 3
+    },
+    "outputs": {
+      "fractured-exoswarm-pendant-1": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-fractured-exoswarm-pendant-2",
+    "inputs": {
+      "fractured-exoswarm-pendant-1": 3
+    },
+    "outputs": {
+      "fractured-exoswarm-pendant-2": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-fractured-exoswarm-pendant-3",
+    "inputs": {
+      "fractured-exoswarm-pendant-2": 3
+    },
+    "outputs": {
+      "fractured-exoswarm-pendant-3": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-waveworn-shard-1",
+    "inputs": {
+      "waveworn-shard-0": 3
+    },
+    "outputs": {
+      "waveworn-shard-1": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-waveworn-shard-2",
+    "inputs": {
+      "waveworn-shard-1": 3
+    },
+    "outputs": {
+      "waveworn-shard-2": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-waveworn-shard-3",
+    "inputs": {
+      "waveworn-shard-2": 3
+    },
+    "outputs": {
+      "waveworn-shard-3": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-autopuppet-kernel-1",
+    "inputs": {
+      "autopuppet-kernel-0": 3
+    },
+    "outputs": {
+      "autopuppet-kernel-1": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-autopuppet-kernel-2",
+    "inputs": {
+      "autopuppet-kernel-1": 3
+    },
+    "outputs": {
+      "autopuppet-kernel-2": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
+  },
+  {
+    "id": "purify-autopuppet-kernel-3",
+    "inputs": {
+      "autopuppet-kernel-2": 3
+    },
+    "outputs": {
+      "autopuppet-kernel-3": 1
+    },
+    "verified": true,
+    "sources": [
+      "synthesis-purification"
+    ]
   }
 ]

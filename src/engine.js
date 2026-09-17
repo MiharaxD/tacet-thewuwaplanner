@@ -1,3 +1,4 @@
+import {sortMaterials,materialFamily,recipeFor,craftCapacity,reserveMaterial,executeSynthesis} from './materials.js';
 export const SKILLS=['Ataque básico','Habilidade de Ressonância','Circuito Forte','Liberação de Ressonância','Habilidade de Introdução'];
 export const UNLOCKS=['Habilidade inerente I','Habilidade inerente II','Bônus · ataque básico','Bônus · habilidade','Bônus · liberação','Bônus · introdução'];
 export const clone=value=>structuredClone(value);
@@ -130,11 +131,11 @@ export function allocate(goals,inventory,db){
  for(const goal of goals){
   validateGoal(goal,db);
   const shared=sharedGoal(goal,goals,db);
-  const req=requirements(shared.goal,db),rows=[],consumption={};
+  const req=requirements(shared.goal,db),rows=[],consumption={},synthesis=[];
   if(!goal.done&&shared.dependencies.length)req.missingData.push('Nível e ascensão compartilhados: registre primeiro a meta anterior do Rover.');
-  for(const [id,needed] of Object.entries(req.cost)){
-   const available=bank[id]||0,allocated=Math.min(available,needed);bank[id]=available-allocated;add(consumption,id,allocated);
-   rows.push({id,needed,available,allocated,missing:needed-allocated});
+  for(const {id,needed} of sortMaterials(Object.entries(req.cost).map(([id,needed])=>({id,needed})),db)){
+   const direct=bank[id]||0,available=craftCapacity(id,bank,db),allocated=Math.min(available,needed);reserveMaterial(id,allocated,bank,consumption,synthesis,db);
+   rows.push({id,needed,available,direct,allocated,crafted:Math.max(0,allocated-direct),missing:needed-allocated});
   }
   const exp=[],itemRows=[...rows];
   for(const [kind,needed] of [['potion',req.xp],['energy',req.weaponXp]]){
@@ -148,15 +149,15 @@ export function allocate(goals,inventory,db){
    exp.push({kind,needed,...selection});
   }
   for(const row of rows){
-   if(!totals[row.id]) totals[row.id]={id:row.id,needed:0,allocated:0,missing:0,available:row.id.startsWith('xp-')?db.catalog.materials.filter(m=>m.xpKind===row.id.slice(3)).reduce((s,m)=>s+(inventory[m.id]||0)*m.xp,0):(inventory[row.id]||0)};
-   for(const key of ['needed','allocated','missing']) totals[row.id][key]+=row[key];
+   if(!totals[row.id]) totals[row.id]={id:row.id,needed:0,allocated:0,missing:0,crafted:0,available:row.id.startsWith('xp-')?db.catalog.materials.filter(m=>m.xpKind===row.id.slice(3)).reduce((s,m)=>s+(inventory[m.id]||0)*m.xp,0):(inventory[row.id]||0)};
+   for(const key of ['needed','allocated','missing','crafted']) totals[row.id][key]+=(row[key]||0);
   }
   let progress=rows.length?Math.round(rows.reduce((s,row)=>s+row.allocated/row.needed,0)/rows.length*100):(req.missingData.length?0:100);
   if(rows.some(r=>r.missing>0)||req.missingData.length)progress=Math.min(progress,99);
-  for(const row of itemRows){if(!itemTotals[row.id])itemTotals[row.id]={id:row.id,needed:0,allocated:0,missing:0,available:inventory[row.id]||0};for(const key of ['needed','allocated','missing'])itemTotals[row.id][key]+=row[key];}
-  results.push({goalId:goal.id,rows,itemRows,consumption,exp,missingData:req.missingData,progress,ready:!req.missingData.length&&rows.every(r=>r.missing===0),hasWork:rows.length>0||req.missingData.length>0});
+  for(const row of itemRows){if(!itemTotals[row.id])itemTotals[row.id]={id:row.id,needed:0,allocated:0,missing:0,crafted:0,available:inventory[row.id]||0};for(const key of ['needed','allocated','missing','crafted'])itemTotals[row.id][key]+=(row[key]||0);}
+  results.push({goalId:goal.id,rows:sortMaterials(rows,db),itemRows:sortMaterials(itemRows,db),consumption,synthesis,exp,missingData:req.missingData,progress,ready:!req.missingData.length&&rows.every(r=>r.missing===0),hasWork:rows.length>0||req.missingData.length>0});
  }
- return {goals:results,totals:Object.values(totals),itemTotals:Object.values(itemTotals),unallocated:bank};
+ return {goals:results,totals:sortMaterials(Object.values(totals),db),itemTotals:sortMaterials(Object.values(itemTotals),db),unallocated:bank};
 }
 
 export function synthesisSuggestions(plan,db){
@@ -233,4 +234,20 @@ export function estimateFarm(missing,average,waveplates,dailyBudget){
  if(!Number.isFinite(average)||average<=0||!Number.isFinite(dailyBudget)||dailyBudget<=0)return null;
  const runs=Math.ceil(missing/average),cost=runs*waveplates;
  return {runs,waveplates:cost,days:cost?Math.ceil(cost/dailyBudget):null};
+}
+
+// Planned conversions use reserved inputs; extra crafting uses only unallocated stock.
+export function automaticSynthesisSteps(state,materialId,db){
+ const recipe=recipeFor(materialId,db);if(!recipe)return [];
+ const plan=allocate(state.goals,state.inventory,db),family=materialFamily(materialId);
+ const target=db.catalog.materials.find(m=>m.id===materialId);
+ const steps=plan.goals.flatMap(g=>g.synthesis).filter(s=>materialFamily(s.output)===family&&(db.catalog.materials.find(m=>m.id===s.output)?.rarity||0)<=target.rarity);
+ if(steps.length)return steps;
+ const free={...plan.unallocated},count=craftCapacity(materialId,free,db)-(free[materialId]||0);
+ if(!count)return [];
+ free[materialId]=0;reserveMaterial(materialId,count,free,{},steps,db);return steps;
+}
+export function applyAutomaticSynthesis(state,materialId,db){
+ const steps=automaticSynthesisSteps(state,materialId,db);if(!steps.length)throw Error('Não há materiais livres suficientes para esta síntese.');
+ return {...clone(state),inventory:executeSynthesis(state.inventory,steps,db)};
 }

@@ -1742,5 +1742,12 @@
     "consultedAt": "2026-09-15",
     "gameVersion": null,
     "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "synthesis-purification",
+    "url": "https://wutheringwaves.fandom.com/wiki/Synthesis",
+    "title": "Synthesis · Purification",
+    "consultedAt": "2026-09-17",
+    "notes": "3 materiais de raridade inferior para 1 da próxima raridade, dentro da mesma família."
   }
 ]

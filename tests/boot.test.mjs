@@ -1,3 +1,4 @@
+import * as materials from '../src/materials.js';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
@@ -16,8 +17,8 @@ test('the actual app boots and accepts inventory edits when the storage getter t
  const elements={'#app':app,'#modal':modal,'#toast':toast};
  const window={addEventListener(){},get localStorage(){throw new DOMException('Blocked','SecurityError');}};
  const context=vm.createContext({
-  ...engine,...state,...time,...ui,...forms,...official,h:ui.escape,window,navigator:{},location:{hash:''},
-  document:{querySelector:key=>elements[key]||null,addEventListener:(name,fn)=>listeners.set(name,fn),activeElement:null},
+  ...materials,...engine,...state,...time,...ui,...forms,...official,h:ui.escape,window,navigator:{},location:{hash:''},
+  document:{querySelector:key=>elements[key]||null,querySelectorAll:()=>[],addEventListener:(name,fn)=>listeners.set(name,fn),activeElement:null},
   registerPlannerTools(){},structuredClone,Intl,URL,crypto,
   setInterval(){},setTimeout(){},clearTimeout(){},
   fetch:async path=>({ok:true,json:async()=>JSON.parse(await readFile(new URL(`../${path}`,import.meta.url),'utf8'))})
@@ -53,4 +54,11 @@ test('the actual app boots and accepts inventory edits when the storage getter t
   assert.doesNotMatch(app.innerHTML,/NaN/);
   vm.runInContext(`db.events.events[0].start='2020-01-01T00:00:00Z';db.events.events[0].end='2099-01-01T00:00:00Z';render();`,context);
   assert.doesNotMatch(app.innerHTML,/NaN/);
+  vm.runInContext(`store.commit({...state(),inventory:{'howler-0':9}});route='inventory';render();`,context);
+  assert.match(app.innerHTML,/data-action="auto-synthesis" data-id="howler-1"/);
+  assert.match(app.innerHTML,/data-stock="howler-0"/);
+  vm.runInContext(`actions['auto-synthesis']({dataset:{id:'howler-1'}});`,context);
+  assert.equal(vm.runInContext("state().inventory['howler-1']",context),3);
+  assert.equal(vm.runInContext("state().inventory['howler-0']",context),0);
+  assert.match(app.innerHTML,/id="inv-howler-1"[^>]*value="3"/);
 });

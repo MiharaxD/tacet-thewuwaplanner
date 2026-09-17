@@ -1,3 +1,4 @@
+import {sortMaterials} from './materials.js';
 export const escape=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export const fmt=n=>new Intl.NumberFormat('pt-BR',{maximumFractionDigits:0}).format(n||0);
 export const compact=n=>new Intl.NumberFormat('pt-BR',{notation:'compact',maximumFractionDigits:1}).format(n||0);
@@ -20,7 +21,7 @@ export function materialMeta(id,db){
 export function materialIcon(m){return `<span class="material-icon rarity-${m.rarity||0}" aria-hidden="true">${icon(m.category==='Coleta'?'leaf':m.category==='Experiência'?'inventory':m.category==='Moeda'?'diamond':m.category==='Semanal'?'events':'farm')}${m.image?`<img src="${escape(m.image)}" alt="" loading="lazy" width="40" height="40">`:''}</span>`;}
 export function materialTable(rows,db,{compactView=false,editable=false}={}){
  if(!rows.length)return empty('Nenhum material necessário','Adicione uma meta ou ajuste o nível desejado.');
- return `<div class="table-scroll"><table class="materials-table"><thead><tr><th>Material / origem</th><th>Necessário</th>${compactView?'':'<th>Disponível¹</th>'}<th>Reservado</th><th>Falta</th></tr></thead><tbody>${rows.map(row=>{
- const m=materialMeta(row.id,db);return `<tr><td><div class="material-cell">${editable?button(materialIcon(m),'edit-goal-stock',`data-id="${escape(row.id)}" aria-label="Editar estoque de ${escape(m.name)}"`,'material-stock-button'):materialIcon(m)}<span><strong>${escape(m.name)}</strong><small>${escape(m.origin)}</small></span></div></td><td>${fmt(row.needed)}</td>${compactView?'':`<td>${fmt(row.available)}</td>`}<td>${fmt(row.allocated)}</td><td class="${row.missing?'missing':'complete'}">${row.missing?fmt(row.missing):'✓'}</td></tr>`;
+ return `<div class="table-scroll"><table class="materials-table"><thead><tr><th>Material / origem</th><th>Necessário</th>${compactView?'':'<th>Disponível¹</th>'}<th>Reservado</th><th>Falta</th></tr></thead><tbody>${sortMaterials(rows,db).map(row=>{
+ const m=materialMeta(row.id,db);return `<tr><td><div class="material-cell">${editable?button(materialIcon(m),'edit-goal-stock',`data-id="${escape(row.id)}" aria-label="Editar estoque de ${escape(m.name)}"`,'material-stock-button'):materialIcon(m)}<span><strong>${escape(m.name)}</strong><small>${escape(m.origin)}</small></span></div></td><td>${fmt(row.needed)}</td>${compactView?'':`<td>${fmt(row.available)}</td>`}<td>${fmt(row.allocated)}${row.crafted?'<small class="synthesis-note">com síntese</small>':''}</td><td class="${row.missing?'missing':'complete'}">${row.missing?fmt(row.missing):'✓'}</td></tr>`;
  }).join('')}</tbody></table></div>`;
 }

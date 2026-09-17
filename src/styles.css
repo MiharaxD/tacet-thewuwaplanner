@@ -184,3 +184,5 @@ button.character-photo{display:block;width:100%;padding:0;border:0;border-radius
 .yield-label strong{display:block;margin-top:6px;font-size:.95rem;color:var(--text)}
 
 .material-stock-button{padding:0;border:0;background:transparent;border-radius:8px;flex:none}.material-stock-button:hover{outline:1px solid var(--muted)}.material-stock-button:focus-visible{outline:2px solid white;outline-offset:3px}
+
+.quantity{position:relative}.quantity .synthesis-button{position:absolute;right:4px;bottom:4px}.quantity:has(.synthesis-button) input{padding-right:46px}.synthesis-button{min-width:32px;padding:5px 8px;color:#e8c97c;border-color:#867347;background:#332d20}.stock-stepper .synthesis-button{flex:none}.synthesis-note{display:block;font-size:11px;color:#d8bd80}
