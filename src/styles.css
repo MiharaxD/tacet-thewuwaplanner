@@ -28,6 +28,25 @@ dialog{padding:0;border:1px solid #3d5370;border-radius:15px;width:min(820px,cal
 .event-completion{display:flex;align-items:center;gap:12px;padding-top:18px;margin-top:18px;border-top:1px solid var(--line);cursor:pointer;font-size:16px}
 .event-completion input{width:20px;height:20px;accent-color:#b7d9bd;flex:none}
 .event-card.event-is-complete{border-color:#668a71}.event-is-complete .event-completion{color:#b7d9bd}
+.events-list{display:grid;grid-template-columns:minmax(0,1fr);gap:10px}
+.event-row{border:1px solid var(--line);border-radius:16px;background:linear-gradient(110deg,#131d2c,#0c111b);overflow:hidden}
+.event-row-main{display:flex;align-items:center;gap:14px;padding:10px 12px;min-height:58px}
+.event-check{position:relative;display:grid;place-items:center;width:38px;height:32px;flex:none;cursor:pointer;margin:0}
+.event-check input{position:absolute;inset:0;width:100%;height:100%;opacity:0;margin:0;cursor:pointer}
+.event-check span{display:grid;place-items:center;width:100%;height:100%;border:1px solid #627085;border-radius:20px;background:#384457;color:#fff;font-size:19px;pointer-events:none}
+.event-check input:checked+span{background:#436a5b;border-color:#8dc2a9}
+.event-check input:focus-visible+span{outline:2px solid #fff;outline-offset:3px}
+.event-row-icon{width:34px;height:34px;object-fit:contain;flex:none}
+.event-row h3{font-size:15px;margin:0;line-height:1.4;flex:1;min-width:0;overflow-wrap:anywhere}
+.event-row-time{margin-left:auto;flex:none;font-size:12px;font-weight:700;background:#4b6079;border-radius:5px;padding:5px 8px;color:#fff}
+.event-banner-images{display:flex;gap:12px;overflow-x:auto;padding:0 14px 14px}
+.event-banner-images figure{margin:0;flex:0 0 130px;max-width:40%}
+.event-banner-images img{display:block;width:100%;height:130px;object-fit:contain;background:#ffffff08;border-radius:10px}
+.event-banner-images figcaption{text-align:center;font-size:12px;padding-top:6px}
+.completed-events{margin-top:24px;border-top:1px solid var(--line);padding-top:16px}
+.completed-events summary{cursor:pointer;color:var(--muted);padding:8px 0 16px}
+.event-is-complete h3{color:#a6bdaf}.event-is-complete{opacity:.8}
+@media(max-width:540px){.event-row-main{gap:8px;flex-wrap:wrap}.event-row h3{font-size:14px}.event-row-time{font-size:11px}.event-row-icon{width:28px;height:28px}}
 
 /* A single highlight moves between destinations, including after a full render. */
 .sidebar nav{position:relative;isolation:isolate}

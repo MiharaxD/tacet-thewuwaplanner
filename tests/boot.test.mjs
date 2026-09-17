@@ -40,5 +40,10 @@ test('the actual app boots and accepts inventory edits when the storage getter t
  listeners.get('change')({target:{closest:()=>null,dataset:{officialEvent:'published-event'},checked:true}});
  await new Promise(resolve=>setImmediate(resolve));
  assert.equal(vm.runInContext('state().eventCompletions["published-event"]',context),true);
- assert.equal(vm.runInContext('db.events.events[0].title',context),'Evento publicado');
+  assert.equal(vm.runInContext('db.events.events[0].title',context),'Evento publicado');
+  assert.match(app.innerHTML,/<details class="completed-events">/);
+  assert.doesNotMatch(app.innerHTML,/<details class="completed-events" open/);
+  assert.doesNotMatch(app.innerHTML,/NaN/);
+  vm.runInContext(`db.events.events[0].start='2020-01-01T00:00:00Z';db.events.events[0].end='2099-01-01T00:00:00Z';render();`,context);
+  assert.doesNotMatch(app.innerHTML,/NaN/);
 });

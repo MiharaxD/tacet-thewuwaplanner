@@ -1,11 +1,32 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
-import {validateEventCatalog,officialEvents,eventDuration,setEventCompleted} from '../src/official-events.js';
+import {validateEventCatalog,officialEvents,eventDuration,setEventCompleted,eventCycle,isEventCompleted} from '../src/official-events.js';
 import {defaultState,validateState,parseBackup,mergeState,Store} from '../src/state.js';
 const event={id:'test-event',title:'Evento de teste',start:'2026-09-20T10:00:00-03:00',end:'2026-10-04T10:00:00-03:00'};
 const catalog={version:1,events:[event]};
 const db=Object.fromEntries(await Promise.all(['catalog','rules','recipes'].map(async n=>[n,JSON.parse(await readFile(new URL('../data/'+n+'.json',import.meta.url)))])));
+test('recurring completion expires exactly at reset, including after offline periods and backup restore',()=>{
+ const recurring={...event,type:'recurring',reset:{anchor:event.start,everyHours:24}},data={version:1,events:[recurring]},now=Date.parse(event.start)+3600000;
+ validateEventCatalog(data);
+ const completed=setEventCompleted(defaultState(),data,event.id,true,now);
+ assert.equal(isEventCompleted(completed,recurring,now),true);
+ const boundary=Date.parse(event.start)+86400000;
+ assert.equal(isEventCompleted(completed,recurring,boundary-1),true);
+ assert.equal(isEventCompleted(completed,recurring,boundary),false);
+ assert.equal(isEventCompleted(completed,recurring,boundary+7*86400000),false);
+ assert.equal(eventCycle(recurring,now).end,boundary);
+ assert.equal(isEventCompleted(parseBackup(JSON.stringify(completed),db),recurring,boundary),false);
+ const again=setEventCompleted(completed,data,event.id,true,boundary);
+ assert.equal(isEventCompleted(again,recurring,boundary),true);
+ assert.equal(isEventCompleted(setEventCompleted(again,data,event.id,false,boundary),recurring,boundary),false);
+ assert.equal(isEventCompleted(mergeState(again,completed,db),recurring,boundary),true);
+});
+test('catalog preserves banner images and validates recurrence and image paths',()=>{
+ const banner={...event,type:'banner',icon:'assets/favicon.webp',banners:[{name:'Personagem',image:'assets/character.webp'}]};
+ assert.deepEqual(validateEventCatalog({version:1,events:[banner]}).events[0],banner);
+ for(const change of [{icon:'javascript:alert(1)'},{banners:[{name:'Arma',image:'http://example.com/x.png'}]},{type:'recurring',reset:{anchor:event.start,everyHours:0}},{type:'recurring',reset:{anchor:'invalid',everyHours:24}}])assert.throws(()=>validateEventCatalog({version:1,events:[{...event,...change}]}));
+});
 test('catalog validates dates, unique IDs and server targeting',()=>{
  assert.equal(validateEventCatalog(catalog).events.length,1);assert.equal(eventDuration(event),'14 dias');
  for(const change of [{start:'2026-09-20T10:00:00'},{end:event.start},{title:''},{servers:['unknown']}])assert.throws(()=>validateEventCatalog({version:1,events:[{...event,...change}]}));
