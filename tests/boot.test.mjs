@@ -1,3 +1,4 @@
+import * as farmRates from '../src/farm-rates.js';
 import * as materials from '../src/materials.js';
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -17,7 +18,7 @@ test('the actual app boots and accepts inventory edits when the storage getter t
  const elements={'#app':app,'#modal':modal,'#toast':toast};
  const window={addEventListener(){},get localStorage(){throw new DOMException('Blocked','SecurityError');}};
  const context=vm.createContext({
-  ...materials,...engine,...state,...time,...ui,...forms,...official,h:ui.escape,window,navigator:{},location:{hash:''},
+  ...farmRates,...materials,...engine,...state,...time,...ui,...forms,...official,h:ui.escape,window,navigator:{},location:{hash:''},
   document:{querySelector:key=>elements[key]||null,querySelectorAll:()=>[],addEventListener:(name,fn)=>listeners.set(name,fn),activeElement:null},
   registerPlannerTools(){},structuredClone,Intl,URL,crypto,
   setInterval(){},setTimeout(){},clearTimeout(){},
@@ -30,10 +31,11 @@ test('the actual app boots and accepts inventory edits when the storage getter t
  assert.match(app.innerHTML,/Seu próximo avanço/);
  assert.match(app.innerHTML,/Armazenamento indisponível/);
  assert.doesNotMatch(app.innerHTML,/boot-error/);
+ const beforeTyping=app.innerHTML;
  listeners.get('input')({target:{closest:()=>null,dataset:{stock:'shell'},value:'100',valueAsNumber:100,setCustomValidity(){}}});
  await new Promise(resolve=>setImmediate(resolve));
- assert.equal(vm.runInContext('state().inventory.shell',context),100);
- assert.match(app.innerHTML,/Exporte um backup/);
+ assert.equal(vm.runInContext('state().inventory.shell',context),100);assert.equal(app.innerHTML,beforeTyping,'typing must not replace the input DOM');
+ assert.match(toast.textContent,/Exporte um backup/);
  assert.equal(vm.runInContext('store.storage',context),null);
  vm.runInContext(`db.events={version:1,events:[{id:'published-event',title:'Evento publicado',start:'2026-09-20T00:00:00Z',end:'2026-09-27T00:00:00Z'}]};route='events';render();`,context);
  assert.match(app.innerHTML,/Evento publicado/);assert.match(app.innerHTML,/data-official-event="published-event"/);
@@ -61,4 +63,8 @@ test('the actual app boots and accepts inventory edits when the storage getter t
   assert.equal(vm.runInContext("state().inventory['howler-1']",context),3);
   assert.equal(vm.runInContext("state().inventory['howler-0']",context),0);
   assert.match(app.innerHTML,/id="inv-howler-1"[^>]*value="3"/);
+  vm.runInContext(`const testGoal=newGoal(db.catalog.characters[0].id,'goal-farm-test');store.commit({...state(),goals:[testGoal],inventory:{}});route='summary';render();`,context);
+  assert.match(app.innerHTML,/goal-farm-grid/);assert.match(app.innerHTML,/tentativas/);assert.match(app.innerHTML,/Waveplates/);
+  vm.runInContext(`route='characters';render();`,context);assert.match(app.innerHTML,/goal-farm-grid/);
+  const tiles=vm.runInContext('previewMaterials(plan.goals[0].itemRows)',context);assert.match(tiles,/tile-owned/);assert.match(tiles,/tile-needed/);assert.match(tiles,/edit-goal-stock/);
 });

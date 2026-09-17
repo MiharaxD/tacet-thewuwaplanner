@@ -95,3 +95,22 @@
 .skill-field .level-options{display:grid;grid-template-columns:repeat(2,1fr);width:110px;left:auto;right:0;max-height:200px}.skill-field .level-options[hidden]{display:none}.skill-field .level-options button{justify-content:center;padding:5px;min-height:30px}.planner-content .skills-grid .skill-field input{width:100%}.skill-field:focus-within{z-index:35}
 
 .stock-stepper:has(.synthesis-button){grid-template-columns:32px minmax(0,1fr) 32px 36px}
+
+.material-tiles{display:flex;flex-wrap:wrap;gap:9px;margin:16px 0}
+.material-tile{position:relative;display:flex;flex-direction:column;align-items:stretch;width:68px;min-width:68px;padding:0;border:1px solid #48596d;border-radius:7px;overflow:hidden;background:#243448;color:#fff}
+.material-tile .material-icon{width:100%;height:60px;border:0;border-radius:0;display:grid;place-items:center}
+.material-tile .material-icon img{width:48px;height:48px;object-fit:contain}
+.tile-owned{position:absolute;right:3px;top:2px;z-index:1;background:#182333dc;border-radius:4px;padding:1px 4px;font-size:12px;font-weight:700}
+.tile-needed{padding:4px 2px;font-size:13px;font-weight:700;text-align:center;background:#963653}
+.is-covered .tile-needed{background:#247960}
+.material-tile:hover{border-color:#c5d9ef}.material-tile:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.goal-farm{margin:18px 0;border-top:1px solid var(--line);padding-top:14px}
+.goal-farm h4{margin:0 0 12px;font-size:14px}
+.goal-farm-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(100px,1fr));gap:10px}
+.goal-farm-item{display:flex;flex-direction:column;align-items:center;gap:4px;padding:10px 4px;border-radius:8px;background:#142030;text-align:center;min-width:0}
+.goal-farm-item .material-icon{width:44px;height:44px}
+.goal-farm-item strong{font-size:15px;color:#f0cb83}
+.goal-farm-item small{font-size:11px;line-height:1.4;color:#b7c6d9}
+.goal-farm-note{font-size:11px;line-height:1.5;color:var(--muted);margin:10px 0 0}
+.goal-farm-ready{color:#8dcbb3;font-size:13px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
