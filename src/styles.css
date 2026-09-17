@@ -19,9 +19,11 @@ dialog{padding:0;border:1px solid #3d5370;border-radius:15px;width:min(820px,cal
 .picker-character[hidden]{display:none}
 .picker-grid{margin-top:16px}
 
-/* Supplied menu symbols inherit the active link color through their alpha. */
-.sidebar nav .sidebar-symbol{display:block;width:24px;height:24px;flex:0 0 24px;background:currentColor;mask-image:var(--nav-symbol);mask-size:contain;mask-position:center;mask-repeat:no-repeat;-webkit-mask-image:var(--nav-symbol);-webkit-mask-size:contain;-webkit-mask-position:center;-webkit-mask-repeat:no-repeat}
-@media(max-width:760px){.sidebar nav .sidebar-symbol{width:20px;height:20px;flex-basis:20px}}
+/* Load supplied transparent artwork directly; avoid relative URLs in CSS masks. */
+.sidebar nav .sidebar-symbol{display:block;width:24px;height:24px;flex:0 0 24px;object-fit:contain;opacity:.75}
+.sidebar nav a:hover .sidebar-symbol{opacity:1}
+.sidebar nav a.active .sidebar-symbol{filter:brightness(0) saturate(100%) invert(19%);opacity:1}
+@media(max-width:760px){.sidebar nav .sidebar-symbol{width:20px;height:20px;flex-basis:20px}.sidebar nav a.active .sidebar-symbol{filter:none}}
 
 /* A single highlight moves between destinations, including after a full render. */
 .sidebar nav{position:relative;isolation:isolate}

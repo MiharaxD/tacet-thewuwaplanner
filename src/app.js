@@ -23,7 +23,7 @@ function showConflict(){
  document.querySelector('#main')?.prepend(notice);
 }
 const nav=[['summary','Resumo'],['characters','Ressonantes'],['inventory','Inventário'],['farm','Farm'],['events','Eventos'],['settings','Configurações']];
-function navigationIcon(key){const file={characters:'ressonantes',inventory:'inventario',farm:'farm',events:'eventos',settings:'configuracoes'}[key];return file?`<span class="sidebar-symbol" style="--nav-symbol:url('./assets/planner-icons/nav-${file}.svg')" aria-hidden="true"></span>`:icon(key);}
+function navigationIcon(key){const file={characters:'ressonantes',inventory:'inventario',farm:'farm',events:'eventos',settings:'configuracoes'}[key];return file?`<img class="sidebar-symbol" src="./assets/planner-icons/nav-${file}.svg" width="24" height="24" alt="" aria-hidden="true">`:icon(key);}
 const state=()=>store.state;
 const id=()=>crypto.randomUUID();
 function toast(text){clearTimeout(toastTimer);const el=document.querySelector('#toast');el.textContent=text;el.classList.add('show');toastTimer=setTimeout(()=>el.classList.remove('show'),5000);}
