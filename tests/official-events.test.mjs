@@ -6,6 +6,23 @@ import {defaultState,validateState,parseBackup,mergeState,Store} from '../src/st
 const event={id:'test-event',title:'Evento de teste',start:'2026-09-20T10:00:00-03:00',end:'2026-10-04T10:00:00-03:00'};
 const catalog={version:1,events:[event]};
 const db=Object.fromEntries(await Promise.all(['catalog','rules','recipes'].map(async n=>[n,JSON.parse(await readFile(new URL('../data/'+n+'.json',import.meta.url)))])));
+test('recurring events lead, then each group follows remaining time and reorders after resets',()=>{
+ const now=Date.parse(event.start)+3600000,at=hours=>new Date(Date.parse(event.start)+hours*3600000).toISOString();
+ const entries=[
+  {...event,id:'long',title:'A',end:at(100)},
+  {...event,id:'weekly',type:'recurring',reset:{anchor:event.start,everyHours:168}},
+  {...event,id:'short',title:'Z',end:at(2)},
+  {...event,id:'daily',type:'recurring',reset:{anchor:event.start,everyHours:24}},
+  {...event,id:'future',start:at(3),end:at(200)},
+  {...event,id:'other-server',servers:['Asia'],end:at(1.5)}
+ ];
+ const before=structuredClone(entries);
+ assert.deepEqual(officialEvents({events:entries},'America',now).map(e=>e.id),['daily','weekly','short','future','long']);
+ assert.deepEqual(entries,before);
+ const cycles=[{...event,id:'a',type:'recurring',reset:{anchor:event.start,everyHours:24}},{...event,id:'b',type:'recurring',reset:{anchor:at(6),everyHours:24}}];
+ assert.deepEqual(officialEvents({events:cycles},'America',Date.parse(at(5))).map(e=>e.id),['b','a']);
+ assert.deepEqual(officialEvents({events:cycles},'America',Date.parse(at(6))).map(e=>e.id),['a','b']);
+});
 test('recurring completion expires exactly at reset, including after offline periods and backup restore',()=>{
  const recurring={...event,type:'recurring',reset:{anchor:event.start,everyHours:24}},data={version:1,events:[recurring]},now=Date.parse(event.start)+3600000;
  validateEventCatalog(data);

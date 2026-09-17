@@ -13,7 +13,11 @@ export function validateEventCatalog(catalog){
   ids.add(event.id);return {...event,title:event.title.trim()};
  })};
 }
-export function officialEvents(catalog,server){return catalog.events.filter(e=>!e.servers||e.servers.includes(server)).sort((a,b)=>Date.parse(a.start)-Date.parse(b.start));}
+export function officialEvents(catalog,server,now=Date.now()){
+ const remaining=e=>Math.max(0,(now<Date.parse(e.start)?Date.parse(e.start):eventCycle(e,now).end)-now);
+ return catalog.events.filter(e=>!e.servers||e.servers.includes(server)).sort((a,b)=>
+  Number(b.type==='recurring')-Number(a.type==='recurring')||remaining(a)-remaining(b));
+}
 export function eventDuration(event){
  const minutes=Math.ceil((Date.parse(event.end)-Date.parse(event.start))/60000),days=Math.floor(minutes/1440),hours=Math.floor(minutes%1440/60),rest=minutes%60;
  return [days?`${days} ${days===1?'dia':'dias'}`:'',hours?`${hours} ${hours===1?'hora':'horas'}`:'',rest?`${rest} min`:''].filter(Boolean).join(' e ');
