@@ -72,7 +72,14 @@ test('the actual app boots and accepts inventory edits when the storage getter t
   await clickAction('remove','goal-farm-test');assert.match(modal.innerHTML,/confirm-remove/);assert.equal(modal.open,true);
   await clickAction('confirm-remove','goal-farm-test');assert.equal(vm.runInContext('state().goals.length',context),0);assert.equal(modal.open,false);
   assert.equal(vm.runInContext('JSON.stringify(state().inventory)',context),inventoryBeforeDelete);
-  await clickAction('undo');assert.equal(vm.runInContext('state().goals[0].id',context),'goal-farm-test');
+  const popup={dataset:{},innerHTML:'',opened:false,setAttribute(){},matches(){return this.opened;},showPopover(){this.opened=true;},hidePopover(){this.opened=false;},querySelector(){return null;},querySelectorAll(){return [{value:'123',valueAsNumber:123,dataset:{goalStock:'shell'}}];}};
+  context.document.createElement=()=>popup;context.document.body={append:el=>{elements['#'+el.id]=el;}};
+  vm.runInContext(`route='summary';render();actions['edit-goal-stock']({dataset:{id:'shell'},isConnected:false});`,context);
+  assert.equal(popup.opened,true);assert.match(popup.innerHTML,/data-goal-stock="shell"/);
+  vm.runInContext(`actions['save-goal-stock']();`,context);
+  assert.equal(vm.runInContext('state().inventory.shell',context),123);assert.equal(popup.opened,false);
+  await clickAction('undo');await clickAction('undo');assert.equal(vm.runInContext('state().goals[0].id',context),'goal-farm-test');
   assert.equal(vm.runInContext('JSON.stringify(state().inventory)',context),inventoryBeforeDelete);
 });
+
 

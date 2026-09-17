@@ -115,3 +115,5 @@
 .goal-farm-note{font-size:11px;line-height:1.5;color:var(--muted);margin:10px 0 0}
 .goal-farm-ready{color:#8dcbb3;font-size:13px}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+button.goal-farm-item{width:100%;border:1px solid transparent;cursor:pointer}button.goal-farm-item:hover{border-color:#849fbd;background:#1b2b40}button.goal-farm-item:focus-visible{outline:2px solid #c5d9ef;outline-offset:2px}
