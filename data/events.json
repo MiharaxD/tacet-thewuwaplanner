@@ -9,35 +9,35 @@
       "type": "event",
       "icon": "assets/favicon.webp"
     },
-        {
-  "id": "diaria",
-  "type": "recurring",
-  "title": "Diária",
-  "icon": "assets/favicon.webp",
-  "start": "2026-09-17T04:00:00-03:00",
-  "end": "3000-09-21T04:00:00-03:00",
-  "reset": {
-    "anchor": "2026-09-17T04:00:00-03:00",
-    "everyHours": 24
-  }
-},
     {
-  "id": "desafio-semanal",
-  "type": "recurring",
-  "title": "Desafio semanal",
-  "icon": "assets/favicon.webp",
-  "start": "2026-09-14T04:00:00-03:00",
-  "end": "3000-09-21T04:00:00-03:00",
-  "reset": {
-    "anchor": "2026-09-14T04:00:00-03:00",
-    "everyHours": 168
-  }
-},
+      "id": "diaria",
+      "type": "recurring",
+      "title": "Tarefa Diária",
+      "icon": "assets/eventos/diaria.svg",
+      "start": "2026-09-17T04:00:00-03:00",
+      "reset": {
+        "anchor": "2026-09-17T04:00:00-03:00",
+        "everyHours": 24
+      },
+      "permanent": true
+    },
+    {
+      "id": "desafio-semanal",
+      "type": "recurring",
+      "title": "Desafio semanal",
+      "icon": "assets/eventos/diaria.svg",
+      "start": "2026-09-14T04:00:00-03:00",
+      "reset": {
+        "anchor": "2026-09-14T04:00:00-03:00",
+        "everyHours": 168
+      },
+      "permanent": true
+    },
     {
       "id": "convene-setembro-2026",
       "type": "banner",
       "title": "Convene Limitado",
-      "icon": "assets/favicon.webp",
+      "icon": "assets/eventos/convene/icon.webp",
       "start": "2026-09-14T12:00:00-03:00",
       "end": "2026-09-29T10:00:00-03:00",
       "banners": [

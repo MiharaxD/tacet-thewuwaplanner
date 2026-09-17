@@ -1,5 +1,5 @@
 export function eventStatus(event,now=Date.now()){
- return now<Date.parse(event.start)?'Futuro':now>=Date.parse(event.end)?'Encerrado':'Ativo';
+ return now<Date.parse(event.start)?'Futuro':!event.permanent&&now>=Date.parse(event.end)?'Encerrado':'Ativo';
 }
 export function countdown(time,now=Date.now()){
  const delta=Math.max(0,Date.parse(time)-now),minutes=Math.ceil(delta/60000);

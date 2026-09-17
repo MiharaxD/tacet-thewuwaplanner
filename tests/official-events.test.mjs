@@ -3,8 +3,24 @@ import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {validateEventCatalog,officialEvents,eventDuration,setEventCompleted,eventCycle,isEventCompleted} from '../src/official-events.js';
 import {defaultState,validateState,parseBackup,mergeState,Store} from '../src/state.js';
+import {eventStatus} from '../src/time.js';
 const event={id:'test-event',title:'Evento de teste',start:'2026-09-20T10:00:00-03:00',end:'2026-10-04T10:00:00-03:00'};
 const catalog={version:1,events:[event]};
+test('permanent events need no end, stay active and recurring completion resets indefinitely',()=>{
+ const permanent={...event,permanent:true,type:'recurring',reset:{anchor:event.start,everyHours:24}};delete permanent.end;
+ assert.doesNotThrow(()=>validateEventCatalog({version:1,events:[permanent]}));
+ const now=Date.parse('2030-01-01T15:00:00Z');
+ assert.equal(eventStatus(permanent,now),'Ativo');
+ assert.equal(eventStatus({...permanent,end:event.end},now),'Ativo');
+ const cycle=eventCycle(permanent,now);assert.ok(cycle.end>now&&cycle.end-now<=86400000);
+ const state=setEventCompleted(defaultState(),{events:[permanent]},permanent.id,true,now);
+ assert.equal(isEventCompleted(state,permanent,now),true);
+ assert.equal(isEventCompleted(state,permanent,cycle.end),false);
+ assert.equal(eventDuration(permanent),'Permanente');
+ assert.equal(eventCycle({...permanent,type:'event'},now).end,Infinity);
+ assert.throws(()=>validateEventCatalog({version:1,events:[{...permanent,permanent:'true'}]}));
+ assert.throws(()=>validateEventCatalog({version:1,events:[{...permanent,permanent:false}]}));
+});
 const db=Object.fromEntries(await Promise.all(['catalog','rules','recipes'].map(async n=>[n,JSON.parse(await readFile(new URL('../data/'+n+'.json',import.meta.url)))])));
 test('recurring events lead, then each group follows remaining time and reorders after resets',()=>{
  const now=Date.parse(event.start)+3600000,at=hours=>new Date(Date.parse(event.start)+hours*3600000).toISOString();

@@ -103,3 +103,9 @@ Substitua nomes e caminhos pelos seus arquivos:
 `start` e `end` delimitam a disponibilidade total. Durante ela, a contagem mostra o próximo reset ou o encerramento, se vier antes. A conclusão só vale no período em que foi marcada. Na próxima visita ou atualização automática da lista (a cada minuto), ciclos antigos voltam aos pendentes. Isso funciona após ficar offline e ao restaurar um backup antigo. Depois do encerramento não há novos ciclos.
 
 Mantenha o mesmo ID em todos os ciclos de um recorrente. Para uma edição independente de evento normal ou banner, use um ID novo.
+
+## Eventos permanentes
+
+Adicione `"permanent": true` ao evento para indicar que não termina. Nesse caso, remova `end`: ele não é necessário e, se mantido, é ignorado. Funciona em eventos normais e recorrentes.
+
+Para diária, semanal e endgames com reset, combine `"type": "recurring"` com `"permanent": true` e configure `reset` normalmente. O radar e a agenda mostram o próximo reset, nunca uma data de término. Sem reset, aparece apenas “Permanente”. O campo `start` continua obrigatório.

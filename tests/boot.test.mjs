@@ -41,6 +41,13 @@ test('the actual app boots and accepts inventory edits when the storage getter t
  await new Promise(resolve=>setImmediate(resolve));
  assert.equal(vm.runInContext('state().eventCompletions["published-event"]',context),true);
   assert.equal(vm.runInContext('db.events.events[0].title',context),'Evento publicado');
+  vm.runInContext(`db.events.events[0].permanent=true;delete db.events.events[0].end;db.events.events[0].start='2020-01-01T00:00:00Z';render();`,context);
+  assert.match(app.innerHTML,/Permanente/);assert.doesNotMatch(app.innerHTML,/NaN|Invalid Date|Termina:/);
+  vm.runInContext(`route='summary';render();`,context);
+  assert.match(app.innerHTML,/Permanente/);assert.doesNotMatch(app.innerHTML,/NaN|Invalid Date/);
+  vm.runInContext(`db.events.events[0].type='recurring';db.events.events[0].reset={anchor:'2020-01-01T00:00:00Z',everyHours:24};render();`,context);
+  assert.match(app.innerHTML,/Reset em/);assert.doesNotMatch(app.innerHTML,/NaN|Invalid Date/);
+  vm.runInContext(`db.events.events[0].type='event';route='events';render();`,context);
   assert.match(app.innerHTML,/<details class="completed-events">/);
   assert.doesNotMatch(app.innerHTML,/<details class="completed-events" open/);
   assert.doesNotMatch(app.innerHTML,/NaN/);
