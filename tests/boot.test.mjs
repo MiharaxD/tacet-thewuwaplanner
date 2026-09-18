@@ -14,7 +14,8 @@ import * as official from '../src/official-events.js';
 test('the actual app boots and accepts inventory edits when the storage getter throws',async()=>{
  const listeners=new Map(),app={innerHTML:'',querySelectorAll:()=>[]};
  const toast={textContent:'',classList:{add(){},remove(){}}};
- const modal={open:false,addEventListener(){},close(){this.open=false;},showModal(){this.open=true;},querySelector(){return null;},classList:{toggle(){}}};
+ const modalListeners=new Map();
+ const modal={open:false,addEventListener(name,fn){modalListeners.set(name,fn);},close(){this.open=false;},showModal(){this.open=true;},querySelector(){return null;},classList:{toggle(){}}};
  const elements={'#app':app,'#modal':modal,'#toast':toast};
  const window={addEventListener(){},get localStorage(){throw new DOMException('Blocked','SecurityError');}};
  const context=vm.createContext({
@@ -71,6 +72,11 @@ test('the actual app boots and accepts inventory edits when the storage getter t
   const clickAction=async(action,id)=>{listeners.get('click')({target:{closest:()=>({dataset:{action,id}})}});await new Promise(resolve=>setImmediate(resolve));};
   await clickAction('remove','goal-farm-test');assert.match(modal.innerHTML,/confirm-remove/);assert.equal(modal.open,true);
   await clickAction('confirm-remove','goal-farm-test');assert.equal(vm.runInContext('state().goals.length',context),0);assert.equal(modal.open,false);
+  assert.equal(modal.innerHTML,'','closed dialogs must not retain hidden stock editors');
+  vm.runInContext(`openModal('<form id="goal-form"><section id="goal-stock-editor"></section></form>');`,context);
+  modal.open=false;modalListeners.get('close')();assert.equal(modal.innerHTML,'','Escape/native close also removes the stale form and editor');
+  vm.runInContext(`openModal('<p>Novo modal</p>');`,context);modalListeners.get('close')();assert.match(modal.innerHTML,/Novo modal/,'a delayed close event must not clear a reopened dialog');
+  vm.runInContext('closeModal()',context);
   assert.equal(vm.runInContext('JSON.stringify(state().inventory)',context),inventoryBeforeDelete);
   const popup={dataset:{},innerHTML:'',opened:false,setAttribute(){},matches(){return this.opened;},showPopover(){this.opened=true;},hidePopover(){this.opened=false;},querySelector(){return null;},querySelectorAll(){return [{value:'123',valueAsNumber:123,dataset:{goalStock:'shell'}}];}};
   context.document.createElement=()=>popup;context.document.body={append:el=>{elements['#'+el.id]=el;}};
