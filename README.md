@@ -6,12 +6,12 @@ Um site para te ajudar a organizar tudo que você precisa para subir seus person
 
 - **Controle de recursos** — mostra exatamente quais materiais você tem, quanto falta e o que já está garantido para a próxima ascensão.
 - **Farms necessários** — calcula automaticamente o que você precisa farmar, separando por tipo (boss, domínio, mundo aberto, etc.).
-- **Controle de eventos do jogo** — acompanha os eventos ativos e o que vale a pena farmar em cada um, pra você não perder recompensa.
+- **Controle de eventos do jogo** — acompanha os eventos ativos e apresenta como lista de tarefas, pra você não perder recompensa.
 - **Síntese automática de materiais** — converte materiais menores em maiores automaticamente, mostrando o total real que você já tem disponível.
 
 ## 🎯 Pra quem é
 
-Pra qualquer jogador que quer parar de anotar material em bloco de notas ou planilha e ter tudo organizado em um só lugar.
+Pra pessoa que ta cansada de ficar pensando no que farmar todo dia.
 
 ## 🚀 Como usar
 
