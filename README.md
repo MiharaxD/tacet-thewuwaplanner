@@ -16,9 +16,9 @@ Pra pessoa que ta cansada de ficar pensando no que farmar todo dia.
 ## 🚀 Como usar
 
 1. Acesse o site
-2. Escolha o personagem ou arma que quer ascender
-3. Veja o que falta, o que farmar e onde
-4. Marque o que já tem e acompanhe o progresso
+2. Escolha o personagem e a arma que quer upar
+3. Veja o que falta e o que farmar
+4. Anote no invetário o que já tem e acompanhe o progresso
 
 ## 🛠️ Status
 
