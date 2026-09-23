@@ -1,33 +1,33 @@
-# Tacet — Wuthering Waves Planner
+# 🎮 Wuthering Waves - Planejador de Ascensão
 
-Planner local com 57 personagens/formas, 120 armas, 153 materiais com imagens, metas de nível/ascensão/Forte, inventário e planejamento de farm.
+Um site para te ajudar a organizar tudo que você precisa para subir seus personagens e armas em Wuthering Waves, sem se perder nos materiais.
 
-## Abrir
+## ✨ O que o site faz
 
-Com Node.js 22 ou superior, execute na pasta do projeto:
+- **Controle de recursos** — mostra exatamente quais materiais você tem, quanto falta e o que já está garantido para a próxima ascensão.
+- **Farms necessários** — calcula automaticamente o que você precisa farmar, separando por tipo (boss, domínio, mundo aberto, etc.).
+- **Controle de eventos do jogo** — acompanha os eventos ativos e apresenta como lista de tarefas, pra você não perder recompensa.
+- **Síntese automática de materiais** — converte materiais menores em maiores automaticamente, mostrando o total real que você já tem disponível.
 
-```sh
-node scripts/serve.mjs
-```
+## 🎯 Pra quem é
 
-Abra [o planner local](http://127.0.0.1:5173). Metas e inventário ficam salvos no navegador; use Configurações para exportar backups.
+Pra pessoa que ta cansada de ficar pensando no que farmar todo dia.
 
-## Dados e validação
+## 🚀 Como usar
 
-```sh
-node scripts/catalog.mjs
-node --test tests/*.test.mjs
-node scripts/build.mjs
-```
+1. Acesse o site
+2. Escolha o personagem e a arma que quer upar
+3. Veja o que falta e o que farmar
+4. Anote no invetário o que já tem e acompanhe o progresso
 
-O build fica em `dist/`. Para atualizar as referências do Akademiya e baixar imagens ausentes, execute `node scripts/catalog.mjs --refresh`. A geração normal usa os textos em `assets/WUWA Assets` e o snapshot local, sem rede.
+## 🛠️ Status
 
-O Rover compartilha nível e ascensão entre os três elementos cadastrados; Fortes são independentes. Custos dos nós inerentes/bônus ainda não estão cobertos. Fontes, exceções e manutenção estão em [docs/DATA.md](docs/DATA.md).
+Projeto em desenvolvimento. Novas funcionalidades sendo adicionadas aos poucos.
 
-## Identidade visual
+## 🤝 Contribuições
 
-O modal de planejamento não pede EXP parcial. A seleção de armas mostra imagem, raridade e materiais; os custos respeitam cada arma e sua raridade. Armas de 1–2★ têm limite 70. Laser Shearer e Phasic Homogenizer aguardam custos confirmados e não aparecem na seleção.
+Sugestões, ideias e feedbacks são bem-vindos. Fique à vontade para abrir uma issue ou entrar em contato.
 
-Para atualizar a referência de armas, execute `node scripts/refresh-weapons.mjs` e depois `node scripts/import-weapons.mjs --download-images`. A importação normal usa `scripts/weapons-reference.json` sem consultar a rede.
+---
 
-Logo fornecido em `assets/logo`, servido como cópia PNG em `assets/logo.png`, sem subtítulo. Tema quase preto com nuances de azul e detalhes em marfim com estrelas de quatro pontas e contornos curvos. Tipografia original mantida: DM Sans e Manrope.
+Feito por fãs, para fãs de Wuthering Waves. 🌊
