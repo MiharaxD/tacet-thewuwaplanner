@@ -1,10 +1,10 @@
-import {escape as h} from './ui.js';
+import {escape as h,elementLabel} from './ui.js';
 import {skillField} from './level-picker.js';
 import {nodeUnlocked,toggleForteNode} from './forte-progress.js';
 
 const titles=['ATQ Normal','Habilidade de Ressonância','Circuito Ressonante','Liberação de Ressonância','Habilidade Intro'];
 const statNames={'ATK':'ATQ','HP':'PV','DEF':'DEF','Crit. Rate':'Taxa CRIT','Crit. DMG':'Dano CRIT','Healing Bonus':'Bônus de cura','Energy Regen':'Recarga de Energia'};
-export function statName(name){return name.replace(/\+$/,'').replace(/^(.*) DMG Bonus$/, 'Bônus de dano $1').replace(/^(ATK|HP|DEF|Crit\. Rate|Crit\. DMG|Healing Bonus|Energy Regen)$/,x=>statNames[x]);}
+export function statName(name){return name.replace(/\+$/,'').replace(/^(.*) DMG Bonus$/,(_,element)=>'Bônus de dano '+elementLabel(element)).replace(/^(ATK|HP|DEF|Crit\. Rate|Crit\. DMG|Healing Bonus|Energy Regen)$/,x=>statNames[x]);}
 const generic=[
  '', '<path d="m12 3 8 9-8 9-8-9Z"/><path d="M8 12h8M12 8v8"/>',
  '<circle cx="12" cy="12" r="4"/><path d="m12 1 2 5 5-2-2 5 5 3-5 2 2 5-5-2-2 5-2-5-5 2 2-5-5-2 5-3-2-5 5 2Z"/>',
