@@ -31,9 +31,9 @@ export function eventCycle(event,now=Date.now()){
  return {start:Math.max(start,boundary),end:Math.min(end,boundary+interval)};
 }
 export function isEventCompleted(state,event,now=Date.now()){
+ if(now<Date.parse(event.start))return false;
  const value=state.eventCompletions?.[event.id];
  if(event.type!=='recurring')return value===true||typeof value==='string';
- if(now<Date.parse(event.start))return false;
  const cycle=eventCycle(event,event.permanent?now:Math.min(now,Date.parse(event.end)-1));
  return typeof value==='string'&&Date.parse(value)>=cycle.start&&Date.parse(value)<cycle.end;
 }

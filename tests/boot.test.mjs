@@ -178,6 +178,10 @@ test('the actual app boots and accepts inventory edits when the storage getter t
  assert.match(app.innerHTML,/Nenhum evento ativo ou futuro/);assert.doesNotMatch(app.innerHTML,/Tudo concluído por aqui/);
  vm.runInContext(`store.commit({...state(),eventCompletions:{ended:true}});render();`,context);
  assert.match(app.innerHTML,/Tudo concluído por aqui/);assert.match(app.innerHTML,/<details class="completed-events">/);
+ vm.runInContext(`db.events.events.push({id:'ended-incomplete',title:'Encerrado incompleto oculto',start:'2000-01-01T00:00:00Z',end:'2000-01-02T00:00:00Z'});render();`,context);
+ assert.match(app.innerHTML,/Nenhum evento ativo ou futuro/);assert.doesNotMatch(app.innerHTML,/Tudo concluído por aqui/);
+ assert.doesNotMatch(app.innerHTML,/Encerrado incompleto oculto/);
+ assert.match(app.innerHTML,/<details class="completed-events">[\s\S]*data-official-event="ended"/);
  clock=Date.parse('2026-09-30T16:00:00Z');
  vm.runInContext(`db.events={events:[{id:'zone-event',title:'Evento na virada',start:'2026-09-30T15:00:00Z',end:'2026-09-30T17:00:00Z'}]};store.commit({...state(),settings:{...state().settings,timeZone:'Asia/Tokyo'}});actions['event-calendar']();`,context);
  assert.match(app.innerHTML,/outubro de 2026/);
@@ -193,6 +197,15 @@ test('the actual app boots and accepts inventory edits when the storage getter t
  assert.match(app.innerHTML,/Nenhum evento ativo ou futuro/);
  const futureRecurring=vm.runInContext(`eventCard({id:'future-cycle',title:'Ciclo futuro',type:'recurring',permanent:true,start:new Date(Date.now()+86400000).toISOString(),reset:{anchor:new Date(Date.now()+86400000).toISOString(),everyHours:24}})`,context);
  assert.match(futureRecurring,/Começa em/);assert.match(futureRecurring,/data-official-event="future-cycle"[^>]*disabled/);assert.doesNotMatch(futureRecurring,/event-is-complete/);
+ for(const completion of [true,'2026-09-19T15:00:00Z']){
+  context.savedCompletion=completion;
+  vm.runInContext(`db.events={events:[{id:'rescheduled',title:'Evento reagendado',start:new Date(Date.now()+86400000).toISOString(),end:new Date(Date.now()+172800000).toISOString()}]};store.commit({...state(),eventCompletions:{rescheduled:savedCompletion}});route='events';render();`,context);
+  assert.match(app.innerHTML,/data-official-event="rescheduled"[^>]*disabled/);
+  assert.doesNotMatch(app.innerHTML,/data-official-event="rescheduled"[^>]*checked|event-is-complete|completed-events|Nenhum evento ativo ou futuro|Tudo concluído por aqui/);
+  vm.runInContext(`route='summary';render();`,context);
+  assert.match(app.innerHTML,/data-official-event="rescheduled"[^>]*disabled/);
+  assert.equal(vm.runInContext('state().eventCompletions.rescheduled',context),completion);
+ }
 
 });
 

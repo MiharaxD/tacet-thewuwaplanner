@@ -104,6 +104,18 @@ test('completion merge compares real instants across offsets and preserves boole
  for(const [a,b,result] of [[false,false,false],[true,false,true],[false,true,true],[true,true,true]])assert.equal(mergeState(withValue(a),withValue(b),db).eventCompletions.test,result);
 });
 
+test('future normal events ignore saved completion until start without erasing it',()=>{
+ const start=Date.parse(event.start);
+ for(const value of [true,'2026-09-19T15:00:00Z']){
+  const state={...defaultState(),eventCompletions:{[event.id]:value}},before=structuredClone(state);
+  assert.equal(isEventCompleted(state,event,start-1),false);
+  assert.equal(isEventCompleted(state,event,start),true);
+  assert.equal(isEventCompleted(state,event,start+1),true);
+  assert.deepEqual(state,before);
+ }
+ assert.equal(isEventCompleted(defaultState(),event,start-1),false);
+});
+
 test('future events cannot be completed until their start, including recurring events',()=>{
  const start=Date.parse(event.start);
  for(const type of ['event','recurring']){
