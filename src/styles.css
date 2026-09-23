@@ -99,7 +99,7 @@ input,select,textarea{border-radius:12px;background:#0a0d12;border-color:#4b5e76
 .search-field input,.select-label select{background:#0c1016}
 .badge{border-radius:20px}
 .badge.green{background:#10161d;color:#f3f1ec;border-color:#617c98}
-.panel,.goal-card,.inventory-card,.farm-card,.event-card{box-shadow:0 6px 24px #0c142018}
+.panel,.goal-card,.inventory-card,.farm-card{box-shadow:0 6px 24px #0c142018}
 .character-card{border-radius:26px 26px 12px 12px;border-color:#506078;background:#0c1015;transition:border-color .2s,box-shadow .2s}
 .character-card:hover{border-color:#bac9dc;box-shadow:0 8px 28px #070d193d}
 .character-art{background:radial-gradient(ellipse at 50% 70%,#64738b,#34465e 50%,#253449 90%)}
@@ -118,7 +118,7 @@ input,select,textarea{border-radius:12px;background:#0a0d12;border-color:#4b5e76
 .focus-panel .eyebrow{padding-right:20px}
 .focus-panel p,.focus-panel .eyebrow{color:#c4cedc}
 .focus-link{color:#f0f1f5;border-color:#74859a66}
-.goal-card,.event-card{border-radius:20px}
+.goal-card{border-radius:20px}
 .inventory-card,.farm-card{border-radius:16px}
 
 .progress{height:4px;background:#14171e}
