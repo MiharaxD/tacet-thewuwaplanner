@@ -21,7 +21,7 @@ export function validateState(input,db){
  if(settings.weeklyPeriod!==null&&!instant(settings.weeklyPeriod))throw Error('Período semanal inválido.');
  for(const [id,n]of Object.entries(settings.yields))if((!validMaterials.has(id)&&!['xp-potion','xp-energy'].includes(id))||!Number.isFinite(n)||n<0||n>1e9)throw Error('Rendimento inválido.');
  const eventCompletions=input.eventCompletions??{};
- if(!record(eventCompletions)||Object.keys(eventCompletions).length>5000||Object.entries(eventCompletions).some(([id,done])=>!/^[a-zA-Z0-9_-]{1,80}$/.test(id)||(typeof done!=='boolean'&&!(typeof done==='string'&&/^\d{4}-\d{2}-\d{2}T/.test(done)&&Number.isFinite(Date.parse(done))))))throw Error('Conclusões de eventos inválidas.');
+ if(!record(eventCompletions)||Object.keys(eventCompletions).length>5000||Object.entries(eventCompletions).some(([id,done])=>!/^[a-zA-Z0-9_-]{1,80}$/.test(id)||(typeof done!=='boolean'&&!instant(done))))throw Error('Conclusões de eventos inválidas.');
  const eventIds=new Set();
  for(const e of input.events){
   if(!e||typeof e.id!=='string'||!/^[a-zA-Z0-9_-]{1,80}$/.test(e.id)||eventIds.has(e.id)||typeof e.title!=='string'||!e.title.trim()||e.title.length>120||e.kind!=='personal'||!instant(e.start)||!instant(e.end)||Date.parse(e.end)<=Date.parse(e.start)||!Array.isArray(e.tasks)||e.tasks.length>50||!record(e.rewards)||typeof e.claimed!=='boolean')throw Error('Evento inválido.');

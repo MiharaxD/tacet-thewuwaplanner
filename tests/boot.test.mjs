@@ -33,17 +33,57 @@ test('the actual app boots and accepts inventory edits when the storage getter t
  assert.match(app.innerHTML,/Armazenamento indisponível/);
  assert.doesNotMatch(app.innerHTML,/boot-error/);
  const beforeTyping=app.innerHTML;
- listeners.get('input')({target:{closest:()=>null,dataset:{stock:'shell'},value:'100',valueAsNumber:100,setCustomValidity(){}}});
+ const stockInput={closest:()=>null,dataset:{stock:'shell'},value:'',valueAsNumber:0,setCustomValidity(){},reportValidity(){}};
+ const historyBefore=vm.runInContext('store.history.length',context);
+ for(const value of ['1','12','123','1234','12345']){stockInput.value=value;stockInput.valueAsNumber=Number(value);listeners.get('input')({target:stockInput});}
  await new Promise(resolve=>setImmediate(resolve));
- assert.equal(vm.runInContext('state().inventory.shell',context),100);assert.equal(app.innerHTML,beforeTyping,'typing must not replace the input DOM');
+ assert.equal(vm.runInContext('store.history.length',context),historyBefore);
+ assert.equal(app.innerHTML,beforeTyping,'typing must not replace the input DOM');
+ listeners.get('change')({target:stockInput});await new Promise(resolve=>setImmediate(resolve));
+ assert.equal(vm.runInContext('state().inventory.shell',context),12345);
+ assert.equal(vm.runInContext('store.history.length',context),historyBefore+1);
+ listeners.get('change')({target:stockInput});await new Promise(resolve=>setImmediate(resolve));
+ assert.equal(vm.runInContext('store.history.length',context),historyBefore+1,'unchanged quantity adds no undo entry');
+ vm.runInContext('store.undo()',context);assert.equal(vm.runInContext('state().inventory.shell||0',context),0);
+ vm.runInContext("route='characters';search='no-character-matches-this';render();",context);
+ assert.ok(app.innerHTML.includes(vm.runInContext('db.catalog.characters.length',context)+' personagens verificados'));
+ vm.runInContext("search='';",context);
  assert.match(toast.textContent,/Exporte um backup/);
  assert.equal(vm.runInContext('store.storage',context),null);
- vm.runInContext(`db.events={version:1,events:[{id:'published-event',title:'Evento publicado',start:'2026-09-20T00:00:00Z',end:'2026-09-27T00:00:00Z'}]};route='events';render();`,context);
+ vm.runInContext("let savedStock=null;store.storage={getItem:()=>savedStock,setItem:(key,value)=>{savedStock=value;}};store.snapshot=null;",context);
+ listeners.get('change')({target:stockInput});await new Promise(resolve=>setImmediate(resolve));
+ assert.equal(vm.runInContext('JSON.parse(savedStock).inventory.shell',context),12345);
+ vm.runInContext('store.undo()',context);
+ assert.equal(vm.runInContext('JSON.parse(savedStock).inventory.shell||0',context),0);
+
+ vm.runInContext(`db.events={version:1,events:[{id:'published-event',title:'Evento publicado',start:new Date(Date.now()-86400000).toISOString(),end:new Date(Date.now()+86400000).toISOString()}]};route='events';render();`,context);
  assert.match(app.innerHTML,/Evento publicado/);assert.match(app.innerHTML,/data-official-event="published-event"/);
  assert.doesNotMatch(app.innerHTML,/new-event|edit-event|remove-event|Registrar recebimento/);
+ vm.runInContext(`db.events.events.push({id:'expired',title:'Evento vencido teste',start:'2000-01-01T00:00:00Z',end:'2000-01-02T00:00:00Z'},{id:'future',title:'Evento futuro teste',start:new Date(Date.now()+86400000).toISOString(),end:new Date(Date.now()+172800000).toISOString()});render();`,context);
+ assert.doesNotMatch(app.innerHTML,/Evento vencido teste/);assert.match(app.innerHTML,/Evento futuro teste/);assert.match(app.innerHTML,/Evento publicado/);
+ vm.runInContext(`store.commit({...state(),eventCompletions:{expired:true}});render();`,context);
+ assert.match(app.innerHTML,/<details class="completed-events">[\s\S]*Evento vencido teste/);
+ vm.runInContext("db.events.events=db.events.events.filter(e=>e.id==='published-event');",context);
+ vm.runInContext("route='summary';render();",context);
+ assert.match(app.innerHTML,/data-official-event="published-event"/);
+ assert.doesNotMatch(app.innerHTML,/class="stats"|METAS ATIVAS|MATERIAIS RESERVADOS|RECURSOS EM FALTA|WAVEPLATES \/ DIA/);
+
+
  listeners.get('change')({target:{closest:()=>null,dataset:{officialEvent:'published-event'},checked:true}});
  await new Promise(resolve=>setImmediate(resolve));
  assert.equal(vm.runInContext('state().eventCompletions["published-event"]',context),true);
+ assert.doesNotMatch(app.innerHTML,/Evento publicado|completed-events/,'completed events disappear from every summary section');
+ assert.match(app.innerHTML,/Nenhum evento pendente por aqui/);
+ vm.runInContext("route='events';render();",context);
+ assert.match(app.innerHTML,/<details class="completed-events"><summary>Eventos completos \(1\)<\/summary>[\s\S]*Evento publicado/);
+ assert.doesNotMatch(app.innerHTML,/<details class="completed-events" open/);
+ listeners.get('change')({target:{closest:()=>null,dataset:{officialEvent:'published-event'},checked:false}});
+ await new Promise(resolve=>setImmediate(resolve));
+ vm.runInContext("route='summary';render();",context);
+ assert.match(app.innerHTML,/data-official-event="published-event"/);
+ assert.doesNotMatch(app.innerHTML,/completed-events/);
+ vm.runInContext("route='events';",context);
+
   assert.equal(vm.runInContext('db.events.events[0].title',context),'Evento publicado');
   vm.runInContext(`db.events.events[0].permanent=true;delete db.events.events[0].end;db.events.events[0].start='2020-01-01T00:00:00Z';render();`,context);
   assert.match(app.innerHTML,/Permanente/);assert.doesNotMatch(app.innerHTML,/NaN|Invalid Date|Termina:/);
@@ -51,7 +91,14 @@ test('the actual app boots and accepts inventory edits when the storage getter t
   assert.match(app.innerHTML,/Permanente/);assert.doesNotMatch(app.innerHTML,/NaN|Invalid Date/);
   vm.runInContext(`db.events.events[0].type='recurring';db.events.events[0].reset={anchor:'2020-01-01T00:00:00Z',everyHours:24};render();`,context);
   assert.match(app.innerHTML,/Reset em/);assert.doesNotMatch(app.innerHTML,/NaN|Invalid Date/);
+
+  listeners.get('change')({target:{closest:()=>null,dataset:{officialEvent:'published-event'},checked:true}});
+  await new Promise(resolve=>setImmediate(resolve));
+  assert.doesNotMatch(app.innerHTML,/Evento publicado|completed-events/);
+  vm.runInContext(`store.commit({...state(),eventCompletions:{...state().eventCompletions,'published-event':new Date(Date.now()-86400000).toISOString()}});render();`,context);
+  assert.match(app.innerHTML,/data-official-event="published-event"/,'recurring event returns after its completion cycle');
   vm.runInContext(`db.events.events[0].type='event';route='events';render();`,context);
+
   assert.match(app.innerHTML,/<details class="completed-events">/);
   assert.doesNotMatch(app.innerHTML,/<details class="completed-events" open/);
   assert.doesNotMatch(app.innerHTML,/NaN/);

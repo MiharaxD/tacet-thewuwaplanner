@@ -29,6 +29,7 @@ dialog{padding:0;border:1px solid #3d5370;border-radius:15px;width:min(820px,cal
 .event-completion input{width:20px;height:20px;accent-color:#b7d9bd;flex:none}
 .event-card.event-is-complete{border-color:#668a71}.event-is-complete .event-completion{color:#b7d9bd}
 .events-list{display:grid;grid-template-columns:minmax(0,1fr);gap:10px}
+.summary-events{margin-bottom:32px}
 .event-row{border:1px solid var(--line);border-radius:16px;background:linear-gradient(110deg,#131d2c,#0c111b);overflow:hidden}
 .event-row-main{display:flex;align-items:center;gap:14px;padding:10px 12px;min-height:58px}
 .event-check{position:relative;display:grid;place-items:center;width:38px;height:32px;flex:none;cursor:pointer;margin:0}

@@ -22,6 +22,15 @@ test('permanent events need no end, stay active and recurring completion resets 
  assert.throws(()=>validateEventCatalog({version:1,events:[{...permanent,permanent:false}]}));
 });
 const db=Object.fromEntries(await Promise.all(['catalog','rules','recipes'].map(async n=>[n,JSON.parse(await readFile(new URL('../data/'+n+'.json',import.meta.url)))])));
+
+test('completion timestamps require an explicit timezone and preserve existing booleans',()=>{
+ for(const value of [true,false,'2026-09-19T15:00:00Z','2026-09-19T15:00:00-03:00',new Date().toISOString()]){
+  const state={...defaultState(),eventCompletions:{test:value}};
+  assert.equal(parseBackup(JSON.stringify(state),db).eventCompletions.test,value);
+ }
+ for(const value of ['2026-09-19T15:00:00','2026-09-19','invalid'])
+  assert.throws(()=>validateState({...defaultState(),eventCompletions:{test:value}},db),/Conclusões de eventos inválidas/);
+});
 test('recurring events lead, then each group follows remaining time and reorders after resets',()=>{
  const now=Date.parse(event.start)+3600000,at=hours=>new Date(Date.parse(event.start)+hours*3600000).toISOString();
  const entries=[

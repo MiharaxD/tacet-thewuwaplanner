@@ -1,8 +1,12 @@
-import { cp, mkdir, readFile, readdir } from 'node:fs/promises';
+import { cp, mkdir, readFile, readdir, rm } from 'node:fs/promises';
+import {resolve,dirname} from 'node:path';
 import { execFileSync } from 'node:child_process';
 import {validateEventCatalog} from '../src/official-events.js';
 validateEventCatalog(JSON.parse(await readFile('data/events.json','utf8')));
-await mkdir('dist',{recursive:true});
+const output=resolve('dist');
+if(dirname(output)!==resolve('.'))throw Error('Diretório de build inválido.');
+await rm(output,{recursive:true,force:true});
+await mkdir(output,{recursive:true});
 for (const dir of ['src','data','assets']) await cp(dir,`dist/${dir}`,{recursive:true});
 await cp('index.html','dist/index.html');
 for (const file of await readdir('src')) if (file.endsWith('.js')) execFileSync(process.execPath,['--check',`src/${file}`]);
