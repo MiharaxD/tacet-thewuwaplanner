@@ -148,6 +148,7 @@ test('the actual app boots and accepts inventory edits when the storage getter t
  store.commit({...state(),eventCompletions:{cycle:new Date().toISOString()}});refreshWeekly();route='summary';render();`,context);
  assert.doesNotMatch(app.innerHTML,/No seu radar|agenda-preview|Evento recorrente|completed-events/);
  assert.equal((app.innerHTML.match(/data-official-event="future"/g)||[]).length,1);
+ assert.match(app.innerHTML,/data-official-event="future"[^>]*disabled/);
  const resetText={textContent:''},eventText={dataset:{eventCountdown:'future'},textContent:''};
  context.document.querySelectorAll=selector=>selector==='[data-reset-countdown]'?[resetText]:selector==='[data-event-countdown]'?[eventText]:[];
  const focused={tagName:'INPUT',id:'editing-stock'};context.document.activeElement=focused;
@@ -162,7 +163,7 @@ test('the actual app boots and accepts inventory edits when the storage getter t
  clock+=60000;await timers[0].fn();assert.equal(renderCount,beforeTick,'idle ticks also avoid rebuilding cards and details');
  assert.equal(eventText.textContent,'Começa em 0h 28min');
  clock=Date.parse('2026-09-21T12:30:00Z');await timers[0].fn();
- assert.equal(renderCount,++beforeTick,'future becoming active renders once');assert.match(app.innerHTML,/data-official-event="future"/);assert.doesNotMatch(app.innerHTML,/Começa em/);
+ assert.equal(renderCount,++beforeTick,'future becoming active renders once');assert.match(app.innerHTML,/data-official-event="future"/);assert.doesNotMatch(app.innerHTML,/Começa em/);assert.doesNotMatch(app.innerHTML,/data-official-event="future"[^>]*disabled/);
  clock=Date.parse('2026-09-21T13:00:00Z');await timers[0].fn();
  assert.equal(renderCount,++beforeTick,'cycle renewal renders once');assert.match(app.innerHTML,/data-official-event="cycle"/);assert.doesNotMatch(app.innerHTML,/completed-events/);
  await timers[0].fn();assert.equal(renderCount,beforeTick,'same boundary is not rendered twice');
@@ -172,6 +173,26 @@ test('the actual app boots and accepts inventory edits when the storage getter t
  beforeTick=renderCount;clock=Date.parse('2026-09-28T12:00:00Z');await timers[0].fn();
  assert.equal(renderCount,beforeTick+1);assert.equal(vm.runInContext('state().settings.weeklyClaimsUsed',context),0);
  await timers[0].fn();assert.equal(renderCount,beforeTick+1);
+
+ vm.runInContext(`route='events';eventView='list';db.events={events:[{id:'ended',title:'Encerrado sem conclusão',start:'2000-01-01T00:00:00Z',end:'2000-01-02T00:00:00Z'}]};store.commit({...state(),eventCompletions:{}});render();`,context);
+ assert.match(app.innerHTML,/Nenhum evento ativo ou futuro/);assert.doesNotMatch(app.innerHTML,/Tudo concluído por aqui/);
+ vm.runInContext(`store.commit({...state(),eventCompletions:{ended:true}});render();`,context);
+ assert.match(app.innerHTML,/Tudo concluído por aqui/);assert.match(app.innerHTML,/<details class="completed-events">/);
+ clock=Date.parse('2026-09-30T16:00:00Z');
+ vm.runInContext(`db.events={events:[{id:'zone-event',title:'Evento na virada',start:'2026-09-30T15:00:00Z',end:'2026-09-30T17:00:00Z'}]};store.commit({...state(),settings:{...state().settings,timeZone:'Asia/Tokyo'}});actions['event-calendar']();`,context);
+ assert.match(app.innerHTML,/outubro de 2026/);
+ assert.match(app.innerHTML,/calendar-day today"><span>1<\/span>[\s\S]*?Evento na virada/);
+ vm.runInContext("actions['prev-month']();",context);assert.match(app.innerHTML,/setembro de 2026/);
+ vm.runInContext('render()',context);assert.match(app.innerHTML,/setembro de 2026/,'render preserves manual month navigation');
+ vm.runInContext("actions['next-month']();",context);assert.match(app.innerHTML,/outubro de 2026/);
+ vm.runInContext(`store.commit({...state(),settings:{...state().settings,timeZone:'America/Sao_Paulo'}});actions['event-list']();actions['event-calendar']();`,context);
+ assert.match(app.innerHTML,/setembro de 2026/);
+ assert.match(app.innerHTML,/calendar-day today"><span>30<\/span>[\s\S]*?Evento na virada/);
+
+ vm.runInContext("db.events={events:[]};eventView='list';render();",context);
+ assert.match(app.innerHTML,/Nenhum evento ativo ou futuro/);
+ const futureRecurring=vm.runInContext(`eventCard({id:'future-cycle',title:'Ciclo futuro',type:'recurring',permanent:true,start:new Date(Date.now()+86400000).toISOString(),reset:{anchor:new Date(Date.now()+86400000).toISOString(),everyHours:24}})`,context);
+ assert.match(futureRecurring,/Começa em/);assert.match(futureRecurring,/data-official-event="future-cycle"[^>]*disabled/);assert.doesNotMatch(futureRecurring,/event-is-complete/);
 
 });
 

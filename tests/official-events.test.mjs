@@ -93,3 +93,29 @@ test('editing a published title or dates preserves completion through the stable
  assert.equal(state.eventCompletions[officialEvents(changed,'America')[0].id],true);
  const storage={getItem:()=>null,setItem(){}};const store=new Store(defaultState(),db,storage);store.commit(state);store.snapshot=null;store.undo();assert.deepEqual(store.state.eventCompletions,{});
 });
+
+test('completion merge compares real instants across offsets and preserves booleans',()=>{
+ const withValue=value=>({...defaultState(),eventCompletions:{test:value}});
+ const earlier='2026-09-24T01:00:00Z',later='2026-09-23T23:30:00-03:00';
+ for(const [a,b] of [[earlier,later],[later,earlier]])assert.equal(mergeState(withValue(a),withValue(b),db).eventCompletions.test,later);
+ const equivalent='2026-09-23T22:00:00-03:00';
+ const chosen=mergeState(withValue(earlier),withValue(equivalent),db).eventCompletions.test;
+ assert.ok([earlier,equivalent].includes(chosen));assert.equal(Date.parse(chosen),Date.parse(earlier));
+ for(const [a,b,result] of [[false,false,false],[true,false,true],[false,true,true],[true,true,true]])assert.equal(mergeState(withValue(a),withValue(b),db).eventCompletions.test,result);
+});
+
+test('future events cannot be completed until their start, including recurring events',()=>{
+ const start=Date.parse(event.start);
+ for(const type of ['event','recurring']){
+  const entry={...event,type,reset:{anchor:event.start,everyHours:24}},data={events:[entry]},s=defaultState();
+  assert.throws(()=>setEventCompleted(s,data,entry.id,true,start-1),/ainda não começou/);
+  assert.deepEqual(s.eventCompletions,{});
+  assert.equal(setEventCompleted(s,data,entry.id,false,start-1).eventCompletions[entry.id],false);
+  const completed=setEventCompleted(s,data,entry.id,true,start);
+  assert.equal(isEventCompleted(completed,entry,start),true);
+  if(type==='recurring'){
+   assert.equal(isEventCompleted(completed,entry,start-1),false);
+   assert.equal(isEventCompleted(completed,entry,start+86400000),false);
+  }
+ }
+});

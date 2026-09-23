@@ -53,7 +53,7 @@ export function mergeState(current,incoming,db){
  for(const goal of incoming.goals)if(!next.goals.some(g=>g.id===goal.id||g.charId===goal.charId))next.goals.push(clone(goal));
  for(const event of incoming.events)if(!next.events.some(e=>e.id===event.id))next.events.push(clone(event));
  next.eventCompletions={...(next.eventCompletions||{})};
- for(const [id,done]of Object.entries(incoming.eventCompletions||{})){const current=next.eventCompletions[id];next.eventCompletions[id]=typeof current==='string'||typeof done==='string'?[current,done].filter(v=>typeof v==='string').sort().at(-1):current===true||done;}
+ for(const [id,done]of Object.entries(incoming.eventCompletions||{})){const current=next.eventCompletions[id];next.eventCompletions[id]=typeof current==='string'||typeof done==='string'?[current,done].filter(v=>typeof v==='string').sort((a,b)=>Date.parse(a)-Date.parse(b)).at(-1):current===true||done;}
  return validateState(next,db);
 }
 export function loadState(storage,db){

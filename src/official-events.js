@@ -33,11 +33,13 @@ export function eventCycle(event,now=Date.now()){
 export function isEventCompleted(state,event,now=Date.now()){
  const value=state.eventCompletions?.[event.id];
  if(event.type!=='recurring')return value===true||typeof value==='string';
+ if(now<Date.parse(event.start))return false;
  const cycle=eventCycle(event,event.permanent?now:Math.min(now,Date.parse(event.end)-1));
  return typeof value==='string'&&Date.parse(value)>=cycle.start&&Date.parse(value)<cycle.end;
 }
 export function setEventCompleted(state,catalog,id,completed,now=Date.now()){
- const event=officialEvents(catalog,state.settings.server).find(e=>e.id===id);
+ const event=officialEvents(catalog,state.settings.server,now).find(e=>e.id===id);
  if(typeof completed!=='boolean'||!event)throw Error('Evento indisponível.');
+ if(completed&&now<Date.parse(event.start))throw Error('Este evento ainda não começou.');
  return {...state,eventCompletions:{...(state.eventCompletions||{}),[id]:completed&&event.type==='recurring'?new Date(now).toISOString():completed}};
 }
