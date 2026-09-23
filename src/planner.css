@@ -38,6 +38,7 @@
 .planner-modal .planner-content{overflow-y:auto;min-height:0;scrollbar-gutter:stable}
 .planner-hero{height:164px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 75% 20%,#364c65,#111b29 70%);border-bottom:1px solid #40516a}
 .planner-banner{position:absolute;width:70%;height:340%;object-fit:contain;object-position:center top;right:-8%;top:-45%;opacity:.8;pointer-events:none}
+.planner-banner--splash{width:72%;height:100%;right:0;top:0;object-fit:cover;object-position:var(--banner-position,50% 45%);opacity:.95}
 .planner-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#101823 12%,#101823dc 36%,#10182318 85%),linear-gradient(0deg,#10182390,transparent 55%);pointer-events:none}
 .planner-identity{position:relative;z-index:1;height:100%;display:flex;align-items:center;gap:18px;padding:24px 30px}
 .planner-avatar{width:88px;height:88px;object-fit:contain;background:#151f2d;border:1px solid #b7bdc78c;border-radius:50%;box-shadow:0 5px 20px #0005}
