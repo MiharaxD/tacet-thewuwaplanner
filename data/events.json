@@ -2,14 +2,6 @@
   "version": 1,
   "events": [
     {
-      "id": "evento-versao-01",
-      "title": "Nome do evento",
-      "start": "2026-09-20T10:00:00-03:00",
-      "end": "2026-10-04T10:00:00-03:00",
-      "type": "event",
-      "icon": "assets/favicon.webp"
-    },
-    {
       "id": "diaria",
       "type": "recurring",
       "title": "Tarefa Diária",
