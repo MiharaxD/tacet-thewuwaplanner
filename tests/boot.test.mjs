@@ -264,6 +264,36 @@ test('the actual app boots and accepts inventory edits when the storage getter t
  listeners.get('input')({target:searchInput});vm.runInContext('choose()',context);
  assert.equal([...timeouts.values()].filter(t=>t.delay===125).length,0);
 
+ // Element labels are presentation-only across filters, cards, goals and planner.
+ vm.runInContext("closeModal();route='characters';search='';element='';render();",context);
+ const labels={Fusion:'Térmico',Glacio:'Criogênico',Aero:'Pneumático',Electro:'Voltaico',Spectro:'Espectro',Havoc:'Aniquilante'};
+ for(const [canonical,label] of Object.entries(labels)){
+  assert.match(app.innerHTML,new RegExp('<option value="'+canonical+'"[^>]*>'+label+'</option>'));
+  assert.match(app.innerHTML,new RegExp('badge element">'+label+'</span>'));
+  context.testElement=canonical;context.testLabel=label;
+  vm.runInContext('element=testElement;search="";',context);
+  assert.equal(vm.runInContext('filteredCharacters().every(c=>c.element===testElement)&&filteredCharacters().length>0',context),true);
+  vm.runInContext('element="";search=testLabel;',context);
+  assert.equal(vm.runInContext('filteredCharacters().some(c=>c.element===testElement)',context),true);
+ }
+ vm.runInContext("search='';choose();",context);
+ assert.match(modal.innerHTML,/Rover \(Pneumático\)/);assert.doesNotMatch(modal.innerHTML,/>Rover \(Aero\)</);
+ await plannerTools.startGoal('rover-aero');
+ assert.match(modal.innerHTML,/<h2 id="modal-title">Rover \(Pneumático\)<\/h2>/);
+ assert.match(modal.innerHTML,/<p>Pneumático ·/);
+ assert.match(modal.innerHTML,/alt="Rover \(Pneumático\)"/);
+ await plannerTools.startGoal('aalto');
+ assert.match(modal.innerHTML,/Bônus de dano Pneumático/);
+ vm.runInContext("closeModal();store.commit({...state(),goals:[newGoal('rover-aero','translated-rover')]});route='summary';render();",context);
+ assert.match(app.innerHTML,/<h3>Rover \(Pneumático\)<\/h3>/);
+ assert.match(app.innerHTML,/Pneumático ·/);
+ vm.runInContext('detail(state().goals[0])',context);
+ assert.match(modal.innerHTML,/Rover \(Pneumático\) · materiais/);
+ assert.equal(vm.runInContext("db.catalog.characters.find(c=>c.id==='rover-aero').name",context),'Rover (Aero)');
+ assert.equal(vm.runInContext("db.catalog.weapons.some(m=>m.name==='Fusion Accretion')",context),true);
+ await plannerTools.startGoal('encore');assert.match(modal.innerHTML,/Fusion Accretion/);
+ assert.match(modal.innerHTML,/<p>Térmico ·/);
+
 });
 
 
