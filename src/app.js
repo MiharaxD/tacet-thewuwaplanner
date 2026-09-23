@@ -15,7 +15,19 @@ import {registerPlannerTools} from './webmcp.js';
 
 const app=document.querySelector('#app'),modal=document.querySelector('#modal');
 let db,store,plan,loadWarning='',route='summary',search='',element='',weaponFilter='',category='',usedOnly=false,eventView='list',eventMonth=null,eventMonthZone=null,editingGoal=null,pendingImport=null,toastTimer;
-let settingsDraft=null,renderedTimeKey=null;
+let settingsDraft=null,renderedTimeKey=null,searchTimer;
+const plannerLoads={};
+function cancelSearchRender(){clearTimeout(searchTimer);searchTimer=null;}
+function scheduleSearchRender(){cancelSearchRender();searchTimer=setTimeout(()=>render(true),125);}
+function ensurePlannerData(){return Promise.all(['character-fortes','weapon-stats'].map(name=>{
+ if(db[name])return db[name];
+ if(!plannerLoads[name])plannerLoads[name]=(async()=>{
+  const response=await fetch(`./data/${name}.json`);
+  if(!response.ok)throw Error('Não foi possível carregar '+name+'. Tente novamente.');
+  db[name]=await response.json();
+ })().finally(()=>{delete plannerLoads[name];});
+ return plannerLoads[name];
+}));}
 const locked=action=>withStorageLock(navigator.locks,action);
 function showConflict(){
  if(!store?.conflicted||document.querySelector('#storage-conflict'))return;
@@ -30,7 +42,7 @@ const state=()=>store.state;
 const id=()=>crypto.randomUUID();
 function toast(text){clearTimeout(toastTimer);const el=document.querySelector('#toast');el.textContent=text;el.classList.add('show');toastTimer=setTimeout(()=>el.classList.remove('show'),5000);}
 function commit(next,message){store.commit(next);render();if(message)toast(message);}
-function openModal(content){document.querySelector('[data-global-stock]')?.remove();modal.classList.toggle('planner-modal',content.includes('id="goal-form"'));modal.innerHTML=content;if(!modal.open)modal.showModal();modal.querySelector('input,select,button')?.focus();}
+function openModal(content){cancelSearchRender();document.querySelector('[data-global-stock]')?.remove();modal.classList.toggle('planner-modal',content.includes('id="goal-form"'));modal.innerHTML=content;if(!modal.open)modal.showModal();modal.querySelector('input,select,button')?.focus();}
 const modalHeader=(title,sub='')=>`<header class="modal-header"><div><span class="eyebrow">TACET / PLANEJAMENTO</span><h2 id="modal-title">${h(title)}</h2>${sub?`<p>${h(sub)}</p>`:''}</div>${button(icon('close'),'close','aria-label="Fechar janela"','icon-button')}</header>`;
 function resetClosedModal(){closeStockEditor();modal.innerHTML='';editingGoal=null;pendingImport=null;stockAnchor=null;}
 function closeModal(){modal.close();resetClosedModal();}
@@ -126,9 +138,10 @@ function settings(){return topHeader('Seu terminal','Ajuste o planejamento ao se
  `;}
 
 function render(preserve=false){
+ cancelSearchRender();
  renderedTimeKey=temporalKey();
  const previousIndicator=document.querySelector('.nav-indicator')?.getBoundingClientRect();
- const focus=preserve?document.activeElement?.id:null,selection=preserve&&document.activeElement?.type==='search'?document.activeElement.selectionStart:null;
+ const focus=preserve?document.activeElement?.id:null,selection=preserve&&document.activeElement?.type==='search'?[document.activeElement.selectionStart,document.activeElement.selectionEnd,document.activeElement.selectionDirection]:null;
  plan=allocate(state().goals,state().inventory,db);
  const daily=nextReset(Date.now(),db.rules.servers[state().settings.server]);
  app.innerHTML=`<aside class="sidebar"><a class="brand" href="#summary" aria-label="Tacet, resumo"><img src="./assets/logo.png" width="1927" height="816" alt="Tacet"></a><div class="sidebar-label">SEU TERMINAL</div><nav aria-label="Navegação principal">${nav.map(([key,label])=>`<a href="#${key}" class="${route===key?'active':''}" ${route===key?'aria-current="page"':''}>${navigationIcon(key)}<span>${label}</span>${key==='characters'&&state().goals.length?`<b>${state().goals.length}</b>`:''}</a>`).join('')}</nav><div class="sidebar-bottom"><div class="server-status">${icon('clock')}<div>Próximo reset<small data-reset-countdown>${countdown(new Date(daily).toISOString())} · ${state().settings.server}</small></div></div><div class="local-status">${icon('check')} ${store.saveError?'Falha ao salvar':'Salvo neste dispositivo'}</div><span class="version">TACET / v1.0 · FAN PROJECT</span></div></aside>
@@ -147,13 +160,13 @@ function render(preserve=false){
    if(x||y)indicator.animate?.([{transform:`translate(${x}px,${y}px)`},{transform:'translate(0,0)'}],{duration:320,easing:'cubic-bezier(.22,1,.36,1)'});
   }
  }
- if(focus){const el=document.getElementById(focus);el?.focus();if(selection!==null&&el?.type==='search')el.setSelectionRange(selection,selection);}
+ if(focus){const el=document.getElementById(focus);el?.focus();if(selection!==null&&el?.type==='search')el.setSelectionRange(...selection);}
 }
 
 function choose(){openModal(modalHeader('Quem vamos evoluir?','Escolha um personagem da base local.')+`<div class="modal-content"><label class="search-field">${icon('search')}<input type="search" id="picker-search" placeholder="Pesquisar personagem" aria-label="Pesquisar no seletor de personagens"></label><p id="picker-empty" hidden>Nenhum personagem encontrado.</p><div class="picker-grid">${db.catalog.characters.map(c=>`<button type="button" class="picker-character" data-action="${state().goals.some(g=>g.charId===c.id)?'edit-char':'add'}" data-id="${c.id}">${portrait(c)}<strong>${c.name}</strong><small>${c.element} · ${weaponLabel(c.weapon)}</small></button>`).join('')}</div></div>`);}
 function progressFields(prefix,p,heading,weapon=false){const control=levelField(prefix,p.level,weapon?.maxLevel||90).replace('<input ','<div class="level-control"><input ').replace('<div id="'+prefix+'-level-options"', '<button type="button" class="ascension-toggle" data-action="toggle-ascension" aria-label="Ascensão"><img src="./assets/planner-icons/ascension-clear.png" alt=""></button></div><div id="'+prefix+'-level-options"');return `<fieldset><legend>${heading}</legend><div class="combined-progress" data-progress="${prefix}" data-max-ascension="${weapon?.maxAscension??6}">${control}<input type="hidden" name="${prefix}-ascension" value="${p.ascension}"><small class="ascension-hint"></small></div></fieldset>`;}
 function syncAscensionFields(){document.querySelectorAll('.combined-progress').forEach(field=>{const input=field.querySelector('input[type=number]'),stage=field.querySelector('input[type=hidden]'),button=field.querySelector('.ascension-toggle'),level=Number(input.value),max=Number(field.dataset.maxAscension),choices=ascensionChoices(level,db.rules.caps,max);stage.value=resolveAscension(level,Number(stage.value),db.rules.caps,max);const ascended=choices.length===2?Number(stage.value)===choices[1]:Number(stage.value)>0;button.disabled=choices.length!==2;button.setAttribute('aria-pressed',String(ascended));button.setAttribute('aria-label',choices.length===2?(ascended?'Ascendido: voltar para antes da ascensão':'Sem ascensão: marcar como ascendido'):'Ascensão definida pelo nível');button.title=choices.length===2?'Clique para alternar antes/depois da ascensão':'A ascensão acompanha este nível';field.querySelector('.ascension-hint').textContent=choices.length===2?(ascended?'Depois da ascensão':'Antes da ascensão'):'Ascensão '+stage.value+' · limite '+db.rules.caps[stage.value];});}
-function goalForm(goal){editingGoal=clone(goal);const c=db.catalog.characters.find(c=>c.id===goal.charId),w=goal.weapon,art=db['character-art']?.[c.id];
+async function goalForm(goal){cancelSearchRender();try{await ensurePlannerData();}catch(error){toast(error.message);throw error;}editingGoal=clone(goal);const c=db.catalog.characters.find(c=>c.id===goal.charId),w=goal.weapon,art=db['character-art']?.[c.id];
  openModal(`<header class="planner-hero"><img class="planner-banner${art?.bannerKind?' planner-banner--splash':''}" style="--banner-position:${h(art?.bannerPosition||'50% 45%')}" src="${h(art?.banner||c.image)}" alt=""><div class="planner-identity"><img class="planner-avatar" src="${h(art?.icon||c.image)}" alt="${h(c.name)}"><div><span class="eyebrow">PLANEJAR EVOLUÇÃO</span><h2 id="modal-title">${h(c.name)}</h2><p>${h(c.element)} · ${weaponLabel(c.weapon)} <span class="planner-stars">${'★'.repeat(c.rarity)}</span></p></div></div>${button(icon('close'),'close','aria-label="Fechar janela"','icon-button planner-close')}</header><form id="goal-form"><div class="sequence-bar"><div><strong>Cadeia de Ressonância</strong><span>Cópias extras do personagem</span></div><div class="sequence-options" role="radiogroup" aria-label="Cópias extras do personagem">${Array.from({length:7},(_,i)=>`<label title="${i} cópias extras"><input type="radio" name="sequence" value="${i}" ${(goal.sequence??0)===i?'checked':''}><span>S${i}</span></label>`).join('')}</div></div><div class="planner-tabs" role="tablist" aria-label="Etapas de evolução">${[['level','Nível'],['forte','Fortes'],['weapon','Arma']].map(([key,label],i)=>`<button type="button" role="tab" id="planner-tab-${key}" data-planner-tab="${key}" aria-controls="planner-panel-${key}" aria-selected="${i===0}" tabindex="${i===0?0:-1}"><img src="./assets/planner-icons/${key}.png" alt="">${label}</button>`).join('')}</div><div class="modal-content planner-content"><section id="planner-panel-level" data-planner-panel="level" role="tabpanel" aria-labelledby="planner-tab-level">${c.sharedProgress?'<p class="notice">O Rover compartilha nível e ascensão entre os elementos. Esses custos entram uma vez, por prioridade; os Fortes são separados.</p>':''}<div class="form-section-heading"><h3>Até onde vamos evoluir?</h3><span class="muted">Atual → Meta</span></div><div class="form-columns">${progressFields('current',goal.current,'Estado atual')}${progressFields('target',goal.target,'Meta desejada')}</div><p class="footnote">Digite ou escolha o nível. Nos limites de ascensão, clique no símbolo ao lado: apagado = antes de ascender; aceso = depois.</p>
  </section><section id="planner-panel-forte" data-planner-panel="forte" role="tabpanel" aria-labelledby="planner-tab-forte" hidden>${forteTree(goal,db['character-fortes']?.[c.id])}</section>
  <section id="planner-panel-weapon" data-planner-panel="weapon" role="tabpanel" aria-labelledby="planner-tab-weapon" hidden><div class="form-section-heading"><h3>Prepare sua arma</h3><span class="muted">${weaponLabel(c.weapon)}</span></div>${weaponGrid(db.catalog.weapons.filter(item=>item.type===c.weapon),w?.id,db['weapon-stats'])}<div id="weapon-info"></div><div id="weapon-progress" class="form-columns">${progressFields('weapon-current',w?.current||{level:1,ascension:0,xp:0},'Arma atual',db.catalog.weapons.find(x=>x.id===w?.id))}${progressFields('weapon-target',w?.target||{level:20,ascension:0,xp:0},'Meta da arma',db.catalog.weapons.find(x=>x.id===w?.id))}</div></section>
@@ -233,7 +246,7 @@ document.addEventListener('input',e=>{
  const el=e.target;if(el.closest('#settings-form')){settingsDraft=Object.fromEntries(new FormData(el.form));return;}if(el.closest('#goal-form')){if(!el.dataset.goalStock)updateGoalPreview();return;}
  if(el.id==='backup-text'){pendingImport=null;const preview=document.querySelector('#import-preview');if(preview)preview.innerHTML='';}
  if(el.id==='picker-search'){const query=el.value.trim().toLowerCase();let count=0;modal.querySelectorAll('.picker-character').forEach(button=>{button.hidden=!button.textContent.toLowerCase().includes(query);if(!button.hidden)count++;});modal.querySelector('#picker-empty').hidden=count>0;return;}
- if(el.dataset.filter==='search'){search=el.value;render(true);return;}
+ if(el.dataset.filter==='search'){search=el.value;scheduleSearchRender();return;}
 
 });
 document.addEventListener('change',e=>{const el=e.target;
@@ -284,9 +297,9 @@ function temporalTick(){return locked(()=>{
 }).catch(error=>{showConflict();toast(error.message);});}
 async function boot(){
  try{
-  const names=['catalog','rules','sources','recipes','events','character-art','weapon-stats','character-fortes'],loaded=await Promise.all(names.map(async name=>{const response=await fetch(`./data/${name}.json`);if(!response.ok)throw Error('Não foi possível carregar '+name);return response.json();}));db=Object.fromEntries(names.map((name,i)=>[name,loaded[i]]));db.events=validateEventCatalog(db.events);for(const c of db.catalog.characters)c.imageHighRes=db['character-art']?.[c.id]?.card;
+  const names=['catalog','rules','recipes','events','character-art'],loaded=await Promise.all(names.map(async name=>{const response=await fetch(`./data/${name}.json`);if(!response.ok)throw Error('Não foi possível carregar '+name);return response.json();}));db=Object.fromEntries(names.map((name,i)=>[name,loaded[i]]));db.events=validateEventCatalog(db.events);for(const c of db.catalog.characters)c.imageHighRes=db['character-art']?.[c.id]?.card;
   await locked(()=>{const storage=getStorage(window),loadedState=loadState(storage,db);loadWarning=loadedState.warning||'';store=new Store(loadedState.state,db,storage);refreshWeekly();if(loadWarning)store.saveError=loadWarning;});route=nav.some(([key])=>key===location.hash.slice(1))?location.hash.slice(1):'summary';render();if(loadWarning)toast(loadWarning);
-  registerPlannerTools({characters:db.catalog.characters,readPlan:()=>({goals:state().goals.map(g=>({id:g.id,character:g.charId,currentLevel:g.current.level,targetLevel:g.target.level,done:g.done})),materials:allocate(state().goals,state().inventory,db).totals}),startGoal:characterId=>{if(!db.catalog.characters.some(c=>c.id===characterId))throw Error('Personagem fora do catálogo.');goalForm(state().goals.find(g=>g.charId===characterId)||newGoal(characterId,id()));return {opened:true,characterId,saved:false};}});
+  registerPlannerTools({characters:db.catalog.characters,readPlan:()=>({goals:state().goals.map(g=>({id:g.id,character:g.charId,currentLevel:g.current.level,targetLevel:g.target.level,done:g.done})),materials:allocate(state().goals,state().inventory,db).totals}),startGoal:async characterId=>{if(!db.catalog.characters.some(c=>c.id===characterId))throw Error('Personagem fora do catálogo.');await goalForm(state().goals.find(g=>g.charId===characterId)||newGoal(characterId,id()));return {opened:true,characterId,saved:false};}});
   setInterval(temporalTick,60000);
  }catch(error){app.innerHTML=`<main class="boot-error"><h1>O terminal não carregou.</h1><p>${h(error.message)}</p><p>Abra a aplicação pelo servidor local; arquivos ES Modules não funcionam diretamente via file://.</p><button onclick="location.reload()">Tentar novamente</button></main>`;}
 }

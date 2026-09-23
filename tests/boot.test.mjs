@@ -10,27 +10,34 @@ import * as time from '../src/time.js';
 import * as ui from '../src/ui.js';
 import * as forms from '../src/forms.js';
 import * as official from '../src/official-events.js';
+import * as progress from '../src/progress-input.js';
+import * as forteProgress from '../src/forte-progress.js';
 
 test('the actual app boots and accepts inventory edits when the storage getter throws',async()=>{
- let clock=Date.now(),renderCount=0,html='';const timers=[];
+ let clock=Date.now(),renderCount=0,html='';const timers=[],timeouts=new Map(),fetches=[];let timeoutId=0,plannerTools,failPlanner=false,releasePlanner;let plannerGate=Promise.resolve();const windowListeners=new Map();
  const ClockDate=class extends Date{constructor(...args){super(...(args.length?args:[clock]));}static now(){return clock;}};
  const listeners=new Map(),app={get innerHTML(){return html;},set innerHTML(value){html=value;renderCount++;},querySelectorAll:()=>[]};
  const toast={textContent:'',classList:{add(){},remove(){}}};
  const modalListeners=new Map();
  const modal={open:false,addEventListener(name,fn){modalListeners.set(name,fn);},close(){this.open=false;},showModal(){this.open=true;},querySelector(){return null;},classList:{toggle(){}}};
  const elements={'#app':app,'#modal':modal,'#toast':toast};
- const window={addEventListener(){},get localStorage(){throw new DOMException('Blocked','SecurityError');}};
+ const window={addEventListener(name,fn){windowListeners.set(name,fn);},scrollTo(){},get localStorage(){throw new DOMException('Blocked','SecurityError');}};
  const context=vm.createContext({
-  ...farmRates,...materials,...engine,...state,...time,...ui,...forms,...official,h:ui.escape,window,navigator:{},location:{hash:''},
-  document:{querySelector:key=>elements[key]||null,querySelectorAll:()=>[],addEventListener:(name,fn)=>{if(name!=='click'||!listeners.has(name))listeners.set(name,fn);},activeElement:null},
-  registerPlannerTools(){},structuredClone,Intl,URL,crypto,Date:ClockDate,
+  ...progress,...forteProgress,...farmRates,...materials,...engine,...state,...time,...ui,...forms,...official,h:ui.escape,window,navigator:{},location:{hash:''},
+  document:{getElementById:id=>elements['#'+id]||null,querySelector:key=>elements[key]||null,querySelectorAll:()=>[],addEventListener:(name,fn)=>{if(name!=='click'||!listeners.has(name))listeners.set(name,fn);},activeElement:null},
+  registerPlannerTools(tools){plannerTools=tools;},structuredClone,Intl,URL,crypto,Date:ClockDate,
   eventStatus:(e,now=clock)=>time.eventStatus(e,now),countdown:(end,now=clock)=>time.countdown(end,now),
   officialEvents:(catalog,server,now=clock)=>official.officialEvents(catalog,server,now),
   eventCycle:(e,now=clock)=>official.eventCycle(e,now),isEventCompleted:(s,e,now=clock)=>official.isEventCompleted(s,e,now),
   setEventCompleted:(s,c,id,done,now=clock)=>official.setEventCompleted(s,c,id,done,now),
-  setInterval(fn,delay){timers.push({fn,delay});},setTimeout(){},clearTimeout(){},
-  fetch:async path=>({ok:true,json:async()=>JSON.parse(await readFile(new URL(`../${path}`,import.meta.url),'utf8'))})
+  setInterval(fn,delay){timers.push({fn,delay});},setTimeout(fn,delay){const id=++timeoutId;timeouts.set(id,{fn,delay});return id;},clearTimeout(id){timeouts.delete(id);},
+  fetch:async path=>{fetches.push(path);if(/character-fortes|weapon-stats/.test(path)){await plannerGate;if(failPlanner&&path.includes('character-fortes'))return {ok:false};}return {ok:true,json:async()=>JSON.parse(await readFile(new URL(`../${path}`,import.meta.url),'utf8'))};}
  });
+ // Use the real planner renderers, keeping their DOM listeners outside this boot test.
+ for(const [file,exports] of [['level-picker',['levelField','skillField']],['forte-tree',['forteTree']],['weapon-grid',['weaponGrid']]]){
+  const code=(await readFile(new URL('../src/'+file+'.js',import.meta.url),'utf8')).replace(/^import .*;\r?\n/gm,'').replace(/export function /g,'function ');
+  Object.assign(context,vm.runInContext(`((document,window)=>{${code};return {${exports.join(',')}};})({addEventListener(){}},{addEventListener(){}})`,context));
+ }
  // Run the real boot and event handlers with only browser I/O replaced.
  const source=(await readFile(new URL('../src/app.js',import.meta.url),'utf8'))
   .replace(/^import .*;\r?\n/gm,'').replace(/boot\(\);\s*$/,'globalThis.bootResult=boot();');
@@ -38,6 +45,10 @@ test('the actual app boots and accepts inventory edits when the storage getter t
  assert.match(app.innerHTML,/Seu próximo avanço/);
  assert.match(app.innerHTML,/Armazenamento indisponível/);
  assert.doesNotMatch(app.innerHTML,/boot-error/);
+ assert.deepEqual(fetches.map(p=>p.split('/').at(-1)).sort(),['catalog.json','character-art.json','events.json','recipes.json','rules.json']);
+ for(const page of ['summary','characters','inventory','farm','events','settings'])vm.runInContext(`route='${page}';render();`,context);
+ assert.equal(fetches.length,5,'all main pages work without planner data');
+ vm.runInContext("route='summary';render();",context);
  const beforeTyping=app.innerHTML;
  const stockInput={closest:()=>null,dataset:{stock:'shell'},value:'',valueAsNumber:0,setCustomValidity(){},reportValidity(){}};
  const historyBefore=vm.runInContext('store.history.length',context);
@@ -206,6 +217,52 @@ test('the actual app boots and accepts inventory edits when the storage getter t
   assert.match(app.innerHTML,/data-official-event="rescheduled"[^>]*disabled/);
   assert.equal(vm.runInContext('state().eventCompletions.rescheduled',context),completion);
  }
+
+ // A failed planner request must not replace the working app or poison retries.
+ vm.runInContext('closeModal()',context);
+ const beforeFailure=app.innerHTML;
+ failPlanner=true;
+ await assert.rejects(plannerTools.startGoal('jinhsi'),/Não foi possível carregar/);
+ assert.equal(modal.open,false);assert.equal(app.innerHTML,beforeFailure);
+ assert.doesNotMatch(app.innerHTML,/boot-error/);assert.match(toast.textContent,/Não foi possível carregar/);
+ failPlanner=false;
+ plannerGate=new Promise(resolve=>{releasePlanner=resolve;});
+ const first=plannerTools.startGoal('jinhsi'),second=vm.runInContext("actions.add({dataset:{id:'jiyan'}})",context);
+ await new Promise(resolve=>setImmediate(resolve));
+ assert.equal(fetches.filter(p=>p.includes('character-fortes')).length,2,'one failed request plus one shared retry');
+ assert.equal(fetches.filter(p=>p.includes('weapon-stats')).length,1,'successful or pending dataset is reused');
+ assert.equal(modal.open,false);
+ releasePlanner();const [opened]=await Promise.all([first,second]);assert.equal(opened.opened,true);assert.equal(opened.saved,false);assert.equal(opened.characterId,'jinhsi');
+ assert.equal(modal.open,true);assert.match(modal.innerHTML,/id="goal-form"/);
+ const cached=vm.runInContext("db['character-fortes']",context),requests=fetches.length;
+ await plannerTools.startGoal('jinhsi');
+ vm.runInContext("store.commit({...state(),goals:[newGoal('jinhsi','lazy-edit')]});",context);
+ await vm.runInContext("actions.edit({dataset:{id:'lazy-edit'}})",context);
+ await vm.runInContext("actions['edit-char']({dataset:{id:'jinhsi'}})",context);
+ assert.equal(vm.runInContext("db['character-fortes']",context),cached);assert.equal(fetches.length,requests);
+ vm.runInContext('closeModal()',context);
+ // Only the last rapid search renders, preserving focus and selection.
+ vm.runInContext("route='characters';search='';render();",context);
+ const searchInput={id:'search',type:'search',tagName:'INPUT',dataset:{filter:'search'},value:'',selectionStart:2,selectionEnd:4,selectionDirection:'backward',closest:()=>null,focus(){context.document.activeElement=this;},setSelectionRange(...args){this.selection=args;}};
+ elements['#search']=searchInput;context.document.activeElement=searchInput;
+ const beforeSearch=renderCount;
+ for(const value of ['a','ae','aem','aeme','aemeath']){searchInput.value=value;listeners.get('input')({target:searchInput});}
+ assert.equal(renderCount,beforeSearch);assert.equal(vm.runInContext('search',context),'aemeath');
+ const pendingSearch=[...timeouts.values()].filter(t=>t.delay===125);assert.equal(pendingSearch.length,1);
+ pendingSearch[0].fn();assert.equal(renderCount,beforeSearch+1);assert.match(app.innerHTML,/value="aemeath"/);
+ assert.equal(context.document.activeElement,searchInput);assert.deepEqual(searchInput.selection,[2,4,'backward']);
+ assert.equal(vm.runInContext('filteredCharacters().length',context),1);
+ listeners.get('input')({target:searchInput});
+ context.location.hash='#inventory';windowListeners.get('hashchange')();
+ assert.equal([...timeouts.values()].filter(t=>t.delay===125).length,0);
+ const afterNavigation=renderCount;for(const t of timeouts.values())if(t.delay===125)t.fn();assert.equal(renderCount,afterNavigation);
+ vm.runInContext("route='characters';search='';render();",context);
+ searchInput.value='JIN';listeners.get('input')({target:searchInput});
+ listeners.get('change')({target:{dataset:{filter:'element'},value:'Spectro',closest:()=>null}});await new Promise(resolve=>setImmediate(resolve));
+ assert.equal([...timeouts.values()].filter(t=>t.delay===125).length,0);
+ assert.equal(vm.runInContext("filteredCharacters().map(c=>c.id).join(',')",context),'jinhsi');
+ listeners.get('input')({target:searchInput});vm.runInContext('choose()',context);
+ assert.equal([...timeouts.values()].filter(t=>t.delay===125).length,0);
 
 });
 
