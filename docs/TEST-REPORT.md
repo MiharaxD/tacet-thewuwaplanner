@@ -1,4 +1,39 @@
-# Verificação executada
+# Verificação atual — manutenção Fase 3 (23/09/2026)
+
+- Catálogo local: **57 personagens/formas, 120 armas e 153 materiais**, contados em `data/catalog.json`.
+- Antes e depois da manutenção: `npm test` — **110 testes aprovados, zero falhas**; `npm run build` — aprovado.
+- A suíte cobre cálculos, backups antigos, inventário/Undo, eventos oficiais e recorrentes, integração Resumo ↔ Eventos, timer sem reconstrução global e limpeza de build.
+- Os fluxos de app são exercitados com interfaces de navegador simuladas em `tests/boot.test.mjs`. As sessões de navegador descritas abaixo são históricas e **não foram repetidas nesta fase**.
+
+## Auditoria de código e CSS
+
+| Item | Classificação e decisão |
+| --- | --- |
+| `events` e `settings.yields` | B: mantidos para validação, importação, exportação e compatibilidade do estado v1. |
+| `claimRewards`, `readEventRewards`, `rewardSlots` | B/conservador: helpers legados ainda cobertos por testes de recompensas e eventos importados; mantidos. Não fazem parte da UI atual de eventos oficiais. |
+| `serverDateToISO` | A (testes): conversão de fuso explicitamente testada; mantida. |
+| `restoreSettingsDraft` | A: chamado pela renderização atual; mantido. |
+| `isoToServerInput` | C: somente definição, sem chamadas/imports em src, scripts ou testes; removido de time.js. |
+
+CSS removido: regras de `.stats`, `.agenda-preview`, `.mini-event`, `.event-card` e `.event-completion`, inclusive variantes responsivas e combinações antigas de conclusão. Nenhuma dessas classes é gerada pela interface atual. Mantidos `.event-row`, `.event-check` e `.event-is-complete` atuais. A primeira regra de `.events-list` foi removida porque todas as suas propriedades eram sobrescritas pela regra posterior de mesma especificidade.
+
+## Assets otimizados
+
+Nomes, formatos e caminhos preservados; transparência RGBA dos ícones preservada. Artes e banners não foram alterados. Logo com até cerca de 210 px na navegação: arquivo de 640 px; ícones de abas de 27 px e favicon/ícone de evento: arquivos de 128 px para HiDPI.
+
+| Arquivo em assets/ | Dimensões antes → depois | Bytes antes → depois |
+| --- | --- | --- |
+| logo.png | 1926×816 → 640×271 | 1.255.975 → 161.562 |
+| favicon.webp | 768×768 → 128×128 | 282.588 → 7.762 |
+| planner-icons/level.png | 1254×1254 → 128×128 | 643.462 → 12.645 |
+| planner-icons/forte.png | 1254×1254 → 128×128 | 356.257 → 8.154 |
+| planner-icons/weapon.png | 1254×1254 → 128×128 | 288.937 → 6.254 |
+
+Total de assets: **73.973.844 → 71.343.002 bytes** (aproximadamente 70,55 → 68,04 MiB). Economia: **2.630.842 bytes (2,51 MiB)**. Comparação dos arquivos no tamanho de exibição e decodificação verificadas; nenhuma imagem removida.
+
+---
+
+# Histórico de verificações — 15/09/2026
 
 Data: 15/09/2026. Ambiente Windows, Node.js 24, navegador integrado com JavaScript e API Playwright. A aplicação usa JavaScript puro; não foi instalado Vitest nem um pacote independente de Playwright.
 
@@ -36,7 +71,7 @@ Cobertura:
 
 ## Limites da verificação
 
-Não foi feita auditoria formal WCAG, teste com leitor de tela, teste de todos os navegadores/dispositivos ou validação do catálogo inteiro do jogo. O catálogo local contém seis personagens e quatro armas. Bloqueios de fontes, regras não verificadas, eventos pessoais e limites das estimativas estão descritos em `DATA.md` e no README. Os testes verificam os cálculos para as tabelas locais; não certificam que futuras atualizações do jogo mantenham esses valores.
+Não foi feita auditoria formal WCAG, teste com leitor de tela, teste de todos os navegadores/dispositivos ou validação do catálogo inteiro do jogo. Naquela verificação inicial, o catálogo continha seis personagens e quatro armas; esses números são históricos. Bloqueios de fontes, regras não verificadas, eventos pessoais e limites das estimativas estão descritos em `DATA.md` e no README. Os testes verificam os cálculos para as tabelas locais; não certificam que futuras atualizações do jogo mantenham esses valores.
 
 ## Regressões de persistência e formulários
 

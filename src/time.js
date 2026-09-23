@@ -18,6 +18,5 @@ export function serverDateToISO(value,offset){
  if(!Number.isFinite(raw)||new Date(raw).toISOString().slice(0,16)!==value)throw Error('Data inválida.');
  return new Date(raw-offset*3600000).toISOString();
 }
-export function isoToServerInput(value,offset){return new Date(Date.parse(value)+offset*3600000).toISOString().slice(0,16);}
 export function dayKey(value,zone){return new Intl.DateTimeFormat('en-CA',{timeZone:zone,year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date(value));}
 export function formatDate(value,zone){return new Intl.DateTimeFormat('pt-BR',{timeZone:zone,dateStyle:'short',timeStyle:'short'}).format(new Date(value));}

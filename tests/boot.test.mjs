@@ -12,7 +12,9 @@ import * as forms from '../src/forms.js';
 import * as official from '../src/official-events.js';
 
 test('the actual app boots and accepts inventory edits when the storage getter throws',async()=>{
- const listeners=new Map(),app={innerHTML:'',querySelectorAll:()=>[]};
+ let clock=Date.now(),renderCount=0,html='';const timers=[];
+ const ClockDate=class extends Date{constructor(...args){super(...(args.length?args:[clock]));}static now(){return clock;}};
+ const listeners=new Map(),app={get innerHTML(){return html;},set innerHTML(value){html=value;renderCount++;},querySelectorAll:()=>[]};
  const toast={textContent:'',classList:{add(){},remove(){}}};
  const modalListeners=new Map();
  const modal={open:false,addEventListener(name,fn){modalListeners.set(name,fn);},close(){this.open=false;},showModal(){this.open=true;},querySelector(){return null;},classList:{toggle(){}}};
@@ -21,8 +23,12 @@ test('the actual app boots and accepts inventory edits when the storage getter t
  const context=vm.createContext({
   ...farmRates,...materials,...engine,...state,...time,...ui,...forms,...official,h:ui.escape,window,navigator:{},location:{hash:''},
   document:{querySelector:key=>elements[key]||null,querySelectorAll:()=>[],addEventListener:(name,fn)=>{if(name!=='click'||!listeners.has(name))listeners.set(name,fn);},activeElement:null},
-  registerPlannerTools(){},structuredClone,Intl,URL,crypto,
-  setInterval(){},setTimeout(){},clearTimeout(){},
+  registerPlannerTools(){},structuredClone,Intl,URL,crypto,Date:ClockDate,
+  eventStatus:(e,now=clock)=>time.eventStatus(e,now),countdown:(end,now=clock)=>time.countdown(end,now),
+  officialEvents:(catalog,server,now=clock)=>official.officialEvents(catalog,server,now),
+  eventCycle:(e,now=clock)=>official.eventCycle(e,now),isEventCompleted:(s,e,now=clock)=>official.isEventCompleted(s,e,now),
+  setEventCompleted:(s,c,id,done,now=clock)=>official.setEventCompleted(s,c,id,done,now),
+  setInterval(fn,delay){timers.push({fn,delay});},setTimeout(){},clearTimeout(){},
   fetch:async path=>({ok:true,json:async()=>JSON.parse(await readFile(new URL(`../${path}`,import.meta.url),'utf8'))})
  });
  // Run the real boot and event handlers with only browser I/O replaced.
@@ -133,6 +139,40 @@ test('the actual app boots and accepts inventory edits when the storage getter t
   assert.equal(vm.runInContext('state().inventory.shell',context),123);assert.equal(popup.opened,false);
   await clickAction('undo');await clickAction('undo');assert.equal(vm.runInContext('state().goals[0].id',context),'goal-farm-test');
   assert.equal(vm.runInContext('JSON.stringify(state().inventory)',context),inventoryBeforeDelete);
+ // Exercise the actual periodic callback with a controllable clock.
+ assert.equal(timers.length,1);assert.equal(timers[0].delay,60000);
+ clock=Date.parse('2026-09-21T12:00:00Z');
+ vm.runInContext(`db.events={version:1,events:[
+ {id:'cycle',title:'Evento recorrente',type:'recurring',permanent:true,start:'2020-01-01T00:00:00Z',reset:{anchor:'2026-09-21T12:00:00Z',everyHours:1}},
+ {id:'future',title:'Evento futuro',start:'2026-09-21T12:30:00Z',end:'2026-09-21T14:00:00Z'}]};
+ store.commit({...state(),eventCompletions:{cycle:new Date().toISOString()}});refreshWeekly();route='summary';render();`,context);
+ assert.doesNotMatch(app.innerHTML,/No seu radar|agenda-preview|Evento recorrente|completed-events/);
+ assert.equal((app.innerHTML.match(/data-official-event="future"/g)||[]).length,1);
+ const resetText={textContent:''},eventText={dataset:{eventCountdown:'future'},textContent:''};
+ context.document.querySelectorAll=selector=>selector==='[data-reset-countdown]'?[resetText]:selector==='[data-event-countdown]'?[eventText]:[];
+ const focused={tagName:'INPUT',id:'editing-stock'};context.document.activeElement=focused;
+ modal.open=true;modal.innerHTML='Preserve modal contents';
+ let beforeTick=renderCount;
+ clock+=60000;await timers[0].fn();
+ assert.equal(renderCount,beforeTick,'ordinary tick must not replace app.innerHTML');
+ assert.equal(eventText.textContent,'Começa em 0h 29min');
+ assert.equal(resetText.textContent,time.countdown(new Date(time.nextReset(clock,vm.runInContext('db.rules.servers[state().settings.server]',context))).toISOString(),clock)+' · America');
+ assert.equal(context.document.activeElement,focused);assert.equal(modal.open,true);assert.equal(modal.innerHTML,'Preserve modal contents');
+ context.document.activeElement=null;modal.open=false;
+ clock+=60000;await timers[0].fn();assert.equal(renderCount,beforeTick,'idle ticks also avoid rebuilding cards and details');
+ assert.equal(eventText.textContent,'Começa em 0h 28min');
+ clock=Date.parse('2026-09-21T12:30:00Z');await timers[0].fn();
+ assert.equal(renderCount,++beforeTick,'future becoming active renders once');assert.match(app.innerHTML,/data-official-event="future"/);assert.doesNotMatch(app.innerHTML,/Começa em/);
+ clock=Date.parse('2026-09-21T13:00:00Z');await timers[0].fn();
+ assert.equal(renderCount,++beforeTick,'cycle renewal renders once');assert.match(app.innerHTML,/data-official-event="cycle"/);assert.doesNotMatch(app.innerHTML,/completed-events/);
+ await timers[0].fn();assert.equal(renderCount,beforeTick,'same boundary is not rendered twice');
+ clock=Date.parse('2026-09-21T14:00:00Z');await timers[0].fn();
+ assert.equal(renderCount,++beforeTick,'simultaneous cycle and event expiry use one render');assert.doesNotMatch(app.innerHTML,/Evento futuro/);
+ vm.runInContext(`store.commit({...state(),settings:{...state().settings,weeklyClaimsUsed:3}});render();`,context);
+ beforeTick=renderCount;clock=Date.parse('2026-09-28T12:00:00Z');await timers[0].fn();
+ assert.equal(renderCount,beforeTick+1);assert.equal(vm.runInContext('state().settings.weeklyClaimsUsed',context),0);
+ await timers[0].fn();assert.equal(renderCount,beforeTick+1);
+
 });
 
 

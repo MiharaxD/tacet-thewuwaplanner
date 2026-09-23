@@ -15,7 +15,7 @@ import {registerPlannerTools} from './webmcp.js';
 
 const app=document.querySelector('#app'),modal=document.querySelector('#modal');
 let db,store,plan,loadWarning='',route='summary',search='',element='',weaponFilter='',category='',usedOnly=false,eventView='list',eventMonth=new Date(),editingGoal=null,pendingImport=null,toastTimer;
-let settingsDraft=null;
+let settingsDraft=null,renderedTimeKey=null;
 const locked=action=>withStorageLock(navigator.locks,action);
 function showConflict(){
  if(!store?.conflicted||document.querySelector('#storage-conflict'))return;
@@ -59,7 +59,6 @@ function summary(){
  <div class="dashboard-grid"><div class="dashboard-main"><div class="section-heading"><h2>${state().goals.length?'Suas metas de evolução':'Escolha seu primeiro Resonator'}</h2><a href="#characters">Ver ressonantes ${icon('arrow')}</a></div>${state().goals.length?`<div class="goal-list">${state().goals.map(goalCard).join('')}</div>`:`<p class="section-intro">Escolha um personagem para definir sua meta de evolução.</p><div class="characters-grid home-characters">${db.catalog.characters.slice(0,3).map(characterCard).join('')}</div><div class="onboarding"><span>01 <strong>Defina sua meta</strong></span><span>02 <strong>Informe seu estoque</strong></span><span>03 <strong>Veja o que farmar</strong></span></div>`}
  <div class="section-heading"><h2>Visão dos materiais</h2><a href="#inventory">Abrir inventário ${icon('arrow')}</a></div><section class="panel">${materialTable(plan.itemTotals.slice(0,6),db,{compactView:true})}${rows.length>6?'<a class="panel-footer" href="#farm">Ver todos os materiais →</a>':''}</section></div>
  <aside class="dashboard-aside"><section class="focus-panel"><div class="eyebrow">${icon('farm')} PRÓXIMA PRIORIDADE</div><h2>${c?h(c.name):'Prepare o próximo passo'}</h2><p>${c?'Consulte os materiais restantes desta etapa e a reserva por prioridade.':'Seu plano de farm aparece aqui assim que você adicionar uma meta.'}</p>${missing.length?`<ul class="priority-list">${missing.slice(0,3).map(row=>`<li><span>${h(materialMeta(row.id,db).name)}</span><strong>${compact(row.missing)}</strong></li>`).join('')}</ul>`:''}<a class="focus-link" href="${c?'#farm':'#characters'}">${c?'Organizar meu farm':'Escolher personagem'} ${icon('arrow')}</a></section>
- <section class="panel agenda-preview"><div class="section-heading"><h2>No seu radar</h2>${icon('events')}</div>${pendingEvents.slice(0,3).map(e=>`<a class="mini-event" href="#events"><span>${h(e.title)}</span><small>${eventTimeLabel(e)}</small></a>`).join('')||'<p class="muted">Nenhum evento agendado.<br>Novos eventos aparecerão aqui quando forem publicados.</p>'}<a class="text-link" href="#events">Abrir agenda →</a></section>
  </aside></div>`;
 }
 function characters(){return topHeader('Ressonantes','Escolha quem vai receber seus próximos materiais.',button(icon('plus')+' Nova meta','choose','','primary'))+
@@ -95,14 +94,14 @@ function farm(){
  <div class="section-heading"><h2>Distribuição completa</h2></div><section class="panel">${materialTable(plan.itemTotals,db)}</section><p class="footnote">¹ Disponível nesta visão: estoque total. Em uma meta: saldo antes de atender aquela prioridade. Progresso é a média de cobertura por recurso, sem misturar unidades com créditos.</p>`;
 }
 function publishedEvents(){return officialEvents(db.events,state().settings.server);}
-function eventTimeLabel(e){
- const status=eventStatus(e);if(status==='Encerrado')return 'Encerrado';
- if(status==='Futuro')return 'Começa em '+countdown(e.start);
- if(e.type==='recurring')return 'Reset em '+countdown(new Date(eventCycle(e).end).toISOString());
- return e.permanent?'Permanente':countdown(e.end);
+function eventTimeLabel(e,now=Date.now()){
+ const status=eventStatus(e,now);if(status==='Encerrado')return 'Encerrado';
+ if(status==='Futuro')return 'Começa em '+countdown(e.start,now);
+ if(e.type==='recurring')return 'Reset em '+countdown(new Date(eventCycle(e,now).end).toISOString(),now);
+ return e.permanent?'Permanente':countdown(e.end,now);
 }
 function eventCard(e){const status=eventStatus(e),done=isEventCompleted(state(),e),cycle=eventCycle(e),deadline=status==='Futuro'?e.start:Number.isFinite(cycle.end)?new Date(cycle.end).toISOString():null;
- return `<article class="event-row ${done?'event-is-complete':''}"><div class="event-row-main"><label class="event-check" title="${done?'Marcar como pendente':'Marcar como concluído'}"><input type="checkbox" aria-label="Concluí este evento: ${h(e.title)}" data-official-event="${h(e.id)}" ${done?'checked':''}><span aria-hidden="true">✓</span></label>${e.icon?`<img class="event-row-icon" src="${h(e.icon)}" alt="">`:''}<h3>${h(e.title)}</h3><span class="event-row-time" title="${deadline?(status==='Futuro'?'Começa':e.type==='recurring'?'Próximo reset':'Termina')+': '+formatDate(deadline,state().settings.timeZone):'Evento permanente'}">${eventTimeLabel(e)}</span></div>${e.banners?.length?`<div class="event-banner-images">${e.banners.map(b=>`<figure><img src="${h(b.image)}" alt="${h(b.name)}" loading="lazy"><figcaption>${h(b.name)}</figcaption></figure>`).join('')}</div>`:''}</article>`;
+ return `<article class="event-row ${done?'event-is-complete':''}"><div class="event-row-main"><label class="event-check" title="${done?'Marcar como pendente':'Marcar como concluído'}"><input type="checkbox" aria-label="Concluí este evento: ${h(e.title)}" data-official-event="${h(e.id)}" ${done?'checked':''}><span aria-hidden="true">✓</span></label>${e.icon?`<img class="event-row-icon" src="${h(e.icon)}" alt="">`:''}<h3>${h(e.title)}</h3><span class="event-row-time" data-event-countdown="${h(e.id)}" title="${deadline?(status==='Futuro'?'Começa':e.type==='recurring'?'Próximo reset':'Termina')+': '+formatDate(deadline,state().settings.timeZone):'Evento permanente'}">${eventTimeLabel(e)}</span></div>${e.banners?.length?`<div class="event-banner-images">${e.banners.map(b=>`<figure><img src="${h(b.image)}" alt="${h(b.name)}" loading="lazy"><figcaption>${h(b.name)}</figcaption></figure>`).join('')}</div>`:''}</article>`;
 }
 function eventList(items){const pending=items.filter(e=>!isEventCompleted(state(),e)&&eventStatus(e)!=='Encerrado'),done=items.filter(e=>isEventCompleted(state(),e));return `<div class="events-list">${pending.map(eventCard).join('')||'<p class="muted">Tudo concluído por aqui.</p>'}</div>${done.length?`<details class="completed-events"><summary>Eventos completos (${done.length})</summary><div class="events-list">${done.map(eventCard).join('')}</div></details>`:''}`;}
 function calendar(){
@@ -122,11 +121,12 @@ function settings(){return topHeader('Seu terminal','Ajuste o planejamento ao se
  `;}
 
 function render(preserve=false){
+ renderedTimeKey=temporalKey();
  const previousIndicator=document.querySelector('.nav-indicator')?.getBoundingClientRect();
  const focus=preserve?document.activeElement?.id:null,selection=preserve&&document.activeElement?.type==='search'?document.activeElement.selectionStart:null;
  plan=allocate(state().goals,state().inventory,db);
  const daily=nextReset(Date.now(),db.rules.servers[state().settings.server]);
- app.innerHTML=`<aside class="sidebar"><a class="brand" href="#summary" aria-label="Tacet, resumo"><img src="./assets/logo.png" width="1927" height="816" alt="Tacet"></a><div class="sidebar-label">SEU TERMINAL</div><nav aria-label="Navegação principal">${nav.map(([key,label])=>`<a href="#${key}" class="${route===key?'active':''}" ${route===key?'aria-current="page"':''}>${navigationIcon(key)}<span>${label}</span>${key==='characters'&&state().goals.length?`<b>${state().goals.length}</b>`:''}</a>`).join('')}</nav><div class="sidebar-bottom"><div class="server-status">${icon('clock')}<div>Próximo reset<small>${countdown(new Date(daily).toISOString())} · ${state().settings.server}</small></div></div><div class="local-status">${icon('check')} ${store.saveError?'Falha ao salvar':'Salvo neste dispositivo'}</div><span class="version">TACET / v1.0 · FAN PROJECT</span></div></aside>
+ app.innerHTML=`<aside class="sidebar"><a class="brand" href="#summary" aria-label="Tacet, resumo"><img src="./assets/logo.png" width="1927" height="816" alt="Tacet"></a><div class="sidebar-label">SEU TERMINAL</div><nav aria-label="Navegação principal">${nav.map(([key,label])=>`<a href="#${key}" class="${route===key?'active':''}" ${route===key?'aria-current="page"':''}>${navigationIcon(key)}<span>${label}</span>${key==='characters'&&state().goals.length?`<b>${state().goals.length}</b>`:''}</a>`).join('')}</nav><div class="sidebar-bottom"><div class="server-status">${icon('clock')}<div>Próximo reset<small data-reset-countdown>${countdown(new Date(daily).toISOString())} · ${state().settings.server}</small></div></div><div class="local-status">${icon('check')} ${store.saveError?'Falha ao salvar':'Salvo neste dispositivo'}</div><span class="version">TACET / v1.0 · FAN PROJECT</span></div></aside>
  <div class="workspace"><header class="topbar"><a class="mobile-brand" href="#summary" aria-label="Tacet, resumo"><img src="./assets/logo.png" width="1927" height="816" alt="Tacet"></a><div class="breadcrumb">Terminal <span>/</span> <strong>${nav.find(n=>n[0]===route)?.[1]}</strong></div><div class="topbar-right">${button(icon('undo'),'undo',`aria-label="Desfazer última alteração" ${store.history.length?'':'disabled'}`,'icon-button')}<a class="union-badge" href="#settings">UL ${state().settings.unionLevel}</a><span class="avatar">R</span></div></header><main id="main" tabindex="-1">${store.saveError&&!store.conflicted?`<div class="notice error" role="alert">${h(store.saveError)}</div>`:''}${({summary,characters,inventory,farm,events,settings}[route]||summary)()}</main><footer class="page-footer"><span>Feito com carinho por Yuri Mihara e meu amigo Gepeto</span></footer></div>`;
  restoreSettingsDraft(document.querySelector('#settings-form'),settingsDraft);
  showConflict();
@@ -252,12 +252,37 @@ window.addEventListener('hashchange',()=>{route=nav.some(([key])=>key===location
 window.addEventListener('storage',e=>{if(!store)return;store.observeStorage(e);showConflict();});
 modal.addEventListener('click',e=>{if(e.target===modal){const r=modal.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)closeModal();}});
 function refreshWeekly(){const next=new Date(nextReset(Date.now(),db.rules.servers[state().settings.server],true)).toISOString();if(state().settings.weeklyPeriod!==next){store.assertWritable();const updated=clone(state());updated.settings.weeklyClaimsUsed=0;updated.settings.weeklyPeriod=next;store.state=updated;store.persist();}}
+// Track only temporal boundaries that can change the rendered structure.
+function temporalKey(now=Date.now()){
+ const cfg=state().settings,offset=db.rules.servers[cfg.server];
+ return JSON.stringify([nextReset(now,offset),cfg.weeklyPeriod,
+  route==='events'&&eventView==='calendar'?dayKey(now,cfg.timeZone):null,
+  officialEvents(db.events,cfg.server,now).map(e=>[e.id,eventStatus(e,now),
+   e.type==='recurring'&&eventStatus(e,now)==='Ativo'?eventCycle(e,now).start:null,
+   isEventCompleted(state(),e,now)])]);
+}
+function updateCountdowns(now=Date.now()){
+ const cfg=state().settings,reset=new Date(nextReset(now,db.rules.servers[cfg.server])).toISOString();
+ document.querySelectorAll('[data-reset-countdown]').forEach(el=>{el.textContent=countdown(reset,now)+' · '+cfg.server;});
+ document.querySelectorAll('[data-event-countdown]').forEach(el=>{
+  const event=db.events.events.find(e=>e.id===el.dataset.eventCountdown);
+  if(event)el.textContent=eventTimeLabel(event,now);
+ });
+}
+function temporalTick(){return locked(()=>{
+ if(store.conflicted){showConflict();return;}
+ refreshWeekly();
+ const now=Date.now(),changed=temporalKey(now)!==renderedTimeKey;
+ // Defer structural changes while editing; the unchanged key keeps them pending.
+ if(changed&&!modal.open&&!['INPUT','TEXTAREA','SELECT'].includes(document.activeElement?.tagName))render();
+ else updateCountdowns(now);
+}).catch(error=>{showConflict();toast(error.message);});}
 async function boot(){
  try{
   const names=['catalog','rules','sources','recipes','events','character-art','weapon-stats','character-fortes'],loaded=await Promise.all(names.map(async name=>{const response=await fetch(`./data/${name}.json`);if(!response.ok)throw Error('Não foi possível carregar '+name);return response.json();}));db=Object.fromEntries(names.map((name,i)=>[name,loaded[i]]));db.events=validateEventCatalog(db.events);for(const c of db.catalog.characters)c.imageHighRes=db['character-art']?.[c.id]?.card;
   await locked(()=>{const storage=getStorage(window),loadedState=loadState(storage,db);loadWarning=loadedState.warning||'';store=new Store(loadedState.state,db,storage);refreshWeekly();if(loadWarning)store.saveError=loadWarning;});route=nav.some(([key])=>key===location.hash.slice(1))?location.hash.slice(1):'summary';render();if(loadWarning)toast(loadWarning);
   registerPlannerTools({characters:db.catalog.characters,readPlan:()=>({goals:state().goals.map(g=>({id:g.id,character:g.charId,currentLevel:g.current.level,targetLevel:g.target.level,done:g.done})),materials:allocate(state().goals,state().inventory,db).totals}),startGoal:characterId=>{if(!db.catalog.characters.some(c=>c.id===characterId))throw Error('Personagem fora do catálogo.');goalForm(state().goals.find(g=>g.charId===characterId)||newGoal(characterId,id()));return {opened:true,characterId,saved:false};}});
-  setInterval(()=>{if(modal.open||['INPUT','TEXTAREA','SELECT'].includes(document.activeElement?.tagName))return;locked(()=>{if(store.conflicted){showConflict();return;}refreshWeekly();render();}).catch(error=>{showConflict();toast(error.message);});},60000);
+  setInterval(temporalTick,60000);
  }catch(error){app.innerHTML=`<main class="boot-error"><h1>O terminal não carregou.</h1><p>${h(error.message)}</p><p>Abra a aplicação pelo servidor local; arquivos ES Modules não funcionam diretamente via file://.</p><button onclick="location.reload()">Tentar novamente</button></main>`;}
 }
 
