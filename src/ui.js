@@ -1,6 +1,6 @@
 import {sortMaterials} from './materials.js';
 export const escape=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const ELEMENT_LABELS={Fusion:'Térmico',Glacio:'Criogênico',Aero:'Pneumático',Electro:'Voltaico',Spectro:'Espectro',Havoc:'Aniquilante'};
+const ELEMENT_LABELS={Fusion:'Térmico',Glacio:'Criogênico',Aero:'Pneumático',Electro:'Voltaico',Spectro:'Fotônico',Havoc:'Aniquilante'};
 export const elementLabel=value=>Object.hasOwn(ELEMENT_LABELS,value)?ELEMENT_LABELS[value]:value;
 export const characterLabel=c=>c.name.replace(/^Rover \(([^)]+)\)$/,(_,element)=>`Rover (${elementLabel(element)})`);
 export const characterSearchText=c=>[c.name,characterLabel(c),c.element,elementLabel(c.element)].join(' ').toLowerCase();

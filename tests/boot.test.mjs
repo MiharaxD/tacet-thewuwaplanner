@@ -266,7 +266,7 @@ test('the actual app boots and accepts inventory edits when the storage getter t
 
  // Element labels are presentation-only across filters, cards, goals and planner.
  vm.runInContext("closeModal();route='characters';search='';element='';render();",context);
- const labels={Fusion:'Térmico',Glacio:'Criogênico',Aero:'Pneumático',Electro:'Voltaico',Spectro:'Espectro',Havoc:'Aniquilante'};
+ const labels={Fusion:'Térmico',Glacio:'Criogênico',Aero:'Pneumático',Electro:'Voltaico',Spectro:'Fotônico',Havoc:'Aniquilante'};
  for(const [canonical,label] of Object.entries(labels)){
   assert.match(app.innerHTML,new RegExp('<option value="'+canonical+'"[^>]*>'+label+'</option>'));
   assert.match(app.innerHTML,new RegExp('badge element">'+label+'</span>'));

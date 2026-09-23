@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {elementLabel,characterLabel,characterSearchText} from '../src/ui.js';
 
 test('element presentation translates all canonical values and preserves unrelated names',()=>{
- const labels={Fusion:'Térmico',Glacio:'Criogênico',Aero:'Pneumático',Electro:'Voltaico',Spectro:'Espectro',Havoc:'Aniquilante'};
+ const labels={Fusion:'Térmico',Glacio:'Criogênico',Aero:'Pneumático',Electro:'Voltaico',Spectro:'Fotônico',Havoc:'Aniquilante'};
  for(const [element,label] of Object.entries(labels)){
   assert.equal(elementLabel(element),label);
   const c={name:`Rover (${element})`,element};
