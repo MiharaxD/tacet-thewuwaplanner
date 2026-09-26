@@ -12,6 +12,7 @@ import { eventStatus, countdown, nextReset, formatDate, dayKey } from './time.js
 import { elementLabel, characterLabel, characterSearchText, escape as h, fmt, compact, icon, button, badge, empty, bar, portrait, weaponLabel, materialMeta, materialIcon, materialTable } from './ui.js';
 import { restoreSettingsDraft } from './forms.js';
 import { registerPlannerTools } from './webmcp.js';
+import { Analytics } from "@vercel/analytics/next";
 
 const app = document.querySelector('#app'), modal = document.querySelector('#modal');
 let db, store, plan, loadWarning = '', route = 'summary', search = '', element = '', weaponFilter = '', category = '', usedOnly = false, eventView = 'list', eventMonth = null, eventMonthZone = null, editingGoal = null, pendingImport = null, toastTimer;
