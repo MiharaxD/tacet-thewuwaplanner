@@ -1,4 +1,5 @@
 const validInstant=value=>typeof value==='string'&&/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(?::\d{2}(?:\.\d{1,3})?)?(Z|[+-]\d{2}:\d{2})$/.test(value)&&Number.isFinite(Date.parse(value));
+const resetIntervalMs=reset=>Object.hasOwn(reset,'everyDays')?reset.everyDays*86400000:reset.everyHours*3600000;
 export function validateEventCatalog(catalog){
  if(!catalog||catalog.version!==1||!Array.isArray(catalog.events)||catalog.events.length>500)throw Error('Catálogo de eventos inválido.');
  const ids=new Set();
@@ -9,7 +10,10 @@ export function validateEventCatalog(catalog){
   if(event.icon!==undefined&&!imageOK(event.icon))throw Error('Ícone de evento inválido. Use assets/ ou HTTPS.');
   if(event.type!==undefined&&!['event','banner','recurring'].includes(event.type))throw Error('Tipo de evento inválido.');
   if(event.banners!==undefined&&(!Array.isArray(event.banners)||event.banners.length>20||event.banners.some(b=>!b||!imageOK(b.image)||typeof b.name!=='string'||!b.name.trim()||b.name.length>120)))throw Error('Imagens de banner inválidas.');
-  if(event.type==='recurring'&&(!event.reset||!validInstant(event.reset.anchor)||!Number.isFinite(event.reset.everyHours)||event.reset.everyHours<1||event.reset.everyHours>87600))throw Error('Informe a referência e o intervalo de reset em horas.');
+  if(event.type==='recurring'){
+   const reset=event.reset,days=reset&&Object.hasOwn(reset,'everyDays');
+   if(!reset||!validInstant(reset.anchor)||Object.hasOwn(reset,'everyHours')===days||!Number.isFinite(days?reset.everyDays:reset.everyHours)||(days?reset.everyDays<=0:reset.everyHours<1)||resetIntervalMs(reset)>87600*3600000)throw Error('Informe a referência e um intervalo de reset em horas ou dias.');
+  }
   ids.add(event.id);return {...event,title:event.title.trim()};
  })};
 }
@@ -26,7 +30,7 @@ export function eventDuration(event){
 export function eventCycle(event,now=Date.now()){
  const start=Date.parse(event.start),end=event.permanent?Infinity:Date.parse(event.end);
  if(event.type!=='recurring')return {start,end};
- const anchor=Date.parse(event.reset.anchor),interval=event.reset.everyHours*3600000;
+ const anchor=Date.parse(event.reset.anchor),interval=resetIntervalMs(event.reset);
  const boundary=anchor+Math.floor((now-anchor)/interval)*interval;
  return {start:Math.max(start,boundary),end:Math.min(end,boundary+interval)};
 }

@@ -131,3 +131,47 @@ test('future events cannot be completed until their start, including recurring e
   }
  }
 });
+
+test('40-day recurring cycles match 960 hours and reset completion at the boundary',()=>{
+ const start='2026-10-01T04:00:00-03:00',anchor=Date.parse(start),day=86400000;
+ const recurring={id:'endgame',title:'Endgame',type:'recurring',start,permanent:true,reset:{anchor:start,everyDays:40}};
+ const hourly={...recurring,reset:{anchor:start,everyHours:960}};
+ const data={version:1,events:[recurring]};
+ assert.deepEqual(validateEventCatalog(data).events[0],recurring);
+ for(const elapsed of [0,20,39,40,80,40000]){
+  const now=anchor+elapsed*day;
+  assert.deepEqual(eventCycle(recurring,now),eventCycle(hourly,now));
+ }
+ assert.deepEqual(eventCycle(recurring,anchor+20*day),{start:anchor,end:anchor+40*day});
+ assert.deepEqual(eventCycle(recurring,anchor+40*day),{start:anchor+40*day,end:anchor+80*day});
+ assert.deepEqual(eventCycle(recurring,anchor+80*day),{start:anchor+80*day,end:anchor+120*day});
+ const completed=setEventCompleted(defaultState(),data,recurring.id,true,anchor+20*day);
+ assert.equal(isEventCompleted(completed,recurring,anchor+39*day),true);
+ assert.equal(isEventCompleted(completed,recurring,anchor+40*day-1),true);
+ assert.equal(isEventCompleted(completed,recurring,anchor+40*day),false);
+ const again=setEventCompleted(completed,data,recurring.id,true,anchor+40*day);
+ assert.equal(isEventCompleted(again,recurring,anchor+40*day),true);
+ assert.equal(isEventCompleted(again,recurring,anchor+80*day),false);
+});
+
+test('finite day-based recurrence truncates its final cycle at the event end',()=>{
+ const start='2026-10-01T04:00:00-03:00',anchor=Date.parse(start),day=86400000;
+ const recurring={id:'finite-endgame',title:'Endgame temporário',type:'recurring',start,end:new Date(anchor+85*day).toISOString(),reset:{anchor:start,everyDays:40}};
+ assert.deepEqual(validateEventCatalog({version:1,events:[recurring]}).events[0],recurring);
+ assert.deepEqual(eventCycle(recurring,anchor+79*day),{start:anchor+40*day,end:anchor+80*day});
+ assert.deepEqual(eventCycle(recurring,anchor+82*day),{start:anchor+80*day,end:anchor+85*day});
+ assert.equal(eventStatus(recurring,anchor+85*day),'Encerrado');
+});
+
+test('recurrence accepts exactly one valid hours or days interval up to the existing ten-year limit',()=>{
+ const start='2026-10-01T04:00:00-03:00';
+ const entry={id:'interval-test',title:'Intervalo',type:'recurring',start,permanent:true,reset:{anchor:start,everyHours:168}};
+ const valid=res=>assert.doesNotThrow(()=>validateEventCatalog({version:1,events:[{...entry,reset:{anchor:start,...res}}]}));
+ const invalid=res=>assert.throws(()=>validateEventCatalog({version:1,events:[{...entry,reset:{anchor:start,...res}}]}));
+ for(const everyHours of [1,24,168,960,87600])valid({everyHours});
+ for(const everyDays of [0.1,7,14,30,40,42,45,60,90,120,365,3650])valid({everyDays});
+ for(const reset of [{},{everyHours:24,everyDays:40},{everyHours:undefined},{everyDays:undefined},
+  {everyHours:0},{everyHours:87601},{everyDays:0},{everyDays:-1},{everyDays:3651},
+  {everyHours:NaN},{everyHours:Infinity},{everyHours:'24'},{everyDays:NaN},{everyDays:Infinity},{everyDays:'40'}])invalid(reset);
+ assert.throws(()=>validateEventCatalog({version:1,events:[{...entry,reset:{anchor:'2026-10-01T04:00:00',everyDays:40}}]}));
+});

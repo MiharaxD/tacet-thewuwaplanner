@@ -58,6 +58,42 @@
           "image": "assets/eventos/convene/starfieldcalibrator.webp"
         }
       ]
+    },
+    {
+      "id": "torredaadversidade",
+      "type": "recurring",
+      "title": "Torre da adversidade",
+      "icon": "assets/eventos/adversity.svg",
+      "start": "2026-09-13T04:17:00-03:00",
+      "reset": {
+        "anchor": "2026-09-13T04:17:00-03:00",
+        "everyDays": 28
+      },
+      "permanent": true
+    },
+    {
+      "id": "matrizdeestadofinal",
+      "type": "recurring",
+      "title": "Matriz de Estado Final",
+      "icon": "assets/eventos/matriz.svg",
+      "start": "2026-08-19T04:23:00-03:00",
+      "reset": {
+        "anchor": "2026-08-19T04:23:00-03:00",
+        "everyDays": 42
+      },
+      "permanent": true
+    },
+    {
+      "id": "whimperingwastes",
+      "type": "recurring",
+      "title": "Whimpering Wastes",
+      "icon": "assets/eventos/whimperingwastes.svg",
+      "start": "2026-08-30T04:17:00-03:00",
+      "reset": {
+        "anchor": "2026-08-30T04:17:00-03:00",
+        "everyDays": 28
+      },
+      "permanent": true
     }
   ]
 }
