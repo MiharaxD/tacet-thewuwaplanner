@@ -148,6 +148,11 @@ const imported = [];
     imported.push({ ...previous, id, name, element: identity.element.text, weapon: identity.weapon.text, rarity: identity.rarity, enemy, forgery, flower, boss, weekly, image: assetUrl(`assets/characters/icons/${id}.webp`), sources: [...new Set([...(previous?.sources || []), sourceId, 'wuwa-akademiya'])], ascensionVerified: true, forteVerified: true, ...(folder === 'Rover' ? { ascension, sharedProgress: 'rover' } : {}) });
   }
 }
+for (const character of imported) {
+  const art = content.art[character.id];
+  if (!art?.icon || !art?.card || !art?.banner)
+    throw Error(`Novo personagem ${character.name} não possui art configurada em content/characters/${character.id}.json.`);
+}
 catalog.characters = imported.sort((a,b) => a.name.localeCompare(b.name, 'en'));
 for (const m of catalog.materials) await material(m.name, m.category);
 catalog.consultedAt = reference.consultedAt;

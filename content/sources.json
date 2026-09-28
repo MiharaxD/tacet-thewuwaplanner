@@ -1746,8 +1746,9 @@
   {
     "id": "synthesis-purification",
     "url": "https://wutheringwaves.fandom.com/wiki/Synthesis",
-    "title": "Synthesis · Purification",
+    "scope": "Síntese · Purification",
     "consultedAt": "2026-09-17",
-    "notes": "3 materiais de raridade inferior para 1 da próxima raridade, dentro da mesma família."
+    "gameVersion": null,
+    "note": "3 materiais de raridade inferior para 1 da próxima raridade, dentro da mesma família."
   }
 ]

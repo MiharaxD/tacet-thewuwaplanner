@@ -1,7 +1,10 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { readFile } from 'node:fs/promises';
-import { loadContent, runtimeData, validateContent, checkRuntimeData } from '../scripts/lib/content.mjs';
+import { access, readFile } from 'node:fs/promises';
+import { fileURLToPath } from 'node:url';
+import { loadContent, runtimeData, validateContent, checkRuntimeData, writeCuratedContent } from '../scripts/lib/content.mjs';
+
+const root = fileURLToPath(new URL('../', import.meta.url));
 
 test('content compiles to the committed runtime data without losing fields or order', async () => {
   const content = await loadContent();
@@ -29,4 +32,54 @@ test('content validation rejects duplicate IDs and missing source references', a
   const missingSource = structuredClone(original);
   missingSource.catalog.characters[0].sources.push('missing-source');
   await assert.rejects(validateContent(missingSource), /fonte inexistente/);
+});
+
+test('sources use the documented schema, including the purification source', async () => {
+  const original = await loadContent();
+  await validateContent(original);
+  const purification = original.sources.find(source => source.id === 'synthesis-purification');
+  assert.equal(purification.scope, 'Síntese · Purification');
+  assert.equal(typeof purification.note, 'string');
+  assert.equal(purification.gameVersion, null);
+  assert.equal('title' in purification, false);
+  assert.equal('notes' in purification, false);
+  const noScope = structuredClone(original);
+  delete noScope.sources[0].scope;
+  await assert.rejects(validateContent(noScope), /schema inválido/);
+  const oldNotes = structuredClone(original);
+  delete oldNotes.sources[0].note;
+  oldNotes.sources[0].notes = 'old field';
+  await assert.rejects(validateContent(oldNotes), /schema inválido/);
+  const invalidDate = structuredClone(original);
+  invalidDate.sources[0].consultedAt = '2026-02-31';
+  await assert.rejects(validateContent(invalidDate), /schema inválido/);
+});
+
+test('purification recipes are derived without changing the runtime recipes', async () => {
+  const content = await loadContent();
+  const compiled = runtimeData(content).recipes;
+  const saved = JSON.parse(await readFile('data/recipes.json', 'utf8'));
+  assert.ok(content.recipes.length > 0);
+  assert.ok(content.recipes.every(recipe => !recipe.id.startsWith('purify-')));
+  assert.ok(compiled.some(recipe => recipe.id.startsWith('purify-')));
+  assert.deepEqual(compiled, saved);
+  assert.equal(JSON.stringify(runtimeData(content).recipes), JSON.stringify(compiled));
+  const missingSource = structuredClone(content);
+  missingSource.sources = missingSource.sources.filter(source => source.id !== 'synthesis-purification');
+  await assert.rejects(validateContent(missingSource), /synthesis-purification/);
+});
+
+test('curated writes reject new characters without art and stale files before changing content', async () => {
+  const original = await loadContent(root);
+  const before = await readFile(`${root}/content/manifest.json`, 'utf8');
+  const missingArt = structuredClone(original);
+  missingArt.catalog.characters.push({ ...missingArt.catalog.characters[0], id: 'novo-ressonante' });
+  await assert.rejects(writeCuratedContent(missingArt, root), /não possui art configurada/);
+  await assert.rejects(access(`${root}/content/characters/novo-ressonante.json`), { code: 'ENOENT' });
+  assert.equal(await readFile(`${root}/content/manifest.json`, 'utf8'), before);
+  const stale = structuredClone(original);
+  stale.catalog.characters = stale.catalog.characters.filter(row => row.id !== 'aalto');
+  delete stale.art.aalto;
+  await assert.rejects(writeCuratedContent(stale, root), /obsoletos.*aalto\.json/);
+  assert.equal(await readFile(`${root}/content/manifest.json`, 'utf8'), before);
 });

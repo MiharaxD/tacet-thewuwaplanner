@@ -35,7 +35,7 @@ As listas de ascensão/Forte são custos **por etapa**, nunca totais cumulativos
 
 - Uma imagem residual na página de Jinhsi indicava Gloom Slough; a página dedicada e a confirmação Game8 indicam Loong Pearl. O catálogo usa Loong Pearl e registra a divergência.
 - Os desbloqueios de passivas usam `unlockCosts` e `unlockAscensions` de `data/rules.json`. Se faltar uma entrada ou material vinculado, o cálculo gera `missingData` e bloqueia a conclusão.
-- Só duas receitas de síntese foram verificadas: LF → MF Howler/Whisperin, proporção 3:1. Não há conversões inversas, equivalências genéricas nem supostos custos adicionais.
+- Duas receitas base (LF → MF Howler/Whisperin) são curadas individualmente em `content/recipes.json`. O compilador deriva conversões Purification 3:1 para famílias válidas de Forja e Inimigos. Não há conversões inversas nem custos adicionais presumidos.
 - As estimativas de Farm usam médias padrão por atividade, independentes do Nível de União. Custos de energia das atividades são separados dos drops reais, que podem variar.
 - A estimativa semanal informa o limite compartilhado de três resgates; o número de dias calculado por energia não modela completamente o bloqueio por semanas.
 - Não há preenchimento com recompensas ou datas fictícias. Recompensas pessoais são sempre identificadas como informadas pelo jogador.
@@ -47,17 +47,17 @@ As listas de ascensão/Forte são custos **por etapa**, nunca totais cumulativos
 3. Identifique se cada tabela é incremental ou acumulada. Confira um intervalo curto e um total completo independentemente do motor.
 4. Defina os indicadores `ascensionVerified`/`forteVerified` somente quando a tabela e o vínculo dos materiais estiverem confirmados. Para dados não disponíveis, mantenha o indicador falso.
 5. Execute `npm run catalog`, `npm run data:check`, `npm test` e `npm run build`.
-6. Recarregue o site e teste uma meta nova. Se a forma do estado mudar, incremente o formato e implemente migração em `src/state.js` antes de publicar.
+6. Recarregue o site e teste uma meta nova. Se a forma do estado mudar, incremente o formato e implemente migração em `src/storage/state.js` antes de publicar.
 
 Use `npm run catalog:refresh` para atualizar `content/` a partir das fontes externas e brutas e depois compilar `data/`. A geração normal com `npm run catalog` não consulta a rede. A importação exige quatro raridades por família, valida as seis etapas de ascensão e rejeita materiais sem imagem/referência. A exceção explícita da Jinhsi está documentada no importador. Os IDs originais e o formato de backup versão 1 foram preservados.
 
-Os desbloqueios das passivas são validados e calculados em `src/engine.js` com as tabelas de `data/rules.json`. Alterações nos custos exigem conferir essas tabelas e os vínculos de materiais do catálogo.
+Os desbloqueios das passivas são validados e calculados em `src/domain/engine.js` com as tabelas de `data/rules.json`. Alterações nos custos exigem conferir essas tabelas e os vínculos de materiais do catálogo.
 
 ## Eventos
 
 Os eventos publicados são cadastrados pelo desenvolvedor em `content/events.json`; `npm run catalog` gera `data/events.json`. Jogadores podem marcar ou desmarcar a conclusão. O backup mantém essas conclusões e os eventos pessoais legados, sem editar o catálogo publicado.
 
-`data/events.json` contém a agenda publicada pelo desenvolvedor. `src/official-events.js` valida os registros; a interface mostra eventos pendentes no Resumo e na aba Eventos, e guarda as conclusões do jogador separadamente em `eventCompletions`. Eventos recorrentes podem usar um `anchor` com `everyHours` ou `everyDays`, ou o reset diário/semanal do servidor definido em `data/rules.json`. Não existe atualização automática da agenda nem API pública presumida.
+`data/events.json` contém a agenda publicada pelo desenvolvedor. `src/domain/official-events.js` valida os registros; a interface mostra eventos pendentes no Resumo e na aba Eventos, e guarda as conclusões do jogador separadamente em `eventCompletions`. Eventos recorrentes podem usar um `anchor` com `everyHours` ou `everyDays`, ou o reset diário/semanal do servidor definido em `data/rules.json`. Não existe atualização automática da agenda nem API pública presumida.
 
 ## Retratos e ícones
 
