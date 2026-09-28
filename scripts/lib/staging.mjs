@@ -1,5 +1,34 @@
-import { cp, mkdir, mkdtemp, readdir, rename, rm } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
+import { cp, lstat, mkdir, mkdtemp, readFile, readlink, readdir, rename, rm } from 'node:fs/promises';
 import { basename, dirname, join, resolve } from 'node:path';
+
+export async function fingerprintPath(path) {
+  const hash = createHash('sha256');
+  const visit = async (current, relative) => {
+    let stat;
+    try { stat = await lstat(current); }
+    catch (error) {
+      if (error.code === 'ENOENT') {
+        hash.update(JSON.stringify(['missing', relative]));
+        return;
+      }
+      throw error;
+    }
+    if (stat.isDirectory()) {
+      hash.update(JSON.stringify(['directory', relative]));
+      const entries = (await readdir(current)).sort();
+      for (const name of entries) await visit(join(current, name), `${relative}/${name}`);
+    } else if (stat.isFile()) {
+      const bytes = await readFile(current);
+      hash.update(JSON.stringify(['file', relative, bytes.length]));
+      hash.update(bytes);
+    } else if (stat.isSymbolicLink()) {
+      hash.update(JSON.stringify(['symlink', relative, await readlink(current)]));
+    } else hash.update(JSON.stringify(['other', relative, stat.mode]));
+  };
+  await visit(path, '.');
+  return hash.digest('hex');
+}
 
 export async function removeOwnedTemp(path, parent, prefix) {
   if (dirname(resolve(path)) !== resolve(parent) || !basename(path).startsWith(prefix))

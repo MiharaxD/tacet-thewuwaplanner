@@ -21,4 +21,6 @@
 
 Depois de editar, execute `npm run catalog`, `npm run data:check`, `npm test` e `npm run build`. O build apenas verifica a sincronia; ele não reescreve `data/`.
 
+`npm run catalog:refresh` detecta alterações feitas no projeto durante a atualização e aborta antes de sobrescrever edições manuais; nesse caso, execute-o novamente.
+
 `data/character-fortes.json` e `data/weapon-stats.json` são caches produzidos pelos scripts de atualização, não fontes de edição manual. `source-assets/` guarda evidência bruta; `assets/` guarda imagens públicas. Nem `content/` nem `source-assets/` entram na publicação.
