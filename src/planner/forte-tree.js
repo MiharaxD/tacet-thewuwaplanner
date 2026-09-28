@@ -11,9 +11,9 @@ const generic=[
  '<path d="m13 2-7 11h5l-1 9 8-13h-5Z"/>', ''
 ];
 function symbol(column,passive=false){
- if(column===0&&!passive)return '<img src="./assets/forte-icons/normal.webp" alt="">';
- if(column===4&&!passive)return '<img src="./assets/forte-icons/intro.webp" alt="">';
- if(passive&&column!==2)return `<img src="./assets/forte-icons/${column===1||column===3?'attack':'stat'}.webp" alt="">`;
+ if(column===0&&!passive)return '<img src="./assets/ui/forte/normal.webp" alt="">';
+ if(column===4&&!passive)return '<img src="./assets/ui/forte/intro.webp" alt="">';
+ if(passive&&column!==2)return `<img src="./assets/ui/forte/${column===1||column===3?'attack':'stat'}.webp" alt="">`;
  return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true">${generic[column]}</svg>`;
 }
 export function forteTree(goal,data){

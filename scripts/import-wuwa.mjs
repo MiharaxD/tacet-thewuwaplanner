@@ -1,12 +1,14 @@
-import { readFile, readdir, writeFile, mkdir, access } from 'node:fs/promises';
+import { readFile, readdir, writeFile, mkdir, access, copyFile } from 'node:fs/promises';
 import { pageRecords } from './read-akademiya.mjs';
 
-const base = 'assets/WUWA Assets';
+const characterSource = 'source-assets/wuwa/characters';
+const materialSource = 'source-assets/wuwa/materials';
 const referencePath = 'scripts/wuwa-reference.json';
 const readJson = async path => JSON.parse(await readFile(path, 'utf8'));
 const norm = name => name.toLowerCase().replace(/[’']/g, '').replace(/[^a-z0-9]/g, '');
 const slug = name => name.toLowerCase().replace(/[’']/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const assetUrl = path => './' + path.split('/').map(encodeURIComponent).join('/');
+const sourceUrl = path => `https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/${path.split('/').map(encodeURIComponent).join('/')}`;
 const refresh = process.argv.includes('--refresh');
 let reference;
 if (refresh) {
@@ -28,7 +30,8 @@ putSource({ id: 'wuwa-materials', url: 'https://wuwa.akademiya.app/en/materials'
 const aliases = { 'Sound-Keeping Tacet Core': 'Sound', 'Gold-Dissolving Feather': 'Gold' };
 const remoteMaterial = name => reference.materials.find(m => norm(m.name) === norm(aliases[name] || name));
 const materialByName = name => catalog.materials.find(m => norm(m.name) === norm(name));
-const localImages = (await readdir(`${base}/Materials`)).filter(f => /\.(webp|png|jpg)$/i.test(f));
+const localImages = (await readdir(materialSource)).filter(f => /\.(webp|png|jpg)$/i.test(f));
+await mkdir('assets/materials', { recursive: true });
 const imageAliases = { 'Sentinel’s Dagger': "Sentine's Dagger", 'Sentinel\'s Dagger': "Sentine's Dagger", 'Unfading Glory': 'Unfanding Glory', "The Netherworld's Stare": "The Netheworld's Stare", 'LF Mech Core': 'LF Merch Core', 'MF Mech Core': 'MF Merch Core', 'HF Mech Core': 'HF Merch Core', 'FF Mech Core': 'FF Merch Core', ...aliases };
 const usedMaterials = new Map();
 async function material(name, category, preferredId) {
@@ -42,9 +45,11 @@ async function material(name, category, preferredId) {
   }
   if (!m.image) {
     const file = localImages.find(f => norm(f.replace(/\.[^.]+$/, '')) === norm(imageAliases[name] || name));
-    if (file) m.image = assetUrl(`${base}/Materials/${file}`);
-    else if (remote) {
-      const target = `assets/materials/${m.id}.webp`;
+    const target = `assets/materials/${m.id}.webp`;
+    if (file) {
+      try { await access(target); } catch { await copyFile(`${materialSource}/${file}`, target); }
+      m.image = assetUrl(target);
+    } else if (remote) {
       try { await access(target); } catch {
         if (!refresh) throw Error(`Missing image ${target}; run npm run catalog:refresh`);
         const response = await fetch(`https://static.nanoka.cc/assets/ww/${remote.icon}`);
@@ -89,9 +94,8 @@ async function family(rows, category) {
 }
 
 const imported = [];
-for (const folder of await readdir(base)) {
-  if (folder === 'Materials') continue;
-  const files = await readdir(`${base}/${folder}`);
+  for (const folder of await readdir(characterSource)) {
+  const files = await readdir(`${characterSource}/${folder}`);
   const image = files.find(f => /\.(webp|png)$/i.test(f));
   if (!image) throw Error(`Missing portrait in ${folder}`);
   const texts = files.filter(f => f.endsWith('.txt'));
@@ -99,7 +103,7 @@ for (const folder of await readdir(base)) {
   for (const file of texts.length ? texts : [null]) {
     let name, asc, forte, ranks, sourcePath;
     if (file) {
-      sourcePath = `${base}/${folder}/${file}`;
+      sourcePath = `${characterSource}/${folder}/${file}`;
       const text = await readFile(sourcePath, 'utf8');
       name = text.match(/Total Ascension Materials for (.+)/)[1].trim();
       asc = parseRows(section(text, 'Total Ascension Materials', 'Total Forte Materials'));
@@ -138,10 +142,10 @@ for (const folder of await readdir(base)) {
       }
     }
     const sourceId = `assets-${id}`;
-    putSource({ id: sourceId, url: file ? assetUrl(sourcePath) : sourcePath, scope: `${name}: materiais de ascensão e Forte`, consultedAt: reference.consultedAt, gameVersion: null, note: file ? 'Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus.' : 'Pasta original contém somente retrato. Materiais complementados pelo guia Game8; custos por etapa seguem a tabela compartilhada.' });
+    putSource({ id: sourceId, url: file ? sourceUrl(sourcePath) : sourcePath, scope: `${name}: materiais de ascensão e Forte`, consultedAt: reference.consultedAt, gameVersion: null, note: file ? 'Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus.' : 'Pasta original contém somente retrato. Materiais complementados pelo guia Game8; custos por etapa seguem a tabela compartilhada.' });
     const previous = catalog.characters.find(c => c.id === id);
     if (id === 'jinhsi') sources.find(s => s.id === sourceId).note = 'O resumo do texto e o catálogo original concordam: Howler Core, Elegy Tacet Core e Loong’s Pearl. A tabela por etapa foi colada de Roccia e foi descartada; preservada a tabela previamente conferida da Jinhsi.';
-    imported.push({ ...previous, id, name, element: identity.element.text, weapon: identity.weapon.text, rarity: identity.rarity, enemy, forgery, flower, boss, weekly, image: assetUrl(`${base}/${folder}/${image}`), sources: [...new Set([...(previous?.sources || []), sourceId, 'wuwa-akademiya'])], ascensionVerified: true, forteVerified: true, ...(folder === 'Rover' ? { ascension, sharedProgress: 'rover' } : {}) });
+    imported.push({ ...previous, id, name, element: identity.element.text, weapon: identity.weapon.text, rarity: identity.rarity, enemy, forgery, flower, boss, weekly, image: assetUrl(`assets/characters/icons/${id}.webp`), sources: [...new Set([...(previous?.sources || []), sourceId, 'wuwa-akademiya'])], ascensionVerified: true, forteVerified: true, ...(folder === 'Rover' ? { ascension, sharedProgress: 'rover' } : {}) });
   }
 }
 catalog.characters = imported.sort((a,b) => a.name.localeCompare(b.name, 'en'));

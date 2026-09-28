@@ -12,11 +12,14 @@ const fullGoal = id => {
 };
 
 test('every supplied character folder and Rover form has a usable catalog entry', async () => {
-  const root = new URL('../assets/WUWA%20Assets/', import.meta.url);
+  const root = new URL('../source-assets/wuwa/characters/', import.meta.url);
   for (const folder of await readdir(root)) {
-    if(folder==='Materials')continue;
-    const entries=db.catalog.characters.filter(c=>decodeURIComponent(c.image).includes(`/WUWA Assets/${folder}/`));
+    const prefix=`/source-assets/wuwa/characters/${encodeURIComponent(folder)}/`;
+    const entries=folder==='Luuk'
+      ? db.catalog.characters.filter(c=>c.id==='luuk-herssen')
+      : db.catalog.characters.filter(c=>c.sources.some(id=>db.sources.find(s=>s.id===id)?.url.includes(prefix)));
     assert.equal(entries.length,folder==='Rover'?3:1,folder);
+    for(const entry of entries)assert.equal(entry.image,`./assets/characters/icons/${entry.id}.webp`);
   }
   assert.equal(db.catalog.characters.length,57);
   assert.equal(new Set(db.catalog.characters.map(c=>c.id)).size,57);

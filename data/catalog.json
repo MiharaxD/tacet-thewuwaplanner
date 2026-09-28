@@ -13,7 +13,7 @@
       "flower": "wintry",
       "boss": "rock",
       "weekly": "bell",
-      "image": "./assets/WUWA%20Assets/Aalto/Aalto_Convene_Draw.webp",
+      "image": "./assets/characters/icons/aalto.webp",
       "sources": [
         "assets-aalto",
         "wuwa-akademiya"
@@ -32,7 +32,7 @@
       "flower": "moss-amber",
       "boss": "our-choice",
       "weekly": "gold-in-memory",
-      "image": "./assets/WUWA%20Assets/Aemeth/Aemeath_Convene_Draw.webp",
+      "image": "./assets/characters/icons/aemeath.webp",
       "sources": [
         "assets-aemeath",
         "wuwa-akademiya"
@@ -51,7 +51,7 @@
       "flower": "luminous-calendula",
       "boss": "blighted-crown-of-puppet-king",
       "weekly": "when-irises-bloom",
-      "image": "./assets/WUWA%20Assets/Augusta/Augusta_Convene_Draw.webp",
+      "image": "./assets/characters/icons/augusta.webp",
       "sources": [
         "assets-augusta",
         "wuwa-akademiya"
@@ -70,7 +70,7 @@
       "flower": "lanternberry",
       "boss": "sound",
       "weekly": "bell",
-      "image": "./assets/WUWA%20Assets/Baizhi/Baizhi_Convene_Draw.webp",
+      "image": "./assets/characters/icons/baizhi.webp",
       "sources": [
         "assets-baizhi",
         "wuwa-akademiya"
@@ -89,7 +89,7 @@
       "flower": "golden-fleece",
       "boss": "blazing-bone",
       "weekly": "the-netherworlds-stare",
-      "image": "./assets/WUWA%20Assets/Brant/Brant_Convene_Draw.webp",
+      "image": "./assets/characters/icons/brant.webp",
       "sources": [
         "assets-brant",
         "wuwa-akademiya"
@@ -108,7 +108,7 @@
       "flower": "pecok",
       "boss": "blighted-crown-of-puppet-king",
       "weekly": "curse-of-the-abyss",
-      "image": "./assets/WUWA%20Assets/Bulling/Buling_Convene_Draw.webp",
+      "image": "./assets/characters/icons/buling.webp",
       "sources": [
         "assets-buling",
         "wuwa-akademiya"
@@ -127,7 +127,7 @@
       "flower": "iris",
       "boss": "thundering-tacet-core",
       "weekly": "bell",
-      "image": "./assets/WUWA%20Assets/Calcharo/Calcharo_Convene_Draw.webp",
+      "image": "./assets/characters/icons/calcharo.webp",
       "sources": [
         "assets-calcharo",
         "wuwa-akademiya"
@@ -146,7 +146,7 @@
       "flower": "nova",
       "boss": "topological-confinement",
       "weekly": "feather",
-      "image": "./assets/WUWA%20Assets/Camellya/Camellya_Convene_Draw.webp",
+      "image": "./assets/characters/icons/camellya.webp",
       "sources": [
         "assets-camellya",
         "wuwa-akademiya"
@@ -165,7 +165,7 @@
       "flower": "seaside-cendrelis",
       "boss": "cleansing-conch",
       "weekly": "when-irises-bloom",
-      "image": "./assets/WUWA%20Assets/Cantarella/Cantarella_Convene_Draw.webp",
+      "image": "./assets/characters/icons/cantarella.webp",
       "sources": [
         "assets-cantarella",
         "wuwa-akademiya"
@@ -184,7 +184,7 @@
       "flower": "sword-acorus",
       "boss": "platinum-core",
       "weekly": "the-netherworlds-stare",
-      "image": "./assets/WUWA%20Assets/Carlotta/Carlotta.webp",
+      "image": "./assets/characters/icons/carlotta.webp",
       "sources": [
         "assets-carlotta",
         "wuwa-akademiya"
@@ -203,7 +203,7 @@
       "flower": "bamboo-iris",
       "boss": "unfading-glory",
       "weekly": "when-irises-bloom",
-      "image": "./assets/WUWA%20Assets/Cartethyia/Cartethyia_Convene_Draw.webp",
+      "image": "./assets/characters/icons/cartethyia.webp",
       "sources": [
         "assets-cartethyia",
         "wuwa-akademiya"
@@ -222,7 +222,7 @@
       "flower": "pavo-plum",
       "boss": "rage",
       "weekly": "dagger",
-      "image": "./assets/WUWA%20Assets/Changli/Changli_Convene_Draw.webp",
+      "image": "./assets/characters/icons/changli.webp",
       "sources": [
         "assets-changli",
         "wuwa-akademiya"
@@ -241,7 +241,7 @@
       "flower": "summer-flower",
       "boss": "abyssal-husk",
       "weekly": "when-irises-bloom",
-      "image": "./assets/WUWA%20Assets/Chisa/Chisa_Convene_Draw.webp",
+      "image": "./assets/characters/icons/chisa.webp",
       "sources": [
         "assets-chisa",
         "wuwa-akademiya"
@@ -260,7 +260,7 @@
       "flower": "poppy",
       "boss": "rage",
       "weekly": "bell",
-      "image": "./assets/WUWA%20Assets/Chixia/Chixia_Convene_Draw.webp",
+      "image": "./assets/characters/icons/chixia.webp",
       "sources": [
         "assets-chixia",
         "wuwa-akademiya"
@@ -279,7 +279,7 @@
       "flower": "golden-fleece",
       "boss": "blazing-bone",
       "weekly": "when-irises-bloom",
-      "image": "./assets/WUWA%20Assets/Ciaccona/Ciaccona_Convene_Draw.webp",
+      "image": "./assets/characters/icons/ciaccona.webp",
       "sources": [
         "assets-ciaccona",
         "wuwa-akademiya"
@@ -298,7 +298,7 @@
       "flower": "poppy",
       "boss": "strife-tacet-core",
       "weekly": "feather",
-      "image": "./assets/WUWA%20Assets/Danjin/Danjin_Convene_Draw.webp",
+      "image": "./assets/characters/icons/danjin.webp",
       "sources": [
         "assets-danjin",
         "wuwa-akademiya"
@@ -317,7 +317,7 @@
       "flower": "dream-of-stars",
       "boss": "burning-judgment",
       "weekly": "we-who-question",
-      "image": "./assets/WUWA%20Assets/Denia/Denia_Convene_Draw.webp",
+      "image": "./assets/characters/icons/denia.webp",
       "sources": [
         "assets-denia",
         "wuwa-akademiya"
@@ -336,7 +336,7 @@
       "flower": "pecok",
       "boss": "rage",
       "weekly": "destruction",
-      "image": "./assets/WUWA%20Assets/Encore/Encore.webp",
+      "image": "./assets/characters/icons/encore.webp",
       "sources": [
         "encore",
         "encore-cost",
@@ -357,7 +357,7 @@
       "flower": "stone-rose",
       "boss": "blighted-crown-of-puppet-king",
       "weekly": "curse-of-the-abyss",
-      "image": "./assets/WUWA%20Assets/Galbrena/Galbrena_Convene_Draw.webp",
+      "image": "./assets/characters/icons/galbrena.webp",
       "sources": [
         "assets-galbrena",
         "wuwa-akademiya"
@@ -376,7 +376,7 @@
       "flower": "redbell",
       "boss": "our-choice",
       "weekly": "we-who-question",
-      "image": "./assets/WUWA%20Assets/Hiyuki/Hiyuki_Convene_Draw.webp",
+      "image": "./assets/characters/icons/hiyuki.webp",
       "sources": [
         "assets-hiyuki",
         "wuwa-akademiya"
@@ -395,7 +395,7 @@
       "flower": "sliverglow-bloom",
       "boss": "abyssal-husk",
       "weekly": "the-netherworlds-stare",
-      "image": "./assets/WUWA%20Assets/Iuno/Iuno_Convene_Draw.webp",
+      "image": "./assets/characters/icons/iuno.webp",
       "sources": [
         "assets-iuno",
         "wuwa-akademiya"
@@ -414,7 +414,7 @@
       "flower": "lanternberry",
       "boss": "rock",
       "weekly": "destruction",
-      "image": "./assets/WUWA%20Assets/Jianxin/Jianxin_Convene_Draw.webp",
+      "image": "./assets/characters/icons/jianxin.webp",
       "sources": [
         "assets-jianxin",
         "wuwa-akademiya"
@@ -433,7 +433,7 @@
       "flower": "cloudperch-seed",
       "boss": "forged-empyreans-sigh",
       "weekly": "skyward-glazed-heart",
-      "image": "./assets/WUWA%20Assets/Jingran/Resonator_Jingran.webp",
+      "image": "./assets/characters/icons/jingran.webp",
       "sources": [
         "assets-jingran",
         "wuwa-akademiya"
@@ -452,7 +452,7 @@
       "flower": "pearl",
       "boss": "elegy",
       "weekly": "dagger",
-      "image": "./assets/WUWA%20Assets/Jinhsi/Jinhsi_Convene_Draw.webp",
+      "image": "./assets/characters/icons/jinhsi.webp",
       "sources": [
         "jinhsi",
         "jinhsi-cost",
@@ -473,7 +473,7 @@
       "flower": "pecok",
       "boss": "rock",
       "weekly": "bell",
-      "image": "./assets/WUWA%20Assets/Jiyan/Jiyan_Convene_Draw.webp",
+      "image": "./assets/characters/icons/jiyan.webp",
       "sources": [
         "jiyan",
         "jiyan-cost",
@@ -494,7 +494,7 @@
       "flower": "coriolus",
       "boss": "sound",
       "weekly": "destruction",
-      "image": "./assets/WUWA%20Assets/Lingyang/Lingyang_Convene_Draw.webp",
+      "image": "./assets/characters/icons/lingyang.webp",
       "sources": [
         "assets-lingyang",
         "wuwa-akademiya"
@@ -513,7 +513,7 @@
       "flower": "forget-me-not",
       "boss": "suncoveters-reach",
       "weekly": "we-who-question",
-      "image": "./assets/WUWA%20Assets/Lucilla/Lucilla_Convene_Draw.webp",
+      "image": "./assets/characters/icons/lucilla.webp",
       "sources": [
         "assets-lucilla",
         "wuwa-akademiya"
@@ -532,7 +532,7 @@
       "flower": "past-reveries",
       "boss": "nightmare-flashdrive",
       "weekly": "gold-in-memory",
-      "image": "./assets/WUWA%20Assets/Lucy/Lucy_Convene_Draw.webp",
+      "image": "./assets/characters/icons/lucy.webp",
       "sources": [
         "assets-lucy",
         "wuwa-akademiya"
@@ -551,7 +551,7 @@
       "flower": "terraspawn-fungus",
       "boss": "thundering-tacet-core",
       "weekly": "dagger",
-      "image": "./assets/WUWA%20Assets/Lumi/Lumi_Convene_Draw.webp",
+      "image": "./assets/characters/icons/lumi.webp",
       "sources": [
         "assets-lumi",
         "wuwa-akademiya"
@@ -570,7 +570,7 @@
       "flower": "bloodleaf-viburnum",
       "boss": "unfading-glory",
       "weekly": "the-netherworlds-stare",
-      "image": "./assets/WUWA%20Assets/Lupa/Lupa_Convene_Draw.webp",
+      "image": "./assets/characters/icons/lupa.webp",
       "sources": [
         "assets-lupa",
         "wuwa-akademiya"
@@ -589,7 +589,7 @@
       "flower": "edelschnee",
       "boss": "suncoveters-reach",
       "weekly": "gold-in-memory",
-      "image": "./assets/WUWA%20Assets/Luuk/Luuk_Herssen_Convene_Draw.webp",
+      "image": "./assets/characters/icons/luuk-herssen.webp",
       "sources": [
         "assets-luuk-herssen",
         "wuwa-akademiya"
@@ -608,7 +608,7 @@
       "flower": "rimewisp",
       "boss": "suncoveters-reach",
       "weekly": "feather",
-      "image": "./assets/WUWA%20Assets/Lynae/Lynae_Convene_Draw.webp",
+      "image": "./assets/characters/icons/lynae.webp",
       "sources": [
         "assets-lynae",
         "wuwa-akademiya"
@@ -627,7 +627,7 @@
       "flower": "gemini-spore",
       "boss": "burning-judgment",
       "weekly": "the-netherworlds-stare",
-      "image": "./assets/WUWA%20Assets/Mornye/Mornye_Convene_Draw.webp",
+      "image": "./assets/characters/icons/mornye.webp",
       "sources": [
         "assets-mornye",
         "wuwa-akademiya"
@@ -646,7 +646,7 @@
       "flower": "coriolus",
       "boss": "rage",
       "weekly": "bell",
-      "image": "./assets/WUWA%20Assets/Mortefi/Mortefi_Convene_Draw.webp",
+      "image": "./assets/characters/icons/mortefi.webp",
       "sources": [
         "assets-mortefi",
         "wuwa-akademiya"
@@ -665,7 +665,7 @@
       "flower": "firecracker-jewelweed",
       "boss": "cleansing-conch",
       "weekly": "dagger",
-      "image": "./assets/WUWA%20Assets/Proebe/Phoebe_Convene_Draw.webp",
+      "image": "./assets/characters/icons/phoebe.webp",
       "sources": [
         "assets-phoebe",
         "wuwa-akademiya"
@@ -684,7 +684,7 @@
       "flower": "afterlife",
       "boss": "truth-in-lies",
       "weekly": "the-netherworlds-stare",
-      "image": "./assets/WUWA%20Assets/Phrolova/Phrolova_Convene_Draw.webp",
+      "image": "./assets/characters/icons/phrolova.webp",
       "sources": [
         "assets-phrolova",
         "wuwa-akademiya"
@@ -703,7 +703,7 @@
       "flower": "blade-blossom",
       "boss": "forged-empyreans-sigh",
       "weekly": "we-who-question",
-      "image": "./assets/WUWA%20Assets/Qingxiao/Qingxiao_Convene_Draw.webp",
+      "image": "./assets/characters/icons/qingxiao.webp",
       "sources": [
         "assets-qingxiao",
         "wuwa-akademiya"
@@ -722,7 +722,7 @@
       "flower": "wintry",
       "boss": "truth-in-lies",
       "weekly": "curse-of-the-abyss",
-      "image": "./assets/WUWA%20Assets/Qiuyuan/Qiuyuan_Convene_Draw.webp",
+      "image": "./assets/characters/icons/qiuyuan.webp",
       "sources": [
         "assets-qiuyuan",
         "wuwa-akademiya"
@@ -741,7 +741,7 @@
       "flower": "past-reveries",
       "boss": "nightmare-flashdrive",
       "weekly": "we-who-question",
-      "image": "./assets/WUWA%20Assets/Rebecca/Rebecca_Convene_Draw.webp",
+      "image": "./assets/characters/icons/rebecca.webp",
       "sources": [
         "assets-rebecca",
         "wuwa-akademiya"
@@ -760,7 +760,7 @@
       "flower": "firecracker-jewelweed",
       "boss": "cleansing-conch",
       "weekly": "the-netherworlds-stare",
-      "image": "./assets/WUWA%20Assets/Roccia/Roccia_Convene_Draw.webp",
+      "image": "./assets/characters/icons/roccia.webp",
       "sources": [
         "assets-roccia",
         "wuwa-akademiya"
@@ -779,7 +779,7 @@
       "flower": "pecok",
       "boss": "mysterious-code",
       "weekly": "when-irises-bloom",
-      "image": "./assets/WUWA%20Assets/Rover/Rover_1.webp",
+      "image": "./assets/characters/icons/rover-aero.webp",
       "sources": [
         "assets-rover-aero",
         "wuwa-akademiya"
@@ -843,7 +843,7 @@
       "flower": "pecok",
       "boss": "mysterious-code",
       "weekly": "feather",
-      "image": "./assets/WUWA%20Assets/Rover/Rover_1.webp",
+      "image": "./assets/characters/icons/rover-havoc.webp",
       "sources": [
         "assets-rover-havoc",
         "wuwa-akademiya"
@@ -907,7 +907,7 @@
       "flower": "pecok",
       "boss": "mysterious-code",
       "weekly": "destruction",
-      "image": "./assets/WUWA%20Assets/Rover/Rover_1.webp",
+      "image": "./assets/characters/icons/rover-spectro.webp",
       "sources": [
         "assets-rover-spectro",
         "wuwa-akademiya"
@@ -971,7 +971,7 @@
       "flower": "wintry",
       "boss": "sound",
       "weekly": "destruction",
-      "image": "./assets/WUWA%20Assets/Sanhua/Sanhua_Convene_Draw.webp",
+      "image": "./assets/characters/icons/sanhua.webp",
       "sources": [
         "sanhua",
         "sanhua-cost",
@@ -992,7 +992,7 @@
       "flower": "nova",
       "boss": "topological-confinement",
       "weekly": "dagger",
-      "image": "./assets/WUWA%20Assets/Shorekeeper/Shorekeeper_Convene_Draw.webp",
+      "image": "./assets/characters/icons/shorekeeper.webp",
       "sources": [
         "assets-shorekeeper",
         "wuwa-akademiya"
@@ -1011,7 +1011,7 @@
       "flower": "arithmetic-shell",
       "boss": "our-choice",
       "weekly": "gold-in-memory",
-      "image": "./assets/WUWA%20Assets/Sigrika/Sigrika_Convene_Draw.webp",
+      "image": "./assets/characters/icons/sigrika.webp",
       "sources": [
         "assets-sigrika",
         "wuwa-akademiya"
@@ -1030,7 +1030,7 @@
       "flower": "flowborne-dream",
       "boss": "solidaritys-loneflame",
       "weekly": "skyward-glazed-heart",
-      "image": "./assets/WUWA%20Assets/Suisui/Suisui_Convene_Draw.webp",
+      "image": "./assets/characters/icons/suisui.webp",
       "sources": [
         "assets-suisui",
         "wuwa-akademiya"
@@ -1049,7 +1049,7 @@
       "flower": "iris",
       "boss": "gold-dissolving-feather",
       "weekly": "feather",
-      "image": "./assets/WUWA%20Assets/Taoqi/Taoqi_Convene_Draw.webp",
+      "image": "./assets/characters/icons/taoqi.webp",
       "sources": [
         "assets-taoqi",
         "wuwa-akademiya"
@@ -1068,7 +1068,7 @@
       "flower": "poppy",
       "boss": "elegy",
       "weekly": "bell",
-      "image": "./assets/WUWA%20Assets/Verina/Verina_Convene_Draw.webp",
+      "image": "./assets/characters/icons/verina.webp",
       "sources": [
         "verina",
         "verina-cost",
@@ -1089,7 +1089,7 @@
       "flower": "violet-coral",
       "boss": "hidden-thunder-tacet-core",
       "weekly": "destruction",
-      "image": "./assets/WUWA%20Assets/Xiangli/Xiangli_Yao_Convene_Draw.webp",
+      "image": "./assets/characters/icons/xiangli-yao.webp",
       "sources": [
         "assets-xiangli-yao",
         "wuwa-akademiya"
@@ -1108,7 +1108,7 @@
       "flower": "wintry",
       "boss": "rock",
       "weekly": "destruction",
-      "image": "./assets/WUWA%20Assets/Yangyang/Yangyang_Convene_Draw.webp",
+      "image": "./assets/characters/icons/yangyang.webp",
       "sources": [
         "assets-yangyang",
         "wuwa-akademiya"
@@ -1127,7 +1127,7 @@
       "flower": "cloudperch-seed",
       "boss": "solidaritys-loneflame",
       "weekly": "skyward-glazed-heart",
-      "image": "./assets/WUWA%20Assets/Yangyang%20Xuanling/Yangyang_Xuanling_Convene_Draw.webp",
+      "image": "./assets/characters/icons/yangyang-xuanling.webp",
       "sources": [
         "assets-yangyang-xuanling",
         "wuwa-akademiya"
@@ -1146,7 +1146,7 @@
       "flower": "coriolus",
       "boss": "abomination",
       "weekly": "feather",
-      "image": "./assets/WUWA%20Assets/Yinlin/Yinlin_Convene_Draw.webp",
+      "image": "./assets/characters/icons/yinlin.webp",
       "sources": [
         "yinlin",
         "yinlin-cost",
@@ -1167,7 +1167,7 @@
       "flower": "violet-coral",
       "boss": "topological-confinement",
       "weekly": "bell",
-      "image": "./assets/WUWA%20Assets/Youhu/Youhu_Convene_Draw.webp",
+      "image": "./assets/characters/icons/youhu.webp",
       "sources": [
         "assets-youhu",
         "wuwa-akademiya"
@@ -1186,7 +1186,7 @@
       "flower": "terraspawn-fungus",
       "boss": "hidden-thunder-tacet-core",
       "weekly": "destruction",
-      "image": "./assets/WUWA%20Assets/Yuanwu/Yuanwu_Convene_Draw.webp",
+      "image": "./assets/characters/icons/yuanwu.webp",
       "sources": [
         "assets-yuanwu",
         "wuwa-akademiya"
@@ -1205,7 +1205,7 @@
       "flower": "sword-acorus",
       "boss": "platinum-core",
       "weekly": "the-netherworlds-stare",
-      "image": "./assets/WUWA%20Assets/Zani/Zani_Convene_Draw.webp",
+      "image": "./assets/characters/icons/zani.webp",
       "sources": [
         "assets-zani",
         "wuwa-akademiya"
@@ -1224,7 +1224,7 @@
       "flower": "lanternberry",
       "boss": "sound",
       "weekly": "bell",
-      "image": "./assets/WUWA%20Assets/Zhezhi/Zhezhi_Convene_Draw.webp",
+      "image": "./assets/characters/icons/zhezhi.webp",
       "sources": [
         "assets-zhezhi",
         "wuwa-akademiya"
@@ -6915,7 +6915,7 @@
         "wave"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Shell%20Credit.webp"
+      "image": "./assets/materials/shell.webp"
     },
     {
       "id": "howler-0",
@@ -6928,7 +6928,7 @@
         "howler-recipe"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/LF%20Howler%20Core.webp"
+      "image": "./assets/materials/howler-0.webp"
     },
     {
       "id": "howler-1",
@@ -6941,7 +6941,7 @@
         "howler-recipe"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/MF%20Howler%20Core.webp"
+      "image": "./assets/materials/howler-1.webp"
     },
     {
       "id": "howler-2",
@@ -6954,7 +6954,7 @@
         "howler-recipe"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/HF%20Howler%20Core.webp"
+      "image": "./assets/materials/howler-2.webp"
     },
     {
       "id": "howler-3",
@@ -6967,7 +6967,7 @@
         "howler-recipe"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/FF%20Howler%20Core.webp"
+      "image": "./assets/materials/howler-3.webp"
     },
     {
       "id": "whisper-0",
@@ -6980,7 +6980,7 @@
         "whisper-recipe"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/LF%20Whisperin%20Core.webp"
+      "image": "./assets/materials/whisper-0.webp"
     },
     {
       "id": "whisper-1",
@@ -6993,7 +6993,7 @@
         "whisper-recipe"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/MF%20Whisperin%20Core.webp"
+      "image": "./assets/materials/whisper-1.webp"
     },
     {
       "id": "whisper-2",
@@ -7006,7 +7006,7 @@
         "whisper-recipe"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/HF%20Whisperin%20Core.webp"
+      "image": "./assets/materials/whisper-2.webp"
     },
     {
       "id": "whisper-3",
@@ -7019,7 +7019,7 @@
         "whisper-recipe"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/FF%20Whisperin%20Core.webp"
+      "image": "./assets/materials/whisper-3.webp"
     },
     {
       "id": "waveworn-0",
@@ -7032,7 +7032,7 @@
         "jiyan-cost"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Waveworn%20Residue%20210.webp"
+      "image": "./assets/materials/waveworn-0.webp"
     },
     {
       "id": "waveworn-1",
@@ -7045,7 +7045,7 @@
         "jiyan-cost"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Waveworn%20Residue%20226.webp"
+      "image": "./assets/materials/waveworn-1.webp"
     },
     {
       "id": "waveworn-2",
@@ -7058,7 +7058,7 @@
         "jiyan-cost"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Waveworn%20Residue%20235.webp"
+      "image": "./assets/materials/waveworn-2.webp"
     },
     {
       "id": "waveworn-3",
@@ -7071,7 +7071,7 @@
         "jiyan-cost"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Waveworn%20Residue%20239.webp"
+      "image": "./assets/materials/waveworn-3.webp"
     },
     {
       "id": "helix-0",
@@ -7084,7 +7084,7 @@
         "verina-cost"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Lento%20Helix.webp"
+      "image": "./assets/materials/helix-0.webp"
     },
     {
       "id": "helix-1",
@@ -7097,7 +7097,7 @@
         "verina-cost"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Adagio%20Helix.webp"
+      "image": "./assets/materials/helix-1.webp"
     },
     {
       "id": "helix-2",
@@ -7110,7 +7110,7 @@
         "verina-cost"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Andante%20Helix.webp"
+      "image": "./assets/materials/helix-2.webp"
     },
     {
       "id": "helix-3",
@@ -7123,7 +7123,7 @@
         "verina-cost"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Presto%20Helix.webp"
+      "image": "./assets/materials/helix-3.webp"
     },
     {
       "id": "drip-0",
@@ -7136,7 +7136,7 @@
         "sanhua-cost"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Inert%20Metallic%20Drip.webp"
+      "image": "./assets/materials/drip-0.webp"
     },
     {
       "id": "drip-1",
@@ -7149,7 +7149,7 @@
         "sanhua-cost"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Reactive%20Metallic%20Drip.webp"
+      "image": "./assets/materials/drip-1.webp"
     },
     {
       "id": "drip-2",
@@ -7162,7 +7162,7 @@
         "sanhua-cost"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Polarized%20Metallic%20Drip.webp"
+      "image": "./assets/materials/drip-2.webp"
     },
     {
       "id": "drip-3",
@@ -7175,7 +7175,7 @@
         "sanhua-cost"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Heterized%20Metallic%20Drip.webp"
+      "image": "./assets/materials/drip-3.webp"
     },
     {
       "id": "pearl",
@@ -7253,7 +7253,7 @@
         "jinhsi-cost"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Elegy%20Tacet%20Core.webp"
+      "image": "./assets/materials/elegy.webp"
     },
     {
       "id": "rock",
@@ -7266,7 +7266,7 @@
         "jiyan-cost"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Roaring%20Rock%20Fist.webp"
+      "image": "./assets/materials/rock.webp"
     },
     {
       "id": "abomination",
@@ -7279,7 +7279,7 @@
         "yinlin-cost"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Group%20Abomination%20Tacet%20Core.webp"
+      "image": "./assets/materials/abomination.webp"
     },
     {
       "id": "sound",
@@ -7292,7 +7292,7 @@
         "sanhua-cost"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Sound.webp"
+      "image": "./assets/materials/sound.webp"
     },
     {
       "id": "rage",
@@ -7305,7 +7305,7 @@
         "encore-cost"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Rage%20Tacet%20Core.webp"
+      "image": "./assets/materials/rage.webp"
     },
     {
       "id": "dagger",
@@ -7318,7 +7318,7 @@
         "jinhsi-cost"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Sentine's%20Dagger.webp"
+      "image": "./assets/materials/dagger.webp"
     },
     {
       "id": "bell",
@@ -7331,7 +7331,7 @@
         "jiyan-cost"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Monument%20Bell.webp"
+      "image": "./assets/materials/bell.webp"
     },
     {
       "id": "feather",
@@ -7344,7 +7344,7 @@
         "yinlin-cost"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Dreamless%20Feather.webp"
+      "image": "./assets/materials/feather.webp"
     },
     {
       "id": "destruction",
@@ -7357,7 +7357,7 @@
         "encore-cost"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Unending%20Destruction.webp"
+      "image": "./assets/materials/destruction.webp"
     },
     {
       "id": "potion-0",
@@ -7372,7 +7372,7 @@
       "verified": true,
       "xp": 1000,
       "xpKind": "potion",
-      "image": "./assets/WUWA%20Assets/Materials/Basic%20Resonance%20Potion.webp"
+      "image": "./assets/materials/potion-0.webp"
     },
     {
       "id": "potion-1",
@@ -7387,7 +7387,7 @@
       "verified": true,
       "xp": 3000,
       "xpKind": "potion",
-      "image": "./assets/WUWA%20Assets/Materials/Medium%20Resonance%20Potion.webp"
+      "image": "./assets/materials/potion-1.webp"
     },
     {
       "id": "potion-2",
@@ -7402,7 +7402,7 @@
       "verified": true,
       "xp": 8000,
       "xpKind": "potion",
-      "image": "./assets/WUWA%20Assets/Materials/Advanced%20Resonance%20Potion.webp"
+      "image": "./assets/materials/potion-2.webp"
     },
     {
       "id": "potion-3",
@@ -7417,7 +7417,7 @@
       "verified": true,
       "xp": 20000,
       "xpKind": "potion",
-      "image": "./assets/WUWA%20Assets/Materials/Premium%20Resonance%20Potion.webp"
+      "image": "./assets/materials/potion-3.webp"
     },
     {
       "id": "energy-0",
@@ -7432,7 +7432,7 @@
       "verified": true,
       "xp": 1000,
       "xpKind": "energy",
-      "image": "./assets/WUWA%20Assets/Materials/Basic%20Energy%20Core.webp"
+      "image": "./assets/materials/energy-0.webp"
     },
     {
       "id": "energy-1",
@@ -7447,7 +7447,7 @@
       "verified": true,
       "xp": 3000,
       "xpKind": "energy",
-      "image": "./assets/WUWA%20Assets/Materials/Medium%20Energy%20Core.webp"
+      "image": "./assets/materials/energy-1.webp"
     },
     {
       "id": "energy-2",
@@ -7462,7 +7462,7 @@
       "verified": true,
       "xp": 8000,
       "xpKind": "energy",
-      "image": "./assets/WUWA%20Assets/Materials/Advanced%20Energy%20Core.webp"
+      "image": "./assets/materials/energy-2.webp"
     },
     {
       "id": "energy-3",
@@ -7477,7 +7477,7 @@
       "verified": true,
       "xp": 20000,
       "xpKind": "energy",
-      "image": "./assets/WUWA%20Assets/Materials/Premium%20Energy%20Core.webp"
+      "image": "./assets/materials/energy-3.webp"
     },
     {
       "id": "ring-0",
@@ -7490,7 +7490,7 @@
         "stringmaster-detail"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Crude%20Ring.webp"
+      "image": "./assets/materials/ring-0.webp"
     },
     {
       "id": "ring-1",
@@ -7503,7 +7503,7 @@
         "stringmaster-detail"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Basic%20Ring.webp"
+      "image": "./assets/materials/ring-1.webp"
     },
     {
       "id": "ring-2",
@@ -7516,7 +7516,7 @@
         "stringmaster-detail"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Improved%20Ring.webp"
+      "image": "./assets/materials/ring-2.webp"
     },
     {
       "id": "ring-3",
@@ -7529,7 +7529,7 @@
         "stringmaster-detail"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Tailored%20Ring.webp"
+      "image": "./assets/materials/ring-3.webp"
     },
     {
       "id": "impure-phlogiston-0",
@@ -7542,7 +7542,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Impure%20Phlogiston.webp"
+      "image": "./assets/materials/impure-phlogiston-0.webp"
     },
     {
       "id": "impure-phlogiston-1",
@@ -7555,7 +7555,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Extracted%20Phlogiston.webp"
+      "image": "./assets/materials/impure-phlogiston-1.webp"
     },
     {
       "id": "impure-phlogiston-2",
@@ -7568,7 +7568,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Refined%20Phlogiston.webp"
+      "image": "./assets/materials/impure-phlogiston-2.webp"
     },
     {
       "id": "impure-phlogiston-3",
@@ -7581,7 +7581,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Flawless%20Phlogiston.webp"
+      "image": "./assets/materials/impure-phlogiston-3.webp"
     },
     {
       "id": "exoswarm-core-0",
@@ -7594,7 +7594,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/LF%20Exoswarm%20Core.webp"
+      "image": "./assets/materials/exoswarm-core-0.webp"
     },
     {
       "id": "exoswarm-core-1",
@@ -7607,7 +7607,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/MF%20Exoswarm%20Core.webp"
+      "image": "./assets/materials/exoswarm-core-1.webp"
     },
     {
       "id": "exoswarm-core-2",
@@ -7620,7 +7620,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/HF%20Exoswarm%20Core.webp"
+      "image": "./assets/materials/exoswarm-core-2.webp"
     },
     {
       "id": "exoswarm-core-3",
@@ -7633,7 +7633,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/FF%20Exoswarm%20Core.webp"
+      "image": "./assets/materials/exoswarm-core-3.webp"
     },
     {
       "id": "broken-wing-polarizer-0",
@@ -7646,7 +7646,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Broken%20Wing%20Polarizer.webp"
+      "image": "./assets/materials/broken-wing-polarizer-0.webp"
     },
     {
       "id": "broken-wing-polarizer-1",
@@ -7659,7 +7659,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Monowing%20Polarizer.webp"
+      "image": "./assets/materials/broken-wing-polarizer-1.webp"
     },
     {
       "id": "broken-wing-polarizer-2",
@@ -7672,7 +7672,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Polywing%20Polarizer.webp"
+      "image": "./assets/materials/broken-wing-polarizer-2.webp"
     },
     {
       "id": "broken-wing-polarizer-3",
@@ -7685,7 +7685,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Layered%20Wing%20Polarizer.webp"
+      "image": "./assets/materials/broken-wing-polarizer-3.webp"
     },
     {
       "id": "our-choice",
@@ -7698,7 +7698,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Our%20Choice.webp"
+      "image": "./assets/materials/our-choice.webp"
     },
     {
       "id": "moss-amber",
@@ -7724,7 +7724,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Gold%20in%20Memory.webp"
+      "image": "./assets/materials/gold-in-memory.webp"
     },
     {
       "id": "tidal-residuum-0",
@@ -7737,7 +7737,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/LF%20Tidal%20Residuum.webp"
+      "image": "./assets/materials/tidal-residuum-0.webp"
     },
     {
       "id": "tidal-residuum-1",
@@ -7750,7 +7750,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/MF%20Tidal%20Residuum.webp"
+      "image": "./assets/materials/tidal-residuum-1.webp"
     },
     {
       "id": "tidal-residuum-2",
@@ -7763,7 +7763,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/HF%20Tidal%20Residuum.webp"
+      "image": "./assets/materials/tidal-residuum-2.webp"
     },
     {
       "id": "tidal-residuum-3",
@@ -7776,7 +7776,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/FF%20Tidal%20Residuum.webp"
+      "image": "./assets/materials/tidal-residuum-3.webp"
     },
     {
       "id": "blighted-crown-of-puppet-king",
@@ -7789,7 +7789,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Blighted%20Crown%20of%20Puppet%20King.webp"
+      "image": "./assets/materials/blighted-crown-of-puppet-king.webp"
     },
     {
       "id": "luminous-calendula",
@@ -7815,7 +7815,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/When%20Irises%20Bloom.webp"
+      "image": "./assets/materials/when-irises-bloom.webp"
     },
     {
       "id": "lanternberry",
@@ -7841,7 +7841,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Blazing%20Bone.webp"
+      "image": "./assets/materials/blazing-bone.webp"
     },
     {
       "id": "golden-fleece",
@@ -7867,7 +7867,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/The%20Netheworld's%20Stare.webp"
+      "image": "./assets/materials/the-netherworlds-stare.webp"
     },
     {
       "id": "curse-of-the-abyss",
@@ -7880,7 +7880,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Curse%20of%20the%20Abyss.webp"
+      "image": "./assets/materials/curse-of-the-abyss.webp"
     },
     {
       "id": "thundering-tacet-core",
@@ -7893,7 +7893,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Thundering%20Tacet%20Core.webp"
+      "image": "./assets/materials/thundering-tacet-core.webp"
     },
     {
       "id": "iris",
@@ -7919,7 +7919,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Topological%20Confinement.webp"
+      "image": "./assets/materials/topological-confinement.webp"
     },
     {
       "id": "nova",
@@ -7945,7 +7945,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/LF%20Polygon%20Core.webp"
+      "image": "./assets/materials/polygon-core-0.webp"
     },
     {
       "id": "polygon-core-1",
@@ -7958,7 +7958,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/MF%20Polygon%20Core.webp"
+      "image": "./assets/materials/polygon-core-1.webp"
     },
     {
       "id": "polygon-core-2",
@@ -7971,7 +7971,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/HF%20Polygon%20Core.webp"
+      "image": "./assets/materials/polygon-core-2.webp"
     },
     {
       "id": "polygon-core-3",
@@ -7984,7 +7984,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/FF%20Polygon%20Core.webp"
+      "image": "./assets/materials/polygon-core-3.webp"
     },
     {
       "id": "cleansing-conch",
@@ -7997,7 +7997,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Cleansing%20Conch.webp"
+      "image": "./assets/materials/cleansing-conch.webp"
     },
     {
       "id": "seaside-cendrelis",
@@ -8023,7 +8023,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Platinum%20Core.webp"
+      "image": "./assets/materials/platinum-core.webp"
     },
     {
       "id": "sword-acorus",
@@ -8049,7 +8049,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Unfanding%20Glory.webp"
+      "image": "./assets/materials/unfading-glory.webp"
     },
     {
       "id": "bamboo-iris",
@@ -8088,7 +8088,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Abyssal%20Husk.webp"
+      "image": "./assets/materials/abyssal-husk.webp"
     },
     {
       "id": "summer-flower",
@@ -8114,7 +8114,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Strife%20Tacet%20Core.webp"
+      "image": "./assets/materials/strife-tacet-core.webp"
     },
     {
       "id": "mech-core-0",
@@ -8127,7 +8127,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/LF%20Merch%20Core.webp"
+      "image": "./assets/materials/mech-core-0.webp"
     },
     {
       "id": "mech-core-1",
@@ -8140,7 +8140,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/MF%20Merch%20Core.webp"
+      "image": "./assets/materials/mech-core-1.webp"
     },
     {
       "id": "mech-core-2",
@@ -8153,7 +8153,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/HF%20Merch%20Core.webp"
+      "image": "./assets/materials/mech-core-2.webp"
     },
     {
       "id": "mech-core-3",
@@ -8166,7 +8166,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/FF%20Merch%20Core.webp"
+      "image": "./assets/materials/mech-core-3.webp"
     },
     {
       "id": "spliced-string-0",
@@ -8179,7 +8179,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Spliced%20String.webp"
+      "image": "./assets/materials/spliced-string-0.webp"
     },
     {
       "id": "spliced-string-1",
@@ -8192,7 +8192,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Broken%20String.webp"
+      "image": "./assets/materials/spliced-string-1.webp"
     },
     {
       "id": "spliced-string-2",
@@ -8205,7 +8205,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Solidified%20String.webp"
+      "image": "./assets/materials/spliced-string-2.webp"
     },
     {
       "id": "spliced-string-3",
@@ -8218,7 +8218,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Melodic%20String.webp"
+      "image": "./assets/materials/spliced-string-3.webp"
     },
     {
       "id": "burning-judgment",
@@ -8231,7 +8231,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Burning%20Judgment.webp"
+      "image": "./assets/materials/burning-judgment.webp"
     },
     {
       "id": "dream-of-stars",
@@ -8257,7 +8257,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/We%20Who%20Question.webp"
+      "image": "./assets/materials/we-who-question.webp"
     },
     {
       "id": "stone-rose",
@@ -8296,7 +8296,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Cadence%20Seed.webp"
+      "image": "./assets/materials/cadence-seed-0.webp"
     },
     {
       "id": "cadence-seed-1",
@@ -8309,7 +8309,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Cadence%20Bud.webp"
+      "image": "./assets/materials/cadence-seed-1.webp"
     },
     {
       "id": "cadence-seed-2",
@@ -8322,7 +8322,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Cadence%20Leaf.webp"
+      "image": "./assets/materials/cadence-seed-2.webp"
     },
     {
       "id": "cadence-seed-3",
@@ -8335,7 +8335,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Cadence%20Blossom.webp"
+      "image": "./assets/materials/cadence-seed-3.webp"
     },
     {
       "id": "sliverglow-bloom",
@@ -8361,7 +8361,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/LF%20Carved%20Crystal.webp"
+      "image": "./assets/materials/carved-crystal-0.webp"
     },
     {
       "id": "carved-crystal-1",
@@ -8374,7 +8374,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/MF%20Carved%20Crystal.webp"
+      "image": "./assets/materials/carved-crystal-1.webp"
     },
     {
       "id": "carved-crystal-2",
@@ -8387,7 +8387,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/HF%20Carved%20Crystal.webp"
+      "image": "./assets/materials/carved-crystal-2.webp"
     },
     {
       "id": "carved-crystal-3",
@@ -8400,7 +8400,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/FF%20Carved%20Crystal.webp"
+      "image": "./assets/materials/carved-crystal-3.webp"
     },
     {
       "id": "forged-empyreans-sigh",
@@ -8413,7 +8413,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Forged%20Empyrean's%20Sigh.webp"
+      "image": "./assets/materials/forged-empyreans-sigh.webp"
     },
     {
       "id": "cloudperch-seed",
@@ -8439,7 +8439,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Skyward%20Glazed%20Heart.webp"
+      "image": "./assets/materials/skyward-glazed-heart.webp"
     },
     {
       "id": "suncoveters-reach",
@@ -8452,7 +8452,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Suncoveter's%20Reach.webp"
+      "image": "./assets/materials/suncoveters-reach.webp"
     },
     {
       "id": "forget-me-not",
@@ -8478,7 +8478,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Incomplete%20Combustor.webp"
+      "image": "./assets/materials/incomplete-combustor-0.webp"
     },
     {
       "id": "incomplete-combustor-1",
@@ -8491,7 +8491,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Aftertune%20Combustor.webp"
+      "image": "./assets/materials/incomplete-combustor-1.webp"
     },
     {
       "id": "incomplete-combustor-2",
@@ -8504,7 +8504,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Remnant%20Combustor.webp"
+      "image": "./assets/materials/incomplete-combustor-2.webp"
     },
     {
       "id": "incomplete-combustor-3",
@@ -8517,7 +8517,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Reverb%20Combustor.webp"
+      "image": "./assets/materials/incomplete-combustor-3.webp"
     },
     {
       "id": "nightmare-flashdrive",
@@ -8530,7 +8530,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Nightmare%20Flashdrive.webp"
+      "image": "./assets/materials/nightmare-flashdrive.webp"
     },
     {
       "id": "past-reveries",
@@ -8582,7 +8582,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Fractured%20Exoswarm%20Pendant.webp"
+      "image": "./assets/materials/fractured-exoswarm-pendant-0.webp"
     },
     {
       "id": "fractured-exoswarm-pendant-1",
@@ -8595,7 +8595,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Worn%20Exoswarm%20Pendant.webp"
+      "image": "./assets/materials/fractured-exoswarm-pendant-1.webp"
     },
     {
       "id": "fractured-exoswarm-pendant-2",
@@ -8608,7 +8608,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Chipped%20Exoswarm%20Pendant.webp"
+      "image": "./assets/materials/fractured-exoswarm-pendant-2.webp"
     },
     {
       "id": "fractured-exoswarm-pendant-3",
@@ -8621,7 +8621,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Intact%20Exoswarm%20Pendant.webp"
+      "image": "./assets/materials/fractured-exoswarm-pendant-3.webp"
     },
     {
       "id": "waveworn-shard-0",
@@ -8634,7 +8634,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/LF%20Waveworn%20Shard.webp"
+      "image": "./assets/materials/waveworn-shard-0.webp"
     },
     {
       "id": "waveworn-shard-1",
@@ -8647,7 +8647,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/MF%20Waveworn%20Shard.webp"
+      "image": "./assets/materials/waveworn-shard-1.webp"
     },
     {
       "id": "waveworn-shard-2",
@@ -8660,7 +8660,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/HF%20Waveworn%20Shard.webp"
+      "image": "./assets/materials/waveworn-shard-2.webp"
     },
     {
       "id": "waveworn-shard-3",
@@ -8673,7 +8673,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/FF%20Waveworn%20Shard.webp"
+      "image": "./assets/materials/waveworn-shard-3.webp"
     },
     {
       "id": "edelschnee",
@@ -8725,7 +8725,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Truth%20in%20Lies.webp"
+      "image": "./assets/materials/truth-in-lies.webp"
     },
     {
       "id": "afterlife",
@@ -8764,7 +8764,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/LF%20Autopuppet%20Kernel.webp"
+      "image": "./assets/materials/autopuppet-kernel-0.webp"
     },
     {
       "id": "autopuppet-kernel-1",
@@ -8777,7 +8777,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/MF%20Autopuppet%20Kernel.webp"
+      "image": "./assets/materials/autopuppet-kernel-1.webp"
     },
     {
       "id": "autopuppet-kernel-2",
@@ -8790,7 +8790,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/HF%20Autopuppet%20Kernel.webp"
+      "image": "./assets/materials/autopuppet-kernel-2.webp"
     },
     {
       "id": "autopuppet-kernel-3",
@@ -8803,7 +8803,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/FF%20Autopuppet%20Kernel.webp"
+      "image": "./assets/materials/autopuppet-kernel-3.webp"
     },
     {
       "id": "blade-blossom",
@@ -8829,7 +8829,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Mysterious%20Code.webp"
+      "image": "./assets/materials/mysterious-code.webp"
     },
     {
       "id": "arithmetic-shell",
@@ -8855,7 +8855,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Solidarity's%20Loneflame.webp"
+      "image": "./assets/materials/solidaritys-loneflame.webp"
     },
     {
       "id": "flowborne-dream",
@@ -8881,7 +8881,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Gold.webp"
+      "image": "./assets/materials/gold-dissolving-feather.webp"
     },
     {
       "id": "hidden-thunder-tacet-core",
@@ -8894,7 +8894,7 @@
         "wuwa-materials"
       ],
       "verified": true,
-      "image": "./assets/WUWA%20Assets/Materials/Hidden%20Thunder%20Tacet%20Core.webp"
+      "image": "./assets/materials/hidden-thunder-tacet-core.webp"
     },
     {
       "id": "violet-coral",

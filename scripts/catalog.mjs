@@ -29,7 +29,7 @@ const definitions=[
 const characters=definitions.map(([id,name,element,weapon,rarity,enemy,forgery,flower,boss,weekly,ref])=>{
  sources.push(source(id,`https://wutheringlab.com/character/${id}-build/`,'Identidade, retrato e ascensão por etapa',id==='jinhsi'?'HTML contém imagem residual de Gloom Slough; Loong’s Pearl confirmado no guia dedicado e Game8.':''));
  sources.push(source(`${id}-cost`,g8(ref),'Materiais, ascensão e Fortes por etapa'));
- return {id,name,element,weapon,rarity,enemy,forgery,flower,boss,weekly,image:`./assets/${id}.${id==='verina'?'webp':'png'}`,sources:[id,`${id}-cost`],ascensionVerified:true,forteVerified:true};
+ return {id,name,element,weapon,rarity,enemy,forgery,flower,boss,weekly,image:`./assets/characters/icons/${id}.webp`,sources:[id,`${id}-cost`],ascensionVerified:true,forteVerified:true};
 });
 sources.push(source('pearl','https://wutheringlab.com/guide/jinhsi-material-loongs-pearl-routes-amp-best-farming-guide/','Loong’s Pearl: Mt. Firmament'));
 const mats=[];

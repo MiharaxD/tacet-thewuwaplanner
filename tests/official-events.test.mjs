@@ -65,7 +65,7 @@ test('recurring completion expires exactly at reset, including after offline per
  assert.equal(isEventCompleted(mergeState(again,completed,db),recurring,boundary),true);
 });
 test('catalog preserves banner images and validates recurrence and image paths',()=>{
- const banner={...event,type:'banner',icon:'assets/favicon.webp',banners:[{name:'Personagem',image:'assets/character.webp'}]};
+ const banner={...event,type:'banner',icon:'assets/brand/favicon.webp',banners:[{name:'Personagem',image:'assets/character.webp'}]};
  assert.deepEqual(validateEventCatalog({version:1,events:[banner]}).events[0],banner);
  for(const change of [{icon:'javascript:alert(1)'},{banners:[{name:'Arma',image:'http://example.com/x.png'}]},{type:'recurring',reset:{anchor:event.start,everyHours:0}},{type:'recurring',reset:{anchor:'invalid',everyHours:24}}])assert.throws(()=>validateEventCatalog({version:1,events:[{...event,...change}]}));
 });

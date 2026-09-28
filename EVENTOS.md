@@ -57,7 +57,7 @@ Concluídos vão para **Eventos completos**, recolhido no fim da lista. Abra ess
 Campos opcionais por evento:
 
 - `type`: `event` (normal), `banner` (personagens e armas) ou `recurring` (reset automático).
-- `icon`: imagem antes do título, por exemplo `assets/favicon.webp`.
+- `icon`: imagem antes do título, por exemplo `assets/brand/favicon.webp`.
 - `banners`: lista com `name` e `image`. Aparece abaixo da linha. Use `[]` para não mostrar imagens.
 - Imagens aceitam caminhos em `assets/` ou URLs HTTPS. Copie imagens locais para essa pasta antes de publicar.
 
@@ -70,12 +70,12 @@ Substitua nomes e caminhos pelos seus arquivos:
   "id": "convene-setembro-2026",
   "type": "banner",
   "title": "Convene em destaque",
-  "icon": "assets/favicon.webp",
+  "icon": "assets/brand/favicon.webp",
   "start": "2026-09-20T10:00:00-03:00",
   "end": "2026-10-04T10:00:00-03:00",
   "banners": [
-    { "name": "Nome do ressonante", "image": "assets/eventos/ressonante.webp" },
-    { "name": "Nome da arma", "image": "assets/eventos/arma.webp" }
+    { "name": "Nome do ressonante", "image": "assets/events/ressonante.webp" },
+    { "name": "Nome da arma", "image": "assets/events/arma.webp" }
   ]
 }
 ```
@@ -87,7 +87,7 @@ Substitua nomes e caminhos pelos seus arquivos:
   "id": "desafio-semanal",
   "type": "recurring",
   "title": "Desafio semanal",
-  "icon": "assets/favicon.webp",
+  "icon": "assets/brand/favicon.webp",
   "start": "2026-09-21T04:00:00-03:00",
   "end": "2027-09-21T04:00:00-03:00",
   "reset": {

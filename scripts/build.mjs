@@ -2,13 +2,16 @@ import { cp, mkdir, readFile, readdir, rm } from 'node:fs/promises';
 import {resolve,dirname} from 'node:path';
 import { execFileSync } from 'node:child_process';
 import {validateEventCatalog} from '../src/domain/official-events.js';
+import {validateRuntimeAssets} from './validate-assets.mjs';
 validateEventCatalog(JSON.parse(await readFile('data/events.json','utf8')));
+await validateRuntimeAssets();
 const output=resolve('dist');
 if(dirname(output)!==resolve('.'))throw Error('Diretório de build inválido.');
 await rm(output,{recursive:true,force:true});
 await mkdir(output,{recursive:true});
 for (const dir of ['src','data','assets']) await cp(dir,`dist/${dir}`,{recursive:true});
 await cp('index.html','dist/index.html');
+await validateRuntimeAssets(output);
 async function* javascriptFiles(dir) {
  for (const entry of await readdir(dir,{withFileTypes:true})) {
   const path = `${dir}/${entry.name}`;

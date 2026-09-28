@@ -4,7 +4,7 @@ Data da revisão: **15/09/2026**. URLs, escopos, observações e versão dispon�
 
 ## Fontes e conferências
 
-- **Expansão WUWA Assets:** 57 personagens/formas (51 adicionados) e 153 materiais com imagens locais. Os textos fornecidos em `assets/WUWA Assets` determinam as famílias e materiais; a listagem pública do [Akademiya](https://wuwa.akademiya.app/en/characters) complementa nomes, elementos, armas e raridades. O catálogo inclui todas as pastas fornecidas, com Rover Aero, Havoc e Spectro; não implica que todas as entradas estejam em banners atuais.
+- **Expansão WUWA Assets:** 57 personagens/formas (51 adicionados) e 153 materiais com imagens locais. Os textos fornecidos em `source-assets/wuwa` determinam as famílias e materiais; a listagem pública do [Akademiya](https://wuwa.akademiya.app/en/characters) complementa nomes, elementos, armas e raridades. O catálogo inclui todas as pastas fornecidas, com Rover Aero, Havoc e Spectro; não implica que todas as entradas estejam em banners atuais.
 - A pasta de Luuk Herssen não contém texto. Materiais complementados pelo [guia Game8](https://game8.co/games/Wuthering-Waves/archives/575852): Exoswarm Pendant, Waveworn Shard, Edelschnee, Suncoveter's Reach e Gold in Memory.
 - Imagens ausentes vieram da CDN indicada pela página de [materiais do Akademiya](https://wuwa.akademiya.app/en/materials). Os arquivos ficam em `assets/materials`; a aplicação não precisa acessar a CDN em execução.
 
@@ -43,7 +43,7 @@ As listas de ascensão/Forte são custos **por etapa**, nunca totais cumulativos
 ## Manutenção do catálogo
 
 1. Consulte a página individual, uma confirmação complementar quando necessário e registre a data/versão real.
-2. `scripts/catalog.mjs` gera a base original e chama `scripts/import-wuwa.mjs`, que importa a pasta WUWA Assets. `scripts/wuwa-reference.json` preserva o snapshot de identidades e imagens para regeneração offline. Não renomeie IDs já usados em backups sem criar uma migração explícita.
+2. `scripts/catalog.mjs` gera a base original e chama `scripts/import-wuwa.mjs`, que importa `source-assets/wuwa/`. `scripts/wuwa-reference.json` preserva o snapshot de identidades e imagens para regeneração offline. Não renomeie IDs já usados em backups sem criar uma migração explícita.
 3. Identifique se cada tabela é incremental ou acumulada. Confira um intervalo curto e um total completo independentemente do motor.
 4. Defina os indicadores `ascensionVerified`/`forteVerified` somente quando a tabela e o vínculo dos materiais estiverem confirmados. Para dados não disponíveis, mantenha o indicador falso.
 5. Execute `node scripts/catalog.mjs`, revise `data/`, acrescente testes de fronteira e execute os testes e o build.
@@ -61,7 +61,7 @@ Os eventos publicados são cadastrados pelo desenvolvedor em `data/events.json`;
 
 ## Retratos e ícones
 
-Retratos locais atribuídos à KURO GAMES, fornecidos na pasta WUWA Assets. `assets/character-portraits.json` registra apenas os seis retratos históricos da base original; os caminhos atuais estão em `data/catalog.json`. Os materiais usam imagens dessa pasta ou baixadas do Akademiya, acompanhadas do nome e raridade. A aplicação mantém uma alternativa visual quando uma imagem falha, inclusive nos diálogos.
+Retratos locais atribuídos à KURO GAMES, fornecidos na pasta `source-assets/wuwa/`. `source-assets/legacy/character-portraits.json` registra apenas os seis retratos históricos da base original; os caminhos atuais estão em `data/catalog.json`. Os materiais usam imagens canônicas em `assets/materials/`, preservadas das fontes locais ou baixadas do Akademiya. A aplicação mantém uma alternativa visual quando uma imagem falha, inclusive nos diálogos.
 
 ## Salvamento e edição
 
@@ -90,4 +90,8 @@ A seleção no modal usa cartões com imagem e raridade. Hover/foco revela ATQ e
 
 ## Resolução dos retratos
 
-Os cards e banners usam artes originais de 696 × 960 em assets/character-hq, obtidas da CDN referenciada pelo Akademiya. data/character-art.json vincula essas versões sem substituir os arquivos fornecidos pelo usuário. assets/character-hq/sources.json registra origem e caminho anterior. Ícones das armas têm 256 × 256 e são exibidos a 64 × 64.
+Os cards e banners usam artes originais de 696 × 960 em `assets/characters/cards/`, obtidas da CDN referenciada pelo Akademiya. `data/character-art.json` vincula essas versões sem substituir os arquivos fornecidos pelo usuário. `assets/characters/cards/sources.json` registra origem e caminho anterior. Ícones das armas têm 256 × 256 e são exibidos a 64 × 64.
+
+## Arquivos de produção e fontes brutas
+
+`assets/` contém as imagens usadas pelo site e copiadas para o build. `source-assets/` guarda os arquivos brutos e históricos usados na manutenção; essa pasta não entra em `dist/`. `scripts/import-wuwa.mjs` lê `source-assets/wuwa/characters/` e `source-assets/wuwa/materials/`, gera o catálogo e copia imagens de materiais para os caminhos canônicos em `assets/materials/`.

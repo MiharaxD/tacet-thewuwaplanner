@@ -6,7 +6,7 @@ const portuguese=JSON.parse(await readFile('data/forte-descriptions-pt.json','ut
 const pending=[...catalog.characters],result={},errors=[];
 const clean=text=>(text||'').replace(/<[^>]*>/g,'').replace(/\{Cus:Sap,S=([^ ]+) P=([^ ]+) SapTag=\d+\}/g,'$2').replace(/\n\s*\n/g,'\n').trim();
 const normalize=name=>name.toLowerCase().replace(/[^a-z0-9]/g,'');
-await mkdir('assets/forte-icons',{recursive:true});
+await mkdir('assets/ui/forte',{recursive:true});
 await Promise.all(Array.from({length:5},async()=>{while(pending.length){
  const c=pending.shift(),ref=refs.find(r=>normalize(r.name)===normalize(c.name));
  try{
