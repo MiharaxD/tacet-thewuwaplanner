@@ -1,6 +1,6 @@
 # Dados, fontes e atualização
 
-Data da revisão: **15/09/2026**. URLs, escopos, observações e versão disponível estão em `data/sources.json`, visíveis também em Configurações. `gameVersion: null` significa versão não informada pela tabela; o banner 3.6 do Wutheringlab não certifica cada custo.
+Data da revisão: **15/09/2026**. URLs, escopos, observações e versão disponível estão em `data/sources.json`. `gameVersion: null` significa versão não informada pela tabela; o banner 3.6 do Wutheringlab não certifica cada custo.
 
 ## Fontes e conferências
 

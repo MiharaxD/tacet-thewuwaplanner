@@ -3,6 +3,7 @@ import { resolve } from 'node:path';
 import { isDeepStrictEqual } from 'node:util';
 import { validateEventCatalog } from '../../src/domain/official-events.js';
 import { validateAssetFields } from '../validate-assets.mjs';
+import { withStagedDirectory } from './staging.mjs';
 
 const weaponGroups = { broadblade: 'Broadblade', sword: 'Sword', rectifier: 'Rectifier', pistols: 'Pistols', gauntlets: 'Gauntlets' };
 const materialGroups = { currency: 'Moeda', experience: 'Experiência', enemies: 'Inimigos', forgery: 'Forja', collectibles: 'Coleta', bosses: 'Chefe', weekly: 'Semanal', special: 'Especial' };
@@ -153,13 +154,15 @@ export function runtimeData({ catalog, art, rules, events, recipes, sources, for
   return { catalog, 'character-art': art, rules, events, recipes: deriveRecipes(catalog, recipes), sources, 'forte-descriptions-pt': forte };
 }
 
-export async function writeRuntimeData(content, root = '.') {
+export async function writeRuntimeData(content, root = '.', options = {}) {
   await validateContent(content, root);
-  for (const [name, value] of Object.entries(runtimeData(content))) {
-    if (name === 'forte-descriptions-pt')
-      await writeFile(resolve(root, `data/${name}.json`), await readFile(resolve(root, `content/${name}.json`)));
-    else await write(root, `data/${name}.json`, value);
-  }
+  await withStagedDirectory(root, 'data', async stage => {
+    for (const [name, value] of Object.entries(runtimeData(content))) {
+      if (name === 'forte-descriptions-pt')
+        await writeFile(resolve(stage, `data/${name}.json`), await readFile(resolve(root, `content/${name}.json`)));
+      else await write(stage, `data/${name}.json`, value);
+    }
+  }, options);
 }
 
 export async function checkRuntimeData(root = '.') {
@@ -174,7 +177,7 @@ export async function checkRuntimeData(root = '.') {
   }
 }
 
-export async function writeCuratedContent(content, root = '.') {
+export async function writeCuratedContent(content, root = '.', options = {}) {
   const { catalog, art, rules, recipes, sources, manifest } = content;
   const nextManifest = {
     ...manifest,
@@ -193,16 +196,18 @@ export async function writeCuratedContent(content, root = '.') {
   const stale = existing.filter(name => !expected.has(name));
   if (stale.length) throw Error(`Arquivos de personagem obsoletos em content/characters: ${stale.join(', ')}. Remova-os explicitamente antes do refresh.`);
   await validateContent({ ...content, manifest: nextManifest }, root);
-  for (const dir of ['characters', 'weapons', 'materials', 'config']) await mkdir(resolve(root, `content/${dir}`), { recursive: true });
-  for (const row of catalog.characters) await write(root, `content/characters/${row.id}.json`, { ...row, art: art[row.id] });
-  for (const [file, type] of Object.entries(weaponGroups)) await write(root, `content/weapons/${file}.json`, catalog.weapons.filter(row => row.type === type));
-  for (const [file, category] of Object.entries(materialGroups)) await write(root, `content/materials/${file}.json`, catalog.materials.filter(row => row.category === category));
-  const serverKeys = new Set(['servers', 'dailyResetHour', 'weeklyResetDay']);
-  await write(root, 'content/config/progression.json', Object.fromEntries(Object.entries(rules).filter(([key]) => key !== 'activities' && !serverKeys.has(key))));
-  await write(root, 'content/config/activities.json', { activities: rules.activities });
-  await write(root, 'content/config/servers.json', Object.fromEntries(Object.entries(rules).filter(([key]) => serverKeys.has(key))));
-  await write(root, 'content/sources.json', sources);
-  await write(root, 'content/recipes.json', recipes);
-  await write(root, 'content/manifest.json', nextManifest);
+  await withStagedDirectory(root, 'content', async stage => {
+    for (const dir of ['characters', 'weapons', 'materials', 'config']) await mkdir(resolve(stage, `content/${dir}`), { recursive: true });
+    for (const row of catalog.characters) await write(stage, `content/characters/${row.id}.json`, { ...row, art: art[row.id] });
+    for (const [file, type] of Object.entries(weaponGroups)) await write(stage, `content/weapons/${file}.json`, catalog.weapons.filter(row => row.type === type));
+    for (const [file, category] of Object.entries(materialGroups)) await write(stage, `content/materials/${file}.json`, catalog.materials.filter(row => row.category === category));
+    const serverKeys = new Set(['servers', 'dailyResetHour', 'weeklyResetDay']);
+    await write(stage, 'content/config/progression.json', Object.fromEntries(Object.entries(rules).filter(([key]) => key !== 'activities' && !serverKeys.has(key))));
+    await write(stage, 'content/config/activities.json', { activities: rules.activities });
+    await write(stage, 'content/config/servers.json', Object.fromEntries(Object.entries(rules).filter(([key]) => serverKeys.has(key))));
+    await write(stage, 'content/sources.json', sources);
+    await write(stage, 'content/recipes.json', recipes);
+    await write(stage, 'content/manifest.json', nextManifest);
+  }, options);
   Object.assign(manifest, nextManifest);
 }

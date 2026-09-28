@@ -1,10 +1,10 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { access, readFile } from 'node:fs/promises';
-import { fileURLToPath } from 'node:url';
-import { loadContent, runtimeData, validateContent, checkRuntimeData, writeCuratedContent } from '../scripts/lib/content.mjs';
-
-const root = fileURLToPath(new URL('../', import.meta.url));
+import { access, readFile, rm, writeFile } from 'node:fs/promises';
+import { tmpdir } from 'node:os';
+import { dirname, join, resolve } from 'node:path';
+import { loadContent, runtimeData, validateContent, checkRuntimeData, writeCuratedContent, deriveRecipes } from '../scripts/lib/content.mjs';
+import { createContentWorkspace } from './fixtures/content-workspace.mjs';
 
 test('content compiles to the committed runtime data without losing fields or order', async () => {
   const content = await loadContent();
@@ -69,17 +69,30 @@ test('purification recipes are derived without changing the runtime recipes', as
   await assert.rejects(validateContent(missingSource), /synthesis-purification/);
 });
 
+test('a curated synthesis recipe takes precedence over generated Purification', async () => {
+  const content = await loadContent();
+  const generated = deriveRecipes(content.catalog, content.recipes).find(recipe => recipe.id.startsWith('purify-'));
+  assert.ok(generated);
+  const curated = { id: 'custom-override', inputs: generated.inputs, outputs: generated.outputs, verified: true, sources: ['synthesis-purification'] };
+  const result = deriveRecipes(content.catalog, [...content.recipes, curated]);
+  assert.ok(result.includes(curated));
+  assert.equal(result.some(recipe => recipe.id === generated.id), false);
+});
+
 test('curated writes reject new characters without art and stale files before changing content', async () => {
-  const original = await loadContent(root);
-  const before = await readFile(`${root}/content/manifest.json`, 'utf8');
-  const missingArt = structuredClone(original);
-  missingArt.catalog.characters.push({ ...missingArt.catalog.characters[0], id: 'novo-ressonante' });
-  await assert.rejects(writeCuratedContent(missingArt, root), /não possui art configurada/);
-  await assert.rejects(access(`${root}/content/characters/novo-ressonante.json`), { code: 'ENOENT' });
-  assert.equal(await readFile(`${root}/content/manifest.json`, 'utf8'), before);
-  const stale = structuredClone(original);
-  stale.catalog.characters = stale.catalog.characters.filter(row => row.id !== 'aalto');
-  delete stale.art.aalto;
-  await assert.rejects(writeCuratedContent(stale, root), /obsoletos.*aalto\.json/);
-  assert.equal(await readFile(`${root}/content/manifest.json`, 'utf8'), before);
+  const { root, content } = await createContentWorkspace();
+  try {
+    const before = await readFile(join(root, 'content/manifest.json'), 'utf8');
+    const missingArt = structuredClone(content);
+    missingArt.catalog.characters.push({ ...missingArt.catalog.characters[0], id: 'novo-ressonante' });
+    await assert.rejects(writeCuratedContent(missingArt, root), /não possui art configurada/);
+    await assert.rejects(access(join(root, 'content/characters/novo-ressonante.json')), { code: 'ENOENT' });
+    assert.equal(await readFile(join(root, 'content/manifest.json'), 'utf8'), before);
+    await writeFile(join(root, 'content/characters/stale.json'), '{}');
+    await assert.rejects(writeCuratedContent(content, root), /obsoletos.*stale\.json/);
+    assert.equal(await readFile(join(root, 'content/manifest.json'), 'utf8'), before);
+  } finally {
+    assert.equal(dirname(resolve(root)), resolve(tmpdir()));
+    await rm(root, { recursive: true, force: true });
+  }
 });
