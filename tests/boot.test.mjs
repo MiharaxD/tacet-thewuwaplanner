@@ -69,10 +69,19 @@ test('the actual app boots and accepts inventory edits when the storage getter t
  vm.runInContext("search='';",context);
  assert.match(toast.textContent,/Exporte um backup/);
  assert.equal(vm.runInContext('store.storage',context),null);
+ const originalQuery=context.document.querySelector,localStatus={textContent:''};
+ html=html.replace('</main>','<div class="notice error" data-other-notice>Outro aviso</div></main>');
+ assert.match(html,/data-persistence-notice/);
+ context.document.querySelector=key=>key==='.local-status'?localStatus:key==='#main [data-persistence-notice]'&&html.includes('data-persistence-notice')?{remove(){html=html.replace(/<div class="notice error" role="alert" data-persistence-notice>[^<]*<\/div>/,'');}}:originalQuery(key);
  vm.runInContext("let savedStock=null;store.storage={getItem:()=>savedStock,setItem:(key,value)=>{savedStock=value;}};store.snapshot=null;",context);
+ const beforeRecoveryRender=renderCount;
  listeners.get('change')({target:stockInput});await new Promise(resolve=>setImmediate(resolve));
  assert.equal(vm.runInContext('JSON.parse(savedStock).inventory.shell',context),12345);
  assert.equal(vm.runInContext('store.saveError',context),null);
+ assert.equal(renderCount,beforeRecoveryRender,'storage recovery does not recreate the page');
+ assert.equal(localStatus.textContent,'Salvo neste dispositivo');
+ assert.doesNotMatch(html,/data-persistence-notice/);
+ assert.match(html,/data-other-notice/,'unrelated notices remain visible');
  vm.runInContext("savedToast('Estoque atualizado.');",context);
  assert.equal(toast.textContent,'Estoque atualizado.');
  vm.runInContext('store.undo()',context);
@@ -341,6 +350,16 @@ test('the actual app boots and accepts inventory edits when the storage getter t
  context.location.hash='#inventory';windowListeners.get('hashchange')();
  releasePlanner();assert.equal((await stalePlanner).opened,false);
  assert.equal(modal.open,false,'navigation prevents the delayed planner from opening');
+ vm.runInContext("delete db['character-fortes'];",context);
+ failPlanner=true;plannerGate=new Promise(resolve=>{releasePlanner=resolve;});toast.textContent='sem erro';
+ const cancelledPlanner=plannerTools.startGoal('jinhsi');
+ listeners.get('click')({target:{closest:()=>({dataset:{action:'add',id:'jiyan'}})}});
+ await new Promise(resolve=>setImmediate(resolve));
+ context.location.hash='#summary';windowListeners.get('hashchange')();
+ releasePlanner();assert.equal((await cancelledPlanner).opened,false);
+ await new Promise(resolve=>setImmediate(resolve));
+ assert.equal(modal.open,false);assert.equal(toast.textContent,'sem erro','cancelled planner errors stay out of the global handler');
+ failPlanner=false;
  // Only the last rapid search renders, preserving focus and selection.
  vm.runInContext("route='characters';search='';render();",context);
  const searchInput={id:'search',type:'search',tagName:'INPUT',dataset:{filter:'search'},value:'',selectionStart:2,selectionEnd:4,selectionDirection:'backward',closest:()=>null,focus(){context.document.activeElement=this;},setSelectionRange(...args){this.selection=args;}};
