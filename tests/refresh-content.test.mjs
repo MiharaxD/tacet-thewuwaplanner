@@ -1,12 +1,12 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises';
+import { access, mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { dirname, join, resolve } from 'node:path';
 import { createContentWorkspace } from './fixtures/content-workspace.mjs';
 import { refreshContent } from '../scripts/lib/refresh-content.mjs';
 import { checkRuntimeData, loadContent, writeCuratedContent, writeRuntimeData } from '../scripts/lib/content.mjs';
-import { fingerprintPath } from '../scripts/lib/staging.mjs';
+import { fingerprintPath, stableFingerprintPath } from '../scripts/lib/staging.mjs';
 
 const capture = async root => Promise.all(['content/manifest.json', 'content/characters/example.json', 'data/catalog.json', 'scripts/wuwa-reference.json', 'assets/icon.webp'].map(path => readFile(join(root, path), 'utf8')));
 const editCharacter = async (workspace, name) => {
@@ -18,23 +18,34 @@ const clean = async root => {
   assert.equal(dirname(resolve(root)), resolve(tmpdir()));
   await rm(root, { recursive: true, force: true });
 };
+const recoveryPath = async root => {
+  const names = (await readdir(root)).filter(name => name.startsWith('.refresh-conflict-recovery-'));
+  assert.equal(names.length, 1);
+  return join(root, names[0]);
+};
 
 test('refresh commits validated content, runtime data, snapshots and new assets together', async () => {
   const { root } = await createContentWorkspace();
   try {
+    let workspacePath, expected;
     await refreshContent({ root,
       refreshWuwa: async workspace => {
+        workspacePath = workspace;
         await editCharacter(workspace, 'Updated');
         await writeFile(join(workspace, 'scripts/wuwa-reference.json'), '{"updated":true}\n');
         await mkdir(join(workspace, 'assets/materials'), { recursive: true });
         await writeFile(join(workspace, 'assets/materials/new.webp'), 'new image');
       },
       refreshWeapons: async () => {},
+      beforeCommit: (_workspace, fingerprints) => { expected = fingerprints; },
     });
     assert.equal((await loadContent(root)).catalog.characters[0].name, 'Updated');
     await checkRuntimeData(root);
     assert.equal(await readFile(join(root, 'scripts/wuwa-reference.json'), 'utf8'), '{"updated":true}\n');
     assert.equal(await readFile(join(root, 'assets/materials/new.webp'), 'utf8'), 'new image');
+    for (const [name, value] of expected) assert.equal(await stableFingerprintPath(join(root, name)), value.hash, name);
+    await assert.rejects(access(workspacePath), { code: 'ENOENT' });
+    assert.equal((await readdir(root)).some(name => /staging|refresh-commit|conflict-recovery/.test(name)), false);
   } finally { await clean(root); }
 });
 
@@ -240,6 +251,12 @@ test('fingerprints detect equal-sized edits, removed files and empty directories
     const missing = await fingerprintPath(join(root, 'assets/materials'));
     await mkdir(join(root, 'assets/materials'));
     assert.notEqual(await fingerprintPath(join(root, 'assets/materials')), missing);
+    const typed = join(root, 'assets/type-change');
+    await writeFile(typed, 'file');
+    const fileHash = await fingerprintPath(typed);
+    await rm(typed);
+    await mkdir(typed);
+    assert.notEqual(await fingerprintPath(typed), fileHash);
   } finally { await clean(root); }
 });
 
@@ -300,5 +317,127 @@ test('an asset edit after refresh adds images is detected before finishing swaps
     assert.deepEqual(await capture(root), before);
     assert.equal(await readFile(existing, 'utf8'), 'external image');
     await assert.rejects(readFile(join(root, 'assets/materials/new.webp')), { code: 'ENOENT' });
+  } finally { await clean(root); }
+});
+
+test('workspace copied from a transient edit is rejected even when the real file returns to baseline', async () => {
+  const { root } = await createContentWorkspace();
+  try {
+    const path = join(root, 'content/characters/example.json');
+    const original = await readFile(path, 'utf8');
+    let imported = false;
+    await assert.rejects(refreshContent({ root,
+      afterBaseline: async () => writeFile(path, original.replace('Example', 'Changed')),
+      afterWorkspaceCopy: async () => writeFile(path, original),
+      refreshWuwa: async () => { imported = true; },
+      refreshWeapons: async () => {},
+    }), /content.*alterado durante o refresh/);
+    assert.equal(imported, false);
+    assert.equal(await readFile(path, 'utf8'), original);
+    assert.equal((await readdir(root)).some(name => name.startsWith('.refresh-commit-')), false);
+  } finally { await clean(root); }
+});
+
+for (const changed of ['content', 'data', 'scripts/wuwa-reference.json'])
+  test(`an external edit to installed ${changed} is recovered and baseline restored`, async () => {
+    const { root } = await createContentWorkspace();
+    try {
+      const before = await capture(root);
+      await assert.rejects(refreshContent({ root,
+        refreshWuwa: async workspace => {
+          await editCharacter(workspace, 'Uncommitted');
+          await writeFile(join(workspace, 'scripts/wuwa-reference.json'), '{"refresh":true}');
+        },
+        refreshWeapons: async () => {},
+        afterSwap: async target => {
+          if (target !== join(root, changed)) return;
+          if (changed === 'content') {
+            const file = join(target, 'characters/example.json');
+            const row = JSON.parse(await readFile(file, 'utf8'));
+            row.name = 'External after install';
+            await writeFile(file, JSON.stringify(row));
+          } else if (changed === 'data') await writeFile(join(target, 'weapon-stats.json'), 'external cache');
+          else await writeFile(target, '{"external":true}');
+        },
+      }), /\.refresh-conflict-recovery-/);
+      assert.deepEqual(await capture(root), before);
+      await checkRuntimeData(root);
+      const saved = await recoveryPath(root);
+      if (changed === 'content') assert.equal(JSON.parse(await readFile(join(saved, 'content/characters/example.json'), 'utf8')).name, 'External after install');
+      else if (changed === 'data') assert.equal(await readFile(join(saved, 'data/weapon-stats.json'), 'utf8'), 'external cache');
+      else assert.equal(await readFile(join(saved, 'scripts/wuwa-reference.json'), 'utf8'), '{"external":true}');
+    } finally { await clean(root); }
+  });
+
+test('an edited new asset is moved to recovery during rollback', async () => {
+  const { root } = await createContentWorkspace();
+  try {
+    const before = await capture(root);
+    await assert.rejects(refreshContent({ root,
+      refreshWuwa: async workspace => {
+        await editCharacter(workspace, 'Uncommitted');
+        await mkdir(join(workspace, 'assets/materials'), { recursive: true });
+        await writeFile(join(workspace, 'assets/materials/new.webp'), 'refresh image');
+      },
+      refreshWeapons: async () => {},
+      afterSwap: async target => {
+        if (target === join(root, 'content')) await writeFile(join(root, 'assets/materials/new.webp'), 'external image');
+      },
+    }), /\.refresh-conflict-recovery-/);
+    assert.deepEqual(await capture(root), before);
+    await assert.rejects(access(join(root, 'assets/materials/new.webp')), { code: 'ENOENT' });
+    const saved = await recoveryPath(root);
+    assert.equal(await readFile(join(saved, 'assets/materials/new.webp'), 'utf8'), 'external image');
+  } finally { await clean(root); }
+});
+
+test('an earlier installed target is rechecked while a later swap begins', async () => {
+  const { root } = await createContentWorkspace();
+  try {
+    const before = await capture(root);
+    await assert.rejects(refreshContent({ root,
+      refreshWuwa: workspace => editCharacter(workspace, 'Uncommitted'),
+      refreshWeapons: async () => {},
+      beforeTargetSwap: async name => {
+        if (name !== 'data') return;
+        const file = join(root, 'content/characters/example.json');
+        const row = JSON.parse(await readFile(file, 'utf8'));
+        row.name = 'Edited during data swap';
+        await writeFile(file, JSON.stringify(row));
+      },
+    }), /\.refresh-conflict-recovery-/);
+    assert.deepEqual(await capture(root), before);
+    assert.equal(JSON.parse(await readFile(join(await recoveryPath(root), 'content/characters/example.json'), 'utf8')).name, 'Edited during data swap');
+  } finally { await clean(root); }
+});
+
+test('real-project semantic validation can reject a late data edit and recover it', async () => {
+  const { root } = await createContentWorkspace();
+  try {
+    const before = await capture(root);
+    await assert.rejects(refreshContent({ root,
+      refreshWuwa: workspace => editCharacter(workspace, 'Uncommitted'),
+      refreshWeapons: async () => {},
+      afterPhysicalValidation: async () => writeFile(join(root, 'data/catalog.json'), '{invalid json'),
+    }), /\.refresh-conflict-recovery-/);
+    assert.deepEqual(await capture(root), before);
+    assert.equal(await readFile(join(await recoveryPath(root), 'data/catalog.json'), 'utf8'), '{invalid json');
+    await checkRuntimeData(root);
+  } finally { await clean(root); }
+});
+
+test('final validation catches an unchanged snapshot edited after all swaps', async () => {
+  const { root } = await createContentWorkspace();
+  try {
+    const before = await capture(root);
+    await assert.rejects(refreshContent({ root,
+      refreshWuwa: workspace => editCharacter(workspace, 'Uncommitted'),
+      refreshWeapons: async () => {},
+      beforeFinalValidation: () => writeFile(join(root, 'scripts/wuwa-reference.json'), '{"late":true}'),
+    }), /scripts\/wuwa-reference\.json.*alterado durante o refresh/);
+    assert.equal(await readFile(join(root, 'scripts/wuwa-reference.json'), 'utf8'), '{"late":true}');
+    assert.equal(await readFile(join(root, 'content/characters/example.json'), 'utf8'), before[1]);
+    assert.equal(await readFile(join(root, 'data/catalog.json'), 'utf8'), before[2]);
+    assert.equal((await readdir(root)).some(name => name.startsWith('.refresh-conflict-recovery-')), false);
   } finally { await clean(root); }
 });

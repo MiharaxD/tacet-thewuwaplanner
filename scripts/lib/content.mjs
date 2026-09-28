@@ -3,7 +3,7 @@ import { resolve } from 'node:path';
 import { isDeepStrictEqual } from 'node:util';
 import { validateEventCatalog } from '../../src/domain/official-events.js';
 import { validateAssetFields } from '../validate-assets.mjs';
-import { withStagedDirectory } from './staging.mjs';
+import { assertFingerprint, stableFingerprintPath, withStagedDirectory } from './staging.mjs';
 
 const weaponGroups = { broadblade: 'Broadblade', sword: 'Sword', rectifier: 'Rectifier', pistols: 'Pistols', gauntlets: 'Gauntlets' };
 const materialGroups = { currency: 'Moeda', experience: 'Experiência', enemies: 'Inimigos', forgery: 'Forja', collectibles: 'Coleta', bosses: 'Chefe', weekly: 'Semanal', special: 'Especial' };
@@ -155,14 +155,27 @@ export function runtimeData({ catalog, art, rules, events, recipes, sources, for
 }
 
 export async function writeRuntimeData(content, root = '.', options = {}) {
+  const contentRoot = resolve(root, 'content');
+  const sourceHash = options.expectedContentHash ?? await stableFingerprintPath(contentRoot);
   await validateContent(content, root);
+  await assertFingerprint(contentRoot, sourceHash, 'content');
   await withStagedDirectory(root, 'data', async stage => {
     for (const [name, value] of Object.entries(runtimeData(content))) {
       if (name === 'forte-descriptions-pt')
         await writeFile(resolve(stage, `data/${name}.json`), await readFile(resolve(root, `content/${name}.json`)));
       else await write(stage, `data/${name}.json`, value);
     }
-  }, options);
+  }, {
+    ...options,
+    beforeSwap: async () => {
+      await options.beforeSwap?.();
+      await assertFingerprint(contentRoot, sourceHash, 'content');
+    },
+    afterSwap: async () => {
+      await options.afterSwap?.();
+      await assertFingerprint(contentRoot, sourceHash, 'content');
+    },
+  });
 }
 
 export async function checkRuntimeData(root = '.') {

@@ -1,7 +1,12 @@
 import {readFile,writeFile} from 'node:fs/promises';
 import {pageRecords} from './read-akademiya.mjs';
+import {assertFingerprint,stableFingerprintPath,withStagedDirectory} from './lib/staging.mjs';
+const referenceHash=await stableFingerprintPath('scripts/weapons-reference.json');
+const dataHash=await stableFingerprintPath('data');
 const reference=JSON.parse(await readFile('scripts/weapons-reference.json','utf8'));
 const catalog=JSON.parse(await readFile('data/catalog.json','utf8'));
+await assertFingerprint('scripts/weapons-reference.json',referenceHash,'scripts/weapons-reference.json');
+await assertFingerprint('data',dataHash,'data');
 const pending=[...catalog.weapons],stats={},errors=[];
 await Promise.all(Array.from({length:6},async()=>{while(pending.length){
  const weapon=pending.shift(),ref=reference.weapons.find(r=>r.name===weapon.name);
@@ -14,5 +19,9 @@ await Promise.all(Array.from({length:6},async()=>{while(pending.length){
  }catch(error){errors.push(`${weapon.name}: ${error.message}`);}
 }}));
 if(errors.length)throw Error(errors.join('\n'));
-await writeFile('data/weapon-stats.json',JSON.stringify(stats,null,2)+'\n');
+await withStagedDirectory('.', 'data', stage => writeFile(`${stage}/data/weapon-stats.json`,JSON.stringify(stats,null,2)+'\n'), {
+ expectedBaseline:dataHash,
+ beforeSwap:()=>assertFingerprint('scripts/weapons-reference.json',referenceHash,'scripts/weapons-reference.json'),
+ afterSwap:()=>assertFingerprint('scripts/weapons-reference.json',referenceHash,'scripts/weapons-reference.json'),
+});
 console.log(`${Object.keys(stats).length} armas com atributos conferidos.`);

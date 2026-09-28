@@ -94,4 +94,4 @@ Os cards e banners usam artes originais de 696 × 960 em `assets/characters/card
 
 ## Arquivos de produção e fontes brutas
 
-`assets/` contém imagens públicas. `source-assets/` guarda arquivos brutos e históricos. `content/` contém os dados estruturados editáveis; `data/` contém os JSONs compilados carregados pelo navegador. As pastas `content/` e `source-assets/` não entram em `dist/`. `scripts/import-wuwa.mjs` lê `source-assets/wuwa/characters/` e `source-assets/wuwa/materials/` apenas na atualização explícita, modifica `content/` e copia imagens de materiais para `assets/materials/`.
+`assets/` contém imagens públicas. `source-assets/` guarda arquivos brutos e históricos. `content/` contém os dados estruturados editáveis; `data/` contém os JSONs compilados carregados pelo navegador. As pastas `content/` e `source-assets/` não entram em `dist/`. Use `npm run catalog:refresh` para executar `scripts/import-wuwa.mjs` e `scripts/import-weapons.mjs` na workspace temporária; a execução direta desses importadores no projeto real não faz parte do fluxo suportado.

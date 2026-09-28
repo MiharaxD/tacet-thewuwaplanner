@@ -21,6 +21,6 @@
 
 Depois de editar, execute `npm run catalog`, `npm run data:check`, `npm test` e `npm run build`. O build apenas verifica a sincronia; ele não reescreve `data/`.
 
-`npm run catalog:refresh` detecta alterações feitas no projeto durante a atualização e aborta antes de sobrescrever edições manuais; nesse caso, execute-o novamente.
+`npm run catalog:refresh` usa detecção otimista de concorrência: se o projeto mudar durante a atualização, aborta sem sobrescrever edições manuais. Se uma edição ocorrer depois de um arquivo já ter sido instalado, o rollback restaura o estado anterior e guarda a edição em `.refresh-conflict-recovery-*`; o erro informa o caminho para recuperá-la. Execute o refresh novamente após resolver o conflito. Execute importadores somente pelo comando `catalog:refresh`, que os isola em uma workspace temporária.
 
 `data/character-fortes.json` e `data/weapon-stats.json` são caches produzidos pelos scripts de atualização, não fontes de edição manual. `source-assets/` guarda evidência bruta; `assets/` guarda imagens públicas. Nem `content/` nem `source-assets/` entram na publicação.

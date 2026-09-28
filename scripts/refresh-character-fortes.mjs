@@ -1,8 +1,13 @@
 import {readFile,writeFile,mkdir} from 'node:fs/promises';
 import {pageRecords} from './read-akademiya.mjs';
+import {assertFingerprint,stableFingerprintPath,withStagedDirectory} from './lib/staging.mjs';
+const referenceHash=await stableFingerprintPath('scripts/wuwa-reference.json');
+const dataHash=await stableFingerprintPath('data');
 const catalog=JSON.parse(await readFile('data/catalog.json','utf8'));
 const refs=JSON.parse(await readFile('scripts/wuwa-reference.json','utf8')).characters;
 const portuguese=JSON.parse(await readFile('data/forte-descriptions-pt.json','utf8'));
+await assertFingerprint('scripts/wuwa-reference.json',referenceHash,'scripts/wuwa-reference.json');
+await assertFingerprint('data',dataHash,'data');
 const pending=[...catalog.characters],result={},errors=[];
 const clean=text=>(text||'').replace(/<[^>]*>/g,'').replace(/\{Cus:Sap,S=([^ ]+) P=([^ ]+) SapTag=\d+\}/g,'$2').replace(/\n\s*\n/g,'\n').trim();
 const normalize=name=>name.toLowerCase().replace(/[^a-z0-9]/g,'');
@@ -32,6 +37,10 @@ await Promise.all(Array.from({length:5},async()=>{while(pending.length){
   result[c.id]={source,consultedAt:new Date().toISOString().slice(0,10),branches};
  }catch(e){errors.push(`${c.name}: ${e.message}`);}
 }}));
-await writeFile('data/character-fortes.json',JSON.stringify(result,null,2)+'\n');
-console.log(`${Object.keys(result).length} personagens.`,errors);
-if(errors.length)process.exitCode=1;
+if(errors.length)throw Error(errors.join('\n'));
+await withStagedDirectory('.', 'data', stage => writeFile(`${stage}/data/character-fortes.json`,JSON.stringify(result,null,2)+'\n'), {
+ expectedBaseline:dataHash,
+ beforeSwap:()=>assertFingerprint('scripts/wuwa-reference.json',referenceHash,'scripts/wuwa-reference.json'),
+ afterSwap:()=>assertFingerprint('scripts/wuwa-reference.json',referenceHash,'scripts/wuwa-reference.json'),
+});
+console.log(`${Object.keys(result).length} personagens.`);
