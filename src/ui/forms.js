@@ -1,4 +1,4 @@
-import {integer} from './engine.js';
+import {integer} from '../domain/engine.js';
 
 export function rewardSlots(event){return Array.from({length:Math.max(3,Object.keys(event?.rewards||{}).length)},(_,i)=>i);}
 

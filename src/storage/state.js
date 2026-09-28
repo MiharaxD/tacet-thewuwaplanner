@@ -1,4 +1,4 @@
-import { clone,integer,validateGoal } from './engine.js';
+import { clone,integer,validateGoal } from '../domain/engine.js';
 export const STORAGE_KEY='tacet-planner:v1';
 export const CONFLICT_MESSAGE='Dados alterados em outra aba. Esta aba não pode salvar. Exporte um backup desta aba, se necessário, e recarregue para continuar.';
 export function getStorage(host){try{return host.localStorage;}catch{return null;}}

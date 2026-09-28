@@ -1,17 +1,23 @@
-import * as farmRates from '../src/farm-rates.js';
-import * as materials from '../src/materials.js';
+import * as farmRates from '../src/domain/farm-rates.js';
+import * as materials from '../src/domain/materials.js';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import vm from 'node:vm';
-import * as engine from '../src/engine.js';
-import * as state from '../src/state.js';
-import * as time from '../src/time.js';
-import * as ui from '../src/ui.js';
-import * as forms from '../src/forms.js';
-import * as official from '../src/official-events.js';
-import * as progress from '../src/progress-input.js';
-import * as forteProgress from '../src/forte-progress.js';
+import * as engine from '../src/domain/engine.js';
+import * as state from '../src/storage/state.js';
+import * as time from '../src/domain/time.js';
+import * as ui from '../src/ui/common.js';
+import * as forms from '../src/ui/forms.js';
+import * as official from '../src/domain/official-events.js';
+import * as progress from '../src/planner/progress-input.js';
+import * as forteProgress from '../src/planner/forte-progress.js';
+import {summary as renderSummary} from '../src/pages/summary.js';
+import {characters as renderCharacters,filteredCharacters as pageFilteredCharacters} from '../src/pages/characters.js';
+import {inventory as renderInventory} from '../src/pages/inventory.js';
+import {farm as renderFarm} from '../src/pages/farm.js';
+import {events as renderEvents,publishedEvents as pagePublishedEvents,eventTimeLabel as pageEventTimeLabel,eventCard as pageEventCard,currentCalendarMonth as pageCurrentCalendarMonth} from '../src/pages/events.js';
+import {settings as renderSettings} from '../src/pages/settings.js';
 
 test('the actual app boots and accepts inventory edits when the storage getter throws',async()=>{
  let clock=Date.now(),renderCount=0,html='';const timers=[],timeouts=new Map(),fetches=[];let timeoutId=0,plannerTools,failPlanner=false,releasePlanner;let plannerGate=Promise.resolve();const windowListeners=new Map();
@@ -23,7 +29,9 @@ test('the actual app boots and accepts inventory edits when the storage getter t
  const elements={'#app':app,'#modal':modal,'#toast':toast};
  const window={addEventListener(name,fn){windowListeners.set(name,fn);},scrollTo(){},get localStorage(){throw new DOMException('Blocked','SecurityError');}};
  const context=vm.createContext({
-  ...progress,...forteProgress,...farmRates,...materials,...engine,...state,...time,...ui,...forms,...official,h:ui.escape,window,navigator:{},location:{hash:''},
+  ...progress,...forteProgress,...farmRates,...materials,...engine,...state,...time,...ui,...forms,...official,
+  renderSummary,renderCharacters,pageFilteredCharacters,renderInventory,renderFarm,renderEvents,pagePublishedEvents,pageEventTimeLabel,pageEventCard,pageCurrentCalendarMonth,
+  renderSettings,h:ui.escape,window,navigator:{},location:{hash:''},
   document:{getElementById:id=>elements['#'+id]||null,querySelector:key=>elements[key]||null,querySelectorAll:()=>[],addEventListener:(name,fn)=>{if(name!=='click'||!listeners.has(name))listeners.set(name,fn);},activeElement:null},
   registerPlannerTools(tools){plannerTools=tools;},structuredClone,Intl,URL,crypto,Date:ClockDate,
   eventStatus:(e,now=clock)=>time.eventStatus(e,now),countdown:(end,now=clock)=>time.countdown(end,now),
@@ -35,7 +43,7 @@ test('the actual app boots and accepts inventory edits when the storage getter t
  });
  // Use the real planner renderers, keeping their DOM listeners outside this boot test.
  for(const [file,exports] of [['level-picker',['levelField','skillField']],['forte-tree',['forteTree']],['weapon-grid',['weaponGrid']]]){
-  const code=(await readFile(new URL('../src/'+file+'.js',import.meta.url),'utf8')).replace(/^import .*;\r?\n/gm,'').replace(/export function /g,'function ');
+  const code=(await readFile(new URL('../src/planner/'+file+'.js',import.meta.url),'utf8')).replace(/^import .*;\r?\n/gm,'').replace(/export function /g,'function ');
   Object.assign(context,vm.runInContext(`((document,window)=>{${code};return {${exports.join(',')}};})({addEventListener(){}},{addEventListener(){}})`,context));
  }
  // Run the real boot and event handlers with only browser I/O replaced.

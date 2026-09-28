@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
-import {farmRate,farmWaveplates} from '../src/farm-rates.js';
+import {farmRate,farmWaveplates} from '../src/domain/farm-rates.js';
 const db={catalog:JSON.parse(await readFile(new URL('../data/catalog.json',import.meta.url),'utf8'))};
 test('defaults convert advanced consumables to EXP rather than item counts',()=>{
  for(const [id,item] of [['xp-potion','potion-2'],['xp-energy','energy-2']])assert.equal(farmRate({id},db),11.5*db.catalog.materials.find(m=>m.id===item).xp);

@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,existsSync} from 'node:fs';
-import {newGoal,requirements,validateGoal} from '../src/engine.js';
+import {newGoal,requirements,validateGoal} from '../src/domain/engine.js';
 const db=Object.fromEntries(['catalog','rules','recipes','sources'].map(k=>[k,JSON.parse(readFileSync(`data/${k}.json`))]));
 function goal(name){const w=db.catalog.weapons.find(w=>w.name===name);const c=db.catalog.characters.find(c=>c.weapon===w.type);const g=newGoal(c.id,'test');g.target=structuredClone(g.current);g.weapon={id:w.id,current:{level:1,ascension:0,xp:0},target:{level:20,ascension:0,xp:0}};return g;}
 test('weapon EXP uses the selected rarity instead of the five-star table',()=>{for(const [name,xp]of [['Static Mist',38700],['Autumntrace',36900],['Guardian Broadblade',22140],['Tyro Broadblade',18450],['Training Broadblade',14760]]){assert.equal(requirements(goal(name),db).weaponXp,xp);}});

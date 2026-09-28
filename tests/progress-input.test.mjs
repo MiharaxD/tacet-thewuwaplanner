@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {ascensionChoices,resolveAscension} from '../src/progress-input.js';
+import {ascensionChoices,resolveAscension} from '../src/planner/progress-input.js';
 const caps=[20,40,50,60,70,80,90];
 test('each cap offers both valid ascension states, except the final cap',()=>{
  for(let i=0;i<6;i++){

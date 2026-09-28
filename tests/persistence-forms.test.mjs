@@ -1,8 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
-import {defaultState,validateState,loadState,Store,STORAGE_KEY,getStorage,withStorageLock} from '../src/state.js';
-import {rewardSlots,readEventRewards,restoreSettingsDraft} from '../src/forms.js';
+import {defaultState,validateState,loadState,Store,STORAGE_KEY,getStorage,withStorageLock} from '../src/storage/state.js';
+import {rewardSlots,readEventRewards,restoreSettingsDraft} from '../src/ui/forms.js';
 
 const db=Object.fromEntries(await Promise.all(['catalog','rules','sources','recipes'].map(async name=>[name,JSON.parse(await readFile(new URL(`../data/${name}.json`,import.meta.url),'utf8'))])));
 function memory(){const data=new Map();return {getItem:key=>data.get(key)??null,setItem:(key,value)=>data.set(key,value),removeItem:key=>data.delete(key)};}

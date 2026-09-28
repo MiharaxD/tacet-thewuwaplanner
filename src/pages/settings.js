@@ -1,0 +1,10 @@
+import {escape as h,icon,button} from '../ui/common.js';
+import {topHeader} from '../ui/components.js';
+
+export function settings(ctx) {
+   const {db,state,store,loadWarning}=ctx;
+   return topHeader('Seu terminal', 'Ajuste o planejamento ao seu ritmo.') +
+      `<div class="settings-grid"><section class="panel settings-panel"><h2>Conta e disponibilidade</h2><form id="settings-form"><label>Servidor<select name="server">${Object.keys(db.rules.servers).map(s => `<option ${s === state().settings.server ? 'selected' : ''}>${s}</option>`).join('')}</select></label><label>Fuso de exibição<select name="timeZone">${[...new Set(['America/Sao_Paulo', 'America/Manaus', 'America/New_York', 'Europe/Lisbon', 'Europe/London', 'Asia/Shanghai', 'Asia/Tokyo', 'UTC', state().settings.timeZone])].map(s => `<option ${s === state().settings.timeZone ? 'selected' : ''}>${s}</option>`).join('')}</select></label><div class="form-columns"><label>Nível de União<input name="unionLevel" type="number" min="1" max="80" value="${state().settings.unionLevel}" required></label><label>Waveplates por dia<input name="dailyWaveplates" type="number" min="1" max="10000" value="${state().settings.dailyWaveplates}" required></label></div><label>Recompensas semanais já resgatadas<input name="weeklyClaimsUsed" type="number" min="0" max="3" value="${state().settings.weeklyClaimsUsed}" required></label><button class="primary" type="submit">Salvar configurações</button></form></section>
+ <section class="panel settings-panel"><h2>Seus dados, com você</h2><p>Salvamento local neste navegador. Um backup leva suas metas, estoque, eventos e configurações para outro dispositivo.</p><div class="button-group">${button(icon('download') + ' Exportar backup', 'export')}${button(icon('upload') + ' Importar backup', 'import')}</div>${button(icon('undo') + ' Desfazer última alteração', 'undo', store.history.length ? '' : 'disabled')}${loadWarning ? `<div class="notice">${h(loadWarning)}</div>${button('Baixar cópia de recuperação', 'recovery')}` : ''}</section></div>
+ `;
+}

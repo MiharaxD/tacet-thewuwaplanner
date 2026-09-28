@@ -9,16 +9,20 @@ import {execFileSync} from 'node:child_process';
 test('build removes obsolete output and copies the current project',async()=>{
  const root=await mkdtemp(join(tmpdir(),'tacet-build-test-'));
  try{
-  for(const dir of ['src','data','assets','dist/old'])await mkdir(join(root,dir),{recursive:true});
+  for(const dir of ['src/pages','data','assets','dist/old'])await mkdir(join(root,dir),{recursive:true});
   await writeFile(join(root,'dist/old/removed.txt'),'obsolete');
   await writeFile(join(root,'index.html'),'<h1>Current build</h1>');
   await writeFile(join(root,'data/events.json'),JSON.stringify({version:1,events:[]}));
   await writeFile(join(root,'src/current.js'),'export const current=true;');
+  await writeFile(join(root,'src/pages/summary.js'),'export const nested=true;');
   await writeFile(join(root,'assets/current.txt'),'current asset');
   execFileSync(process.execPath,[fileURLToPath(new URL('../scripts/build.mjs',import.meta.url))],{cwd:root});
   await assert.rejects(access(join(root,'dist/old/removed.txt')),{code:'ENOENT'});
   assert.equal(await readFile(join(root,'dist/assets/current.txt'),'utf8'),'current asset');
   assert.equal(await readFile(join(root,'dist/index.html'),'utf8'),'<h1>Current build</h1>');
+  assert.equal(await readFile(join(root,'dist/src/pages/summary.js'),'utf8'),'export const nested=true;');
+  await writeFile(join(root,'src/pages/summary.js'),'export const = invalid;');
+  assert.throws(()=>execFileSync(process.execPath,[fileURLToPath(new URL('../scripts/build.mjs',import.meta.url))],{cwd:root,stdio:'pipe'}),/Command failed/);
  }finally{
   assert.equal(dirname(resolve(root)),resolve(tmpdir()));
   await rm(root,{recursive:true,force:true});

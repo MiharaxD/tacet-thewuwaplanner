@@ -1,8 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
-import {newGoal,requirements,validateGoal} from '../src/engine.js';
-import {defaultState,parseBackup,validateState} from '../src/state.js';
+import {newGoal,requirements,validateGoal} from '../src/domain/engine.js';
+import {defaultState,parseBackup,validateState} from '../src/storage/state.js';
 const db=Object.fromEntries(await Promise.all(['catalog','rules'].map(async name=>[name,JSON.parse(await readFile(new URL(`../data/${name}.json`,import.meta.url),'utf8'))])));
 test('resonance sequence survives backup round trips without changing material costs',()=>{
  const goal=newGoal('jinhsi','sequence-test'),before=requirements(goal,db);

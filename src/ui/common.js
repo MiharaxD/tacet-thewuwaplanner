@@ -1,4 +1,4 @@
-import {sortMaterials} from './materials.js';
+import {sortMaterials} from '../domain/materials.js';
 export const escape=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const ELEMENT_LABELS={Fusion:'Térmico',Glacio:'Criogênico',Aero:'Pneumático',Electro:'Voltaico',Spectro:'Fotônico',Havoc:'Aniquilante'};
 export const elementLabel=value=>Object.hasOwn(ELEMENT_LABELS,value)?ELEMENT_LABELS[value]:value;

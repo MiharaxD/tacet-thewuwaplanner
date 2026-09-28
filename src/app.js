@@ -1,17 +1,22 @@
-import { sortMaterials, materialFamily, recipeFor } from './materials.js';
-import { farmRate, farmWaveplates } from './farm-rates.js';
-import { validateEventCatalog, officialEvents, eventCycle, isEventCompleted, setEventCompleted } from './official-events.js';
-import { forteTree } from './forte-tree.js';
-import { ascensionChoices, resolveAscension } from './progress-input.js';
-import { weaponGrid } from './weapon-grid.js';
-import './planner-tabs.js';
-import { levelField, skillField } from './level-picker.js';
-import { allocate, newGoal, clone, validateGoal, SKILLS, synthesisSuggestions, applySynthesis, applyAutomaticSynthesis, completeGoal, estimateFarm, integer } from './engine.js';
-import { defaultState, loadState, Store, parseBackup, mergeState, STORAGE_KEY, getStorage, withStorageLock } from './state.js';
-import { eventStatus, countdown, nextReset, formatDate, dayKey } from './time.js';
-import { elementLabel, characterLabel, characterSearchText, escape as h, fmt, compact, icon, button, badge, empty, bar, portrait, weaponLabel, materialMeta, materialIcon, materialTable } from './ui.js';
-import { restoreSettingsDraft } from './forms.js';
-import { registerPlannerTools } from './webmcp.js';
+import { sortMaterials, materialFamily, recipeFor } from './domain/materials.js';
+import { validateEventCatalog, officialEvents, eventCycle, isEventCompleted, setEventCompleted } from './domain/official-events.js';
+import { forteTree } from './planner/forte-tree.js';
+import { ascensionChoices, resolveAscension } from './planner/progress-input.js';
+import { weaponGrid } from './planner/weapon-grid.js';
+import './planner/planner-tabs.js';
+import { levelField } from './planner/level-picker.js';
+import { allocate, newGoal, clone, validateGoal, SKILLS, applySynthesis, applyAutomaticSynthesis, completeGoal, integer } from './domain/engine.js';
+import { loadState, Store, parseBackup, mergeState, STORAGE_KEY, getStorage, withStorageLock } from './storage/state.js';
+import { eventStatus, countdown, nextReset, dayKey } from './domain/time.js';
+import { elementLabel, characterLabel, characterSearchText, escape as h, fmt, compact, icon, button, portrait, weaponLabel, materialMeta, materialIcon } from './ui/common.js';
+import { restoreSettingsDraft } from './ui/forms.js';
+import { registerPlannerTools } from './integrations/webmcp.js';
+import { summary as renderSummary } from './pages/summary.js';
+import { characters as renderCharacters, filteredCharacters as pageFilteredCharacters } from './pages/characters.js';
+import { inventory as renderInventory } from './pages/inventory.js';
+import { farm as renderFarm } from './pages/farm.js';
+import { events as renderEvents, publishedEvents as pagePublishedEvents, eventTimeLabel as pageEventTimeLabel, eventCard as pageEventCard, currentCalendarMonth as pageCurrentCalendarMonth } from './pages/events.js';
+import { settings as renderSettings } from './pages/settings.js';
 
 const app = document.querySelector('#app'), modal = document.querySelector('#modal');
 let db, store, plan, loadWarning = '', route = 'summary', search = '', element = '', weaponFilter = '', category = '', usedOnly = false, eventView = 'list', eventMonth = null, eventMonthZone = null, editingGoal = null, pendingImport = null, toastTimer;
@@ -50,101 +55,21 @@ const modalHeader = (title, sub = '') => `<header class="modal-header"><div><spa
 function resetClosedModal() { plannerRequest++; closeStockEditor(); modal.innerHTML = ''; editingGoal = null; pendingImport = null; stockAnchor = null; }
 function closeModal() { modal.close(); resetClosedModal(); }
 modal.addEventListener('close', () => { if (!modal.open) resetClosedModal(); });
-function topHeader(title, subtitle, action = '') { return `<div class="page-heading"><div><span class="eyebrow">WUTHERING WAVES / PLANEJADOR</span><h1>${title}</h1><p>${subtitle}</p></div>${action}</div>`; }
 function resultFor(goal) { return plan.goals.find(g => g.goalId === goal.id); }
-function filteredCharacters() { return db.catalog.characters.filter(c => (!search || characterSearchText(c).includes(search.toLowerCase())) && (!element || c.element === element) && (!weaponFilter || c.weapon === weaponFilter)); }
-function characterCard(c) {
-   const added = state().goals.some(g => g.charId === c.id);
-   return `<article class="character-card ${c.element.toLowerCase()}"><button type="button" class="character-art character-photo" data-action="${added ? 'edit-char' : 'add'}" data-id="${h(c.id)}" aria-label="${added ? 'Editar meta de' : 'Planejar'} ${h(characterLabel(c))} pela foto">${badge(elementLabel(c.element), 'element')}${portrait(c, 'large')}<span class="rarity">${'★'.repeat(c.rarity)}</span></button><div class="character-body"><div><h3>${h(characterLabel(c))}</h3><p>${weaponLabel(c.weapon)}</p></div>${button(added ? icon('check') : icon('plus'), added ? 'edit-char' : 'add', `data-id="${c.id}" aria-label="${added ? 'Editar meta de' : 'Planejar'} ${h(characterLabel(c))}"`, 'add-character')}</div></article>`;
-}
-function goalFarmMaterials(result) {
-   const rows = sortMaterials(result.itemRows.filter(r => r.missing > 0), db); if (!rows.length) return '<p class="goal-farm-ready">Nenhum material faltante ✓</p>';
-   return `<section class="goal-farm"><h4>Materiais que faltam</h4><div class="goal-farm-grid">${rows.map(row => { const m = materialMeta(row.id, db), cost = db.rules.activities[m.activity]?.waveplates || 0, average = farmRate(m, db), est = estimateFarm(row.missing, average, cost, state().settings.dailyWaveplates); return `<button type="button" class="goal-farm-item" data-action="edit-goal-stock" data-id="${h(row.id)}" data-stock-anchor="goal:${h(result.goalId)}:${h(row.id)}" aria-label="Editar estoque de ${h(m.name)}" title="${h(m.name)}"><span class="sr-only">${h(m.name)}</span>${materialIcon(m)}<strong aria-label="${fmt(row.missing)} faltando">${compact(row.missing)}</strong><small>${cost ? (est ? '≈ ' + fmt(est.runs) + ' tentativas' : 'Tentativas não estimadas') : 'Coleta livre'}</small><small>${cost ? (est ? fmt(est.waveplates) + ' Waveplates' : 'Waveplates não estimados') : '0 Waveplates'}</small></button>`; }).join('')}</div></section>`;
-}
-function goalCard(goal, index) {
-   const c = db.catalog.characters.find(c => c.id === goal.charId), r = resultFor(goal);
-   return `<article class="goal-card"><div class="goal-card-top">${button(portrait({ ...c, imageHighRes: db['character-art']?.[c.id]?.icon || c.image }), 'edit', `data-id="${h(goal.id)}" aria-label="Editar meta de ${h(characterLabel(c))} pela foto"`, 'goal-photo')}<div><div class="eyebrow">PRIORIDADE ${String(index + 1).padStart(2, '0')} ${goal.done ? '· CONCLUÍDA' : ''}</div><h3>${h(characterLabel(c))}</h3><span class="muted">${h(elementLabel(c.element))} · ${weaponLabel(c.weapon)}</span></div><div class="goal-order">${button('↑', 'move-up', `data-id="${goal.id}" aria-label="Aumentar prioridade de ${h(characterLabel(c))}" ${index === 0 ? 'disabled' : ''}`, 'icon-button')}${button('↓', 'move-down', `data-id="${goal.id}" aria-label="Diminuir prioridade de ${h(characterLabel(c))}" ${index === state().goals.length - 1 ? 'disabled' : ''}`, 'icon-button')}</div></div><div class="goal-level"><span>Nível <b>${goal.current.level}</b> <span class="muted">→</span> <b>${goal.target.level}</b></span><span>Ascensão ${goal.current.ascension} → ${goal.target.ascension}</span></div>${bar(r.progress)}<div class="progress-caption"><span>${r.missingData.length ? 'Cálculo parcial · verificar dados' : goal.done ? 'Evolução registrada' : 'Materiais reservados'}</span><strong>${r.progress}%</strong></div>${goalFarmMaterials(r)}<div class="goal-actions">${button('Ver materiais', 'detail', `data-id="${goal.id}"`, 'text-button')}${button(icon('settings'), 'edit', `data-id="${goal.id}" aria-label="Editar meta de ${h(characterLabel(c))}"`, 'icon-button')}${button(goal.done ? 'Reabrir' : 'Registrar evolução', goal.done ? 'reopen' : 'complete', `data-id="${goal.id}" ${(!goal.done && (!r.ready || !r.hasWork)) ? 'disabled' : ''}`, 'small-button')}</div></article>`;
-}
-function summary() {
-   const active = state().goals.filter(g => !g.done);
-   const pendingEvents = publishedEvents().filter(e => !isEventCompleted(state(), e, Date.now(), db.rules) && eventStatus(e) !== 'Encerrado');
-   const first = active.find(g => resultFor(g).rows.some(r => r.missing > 0)) || active[0], c = first && db.catalog.characters.find(c => c.id === first.charId), missing = first ? resultFor(first).itemRows.filter(r => r.missing > 0) : [];
-   return topHeader('Seu próximo avanço.', 'Menos tempo contando, Mais tempo em Solaris-3.', button(icon('plus') + ' Nova meta', 'choose', '', 'primary')) +
-      `<section class="summary-events" aria-labelledby="summary-events-title"><div class="section-heading"><h2 id="summary-events-title">Eventos</h2><a href="#events">Ver agenda ${icon('arrow')}</a></div><div class="events-list">${pendingEvents.map(eventCard).join('') || '<p class="muted">Nenhum evento pendente por aqui.</p>'}</div></section>
- <div class="dashboard-grid"><div class="dashboard-main"><div class="section-heading"><h2>${state().goals.length ? 'Suas metas de evolução' : 'Escolha seu primeiro Ressonador'}</h2><a href="#characters">Ver ressonantes ${icon('arrow')}</a></div>${state().goals.length ? `<div class="goal-list">${state().goals.map(goalCard).join('')}</div>` : `<p class="section-intro">Escolha um personagem para definir sua meta de evolução.</p><div class="characters-grid home-characters">${db.catalog.characters.slice(0, 3).map(characterCard).join('')}</div><div class="onboarding"><span>01 <strong>Defina sua meta</strong></span><span>02 <strong>Informe seu estoque</strong></span><span>03 <strong>Veja o que farmar</strong></span></div>`}
- <div class="section-heading"><h2>Visão dos materiais</h2><a href="#inventory">Abrir inventário ${icon('arrow')}</a></div><section class="panel">${materialTable(plan.itemTotals.slice(0, 6), db, { compactView: true })}${plan.itemTotals.length > 6 ? '<a class="panel-footer" href="#farm">Ver todos os materiais →</a>' : ''}</section></div>
- <aside class="dashboard-aside"><section class="focus-panel"><div class="eyebrow">${icon('farm')} PRÓXIMA PRIORIDADE</div><h2>${c ? h(characterLabel(c)) : 'Prepare o próximo passo'}</h2><p>${c ? 'Consulte os materiais restantes desta etapa e a reserva por prioridade.' : 'Seu plano de farm aparece aqui assim que você adicionar uma meta.'}</p>${missing.length ? `<ul class="priority-list">${missing.slice(0, 3).map(row => `<li><span>${h(materialMeta(row.id, db).name)}</span><strong>${compact(row.missing)}</strong></li>`).join('')}</ul>` : ''}<a class="focus-link" href="${c ? '#farm' : '#characters'}">${c ? 'Organizar meu farm' : 'Escolher personagem'} ${icon('arrow')}</a></section>
- </aside></div>`;
-}
-function characters() {
-   return topHeader('Ressonantes', 'Escolha quem vai receber seus próximos materiais.', button(icon('plus') + ' Nova meta', 'choose', '', 'primary')) +
-      `<div class="filter-bar"><label class="search-field">${icon('search')}<input id="search" data-filter="search" type="search" value="${h(search)}" placeholder="Pesquisar personagem" aria-label="Pesquisar personagem"></label><label class="select-label">Elemento<select id="element" data-filter="element"><option value="">Todos</option>${['Aero', 'Electro', 'Fusion', 'Glacio', 'Havoc', 'Spectro'].map(v => `<option value="${v}" ${element === v ? 'selected' : ''}>${elementLabel(v)}</option>`).join('')}</select></label><label class="select-label">Arma<select id="weapon-filter" data-filter="weapon"><option value="">Todas</option>${['Broadblade', 'Rectifier', 'Sword', 'Pistols', 'Gauntlets'].map(v => `<option value="${v}" ${weaponFilter === v ? 'selected' : ''}>${weaponLabel(v)}</option>`).join('')}</select></label></div>
- ${state().goals.length ? `<div class="section-heading"><h2>Suas metas</h2><span class="muted">A ordem define a reserva de materiais</span></div><div class="goal-grid">${state().goals.map(goalCard).join('')}</div>` : ''}<div class="section-heading"><h2>Catálogo de Ressonantes</h2></div><div class="characters-grid">${filteredCharacters().map(characterCard).join('')}</div>${!filteredCharacters().length ? empty('Nenhum personagem encontrado', `Tente outro filtro. O catálogo local contém ${db.catalog.characters.length} personagens verificados.`) : ''}`;
-}
-function inventory() {
-   const used = new Set(plan.totals.map(t => t.id)); for (const g of plan.goals) for (const k of Object.keys(g.consumption)) used.add(k);
-   if (plan.totals.some(t => t.id === 'xp-potion')) db.catalog.materials.filter(m => m.xpKind === 'potion').forEach(m => used.add(m.id));
-   if (plan.totals.some(t => t.id === 'xp-energy')) db.catalog.materials.filter(m => m.xpKind === 'energy').forEach(m => used.add(m.id));
-   const materials = db.catalog.materials.filter(m => (!search || m.name.toLowerCase().includes(search.toLowerCase())) && (!category || m.category === category) && (!usedOnly || used.has(m.id)));
-   return topHeader('Seu inventário', 'Um estoque compartilhado por todas as suas metas.', `<div class="button-group">${button(icon('upload') + ' Importar', 'import')}${button(icon('download') + ' Exportar', 'export')}</div>`) +
-      `<div class="filter-bar"><label class="search-field">${icon('search')}<input id="search" data-filter="search" type="search" value="${h(search)}" placeholder="Pesquisar material" aria-label="Pesquisar material"></label><label class="select-label">Categoria<select id="category" data-filter="category"><option value="">Todas</option>${[...new Set(db.catalog.materials.map(m => m.category))].map(c => `<option ${c === category ? 'selected' : ''}>${h(c)}</option>`).join('')}</select></label><label class="check-label"><input id="used" data-filter="used" type="checkbox" ${usedOnly ? 'checked' : ''}>Usados nas metas</label></div>
- <p class="inline-info">${icon('info')} Quantidades salvas automaticamente. Criar uma meta reserva recursos; o estoque só diminui ao confirmar o consumo.</p><div class="inventory-grid">${sortMaterials(materials, db).map(m => {
-         const stock = state().inventory[m.id] || 0, reserved = Math.max(0, stock - (plan.unallocated[m.id] || 0)), row = plan.totals.find(t => t.id === m.id);
-         return `<article class="inventory-card">${materialIcon(m)}<div class="inventory-info"><h3>${h(m.name)}</h3><p>${h(m.category)} ${m.rarity ? '· ' + m.rarity + '★' : ''}</p><small>${used.has(m.id) ? `${fmt(reserved)} reservado${row?.missing ? ' · faltam ' + fmt(row.missing) : ''}` : 'Fora das metas atuais'}</small></div><label class="quantity">Estoque<input id="inv-${m.id}" data-stock="${m.id}" type="number" min="0" max="1000000000" step="1" value="${stock}" aria-label="Estoque de ${h(m.name)}">${synthesisButton(m.id)}</label></article>`;
-      }).join('')}</div>${materials.length ? '' : empty('Nada por aqui', 'Ajuste a busca ou os filtros para encontrar um material.')}`;
-}
-function farm() {
-   const rows = plan.totals.filter(r => r.missing > 0), cfg = state().settings;
-   let knownWave = 0, knownCount = 0;
-   const estimates = rows.map(row => {
-      const m = materialMeta(row.id, db), average = farmRate(m, db), activity = db.rules.activities[m.activity], est = estimateFarm(row.missing, average, activity?.waveplates || 0, cfg.dailyWaveplates);
-      if (est) { knownWave += est.waveplates; knownCount++; }
-      return { row, m, average, activity, est };
-   });
-   knownWave = farmWaveplates(estimates);
-   return topHeader('Hora de farmar.', 'A lista segue a prioridade das suas metas.') +
-      `<section class="farm-summary"><div>${icon('farm')}<span><strong>${fmt(knownWave)} Waveplates</strong><small>${knownCount}/${rows.length} recursos com estimativa automática</small></span></div><div><strong>${knownWave ? Math.ceil(knownWave / cfg.dailyWaveplates) + ' dias de energia' : '—'}</strong><small>Estimativa parcial · ${cfg.dailyWaveplates}/dia</small></div><div><strong>SOL3 ${Math.min(8, Math.floor(cfg.unionLevel / 10) + 1)}</strong><small>Nível de União ${cfg.unionLevel} · <a href="#settings">ajustar</a></small></div></section>
- <p class="inline-info">${icon('info')} Médias de dificuldade máxima, independentemente do seu Nível de União. Drops variam.</p>
- <div class="farm-list">${estimates.map(({ row, m, average, activity, est }, i) => `<article class="farm-card"><span class="rank">${String(i + 1).padStart(2, '0')}</span><button type="button" class="farm-stock-button" data-action="edit-goal-stock" data-id="${h(row.id)}" data-stock-anchor="farm-list:${h(row.id)}" aria-label="Editar estoque de ${h(m.name)}">${materialIcon(m)}<span class="farm-material"><strong>${h(m.name)}</strong><span class="farm-origin">${h(m.origin)}</span><small>Faltam ${row.id.startsWith('xp-') ? plan.itemTotals.filter(r => r.missing && materialMeta(r.id, db).xpKind === row.id.slice(3)).map(r => fmt(r.missing) + ' ' + h(materialMeta(r.id, db).name)).join(' + ') : '<b>' + fmt(row.missing) + '</b> unidades'} · ${activity?.waveplates || 0} Waveplates/tentativa</small></span></button><div class="yield-label"><span>Média por tentativa</span><strong>${average ? new Intl.NumberFormat('pt-BR', { maximumFractionDigits: 2 }).format(row.id.startsWith('xp-') ? average / 8000 : average) : '—'} ${row.id.startsWith('xp-') ? 'itens avançados equivalentes' : 'itens'}</strong></div><div class="farm-estimate">${est ? `<strong>≈ ${fmt(est.runs)} tentativas</strong><small>${est.waveplates ? `${fmt(est.waveplates)} Waveplates · ≈ ${est.days} dias de energia` : 'Coleta sem Waveplates · dias não estimados'}</small>${m.activity === 'weekly' ? `<small>Limite compartilhado: ${3 - cfg.weeklyClaimsUsed} resgates restantes nesta semana.</small>` : ''}` : '<strong>Estimativa indisponível</strong><small>Coleta ou drop sem média definida; acompanhe a quantidade faltante.</small>'}</div>${button('Onde obter', 'source', `data-id="${row.id}"`, 'text-button')}</article>`).join('') || empty('Tudo no seu ritmo', 'Não há materiais faltantes. Adicione metas ou confira o inventário.', `<a class="primary button" href="#characters">Planejar personagem</a>`)}</div>
- <div class="section-heading"><h2>Síntese para as metas</h2></div><section class="panel synthesis">${[...new Set(plan.goals.flatMap(g => g.synthesis.map(s => s.output)))].map(id => `<div class="synthesis-row"><span>${h(materialMeta(id, db).name)}</span>${synthesisButton(id)}</div>`).join('') || '<p class="muted">Nenhuma conversão necessária com o estoque atual.</p>'}</section>
- <div class="section-heading"><h2>Distribuição completa</h2></div><section class="panel">${materialTable(plan.itemTotals, db, { editable: true, anchorPrefix: 'farm-table' })}</section>`;
-}
-function publishedEvents() { return officialEvents(db.events, state().settings.server, Date.now(), db.rules); }
-function eventTimeLabel(e, now = Date.now()) {
-   const status = eventStatus(e, now); if (status === 'Encerrado') return 'Encerrado';
-   if (status === 'Futuro') return 'Começa em ' + countdown(e.start, now);
-   if (e.type === 'recurring') return 'Reset em ' + countdown(new Date(eventCycle(e, now, { server: state().settings.server, rules: db.rules }).end).toISOString(), now);
-   return e.permanent ? 'Permanente' : countdown(e.end, now);
-}
-function eventCard(e) {
-   const status = eventStatus(e), done = isEventCompleted(state(), e, Date.now(), db.rules), cycle = eventCycle(e, Date.now(), { server: state().settings.server, rules: db.rules }), deadline = status === 'Futuro' ? e.start : Number.isFinite(cycle.end) ? new Date(cycle.end).toISOString() : null;
-   return `<article class="event-row ${done ? 'event-is-complete' : ''}"><div class="event-row-main"><label class="event-check" title="${done ? 'Marcar como pendente' : 'Marcar como concluído'}"><input type="checkbox" aria-label="Concluí este evento: ${h(e.title)}" data-official-event="${h(e.id)}" ${done ? 'checked' : ''} ${status === 'Futuro' && !done ? 'disabled' : ''}><span aria-hidden="true">✓</span></label>${e.icon ? `<img class="event-row-icon" src="${h(e.icon)}" alt="">` : ''}<h3>${h(e.title)}</h3><span class="event-row-time" data-event-countdown="${h(e.id)}" title="${deadline ? (status === 'Futuro' ? 'Começa' : e.type === 'recurring' ? 'Próximo reset' : 'Termina') + ': ' + formatDate(deadline, state().settings.timeZone) : 'Evento permanente'}">${eventTimeLabel(e)}</span></div>${e.banners?.length ? `<div class="event-banner-images">${e.banners.map(b => `<figure><img src="${h(b.image)}" alt="${h(b.name)}" loading="lazy"><figcaption>${h(b.name)}</figcaption></figure>`).join('')}</div>` : ''}</article>`;
-}
-function eventList(items) { const pending = items.filter(e => !isEventCompleted(state(), e, Date.now(), db.rules) && eventStatus(e) !== 'Encerrado'), done = items.filter(e => isEventCompleted(state(), e, Date.now(), db.rules)); return `<div class="events-list">${pending.map(eventCard).join('') || `<p class="muted">${done.length > 0 && done.length === items.length ? 'Tudo concluído por aqui.' : 'Nenhum evento ativo ou futuro.'}</p>`}</div>${done.length ? `<details class="completed-events"><summary>Eventos completos (${done.length})</summary><div class="events-list">${done.map(eventCard).join('')}</div></details>` : ''}`; }
-function currentCalendarMonth() {
-   const [year, month] = dayKey(Date.now(), state().settings.timeZone).split('-').map(Number);
-   eventMonth = new Date(year, month - 1, 1); eventMonthZone = state().settings.timeZone;
-}
-function calendar() {
-   if (!eventMonth || eventMonthZone !== state().settings.timeZone) currentCalendarMonth();
-   const year = eventMonth.getFullYear(), month = eventMonth.getMonth(), days = new Date(year, month + 1, 0).getDate(), start = (new Date(year, month, 1).getDay() + 6) % 7;
-   const today = dayKey(Date.now(), state().settings.timeZone);
-   return `<section class="panel calendar-panel"><div class="calendar-heading">${button('‹', 'prev-month', 'aria-label="Mês anterior"', 'icon-button')}<h2>${new Intl.DateTimeFormat('pt-BR', { month: 'long', year: 'numeric' }).format(eventMonth)}</h2>${button('›', 'next-month', 'aria-label="Próximo mês"', 'icon-button')}</div><div class="calendar-grid">${['SEG', 'TER', 'QUA', 'QUI', 'SEX', 'SÁB', 'DOM'].map(d => `<span class="weekday">${d}</span>`).join('')}${Array.from({ length: start }, () => '<div class="calendar-day blank"></div>').join('')}${Array.from({ length: days }, (_, i) => {
-      const key = `${year}-${String(month + 1).padStart(2, '0')}-${String(i + 1).padStart(2, '0')}`, events = publishedEvents().filter(e => key >= dayKey(e.start, state().settings.timeZone) && (e.permanent || key <= dayKey(Date.parse(e.end) - 1, state().settings.timeZone)));
-      return `<div class="calendar-day ${today === key ? 'today' : ''}"><span>${i + 1}</span>${events.map(e => button(h(e.title), 'view-event', `data-id="${e.id}"`, 'calendar-event')).join('')}</div>`;
-   }).join('')}</div></section>`;
-}
-function events() {
-   const events = publishedEvents(); return topHeader('Eventos de Solaris-3', 'Acompanhe os prazos e marque o que você já concluiu.') +
-      `<div class="events-toolbar"><div class="segmented">${button('Lista', 'event-list', `aria-pressed="${eventView === 'list'}"`, eventView === 'list' ? 'selected' : '')}${button('Calendário', 'event-calendar', `aria-pressed="${eventView === 'calendar'}"`, eventView === 'calendar' ? 'selected' : '')}</div><span class="muted">Exibição: ${h(state().settings.timeZone)} · servidor ${state().settings.server}</span></div>
- ${eventView === 'calendar' ? calendar() : eventList(events)}<p class="footnote">Suas marcações são pessoais e ficam salvas neste navegador.</p>`;
-}
-function settings() {
-   return topHeader('Seu terminal', 'Ajuste o planejamento ao seu ritmo.') +
-      `<div class="settings-grid"><section class="panel settings-panel"><h2>Conta e disponibilidade</h2><form id="settings-form"><label>Servidor<select name="server">${Object.keys(db.rules.servers).map(s => `<option ${s === state().settings.server ? 'selected' : ''}>${s}</option>`).join('')}</select></label><label>Fuso de exibição<select name="timeZone">${[...new Set(['America/Sao_Paulo', 'America/Manaus', 'America/New_York', 'Europe/Lisbon', 'Europe/London', 'Asia/Shanghai', 'Asia/Tokyo', 'UTC', state().settings.timeZone])].map(s => `<option ${s === state().settings.timeZone ? 'selected' : ''}>${s}</option>`).join('')}</select></label><div class="form-columns"><label>Nível de União<input name="unionLevel" type="number" min="1" max="80" value="${state().settings.unionLevel}" required></label><label>Waveplates por dia<input name="dailyWaveplates" type="number" min="1" max="10000" value="${state().settings.dailyWaveplates}" required></label></div><label>Recompensas semanais já resgatadas<input name="weeklyClaimsUsed" type="number" min="0" max="3" value="${state().settings.weeklyClaimsUsed}" required></label><button class="primary" type="submit">Salvar configurações</button></form></section>
- <section class="panel settings-panel"><h2>Seus dados, com você</h2><p>Salvamento local neste navegador. Um backup leva suas metas, estoque, eventos e configurações para outro dispositivo.</p><div class="button-group">${button(icon('download') + ' Exportar backup', 'export')}${button(icon('upload') + ' Importar backup', 'import')}</div>${button(icon('undo') + ' Desfazer última alteração', 'undo', store.history.length ? '' : 'disabled')}${loadWarning ? `<div class="notice">${h(loadWarning)}</div>${button('Baixar cópia de recuperação', 'recovery')}` : ''}</section></div>
- `;
-}
+const pageCtx = {
+   get db() { return db; }, get plan() { return plan; }, state, resultFor, synthesisButton,
+   get store() { return store; }, get loadWarning() { return loadWarning; },
+   get search() { return search; }, get element() { return element; }, get weaponFilter() { return weaponFilter; },
+   get category() { return category; }, get usedOnly() { return usedOnly; },
+   get eventView() { return eventView; }, get eventMonth() { return eventMonth; }, set eventMonth(value) { eventMonth = value; },
+   get eventMonthZone() { return eventMonthZone; }, set eventMonthZone(value) { eventMonthZone = value; },
+   now: () => Date.now()
+};
+function filteredCharacters() { return pageFilteredCharacters(pageCtx); }
+function publishedEvents() { return pagePublishedEvents(pageCtx); }
+function eventTimeLabel(e, now = Date.now()) { return pageEventTimeLabel(pageCtx, e, now); }
+function eventCard(e) { return pageEventCard(pageCtx, e); }
+function currentCalendarMonth() { return pageCurrentCalendarMonth(pageCtx); }
 
 function render(preserve = false) {
    cancelSearchRender();
@@ -154,7 +79,7 @@ function render(preserve = false) {
    plan = allocate(state().goals, state().inventory, db);
    const daily = nextReset(Date.now(), db.rules.servers[state().settings.server], false, db.rules);
    app.innerHTML = `<aside class="sidebar"><a class="brand" href="#summary" aria-label="Tacet, resumo"><img src="./assets/logo.png" width="1927" height="816" alt="Tacet"></a><div class="sidebar-label">SEU TERMINAL</div><nav aria-label="Navegação principal">${nav.map(([key, label]) => `<a href="#${key}" class="${route === key ? 'active' : ''}" ${route === key ? 'aria-current="page"' : ''}>${navigationIcon(key)}<span>${label}</span>${key === 'characters' && state().goals.length ? `<b>${state().goals.length}</b>` : ''}</a>`).join('')}</nav><div class="sidebar-bottom"><div class="server-status">${icon('clock')}<div>Próximo reset<small data-reset-countdown>${countdown(new Date(daily).toISOString())} · ${state().settings.server}</small></div></div><div class="local-status">${icon('check')} ${store.saveError ? 'Falha ao salvar' : 'Salvo neste dispositivo'}</div><span class="version">TACET / v1.0 · FAN PROJECT</span></div></aside>
- <div class="workspace"><header class="topbar"><a class="mobile-brand" href="#summary" aria-label="Tacet, resumo"><img src="./assets/logo.png" width="1927" height="816" alt="Tacet"></a><div class="breadcrumb">Terminal <span>/</span> <strong>${nav.find(n => n[0] === route)?.[1]}</strong></div><div class="topbar-right">${button(icon('undo'), 'undo', `aria-label="Desfazer última alteração" ${store.history.length ? '' : 'disabled'}`, 'icon-button')}<a class="union-badge" href="#settings">UL ${state().settings.unionLevel}</a><span class="avatar">R</span></div></header><main id="main" tabindex="-1">${store.saveError && !store.conflicted ? `<div class="notice error" role="alert" data-persistence-notice>${h(store.saveError)}</div>` : ''}${({ summary, characters, inventory, farm, events, settings }[route] || summary)()}</main><footer class="page-footer"><span>Feito com carinho por Yuri Mihara</span></footer></div>`;
+ <div class="workspace"><header class="topbar"><a class="mobile-brand" href="#summary" aria-label="Tacet, resumo"><img src="./assets/logo.png" width="1927" height="816" alt="Tacet"></a><div class="breadcrumb">Terminal <span>/</span> <strong>${nav.find(n => n[0] === route)?.[1]}</strong></div><div class="topbar-right">${button(icon('undo'), 'undo', `aria-label="Desfazer última alteração" ${store.history.length ? '' : 'disabled'}`, 'icon-button')}<a class="union-badge" href="#settings">UL ${state().settings.unionLevel}</a><span class="avatar">R</span></div></header><main id="main" tabindex="-1">${store.saveError && !store.conflicted ? `<div class="notice error" role="alert" data-persistence-notice>${h(store.saveError)}</div>` : ''}${({ summary: renderSummary, characters: renderCharacters, inventory: renderInventory, farm: renderFarm, events: renderEvents, settings: renderSettings }[route] || renderSummary)(pageCtx)}</main><footer class="page-footer"><span>Feito com carinho por Yuri Mihara</span></footer></div>`;
    restoreSettingsDraft(document.querySelector('#settings-form'), settingsDraft);
    showConflict();
    const menu = document.querySelector('.sidebar nav');

@@ -1,9 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
-import {allocate,newGoal,requirements,completeGoal,applyAutomaticSynthesis,automaticSynthesisSteps} from '../src/engine.js';
-import {sortMaterials,materialFamily,craftCapacity} from '../src/materials.js';
-import {defaultState,Store,parseBackup} from '../src/state.js';
+import {allocate,newGoal,requirements,completeGoal,applyAutomaticSynthesis,automaticSynthesisSteps} from '../src/domain/engine.js';
+import {sortMaterials,materialFamily,craftCapacity} from '../src/domain/materials.js';
+import {defaultState,Store,parseBackup} from '../src/storage/state.js';
 const db=Object.fromEntries(await Promise.all(['catalog','rules','recipes'].map(async n=>[n,JSON.parse(await readFile(new URL('../data/'+n+'.json',import.meta.url)))])));
 function fixture(){
  const state=defaultState(),g=newGoal('jinhsi','first');g.target.level=90;g.target.ascension=6;

@@ -1,9 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
-import {validateEventCatalog,officialEvents,eventDuration,setEventCompleted,eventCycle,isEventCompleted} from '../src/official-events.js';
-import {defaultState,validateState,parseBackup,mergeState,Store} from '../src/state.js';
-import {eventStatus,nextReset} from '../src/time.js';
+import {validateEventCatalog,officialEvents,eventDuration,setEventCompleted,eventCycle,isEventCompleted} from '../src/domain/official-events.js';
+import {defaultState,validateState,parseBackup,mergeState,Store} from '../src/storage/state.js';
+import {eventStatus,nextReset} from '../src/domain/time.js';
 const event={id:'test-event',title:'Evento de teste',start:'2026-09-20T10:00:00-03:00',end:'2026-10-04T10:00:00-03:00'};
 const catalog={version:1,events:[event]};
 test('permanent events need no end, stay active and recurring completion resets indefinitely',()=>{

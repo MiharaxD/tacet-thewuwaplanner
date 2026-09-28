@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {elementLabel,characterLabel,characterSearchText} from '../src/ui.js';
+import {elementLabel,characterLabel,characterSearchText} from '../src/ui/common.js';
 
 test('element presentation translates all canonical values and preserves unrelated names',()=>{
  const labels={Fusion:'Térmico',Glacio:'Criogênico',Aero:'Pneumático',Electro:'Voltaico',Spectro:'Fotônico',Havoc:'Aniquilante'};

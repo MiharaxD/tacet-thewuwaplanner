@@ -1,9 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
-import {newGoal,requirements,completeGoal,allocate} from '../src/engine.js';
-import {defaultState,parseBackup} from '../src/state.js';
-import {nodeUnlocked,toggleForteNode} from '../src/forte-progress.js';
+import {newGoal,requirements,completeGoal,allocate} from '../src/domain/engine.js';
+import {defaultState,parseBackup} from '../src/storage/state.js';
+import {nodeUnlocked,toggleForteNode} from '../src/planner/forte-progress.js';
 const db=Object.fromEntries(await Promise.all(['catalog','rules','sources','recipes','character-fortes'].map(async n=>[n,JSON.parse(await readFile(new URL('../data/'+n+'.json',import.meta.url)))])));
 const goal=()=>{const g=newGoal('jinhsi','test');g.current.level=80;g.current.ascension=6;g.target=structuredClone(g.current);return g;};
 test('all ten passive nodes cost exactly their incremental materials',()=>{
@@ -38,7 +38,7 @@ test('every catalog character has five branches, ten descriptions and Portuguese
 });
 test('the tree renders ten passive buttons and preserves all skill and unlock fields',async()=>{
  globalThis.document={addEventListener(){}};globalThis.window={addEventListener(){}};
- const {forteTree}=await import('../src/forte-tree.js');const g=goal(),html=forteTree(g,db['character-fortes'].jinhsi);
+ const {forteTree}=await import('../src/planner/forte-tree.js');const g=goal(),html=forteTree(g,db['character-fortes'].jinhsi);
  assert.equal((html.match(/data-forte-column=/g)||[]).length,10);
  assert.equal((html.match(/name="unlock-/g)||[]).length,12);
  assert.equal((html.match(/role="combobox"/g)||[]).length,10);

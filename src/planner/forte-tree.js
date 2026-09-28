@@ -1,4 +1,4 @@
-import {escape as h,elementLabel} from './ui.js';
+import {escape as h,elementLabel} from '../ui/common.js';
 import {skillField} from './level-picker.js';
 import {nodeUnlocked,toggleForteNode} from './forte-progress.js';
 

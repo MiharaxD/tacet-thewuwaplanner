@@ -1,8 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile, readdir } from 'node:fs/promises';
-import { requirements, newGoal, allocate, completeGoal } from '../src/engine.js';
-import { defaultState, parseBackup } from '../src/state.js';
+import { requirements, newGoal, allocate, completeGoal } from '../src/domain/engine.js';
+import { defaultState, parseBackup } from '../src/storage/state.js';
 const db = {};
 for (const name of ['catalog','rules','sources','recipes']) db[name] = JSON.parse(await readFile(new URL(`../data/${name}.json`, import.meta.url), 'utf8'));
 const fullGoal = id => {

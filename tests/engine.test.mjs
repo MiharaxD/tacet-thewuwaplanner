@@ -1,9 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
-import {newGoal,requirements,allocate,validateGoal,selectExperience,synthesisSuggestions,applySynthesis,completeGoal,estimateFarm,clone} from '../src/engine.js';
-import {defaultState,parseBackup,validateState,mergeState,loadState,Store,STORAGE_KEY,claimRewards} from '../src/state.js';
-import {nextReset,eventStatus,serverDateToISO,dayKey} from '../src/time.js';
+import {newGoal,requirements,allocate,validateGoal,selectExperience,synthesisSuggestions,applySynthesis,completeGoal,estimateFarm,clone} from '../src/domain/engine.js';
+import {defaultState,parseBackup,validateState,mergeState,loadState,Store,STORAGE_KEY,claimRewards} from '../src/storage/state.js';
+import {nextReset,eventStatus,serverDateToISO,dayKey} from '../src/domain/time.js';
 const names=['catalog','rules','sources','recipes'];
 const db=Object.fromEntries(await Promise.all(names.map(async name=>[name,JSON.parse(await readFile(new URL(`../data/${name}.json`,import.meta.url),'utf8'))])));
 const make=(char='jinhsi',id=char)=>newGoal(char,id);

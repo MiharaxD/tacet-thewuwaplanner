@@ -1,4 +1,4 @@
-import {escape as h} from './ui.js';
+import {escape as h} from '../ui/common.js';
 const statNames={'ATK':'ATQ','ATK%':'ATQ','Crit. Rate':'Taxa Crítica','Crit. DMG':'Dano Crítico','Energy Regen':'Recarga de Energia','Energy Regen.':'Recarga de Energia','HP':'PV','DEF':'DEF'};
 export function weaponGrid(weapons,selected,stats){
  return `<input type="hidden" name="weapon-id" value="${h(selected||'')}"><div class="weapon-grid-label"><span>Escolha sua arma</span><small>Passe o mouse para ver os atributos</small></div><div class="weapon-grid" role="group" aria-label="Armas compatíveis"><button type="button" class="weapon-tile weapon-none" data-weapon-choice="" aria-pressed="${!selected}"><span class="weapon-none-symbol">∅</span><span>Sem arma</span></button>${weapons.map(w=>{
