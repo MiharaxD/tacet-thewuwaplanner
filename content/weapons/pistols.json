@@ -1,0 +1,990 @@
+[
+  {
+    "id": "lux-umbra",
+    "name": "Lux & Umbra",
+    "type": "Pistols",
+    "rarity": 5,
+    "enemy": "ring",
+    "forgery": "impure-phlogiston",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 10000,
+        "ring-0": 6
+      },
+      {
+        "shell": 20000,
+        "impure-phlogiston-0": 6,
+        "ring-1": 6
+      },
+      {
+        "shell": 40000,
+        "impure-phlogiston-1": 8,
+        "ring-2": 4
+      },
+      {
+        "shell": 60000,
+        "impure-phlogiston-2": 6,
+        "ring-2": 6
+      },
+      {
+        "shell": 80000,
+        "impure-phlogiston-3": 8,
+        "ring-3": 4
+      },
+      {
+        "shell": 120000,
+        "impure-phlogiston-3": 12,
+        "ring-3": 8
+      }
+    ],
+    "image": "./assets/weapons/21030036.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21030036",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "skull-thrasher",
+    "name": "Skull Thrasher",
+    "type": "Pistols",
+    "rarity": 5,
+    "enemy": "fractured-exoswarm-pendant",
+    "forgery": "incomplete-combustor",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 10000,
+        "fractured-exoswarm-pendant-0": 6
+      },
+      {
+        "shell": 20000,
+        "incomplete-combustor-0": 6,
+        "fractured-exoswarm-pendant-1": 6
+      },
+      {
+        "shell": 40000,
+        "incomplete-combustor-1": 8,
+        "fractured-exoswarm-pendant-2": 4
+      },
+      {
+        "shell": 60000,
+        "incomplete-combustor-2": 6,
+        "fractured-exoswarm-pendant-2": 6
+      },
+      {
+        "shell": 80000,
+        "incomplete-combustor-3": 8,
+        "fractured-exoswarm-pendant-3": 4
+      },
+      {
+        "shell": 120000,
+        "incomplete-combustor-3": 12,
+        "fractured-exoswarm-pendant-3": 8
+      }
+    ],
+    "image": "./assets/weapons/21030066.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21030066",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "spectral-trigger",
+    "name": "Spectral Trigger",
+    "type": "Pistols",
+    "rarity": 5,
+    "enemy": "fractured-exoswarm-pendant",
+    "forgery": "incomplete-combustor",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 10000,
+        "fractured-exoswarm-pendant-0": 6
+      },
+      {
+        "shell": 20000,
+        "incomplete-combustor-0": 6,
+        "fractured-exoswarm-pendant-1": 6
+      },
+      {
+        "shell": 40000,
+        "incomplete-combustor-1": 8,
+        "fractured-exoswarm-pendant-2": 4
+      },
+      {
+        "shell": 60000,
+        "incomplete-combustor-2": 6,
+        "fractured-exoswarm-pendant-2": 6
+      },
+      {
+        "shell": 80000,
+        "incomplete-combustor-3": 8,
+        "fractured-exoswarm-pendant-3": 4
+      },
+      {
+        "shell": 120000,
+        "incomplete-combustor-3": 12,
+        "fractured-exoswarm-pendant-3": 8
+      }
+    ],
+    "image": "./assets/weapons/21030056.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21030056",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "spectrum-blaster",
+    "name": "Spectrum Blaster",
+    "type": "Pistols",
+    "rarity": 5,
+    "enemy": "fractured-exoswarm-pendant",
+    "forgery": "incomplete-combustor",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 10000,
+        "fractured-exoswarm-pendant-0": 6
+      },
+      {
+        "shell": 20000,
+        "incomplete-combustor-0": 6,
+        "fractured-exoswarm-pendant-1": 6
+      },
+      {
+        "shell": 40000,
+        "incomplete-combustor-1": 8,
+        "fractured-exoswarm-pendant-2": 4
+      },
+      {
+        "shell": 60000,
+        "incomplete-combustor-2": 6,
+        "fractured-exoswarm-pendant-2": 6
+      },
+      {
+        "shell": 80000,
+        "incomplete-combustor-3": 8,
+        "fractured-exoswarm-pendant-3": 4
+      },
+      {
+        "shell": 120000,
+        "incomplete-combustor-3": 12,
+        "fractured-exoswarm-pendant-3": 8
+      }
+    ],
+    "image": "./assets/weapons/21030046.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21030046",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "static-mist",
+    "name": "Static Mist",
+    "type": "Pistols",
+    "rarity": 5,
+    "enemy": "ring",
+    "forgery": "impure-phlogiston",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 10000,
+        "ring-0": 6
+      },
+      {
+        "shell": 20000,
+        "impure-phlogiston-0": 6,
+        "ring-1": 6
+      },
+      {
+        "shell": 40000,
+        "impure-phlogiston-1": 8,
+        "ring-2": 4
+      },
+      {
+        "shell": 60000,
+        "impure-phlogiston-2": 6,
+        "ring-2": 6
+      },
+      {
+        "shell": 80000,
+        "impure-phlogiston-3": 8,
+        "ring-3": 4
+      },
+      {
+        "shell": 120000,
+        "impure-phlogiston-3": 12,
+        "ring-3": 8
+      }
+    ],
+    "image": "./assets/weapons/21030015.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21030015",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "the-last-dance",
+    "name": "The Last Dance",
+    "type": "Pistols",
+    "rarity": 5,
+    "enemy": "ring",
+    "forgery": "impure-phlogiston",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 10000,
+        "ring-0": 6
+      },
+      {
+        "shell": 20000,
+        "impure-phlogiston-0": 6,
+        "ring-1": 6
+      },
+      {
+        "shell": 40000,
+        "impure-phlogiston-1": 8,
+        "ring-2": 4
+      },
+      {
+        "shell": 60000,
+        "impure-phlogiston-2": 6,
+        "ring-2": 6
+      },
+      {
+        "shell": 80000,
+        "impure-phlogiston-3": 8,
+        "ring-3": 4
+      },
+      {
+        "shell": 120000,
+        "impure-phlogiston-3": 12,
+        "ring-3": 8
+      }
+    ],
+    "image": "./assets/weapons/21030016.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21030016",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "woodland-aria",
+    "name": "Woodland Aria",
+    "type": "Pistols",
+    "rarity": 5,
+    "enemy": "ring",
+    "forgery": "impure-phlogiston",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 10000,
+        "ring-0": 6
+      },
+      {
+        "shell": 20000,
+        "impure-phlogiston-0": 6,
+        "ring-1": 6
+      },
+      {
+        "shell": 40000,
+        "impure-phlogiston-1": 8,
+        "ring-2": 4
+      },
+      {
+        "shell": 60000,
+        "impure-phlogiston-2": 6,
+        "ring-2": 6
+      },
+      {
+        "shell": 80000,
+        "impure-phlogiston-3": 8,
+        "ring-3": 4
+      },
+      {
+        "shell": 120000,
+        "impure-phlogiston-3": 12,
+        "ring-3": 8
+      }
+    ],
+    "image": "./assets/weapons/21030026.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21030026",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "cadenza",
+    "name": "Cadenza",
+    "type": "Pistols",
+    "rarity": 4,
+    "enemy": "ring",
+    "forgery": "impure-phlogiston",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 8000,
+        "ring-0": 5
+      },
+      {
+        "shell": 16000,
+        "impure-phlogiston-0": 5,
+        "ring-1": 5
+      },
+      {
+        "shell": 32000,
+        "impure-phlogiston-1": 7,
+        "ring-2": 4
+      },
+      {
+        "shell": 48000,
+        "impure-phlogiston-2": 5,
+        "ring-2": 5
+      },
+      {
+        "shell": 64000,
+        "impure-phlogiston-3": 7,
+        "ring-3": 4
+      },
+      {
+        "shell": 96000,
+        "impure-phlogiston-3": 10,
+        "ring-3": 7
+      }
+    ],
+    "image": "./assets/weapons/21030024.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21030024",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "novaburst",
+    "name": "Novaburst",
+    "type": "Pistols",
+    "rarity": 4,
+    "enemy": "ring",
+    "forgery": "impure-phlogiston",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 8000,
+        "ring-0": 5
+      },
+      {
+        "shell": 16000,
+        "impure-phlogiston-0": 5,
+        "ring-1": 5
+      },
+      {
+        "shell": 32000,
+        "impure-phlogiston-1": 7,
+        "ring-2": 4
+      },
+      {
+        "shell": 48000,
+        "impure-phlogiston-2": 5,
+        "ring-2": 5
+      },
+      {
+        "shell": 64000,
+        "impure-phlogiston-3": 7,
+        "ring-3": 4
+      },
+      {
+        "shell": 96000,
+        "impure-phlogiston-3": 10,
+        "ring-3": 7
+      }
+    ],
+    "image": "./assets/weapons/21030064.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21030064",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "pistols-26",
+    "name": "Pistols#26",
+    "type": "Pistols",
+    "rarity": 4,
+    "enemy": "ring",
+    "forgery": "impure-phlogiston",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 8000,
+        "ring-0": 5
+      },
+      {
+        "shell": 16000,
+        "impure-phlogiston-0": 5,
+        "ring-1": 5
+      },
+      {
+        "shell": 32000,
+        "impure-phlogiston-1": 7,
+        "ring-2": 4
+      },
+      {
+        "shell": 48000,
+        "impure-phlogiston-2": 5,
+        "ring-2": 5
+      },
+      {
+        "shell": 64000,
+        "impure-phlogiston-3": 7,
+        "ring-3": 4
+      },
+      {
+        "shell": 96000,
+        "impure-phlogiston-3": 10,
+        "ring-3": 7
+      }
+    ],
+    "image": "./assets/weapons/21030034.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21030034",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "relativistic-jet",
+    "name": "Relativistic Jet",
+    "type": "Pistols",
+    "rarity": 4,
+    "enemy": "ring",
+    "forgery": "impure-phlogiston",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 8000,
+        "ring-0": 5
+      },
+      {
+        "shell": 16000,
+        "impure-phlogiston-0": 5,
+        "ring-1": 5
+      },
+      {
+        "shell": 32000,
+        "impure-phlogiston-1": 7,
+        "ring-2": 4
+      },
+      {
+        "shell": 48000,
+        "impure-phlogiston-2": 5,
+        "ring-2": 5
+      },
+      {
+        "shell": 64000,
+        "impure-phlogiston-3": 7,
+        "ring-3": 4
+      },
+      {
+        "shell": 96000,
+        "impure-phlogiston-3": 10,
+        "ring-3": 7
+      }
+    ],
+    "image": "./assets/weapons/21030084.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21030084",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "romance-in-farewell",
+    "name": "Romance in Farewell",
+    "type": "Pistols",
+    "rarity": 4,
+    "enemy": "ring",
+    "forgery": "impure-phlogiston",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 8000,
+        "ring-0": 5
+      },
+      {
+        "shell": 16000,
+        "impure-phlogiston-0": 5,
+        "ring-1": 5
+      },
+      {
+        "shell": 32000,
+        "impure-phlogiston-1": 7,
+        "ring-2": 4
+      },
+      {
+        "shell": 48000,
+        "impure-phlogiston-2": 5,
+        "ring-2": 5
+      },
+      {
+        "shell": 64000,
+        "impure-phlogiston-3": 7,
+        "ring-3": 4
+      },
+      {
+        "shell": 96000,
+        "impure-phlogiston-3": 10,
+        "ring-3": 7
+      }
+    ],
+    "image": "./assets/weapons/21030094.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21030094",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "solar-flame",
+    "name": "Solar Flame",
+    "type": "Pistols",
+    "rarity": 4,
+    "enemy": "ring",
+    "forgery": "impure-phlogiston",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 8000,
+        "ring-0": 5
+      },
+      {
+        "shell": 16000,
+        "impure-phlogiston-0": 5,
+        "ring-1": 5
+      },
+      {
+        "shell": 32000,
+        "impure-phlogiston-1": 7,
+        "ring-2": 4
+      },
+      {
+        "shell": 48000,
+        "impure-phlogiston-2": 5,
+        "ring-2": 5
+      },
+      {
+        "shell": 64000,
+        "impure-phlogiston-3": 7,
+        "ring-3": 4
+      },
+      {
+        "shell": 96000,
+        "impure-phlogiston-3": 10,
+        "ring-3": 7
+      }
+    ],
+    "image": "./assets/weapons/21030104.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21030104",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "thunderbolt",
+    "name": "Thunderbolt",
+    "type": "Pistols",
+    "rarity": 4,
+    "enemy": "ring",
+    "forgery": "impure-phlogiston",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 8000,
+        "ring-0": 5
+      },
+      {
+        "shell": 16000,
+        "impure-phlogiston-0": 5,
+        "ring-1": 5
+      },
+      {
+        "shell": 32000,
+        "impure-phlogiston-1": 7,
+        "ring-2": 4
+      },
+      {
+        "shell": 48000,
+        "impure-phlogiston-2": 5,
+        "ring-2": 5
+      },
+      {
+        "shell": 64000,
+        "impure-phlogiston-3": 7,
+        "ring-3": 4
+      },
+      {
+        "shell": 96000,
+        "impure-phlogiston-3": 10,
+        "ring-3": 7
+      }
+    ],
+    "image": "./assets/weapons/21030074.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21030074",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "undying-flame",
+    "name": "Undying Flame",
+    "type": "Pistols",
+    "rarity": 4,
+    "enemy": "ring",
+    "forgery": "impure-phlogiston",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 8000,
+        "ring-0": 5
+      },
+      {
+        "shell": 16000,
+        "impure-phlogiston-0": 5,
+        "ring-1": 5
+      },
+      {
+        "shell": 32000,
+        "impure-phlogiston-1": 7,
+        "ring-2": 4
+      },
+      {
+        "shell": 48000,
+        "impure-phlogiston-2": 5,
+        "ring-2": 5
+      },
+      {
+        "shell": 64000,
+        "impure-phlogiston-3": 7,
+        "ring-3": 4
+      },
+      {
+        "shell": 96000,
+        "impure-phlogiston-3": 10,
+        "ring-3": 7
+      }
+    ],
+    "image": "./assets/weapons/21030044.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21030044",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "guardian-pistols",
+    "name": "Guardian Pistols",
+    "type": "Pistols",
+    "rarity": 3,
+    "enemy": "ring",
+    "forgery": "impure-phlogiston",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 6000,
+        "ring-0": 4
+      },
+      {
+        "shell": 12000,
+        "impure-phlogiston-0": 4,
+        "ring-1": 4
+      },
+      {
+        "shell": 24000,
+        "impure-phlogiston-1": 5,
+        "ring-2": 3
+      },
+      {
+        "shell": 36000,
+        "impure-phlogiston-2": 4,
+        "ring-2": 4
+      },
+      {
+        "shell": 48000,
+        "impure-phlogiston-3": 5,
+        "ring-3": 3
+      },
+      {
+        "shell": 72000,
+        "impure-phlogiston-3": 8,
+        "ring-3": 5
+      }
+    ],
+    "image": "./assets/weapons/21030053.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21030053",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "originite-type-iii",
+    "name": "Originite: Type III",
+    "type": "Pistols",
+    "rarity": 3,
+    "enemy": "ring",
+    "forgery": "impure-phlogiston",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 6000,
+        "ring-0": 4
+      },
+      {
+        "shell": 12000,
+        "impure-phlogiston-0": 4,
+        "ring-1": 4
+      },
+      {
+        "shell": 24000,
+        "impure-phlogiston-1": 5,
+        "ring-2": 3
+      },
+      {
+        "shell": 36000,
+        "impure-phlogiston-2": 4,
+        "ring-2": 4
+      },
+      {
+        "shell": 48000,
+        "impure-phlogiston-3": 5,
+        "ring-3": 3
+      },
+      {
+        "shell": 72000,
+        "impure-phlogiston-3": 8,
+        "ring-3": 5
+      }
+    ],
+    "image": "./assets/weapons/21030023.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21030023",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "pistols-of-night",
+    "name": "Pistols of Night",
+    "type": "Pistols",
+    "rarity": 3,
+    "enemy": "ring",
+    "forgery": "impure-phlogiston",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 6000,
+        "ring-0": 4
+      },
+      {
+        "shell": 12000,
+        "impure-phlogiston-0": 4,
+        "ring-1": 4
+      },
+      {
+        "shell": 24000,
+        "impure-phlogiston-1": 5,
+        "ring-2": 3
+      },
+      {
+        "shell": 36000,
+        "impure-phlogiston-2": 4,
+        "ring-2": 4
+      },
+      {
+        "shell": 48000,
+        "impure-phlogiston-3": 5,
+        "ring-3": 3
+      },
+      {
+        "shell": 72000,
+        "impure-phlogiston-3": 8,
+        "ring-3": 5
+      }
+    ],
+    "image": "./assets/weapons/21030013.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21030013",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "pistols-of-voyager",
+    "name": "Pistols of Voyager",
+    "type": "Pistols",
+    "rarity": 3,
+    "enemy": "ring",
+    "forgery": "impure-phlogiston",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 6000,
+        "ring-0": 4
+      },
+      {
+        "shell": 12000,
+        "impure-phlogiston-0": 4,
+        "ring-1": 4
+      },
+      {
+        "shell": 24000,
+        "impure-phlogiston-1": 5,
+        "ring-2": 3
+      },
+      {
+        "shell": 36000,
+        "impure-phlogiston-2": 4,
+        "ring-2": 4
+      },
+      {
+        "shell": 48000,
+        "impure-phlogiston-3": 5,
+        "ring-3": 3
+      },
+      {
+        "shell": 72000,
+        "impure-phlogiston-3": 8,
+        "ring-3": 5
+      }
+    ],
+    "image": "./assets/weapons/21030043.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21030043",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "tyro-pistols",
+    "name": "Tyro Pistols",
+    "type": "Pistols",
+    "rarity": 2,
+    "enemy": "ring",
+    "forgery": "impure-phlogiston",
+    "maxLevel": 70,
+    "maxAscension": 4,
+    "ascensionCosts": [
+      {
+        "shell": 4000,
+        "ring-0": 3
+      },
+      {
+        "shell": 8000,
+        "impure-phlogiston-0": 3,
+        "ring-1": 3
+      },
+      {
+        "shell": 16000,
+        "impure-phlogiston-1": 4,
+        "ring-2": 2
+      },
+      {
+        "shell": 24000,
+        "impure-phlogiston-2": 3,
+        "ring-2": 3
+      }
+    ],
+    "image": "./assets/weapons/21030012.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21030012",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "training-pistols",
+    "name": "Training Pistols",
+    "type": "Pistols",
+    "rarity": 1,
+    "enemy": "ring",
+    "forgery": "impure-phlogiston",
+    "maxLevel": 70,
+    "maxAscension": 4,
+    "ascensionCosts": [
+      {
+        "shell": 2000,
+        "ring-0": 2
+      },
+      {
+        "shell": 4000,
+        "impure-phlogiston-0": 2,
+        "ring-1": 2
+      },
+      {
+        "shell": 8000,
+        "impure-phlogiston-1": 2,
+        "ring-2": 1
+      },
+      {
+        "shell": 12000,
+        "impure-phlogiston-2": 2,
+        "ring-2": 2
+      }
+    ],
+    "image": "./assets/weapons/21030011.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21030011",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  }
+]

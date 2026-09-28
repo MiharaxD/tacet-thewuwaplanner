@@ -1,0 +1,32 @@
+{
+  "id": "encore",
+  "name": "Encore",
+  "element": "Fusion",
+  "weapon": "Rectifier",
+  "rarity": 5,
+  "enemy": "whisper",
+  "forgery": "helix",
+  "flower": "pecok",
+  "boss": "rage",
+  "weekly": "destruction",
+  "image": "./assets/characters/icons/encore.webp",
+  "sources": [
+    "encore",
+    "encore-cost",
+    "assets-encore",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/encore.webp",
+    "banner": "./assets/characters/splash/encore.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_8_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Encore/Gallery",
+    "card": "./assets/characters/cards/encore.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_anke_UI.webp",
+    "bannerSource": "https://static.wikia.nocookie.net/wutheringwaves/images/7/79/Encore_Splash_Art.png/revision/latest?cb=20241001062336",
+    "bannerKind": "splash",
+    "bannerPosition": "50% 45%"
+  }
+}

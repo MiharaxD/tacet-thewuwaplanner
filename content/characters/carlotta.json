@@ -1,0 +1,30 @@
+{
+  "id": "carlotta",
+  "name": "Carlotta",
+  "element": "Glacio",
+  "weapon": "Pistols",
+  "rarity": 5,
+  "enemy": "polygon-core",
+  "forgery": "impure-phlogiston",
+  "flower": "sword-acorus",
+  "boss": "platinum-core",
+  "weekly": "the-netherworlds-stare",
+  "image": "./assets/characters/icons/carlotta.webp",
+  "sources": [
+    "assets-carlotta",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/carlotta.webp",
+    "banner": "./assets/characters/splash/carlotta.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_32_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Carlotta/Gallery",
+    "card": "./assets/characters/cards/carlotta.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_kelaita_UI.webp",
+    "bannerSource": "https://static.wikia.nocookie.net/wutheringwaves/images/c/c0/Carlotta_Splash_Art.png/revision/latest?cb=20250104064448",
+    "bannerKind": "splash",
+    "bannerPosition": "50% 45%"
+  }
+}

@@ -1,0 +1,522 @@
+[
+  {
+    "id": "waveworn-0",
+    "name": "Waveworn Residue 210",
+    "category": "Forja",
+    "rarity": 2,
+    "origin": "Eroded Ruins · Wuming Bay",
+    "activity": "forgery",
+    "sources": [
+      "jiyan-cost"
+    ],
+    "verified": true,
+    "image": "./assets/materials/waveworn-0.webp"
+  },
+  {
+    "id": "waveworn-1",
+    "name": "Waveworn Residue 226",
+    "category": "Forja",
+    "rarity": 3,
+    "origin": "Eroded Ruins · Wuming Bay",
+    "activity": "forgery",
+    "sources": [
+      "jiyan-cost"
+    ],
+    "verified": true,
+    "image": "./assets/materials/waveworn-1.webp"
+  },
+  {
+    "id": "waveworn-2",
+    "name": "Waveworn Residue 235",
+    "category": "Forja",
+    "rarity": 4,
+    "origin": "Eroded Ruins · Wuming Bay",
+    "activity": "forgery",
+    "sources": [
+      "jiyan-cost"
+    ],
+    "verified": true,
+    "image": "./assets/materials/waveworn-2.webp"
+  },
+  {
+    "id": "waveworn-3",
+    "name": "Waveworn Residue 239",
+    "category": "Forja",
+    "rarity": 5,
+    "origin": "Eroded Ruins · Wuming Bay",
+    "activity": "forgery",
+    "sources": [
+      "jiyan-cost"
+    ],
+    "verified": true,
+    "image": "./assets/materials/waveworn-3.webp"
+  },
+  {
+    "id": "helix-0",
+    "name": "Lento Helix",
+    "category": "Forja",
+    "rarity": 2,
+    "origin": "Misty Forest · Dim Forest",
+    "activity": "forgery",
+    "sources": [
+      "verina-cost"
+    ],
+    "verified": true,
+    "image": "./assets/materials/helix-0.webp"
+  },
+  {
+    "id": "helix-1",
+    "name": "Adagio Helix",
+    "category": "Forja",
+    "rarity": 3,
+    "origin": "Misty Forest · Dim Forest",
+    "activity": "forgery",
+    "sources": [
+      "verina-cost"
+    ],
+    "verified": true,
+    "image": "./assets/materials/helix-1.webp"
+  },
+  {
+    "id": "helix-2",
+    "name": "Andante Helix",
+    "category": "Forja",
+    "rarity": 4,
+    "origin": "Misty Forest · Dim Forest",
+    "activity": "forgery",
+    "sources": [
+      "verina-cost"
+    ],
+    "verified": true,
+    "image": "./assets/materials/helix-2.webp"
+  },
+  {
+    "id": "helix-3",
+    "name": "Presto Helix",
+    "category": "Forja",
+    "rarity": 5,
+    "origin": "Misty Forest · Dim Forest",
+    "activity": "forgery",
+    "sources": [
+      "verina-cost"
+    ],
+    "verified": true,
+    "image": "./assets/materials/helix-3.webp"
+  },
+  {
+    "id": "drip-0",
+    "name": "Inert Metallic Drip",
+    "category": "Forja",
+    "rarity": 2,
+    "origin": "Flaming Remnants · Port City of Guixu",
+    "activity": "forgery",
+    "sources": [
+      "sanhua-cost"
+    ],
+    "verified": true,
+    "image": "./assets/materials/drip-0.webp"
+  },
+  {
+    "id": "drip-1",
+    "name": "Reactive Metallic Drip",
+    "category": "Forja",
+    "rarity": 3,
+    "origin": "Flaming Remnants · Port City of Guixu",
+    "activity": "forgery",
+    "sources": [
+      "sanhua-cost"
+    ],
+    "verified": true,
+    "image": "./assets/materials/drip-1.webp"
+  },
+  {
+    "id": "drip-2",
+    "name": "Polarized Metallic Drip",
+    "category": "Forja",
+    "rarity": 4,
+    "origin": "Flaming Remnants · Port City of Guixu",
+    "activity": "forgery",
+    "sources": [
+      "sanhua-cost"
+    ],
+    "verified": true,
+    "image": "./assets/materials/drip-2.webp"
+  },
+  {
+    "id": "drip-3",
+    "name": "Heterized Metallic Drip",
+    "category": "Forja",
+    "rarity": 5,
+    "origin": "Flaming Remnants · Port City of Guixu",
+    "activity": "forgery",
+    "sources": [
+      "sanhua-cost"
+    ],
+    "verified": true,
+    "image": "./assets/materials/drip-3.webp"
+  },
+  {
+    "id": "impure-phlogiston-0",
+    "name": "Impure Phlogiston",
+    "category": "Forja",
+    "rarity": 2,
+    "origin": "Forgery Challenge",
+    "activity": "forgery",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/impure-phlogiston-0.webp"
+  },
+  {
+    "id": "impure-phlogiston-1",
+    "name": "Extracted Phlogiston",
+    "category": "Forja",
+    "rarity": 3,
+    "origin": "Forgery Challenge",
+    "activity": "forgery",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/impure-phlogiston-1.webp"
+  },
+  {
+    "id": "impure-phlogiston-2",
+    "name": "Refined Phlogiston",
+    "category": "Forja",
+    "rarity": 4,
+    "origin": "Forgery Challenge",
+    "activity": "forgery",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/impure-phlogiston-2.webp"
+  },
+  {
+    "id": "impure-phlogiston-3",
+    "name": "Flawless Phlogiston",
+    "category": "Forja",
+    "rarity": 5,
+    "origin": "Forgery Challenge",
+    "activity": "forgery",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/impure-phlogiston-3.webp"
+  },
+  {
+    "id": "broken-wing-polarizer-0",
+    "name": "Broken Wing Polarizer",
+    "category": "Forja",
+    "rarity": 2,
+    "origin": "Forgery Challenge",
+    "activity": "forgery",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/broken-wing-polarizer-0.webp"
+  },
+  {
+    "id": "broken-wing-polarizer-1",
+    "name": "Monowing Polarizer",
+    "category": "Forja",
+    "rarity": 3,
+    "origin": "Forgery Challenge",
+    "activity": "forgery",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/broken-wing-polarizer-1.webp"
+  },
+  {
+    "id": "broken-wing-polarizer-2",
+    "name": "Polywing Polarizer",
+    "category": "Forja",
+    "rarity": 4,
+    "origin": "Forgery Challenge",
+    "activity": "forgery",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/broken-wing-polarizer-2.webp"
+  },
+  {
+    "id": "broken-wing-polarizer-3",
+    "name": "Layered Wing Polarizer",
+    "category": "Forja",
+    "rarity": 5,
+    "origin": "Forgery Challenge",
+    "activity": "forgery",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/broken-wing-polarizer-3.webp"
+  },
+  {
+    "id": "spliced-string-0",
+    "name": "Spliced String",
+    "category": "Forja",
+    "rarity": 2,
+    "origin": "Forgery Challenge",
+    "activity": "forgery",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/spliced-string-0.webp"
+  },
+  {
+    "id": "spliced-string-1",
+    "name": "Broken String",
+    "category": "Forja",
+    "rarity": 3,
+    "origin": "Forgery Challenge",
+    "activity": "forgery",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/spliced-string-1.webp"
+  },
+  {
+    "id": "spliced-string-2",
+    "name": "Solidified String",
+    "category": "Forja",
+    "rarity": 4,
+    "origin": "Forgery Challenge",
+    "activity": "forgery",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/spliced-string-2.webp"
+  },
+  {
+    "id": "spliced-string-3",
+    "name": "Melodic String",
+    "category": "Forja",
+    "rarity": 5,
+    "origin": "Forgery Challenge",
+    "activity": "forgery",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/spliced-string-3.webp"
+  },
+  {
+    "id": "cadence-seed-0",
+    "name": "Cadence Seed",
+    "category": "Forja",
+    "rarity": 2,
+    "origin": "Forgery Challenge",
+    "activity": "forgery",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/cadence-seed-0.webp"
+  },
+  {
+    "id": "cadence-seed-1",
+    "name": "Cadence Bud",
+    "category": "Forja",
+    "rarity": 3,
+    "origin": "Forgery Challenge",
+    "activity": "forgery",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/cadence-seed-1.webp"
+  },
+  {
+    "id": "cadence-seed-2",
+    "name": "Cadence Leaf",
+    "category": "Forja",
+    "rarity": 4,
+    "origin": "Forgery Challenge",
+    "activity": "forgery",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/cadence-seed-2.webp"
+  },
+  {
+    "id": "cadence-seed-3",
+    "name": "Cadence Blossom",
+    "category": "Forja",
+    "rarity": 5,
+    "origin": "Forgery Challenge",
+    "activity": "forgery",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/cadence-seed-3.webp"
+  },
+  {
+    "id": "carved-crystal-0",
+    "name": "LF Carved Crystal",
+    "category": "Forja",
+    "rarity": 2,
+    "origin": "Forgery Challenge",
+    "activity": "forgery",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/carved-crystal-0.webp"
+  },
+  {
+    "id": "carved-crystal-1",
+    "name": "MF Carved Crystal",
+    "category": "Forja",
+    "rarity": 3,
+    "origin": "Forgery Challenge",
+    "activity": "forgery",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/carved-crystal-1.webp"
+  },
+  {
+    "id": "carved-crystal-2",
+    "name": "HF Carved Crystal",
+    "category": "Forja",
+    "rarity": 4,
+    "origin": "Forgery Challenge",
+    "activity": "forgery",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/carved-crystal-2.webp"
+  },
+  {
+    "id": "carved-crystal-3",
+    "name": "FF Carved Crystal",
+    "category": "Forja",
+    "rarity": 5,
+    "origin": "Forgery Challenge",
+    "activity": "forgery",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/carved-crystal-3.webp"
+  },
+  {
+    "id": "incomplete-combustor-0",
+    "name": "Incomplete Combustor",
+    "category": "Forja",
+    "rarity": 2,
+    "origin": "Forgery Challenge",
+    "activity": "forgery",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/incomplete-combustor-0.webp"
+  },
+  {
+    "id": "incomplete-combustor-1",
+    "name": "Aftertune Combustor",
+    "category": "Forja",
+    "rarity": 3,
+    "origin": "Forgery Challenge",
+    "activity": "forgery",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/incomplete-combustor-1.webp"
+  },
+  {
+    "id": "incomplete-combustor-2",
+    "name": "Remnant Combustor",
+    "category": "Forja",
+    "rarity": 4,
+    "origin": "Forgery Challenge",
+    "activity": "forgery",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/incomplete-combustor-2.webp"
+  },
+  {
+    "id": "incomplete-combustor-3",
+    "name": "Reverb Combustor",
+    "category": "Forja",
+    "rarity": 5,
+    "origin": "Forgery Challenge",
+    "activity": "forgery",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/incomplete-combustor-3.webp"
+  },
+  {
+    "id": "waveworn-shard-0",
+    "name": "LF Waveworn Shard",
+    "category": "Forja",
+    "rarity": 2,
+    "origin": "Forgery Challenge",
+    "activity": "forgery",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/waveworn-shard-0.webp"
+  },
+  {
+    "id": "waveworn-shard-1",
+    "name": "MF Waveworn Shard",
+    "category": "Forja",
+    "rarity": 3,
+    "origin": "Forgery Challenge",
+    "activity": "forgery",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/waveworn-shard-1.webp"
+  },
+  {
+    "id": "waveworn-shard-2",
+    "name": "HF Waveworn Shard",
+    "category": "Forja",
+    "rarity": 4,
+    "origin": "Forgery Challenge",
+    "activity": "forgery",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/waveworn-shard-2.webp"
+  },
+  {
+    "id": "waveworn-shard-3",
+    "name": "FF Waveworn Shard",
+    "category": "Forja",
+    "rarity": 5,
+    "origin": "Forgery Challenge",
+    "activity": "forgery",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/waveworn-shard-3.webp"
+  }
+]

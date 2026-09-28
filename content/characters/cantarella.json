@@ -1,0 +1,30 @@
+{
+  "id": "cantarella",
+  "name": "Cantarella",
+  "element": "Havoc",
+  "weapon": "Rectifier",
+  "rarity": 5,
+  "enemy": "polygon-core",
+  "forgery": "helix",
+  "flower": "seaside-cendrelis",
+  "boss": "cleansing-conch",
+  "weekly": "when-irises-bloom",
+  "image": "./assets/characters/icons/cantarella.webp",
+  "sources": [
+    "assets-cantarella",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/cantarella.webp",
+    "banner": "./assets/characters/splash/cantarella.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_34_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Cantarella/Gallery",
+    "card": "./assets/characters/cards/cantarella.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_kanteleila_UI.webp",
+    "bannerSource": "https://static.wikia.nocookie.net/wutheringwaves/images/c/c2/Cantarella_Splash_Art.png/revision/latest?cb=20250611111109",
+    "bannerKind": "splash",
+    "bannerPosition": "50% 45%"
+  }
+}

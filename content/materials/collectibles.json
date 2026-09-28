@@ -1,0 +1,444 @@
+[
+  {
+    "id": "pearl",
+    "name": "Loong’s Pearl",
+    "category": "Coleta",
+    "rarity": null,
+    "origin": "Mt. Firmament",
+    "activity": "overworld",
+    "sources": [
+      "pearl"
+    ],
+    "verified": true,
+    "image": "./assets/materials/pearl.webp"
+  },
+  {
+    "id": "pecok",
+    "name": "Pecok Flower",
+    "category": "Coleta",
+    "rarity": null,
+    "origin": "Central Plains · Huanglong",
+    "activity": "overworld",
+    "sources": [
+      "jiyan-cost"
+    ],
+    "verified": true,
+    "image": "./assets/materials/pecok.webp"
+  },
+  {
+    "id": "poppy",
+    "name": "Belle Poppy",
+    "category": "Coleta",
+    "rarity": null,
+    "origin": "Port City of Guixu · arredores",
+    "activity": "overworld",
+    "sources": [
+      "verina-cost"
+    ],
+    "verified": true,
+    "image": "./assets/materials/poppy.webp"
+  },
+  {
+    "id": "coriolus",
+    "name": "Coriolus",
+    "category": "Coleta",
+    "rarity": null,
+    "origin": "Dim Forest · Huanglong",
+    "activity": "overworld",
+    "sources": [
+      "yinlin-cost"
+    ],
+    "verified": true,
+    "image": "./assets/materials/coriolus.webp"
+  },
+  {
+    "id": "wintry",
+    "name": "Wintry Bell",
+    "category": "Coleta",
+    "rarity": null,
+    "origin": "Gorges of Spirits · Huanglong",
+    "activity": "overworld",
+    "sources": [
+      "sanhua-cost"
+    ],
+    "verified": true,
+    "image": "./assets/materials/wintry.webp"
+  },
+  {
+    "id": "moss-amber",
+    "name": "Moss Amber",
+    "category": "Coleta",
+    "rarity": 1,
+    "origin": "Coleta · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/moss-amber.webp"
+  },
+  {
+    "id": "luminous-calendula",
+    "name": "Luminous Calendula",
+    "category": "Coleta",
+    "rarity": 1,
+    "origin": "Coleta · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/luminous-calendula.webp"
+  },
+  {
+    "id": "lanternberry",
+    "name": "Lanternberry",
+    "category": "Coleta",
+    "rarity": 1,
+    "origin": "Coleta · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/lanternberry.webp"
+  },
+  {
+    "id": "golden-fleece",
+    "name": "Golden Fleece",
+    "category": "Coleta",
+    "rarity": 1,
+    "origin": "Coleta · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/golden-fleece.webp"
+  },
+  {
+    "id": "iris",
+    "name": "Iris",
+    "category": "Coleta",
+    "rarity": 1,
+    "origin": "Coleta · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/iris.webp"
+  },
+  {
+    "id": "nova",
+    "name": "Nova",
+    "category": "Coleta",
+    "rarity": 1,
+    "origin": "Coleta · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/nova.webp"
+  },
+  {
+    "id": "seaside-cendrelis",
+    "name": "Seaside Cendrelis",
+    "category": "Coleta",
+    "rarity": 1,
+    "origin": "Coleta · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/seaside-cendrelis.webp"
+  },
+  {
+    "id": "sword-acorus",
+    "name": "Sword Acorus",
+    "category": "Coleta",
+    "rarity": 1,
+    "origin": "Coleta · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/sword-acorus.webp"
+  },
+  {
+    "id": "bamboo-iris",
+    "name": "Bamboo Iris",
+    "category": "Coleta",
+    "rarity": 1,
+    "origin": "Coleta · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/bamboo-iris.webp"
+  },
+  {
+    "id": "pavo-plum",
+    "name": "Pavo Plum",
+    "category": "Coleta",
+    "rarity": 1,
+    "origin": "Coleta · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/pavo-plum.webp"
+  },
+  {
+    "id": "summer-flower",
+    "name": "Summer Flower",
+    "category": "Coleta",
+    "rarity": 1,
+    "origin": "Coleta · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/summer-flower.webp"
+  },
+  {
+    "id": "dream-of-stars",
+    "name": "Dream of Stars",
+    "category": "Coleta",
+    "rarity": 1,
+    "origin": "Coleta · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/dream-of-stars.webp"
+  },
+  {
+    "id": "stone-rose",
+    "name": "Stone Rose",
+    "category": "Coleta",
+    "rarity": 1,
+    "origin": "Coleta · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/stone-rose.webp"
+  },
+  {
+    "id": "redbell",
+    "name": "Redbell",
+    "category": "Coleta",
+    "rarity": 1,
+    "origin": "Coleta · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/redbell.webp"
+  },
+  {
+    "id": "sliverglow-bloom",
+    "name": "Sliverglow Bloom",
+    "category": "Coleta",
+    "rarity": 1,
+    "origin": "Coleta · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/sliverglow-bloom.webp"
+  },
+  {
+    "id": "cloudperch-seed",
+    "name": "Cloudperch Seed",
+    "category": "Coleta",
+    "rarity": 1,
+    "origin": "Coleta · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/cloudperch-seed.webp"
+  },
+  {
+    "id": "forget-me-not",
+    "name": "Forget-Me-Not",
+    "category": "Coleta",
+    "rarity": 1,
+    "origin": "Coleta · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/forget-me-not.webp"
+  },
+  {
+    "id": "past-reveries",
+    "name": "Past Reveries",
+    "category": "Coleta",
+    "rarity": 1,
+    "origin": "Coleta · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/past-reveries.webp"
+  },
+  {
+    "id": "terraspawn-fungus",
+    "name": "Terraspawn Fungus",
+    "category": "Coleta",
+    "rarity": 1,
+    "origin": "Coleta · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/terraspawn-fungus.webp"
+  },
+  {
+    "id": "bloodleaf-viburnum",
+    "name": "Bloodleaf Viburnum",
+    "category": "Coleta",
+    "rarity": 1,
+    "origin": "Coleta · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/bloodleaf-viburnum.webp"
+  },
+  {
+    "id": "edelschnee",
+    "name": "Edelschnee",
+    "category": "Coleta",
+    "rarity": 1,
+    "origin": "Coleta · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/edelschnee.webp"
+  },
+  {
+    "id": "rimewisp",
+    "name": "Rimewisp",
+    "category": "Coleta",
+    "rarity": 1,
+    "origin": "Coleta · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/rimewisp.webp"
+  },
+  {
+    "id": "gemini-spore",
+    "name": "Gemini Spore",
+    "category": "Coleta",
+    "rarity": 1,
+    "origin": "Coleta · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/gemini-spore.webp"
+  },
+  {
+    "id": "afterlife",
+    "name": "Afterlife",
+    "category": "Coleta",
+    "rarity": 1,
+    "origin": "Coleta · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/afterlife.webp"
+  },
+  {
+    "id": "firecracker-jewelweed",
+    "name": "Firecracker Jewelweed",
+    "category": "Coleta",
+    "rarity": 1,
+    "origin": "Coleta · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/firecracker-jewelweed.webp"
+  },
+  {
+    "id": "blade-blossom",
+    "name": "Blade Blossom",
+    "category": "Coleta",
+    "rarity": 1,
+    "origin": "Coleta · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/blade-blossom.webp"
+  },
+  {
+    "id": "arithmetic-shell",
+    "name": "Arithmetic Shell",
+    "category": "Coleta",
+    "rarity": 1,
+    "origin": "Coleta · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/arithmetic-shell.webp"
+  },
+  {
+    "id": "flowborne-dream",
+    "name": "Flowborne Dream",
+    "category": "Coleta",
+    "rarity": 1,
+    "origin": "Coleta · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/flowborne-dream.webp"
+  },
+  {
+    "id": "violet-coral",
+    "name": "Violet Coral",
+    "category": "Coleta",
+    "rarity": 1,
+    "origin": "Coleta · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/violet-coral.webp"
+  }
+]

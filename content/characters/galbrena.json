@@ -1,0 +1,30 @@
+{
+  "id": "galbrena",
+  "name": "Galbrena",
+  "element": "Fusion",
+  "weapon": "Pistols",
+  "rarity": 5,
+  "enemy": "tidal-residuum",
+  "forgery": "impure-phlogiston",
+  "flower": "stone-rose",
+  "boss": "blighted-crown-of-puppet-king",
+  "weekly": "curse-of-the-abyss",
+  "image": "./assets/characters/icons/galbrena.webp",
+  "sources": [
+    "assets-galbrena",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/galbrena.webp",
+    "banner": "./assets/characters/splash/galbrena.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_55_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Galbrena/Gallery",
+    "card": "./assets/characters/cards/galbrena.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_jiabeilina_UI.webp",
+    "bannerSource": "https://static.wikia.nocookie.net/wutheringwaves/images/c/c9/Galbrena_Splash_Art.png/revision/latest?cb=20250926180902",
+    "bannerKind": "splash",
+    "bannerPosition": "50% 45%"
+  }
+}

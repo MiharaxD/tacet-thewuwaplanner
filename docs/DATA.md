@@ -43,19 +43,19 @@ As listas de ascensão/Forte são custos **por etapa**, nunca totais cumulativos
 ## Manutenção do catálogo
 
 1. Consulte a página individual, uma confirmação complementar quando necessário e registre a data/versão real.
-2. `scripts/catalog.mjs` gera a base original e chama `scripts/import-wuwa.mjs`, que importa `source-assets/wuwa/`. `scripts/wuwa-reference.json` preserva o snapshot de identidades e imagens para regeneração offline. Não renomeie IDs já usados em backups sem criar uma migração explícita.
+2. Edite os dados curados em `content/`. `scripts/catalog.mjs` valida e compila esses arquivos para `data/`, sem rede nem leitura de `source-assets/`. `scripts/wuwa-reference.json` preserva o snapshot de identidades para atualizações explícitas. Não renomeie IDs já usados em backups sem criar uma migração explícita.
 3. Identifique se cada tabela é incremental ou acumulada. Confira um intervalo curto e um total completo independentemente do motor.
 4. Defina os indicadores `ascensionVerified`/`forteVerified` somente quando a tabela e o vínculo dos materiais estiverem confirmados. Para dados não disponíveis, mantenha o indicador falso.
-5. Execute `node scripts/catalog.mjs`, revise `data/`, acrescente testes de fronteira e execute os testes e o build.
+5. Execute `npm run catalog`, `npm run data:check`, `npm test` e `npm run build`.
 6. Recarregue o site e teste uma meta nova. Se a forma do estado mudar, incremente o formato e implemente migração em `src/state.js` antes de publicar.
 
-Use `node scripts/catalog.mjs --refresh` para consultar o Akademiya novamente e baixar imagens ausentes. Sem `--refresh`, a geração não acessa a rede. A importação exige quatro raridades por família, valida as seis etapas de ascensão e rejeita materiais sem imagem/referência. A exceção explícita da Jinhsi está documentada no importador. Os IDs originais e o formato de backup versão 1 foram preservados.
+Use `npm run catalog:refresh` para atualizar `content/` a partir das fontes externas e brutas e depois compilar `data/`. A geração normal com `npm run catalog` não consulta a rede. A importação exige quatro raridades por família, valida as seis etapas de ascensão e rejeita materiais sem imagem/referência. A exceção explícita da Jinhsi está documentada no importador. Os IDs originais e o formato de backup versão 1 foram preservados.
 
 Os desbloqueios das passivas são validados e calculados em `src/engine.js` com as tabelas de `data/rules.json`. Alterações nos custos exigem conferir essas tabelas e os vínculos de materiais do catálogo.
 
 ## Eventos
 
-Os eventos publicados são cadastrados pelo desenvolvedor em `data/events.json`; jogadores podem marcar ou desmarcar a conclusão. O backup mantém essas conclusões e os eventos pessoais legados, sem editar o catálogo publicado.
+Os eventos publicados são cadastrados pelo desenvolvedor em `content/events.json`; `npm run catalog` gera `data/events.json`. Jogadores podem marcar ou desmarcar a conclusão. O backup mantém essas conclusões e os eventos pessoais legados, sem editar o catálogo publicado.
 
 `data/events.json` contém a agenda publicada pelo desenvolvedor. `src/official-events.js` valida os registros; a interface mostra eventos pendentes no Resumo e na aba Eventos, e guarda as conclusões do jogador separadamente em `eventCompletions`. Eventos recorrentes podem usar um `anchor` com `everyHours` ou `everyDays`, ou o reset diário/semanal do servidor definido em `data/rules.json`. Não existe atualização automática da agenda nem API pública presumida.
 
@@ -94,4 +94,4 @@ Os cards e banners usam artes originais de 696 × 960 em `assets/characters/card
 
 ## Arquivos de produção e fontes brutas
 
-`assets/` contém as imagens usadas pelo site e copiadas para o build. `source-assets/` guarda os arquivos brutos e históricos usados na manutenção; essa pasta não entra em `dist/`. `scripts/import-wuwa.mjs` lê `source-assets/wuwa/characters/` e `source-assets/wuwa/materials/`, gera o catálogo e copia imagens de materiais para os caminhos canônicos em `assets/materials/`.
+`assets/` contém imagens públicas. `source-assets/` guarda arquivos brutos e históricos. `content/` contém os dados estruturados editáveis; `data/` contém os JSONs compilados carregados pelo navegador. As pastas `content/` e `source-assets/` não entram em `dist/`. `scripts/import-wuwa.mjs` lê `source-assets/wuwa/characters/` e `source-assets/wuwa/materials/` apenas na atualização explícita, modifica `content/` e copia imagens de materiais para `assets/materials/`.

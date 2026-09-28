@@ -1,0 +1,30 @@
+{
+  "id": "zhezhi",
+  "name": "Zhezhi",
+  "element": "Glacio",
+  "weapon": "Rectifier",
+  "rarity": 5,
+  "enemy": "howler",
+  "forgery": "helix",
+  "flower": "lanternberry",
+  "boss": "sound",
+  "weekly": "bell",
+  "image": "./assets/characters/icons/zhezhi.webp",
+  "sources": [
+    "assets-zhezhi",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/zhezhi.webp",
+    "banner": "./assets/characters/splash/zhezhi.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_27_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Zhezhi/Gallery",
+    "card": "./assets/characters/cards/zhezhi.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_zhezhi_UI.webp",
+    "bannerSource": "https://static.wikia.nocookie.net/wutheringwaves/images/c/c3/Zhezhi_Splash_Art.png/revision/latest?cb=20240813051642",
+    "bannerKind": "splash",
+    "bannerPosition": "50% 45%"
+  }
+}

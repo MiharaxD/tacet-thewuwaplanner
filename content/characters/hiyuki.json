@@ -1,0 +1,30 @@
+{
+  "id": "hiyuki",
+  "name": "Hiyuki",
+  "element": "Glacio",
+  "weapon": "Sword",
+  "rarity": 5,
+  "enemy": "exoswarm-core",
+  "forgery": "broken-wing-polarizer",
+  "flower": "redbell",
+  "boss": "our-choice",
+  "weekly": "we-who-question",
+  "image": "./assets/characters/icons/hiyuki.webp",
+  "sources": [
+    "assets-hiyuki",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/hiyuki.webp",
+    "banner": "./assets/characters/splash/hiyuki.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_67_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Hiyuki/Gallery",
+    "card": "./assets/characters/cards/hiyuki.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Feixue_UI.webp",
+    "bannerSource": "https://static.wikia.nocookie.net/wutheringwaves/images/6/6a/Hiyuki_Splash_Art.png/revision/latest?cb=20260507080455",
+    "bannerKind": "splash",
+    "bannerPosition": "50% 45%"
+  }
+}

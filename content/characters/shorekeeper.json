@@ -1,0 +1,30 @@
+{
+  "id": "shorekeeper",
+  "name": "Shorekeeper",
+  "element": "Spectro",
+  "weapon": "Rectifier",
+  "rarity": 5,
+  "enemy": "whisper",
+  "forgery": "helix",
+  "flower": "nova",
+  "boss": "topological-confinement",
+  "weekly": "dagger",
+  "image": "./assets/characters/icons/shorekeeper.webp",
+  "sources": [
+    "assets-shorekeeper",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/shorekeeper.webp",
+    "banner": "./assets/characters/splash/shorekeeper.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_28_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Shorekeeper/Gallery",
+    "card": "./assets/characters/cards/shorekeeper.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_shouanren_UI.webp",
+    "bannerSource": "https://static.wikia.nocookie.net/wutheringwaves/images/4/4a/Shorekeeper_Splash_Art.png/revision/latest?cb=20240927030646",
+    "bannerKind": "splash",
+    "bannerPosition": "50% 45%"
+  }
+}

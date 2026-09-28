@@ -1,6 +1,6 @@
 # Como cadastrar eventos no Tacet
 
-Você administra a agenda pelo arquivo `data/events.json`. Os jogadores recebem a lista publicada e só podem marcar/desmarcar **Concluí este evento**. Não existe formulário público para criar, editar ou excluir eventos.
+Você administra a agenda pelo arquivo `content/events.json`. `npm run catalog` gera `data/events.json`, que os jogadores recebem. Eles só podem marcar/desmarcar **Concluí este evento**. Não existe formulário público para criar, editar ou excluir eventos.
 
 ## 1. Edite o arquivo
 
@@ -35,7 +35,7 @@ Se os horários variarem entre servidores, crie entradas com IDs distintos e o c
 
 ## 2. Confira e publique
 
-Rode `npm run build` para validar nomes, datas, servidores e IDs duplicados. Depois publique o site pelo fluxo habitual do Sites — ou peça aqui: **“Publique os eventos que editei”**.
+Rode `npm run catalog`, `npm run data:check` e `npm run build` para validar nomes, datas, servidores e IDs duplicados. Depois publique o site pelo fluxo habitual do Sites — ou peça aqui: **“Publique os eventos que editei”**.
 
 Editar o arquivo local não atualiza a versão publicada sozinho. Após a publicação, os jogadores recebem a nova agenda ao recarregar o site.
 

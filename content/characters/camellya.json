@@ -1,0 +1,30 @@
+{
+  "id": "camellya",
+  "name": "Camellya",
+  "element": "Havoc",
+  "weapon": "Sword",
+  "rarity": 5,
+  "enemy": "whisper",
+  "forgery": "drip",
+  "flower": "nova",
+  "boss": "topological-confinement",
+  "weekly": "feather",
+  "image": "./assets/characters/icons/camellya.webp",
+  "sources": [
+    "assets-camellya",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/camellya.webp",
+    "banner": "./assets/characters/splash/camellya.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_29_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Camellya/Gallery",
+    "card": "./assets/characters/cards/camellya.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_chun_UI.webp",
+    "bannerSource": "https://static.wikia.nocookie.net/wutheringwaves/images/7/7f/Camellya_Splash_Art.png/revision/latest?cb=20241112033310",
+    "bannerKind": "splash",
+    "bannerPosition": "50% 66%"
+  }
+}

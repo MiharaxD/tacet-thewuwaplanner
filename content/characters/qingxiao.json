@@ -1,0 +1,30 @@
+{
+  "id": "qingxiao",
+  "name": "Qingxiao",
+  "element": "Aero",
+  "weapon": "Sword",
+  "rarity": 5,
+  "enemy": "autopuppet-kernel",
+  "forgery": "broken-wing-polarizer",
+  "flower": "blade-blossom",
+  "boss": "forged-empyreans-sigh",
+  "weekly": "we-who-question",
+  "image": "./assets/characters/icons/qingxiao.webp",
+  "sources": [
+    "assets-qingxiao",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/qingxiao.webp",
+    "banner": "./assets/characters/splash/qingxiao.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_73_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Qingxiao/Gallery",
+    "card": "./assets/characters/cards/qingxiao.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_qingxiao_UI.webp",
+    "bannerSource": "https://static.wikia.nocookie.net/wutheringwaves/images/c/c8/Qingxiao_Splash_Art.png/revision/latest?cb=20260807172825",
+    "bannerKind": "splash",
+    "bannerPosition": "50% 45%"
+  }
+}

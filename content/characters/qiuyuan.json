@@ -1,0 +1,30 @@
+{
+  "id": "qiuyuan",
+  "name": "Qiuyuan",
+  "element": "Aero",
+  "weapon": "Sword",
+  "rarity": 5,
+  "enemy": "whisper",
+  "forgery": "drip",
+  "flower": "wintry",
+  "boss": "truth-in-lies",
+  "weekly": "curse-of-the-abyss",
+  "image": "./assets/characters/icons/qiuyuan.webp",
+  "sources": [
+    "assets-qiuyuan",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/qiuyuan.webp",
+    "banner": "./assets/characters/splash/qiuyuan.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_56_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Qiuyuan/Gallery",
+    "card": "./assets/characters/cards/qiuyuan.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Qiuyuan_UI.webp",
+    "bannerSource": "https://static.wikia.nocookie.net/wutheringwaves/images/3/36/Qiuyuan_Splash_Art.png/revision/latest?cb=20250926181050",
+    "bannerKind": "splash",
+    "bannerPosition": "50% 45%"
+  }
+}

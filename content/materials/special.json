@@ -1,0 +1,15 @@
+[
+  {
+    "id": "mysterious-code",
+    "name": "Mysterious Code",
+    "category": "Especial",
+    "rarity": 5,
+    "origin": "Progressão da história",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/mysterious-code.webp"
+  }
+]

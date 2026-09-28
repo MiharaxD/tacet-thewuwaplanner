@@ -1,0 +1,30 @@
+{
+  "id": "lucy",
+  "name": "Lucy",
+  "element": "Spectro",
+  "weapon": "Pistols",
+  "rarity": 5,
+  "enemy": "exoswarm-core",
+  "forgery": "incomplete-combustor",
+  "flower": "past-reveries",
+  "boss": "nightmare-flashdrive",
+  "weekly": "gold-in-memory",
+  "image": "./assets/characters/icons/lucy.webp",
+  "sources": [
+    "assets-lucy",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/lucy.webp",
+    "banner": "./assets/characters/splash/lucy.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_68_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Lucy/Gallery",
+    "card": "./assets/characters/cards/lucy.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Luxi_UI.webp",
+    "bannerSource": "https://static.wikia.nocookie.net/wutheringwaves/images/7/71/Lucy_Splash_Art.png/revision/latest?cb=20260617034839",
+    "bannerKind": "splash",
+    "bannerPosition": "50% 45%"
+  }
+}

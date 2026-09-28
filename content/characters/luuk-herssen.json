@@ -1,0 +1,30 @@
+{
+  "id": "luuk-herssen",
+  "name": "Luuk Herssen",
+  "element": "Spectro",
+  "weapon": "Gauntlets",
+  "rarity": 5,
+  "enemy": "fractured-exoswarm-pendant",
+  "forgery": "waveworn-shard",
+  "flower": "edelschnee",
+  "boss": "suncoveters-reach",
+  "weekly": "gold-in-memory",
+  "image": "./assets/characters/icons/luuk-herssen.webp",
+  "sources": [
+    "assets-luuk-herssen",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/luuk-herssen.webp",
+    "banner": "./assets/characters/splash/luuk-herssen.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_54_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Luuk_Herssen/Gallery",
+    "card": "./assets/characters/cards/luuk-herssen.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Luhesi_UI.webp",
+    "bannerSource": "https://static.wikia.nocookie.net/wutheringwaves/images/e/e3/Luuk_Herssen_Splash_Art.png/revision/latest?cb=20260204134419",
+    "bannerKind": "splash",
+    "bannerPosition": "50% 45%"
+  }
+}

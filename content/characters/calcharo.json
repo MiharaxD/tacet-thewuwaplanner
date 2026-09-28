@@ -1,0 +1,30 @@
+{
+  "id": "calcharo",
+  "name": "Calcharo",
+  "element": "Electro",
+  "weapon": "Broadblade",
+  "rarity": 5,
+  "enemy": "ring",
+  "forgery": "waveworn",
+  "flower": "iris",
+  "boss": "thundering-tacet-core",
+  "weekly": "bell",
+  "image": "./assets/characters/icons/calcharo.webp",
+  "sources": [
+    "assets-calcharo",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/calcharo.webp",
+    "banner": "./assets/characters/splash/calcharo.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_18_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Calcharo/Gallery",
+    "card": "./assets/characters/cards/calcharo.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_kakaluo_UI.webp",
+    "bannerSource": "https://static.wikia.nocookie.net/wutheringwaves/images/8/8a/Calcharo_Splash_Art.png/revision/latest?cb=20241001061902",
+    "bannerKind": "splash",
+    "bannerPosition": "50% 45%"
+  }
+}

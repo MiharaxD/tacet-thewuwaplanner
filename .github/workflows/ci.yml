@@ -20,6 +20,8 @@ jobs:
           package-manager-cache: false
       - name: Install dependencies
         run: npm ci
+      - name: Check generated data
+        run: npm run data:check
       - name: Test
         run: npm test
       - name: Build

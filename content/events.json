@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "events": [
+    {
+      "id": "diaria",
+      "type": "recurring",
+      "title": "Tarefa Diária",
+      "icon": "assets/events/diaria.svg",
+      "start": "2026-09-17T04:00:00-03:00",
+      "reset": {
+        "serverReset": "daily"
+      },
+      "permanent": true
+    },
+    {
+      "id": "desafio-semanal",
+      "type": "recurring",
+      "title": "Desafio semanal",
+      "icon": "assets/events/diaria.svg",
+      "start": "2026-09-14T04:00:00-03:00",
+      "reset": {
+        "serverReset": "weekly"
+      },
+      "permanent": true
+    },
+    {
+      "id": "convene-setembro-2026",
+      "type": "banner",
+      "title": "Convene Limitado",
+      "icon": "assets/events/convene/icon.webp",
+      "start": "2026-09-14T12:00:00-03:00",
+      "end": "2026-09-29T10:00:00-03:00",
+      "banners": [
+        {
+          "name": "Jingran",
+          "image": "assets/events/convene/jingran.webp"
+        },
+        {
+          "name": "Hiyuki",
+          "image": "assets/events/convene/hiyuki.webp"
+        },
+        {
+          "name": "Mornye",
+          "image": "assets/events/convene/mornye.webp"
+        },
+        {
+          "name": "Thousandfold Deliverance",
+          "image": "assets/events/convene/thousandfolddeliverance.webp"
+        },
+        {
+          "name": "Frostburn",
+          "image": "assets/events/convene/frostburn.webp"
+        },
+        {
+          "name": "Starfield Calibrator",
+          "image": "assets/events/convene/starfieldcalibrator.webp"
+        }
+      ]
+    },
+    {
+      "id": "torredaadversidade",
+      "type": "recurring",
+      "title": "Torre da adversidade",
+      "icon": "assets/events/adversity.svg",
+      "start": "2026-09-13T04:17:00-03:00",
+      "reset": {
+        "anchor": "2026-09-13T04:17:00-03:00",
+        "everyDays": 28
+      },
+      "permanent": true
+    },
+    {
+      "id": "matrizdeestadofinal",
+      "type": "recurring",
+      "title": "Matriz de Estado Final",
+      "icon": "assets/events/matriz.svg",
+      "start": "2026-08-19T04:23:00-03:00",
+      "reset": {
+        "anchor": "2026-08-19T04:23:00-03:00",
+        "everyDays": 42
+      },
+      "permanent": true
+    },
+    {
+      "id": "whimperingwastes",
+      "type": "recurring",
+      "title": "Whimpering Wastes",
+      "icon": "assets/events/whimperingwastes.webp",
+      "start": "2026-08-30T04:17:00-03:00",
+      "reset": {
+        "anchor": "2026-08-30T04:17:00-03:00",
+        "everyDays": 28
+      },
+      "permanent": true
+    }
+  ]
+}

@@ -1,0 +1,1138 @@
+[
+  {
+    "id": "ages",
+    "name": "Ages of Harvest",
+    "type": "Broadblade",
+    "forgery": "waveworn",
+    "enemy": "whisper",
+    "rarity": 5,
+    "sources": [
+      "ages",
+      "ages-cost",
+      "weapon-skill-materials",
+      "weapon-21010026",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true,
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 10000,
+        "whisper-0": 6
+      },
+      {
+        "shell": 20000,
+        "waveworn-0": 6,
+        "whisper-1": 6
+      },
+      {
+        "shell": 40000,
+        "waveworn-1": 8,
+        "whisper-2": 4
+      },
+      {
+        "shell": 60000,
+        "waveworn-2": 6,
+        "whisper-2": 6
+      },
+      {
+        "shell": 80000,
+        "waveworn-3": 8,
+        "whisper-3": 4
+      },
+      {
+        "shell": 120000,
+        "waveworn-3": 12,
+        "whisper-3": 8
+      }
+    ],
+    "image": "./assets/weapons/21010026.webp"
+  },
+  {
+    "id": "kumokiri",
+    "name": "Kumokiri",
+    "type": "Broadblade",
+    "rarity": 5,
+    "enemy": "whisper",
+    "forgery": "waveworn",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 10000,
+        "whisper-0": 6
+      },
+      {
+        "shell": 20000,
+        "waveworn-0": 6,
+        "whisper-1": 6
+      },
+      {
+        "shell": 40000,
+        "waveworn-1": 8,
+        "whisper-2": 4
+      },
+      {
+        "shell": 60000,
+        "waveworn-2": 6,
+        "whisper-2": 6
+      },
+      {
+        "shell": 80000,
+        "waveworn-3": 8,
+        "whisper-3": 4
+      },
+      {
+        "shell": 120000,
+        "waveworn-3": 12,
+        "whisper-3": 8
+      }
+    ],
+    "image": "./assets/weapons/21010056.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21010056",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "lustrous-razor",
+    "name": "Lustrous Razor",
+    "type": "Broadblade",
+    "rarity": 5,
+    "enemy": "whisper",
+    "forgery": "waveworn",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 10000,
+        "whisper-0": 6
+      },
+      {
+        "shell": 20000,
+        "waveworn-0": 6,
+        "whisper-1": 6
+      },
+      {
+        "shell": 40000,
+        "waveworn-1": 8,
+        "whisper-2": 4
+      },
+      {
+        "shell": 60000,
+        "waveworn-2": 6,
+        "whisper-2": 6
+      },
+      {
+        "shell": 80000,
+        "waveworn-3": 8,
+        "whisper-3": 4
+      },
+      {
+        "shell": 120000,
+        "waveworn-3": 12,
+        "whisper-3": 8
+      }
+    ],
+    "image": "./assets/weapons/21010015.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21010015",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "radiance-cleaver",
+    "name": "Radiance Cleaver",
+    "type": "Broadblade",
+    "rarity": 5,
+    "enemy": "fractured-exoswarm-pendant",
+    "forgery": "carved-crystal",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 10000,
+        "fractured-exoswarm-pendant-0": 6
+      },
+      {
+        "shell": 20000,
+        "fractured-exoswarm-pendant-1": 6,
+        "carved-crystal-0": 6
+      },
+      {
+        "shell": 40000,
+        "fractured-exoswarm-pendant-2": 4,
+        "carved-crystal-1": 8
+      },
+      {
+        "shell": 60000,
+        "fractured-exoswarm-pendant-2": 6,
+        "carved-crystal-2": 6
+      },
+      {
+        "shell": 80000,
+        "fractured-exoswarm-pendant-3": 4,
+        "carved-crystal-3": 8
+      },
+      {
+        "shell": 120000,
+        "fractured-exoswarm-pendant-3": 8,
+        "carved-crystal-3": 12
+      }
+    ],
+    "image": "./assets/weapons/21010045.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21010045",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "starfield-calibrator",
+    "name": "Starfield Calibrator",
+    "type": "Broadblade",
+    "rarity": 5,
+    "enemy": "fractured-exoswarm-pendant",
+    "forgery": "carved-crystal",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 10000,
+        "fractured-exoswarm-pendant-0": 6
+      },
+      {
+        "shell": 20000,
+        "carved-crystal-0": 6,
+        "fractured-exoswarm-pendant-1": 6
+      },
+      {
+        "shell": 40000,
+        "carved-crystal-1": 8,
+        "fractured-exoswarm-pendant-2": 4
+      },
+      {
+        "shell": 60000,
+        "carved-crystal-2": 6,
+        "fractured-exoswarm-pendant-2": 6
+      },
+      {
+        "shell": 80000,
+        "carved-crystal-3": 8,
+        "fractured-exoswarm-pendant-3": 4
+      },
+      {
+        "shell": 120000,
+        "carved-crystal-3": 12,
+        "fractured-exoswarm-pendant-3": 8
+      }
+    ],
+    "image": "./assets/weapons/21010066.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21010066",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "thousandfold-deliverance",
+    "name": "Thousandfold Deliverance",
+    "type": "Broadblade",
+    "rarity": 5,
+    "enemy": "fractured-exoswarm-pendant",
+    "forgery": "carved-crystal",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 10000,
+        "fractured-exoswarm-pendant-0": 6
+      },
+      {
+        "shell": 20000,
+        "carved-crystal-0": 6,
+        "fractured-exoswarm-pendant-1": 6
+      },
+      {
+        "shell": 40000,
+        "carved-crystal-1": 8,
+        "fractured-exoswarm-pendant-2": 4
+      },
+      {
+        "shell": 60000,
+        "carved-crystal-2": 6,
+        "fractured-exoswarm-pendant-2": 6
+      },
+      {
+        "shell": 80000,
+        "carved-crystal-3": 8,
+        "fractured-exoswarm-pendant-3": 4
+      },
+      {
+        "shell": 120000,
+        "carved-crystal-3": 12,
+        "fractured-exoswarm-pendant-3": 8
+      }
+    ],
+    "image": "./assets/weapons/21010076.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21010076",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "thunderflare-dominion",
+    "name": "Thunderflare Dominion",
+    "type": "Broadblade",
+    "rarity": 5,
+    "enemy": "whisper",
+    "forgery": "waveworn",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 10000,
+        "whisper-0": 6
+      },
+      {
+        "shell": 20000,
+        "waveworn-0": 6,
+        "whisper-1": 6
+      },
+      {
+        "shell": 40000,
+        "waveworn-1": 8,
+        "whisper-2": 4
+      },
+      {
+        "shell": 60000,
+        "waveworn-2": 6,
+        "whisper-2": 6
+      },
+      {
+        "shell": 80000,
+        "waveworn-3": 8,
+        "whisper-3": 4
+      },
+      {
+        "shell": 120000,
+        "waveworn-3": 12,
+        "whisper-3": 8
+      }
+    ],
+    "image": "./assets/weapons/21010046.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21010046",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "verdant",
+    "name": "Verdant Summit",
+    "type": "Broadblade",
+    "forgery": "waveworn",
+    "enemy": "whisper",
+    "rarity": 5,
+    "sources": [
+      "verdant",
+      "verdant-cost",
+      "weapon-skill-materials",
+      "weapon-21010016",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true,
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 10000,
+        "whisper-0": 6
+      },
+      {
+        "shell": 20000,
+        "waveworn-0": 6,
+        "whisper-1": 6
+      },
+      {
+        "shell": 40000,
+        "waveworn-1": 8,
+        "whisper-2": 4
+      },
+      {
+        "shell": 60000,
+        "waveworn-2": 6,
+        "whisper-2": 6
+      },
+      {
+        "shell": 80000,
+        "waveworn-3": 8,
+        "whisper-3": 4
+      },
+      {
+        "shell": 120000,
+        "waveworn-3": 12,
+        "whisper-3": 8
+      }
+    ],
+    "image": "./assets/weapons/21010016.webp"
+  },
+  {
+    "id": "wildfire-mark",
+    "name": "Wildfire Mark",
+    "type": "Broadblade",
+    "rarity": 5,
+    "enemy": "whisper",
+    "forgery": "waveworn",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 10000,
+        "whisper-0": 6
+      },
+      {
+        "shell": 20000,
+        "waveworn-0": 6,
+        "whisper-1": 6
+      },
+      {
+        "shell": 40000,
+        "waveworn-1": 8,
+        "whisper-2": 4
+      },
+      {
+        "shell": 60000,
+        "waveworn-2": 6,
+        "whisper-2": 6
+      },
+      {
+        "shell": 80000,
+        "waveworn-3": 8,
+        "whisper-3": 4
+      },
+      {
+        "shell": 120000,
+        "waveworn-3": 12,
+        "whisper-3": 8
+      }
+    ],
+    "image": "./assets/weapons/21010036.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21010036",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "aureate-zenith",
+    "name": "Aureate Zenith",
+    "type": "Broadblade",
+    "rarity": 4,
+    "enemy": "whisper",
+    "forgery": "waveworn",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 8000,
+        "whisper-0": 5
+      },
+      {
+        "shell": 16000,
+        "waveworn-0": 5,
+        "whisper-1": 5
+      },
+      {
+        "shell": 32000,
+        "waveworn-1": 7,
+        "whisper-2": 4
+      },
+      {
+        "shell": 48000,
+        "waveworn-2": 5,
+        "whisper-2": 5
+      },
+      {
+        "shell": 64000,
+        "waveworn-3": 7,
+        "whisper-3": 4
+      },
+      {
+        "shell": 96000,
+        "waveworn-3": 10,
+        "whisper-3": 7
+      }
+    ],
+    "image": "./assets/weapons/21010104.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21010104",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "autumntrace",
+    "name": "Autumntrace",
+    "type": "Broadblade",
+    "rarity": 4,
+    "enemy": "whisper",
+    "forgery": "waveworn",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 8000,
+        "whisper-0": 5
+      },
+      {
+        "shell": 16000,
+        "waveworn-0": 5,
+        "whisper-1": 5
+      },
+      {
+        "shell": 32000,
+        "waveworn-1": 7,
+        "whisper-2": 4
+      },
+      {
+        "shell": 48000,
+        "waveworn-2": 5,
+        "whisper-2": 5
+      },
+      {
+        "shell": 64000,
+        "waveworn-3": 7,
+        "whisper-3": 4
+      },
+      {
+        "shell": 96000,
+        "waveworn-3": 10,
+        "whisper-3": 7
+      }
+    ],
+    "image": "./assets/weapons/21010074.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21010074",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "broadblade-41",
+    "name": "Broadblade#41",
+    "type": "Broadblade",
+    "rarity": 4,
+    "enemy": "whisper",
+    "forgery": "waveworn",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 8000,
+        "whisper-0": 5
+      },
+      {
+        "shell": 16000,
+        "waveworn-0": 5,
+        "whisper-1": 5
+      },
+      {
+        "shell": 32000,
+        "waveworn-1": 7,
+        "whisper-2": 4
+      },
+      {
+        "shell": 48000,
+        "waveworn-2": 5,
+        "whisper-2": 5
+      },
+      {
+        "shell": 64000,
+        "waveworn-3": 7,
+        "whisper-3": 4
+      },
+      {
+        "shell": 96000,
+        "waveworn-3": 10,
+        "whisper-3": 7
+      }
+    ],
+    "image": "./assets/weapons/21010034.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21010034",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "dauntless-evernight",
+    "name": "Dauntless Evernight",
+    "type": "Broadblade",
+    "rarity": 4,
+    "enemy": "whisper",
+    "forgery": "waveworn",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 8000,
+        "whisper-0": 5
+      },
+      {
+        "shell": 16000,
+        "waveworn-0": 5,
+        "whisper-1": 5
+      },
+      {
+        "shell": 32000,
+        "waveworn-1": 7,
+        "whisper-2": 4
+      },
+      {
+        "shell": 48000,
+        "waveworn-2": 5,
+        "whisper-2": 5
+      },
+      {
+        "shell": 64000,
+        "waveworn-3": 7,
+        "whisper-3": 4
+      },
+      {
+        "shell": 96000,
+        "waveworn-3": 10,
+        "whisper-3": 7
+      }
+    ],
+    "image": "./assets/weapons/21010044.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21010044",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "discord",
+    "name": "Discord",
+    "type": "Broadblade",
+    "rarity": 4,
+    "enemy": "whisper",
+    "forgery": "waveworn",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 8000,
+        "whisper-0": 5
+      },
+      {
+        "shell": 16000,
+        "waveworn-0": 5,
+        "whisper-1": 5
+      },
+      {
+        "shell": 32000,
+        "waveworn-1": 7,
+        "whisper-2": 4
+      },
+      {
+        "shell": 48000,
+        "waveworn-2": 5,
+        "whisper-2": 5
+      },
+      {
+        "shell": 64000,
+        "waveworn-3": 7,
+        "whisper-3": 4
+      },
+      {
+        "shell": 96000,
+        "waveworn-3": 10,
+        "whisper-3": 7
+      }
+    ],
+    "image": "./assets/weapons/21010024.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21010024",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "helios-cleaver",
+    "name": "Helios Cleaver",
+    "type": "Broadblade",
+    "rarity": 4,
+    "enemy": "whisper",
+    "forgery": "waveworn",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 8000,
+        "whisper-0": 5
+      },
+      {
+        "shell": 16000,
+        "waveworn-0": 5,
+        "whisper-1": 5
+      },
+      {
+        "shell": 32000,
+        "waveworn-1": 7,
+        "whisper-2": 4
+      },
+      {
+        "shell": 48000,
+        "waveworn-2": 5,
+        "whisper-2": 5
+      },
+      {
+        "shell": 64000,
+        "waveworn-3": 7,
+        "whisper-3": 4
+      },
+      {
+        "shell": 96000,
+        "waveworn-3": 10,
+        "whisper-3": 7
+      }
+    ],
+    "image": "./assets/weapons/21010064.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21010064",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "meditations-on-mercy",
+    "name": "Meditations on Mercy",
+    "type": "Broadblade",
+    "rarity": 4,
+    "enemy": "whisper",
+    "forgery": "waveworn",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 8000,
+        "whisper-0": 5
+      },
+      {
+        "shell": 16000,
+        "waveworn-0": 5,
+        "whisper-1": 5
+      },
+      {
+        "shell": 32000,
+        "waveworn-1": 7,
+        "whisper-2": 4
+      },
+      {
+        "shell": 48000,
+        "waveworn-2": 5,
+        "whisper-2": 5
+      },
+      {
+        "shell": 64000,
+        "waveworn-3": 7,
+        "whisper-3": 4
+      },
+      {
+        "shell": 96000,
+        "waveworn-3": 10,
+        "whisper-3": 7
+      }
+    ],
+    "image": "./assets/weapons/21010094.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21010094",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "waning-redshift",
+    "name": "Waning Redshift",
+    "type": "Broadblade",
+    "rarity": 4,
+    "enemy": "whisper",
+    "forgery": "waveworn",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 8000,
+        "whisper-0": 5
+      },
+      {
+        "shell": 16000,
+        "waveworn-0": 5,
+        "whisper-1": 5
+      },
+      {
+        "shell": 32000,
+        "waveworn-1": 7,
+        "whisper-2": 4
+      },
+      {
+        "shell": 48000,
+        "waveworn-2": 5,
+        "whisper-2": 5
+      },
+      {
+        "shell": 64000,
+        "waveworn-3": 7,
+        "whisper-3": 4
+      },
+      {
+        "shell": 96000,
+        "waveworn-3": 10,
+        "whisper-3": 7
+      }
+    ],
+    "image": "./assets/weapons/21010084.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21010084",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "beguiling-melody",
+    "name": "Beguiling Melody",
+    "type": "Broadblade",
+    "rarity": 3,
+    "enemy": "whisper",
+    "forgery": "waveworn",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 6000,
+        "whisper-0": 4
+      },
+      {
+        "shell": 12000,
+        "waveworn-0": 4,
+        "whisper-1": 4
+      },
+      {
+        "shell": 24000,
+        "waveworn-1": 5,
+        "whisper-2": 3
+      },
+      {
+        "shell": 36000,
+        "waveworn-2": 4,
+        "whisper-2": 4
+      },
+      {
+        "shell": 48000,
+        "waveworn-3": 5,
+        "whisper-3": 3
+      },
+      {
+        "shell": 72000,
+        "waveworn-3": 8,
+        "whisper-3": 5
+      }
+    ],
+    "image": "./assets/weapons/21010063.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21010063",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "broadblade-of-night",
+    "name": "Broadblade of Night",
+    "type": "Broadblade",
+    "rarity": 3,
+    "enemy": "whisper",
+    "forgery": "waveworn",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 6000,
+        "whisper-0": 4
+      },
+      {
+        "shell": 12000,
+        "waveworn-0": 4,
+        "whisper-1": 4
+      },
+      {
+        "shell": 24000,
+        "waveworn-1": 5,
+        "whisper-2": 3
+      },
+      {
+        "shell": 36000,
+        "waveworn-2": 4,
+        "whisper-2": 4
+      },
+      {
+        "shell": 48000,
+        "waveworn-3": 5,
+        "whisper-3": 3
+      },
+      {
+        "shell": 72000,
+        "waveworn-3": 8,
+        "whisper-3": 5
+      }
+    ],
+    "image": "./assets/weapons/21010013.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21010013",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "broadblade-of-voyager",
+    "name": "Broadblade of Voyager",
+    "type": "Broadblade",
+    "rarity": 3,
+    "enemy": "whisper",
+    "forgery": "waveworn",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 6000,
+        "whisper-0": 4
+      },
+      {
+        "shell": 12000,
+        "waveworn-0": 4,
+        "whisper-1": 4
+      },
+      {
+        "shell": 24000,
+        "waveworn-1": 5,
+        "whisper-2": 3
+      },
+      {
+        "shell": 36000,
+        "waveworn-2": 4,
+        "whisper-2": 4
+      },
+      {
+        "shell": 48000,
+        "waveworn-3": 5,
+        "whisper-3": 3
+      },
+      {
+        "shell": 72000,
+        "waveworn-3": 8,
+        "whisper-3": 5
+      }
+    ],
+    "image": "./assets/weapons/21010043.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21010043",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "guardian-broadblade",
+    "name": "Guardian Broadblade",
+    "type": "Broadblade",
+    "rarity": 3,
+    "enemy": "whisper",
+    "forgery": "waveworn",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 6000,
+        "whisper-0": 4
+      },
+      {
+        "shell": 12000,
+        "waveworn-0": 4,
+        "whisper-1": 4
+      },
+      {
+        "shell": 24000,
+        "waveworn-1": 5,
+        "whisper-2": 3
+      },
+      {
+        "shell": 36000,
+        "waveworn-2": 4,
+        "whisper-2": 4
+      },
+      {
+        "shell": 48000,
+        "waveworn-3": 5,
+        "whisper-3": 3
+      },
+      {
+        "shell": 72000,
+        "waveworn-3": 8,
+        "whisper-3": 5
+      }
+    ],
+    "image": "./assets/weapons/21010053.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21010053",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "originite-type-i",
+    "name": "Originite: Type I",
+    "type": "Broadblade",
+    "rarity": 3,
+    "enemy": "whisper",
+    "forgery": "waveworn",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 6000,
+        "whisper-0": 4
+      },
+      {
+        "shell": 12000,
+        "waveworn-0": 4,
+        "whisper-1": 4
+      },
+      {
+        "shell": 24000,
+        "waveworn-1": 5,
+        "whisper-2": 3
+      },
+      {
+        "shell": 36000,
+        "waveworn-2": 4,
+        "whisper-2": 4
+      },
+      {
+        "shell": 48000,
+        "waveworn-3": 5,
+        "whisper-3": 3
+      },
+      {
+        "shell": 72000,
+        "waveworn-3": 8,
+        "whisper-3": 5
+      }
+    ],
+    "image": "./assets/weapons/21010023.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21010023",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "tyro-broadblade",
+    "name": "Tyro Broadblade",
+    "type": "Broadblade",
+    "rarity": 2,
+    "enemy": "whisper",
+    "forgery": "waveworn",
+    "maxLevel": 70,
+    "maxAscension": 4,
+    "ascensionCosts": [
+      {
+        "shell": 4000,
+        "whisper-0": 3
+      },
+      {
+        "shell": 8000,
+        "waveworn-0": 3,
+        "whisper-1": 3
+      },
+      {
+        "shell": 16000,
+        "waveworn-1": 4,
+        "whisper-2": 2
+      },
+      {
+        "shell": 24000,
+        "waveworn-2": 3,
+        "whisper-2": 3
+      }
+    ],
+    "image": "./assets/weapons/21010012.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21010012",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "training-broadblade",
+    "name": "Training Broadblade",
+    "type": "Broadblade",
+    "rarity": 1,
+    "enemy": "whisper",
+    "forgery": "waveworn",
+    "maxLevel": 70,
+    "maxAscension": 4,
+    "ascensionCosts": [
+      {
+        "shell": 2000,
+        "whisper-0": 2
+      },
+      {
+        "shell": 4000,
+        "waveworn-0": 2,
+        "whisper-1": 2
+      },
+      {
+        "shell": 8000,
+        "waveworn-1": 2,
+        "whisper-2": 1
+      },
+      {
+        "shell": 12000,
+        "waveworn-2": 2,
+        "whisper-2": 2
+      }
+    ],
+    "image": "./assets/weapons/21010011.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21010011",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  }
+]

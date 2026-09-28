@@ -1,0 +1,30 @@
+{
+  "id": "rebecca",
+  "name": "Rebecca",
+  "element": "Electro",
+  "weapon": "Pistols",
+  "rarity": 5,
+  "enemy": "mech-core",
+  "forgery": "incomplete-combustor",
+  "flower": "past-reveries",
+  "boss": "nightmare-flashdrive",
+  "weekly": "we-who-question",
+  "image": "./assets/characters/icons/rebecca.webp",
+  "sources": [
+    "assets-rebecca",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/rebecca.webp",
+    "banner": "./assets/characters/splash/rebecca.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_69_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Rebecca/Gallery",
+    "card": "./assets/characters/cards/rebecca.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Libeika_UI.webp",
+    "bannerSource": "https://static.wikia.nocookie.net/wutheringwaves/images/3/36/Rebecca_Splash_Art.png/revision/latest?cb=20260617035111",
+    "bannerKind": "splash",
+    "bannerPosition": "50% 45%"
+  }
+}

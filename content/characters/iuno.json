@@ -1,0 +1,30 @@
+{
+  "id": "iuno",
+  "name": "Iuno",
+  "element": "Aero",
+  "weapon": "Gauntlets",
+  "rarity": 5,
+  "enemy": "polygon-core",
+  "forgery": "cadence-seed",
+  "flower": "sliverglow-bloom",
+  "boss": "abyssal-husk",
+  "weekly": "the-netherworlds-stare",
+  "image": "./assets/characters/icons/iuno.webp",
+  "sources": [
+    "assets-iuno",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/iuno.webp",
+    "banner": "./assets/characters/splash/iuno.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_48_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Iuno/Gallery",
+    "card": "./assets/characters/cards/iuno.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_younuo_UI.webp",
+    "bannerSource": "https://static.wikia.nocookie.net/wutheringwaves/images/2/2f/Iuno_Splash_Art.png/revision/latest?cb=20250818065103",
+    "bannerKind": "splash",
+    "bannerPosition": "50% 45%"
+  }
+}

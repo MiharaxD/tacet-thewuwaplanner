@@ -1,0 +1,30 @@
+{
+  "id": "yangyang-xuanling",
+  "name": "Yangyang Xuanling",
+  "element": "Havoc",
+  "weapon": "Sword",
+  "rarity": 5,
+  "enemy": "autopuppet-kernel",
+  "forgery": "broken-wing-polarizer",
+  "flower": "cloudperch-seed",
+  "boss": "solidaritys-loneflame",
+  "weekly": "skyward-glazed-heart",
+  "image": "./assets/characters/icons/yangyang-xuanling.webp",
+  "sources": [
+    "assets-yangyang-xuanling",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/yangyang-xuanling.webp",
+    "banner": "./assets/characters/splash/yangyang-xuanling.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_70_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Yangyang%3A_Xuanling/Gallery",
+    "card": "./assets/characters/cards/yangyang-xuanling.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Xuanling_UI.webp",
+    "bannerSource": "https://static.wikia.nocookie.net/wutheringwaves/images/d/d3/Yangyang_Xuanling_Splash_Art.png/revision/latest?cb=20260626164900",
+    "bannerKind": "splash",
+    "bannerPosition": "50% 45%"
+  }
+}

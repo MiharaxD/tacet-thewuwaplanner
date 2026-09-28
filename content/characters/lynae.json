@@ -1,0 +1,30 @@
+{
+  "id": "lynae",
+  "name": "Lynae",
+  "element": "Spectro",
+  "weapon": "Pistols",
+  "rarity": 5,
+  "enemy": "exoswarm-core",
+  "forgery": "incomplete-combustor",
+  "flower": "rimewisp",
+  "boss": "suncoveters-reach",
+  "weekly": "feather",
+  "image": "./assets/characters/icons/lynae.webp",
+  "sources": [
+    "assets-lynae",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/lynae.webp",
+    "banner": "./assets/characters/splash/lynae.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_60_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Lynae/Gallery",
+    "card": "./assets/characters/cards/lynae.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Linnai_UI.webp",
+    "bannerSource": "https://static.wikia.nocookie.net/wutheringwaves/images/0/02/Lynae_Splash_Art.png/revision/latest?cb=20251223061321",
+    "bannerKind": "splash",
+    "bannerPosition": "50% 45%"
+  }
+}

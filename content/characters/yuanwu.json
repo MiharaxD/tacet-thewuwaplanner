@@ -1,0 +1,27 @@
+{
+  "id": "yuanwu",
+  "name": "Yuanwu",
+  "element": "Electro",
+  "weapon": "Gauntlets",
+  "rarity": 4,
+  "enemy": "ring",
+  "forgery": "cadence-seed",
+  "flower": "terraspawn-fungus",
+  "boss": "hidden-thunder-tacet-core",
+  "weekly": "destruction",
+  "image": "./assets/characters/icons/yuanwu.webp",
+  "sources": [
+    "assets-yuanwu",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/yuanwu.webp",
+    "banner": "./assets/characters/cards/yuanwu.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_15_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Yuanwu/Gallery",
+    "card": "./assets/characters/cards/yuanwu.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_yuanwu_UI.webp"
+  }
+}

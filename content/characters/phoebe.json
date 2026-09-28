@@ -1,0 +1,30 @@
+{
+  "id": "phoebe",
+  "name": "Phoebe",
+  "element": "Spectro",
+  "weapon": "Rectifier",
+  "rarity": 5,
+  "enemy": "whisper",
+  "forgery": "helix",
+  "flower": "firecracker-jewelweed",
+  "boss": "cleansing-conch",
+  "weekly": "dagger",
+  "image": "./assets/characters/icons/phoebe.webp",
+  "sources": [
+    "assets-phoebe",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/phoebe.webp",
+    "banner": "./assets/characters/splash/phoebe.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_45_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Phoebe/Gallery",
+    "card": "./assets/characters/cards/phoebe.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Feibi_UI.webp",
+    "bannerSource": "https://static.wikia.nocookie.net/wutheringwaves/images/c/c9/Phoebe_Splash_Art.png/revision/latest?cb=20250213064456",
+    "bannerKind": "splash",
+    "bannerPosition": "50% 45%"
+  }
+}

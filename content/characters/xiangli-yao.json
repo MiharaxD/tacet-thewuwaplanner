@@ -1,0 +1,30 @@
+{
+  "id": "xiangli-yao",
+  "name": "Xiangli Yao",
+  "element": "Electro",
+  "weapon": "Gauntlets",
+  "rarity": 5,
+  "enemy": "whisper",
+  "forgery": "cadence-seed",
+  "flower": "violet-coral",
+  "boss": "hidden-thunder-tacet-core",
+  "weekly": "destruction",
+  "image": "./assets/characters/icons/xiangli-yao.webp",
+  "sources": [
+    "assets-xiangli-yao",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/xiangli-yao.webp",
+    "banner": "./assets/characters/splash/xiangli-yao.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_25_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Xiangli_Yao/Gallery",
+    "card": "./assets/characters/cards/xiangli-yao.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_xiangliyao_UI.webp",
+    "bannerSource": "https://static.wikia.nocookie.net/wutheringwaves/images/a/a1/Xiangli_Yao_Splash_Art.png/revision/latest?cb=20240813051556",
+    "bannerKind": "splash",
+    "bannerPosition": "50% 45%"
+  }
+}

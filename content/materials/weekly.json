@@ -1,0 +1,132 @@
+[
+  {
+    "id": "dagger",
+    "name": "Sentinel’s Dagger",
+    "category": "Semanal",
+    "rarity": 4,
+    "origin": "Jué · Mt. Firmament",
+    "activity": "weekly",
+    "sources": [
+      "jinhsi-cost"
+    ],
+    "verified": true,
+    "image": "./assets/materials/dagger.webp"
+  },
+  {
+    "id": "bell",
+    "name": "Monument Bell",
+    "category": "Semanal",
+    "rarity": 4,
+    "origin": "Bell-borne Geochelone · Bell-borne Ravine",
+    "activity": "weekly",
+    "sources": [
+      "jiyan-cost"
+    ],
+    "verified": true,
+    "image": "./assets/materials/bell.webp"
+  },
+  {
+    "id": "feather",
+    "name": "Dreamless Feather",
+    "category": "Semanal",
+    "rarity": 4,
+    "origin": "Dreamless · Norfall Barrens",
+    "activity": "weekly",
+    "sources": [
+      "yinlin-cost"
+    ],
+    "verified": true,
+    "image": "./assets/materials/feather.webp"
+  },
+  {
+    "id": "destruction",
+    "name": "Unending Destruction",
+    "category": "Semanal",
+    "rarity": 4,
+    "origin": "Scar · Chaotic Juncture",
+    "activity": "weekly",
+    "sources": [
+      "encore-cost"
+    ],
+    "verified": true,
+    "image": "./assets/materials/destruction.webp"
+  },
+  {
+    "id": "gold-in-memory",
+    "name": "Gold in Memory",
+    "category": "Semanal",
+    "rarity": 4,
+    "origin": "Desafio semanal",
+    "activity": "weekly",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/gold-in-memory.webp"
+  },
+  {
+    "id": "when-irises-bloom",
+    "name": "When Irises Bloom",
+    "category": "Semanal",
+    "rarity": 4,
+    "origin": "Desafio semanal",
+    "activity": "weekly",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/when-irises-bloom.webp"
+  },
+  {
+    "id": "the-netherworlds-stare",
+    "name": "The Netherworld's Stare",
+    "category": "Semanal",
+    "rarity": 4,
+    "origin": "Desafio semanal",
+    "activity": "weekly",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/the-netherworlds-stare.webp"
+  },
+  {
+    "id": "curse-of-the-abyss",
+    "name": "Curse of the Abyss",
+    "category": "Semanal",
+    "rarity": 4,
+    "origin": "Desafio semanal",
+    "activity": "weekly",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/curse-of-the-abyss.webp"
+  },
+  {
+    "id": "we-who-question",
+    "name": "We Who Question",
+    "category": "Semanal",
+    "rarity": 4,
+    "origin": "Desafio semanal",
+    "activity": "weekly",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/we-who-question.webp"
+  },
+  {
+    "id": "skyward-glazed-heart",
+    "name": "Skyward Glazed Heart",
+    "category": "Semanal",
+    "rarity": 4,
+    "origin": "Desafio semanal",
+    "activity": "weekly",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/skyward-glazed-heart.webp"
+  }
+]

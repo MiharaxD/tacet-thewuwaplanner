@@ -1,5 +1,6 @@
 import { readFile, readdir, writeFile, mkdir, access, copyFile } from 'node:fs/promises';
 import { pageRecords } from './read-akademiya.mjs';
+import { loadContent, writeCuratedContent } from './lib/content.mjs';
 
 const characterSource = 'source-assets/wuwa/characters';
 const materialSource = 'source-assets/wuwa/materials';
@@ -21,10 +22,9 @@ if (refresh) {
   if (!reference.characters.length || !reference.materials.length) throw Error('Akademiya returned no records');
 } else reference = await readJson(referencePath);
 
-const catalog = await readJson('data/catalog.json');
-const sources = await readJson('data/sources.json');
-const rules = await readJson('data/rules.json');
-const putSource = entry => { const i = sources.findIndex(s => s.id === entry.id); if (i < 0) sources.push(entry); else sources[i] = entry; };
+const content = await loadContent();
+const { catalog, sources, rules } = content;
+const putSource = entry => { const i = sources.findIndex(s => s.id === entry.id); if (i < 0) sources.push(entry); else sources[i] = { ...sources[i], ...entry }; };
 putSource({ id: 'wuwa-akademiya', url: 'https://wuwa.akademiya.app/en/characters', scope: 'Elementos, armas e raridades dos personagens importados', consultedAt: reference.consultedAt, gameVersion: null, note: 'Identidades da listagem pública; não certifica disponibilidade em banners.' });
 putSource({ id: 'wuwa-materials', url: 'https://wuwa.akademiya.app/en/materials', scope: 'Nomes, raridades e imagens dos materiais', consultedAt: reference.consultedAt, gameVersion: null, note: 'Imagens locais fornecidas pelo usuário; imagens ausentes obtidas da CDN indicada por Akademiya.' });
 const aliases = { 'Sound-Keeping Tacet Core': 'Sound', 'Gold-Dissolving Feather': 'Gold' };
@@ -151,7 +151,6 @@ const imported = [];
 catalog.characters = imported.sort((a,b) => a.name.localeCompare(b.name, 'en'));
 for (const m of catalog.materials) await material(m.name, m.category);
 catalog.consultedAt = reference.consultedAt;
-await writeFile('data/catalog.json', JSON.stringify(catalog, null, 2) + '\n');
-await writeFile('data/sources.json', JSON.stringify(sources, null, 2) + '\n');
+await writeCuratedContent(content);
 if (refresh) await writeFile(referencePath, JSON.stringify({ ...reference, materials: [...usedMaterials.values()] }, null, 2) + '\n');
 console.log(`Imported ${catalog.characters.length} characters and ${catalog.materials.length} materials.`);

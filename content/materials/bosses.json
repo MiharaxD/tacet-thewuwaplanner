@@ -1,0 +1,301 @@
+[
+  {
+    "id": "elegy",
+    "name": "Elegy Tacet Core",
+    "category": "Chefe",
+    "rarity": 4,
+    "origin": "Mourning Aix · Whining Aix’s Mire",
+    "activity": "boss",
+    "sources": [
+      "jinhsi-cost"
+    ],
+    "verified": true,
+    "image": "./assets/materials/elegy.webp"
+  },
+  {
+    "id": "rock",
+    "name": "Roaring Rock Fist",
+    "category": "Chefe",
+    "rarity": 4,
+    "origin": "Feilian Beringal · Dim Forest",
+    "activity": "boss",
+    "sources": [
+      "jiyan-cost"
+    ],
+    "verified": true,
+    "image": "./assets/materials/rock.webp"
+  },
+  {
+    "id": "abomination",
+    "name": "Group Abomination Tacet Core",
+    "category": "Chefe",
+    "rarity": 4,
+    "origin": "Mech Abomination · Court of Savantae Ruins",
+    "activity": "boss",
+    "sources": [
+      "yinlin-cost"
+    ],
+    "verified": true,
+    "image": "./assets/materials/abomination.webp"
+  },
+  {
+    "id": "sound",
+    "name": "Sound-Keeping Tacet Core",
+    "category": "Chefe",
+    "rarity": 4,
+    "origin": "Lampylumen Myriad · Tiger’s Maw",
+    "activity": "boss",
+    "sources": [
+      "sanhua-cost"
+    ],
+    "verified": true,
+    "image": "./assets/materials/sound.webp"
+  },
+  {
+    "id": "rage",
+    "name": "Rage Tacet Core",
+    "category": "Chefe",
+    "rarity": 4,
+    "origin": "Inferno Rider · Sea of Flames",
+    "activity": "boss",
+    "sources": [
+      "encore-cost"
+    ],
+    "verified": true,
+    "image": "./assets/materials/rage.webp"
+  },
+  {
+    "id": "our-choice",
+    "name": "Our Choice",
+    "category": "Chefe",
+    "rarity": 4,
+    "origin": "Chefe de mundo",
+    "activity": "boss",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/our-choice.webp"
+  },
+  {
+    "id": "blighted-crown-of-puppet-king",
+    "name": "Blighted Crown of Puppet King",
+    "category": "Chefe",
+    "rarity": 4,
+    "origin": "Chefe de mundo",
+    "activity": "boss",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/blighted-crown-of-puppet-king.webp"
+  },
+  {
+    "id": "blazing-bone",
+    "name": "Blazing Bone",
+    "category": "Chefe",
+    "rarity": 4,
+    "origin": "Chefe de mundo",
+    "activity": "boss",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/blazing-bone.webp"
+  },
+  {
+    "id": "thundering-tacet-core",
+    "name": "Thundering Tacet Core",
+    "category": "Chefe",
+    "rarity": 4,
+    "origin": "Chefe de mundo",
+    "activity": "boss",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/thundering-tacet-core.webp"
+  },
+  {
+    "id": "topological-confinement",
+    "name": "Topological Confinement",
+    "category": "Chefe",
+    "rarity": 4,
+    "origin": "Chefe de mundo",
+    "activity": "boss",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/topological-confinement.webp"
+  },
+  {
+    "id": "cleansing-conch",
+    "name": "Cleansing Conch",
+    "category": "Chefe",
+    "rarity": 4,
+    "origin": "Chefe de mundo",
+    "activity": "boss",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/cleansing-conch.webp"
+  },
+  {
+    "id": "platinum-core",
+    "name": "Platinum Core",
+    "category": "Chefe",
+    "rarity": 4,
+    "origin": "Chefe de mundo",
+    "activity": "boss",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/platinum-core.webp"
+  },
+  {
+    "id": "unfading-glory",
+    "name": "Unfading Glory",
+    "category": "Chefe",
+    "rarity": 4,
+    "origin": "Chefe de mundo",
+    "activity": "boss",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/unfading-glory.webp"
+  },
+  {
+    "id": "abyssal-husk",
+    "name": "Abyssal Husk",
+    "category": "Chefe",
+    "rarity": 4,
+    "origin": "Chefe de mundo",
+    "activity": "boss",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/abyssal-husk.webp"
+  },
+  {
+    "id": "strife-tacet-core",
+    "name": "Strife Tacet Core",
+    "category": "Chefe",
+    "rarity": 4,
+    "origin": "Chefe de mundo",
+    "activity": "boss",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/strife-tacet-core.webp"
+  },
+  {
+    "id": "burning-judgment",
+    "name": "Burning Judgment",
+    "category": "Chefe",
+    "rarity": 4,
+    "origin": "Chefe de mundo",
+    "activity": "boss",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/burning-judgment.webp"
+  },
+  {
+    "id": "forged-empyreans-sigh",
+    "name": "Forged Empyrean's Sigh",
+    "category": "Chefe",
+    "rarity": 4,
+    "origin": "Chefe de mundo",
+    "activity": "boss",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/forged-empyreans-sigh.webp"
+  },
+  {
+    "id": "suncoveters-reach",
+    "name": "Suncoveter's Reach",
+    "category": "Chefe",
+    "rarity": 4,
+    "origin": "Chefe de mundo",
+    "activity": "boss",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/suncoveters-reach.webp"
+  },
+  {
+    "id": "nightmare-flashdrive",
+    "name": "Nightmare Flashdrive",
+    "category": "Chefe",
+    "rarity": 4,
+    "origin": "Chefe de mundo",
+    "activity": "boss",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/nightmare-flashdrive.webp"
+  },
+  {
+    "id": "truth-in-lies",
+    "name": "Truth in Lies",
+    "category": "Chefe",
+    "rarity": 4,
+    "origin": "Chefe de mundo",
+    "activity": "boss",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/truth-in-lies.webp"
+  },
+  {
+    "id": "solidaritys-loneflame",
+    "name": "Solidarity's Loneflame",
+    "category": "Chefe",
+    "rarity": 4,
+    "origin": "Chefe de mundo",
+    "activity": "boss",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/solidaritys-loneflame.webp"
+  },
+  {
+    "id": "gold-dissolving-feather",
+    "name": "Gold-Dissolving Feather",
+    "category": "Chefe",
+    "rarity": null,
+    "origin": "Chefe de mundo",
+    "activity": "boss",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/gold-dissolving-feather.webp"
+  },
+  {
+    "id": "hidden-thunder-tacet-core",
+    "name": "Hidden Thunder Tacet Core",
+    "category": "Chefe",
+    "rarity": 4,
+    "origin": "Chefe de mundo",
+    "activity": "boss",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/hidden-thunder-tacet-core.webp"
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "id": "taoqi",
+  "name": "Taoqi",
+  "element": "Havoc",
+  "weapon": "Broadblade",
+  "rarity": 4,
+  "enemy": "howler",
+  "forgery": "waveworn",
+  "flower": "iris",
+  "boss": "gold-dissolving-feather",
+  "weekly": "feather",
+  "image": "./assets/characters/icons/taoqi.webp",
+  "sources": [
+    "assets-taoqi",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/taoqi.webp",
+    "banner": "./assets/characters/cards/taoqi.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_9_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Taoqi/Gallery",
+    "card": "./assets/characters/cards/taoqi.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_taohua_UI.webp"
+  }
+}

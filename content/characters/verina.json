@@ -1,0 +1,32 @@
+{
+  "id": "verina",
+  "name": "Verina",
+  "element": "Spectro",
+  "weapon": "Rectifier",
+  "rarity": 5,
+  "enemy": "howler",
+  "forgery": "helix",
+  "flower": "poppy",
+  "boss": "elegy",
+  "weekly": "bell",
+  "image": "./assets/characters/icons/verina.webp",
+  "sources": [
+    "verina",
+    "verina-cost",
+    "assets-verina",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/verina.webp",
+    "banner": "./assets/characters/splash/verina.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_3_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Verina/Gallery",
+    "card": "./assets/characters/cards/verina.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_jueyuan_UI.webp",
+    "bannerSource": "https://static.wikia.nocookie.net/wutheringwaves/images/b/b1/Verina_Splash_Art.png/revision/latest?cb=20241001062018",
+    "bannerKind": "splash",
+    "bannerPosition": "50% 45%"
+  }
+}

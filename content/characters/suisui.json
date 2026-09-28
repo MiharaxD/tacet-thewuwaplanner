@@ -1,0 +1,30 @@
+{
+  "id": "suisui",
+  "name": "Suisui",
+  "element": "Glacio",
+  "weapon": "Rectifier",
+  "rarity": 5,
+  "enemy": "autopuppet-kernel",
+  "forgery": "spliced-string",
+  "flower": "flowborne-dream",
+  "boss": "solidaritys-loneflame",
+  "weekly": "skyward-glazed-heart",
+  "image": "./assets/characters/icons/suisui.webp",
+  "sources": [
+    "assets-suisui",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/suisui.webp",
+    "banner": "./assets/characters/splash/suisui.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_71_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Suisui/Gallery",
+    "card": "./assets/characters/cards/suisui.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Suisui_UI.webp",
+    "bannerSource": "https://static.wikia.nocookie.net/wutheringwaves/images/d/d6/Suisui_Splash_Art.png/revision/latest?cb=20260626165439",
+    "bannerKind": "splash",
+    "bannerPosition": "50% 45%"
+  }
+}

@@ -1,10 +1,9 @@
 import { cp, mkdir, readFile, readdir, rm } from 'node:fs/promises';
 import {resolve,dirname} from 'node:path';
 import { execFileSync } from 'node:child_process';
-import {validateEventCatalog} from '../src/domain/official-events.js';
 import {validateRuntimeAssets} from './validate-assets.mjs';
-validateEventCatalog(JSON.parse(await readFile('data/events.json','utf8')));
-await validateRuntimeAssets();
+import {checkRuntimeData} from './lib/content.mjs';
+await checkRuntimeData();
 const output=resolve('dist');
 if(dirname(output)!==resolve('.'))throw Error('Diretório de build inválido.');
 await rm(output,{recursive:true,force:true});

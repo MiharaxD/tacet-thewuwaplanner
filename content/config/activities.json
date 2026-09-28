@@ -1,0 +1,20 @@
+{
+  "activities": {
+    "overworld": {
+      "waveplates": 0
+    },
+    "simulation": {
+      "waveplates": 40
+    },
+    "forgery": {
+      "waveplates": 40
+    },
+    "boss": {
+      "waveplates": 60
+    },
+    "weekly": {
+      "waveplates": 60,
+      "weeklyLimit": 3
+    }
+  }
+}

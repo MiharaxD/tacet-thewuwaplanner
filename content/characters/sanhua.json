@@ -1,0 +1,29 @@
+{
+  "id": "sanhua",
+  "name": "Sanhua",
+  "element": "Glacio",
+  "weapon": "Sword",
+  "rarity": 4,
+  "enemy": "whisper",
+  "forgery": "drip",
+  "flower": "wintry",
+  "boss": "sound",
+  "weekly": "destruction",
+  "image": "./assets/characters/icons/sanhua.webp",
+  "sources": [
+    "sanhua",
+    "sanhua-cost",
+    "assets-sanhua",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/sanhua.webp",
+    "banner": "./assets/characters/cards/sanhua.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_7_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Sanhua/Gallery",
+    "card": "./assets/characters/cards/sanhua.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_shanhua_UI.webp"
+  }
+}

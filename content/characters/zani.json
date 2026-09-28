@@ -1,0 +1,30 @@
+{
+  "id": "zani",
+  "name": "Zani",
+  "element": "Spectro",
+  "weapon": "Gauntlets",
+  "rarity": 5,
+  "enemy": "polygon-core",
+  "forgery": "cadence-seed",
+  "flower": "sword-acorus",
+  "boss": "platinum-core",
+  "weekly": "the-netherworlds-stare",
+  "image": "./assets/characters/icons/zani.webp",
+  "sources": [
+    "assets-zani",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/zani.webp",
+    "banner": "./assets/characters/splash/zani.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_38_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Zani/Gallery",
+    "card": "./assets/characters/cards/zani.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_zanni_UI.webp",
+    "bannerSource": "https://static.wikia.nocookie.net/wutheringwaves/images/e/ee/Zani_Splash_Art.png/revision/latest?cb=20250611111902",
+    "bannerKind": "splash",
+    "bannerPosition": "50% 45%"
+  }
+}

@@ -1,0 +1,1038 @@
+[
+  {
+    "id": "abyss-surges",
+    "name": "Abyss Surges",
+    "type": "Gauntlets",
+    "rarity": 5,
+    "enemy": "howler",
+    "forgery": "cadence-seed",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 10000,
+        "howler-0": 6
+      },
+      {
+        "shell": 20000,
+        "cadence-seed-0": 6,
+        "howler-1": 6
+      },
+      {
+        "shell": 40000,
+        "cadence-seed-1": 8,
+        "howler-2": 4
+      },
+      {
+        "shell": 60000,
+        "cadence-seed-2": 6,
+        "howler-2": 6
+      },
+      {
+        "shell": 80000,
+        "cadence-seed-3": 8,
+        "howler-3": 4
+      },
+      {
+        "shell": 120000,
+        "cadence-seed-3": 12,
+        "howler-3": 8
+      }
+    ],
+    "image": "./assets/weapons/21040015.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21040015",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "blazing-justice",
+    "name": "Blazing Justice",
+    "type": "Gauntlets",
+    "rarity": 5,
+    "enemy": "howler",
+    "forgery": "cadence-seed",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 10000,
+        "howler-0": 6
+      },
+      {
+        "shell": 20000,
+        "cadence-seed-0": 6,
+        "howler-1": 6
+      },
+      {
+        "shell": 40000,
+        "cadence-seed-1": 8,
+        "howler-2": 4
+      },
+      {
+        "shell": 60000,
+        "cadence-seed-2": 6,
+        "howler-2": 6
+      },
+      {
+        "shell": 80000,
+        "cadence-seed-3": 8,
+        "howler-3": 4
+      },
+      {
+        "shell": 120000,
+        "cadence-seed-3": 12,
+        "howler-3": 8
+      }
+    ],
+    "image": "./assets/weapons/21040036.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21040036",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "daybreaker-s-spine",
+    "name": "Daybreaker's Spine",
+    "type": "Gauntlets",
+    "rarity": 5,
+    "enemy": "mech-core",
+    "forgery": "waveworn-shard",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 10000,
+        "mech-core-0": 6
+      },
+      {
+        "shell": 20000,
+        "waveworn-shard-0": 6,
+        "mech-core-1": 6
+      },
+      {
+        "shell": 40000,
+        "waveworn-shard-1": 8,
+        "mech-core-2": 4
+      },
+      {
+        "shell": 60000,
+        "waveworn-shard-2": 6,
+        "mech-core-2": 6
+      },
+      {
+        "shell": 80000,
+        "waveworn-shard-3": 8,
+        "mech-core-3": 4
+      },
+      {
+        "shell": 120000,
+        "waveworn-shard-3": 12,
+        "mech-core-3": 8
+      }
+    ],
+    "image": "./assets/weapons/21040056.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21040056",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "moongazer-s-sigil",
+    "name": "Moongazer's Sigil",
+    "type": "Gauntlets",
+    "rarity": 5,
+    "enemy": "howler",
+    "forgery": "cadence-seed",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 10000,
+        "howler-0": 6
+      },
+      {
+        "shell": 20000,
+        "cadence-seed-0": 6,
+        "howler-1": 6
+      },
+      {
+        "shell": 40000,
+        "cadence-seed-1": 8,
+        "howler-2": 4
+      },
+      {
+        "shell": 60000,
+        "cadence-seed-2": 6,
+        "howler-2": 6
+      },
+      {
+        "shell": 80000,
+        "cadence-seed-3": 8,
+        "howler-3": 4
+      },
+      {
+        "shell": 120000,
+        "cadence-seed-3": 12,
+        "howler-3": 8
+      }
+    ],
+    "image": "./assets/weapons/21040046.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21040046",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "pulsation-bracer",
+    "name": "Pulsation Bracer",
+    "type": "Gauntlets",
+    "rarity": 5,
+    "enemy": "mech-core",
+    "forgery": "waveworn-shard",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 10000,
+        "mech-core-0": 6
+      },
+      {
+        "shell": 20000,
+        "mech-core-1": 6,
+        "waveworn-shard-0": 6
+      },
+      {
+        "shell": 40000,
+        "mech-core-2": 4,
+        "waveworn-shard-1": 8
+      },
+      {
+        "shell": 60000,
+        "mech-core-2": 6,
+        "waveworn-shard-2": 6
+      },
+      {
+        "shell": 80000,
+        "mech-core-3": 4,
+        "waveworn-shard-3": 8
+      },
+      {
+        "shell": 120000,
+        "mech-core-3": 8,
+        "waveworn-shard-3": 12
+      }
+    ],
+    "image": "./assets/weapons/21040045.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21040045",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "solsworn-ciphers",
+    "name": "Solsworn Ciphers",
+    "type": "Gauntlets",
+    "rarity": 5,
+    "enemy": "mech-core",
+    "forgery": "waveworn-shard",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 10000,
+        "mech-core-0": 6
+      },
+      {
+        "shell": 20000,
+        "waveworn-shard-0": 6,
+        "mech-core-1": 6
+      },
+      {
+        "shell": 40000,
+        "waveworn-shard-1": 8,
+        "mech-core-2": 4
+      },
+      {
+        "shell": 60000,
+        "waveworn-shard-2": 6,
+        "mech-core-2": 6
+      },
+      {
+        "shell": 80000,
+        "waveworn-shard-3": 8,
+        "mech-core-3": 4
+      },
+      {
+        "shell": 120000,
+        "waveworn-shard-3": 12,
+        "mech-core-3": 8
+      }
+    ],
+    "image": "./assets/weapons/21040066.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21040066",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "tragicomedy",
+    "name": "Tragicomedy",
+    "type": "Gauntlets",
+    "rarity": 5,
+    "enemy": "howler",
+    "forgery": "cadence-seed",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 10000,
+        "howler-0": 6
+      },
+      {
+        "shell": 20000,
+        "cadence-seed-0": 6,
+        "howler-1": 6
+      },
+      {
+        "shell": 40000,
+        "cadence-seed-1": 8,
+        "howler-2": 4
+      },
+      {
+        "shell": 60000,
+        "cadence-seed-2": 6,
+        "howler-2": 6
+      },
+      {
+        "shell": 80000,
+        "cadence-seed-3": 8,
+        "howler-3": 4
+      },
+      {
+        "shell": 120000,
+        "cadence-seed-3": 12,
+        "howler-3": 8
+      }
+    ],
+    "image": "./assets/weapons/21040026.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21040026",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "verity-s-handle",
+    "name": "Verity's Handle",
+    "type": "Gauntlets",
+    "rarity": 5,
+    "enemy": "howler",
+    "forgery": "cadence-seed",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 10000,
+        "howler-0": 6
+      },
+      {
+        "shell": 20000,
+        "cadence-seed-0": 6,
+        "howler-1": 6
+      },
+      {
+        "shell": 40000,
+        "cadence-seed-1": 8,
+        "howler-2": 4
+      },
+      {
+        "shell": 60000,
+        "cadence-seed-2": 6,
+        "howler-2": 6
+      },
+      {
+        "shell": 80000,
+        "cadence-seed-3": 8,
+        "howler-3": 4
+      },
+      {
+        "shell": 120000,
+        "cadence-seed-3": 12,
+        "howler-3": 8
+      }
+    ],
+    "image": "./assets/weapons/21040016.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21040016",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "aether-strike",
+    "name": "Aether Strike",
+    "type": "Gauntlets",
+    "rarity": 4,
+    "enemy": "howler",
+    "forgery": "cadence-seed",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 8000,
+        "howler-0": 5
+      },
+      {
+        "shell": 16000,
+        "cadence-seed-0": 5,
+        "howler-1": 5
+      },
+      {
+        "shell": 32000,
+        "cadence-seed-1": 7,
+        "howler-2": 4
+      },
+      {
+        "shell": 48000,
+        "cadence-seed-2": 5,
+        "howler-2": 5
+      },
+      {
+        "shell": 64000,
+        "cadence-seed-3": 7,
+        "howler-3": 4
+      },
+      {
+        "shell": 96000,
+        "cadence-seed-3": 10,
+        "howler-3": 7
+      }
+    ],
+    "image": "./assets/weapons/21040104.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21040104",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "amity-accord",
+    "name": "Amity Accord",
+    "type": "Gauntlets",
+    "rarity": 4,
+    "enemy": "howler",
+    "forgery": "cadence-seed",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 8000,
+        "howler-0": 5
+      },
+      {
+        "shell": 16000,
+        "cadence-seed-0": 5,
+        "howler-1": 5
+      },
+      {
+        "shell": 32000,
+        "cadence-seed-1": 7,
+        "howler-2": 4
+      },
+      {
+        "shell": 48000,
+        "cadence-seed-2": 5,
+        "howler-2": 5
+      },
+      {
+        "shell": 64000,
+        "cadence-seed-3": 7,
+        "howler-3": 4
+      },
+      {
+        "shell": 96000,
+        "cadence-seed-3": 10,
+        "howler-3": 7
+      }
+    ],
+    "image": "./assets/weapons/21040044.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21040044",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "celestial-spiral",
+    "name": "Celestial Spiral",
+    "type": "Gauntlets",
+    "rarity": 4,
+    "enemy": "howler",
+    "forgery": "cadence-seed",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 8000,
+        "howler-0": 5
+      },
+      {
+        "shell": 16000,
+        "cadence-seed-0": 5,
+        "howler-1": 5
+      },
+      {
+        "shell": 32000,
+        "cadence-seed-1": 7,
+        "howler-2": 4
+      },
+      {
+        "shell": 48000,
+        "cadence-seed-2": 5,
+        "howler-2": 5
+      },
+      {
+        "shell": 64000,
+        "cadence-seed-3": 7,
+        "howler-3": 4
+      },
+      {
+        "shell": 96000,
+        "cadence-seed-3": 10,
+        "howler-3": 7
+      }
+    ],
+    "image": "./assets/weapons/21040084.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21040084",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "gauntlets-21d",
+    "name": "Gauntlets#21D",
+    "type": "Gauntlets",
+    "rarity": 4,
+    "enemy": "howler",
+    "forgery": "cadence-seed",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 8000,
+        "howler-0": 5
+      },
+      {
+        "shell": 16000,
+        "cadence-seed-0": 5,
+        "howler-1": 5
+      },
+      {
+        "shell": 32000,
+        "cadence-seed-1": 7,
+        "howler-2": 4
+      },
+      {
+        "shell": 48000,
+        "cadence-seed-2": 5,
+        "howler-2": 5
+      },
+      {
+        "shell": 64000,
+        "cadence-seed-3": 7,
+        "howler-3": 4
+      },
+      {
+        "shell": 96000,
+        "cadence-seed-3": 10,
+        "howler-3": 7
+      }
+    ],
+    "image": "./assets/weapons/21040034.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21040034",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "hollow-mirage",
+    "name": "Hollow Mirage",
+    "type": "Gauntlets",
+    "rarity": 4,
+    "enemy": "howler",
+    "forgery": "cadence-seed",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 8000,
+        "howler-0": 5
+      },
+      {
+        "shell": 16000,
+        "cadence-seed-0": 5,
+        "howler-1": 5
+      },
+      {
+        "shell": 32000,
+        "cadence-seed-1": 7,
+        "howler-2": 4
+      },
+      {
+        "shell": 48000,
+        "cadence-seed-2": 5,
+        "howler-2": 5
+      },
+      {
+        "shell": 64000,
+        "cadence-seed-3": 7,
+        "howler-3": 4
+      },
+      {
+        "shell": 96000,
+        "cadence-seed-3": 10,
+        "howler-3": 7
+      }
+    ],
+    "image": "./assets/weapons/21040064.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21040064",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "legend-of-drunken-hero",
+    "name": "Legend of Drunken Hero",
+    "type": "Gauntlets",
+    "rarity": 4,
+    "enemy": "howler",
+    "forgery": "cadence-seed",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 8000,
+        "howler-0": 5
+      },
+      {
+        "shell": 16000,
+        "cadence-seed-0": 5,
+        "howler-1": 5
+      },
+      {
+        "shell": 32000,
+        "cadence-seed-1": 7,
+        "howler-2": 4
+      },
+      {
+        "shell": 48000,
+        "cadence-seed-2": 5,
+        "howler-2": 5
+      },
+      {
+        "shell": 64000,
+        "cadence-seed-3": 7,
+        "howler-3": 4
+      },
+      {
+        "shell": 96000,
+        "cadence-seed-3": 10,
+        "howler-3": 7
+      }
+    ],
+    "image": "./assets/weapons/21040094.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21040094",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "marcato",
+    "name": "Marcato",
+    "type": "Gauntlets",
+    "rarity": 4,
+    "enemy": "howler",
+    "forgery": "cadence-seed",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 8000,
+        "howler-0": 5
+      },
+      {
+        "shell": 16000,
+        "cadence-seed-0": 5,
+        "howler-1": 5
+      },
+      {
+        "shell": 32000,
+        "cadence-seed-1": 7,
+        "howler-2": 4
+      },
+      {
+        "shell": 48000,
+        "cadence-seed-2": 5,
+        "howler-2": 5
+      },
+      {
+        "shell": 64000,
+        "cadence-seed-3": 7,
+        "howler-3": 4
+      },
+      {
+        "shell": 96000,
+        "cadence-seed-3": 10,
+        "howler-3": 7
+      }
+    ],
+    "image": "./assets/weapons/21040024.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21040024",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "stonard",
+    "name": "Stonard",
+    "type": "Gauntlets",
+    "rarity": 4,
+    "enemy": "howler",
+    "forgery": "cadence-seed",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 8000,
+        "howler-0": 5
+      },
+      {
+        "shell": 16000,
+        "cadence-seed-0": 5,
+        "howler-1": 5
+      },
+      {
+        "shell": 32000,
+        "cadence-seed-1": 7,
+        "howler-2": 4
+      },
+      {
+        "shell": 48000,
+        "cadence-seed-2": 5,
+        "howler-2": 5
+      },
+      {
+        "shell": 64000,
+        "cadence-seed-3": 7,
+        "howler-3": 4
+      },
+      {
+        "shell": 96000,
+        "cadence-seed-3": 10,
+        "howler-3": 7
+      }
+    ],
+    "image": "./assets/weapons/21040074.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21040074",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "gauntlets-of-night",
+    "name": "Gauntlets of Night",
+    "type": "Gauntlets",
+    "rarity": 3,
+    "enemy": "howler",
+    "forgery": "cadence-seed",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 6000,
+        "howler-0": 4
+      },
+      {
+        "shell": 12000,
+        "cadence-seed-0": 4,
+        "howler-1": 4
+      },
+      {
+        "shell": 24000,
+        "cadence-seed-1": 5,
+        "howler-2": 3
+      },
+      {
+        "shell": 36000,
+        "cadence-seed-2": 4,
+        "howler-2": 4
+      },
+      {
+        "shell": 48000,
+        "cadence-seed-3": 5,
+        "howler-3": 3
+      },
+      {
+        "shell": 72000,
+        "cadence-seed-3": 8,
+        "howler-3": 5
+      }
+    ],
+    "image": "./assets/weapons/21040013.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21040013",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "gauntlets-of-voyager",
+    "name": "Gauntlets of Voyager",
+    "type": "Gauntlets",
+    "rarity": 3,
+    "enemy": "howler",
+    "forgery": "cadence-seed",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 6000,
+        "howler-0": 4
+      },
+      {
+        "shell": 12000,
+        "cadence-seed-0": 4,
+        "howler-1": 4
+      },
+      {
+        "shell": 24000,
+        "cadence-seed-1": 5,
+        "howler-2": 3
+      },
+      {
+        "shell": 36000,
+        "cadence-seed-2": 4,
+        "howler-2": 4
+      },
+      {
+        "shell": 48000,
+        "cadence-seed-3": 5,
+        "howler-3": 3
+      },
+      {
+        "shell": 72000,
+        "cadence-seed-3": 8,
+        "howler-3": 5
+      }
+    ],
+    "image": "./assets/weapons/21040043.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21040043",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "guardian-gauntlets",
+    "name": "Guardian Gauntlets",
+    "type": "Gauntlets",
+    "rarity": 3,
+    "enemy": "howler",
+    "forgery": "cadence-seed",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 6000,
+        "howler-0": 4
+      },
+      {
+        "shell": 12000,
+        "cadence-seed-0": 4,
+        "howler-1": 4
+      },
+      {
+        "shell": 24000,
+        "cadence-seed-1": 5,
+        "howler-2": 3
+      },
+      {
+        "shell": 36000,
+        "cadence-seed-2": 4,
+        "howler-2": 4
+      },
+      {
+        "shell": 48000,
+        "cadence-seed-3": 5,
+        "howler-3": 3
+      },
+      {
+        "shell": 72000,
+        "cadence-seed-3": 8,
+        "howler-3": 5
+      }
+    ],
+    "image": "./assets/weapons/21040053.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21040053",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "originite-type-iv",
+    "name": "Originite: Type IV",
+    "type": "Gauntlets",
+    "rarity": 3,
+    "enemy": "howler",
+    "forgery": "cadence-seed",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 6000,
+        "howler-0": 4
+      },
+      {
+        "shell": 12000,
+        "cadence-seed-0": 4,
+        "howler-1": 4
+      },
+      {
+        "shell": 24000,
+        "cadence-seed-1": 5,
+        "howler-2": 3
+      },
+      {
+        "shell": 36000,
+        "cadence-seed-2": 4,
+        "howler-2": 4
+      },
+      {
+        "shell": 48000,
+        "cadence-seed-3": 5,
+        "howler-3": 3
+      },
+      {
+        "shell": 72000,
+        "cadence-seed-3": 8,
+        "howler-3": 5
+      }
+    ],
+    "image": "./assets/weapons/21040023.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21040023",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "tyro-gauntlets",
+    "name": "Tyro Gauntlets",
+    "type": "Gauntlets",
+    "rarity": 2,
+    "enemy": "howler",
+    "forgery": "cadence-seed",
+    "maxLevel": 70,
+    "maxAscension": 4,
+    "ascensionCosts": [
+      {
+        "shell": 4000,
+        "howler-0": 3
+      },
+      {
+        "shell": 8000,
+        "cadence-seed-0": 3,
+        "howler-1": 3
+      },
+      {
+        "shell": 16000,
+        "cadence-seed-1": 4,
+        "howler-2": 2
+      },
+      {
+        "shell": 24000,
+        "cadence-seed-2": 3,
+        "howler-2": 3
+      }
+    ],
+    "image": "./assets/weapons/21040012.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21040012",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "training-gauntlets",
+    "name": "Training Gauntlets",
+    "type": "Gauntlets",
+    "rarity": 1,
+    "enemy": "howler",
+    "forgery": "cadence-seed",
+    "maxLevel": 70,
+    "maxAscension": 4,
+    "ascensionCosts": [
+      {
+        "shell": 2000,
+        "howler-0": 2
+      },
+      {
+        "shell": 4000,
+        "cadence-seed-0": 2,
+        "howler-1": 2
+      },
+      {
+        "shell": 8000,
+        "cadence-seed-1": 2,
+        "howler-2": 1
+      },
+      {
+        "shell": 12000,
+        "cadence-seed-2": 2,
+        "howler-2": 2
+      }
+    ],
+    "image": "./assets/weapons/21040011.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21040011",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  }
+]

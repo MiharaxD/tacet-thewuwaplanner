@@ -1,0 +1,30 @@
+{
+  "id": "jingran",
+  "name": "Jingran",
+  "element": "Fusion",
+  "weapon": "Broadblade",
+  "rarity": 5,
+  "enemy": "whisper",
+  "forgery": "carved-crystal",
+  "flower": "cloudperch-seed",
+  "boss": "forged-empyreans-sigh",
+  "weekly": "skyward-glazed-heart",
+  "image": "./assets/characters/icons/jingran.webp",
+  "sources": [
+    "assets-jingran",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/jingran.webp",
+    "banner": "./assets/characters/splash/jingran.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_74_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Jingran/Gallery",
+    "card": "./assets/characters/cards/jingran.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_jingran_UI.webp",
+    "bannerSource": "https://static.wikia.nocookie.net/wutheringwaves/images/e/e4/Jingran_Splash_Art.png/revision/latest?cb=20260807173026",
+    "bannerKind": "splash",
+    "bannerPosition": "50% 45%"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "jiyan",
+  "name": "Jiyan",
+  "element": "Aero",
+  "weapon": "Broadblade",
+  "rarity": 5,
+  "enemy": "howler",
+  "forgery": "waveworn",
+  "flower": "pecok",
+  "boss": "rock",
+  "weekly": "bell",
+  "image": "./assets/characters/icons/jiyan.webp",
+  "sources": [
+    "jiyan",
+    "jiyan-cost",
+    "assets-jiyan",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/jiyan.webp",
+    "banner": "./assets/characters/splash/jiyan.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_11_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Jiyan/Gallery",
+    "card": "./assets/characters/cards/jiyan.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_jiyan_UI.webp",
+    "bannerSource": "https://static.wikia.nocookie.net/wutheringwaves/images/7/7d/Jiyan_Splash_Art.png/revision/latest?cb=20241001062528",
+    "bannerKind": "splash",
+    "bannerPosition": "50% 45%"
+  }
+}

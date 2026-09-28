@@ -1,0 +1,30 @@
+{
+  "id": "roccia",
+  "name": "Roccia",
+  "element": "Havoc",
+  "weapon": "Gauntlets",
+  "rarity": 5,
+  "enemy": "tidal-residuum",
+  "forgery": "cadence-seed",
+  "flower": "firecracker-jewelweed",
+  "boss": "cleansing-conch",
+  "weekly": "the-netherworlds-stare",
+  "image": "./assets/characters/icons/roccia.webp",
+  "sources": [
+    "assets-roccia",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/roccia.webp",
+    "banner": "./assets/characters/splash/roccia.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_33_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Roccia/Gallery",
+    "card": "./assets/characters/cards/roccia.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_luokeke_UI.webp",
+    "bannerSource": "https://static.wikia.nocookie.net/wutheringwaves/images/1/1d/Roccia_Splash_Art.png/revision/latest?cb=20250104071512",
+    "bannerKind": "splash",
+    "bannerPosition": "50% 45%"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "youhu",
+  "name": "Youhu",
+  "element": "Glacio",
+  "weapon": "Gauntlets",
+  "rarity": 4,
+  "enemy": "ring",
+  "forgery": "cadence-seed",
+  "flower": "violet-coral",
+  "boss": "topological-confinement",
+  "weekly": "bell",
+  "image": "./assets/characters/icons/youhu.webp",
+  "sources": [
+    "assets-youhu",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/youhu.webp",
+    "banner": "./assets/characters/splash/youhu.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_31_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Youhu/Gallery",
+    "card": "./assets/characters/cards/youhu.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Youhu_UI.webp",
+    "bannerSource": "https://static.wikia.nocookie.net/wutheringwaves/images/0/04/Youhu_Convene_Still.png/revision/latest?cb=20241025114547",
+    "bannerKind": "convene",
+    "bannerPosition": "50% 45%"
+  }
+}

@@ -1,0 +1,470 @@
+[
+  {
+    "id": "howler-0",
+    "name": "LF Howler Core",
+    "category": "Inimigos",
+    "rarity": 2,
+    "origin": "Howlers · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "howler-recipe"
+    ],
+    "verified": true,
+    "image": "./assets/materials/howler-0.webp"
+  },
+  {
+    "id": "howler-1",
+    "name": "MF Howler Core",
+    "category": "Inimigos",
+    "rarity": 3,
+    "origin": "Howlers · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "howler-recipe"
+    ],
+    "verified": true,
+    "image": "./assets/materials/howler-1.webp"
+  },
+  {
+    "id": "howler-2",
+    "name": "HF Howler Core",
+    "category": "Inimigos",
+    "rarity": 4,
+    "origin": "Howlers · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "howler-recipe"
+    ],
+    "verified": true,
+    "image": "./assets/materials/howler-2.webp"
+  },
+  {
+    "id": "howler-3",
+    "name": "FF Howler Core",
+    "category": "Inimigos",
+    "rarity": 5,
+    "origin": "Howlers · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "howler-recipe"
+    ],
+    "verified": true,
+    "image": "./assets/materials/howler-3.webp"
+  },
+  {
+    "id": "whisper-0",
+    "name": "LF Whisperin Core",
+    "category": "Inimigos",
+    "rarity": 2,
+    "origin": "Whisperins · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "whisper-recipe"
+    ],
+    "verified": true,
+    "image": "./assets/materials/whisper-0.webp"
+  },
+  {
+    "id": "whisper-1",
+    "name": "MF Whisperin Core",
+    "category": "Inimigos",
+    "rarity": 3,
+    "origin": "Whisperins · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "whisper-recipe"
+    ],
+    "verified": true,
+    "image": "./assets/materials/whisper-1.webp"
+  },
+  {
+    "id": "whisper-2",
+    "name": "HF Whisperin Core",
+    "category": "Inimigos",
+    "rarity": 4,
+    "origin": "Whisperins · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "whisper-recipe"
+    ],
+    "verified": true,
+    "image": "./assets/materials/whisper-2.webp"
+  },
+  {
+    "id": "whisper-3",
+    "name": "FF Whisperin Core",
+    "category": "Inimigos",
+    "rarity": 5,
+    "origin": "Whisperins · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "whisper-recipe"
+    ],
+    "verified": true,
+    "image": "./assets/materials/whisper-3.webp"
+  },
+  {
+    "id": "ring-0",
+    "name": "Crude Ring",
+    "category": "Inimigos",
+    "rarity": 2,
+    "origin": "Exiles · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "stringmaster-detail"
+    ],
+    "verified": true,
+    "image": "./assets/materials/ring-0.webp"
+  },
+  {
+    "id": "ring-1",
+    "name": "Basic Ring",
+    "category": "Inimigos",
+    "rarity": 3,
+    "origin": "Exiles · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "stringmaster-detail"
+    ],
+    "verified": true,
+    "image": "./assets/materials/ring-1.webp"
+  },
+  {
+    "id": "ring-2",
+    "name": "Improved Ring",
+    "category": "Inimigos",
+    "rarity": 4,
+    "origin": "Exiles · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "stringmaster-detail"
+    ],
+    "verified": true,
+    "image": "./assets/materials/ring-2.webp"
+  },
+  {
+    "id": "ring-3",
+    "name": "Tailored Ring",
+    "category": "Inimigos",
+    "rarity": 5,
+    "origin": "Exiles · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "stringmaster-detail"
+    ],
+    "verified": true,
+    "image": "./assets/materials/ring-3.webp"
+  },
+  {
+    "id": "exoswarm-core-0",
+    "name": "LF Exoswarm Core",
+    "category": "Inimigos",
+    "rarity": 2,
+    "origin": "Inimigos · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/exoswarm-core-0.webp"
+  },
+  {
+    "id": "exoswarm-core-1",
+    "name": "MF Exoswarm Core",
+    "category": "Inimigos",
+    "rarity": 3,
+    "origin": "Inimigos · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/exoswarm-core-1.webp"
+  },
+  {
+    "id": "exoswarm-core-2",
+    "name": "HF Exoswarm Core",
+    "category": "Inimigos",
+    "rarity": 4,
+    "origin": "Inimigos · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/exoswarm-core-2.webp"
+  },
+  {
+    "id": "exoswarm-core-3",
+    "name": "FF Exoswarm Core",
+    "category": "Inimigos",
+    "rarity": 5,
+    "origin": "Inimigos · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/exoswarm-core-3.webp"
+  },
+  {
+    "id": "tidal-residuum-0",
+    "name": "LF Tidal Residuum",
+    "category": "Inimigos",
+    "rarity": 2,
+    "origin": "Inimigos · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/tidal-residuum-0.webp"
+  },
+  {
+    "id": "tidal-residuum-1",
+    "name": "MF Tidal Residuum",
+    "category": "Inimigos",
+    "rarity": 3,
+    "origin": "Inimigos · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/tidal-residuum-1.webp"
+  },
+  {
+    "id": "tidal-residuum-2",
+    "name": "HF Tidal Residuum",
+    "category": "Inimigos",
+    "rarity": 4,
+    "origin": "Inimigos · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/tidal-residuum-2.webp"
+  },
+  {
+    "id": "tidal-residuum-3",
+    "name": "FF Tidal Residuum",
+    "category": "Inimigos",
+    "rarity": 5,
+    "origin": "Inimigos · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/tidal-residuum-3.webp"
+  },
+  {
+    "id": "polygon-core-0",
+    "name": "LF Polygon Core",
+    "category": "Inimigos",
+    "rarity": 2,
+    "origin": "Inimigos · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/polygon-core-0.webp"
+  },
+  {
+    "id": "polygon-core-1",
+    "name": "MF Polygon Core",
+    "category": "Inimigos",
+    "rarity": 3,
+    "origin": "Inimigos · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/polygon-core-1.webp"
+  },
+  {
+    "id": "polygon-core-2",
+    "name": "HF Polygon Core",
+    "category": "Inimigos",
+    "rarity": 4,
+    "origin": "Inimigos · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/polygon-core-2.webp"
+  },
+  {
+    "id": "polygon-core-3",
+    "name": "FF Polygon Core",
+    "category": "Inimigos",
+    "rarity": 5,
+    "origin": "Inimigos · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/polygon-core-3.webp"
+  },
+  {
+    "id": "mech-core-0",
+    "name": "LF Mech Core",
+    "category": "Inimigos",
+    "rarity": 2,
+    "origin": "Inimigos · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/mech-core-0.webp"
+  },
+  {
+    "id": "mech-core-1",
+    "name": "MF Mech Core",
+    "category": "Inimigos",
+    "rarity": 3,
+    "origin": "Inimigos · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/mech-core-1.webp"
+  },
+  {
+    "id": "mech-core-2",
+    "name": "HF Mech Core",
+    "category": "Inimigos",
+    "rarity": 4,
+    "origin": "Inimigos · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/mech-core-2.webp"
+  },
+  {
+    "id": "mech-core-3",
+    "name": "FF Mech Core",
+    "category": "Inimigos",
+    "rarity": 5,
+    "origin": "Inimigos · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/mech-core-3.webp"
+  },
+  {
+    "id": "fractured-exoswarm-pendant-0",
+    "name": "Fractured Exoswarm Pendant",
+    "category": "Inimigos",
+    "rarity": 2,
+    "origin": "Inimigos · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/fractured-exoswarm-pendant-0.webp"
+  },
+  {
+    "id": "fractured-exoswarm-pendant-1",
+    "name": "Worn Exoswarm Pendant",
+    "category": "Inimigos",
+    "rarity": 3,
+    "origin": "Inimigos · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/fractured-exoswarm-pendant-1.webp"
+  },
+  {
+    "id": "fractured-exoswarm-pendant-2",
+    "name": "Chipped Exoswarm Pendant",
+    "category": "Inimigos",
+    "rarity": 4,
+    "origin": "Inimigos · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/fractured-exoswarm-pendant-2.webp"
+  },
+  {
+    "id": "fractured-exoswarm-pendant-3",
+    "name": "Intact Exoswarm Pendant",
+    "category": "Inimigos",
+    "rarity": 5,
+    "origin": "Inimigos · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/fractured-exoswarm-pendant-3.webp"
+  },
+  {
+    "id": "autopuppet-kernel-0",
+    "name": "LF Autopuppet Kernel",
+    "category": "Inimigos",
+    "rarity": 2,
+    "origin": "Inimigos · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/autopuppet-kernel-0.webp"
+  },
+  {
+    "id": "autopuppet-kernel-1",
+    "name": "MF Autopuppet Kernel",
+    "category": "Inimigos",
+    "rarity": 3,
+    "origin": "Inimigos · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/autopuppet-kernel-1.webp"
+  },
+  {
+    "id": "autopuppet-kernel-2",
+    "name": "HF Autopuppet Kernel",
+    "category": "Inimigos",
+    "rarity": 4,
+    "origin": "Inimigos · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/autopuppet-kernel-2.webp"
+  },
+  {
+    "id": "autopuppet-kernel-3",
+    "name": "FF Autopuppet Kernel",
+    "category": "Inimigos",
+    "rarity": 5,
+    "origin": "Inimigos · mundo aberto",
+    "activity": "overworld",
+    "sources": [
+      "wuwa-materials"
+    ],
+    "verified": true,
+    "image": "./assets/materials/autopuppet-kernel-3.webp"
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "id": "lingyang",
+  "name": "Lingyang",
+  "element": "Glacio",
+  "weapon": "Gauntlets",
+  "rarity": 5,
+  "enemy": "whisper",
+  "forgery": "cadence-seed",
+  "flower": "coriolus",
+  "boss": "sound",
+  "weekly": "destruction",
+  "image": "./assets/characters/icons/lingyang.webp",
+  "sources": [
+    "assets-lingyang",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/lingyang.webp",
+    "banner": "./assets/characters/splash/lingyang.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_14_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Lingyang/Gallery",
+    "card": "./assets/characters/cards/lingyang.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_lingyang_UI.webp",
+    "bannerSource": "https://static.wikia.nocookie.net/wutheringwaves/images/a/ad/Lingyang_Splash_Art.png/revision/latest?cb=20241001061635",
+    "bannerKind": "splash",
+    "bannerPosition": "50% 45%"
+  }
+}

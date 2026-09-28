@@ -1,0 +1,10 @@
+{
+  "servers": {
+    "America": -5,
+    "Europe": 1,
+    "Asia": 8,
+    "SEA": 8
+  },
+  "dailyResetHour": 4,
+  "weeklyResetDay": 1
+}

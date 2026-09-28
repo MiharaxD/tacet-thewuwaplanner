@@ -1,0 +1,1753 @@
+[
+  {
+    "id": "lab",
+    "url": "https://wutheringlab.com/",
+    "scope": "Identidade dos personagens e fonte principal",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Cabeçalho anuncia 3.6; não prova que todas as tabelas foram revistas para 3.6."
+  },
+  {
+    "id": "level",
+    "url": "https://wutheringwaves.fandom.com/wiki/Resonator/Leveling",
+    "scope": "EXP por nível, limites e custo de 0,35 Shell Credit por EXP",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Valores de EXP armazenados acumulados. Trechos da tabela disponíveis no índice de busca; página direta bloqueada."
+  },
+  {
+    "id": "weapon-level",
+    "url": "https://wutheringwaves.fandom.com/wiki/Weapon/Leveling",
+    "scope": "EXP de armas de 5 estrelas; 0,4 Shell Credit/EXP",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Tabela de 5 estrelas separada das demais raridades. Valores acumulados."
+  },
+  {
+    "id": "forte",
+    "url": "https://wutheringwaves.fandom.com/wiki/Luminal_Synthesis",
+    "scope": "Custos incrementais e ascensão exigida para os cinco Fortes",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Tabela principal confirmada com Game8. Custos de habilidades inerentes divergem; excluídos até revisão."
+  },
+  {
+    "id": "wave",
+    "url": "https://wutheringwaves.fandom.com/wiki/Waveplate",
+    "scope": "Custos de atividades e regeneração",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "40: simulação/forja. 60: chefes/semanal. 1 a cada 6 min, capacidade 240."
+  },
+  {
+    "id": "reset",
+    "url": "https://wutheringwaves.fandom.com/wiki/Reset",
+    "scope": "Reset diário 04:00 e segunda-feira 04:00",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Fusos fixos: América UTC−5, Europa UTC+1, Ásia UTC+8."
+  },
+  {
+    "id": "weekly",
+    "url": "https://wutheringwaves.fandom.com/wiki/Weekly_Challenge",
+    "scope": "Três resgates de recompensas semanais compartilhados",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": ""
+  },
+  {
+    "id": "potions",
+    "url": "https://wutheringwaves.fandom.com/wiki/Resonator_EXP_Material",
+    "scope": "Poções de 1.000, 3.000, 8.000 e 20.000 EXP",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": ""
+  },
+  {
+    "id": "cores",
+    "url": "https://wutheringwaves.fandom.com/wiki/Weapon_EXP_Material",
+    "scope": "Consumíveis de EXP de arma",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": ""
+  },
+  {
+    "id": "howler-recipe",
+    "url": "https://wutheringwaves.fandom.com/wiki/MF_Howler_Core",
+    "scope": "Síntese 3 LF Howler Core → 1 MF Howler Core",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Nenhum custo adicional listado na receita. Direção única nesta base."
+  },
+  {
+    "id": "whisper-recipe",
+    "url": "https://wutheringwaves.fandom.com/wiki/MF_Whisperin_Core",
+    "scope": "Síntese 3 LF Whisperin Core → 1 MF Whisperin Core",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": ""
+  },
+  {
+    "id": "official",
+    "url": "https://wutheringwaves.kurogames.com/en/main/news",
+    "scope": "Notícias oficiais",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Página dinâmica sem calendário verificável nesta consulta; nenhum evento oficial foi inventado."
+  },
+  {
+    "id": "jinhsi",
+    "url": "https://wutheringlab.com/character/jinhsi-build/",
+    "scope": "Identidade, retrato e ascensão por etapa",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "HTML contém imagem residual de Gloom Slough; Loong’s Pearl confirmado no guia dedicado e Game8."
+  },
+  {
+    "id": "jinhsi-cost",
+    "url": "https://game8.co/games/Wuthering-Waves/archives/494451",
+    "scope": "Materiais, ascensão e Fortes por etapa",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": ""
+  },
+  {
+    "id": "jiyan",
+    "url": "https://wutheringlab.com/character/jiyan-build/",
+    "scope": "Identidade, retrato e ascensão por etapa",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": ""
+  },
+  {
+    "id": "jiyan-cost",
+    "url": "https://game8.co/games/Wuthering-Waves/archives/504555",
+    "scope": "Materiais, ascensão e Fortes por etapa",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": ""
+  },
+  {
+    "id": "verina",
+    "url": "https://wutheringlab.com/character/verina-build/",
+    "scope": "Identidade, retrato e ascensão por etapa",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": ""
+  },
+  {
+    "id": "verina-cost",
+    "url": "https://game8.co/games/Wuthering-Waves/archives/504557",
+    "scope": "Materiais, ascensão e Fortes por etapa",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": ""
+  },
+  {
+    "id": "yinlin",
+    "url": "https://wutheringlab.com/character/yinlin-build/",
+    "scope": "Identidade, retrato e ascensão por etapa",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": ""
+  },
+  {
+    "id": "yinlin-cost",
+    "url": "https://game8.co/games/Wuthering-Waves/archives/504556",
+    "scope": "Materiais, ascensão e Fortes por etapa",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": ""
+  },
+  {
+    "id": "sanhua",
+    "url": "https://wutheringlab.com/character/sanhua-build/",
+    "scope": "Identidade, retrato e ascensão por etapa",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": ""
+  },
+  {
+    "id": "sanhua-cost",
+    "url": "https://game8.co/games/Wuthering-Waves/archives/504777",
+    "scope": "Materiais, ascensão e Fortes por etapa",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": ""
+  },
+  {
+    "id": "encore",
+    "url": "https://wutheringlab.com/character/encore-build/",
+    "scope": "Identidade, retrato e ascensão por etapa",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": ""
+  },
+  {
+    "id": "encore-cost",
+    "url": "https://game8.co/games/Wuthering-Waves/archives/504782",
+    "scope": "Materiais, ascensão e Fortes por etapa",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": ""
+  },
+  {
+    "id": "pearl",
+    "url": "https://wutheringlab.com/guide/jinhsi-material-loongs-pearl-routes-amp-best-farming-guide/",
+    "scope": "Loong’s Pearl: Mt. Firmament",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": ""
+  },
+  {
+    "id": "stringmaster-detail",
+    "url": "https://theriagames.com/guide/wuthering-waves-stringmaster-guide/",
+    "scope": "Stringmaster: anéis e Helix por etapa; corroborado com Wiki",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": ""
+  },
+  {
+    "id": "emerald-detail",
+    "url": "https://wutheringwaves.fandom.com/wiki/Emerald_of_Genesis",
+    "scope": "Emerald of Genesis: Howler, Metallic Drip e créditos por etapa",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": ""
+  },
+  {
+    "id": "stringmaster-credit",
+    "url": "https://wutheringwaves.fandom.com/wiki/Stringmaster",
+    "scope": "Stringmaster: créditos de ascensão por etapa",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": ""
+  },
+  {
+    "id": "ages",
+    "url": "https://wutheringlab.com/weapon/ages-of-harvest/",
+    "scope": "Identidade da arma",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": ""
+  },
+  {
+    "id": "ages-cost",
+    "url": "https://game8.co/games/Wuthering-Waves/archives/458249",
+    "scope": "Materiais de ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Créditos complementados pela tabela individual da Wiki."
+  },
+  {
+    "id": "verdant",
+    "url": "https://wutheringlab.com/weapon/verdant-summit/",
+    "scope": "Identidade da arma",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": ""
+  },
+  {
+    "id": "verdant-cost",
+    "url": "https://game8.co/games/Wuthering-Waves/archives/455951",
+    "scope": "Materiais de ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Créditos complementados pela tabela individual da Wiki."
+  },
+  {
+    "id": "stringmaster",
+    "url": "https://wutheringlab.com/weapon/stringmaster/",
+    "scope": "Identidade da arma",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": ""
+  },
+  {
+    "id": "stringmaster-cost",
+    "url": "https://game8.co/games/Wuthering-Waves/archives/455927",
+    "scope": "Materiais de ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Créditos complementados pela tabela individual da Wiki."
+  },
+  {
+    "id": "emerald",
+    "url": "https://wutheringlab.com/weapon/emerald-of-genesis/",
+    "scope": "Identidade da arma",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": ""
+  },
+  {
+    "id": "emerald-cost",
+    "url": "https://game8.co/games/Wuthering-Waves/archives/455939",
+    "scope": "Materiais de ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Créditos complementados pela tabela individual da Wiki."
+  },
+  {
+    "id": "ages-credit",
+    "url": "https://wutheringwaves.fandom.com/wiki/Ages_of_Harvest",
+    "scope": "Créditos de ascensão 10000/20000/40000/60000/80000/120000",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": ""
+  },
+  {
+    "id": "wuwa-akademiya",
+    "url": "https://wuwa.akademiya.app/en/characters",
+    "scope": "Elementos, armas e raridades dos personagens importados",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Identidades da listagem pública; não certifica disponibilidade em banners."
+  },
+  {
+    "id": "wuwa-materials",
+    "url": "https://wuwa.akademiya.app/en/materials",
+    "scope": "Nomes, raridades e imagens dos materiais",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Imagens locais fornecidas pelo usuário; imagens ausentes obtidas da CDN indicada por Akademiya."
+  },
+  {
+    "id": "assets-aalto",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Aalto/New%20Text%20Document.txt",
+    "scope": "Aalto: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-aemeath",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Aemeth/New%20Text%20Document.txt",
+    "scope": "Aemeath: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-augusta",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Augusta/New%20Text%20Document.txt",
+    "scope": "Augusta: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-baizhi",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Baizhi/New%20Text%20Document.txt",
+    "scope": "Baizhi: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-brant",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Brant/New%20Text%20Document.txt",
+    "scope": "Brant: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-buling",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Bulling/New%20Text%20Document.txt",
+    "scope": "Buling: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-calcharo",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Calcharo/New%20Text%20Document.txt",
+    "scope": "Calcharo: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-camellya",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Camellya/New%20Text%20Document.txt",
+    "scope": "Camellya: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-cantarella",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Cantarella/New%20Text%20Document.txt",
+    "scope": "Cantarella: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-carlotta",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Carlotta/New%20Text%20Document.txt",
+    "scope": "Carlotta: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-cartethyia",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Cartethyia/New%20Text%20Document.txt",
+    "scope": "Cartethyia: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-changli",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Changli/New%20Text%20Document.txt",
+    "scope": "Changli: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-chisa",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Chisa/New%20Text%20Document.txt",
+    "scope": "Chisa: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-chixia",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Chixia/New%20Text%20Document.txt",
+    "scope": "Chixia: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-ciaccona",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Ciaccona/New%20Text%20Document.txt",
+    "scope": "Ciaccona: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-danjin",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Danjin/New%20Text%20Document.txt",
+    "scope": "Danjin: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-denia",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Denia/New%20Text%20Document.txt",
+    "scope": "Denia: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-encore",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Encore/New%20Text%20Document.txt",
+    "scope": "Encore: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-galbrena",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Galbrena/New%20Text%20Document.txt",
+    "scope": "Galbrena: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-hiyuki",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Hiyuki/New%20Text%20Document.txt",
+    "scope": "Hiyuki: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-iuno",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Iuno/New%20Text%20Document.txt",
+    "scope": "Iuno: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-jianxin",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Jianxin/New%20Text%20Document.txt",
+    "scope": "Jianxin: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-jingran",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Jingran/Materials.txt",
+    "scope": "Jingran: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-jinhsi",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Jinhsi/New%20Text%20Document.txt",
+    "scope": "Jinhsi: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "O resumo do texto e o catálogo original concordam: Howler Core, Elegy Tacet Core e Loong’s Pearl. A tabela por etapa foi colada de Roccia e foi descartada; preservada a tabela previamente conferida da Jinhsi."
+  },
+  {
+    "id": "assets-jiyan",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Jiyan/New%20Text%20Document.txt",
+    "scope": "Jiyan: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-lingyang",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Lingyang/New%20Text%20Document.txt",
+    "scope": "Lingyang: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-lucilla",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Lucilla/New%20Text%20Document.txt",
+    "scope": "Lucilla: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-lucy",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Lucy/New%20Text%20Document.txt",
+    "scope": "Lucy: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-lumi",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Lumi/New%20Text%20Document.txt",
+    "scope": "Lumi: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-lupa",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Lupa/New%20Text%20Document.txt",
+    "scope": "Lupa: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-luuk-herssen",
+    "url": "https://game8.co/games/Wuthering-Waves/archives/575852",
+    "scope": "Luuk Herssen: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Pasta original contém somente retrato. Materiais complementados pelo guia Game8; custos por etapa seguem a tabela compartilhada."
+  },
+  {
+    "id": "assets-lynae",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Lynae/New%20Text%20Document.txt",
+    "scope": "Lynae: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-mornye",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Mornye/New%20Text%20Document.txt",
+    "scope": "Mornye: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-mortefi",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Mortefi/New%20Text%20Document.txt",
+    "scope": "Mortefi: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-phrolova",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Phrolova/New%20Text%20Document.txt",
+    "scope": "Phrolova: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-phoebe",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Proebe/New%20Text%20Document.txt",
+    "scope": "Phoebe: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-qingxiao",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Qingxiao/New%20Text%20Document.txt",
+    "scope": "Qingxiao: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-qiuyuan",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Qiuyuan/New%20Text%20Document.txt",
+    "scope": "Qiuyuan: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-rebecca",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Rebecca/New%20Text%20Document.txt",
+    "scope": "Rebecca: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-roccia",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Roccia/New%20Text%20Document.txt",
+    "scope": "Roccia: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-rover-aero",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Rover/Rover%20Aero.txt",
+    "scope": "Rover (Aero): materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-rover-havoc",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Rover/Rover%20Havoc.txt",
+    "scope": "Rover (Havoc): materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-rover-spectro",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Rover/Rover%20Spectro.txt",
+    "scope": "Rover (Spectro): materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-sanhua",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Sanhua/New%20Text%20Document.txt",
+    "scope": "Sanhua: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-shorekeeper",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Shorekeeper/New%20Text%20Document.txt",
+    "scope": "Shorekeeper: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-sigrika",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Sigrika/New%20Text%20Document.txt",
+    "scope": "Sigrika: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-suisui",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Suisui/New%20Text%20Document.txt",
+    "scope": "Suisui: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-taoqi",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Taoqi/New%20Text%20Document.txt",
+    "scope": "Taoqi: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-verina",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Verina/New%20Text%20Document.txt",
+    "scope": "Verina: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-xiangli-yao",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Xiangli/New%20Text%20Document.txt",
+    "scope": "Xiangli Yao: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-yangyang",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Yangyang/New%20Text%20Document.txt",
+    "scope": "Yangyang: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-yangyang-xuanling",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Yangyang%20Xuanling/New%20Text%20Document.txt",
+    "scope": "Yangyang Xuanling: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-yinlin",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Yinlin/New%20Text%20Document.txt",
+    "scope": "Yinlin: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-youhu",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Youhu/New%20Text%20Document.txt",
+    "scope": "Youhu: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-yuanwu",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Yuanwu/New%20Text%20Document.txt",
+    "scope": "Yuanwu: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-zani",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Zani/New%20Text%20Document.txt",
+    "scope": "Zani: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "assets-zhezhi",
+    "url": "https://github.com/MiharaxD/tacet-thewuwaplanner/blob/main/source-assets/wuwa/characters/Zhezhi/New%20Text%20Document.txt",
+    "scope": "Zhezhi: materiais de ascensão e Forte",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Texto fornecido pelo usuário. Seis etapas de ascensão conferidas na importação. Totais de Forte incluem nós; o cálculo atual cobre os cinco Fortes, sem nós inerentes/bônus."
+  },
+  {
+    "id": "weapon-skill-materials",
+    "url": "https://wutheringwaves.fandom.com/wiki/Weapon_and_Skill_Material",
+    "scope": "Famílias de materiais de armas e Fortes",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Página solicitada pelo usuário. Conteúdo indexado consultado; acesso direto indisponível. Custos individuais complementados com Akademiya."
+  },
+  {
+    "id": "weapon-xp-rarities",
+    "url": "https://wutheringwaves.fandom.com/wiki/Weapon/Leveling",
+    "scope": "EXP acumulada por raridade de arma",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Tabela 4★; 3★, 2★ e 1★ correspondem respectivamente a 60%, 50% e 40% dessa tabela. Limites e custos de ascensão conferidos nas páginas individuais. Valores por intervalo conferidos com os totais indexados."
+  },
+  {
+    "id": "weapon-21020106",
+    "url": "https://wuwa.akademiya.app/en/weapons/21020106",
+    "scope": "Glint of Clouds: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21050096",
+    "url": "https://wuwa.akademiya.app/en/weapons/21050096",
+    "scope": "Firstlight's Herald: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21020086",
+    "url": "https://wuwa.akademiya.app/en/weapons/21020086",
+    "scope": "Frostburn: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21030056",
+    "url": "https://wuwa.akademiya.app/en/weapons/21030056",
+    "scope": "Spectral Trigger: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21010076",
+    "url": "https://wuwa.akademiya.app/en/weapons/21010076",
+    "scope": "Thousandfold Deliverance: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21050076",
+    "url": "https://wuwa.akademiya.app/en/weapons/21050076",
+    "scope": "Forged Dwarf Star: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21040066",
+    "url": "https://wuwa.akademiya.app/en/weapons/21040066",
+    "scope": "Solsworn Ciphers: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21040056",
+    "url": "https://wuwa.akademiya.app/en/weapons/21040056",
+    "scope": "Daybreaker's Spine: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21020076",
+    "url": "https://wuwa.akademiya.app/en/weapons/21020076",
+    "scope": "Everbright Polestar: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21050086",
+    "url": "https://wuwa.akademiya.app/en/weapons/21050086",
+    "scope": "Freeze Frame: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21050045",
+    "url": "https://wutheringwaves.fandom.com/wiki/Boson_Astrolabe",
+    "scope": "Boson Astrolabe: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Tabela de custos incremental confirmada no conteúdo indexado da Wiki; Akademiya não fornece as etapas desta arma. Famílias de materiais confirmadas em Weapon and Skill Material. Imagem © KURO GAMES."
+  },
+  {
+    "id": "weapon-21020096",
+    "url": "https://wuwa.akademiya.app/en/weapons/21020096",
+    "scope": "Azure Oath: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21040045",
+    "url": "https://wutheringwaves.fandom.com/wiki/Pulsation_Bracer",
+    "scope": "Pulsation Bracer: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Tabela de custos incremental confirmada no conteúdo indexado da Wiki; Akademiya não fornece as etapas desta arma. Famílias de materiais confirmadas em Weapon and Skill Material. Imagem © KURO GAMES."
+  },
+  {
+    "id": "weapon-21030046",
+    "url": "https://wuwa.akademiya.app/en/weapons/21030046",
+    "scope": "Spectrum Blaster: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21010045",
+    "url": "https://wutheringwaves.fandom.com/wiki/Radiance_Cleaver",
+    "scope": "Radiance Cleaver: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Tabela de custos incremental confirmada no conteúdo indexado da Wiki; Akademiya não fornece as etapas desta arma. Famílias de materiais confirmadas em Weapon and Skill Material. Imagem © KURO GAMES."
+  },
+  {
+    "id": "weapon-21010066",
+    "url": "https://wuwa.akademiya.app/en/weapons/21010066",
+    "scope": "Starfield Calibrator: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21050104",
+    "url": "https://wuwa.akademiya.app/en/weapons/21050104",
+    "scope": "Radiant Dawn: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21030036",
+    "url": "https://wuwa.akademiya.app/en/weapons/21030036",
+    "scope": "Lux & Umbra: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21020066",
+    "url": "https://wuwa.akademiya.app/en/weapons/21020066",
+    "scope": "Emerald Sentence: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21040104",
+    "url": "https://wuwa.akademiya.app/en/weapons/21040104",
+    "scope": "Aether Strike: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21030104",
+    "url": "https://wuwa.akademiya.app/en/weapons/21030104",
+    "scope": "Solar Flame: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21010056",
+    "url": "https://wuwa.akademiya.app/en/weapons/21010056",
+    "scope": "Kumokiri: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21020104",
+    "url": "https://wuwa.akademiya.app/en/weapons/21020104",
+    "scope": "Feather Edge: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21010104",
+    "url": "https://wuwa.akademiya.app/en/weapons/21010104",
+    "scope": "Aureate Zenith: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21010046",
+    "url": "https://wuwa.akademiya.app/en/weapons/21010046",
+    "scope": "Thunderflare Dominion: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21040046",
+    "url": "https://wuwa.akademiya.app/en/weapons/21040046",
+    "scope": "Moongazer's Sigil: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21050066",
+    "url": "https://wuwa.akademiya.app/en/weapons/21050066",
+    "scope": "Lethean Elegy: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21010036",
+    "url": "https://wuwa.akademiya.app/en/weapons/21010036",
+    "scope": "Wildfire Mark: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21020056",
+    "url": "https://wuwa.akademiya.app/en/weapons/21020056",
+    "scope": "Defier's Thorn: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21040036",
+    "url": "https://wuwa.akademiya.app/en/weapons/21040036",
+    "scope": "Blazing Justice: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21030026",
+    "url": "https://wuwa.akademiya.app/en/weapons/21030026",
+    "scope": "Woodland Aria: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21020046",
+    "url": "https://wuwa.akademiya.app/en/weapons/21020046",
+    "scope": "Bloodpact's Pledge: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21050056",
+    "url": "https://wuwa.akademiya.app/en/weapons/21050056",
+    "scope": "Whispers of Sirens: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21050046",
+    "url": "https://wuwa.akademiya.app/en/weapons/21050046",
+    "scope": "Luminous Hymn: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21020036",
+    "url": "https://wuwa.akademiya.app/en/weapons/21020036",
+    "scope": "Unflickering Valor: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21050027",
+    "url": "https://wuwa.akademiya.app/en/weapons/21050027",
+    "scope": "Ocean's Gift: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21030016",
+    "url": "https://wuwa.akademiya.app/en/weapons/21030016",
+    "scope": "The Last Dance: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21040026",
+    "url": "https://wuwa.akademiya.app/en/weapons/21040026",
+    "scope": "Tragicomedy: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21050094",
+    "url": "https://wuwa.akademiya.app/en/weapons/21050094",
+    "scope": "Waltz in Masquerade: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21040094",
+    "url": "https://wuwa.akademiya.app/en/weapons/21040094",
+    "scope": "Legend of Drunken Hero: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21030094",
+    "url": "https://wuwa.akademiya.app/en/weapons/21030094",
+    "scope": "Romance in Farewell: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21020094",
+    "url": "https://wuwa.akademiya.app/en/weapons/21020094",
+    "scope": "Fables of Wisdom: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21010094",
+    "url": "https://wuwa.akademiya.app/en/weapons/21010094",
+    "scope": "Meditations on Mercy: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21020017",
+    "url": "https://wuwa.akademiya.app/en/weapons/21020017",
+    "scope": "Somnoire Anchor: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21050017",
+    "url": "https://wuwa.akademiya.app/en/weapons/21050017",
+    "scope": "Call of the Abyss: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21020026",
+    "url": "https://wuwa.akademiya.app/en/weapons/21020026",
+    "scope": "Red Spring: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21050084",
+    "url": "https://wuwa.akademiya.app/en/weapons/21050084",
+    "scope": "Fusion Accretion: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21030084",
+    "url": "https://wuwa.akademiya.app/en/weapons/21030084",
+    "scope": "Relativistic Jet: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21040084",
+    "url": "https://wuwa.akademiya.app/en/weapons/21040084",
+    "scope": "Celestial Spiral: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21020084",
+    "url": "https://wuwa.akademiya.app/en/weapons/21020084",
+    "scope": "Endless Collapse: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21010084",
+    "url": "https://wuwa.akademiya.app/en/weapons/21010084",
+    "scope": "Waning Redshift: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21040016",
+    "url": "https://wuwa.akademiya.app/en/weapons/21040016",
+    "scope": "Verity's Handle: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21050036",
+    "url": "https://wuwa.akademiya.app/en/weapons/21050036",
+    "scope": "Stellar Symphony: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21050026",
+    "url": "https://wuwa.akademiya.app/en/weapons/21050026",
+    "scope": "Rime-Draped Sprouts: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21010063",
+    "url": "https://wuwa.akademiya.app/en/weapons/21010063",
+    "scope": "Beguiling Melody: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21010026",
+    "url": "https://wuwa.akademiya.app/en/weapons/21010026",
+    "scope": "Ages of Harvest: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21020016",
+    "url": "https://wuwa.akademiya.app/en/weapons/21020016",
+    "scope": "Blazing Brilliance: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21050016",
+    "url": "https://wuwa.akademiya.app/en/weapons/21050016",
+    "scope": "Stringmaster: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21010016",
+    "url": "https://wuwa.akademiya.app/en/weapons/21010016",
+    "scope": "Verdant Summit: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21050015",
+    "url": "https://wuwa.akademiya.app/en/weapons/21050015",
+    "scope": "Cosmic Ripples: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21040015",
+    "url": "https://wuwa.akademiya.app/en/weapons/21040015",
+    "scope": "Abyss Surges: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21030015",
+    "url": "https://wuwa.akademiya.app/en/weapons/21030015",
+    "scope": "Static Mist: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21020015",
+    "url": "https://wuwa.akademiya.app/en/weapons/21020015",
+    "scope": "Emerald of Genesis: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21050064",
+    "url": "https://wuwa.akademiya.app/en/weapons/21050064",
+    "scope": "Comet Flare: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21040064",
+    "url": "https://wuwa.akademiya.app/en/weapons/21040064",
+    "scope": "Hollow Mirage: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21010015",
+    "url": "https://wuwa.akademiya.app/en/weapons/21010015",
+    "scope": "Lustrous Razor: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21030064",
+    "url": "https://wuwa.akademiya.app/en/weapons/21030064",
+    "scope": "Novaburst: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21020064",
+    "url": "https://wuwa.akademiya.app/en/weapons/21020064",
+    "scope": "Lunar Cutter: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21010064",
+    "url": "https://wuwa.akademiya.app/en/weapons/21010064",
+    "scope": "Helios Cleaver: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21050053",
+    "url": "https://wuwa.akademiya.app/en/weapons/21050053",
+    "scope": "Guardian Rectifier: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21040053",
+    "url": "https://wuwa.akademiya.app/en/weapons/21040053",
+    "scope": "Guardian Gauntlets: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21020053",
+    "url": "https://wuwa.akademiya.app/en/weapons/21020053",
+    "scope": "Guardian Sword: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21010053",
+    "url": "https://wuwa.akademiya.app/en/weapons/21010053",
+    "scope": "Guardian Broadblade: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21030053",
+    "url": "https://wuwa.akademiya.app/en/weapons/21030053",
+    "scope": "Guardian Pistols: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21040043",
+    "url": "https://wuwa.akademiya.app/en/weapons/21040043",
+    "scope": "Gauntlets of Voyager: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21050043",
+    "url": "https://wuwa.akademiya.app/en/weapons/21050043",
+    "scope": "Rectifier of Voyager: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21030043",
+    "url": "https://wuwa.akademiya.app/en/weapons/21030043",
+    "scope": "Pistols of Voyager: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21020043",
+    "url": "https://wuwa.akademiya.app/en/weapons/21020043",
+    "scope": "Sword of Voyager: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21050044",
+    "url": "https://wuwa.akademiya.app/en/weapons/21050044",
+    "scope": "Jinzhou Keeper: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21010043",
+    "url": "https://wuwa.akademiya.app/en/weapons/21010043",
+    "scope": "Broadblade of Voyager: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21040044",
+    "url": "https://wuwa.akademiya.app/en/weapons/21040044",
+    "scope": "Amity Accord: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21030044",
+    "url": "https://wuwa.akademiya.app/en/weapons/21030044",
+    "scope": "Undying Flame: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21020044",
+    "url": "https://wuwa.akademiya.app/en/weapons/21020044",
+    "scope": "Commando of Conviction: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21050034",
+    "url": "https://wuwa.akademiya.app/en/weapons/21050034",
+    "scope": "Rectifier#25: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21010044",
+    "url": "https://wuwa.akademiya.app/en/weapons/21010044",
+    "scope": "Dauntless Evernight: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21030034",
+    "url": "https://wuwa.akademiya.app/en/weapons/21030034",
+    "scope": "Pistols#26: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21040034",
+    "url": "https://wuwa.akademiya.app/en/weapons/21040034",
+    "scope": "Gauntlets#21D: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21020034",
+    "url": "https://wuwa.akademiya.app/en/weapons/21020034",
+    "scope": "Sword#18: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21010034",
+    "url": "https://wuwa.akademiya.app/en/weapons/21010034",
+    "scope": "Broadblade#41: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21050023",
+    "url": "https://wuwa.akademiya.app/en/weapons/21050023",
+    "scope": "Originite: Type V: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21040023",
+    "url": "https://wuwa.akademiya.app/en/weapons/21040023",
+    "scope": "Originite: Type IV: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21020023",
+    "url": "https://wuwa.akademiya.app/en/weapons/21020023",
+    "scope": "Originite: Type II: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21010023",
+    "url": "https://wuwa.akademiya.app/en/weapons/21010023",
+    "scope": "Originite: Type I: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21030023",
+    "url": "https://wuwa.akademiya.app/en/weapons/21030023",
+    "scope": "Originite: Type III: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21050011",
+    "url": "https://wuwa.akademiya.app/en/weapons/21050011",
+    "scope": "Training Rectifier: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21030011",
+    "url": "https://wuwa.akademiya.app/en/weapons/21030011",
+    "scope": "Training Pistols: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21040011",
+    "url": "https://wuwa.akademiya.app/en/weapons/21040011",
+    "scope": "Training Gauntlets: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21020011",
+    "url": "https://wuwa.akademiya.app/en/weapons/21020011",
+    "scope": "Training Sword: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21050012",
+    "url": "https://wuwa.akademiya.app/en/weapons/21050012",
+    "scope": "Tyro Rectifier: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21010011",
+    "url": "https://wuwa.akademiya.app/en/weapons/21010011",
+    "scope": "Training Broadblade: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21040012",
+    "url": "https://wuwa.akademiya.app/en/weapons/21040012",
+    "scope": "Tyro Gauntlets: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21030012",
+    "url": "https://wuwa.akademiya.app/en/weapons/21030012",
+    "scope": "Tyro Pistols: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21020012",
+    "url": "https://wuwa.akademiya.app/en/weapons/21020012",
+    "scope": "Tyro Sword: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21010012",
+    "url": "https://wuwa.akademiya.app/en/weapons/21010012",
+    "scope": "Tyro Broadblade: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21050013",
+    "url": "https://wuwa.akademiya.app/en/weapons/21050013",
+    "scope": "Rectifier of Night: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21040013",
+    "url": "https://wuwa.akademiya.app/en/weapons/21040013",
+    "scope": "Gauntlets of Night: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21020013",
+    "url": "https://wuwa.akademiya.app/en/weapons/21020013",
+    "scope": "Sword of Night: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21030013",
+    "url": "https://wuwa.akademiya.app/en/weapons/21030013",
+    "scope": "Pistols of Night: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21010013",
+    "url": "https://wuwa.akademiya.app/en/weapons/21010013",
+    "scope": "Broadblade of Night: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21050024",
+    "url": "https://wuwa.akademiya.app/en/weapons/21050024",
+    "scope": "Variation: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21030024",
+    "url": "https://wuwa.akademiya.app/en/weapons/21030024",
+    "scope": "Cadenza: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21040024",
+    "url": "https://wuwa.akademiya.app/en/weapons/21040024",
+    "scope": "Marcato: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21010024",
+    "url": "https://wuwa.akademiya.app/en/weapons/21010024",
+    "scope": "Discord: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21020024",
+    "url": "https://wuwa.akademiya.app/en/weapons/21020024",
+    "scope": "Overture: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21040074",
+    "url": "https://wuwa.akademiya.app/en/weapons/21040074",
+    "scope": "Stonard: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21030074",
+    "url": "https://wuwa.akademiya.app/en/weapons/21030074",
+    "scope": "Thunderbolt: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21050074",
+    "url": "https://wuwa.akademiya.app/en/weapons/21050074",
+    "scope": "Augment: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21020074",
+    "url": "https://wuwa.akademiya.app/en/weapons/21020074",
+    "scope": "Lumingloss: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21010074",
+    "url": "https://wuwa.akademiya.app/en/weapons/21010074",
+    "scope": "Autumntrace: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "weapon-21030066",
+    "url": "https://wuwa.akademiya.app/en/weapons/21030066",
+    "scope": "Skull Thrasher: raridade, tipo, limites e custos por ascensão",
+    "consultedAt": "2026-09-15",
+    "gameVersion": null,
+    "note": "Custos incrementais por etapa, ordenados pelo limite de nível. Imagem © KURO GAMES, via Akademiya/static.nanoka.cc. Fonte consultada marca beta=false; não é confirmação independente de disponibilidade regional."
+  },
+  {
+    "id": "synthesis-purification",
+    "url": "https://wutheringwaves.fandom.com/wiki/Synthesis",
+    "title": "Synthesis · Purification",
+    "consultedAt": "2026-09-17",
+    "notes": "3 materiais de raridade inferior para 1 da próxima raridade, dentro da mesma família."
+  }
+]

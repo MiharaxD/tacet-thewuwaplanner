@@ -1,0 +1,30 @@
+{
+  "id": "aemeath",
+  "name": "Aemeath",
+  "element": "Fusion",
+  "weapon": "Sword",
+  "rarity": 5,
+  "enemy": "exoswarm-core",
+  "forgery": "broken-wing-polarizer",
+  "flower": "moss-amber",
+  "boss": "our-choice",
+  "weekly": "gold-in-memory",
+  "image": "./assets/characters/icons/aemeath.webp",
+  "sources": [
+    "assets-aemeath",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/aemeath.webp",
+    "banner": "./assets/characters/splash/aemeath.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_53_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Aemeath/Gallery",
+    "card": "./assets/characters/cards/aemeath.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Aimisi_UI.webp",
+    "bannerSource": "https://static.wikia.nocookie.net/wutheringwaves/images/e/e4/Aemeath_Splash_Art.png/revision/latest?cb=20260204135601",
+    "bannerKind": "splash",
+    "bannerPosition": "50% 45%"
+  }
+}

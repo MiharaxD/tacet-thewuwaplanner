@@ -1,0 +1,30 @@
+{
+  "id": "lucilla",
+  "name": "Lucilla",
+  "element": "Glacio",
+  "weapon": "Rectifier",
+  "rarity": 5,
+  "enemy": "mech-core",
+  "forgery": "spliced-string",
+  "flower": "forget-me-not",
+  "boss": "suncoveters-reach",
+  "weekly": "we-who-question",
+  "image": "./assets/characters/icons/lucilla.webp",
+  "sources": [
+    "assets-lucilla",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/lucilla.webp",
+    "banner": "./assets/characters/splash/lucilla.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_66_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Lucilla/Gallery",
+    "card": "./assets/characters/cards/lucilla.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Luosela_UI.webp",
+    "bannerSource": "https://static.wikia.nocookie.net/wutheringwaves/images/6/6b/Lucilla_Splash_Art.png/revision/latest?cb=20260617035839",
+    "bannerKind": "splash",
+    "bannerPosition": "50% 45%"
+  }
+}

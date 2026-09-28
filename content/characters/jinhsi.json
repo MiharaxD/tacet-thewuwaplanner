@@ -1,0 +1,32 @@
+{
+  "id": "jinhsi",
+  "name": "Jinhsi",
+  "element": "Spectro",
+  "weapon": "Broadblade",
+  "rarity": 5,
+  "enemy": "howler",
+  "forgery": "waveworn",
+  "flower": "pearl",
+  "boss": "elegy",
+  "weekly": "dagger",
+  "image": "./assets/characters/icons/jinhsi.webp",
+  "sources": [
+    "jinhsi",
+    "jinhsi-cost",
+    "assets-jinhsi",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/jinhsi.webp",
+    "banner": "./assets/characters/splash/jinhsi.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_24_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Jinhsi/Gallery",
+    "card": "./assets/characters/cards/jinhsi.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_jinxi_UI.webp",
+    "bannerSource": "https://static.wikia.nocookie.net/wutheringwaves/images/1/17/Jinhsi_Splash_Art.png/revision/latest?cb=20240628004816",
+    "bannerKind": "splash",
+    "bannerPosition": "50% 45%"
+  }
+}

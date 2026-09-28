@@ -1,0 +1,27 @@
+{
+  "id": "lumi",
+  "name": "Lumi",
+  "element": "Electro",
+  "weapon": "Broadblade",
+  "rarity": 4,
+  "enemy": "howler",
+  "forgery": "waveworn",
+  "flower": "terraspawn-fungus",
+  "boss": "thundering-tacet-core",
+  "weekly": "dagger",
+  "image": "./assets/characters/icons/lumi.webp",
+  "sources": [
+    "assets-lumi",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/lumi.webp",
+    "banner": "./assets/characters/cards/lumi.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_30_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Lumi/Gallery",
+    "card": "./assets/characters/cards/lumi.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_dengdeng_UI.webp"
+  }
+}

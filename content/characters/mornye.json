@@ -1,0 +1,30 @@
+{
+  "id": "mornye",
+  "name": "Mornye",
+  "element": "Fusion",
+  "weapon": "Broadblade",
+  "rarity": 5,
+  "enemy": "mech-core",
+  "forgery": "carved-crystal",
+  "flower": "gemini-spore",
+  "boss": "burning-judgment",
+  "weekly": "the-netherworlds-stare",
+  "image": "./assets/characters/icons/mornye.webp",
+  "sources": [
+    "assets-mornye",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/mornye.webp",
+    "banner": "./assets/characters/splash/mornye.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_61_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Mornye/Gallery",
+    "card": "./assets/characters/cards/mornye.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Moning_UI.webp",
+    "bannerSource": "https://static.wikia.nocookie.net/wutheringwaves/images/5/5b/Mornye_Splash_Art.png/revision/latest?cb=20251223061502",
+    "bannerKind": "splash",
+    "bannerPosition": "50% 45%"
+  }
+}

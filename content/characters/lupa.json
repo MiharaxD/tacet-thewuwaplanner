@@ -1,0 +1,30 @@
+{
+  "id": "lupa",
+  "name": "Lupa",
+  "element": "Fusion",
+  "weapon": "Broadblade",
+  "rarity": 5,
+  "enemy": "howler",
+  "forgery": "waveworn",
+  "flower": "bloodleaf-viburnum",
+  "boss": "unfading-glory",
+  "weekly": "the-netherworlds-stare",
+  "image": "./assets/characters/icons/lupa.webp",
+  "sources": [
+    "assets-lupa",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/lupa.webp",
+    "banner": "./assets/characters/splash/lupa.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_46_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Lupa/Gallery",
+    "card": "./assets/characters/cards/lupa.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_lupa_UI.webp",
+    "bannerSource": "https://static.wikia.nocookie.net/wutheringwaves/images/e/e1/Lupa_Splash_Art.png/revision/latest?cb=20250616161732",
+    "bannerKind": "splash",
+    "bannerPosition": "50% 45%"
+  }
+}

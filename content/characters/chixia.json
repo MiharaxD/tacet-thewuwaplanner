@@ -1,0 +1,27 @@
+{
+  "id": "chixia",
+  "name": "Chixia",
+  "element": "Fusion",
+  "weapon": "Pistols",
+  "rarity": 4,
+  "enemy": "whisper",
+  "forgery": "impure-phlogiston",
+  "flower": "poppy",
+  "boss": "rage",
+  "weekly": "bell",
+  "image": "./assets/characters/icons/chixia.webp",
+  "sources": [
+    "assets-chixia",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/chixia.webp",
+    "banner": "./assets/characters/cards/chixia.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_2_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Chixia/Gallery",
+    "card": "./assets/characters/cards/chixia.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_maxiaofang_UI.webp"
+  }
+}

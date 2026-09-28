@@ -1,0 +1,30 @@
+{
+  "id": "cartethyia",
+  "name": "Cartethyia",
+  "element": "Aero",
+  "weapon": "Sword",
+  "rarity": 5,
+  "enemy": "tidal-residuum",
+  "forgery": "drip",
+  "flower": "bamboo-iris",
+  "boss": "unfading-glory",
+  "weekly": "when-irises-bloom",
+  "image": "./assets/characters/icons/cartethyia.webp",
+  "sources": [
+    "assets-cartethyia",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/cartethyia.webp",
+    "banner": "./assets/characters/splash/cartethyia.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_40_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Cartethyia/Gallery",
+    "card": "./assets/characters/cards/cartethyia.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_katixiya_UI.webp",
+    "bannerSource": "https://static.wikia.nocookie.net/wutheringwaves/images/9/9c/Cartethyia_Splash_Art.png/revision/latest?cb=20250611113557",
+    "bannerKind": "splash",
+    "bannerPosition": "50% 45%"
+  }
+}

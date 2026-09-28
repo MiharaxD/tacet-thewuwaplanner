@@ -1,0 +1,30 @@
+{
+  "id": "changli",
+  "name": "Changli",
+  "element": "Fusion",
+  "weapon": "Sword",
+  "rarity": 5,
+  "enemy": "ring",
+  "forgery": "drip",
+  "flower": "pavo-plum",
+  "boss": "rage",
+  "weekly": "dagger",
+  "image": "./assets/characters/icons/changli.webp",
+  "sources": [
+    "assets-changli",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/changli.webp",
+    "banner": "./assets/characters/splash/changli.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_26_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Changli/Gallery",
+    "card": "./assets/characters/cards/changli.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_changli_UI.webp",
+    "bannerSource": "https://static.wikia.nocookie.net/wutheringwaves/images/8/82/Changli_Splash_Art.png/revision/latest?cb=20240628004906",
+    "bannerKind": "splash",
+    "bannerPosition": "50% 45%"
+  }
+}

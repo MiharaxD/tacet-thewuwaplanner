@@ -1,0 +1,27 @@
+{
+  "id": "mortefi",
+  "name": "Mortefi",
+  "element": "Fusion",
+  "weapon": "Pistols",
+  "rarity": 4,
+  "enemy": "whisper",
+  "forgery": "impure-phlogiston",
+  "flower": "coriolus",
+  "boss": "rage",
+  "weekly": "bell",
+  "image": "./assets/characters/icons/mortefi.webp",
+  "sources": [
+    "assets-mortefi",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/mortefi.webp",
+    "banner": "./assets/characters/cards/mortefi.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_13_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Mortefi/Gallery",
+    "card": "./assets/characters/cards/mortefi.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_baer_UI.webp"
+  }
+}

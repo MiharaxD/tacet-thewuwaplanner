@@ -1,0 +1,30 @@
+{
+  "id": "phrolova",
+  "name": "Phrolova",
+  "element": "Havoc",
+  "weapon": "Rectifier",
+  "rarity": 5,
+  "enemy": "polygon-core",
+  "forgery": "helix",
+  "flower": "afterlife",
+  "boss": "truth-in-lies",
+  "weekly": "the-netherworlds-stare",
+  "image": "./assets/characters/icons/phrolova.webp",
+  "sources": [
+    "assets-phrolova",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/phrolova.webp",
+    "banner": "./assets/characters/splash/phrolova.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_41_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Phrolova/Gallery",
+    "card": "./assets/characters/cards/phrolova.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_fuluoluo_UI.webp",
+    "bannerSource": "https://static.wikia.nocookie.net/wutheringwaves/images/8/83/Phrolova_Splash_Art.png/revision/latest?cb=20250719040459",
+    "bannerKind": "splash",
+    "bannerPosition": "50% 45%"
+  }
+}

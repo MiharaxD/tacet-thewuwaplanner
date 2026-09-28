@@ -1,0 +1,30 @@
+{
+  "id": "augusta",
+  "name": "Augusta",
+  "element": "Electro",
+  "weapon": "Broadblade",
+  "rarity": 5,
+  "enemy": "tidal-residuum",
+  "forgery": "waveworn",
+  "flower": "luminous-calendula",
+  "boss": "blighted-crown-of-puppet-king",
+  "weekly": "when-irises-bloom",
+  "image": "./assets/characters/icons/augusta.webp",
+  "sources": [
+    "assets-augusta",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/augusta.webp",
+    "banner": "./assets/characters/splash/augusta.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_51_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Augusta/Gallery",
+    "card": "./assets/characters/cards/augusta.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_aogusita_UI.webp",
+    "bannerSource": "https://static.wikia.nocookie.net/wutheringwaves/images/1/13/Augusta_Splash_Art.png/revision/latest?cb=20250818064837",
+    "bannerKind": "splash",
+    "bannerPosition": "50% 45%"
+  }
+}

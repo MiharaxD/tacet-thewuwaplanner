@@ -1,0 +1,1280 @@
+[
+  {
+    "id": "boson-astrolabe",
+    "name": "Boson Astrolabe",
+    "type": "Rectifier",
+    "rarity": 5,
+    "enemy": "exoswarm-core",
+    "forgery": "spliced-string",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 10000,
+        "exoswarm-core-0": 6
+      },
+      {
+        "shell": 20000,
+        "exoswarm-core-1": 6,
+        "spliced-string-0": 6
+      },
+      {
+        "shell": 40000,
+        "exoswarm-core-2": 4,
+        "spliced-string-1": 8
+      },
+      {
+        "shell": 60000,
+        "exoswarm-core-2": 6,
+        "spliced-string-2": 6
+      },
+      {
+        "shell": 80000,
+        "exoswarm-core-3": 4,
+        "spliced-string-3": 8
+      },
+      {
+        "shell": 120000,
+        "exoswarm-core-3": 8,
+        "spliced-string-3": 12
+      }
+    ],
+    "image": "./assets/weapons/21050045.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21050045",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "cosmic-ripples",
+    "name": "Cosmic Ripples",
+    "type": "Rectifier",
+    "rarity": 5,
+    "enemy": "ring",
+    "forgery": "helix",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 10000,
+        "ring-0": 6
+      },
+      {
+        "shell": 20000,
+        "helix-0": 6,
+        "ring-1": 6
+      },
+      {
+        "shell": 40000,
+        "helix-1": 8,
+        "ring-2": 4
+      },
+      {
+        "shell": 60000,
+        "helix-2": 6,
+        "ring-2": 6
+      },
+      {
+        "shell": 80000,
+        "helix-3": 8,
+        "ring-3": 4
+      },
+      {
+        "shell": 120000,
+        "helix-3": 12,
+        "ring-3": 8
+      }
+    ],
+    "image": "./assets/weapons/21050015.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21050015",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "firstlight-s-herald",
+    "name": "Firstlight's Herald",
+    "type": "Rectifier",
+    "rarity": 5,
+    "enemy": "exoswarm-core",
+    "forgery": "spliced-string",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 10000,
+        "exoswarm-core-0": 6
+      },
+      {
+        "shell": 20000,
+        "spliced-string-0": 6,
+        "exoswarm-core-1": 6
+      },
+      {
+        "shell": 40000,
+        "spliced-string-1": 8,
+        "exoswarm-core-2": 4
+      },
+      {
+        "shell": 60000,
+        "spliced-string-2": 6,
+        "exoswarm-core-2": 6
+      },
+      {
+        "shell": 80000,
+        "spliced-string-3": 8,
+        "exoswarm-core-3": 4
+      },
+      {
+        "shell": 120000,
+        "spliced-string-3": 12,
+        "exoswarm-core-3": 8
+      }
+    ],
+    "image": "./assets/weapons/21050096.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21050096",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "forged-dwarf-star",
+    "name": "Forged Dwarf Star",
+    "type": "Rectifier",
+    "rarity": 5,
+    "enemy": "exoswarm-core",
+    "forgery": "spliced-string",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 10000,
+        "exoswarm-core-0": 6
+      },
+      {
+        "shell": 20000,
+        "spliced-string-0": 6,
+        "exoswarm-core-1": 6
+      },
+      {
+        "shell": 40000,
+        "spliced-string-1": 8,
+        "exoswarm-core-2": 4
+      },
+      {
+        "shell": 60000,
+        "spliced-string-2": 6,
+        "exoswarm-core-2": 6
+      },
+      {
+        "shell": 80000,
+        "spliced-string-3": 8,
+        "exoswarm-core-3": 4
+      },
+      {
+        "shell": 120000,
+        "spliced-string-3": 12,
+        "exoswarm-core-3": 8
+      }
+    ],
+    "image": "./assets/weapons/21050076.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21050076",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "freeze-frame",
+    "name": "Freeze Frame",
+    "type": "Rectifier",
+    "rarity": 5,
+    "enemy": "exoswarm-core",
+    "forgery": "spliced-string",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 10000,
+        "exoswarm-core-0": 6
+      },
+      {
+        "shell": 20000,
+        "spliced-string-0": 6,
+        "exoswarm-core-1": 6
+      },
+      {
+        "shell": 40000,
+        "spliced-string-1": 8,
+        "exoswarm-core-2": 4
+      },
+      {
+        "shell": 60000,
+        "spliced-string-2": 6,
+        "exoswarm-core-2": 6
+      },
+      {
+        "shell": 80000,
+        "spliced-string-3": 8,
+        "exoswarm-core-3": 4
+      },
+      {
+        "shell": 120000,
+        "spliced-string-3": 12,
+        "exoswarm-core-3": 8
+      }
+    ],
+    "image": "./assets/weapons/21050086.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21050086",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "lethean-elegy",
+    "name": "Lethean Elegy",
+    "type": "Rectifier",
+    "rarity": 5,
+    "enemy": "ring",
+    "forgery": "helix",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 10000,
+        "ring-0": 6
+      },
+      {
+        "shell": 20000,
+        "helix-0": 6,
+        "ring-1": 6
+      },
+      {
+        "shell": 40000,
+        "helix-1": 8,
+        "ring-2": 4
+      },
+      {
+        "shell": 60000,
+        "helix-2": 6,
+        "ring-2": 6
+      },
+      {
+        "shell": 80000,
+        "helix-3": 8,
+        "ring-3": 4
+      },
+      {
+        "shell": 120000,
+        "helix-3": 12,
+        "ring-3": 8
+      }
+    ],
+    "image": "./assets/weapons/21050066.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21050066",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "luminous-hymn",
+    "name": "Luminous Hymn",
+    "type": "Rectifier",
+    "rarity": 5,
+    "enemy": "ring",
+    "forgery": "helix",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 10000,
+        "ring-0": 6
+      },
+      {
+        "shell": 20000,
+        "helix-0": 6,
+        "ring-1": 6
+      },
+      {
+        "shell": 40000,
+        "helix-1": 8,
+        "ring-2": 4
+      },
+      {
+        "shell": 60000,
+        "helix-2": 6,
+        "ring-2": 6
+      },
+      {
+        "shell": 80000,
+        "helix-3": 8,
+        "ring-3": 4
+      },
+      {
+        "shell": 120000,
+        "helix-3": 12,
+        "ring-3": 8
+      }
+    ],
+    "image": "./assets/weapons/21050046.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21050046",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "rime-draped-sprouts",
+    "name": "Rime-Draped Sprouts",
+    "type": "Rectifier",
+    "rarity": 5,
+    "enemy": "ring",
+    "forgery": "helix",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 10000,
+        "ring-0": 6
+      },
+      {
+        "shell": 20000,
+        "helix-0": 6,
+        "ring-1": 6
+      },
+      {
+        "shell": 40000,
+        "helix-1": 8,
+        "ring-2": 4
+      },
+      {
+        "shell": 60000,
+        "helix-2": 6,
+        "ring-2": 6
+      },
+      {
+        "shell": 80000,
+        "helix-3": 8,
+        "ring-3": 4
+      },
+      {
+        "shell": 120000,
+        "helix-3": 12,
+        "ring-3": 8
+      }
+    ],
+    "image": "./assets/weapons/21050026.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21050026",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "stellar-symphony",
+    "name": "Stellar Symphony",
+    "type": "Rectifier",
+    "rarity": 5,
+    "enemy": "ring",
+    "forgery": "helix",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 10000,
+        "ring-0": 6
+      },
+      {
+        "shell": 20000,
+        "helix-0": 6,
+        "ring-1": 6
+      },
+      {
+        "shell": 40000,
+        "helix-1": 8,
+        "ring-2": 4
+      },
+      {
+        "shell": 60000,
+        "helix-2": 6,
+        "ring-2": 6
+      },
+      {
+        "shell": 80000,
+        "helix-3": 8,
+        "ring-3": 4
+      },
+      {
+        "shell": 120000,
+        "helix-3": 12,
+        "ring-3": 8
+      }
+    ],
+    "image": "./assets/weapons/21050036.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21050036",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "stringmaster",
+    "name": "Stringmaster",
+    "type": "Rectifier",
+    "forgery": "helix",
+    "enemy": "ring",
+    "rarity": 5,
+    "sources": [
+      "stringmaster",
+      "stringmaster-cost",
+      "weapon-skill-materials",
+      "weapon-21050016",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true,
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 10000,
+        "ring-0": 6
+      },
+      {
+        "shell": 20000,
+        "helix-0": 6,
+        "ring-1": 6
+      },
+      {
+        "shell": 40000,
+        "helix-1": 8,
+        "ring-2": 4
+      },
+      {
+        "shell": 60000,
+        "helix-2": 6,
+        "ring-2": 6
+      },
+      {
+        "shell": 80000,
+        "helix-3": 8,
+        "ring-3": 4
+      },
+      {
+        "shell": 120000,
+        "helix-3": 12,
+        "ring-3": 8
+      }
+    ],
+    "image": "./assets/weapons/21050016.webp"
+  },
+  {
+    "id": "whispers-of-sirens",
+    "name": "Whispers of Sirens",
+    "type": "Rectifier",
+    "rarity": 5,
+    "enemy": "ring",
+    "forgery": "helix",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 10000,
+        "ring-0": 6
+      },
+      {
+        "shell": 20000,
+        "helix-0": 6,
+        "ring-1": 6
+      },
+      {
+        "shell": 40000,
+        "helix-1": 8,
+        "ring-2": 4
+      },
+      {
+        "shell": 60000,
+        "helix-2": 6,
+        "ring-2": 6
+      },
+      {
+        "shell": 80000,
+        "helix-3": 8,
+        "ring-3": 4
+      },
+      {
+        "shell": 120000,
+        "helix-3": 12,
+        "ring-3": 8
+      }
+    ],
+    "image": "./assets/weapons/21050056.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21050056",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "augment",
+    "name": "Augment",
+    "type": "Rectifier",
+    "rarity": 4,
+    "enemy": "ring",
+    "forgery": "helix",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 8000,
+        "ring-0": 5
+      },
+      {
+        "shell": 16000,
+        "helix-0": 5,
+        "ring-1": 5
+      },
+      {
+        "shell": 32000,
+        "helix-1": 7,
+        "ring-2": 4
+      },
+      {
+        "shell": 48000,
+        "helix-2": 5,
+        "ring-2": 5
+      },
+      {
+        "shell": 64000,
+        "helix-3": 7,
+        "ring-3": 4
+      },
+      {
+        "shell": 96000,
+        "helix-3": 10,
+        "ring-3": 7
+      }
+    ],
+    "image": "./assets/weapons/21050074.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21050074",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "call-of-the-abyss",
+    "name": "Call of the Abyss",
+    "type": "Rectifier",
+    "rarity": 4,
+    "enemy": "ring",
+    "forgery": "helix",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 8000,
+        "ring-0": 5
+      },
+      {
+        "shell": 16000,
+        "helix-0": 5,
+        "ring-1": 5
+      },
+      {
+        "shell": 32000,
+        "helix-1": 7,
+        "ring-2": 4
+      },
+      {
+        "shell": 48000,
+        "helix-2": 5,
+        "ring-2": 5
+      },
+      {
+        "shell": 64000,
+        "helix-3": 7,
+        "ring-3": 4
+      },
+      {
+        "shell": 96000,
+        "helix-3": 10,
+        "ring-3": 7
+      }
+    ],
+    "image": "./assets/weapons/21050017.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21050017",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "comet-flare",
+    "name": "Comet Flare",
+    "type": "Rectifier",
+    "rarity": 4,
+    "enemy": "ring",
+    "forgery": "helix",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 8000,
+        "ring-0": 5
+      },
+      {
+        "shell": 16000,
+        "helix-0": 5,
+        "ring-1": 5
+      },
+      {
+        "shell": 32000,
+        "helix-1": 7,
+        "ring-2": 4
+      },
+      {
+        "shell": 48000,
+        "helix-2": 5,
+        "ring-2": 5
+      },
+      {
+        "shell": 64000,
+        "helix-3": 7,
+        "ring-3": 4
+      },
+      {
+        "shell": 96000,
+        "helix-3": 10,
+        "ring-3": 7
+      }
+    ],
+    "image": "./assets/weapons/21050064.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21050064",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "fusion-accretion",
+    "name": "Fusion Accretion",
+    "type": "Rectifier",
+    "rarity": 4,
+    "enemy": "ring",
+    "forgery": "helix",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 8000,
+        "ring-0": 5
+      },
+      {
+        "shell": 16000,
+        "helix-0": 5,
+        "ring-1": 5
+      },
+      {
+        "shell": 32000,
+        "helix-1": 7,
+        "ring-2": 4
+      },
+      {
+        "shell": 48000,
+        "helix-2": 5,
+        "ring-2": 5
+      },
+      {
+        "shell": 64000,
+        "helix-3": 7,
+        "ring-3": 4
+      },
+      {
+        "shell": 96000,
+        "helix-3": 10,
+        "ring-3": 7
+      }
+    ],
+    "image": "./assets/weapons/21050084.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21050084",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "jinzhou-keeper",
+    "name": "Jinzhou Keeper",
+    "type": "Rectifier",
+    "rarity": 4,
+    "enemy": "ring",
+    "forgery": "helix",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 8000,
+        "ring-0": 5
+      },
+      {
+        "shell": 16000,
+        "helix-0": 5,
+        "ring-1": 5
+      },
+      {
+        "shell": 32000,
+        "helix-1": 7,
+        "ring-2": 4
+      },
+      {
+        "shell": 48000,
+        "helix-2": 5,
+        "ring-2": 5
+      },
+      {
+        "shell": 64000,
+        "helix-3": 7,
+        "ring-3": 4
+      },
+      {
+        "shell": 96000,
+        "helix-3": 10,
+        "ring-3": 7
+      }
+    ],
+    "image": "./assets/weapons/21050044.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21050044",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "ocean-s-gift",
+    "name": "Ocean's Gift",
+    "type": "Rectifier",
+    "rarity": 4,
+    "enemy": "ring",
+    "forgery": "helix",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 8000,
+        "ring-0": 5
+      },
+      {
+        "shell": 16000,
+        "helix-0": 5,
+        "ring-1": 5
+      },
+      {
+        "shell": 32000,
+        "helix-1": 7,
+        "ring-2": 4
+      },
+      {
+        "shell": 48000,
+        "helix-2": 5,
+        "ring-2": 5
+      },
+      {
+        "shell": 64000,
+        "helix-3": 7,
+        "ring-3": 4
+      },
+      {
+        "shell": 96000,
+        "helix-3": 10,
+        "ring-3": 7
+      }
+    ],
+    "image": "./assets/weapons/21050027.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21050027",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "radiant-dawn",
+    "name": "Radiant Dawn",
+    "type": "Rectifier",
+    "rarity": 4,
+    "enemy": "ring",
+    "forgery": "helix",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 8000,
+        "ring-0": 5
+      },
+      {
+        "shell": 16000,
+        "helix-0": 5,
+        "ring-1": 5
+      },
+      {
+        "shell": 32000,
+        "helix-1": 7,
+        "ring-2": 4
+      },
+      {
+        "shell": 48000,
+        "helix-2": 5,
+        "ring-2": 5
+      },
+      {
+        "shell": 64000,
+        "helix-3": 7,
+        "ring-3": 4
+      },
+      {
+        "shell": 96000,
+        "helix-3": 10,
+        "ring-3": 7
+      }
+    ],
+    "image": "./assets/weapons/21050104.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21050104",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "rectifier-25",
+    "name": "Rectifier#25",
+    "type": "Rectifier",
+    "rarity": 4,
+    "enemy": "ring",
+    "forgery": "helix",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 8000,
+        "ring-0": 5
+      },
+      {
+        "shell": 16000,
+        "helix-0": 5,
+        "ring-1": 5
+      },
+      {
+        "shell": 32000,
+        "helix-1": 7,
+        "ring-2": 4
+      },
+      {
+        "shell": 48000,
+        "helix-2": 5,
+        "ring-2": 5
+      },
+      {
+        "shell": 64000,
+        "helix-3": 7,
+        "ring-3": 4
+      },
+      {
+        "shell": 96000,
+        "helix-3": 10,
+        "ring-3": 7
+      }
+    ],
+    "image": "./assets/weapons/21050034.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21050034",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "variation",
+    "name": "Variation",
+    "type": "Rectifier",
+    "rarity": 4,
+    "enemy": "ring",
+    "forgery": "helix",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 8000,
+        "ring-0": 5
+      },
+      {
+        "shell": 16000,
+        "helix-0": 5,
+        "ring-1": 5
+      },
+      {
+        "shell": 32000,
+        "helix-1": 7,
+        "ring-2": 4
+      },
+      {
+        "shell": 48000,
+        "helix-2": 5,
+        "ring-2": 5
+      },
+      {
+        "shell": 64000,
+        "helix-3": 7,
+        "ring-3": 4
+      },
+      {
+        "shell": 96000,
+        "helix-3": 10,
+        "ring-3": 7
+      }
+    ],
+    "image": "./assets/weapons/21050024.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21050024",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "waltz-in-masquerade",
+    "name": "Waltz in Masquerade",
+    "type": "Rectifier",
+    "rarity": 4,
+    "enemy": "ring",
+    "forgery": "helix",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 8000,
+        "ring-0": 5
+      },
+      {
+        "shell": 16000,
+        "helix-0": 5,
+        "ring-1": 5
+      },
+      {
+        "shell": 32000,
+        "helix-1": 7,
+        "ring-2": 4
+      },
+      {
+        "shell": 48000,
+        "helix-2": 5,
+        "ring-2": 5
+      },
+      {
+        "shell": 64000,
+        "helix-3": 7,
+        "ring-3": 4
+      },
+      {
+        "shell": 96000,
+        "helix-3": 10,
+        "ring-3": 7
+      }
+    ],
+    "image": "./assets/weapons/21050094.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21050094",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "guardian-rectifier",
+    "name": "Guardian Rectifier",
+    "type": "Rectifier",
+    "rarity": 3,
+    "enemy": "ring",
+    "forgery": "helix",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 6000,
+        "ring-0": 4
+      },
+      {
+        "shell": 12000,
+        "helix-0": 4,
+        "ring-1": 4
+      },
+      {
+        "shell": 24000,
+        "helix-1": 5,
+        "ring-2": 3
+      },
+      {
+        "shell": 36000,
+        "helix-2": 4,
+        "ring-2": 4
+      },
+      {
+        "shell": 48000,
+        "helix-3": 5,
+        "ring-3": 3
+      },
+      {
+        "shell": 72000,
+        "helix-3": 8,
+        "ring-3": 5
+      }
+    ],
+    "image": "./assets/weapons/21050053.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21050053",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "originite-type-v",
+    "name": "Originite: Type V",
+    "type": "Rectifier",
+    "rarity": 3,
+    "enemy": "ring",
+    "forgery": "helix",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 6000,
+        "ring-0": 4
+      },
+      {
+        "shell": 12000,
+        "helix-0": 4,
+        "ring-1": 4
+      },
+      {
+        "shell": 24000,
+        "helix-1": 5,
+        "ring-2": 3
+      },
+      {
+        "shell": 36000,
+        "helix-2": 4,
+        "ring-2": 4
+      },
+      {
+        "shell": 48000,
+        "helix-3": 5,
+        "ring-3": 3
+      },
+      {
+        "shell": 72000,
+        "helix-3": 8,
+        "ring-3": 5
+      }
+    ],
+    "image": "./assets/weapons/21050023.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21050023",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "rectifier-of-night",
+    "name": "Rectifier of Night",
+    "type": "Rectifier",
+    "rarity": 3,
+    "enemy": "ring",
+    "forgery": "helix",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 6000,
+        "ring-0": 4
+      },
+      {
+        "shell": 12000,
+        "helix-0": 4,
+        "ring-1": 4
+      },
+      {
+        "shell": 24000,
+        "helix-1": 5,
+        "ring-2": 3
+      },
+      {
+        "shell": 36000,
+        "helix-2": 4,
+        "ring-2": 4
+      },
+      {
+        "shell": 48000,
+        "helix-3": 5,
+        "ring-3": 3
+      },
+      {
+        "shell": 72000,
+        "helix-3": 8,
+        "ring-3": 5
+      }
+    ],
+    "image": "./assets/weapons/21050013.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21050013",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "rectifier-of-voyager",
+    "name": "Rectifier of Voyager",
+    "type": "Rectifier",
+    "rarity": 3,
+    "enemy": "ring",
+    "forgery": "helix",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 6000,
+        "ring-0": 4
+      },
+      {
+        "shell": 12000,
+        "helix-0": 4,
+        "ring-1": 4
+      },
+      {
+        "shell": 24000,
+        "helix-1": 5,
+        "ring-2": 3
+      },
+      {
+        "shell": 36000,
+        "helix-2": 4,
+        "ring-2": 4
+      },
+      {
+        "shell": 48000,
+        "helix-3": 5,
+        "ring-3": 3
+      },
+      {
+        "shell": 72000,
+        "helix-3": 8,
+        "ring-3": 5
+      }
+    ],
+    "image": "./assets/weapons/21050043.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21050043",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "tyro-rectifier",
+    "name": "Tyro Rectifier",
+    "type": "Rectifier",
+    "rarity": 2,
+    "enemy": "ring",
+    "forgery": "helix",
+    "maxLevel": 70,
+    "maxAscension": 4,
+    "ascensionCosts": [
+      {
+        "shell": 4000,
+        "ring-0": 3
+      },
+      {
+        "shell": 8000,
+        "helix-0": 3,
+        "ring-1": 3
+      },
+      {
+        "shell": 16000,
+        "helix-1": 4,
+        "ring-2": 2
+      },
+      {
+        "shell": 24000,
+        "helix-2": 3,
+        "ring-2": 3
+      }
+    ],
+    "image": "./assets/weapons/21050012.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21050012",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "training-rectifier",
+    "name": "Training Rectifier",
+    "type": "Rectifier",
+    "rarity": 1,
+    "enemy": "ring",
+    "forgery": "helix",
+    "maxLevel": 70,
+    "maxAscension": 4,
+    "ascensionCosts": [
+      {
+        "shell": 2000,
+        "ring-0": 2
+      },
+      {
+        "shell": 4000,
+        "helix-0": 2,
+        "ring-1": 2
+      },
+      {
+        "shell": 8000,
+        "helix-1": 2,
+        "ring-2": 1
+      },
+      {
+        "shell": 12000,
+        "helix-2": 2,
+        "ring-2": 2
+      }
+    ],
+    "image": "./assets/weapons/21050011.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21050011",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  }
+]

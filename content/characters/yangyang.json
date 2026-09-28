@@ -1,0 +1,27 @@
+{
+  "id": "yangyang",
+  "name": "Yangyang",
+  "element": "Aero",
+  "weapon": "Sword",
+  "rarity": 4,
+  "enemy": "ring",
+  "forgery": "drip",
+  "flower": "wintry",
+  "boss": "rock",
+  "weekly": "destruction",
+  "image": "./assets/characters/icons/yangyang.webp",
+  "sources": [
+    "assets-yangyang",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/yangyang.webp",
+    "banner": "./assets/characters/cards/yangyang.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_1_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Yangyang/Gallery",
+    "card": "./assets/characters/cards/yangyang.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_yangyang_UI.webp"
+  }
+}

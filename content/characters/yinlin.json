@@ -1,0 +1,32 @@
+{
+  "id": "yinlin",
+  "name": "Yinlin",
+  "element": "Electro",
+  "weapon": "Rectifier",
+  "rarity": 5,
+  "enemy": "whisper",
+  "forgery": "helix",
+  "flower": "coriolus",
+  "boss": "abomination",
+  "weekly": "feather",
+  "image": "./assets/characters/icons/yinlin.webp",
+  "sources": [
+    "yinlin",
+    "yinlin-cost",
+    "assets-yinlin",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/yinlin.webp",
+    "banner": "./assets/characters/splash/yinlin.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_17_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Yinlin/Gallery",
+    "card": "./assets/characters/cards/yinlin.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_yinlin_UI.webp",
+    "bannerSource": "https://static.wikia.nocookie.net/wutheringwaves/images/5/5f/Yinlin_Splash_Art.png/revision/latest?cb=20241001062635",
+    "bannerKind": "splash",
+    "bannerPosition": "50% 45%"
+  }
+}

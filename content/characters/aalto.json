@@ -1,0 +1,27 @@
+{
+  "id": "aalto",
+  "name": "Aalto",
+  "element": "Aero",
+  "weapon": "Pistols",
+  "rarity": 4,
+  "enemy": "howler",
+  "forgery": "impure-phlogiston",
+  "flower": "wintry",
+  "boss": "rock",
+  "weekly": "bell",
+  "image": "./assets/characters/icons/aalto.webp",
+  "sources": [
+    "assets-aalto",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/aalto.webp",
+    "banner": "./assets/characters/cards/aalto.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_12_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Aalto/Gallery",
+    "card": "./assets/characters/cards/aalto.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_qiushui_UI.webp"
+  }
+}

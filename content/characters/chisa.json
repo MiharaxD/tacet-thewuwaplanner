@@ -1,0 +1,30 @@
+{
+  "id": "chisa",
+  "name": "Chisa",
+  "element": "Havoc",
+  "weapon": "Broadblade",
+  "rarity": 5,
+  "enemy": "polygon-core",
+  "forgery": "waveworn",
+  "flower": "summer-flower",
+  "boss": "abyssal-husk",
+  "weekly": "when-irises-bloom",
+  "image": "./assets/characters/icons/chisa.webp",
+  "sources": [
+    "assets-chisa",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/chisa.webp",
+    "banner": "./assets/characters/splash/chisa.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_57_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Chisa/Gallery",
+    "card": "./assets/characters/cards/chisa.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Qianxiao_UI.webp",
+    "bannerSource": "https://static.wikia.nocookie.net/wutheringwaves/images/2/2f/Chisa_Splash_Art.png/revision/latest?cb=20251118042706",
+    "bannerKind": "splash",
+    "bannerPosition": "50% 45%"
+  }
+}

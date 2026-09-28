@@ -1,0 +1,27 @@
+{
+  "id": "danjin",
+  "name": "Danjin",
+  "element": "Havoc",
+  "weapon": "Sword",
+  "rarity": 4,
+  "enemy": "ring",
+  "forgery": "drip",
+  "flower": "poppy",
+  "boss": "strife-tacet-core",
+  "weekly": "feather",
+  "image": "./assets/characters/icons/danjin.webp",
+  "sources": [
+    "assets-danjin",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/danjin.webp",
+    "banner": "./assets/characters/cards/danjin.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_10_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Danjin/Gallery",
+    "card": "./assets/characters/cards/danjin.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_micai_UI.webp"
+  }
+}

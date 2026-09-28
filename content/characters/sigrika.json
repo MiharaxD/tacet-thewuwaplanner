@@ -1,0 +1,30 @@
+{
+  "id": "sigrika",
+  "name": "Sigrika",
+  "element": "Aero",
+  "weapon": "Gauntlets",
+  "rarity": 5,
+  "enemy": "fractured-exoswarm-pendant",
+  "forgery": "waveworn-shard",
+  "flower": "arithmetic-shell",
+  "boss": "our-choice",
+  "weekly": "gold-in-memory",
+  "image": "./assets/characters/icons/sigrika.webp",
+  "sources": [
+    "assets-sigrika",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/sigrika.webp",
+    "banner": "./assets/characters/splash/sigrika.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_65_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Sigrika/Gallery",
+    "card": "./assets/characters/cards/sigrika.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_xigelika_UI.webp",
+    "bannerSource": "https://static.wikia.nocookie.net/wutheringwaves/images/6/67/Sigrika_Splash_Art.png/revision/latest?cb=20260322021340",
+    "bannerKind": "splash",
+    "bannerPosition": "50% 45%"
+  }
+}

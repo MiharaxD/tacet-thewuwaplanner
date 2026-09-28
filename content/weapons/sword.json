@@ -1,0 +1,1232 @@
+[
+  {
+    "id": "azure-oath",
+    "name": "Azure Oath",
+    "type": "Sword",
+    "rarity": 5,
+    "enemy": "mech-core",
+    "forgery": "broken-wing-polarizer",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 10000,
+        "mech-core-0": 6
+      },
+      {
+        "shell": 20000,
+        "broken-wing-polarizer-0": 6,
+        "mech-core-1": 6
+      },
+      {
+        "shell": 40000,
+        "broken-wing-polarizer-1": 8,
+        "mech-core-2": 4
+      },
+      {
+        "shell": 60000,
+        "broken-wing-polarizer-2": 6,
+        "mech-core-2": 6
+      },
+      {
+        "shell": 80000,
+        "broken-wing-polarizer-3": 8,
+        "mech-core-3": 4
+      },
+      {
+        "shell": 120000,
+        "broken-wing-polarizer-3": 12,
+        "mech-core-3": 8
+      }
+    ],
+    "image": "./assets/weapons/21020096.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21020096",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "blazing-brilliance",
+    "name": "Blazing Brilliance",
+    "type": "Sword",
+    "rarity": 5,
+    "enemy": "howler",
+    "forgery": "drip",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 10000,
+        "howler-0": 6
+      },
+      {
+        "shell": 20000,
+        "drip-0": 6,
+        "howler-1": 6
+      },
+      {
+        "shell": 40000,
+        "drip-1": 8,
+        "howler-2": 4
+      },
+      {
+        "shell": 60000,
+        "drip-2": 6,
+        "howler-2": 6
+      },
+      {
+        "shell": 80000,
+        "drip-3": 8,
+        "howler-3": 4
+      },
+      {
+        "shell": 120000,
+        "drip-3": 12,
+        "howler-3": 8
+      }
+    ],
+    "image": "./assets/weapons/21020016.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21020016",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "bloodpact-s-pledge",
+    "name": "Bloodpact's Pledge",
+    "type": "Sword",
+    "rarity": 5,
+    "enemy": "howler",
+    "forgery": "drip",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 10000,
+        "howler-0": 6
+      },
+      {
+        "shell": 20000,
+        "drip-0": 6,
+        "howler-1": 6
+      },
+      {
+        "shell": 40000,
+        "drip-1": 8,
+        "howler-2": 4
+      },
+      {
+        "shell": 60000,
+        "drip-2": 6,
+        "howler-2": 6
+      },
+      {
+        "shell": 80000,
+        "drip-3": 8,
+        "howler-3": 4
+      },
+      {
+        "shell": 120000,
+        "drip-3": 12,
+        "howler-3": 8
+      }
+    ],
+    "image": "./assets/weapons/21020046.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21020046",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "defier-s-thorn",
+    "name": "Defier's Thorn",
+    "type": "Sword",
+    "rarity": 5,
+    "enemy": "howler",
+    "forgery": "drip",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 10000,
+        "howler-0": 6
+      },
+      {
+        "shell": 20000,
+        "drip-0": 6,
+        "howler-1": 6
+      },
+      {
+        "shell": 40000,
+        "drip-1": 8,
+        "howler-2": 4
+      },
+      {
+        "shell": 60000,
+        "drip-2": 6,
+        "howler-2": 6
+      },
+      {
+        "shell": 80000,
+        "drip-3": 8,
+        "howler-3": 4
+      },
+      {
+        "shell": 120000,
+        "drip-3": 12,
+        "howler-3": 8
+      }
+    ],
+    "image": "./assets/weapons/21020056.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21020056",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "emerald",
+    "name": "Emerald of Genesis",
+    "type": "Sword",
+    "forgery": "drip",
+    "enemy": "howler",
+    "rarity": 5,
+    "sources": [
+      "emerald",
+      "emerald-cost",
+      "weapon-skill-materials",
+      "weapon-21020015",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true,
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 10000,
+        "howler-0": 6
+      },
+      {
+        "shell": 20000,
+        "drip-0": 6,
+        "howler-1": 6
+      },
+      {
+        "shell": 40000,
+        "drip-1": 8,
+        "howler-2": 4
+      },
+      {
+        "shell": 60000,
+        "drip-2": 6,
+        "howler-2": 6
+      },
+      {
+        "shell": 80000,
+        "drip-3": 8,
+        "howler-3": 4
+      },
+      {
+        "shell": 120000,
+        "drip-3": 12,
+        "howler-3": 8
+      }
+    ],
+    "image": "./assets/weapons/21020015.webp"
+  },
+  {
+    "id": "emerald-sentence",
+    "name": "Emerald Sentence",
+    "type": "Sword",
+    "rarity": 5,
+    "enemy": "howler",
+    "forgery": "drip",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 10000,
+        "howler-0": 6
+      },
+      {
+        "shell": 20000,
+        "drip-0": 6,
+        "howler-1": 6
+      },
+      {
+        "shell": 40000,
+        "drip-1": 8,
+        "howler-2": 4
+      },
+      {
+        "shell": 60000,
+        "drip-2": 6,
+        "howler-2": 6
+      },
+      {
+        "shell": 80000,
+        "drip-3": 8,
+        "howler-3": 4
+      },
+      {
+        "shell": 120000,
+        "drip-3": 12,
+        "howler-3": 8
+      }
+    ],
+    "image": "./assets/weapons/21020066.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21020066",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "everbright-polestar",
+    "name": "Everbright Polestar",
+    "type": "Sword",
+    "rarity": 5,
+    "enemy": "mech-core",
+    "forgery": "broken-wing-polarizer",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 10000,
+        "mech-core-0": 6
+      },
+      {
+        "shell": 20000,
+        "broken-wing-polarizer-0": 6,
+        "mech-core-1": 6
+      },
+      {
+        "shell": 40000,
+        "broken-wing-polarizer-1": 8,
+        "mech-core-2": 4
+      },
+      {
+        "shell": 60000,
+        "broken-wing-polarizer-2": 6,
+        "mech-core-2": 6
+      },
+      {
+        "shell": 80000,
+        "broken-wing-polarizer-3": 8,
+        "mech-core-3": 4
+      },
+      {
+        "shell": 120000,
+        "broken-wing-polarizer-3": 12,
+        "mech-core-3": 8
+      }
+    ],
+    "image": "./assets/weapons/21020076.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21020076",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "frostburn",
+    "name": "Frostburn",
+    "type": "Sword",
+    "rarity": 5,
+    "enemy": "mech-core",
+    "forgery": "broken-wing-polarizer",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 10000,
+        "mech-core-0": 6
+      },
+      {
+        "shell": 20000,
+        "broken-wing-polarizer-0": 6,
+        "mech-core-1": 6
+      },
+      {
+        "shell": 40000,
+        "broken-wing-polarizer-1": 8,
+        "mech-core-2": 4
+      },
+      {
+        "shell": 60000,
+        "broken-wing-polarizer-2": 6,
+        "mech-core-2": 6
+      },
+      {
+        "shell": 80000,
+        "broken-wing-polarizer-3": 8,
+        "mech-core-3": 4
+      },
+      {
+        "shell": 120000,
+        "broken-wing-polarizer-3": 12,
+        "mech-core-3": 8
+      }
+    ],
+    "image": "./assets/weapons/21020086.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21020086",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "glint-of-clouds",
+    "name": "Glint of Clouds",
+    "type": "Sword",
+    "rarity": 5,
+    "enemy": "mech-core",
+    "forgery": "broken-wing-polarizer",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 10000,
+        "mech-core-0": 6
+      },
+      {
+        "shell": 20000,
+        "broken-wing-polarizer-0": 6,
+        "mech-core-1": 6
+      },
+      {
+        "shell": 40000,
+        "broken-wing-polarizer-1": 8,
+        "mech-core-2": 4
+      },
+      {
+        "shell": 60000,
+        "broken-wing-polarizer-2": 6,
+        "mech-core-2": 6
+      },
+      {
+        "shell": 80000,
+        "broken-wing-polarizer-3": 8,
+        "mech-core-3": 4
+      },
+      {
+        "shell": 120000,
+        "broken-wing-polarizer-3": 12,
+        "mech-core-3": 8
+      }
+    ],
+    "image": "./assets/weapons/21020106.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21020106",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "red-spring",
+    "name": "Red Spring",
+    "type": "Sword",
+    "rarity": 5,
+    "enemy": "howler",
+    "forgery": "drip",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 10000,
+        "howler-0": 6
+      },
+      {
+        "shell": 20000,
+        "drip-0": 6,
+        "howler-1": 6
+      },
+      {
+        "shell": 40000,
+        "drip-1": 8,
+        "howler-2": 4
+      },
+      {
+        "shell": 60000,
+        "drip-2": 6,
+        "howler-2": 6
+      },
+      {
+        "shell": 80000,
+        "drip-3": 8,
+        "howler-3": 4
+      },
+      {
+        "shell": 120000,
+        "drip-3": 12,
+        "howler-3": 8
+      }
+    ],
+    "image": "./assets/weapons/21020026.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21020026",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "unflickering-valor",
+    "name": "Unflickering Valor",
+    "type": "Sword",
+    "rarity": 5,
+    "enemy": "howler",
+    "forgery": "drip",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 10000,
+        "howler-0": 6
+      },
+      {
+        "shell": 20000,
+        "drip-0": 6,
+        "howler-1": 6
+      },
+      {
+        "shell": 40000,
+        "drip-1": 8,
+        "howler-2": 4
+      },
+      {
+        "shell": 60000,
+        "drip-2": 6,
+        "howler-2": 6
+      },
+      {
+        "shell": 80000,
+        "drip-3": 8,
+        "howler-3": 4
+      },
+      {
+        "shell": 120000,
+        "drip-3": 12,
+        "howler-3": 8
+      }
+    ],
+    "image": "./assets/weapons/21020036.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21020036",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "commando-of-conviction",
+    "name": "Commando of Conviction",
+    "type": "Sword",
+    "rarity": 4,
+    "enemy": "howler",
+    "forgery": "drip",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 8000,
+        "howler-0": 5
+      },
+      {
+        "shell": 16000,
+        "drip-0": 5,
+        "howler-1": 5
+      },
+      {
+        "shell": 32000,
+        "drip-1": 7,
+        "howler-2": 4
+      },
+      {
+        "shell": 48000,
+        "drip-2": 5,
+        "howler-2": 5
+      },
+      {
+        "shell": 64000,
+        "drip-3": 7,
+        "howler-3": 4
+      },
+      {
+        "shell": 96000,
+        "drip-3": 10,
+        "howler-3": 7
+      }
+    ],
+    "image": "./assets/weapons/21020044.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21020044",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "endless-collapse",
+    "name": "Endless Collapse",
+    "type": "Sword",
+    "rarity": 4,
+    "enemy": "howler",
+    "forgery": "drip",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 8000,
+        "howler-0": 5
+      },
+      {
+        "shell": 16000,
+        "drip-0": 5,
+        "howler-1": 5
+      },
+      {
+        "shell": 32000,
+        "drip-1": 7,
+        "howler-2": 4
+      },
+      {
+        "shell": 48000,
+        "drip-2": 5,
+        "howler-2": 5
+      },
+      {
+        "shell": 64000,
+        "drip-3": 7,
+        "howler-3": 4
+      },
+      {
+        "shell": 96000,
+        "drip-3": 10,
+        "howler-3": 7
+      }
+    ],
+    "image": "./assets/weapons/21020084.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21020084",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "fables-of-wisdom",
+    "name": "Fables of Wisdom",
+    "type": "Sword",
+    "rarity": 4,
+    "enemy": "howler",
+    "forgery": "drip",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 8000,
+        "howler-0": 5
+      },
+      {
+        "shell": 16000,
+        "drip-0": 5,
+        "howler-1": 5
+      },
+      {
+        "shell": 32000,
+        "drip-1": 7,
+        "howler-2": 4
+      },
+      {
+        "shell": 48000,
+        "drip-2": 5,
+        "howler-2": 5
+      },
+      {
+        "shell": 64000,
+        "drip-3": 7,
+        "howler-3": 4
+      },
+      {
+        "shell": 96000,
+        "drip-3": 10,
+        "howler-3": 7
+      }
+    ],
+    "image": "./assets/weapons/21020094.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21020094",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "feather-edge",
+    "name": "Feather Edge",
+    "type": "Sword",
+    "rarity": 4,
+    "enemy": "howler",
+    "forgery": "drip",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 8000,
+        "howler-0": 5
+      },
+      {
+        "shell": 16000,
+        "drip-0": 5,
+        "howler-1": 5
+      },
+      {
+        "shell": 32000,
+        "drip-1": 7,
+        "howler-2": 4
+      },
+      {
+        "shell": 48000,
+        "drip-2": 5,
+        "howler-2": 5
+      },
+      {
+        "shell": 64000,
+        "drip-3": 7,
+        "howler-3": 4
+      },
+      {
+        "shell": 96000,
+        "drip-3": 10,
+        "howler-3": 7
+      }
+    ],
+    "image": "./assets/weapons/21020104.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21020104",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "lumingloss",
+    "name": "Lumingloss",
+    "type": "Sword",
+    "rarity": 4,
+    "enemy": "howler",
+    "forgery": "drip",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 8000,
+        "howler-0": 5
+      },
+      {
+        "shell": 16000,
+        "drip-0": 5,
+        "howler-1": 5
+      },
+      {
+        "shell": 32000,
+        "drip-1": 7,
+        "howler-2": 4
+      },
+      {
+        "shell": 48000,
+        "drip-2": 5,
+        "howler-2": 5
+      },
+      {
+        "shell": 64000,
+        "drip-3": 7,
+        "howler-3": 4
+      },
+      {
+        "shell": 96000,
+        "drip-3": 10,
+        "howler-3": 7
+      }
+    ],
+    "image": "./assets/weapons/21020074.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21020074",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "lunar-cutter",
+    "name": "Lunar Cutter",
+    "type": "Sword",
+    "rarity": 4,
+    "enemy": "howler",
+    "forgery": "drip",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 8000,
+        "howler-0": 5
+      },
+      {
+        "shell": 16000,
+        "drip-0": 5,
+        "howler-1": 5
+      },
+      {
+        "shell": 32000,
+        "drip-1": 7,
+        "howler-2": 4
+      },
+      {
+        "shell": 48000,
+        "drip-2": 5,
+        "howler-2": 5
+      },
+      {
+        "shell": 64000,
+        "drip-3": 7,
+        "howler-3": 4
+      },
+      {
+        "shell": 96000,
+        "drip-3": 10,
+        "howler-3": 7
+      }
+    ],
+    "image": "./assets/weapons/21020064.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21020064",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "overture",
+    "name": "Overture",
+    "type": "Sword",
+    "rarity": 4,
+    "enemy": "howler",
+    "forgery": "drip",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 8000,
+        "howler-0": 5
+      },
+      {
+        "shell": 16000,
+        "drip-0": 5,
+        "howler-1": 5
+      },
+      {
+        "shell": 32000,
+        "drip-1": 7,
+        "howler-2": 4
+      },
+      {
+        "shell": 48000,
+        "drip-2": 5,
+        "howler-2": 5
+      },
+      {
+        "shell": 64000,
+        "drip-3": 7,
+        "howler-3": 4
+      },
+      {
+        "shell": 96000,
+        "drip-3": 10,
+        "howler-3": 7
+      }
+    ],
+    "image": "./assets/weapons/21020024.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21020024",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "somnoire-anchor",
+    "name": "Somnoire Anchor",
+    "type": "Sword",
+    "rarity": 4,
+    "enemy": "howler",
+    "forgery": "drip",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 8000,
+        "howler-0": 5
+      },
+      {
+        "shell": 16000,
+        "drip-0": 5,
+        "howler-1": 5
+      },
+      {
+        "shell": 32000,
+        "drip-1": 7,
+        "howler-2": 4
+      },
+      {
+        "shell": 48000,
+        "drip-2": 5,
+        "howler-2": 5
+      },
+      {
+        "shell": 64000,
+        "drip-3": 7,
+        "howler-3": 4
+      },
+      {
+        "shell": 96000,
+        "drip-3": 10,
+        "howler-3": 7
+      }
+    ],
+    "image": "./assets/weapons/21020017.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21020017",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "sword-18",
+    "name": "Sword#18",
+    "type": "Sword",
+    "rarity": 4,
+    "enemy": "howler",
+    "forgery": "drip",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 8000,
+        "howler-0": 5
+      },
+      {
+        "shell": 16000,
+        "drip-0": 5,
+        "howler-1": 5
+      },
+      {
+        "shell": 32000,
+        "drip-1": 7,
+        "howler-2": 4
+      },
+      {
+        "shell": 48000,
+        "drip-2": 5,
+        "howler-2": 5
+      },
+      {
+        "shell": 64000,
+        "drip-3": 7,
+        "howler-3": 4
+      },
+      {
+        "shell": 96000,
+        "drip-3": 10,
+        "howler-3": 7
+      }
+    ],
+    "image": "./assets/weapons/21020034.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21020034",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "guardian-sword",
+    "name": "Guardian Sword",
+    "type": "Sword",
+    "rarity": 3,
+    "enemy": "howler",
+    "forgery": "drip",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 6000,
+        "howler-0": 4
+      },
+      {
+        "shell": 12000,
+        "drip-0": 4,
+        "howler-1": 4
+      },
+      {
+        "shell": 24000,
+        "drip-1": 5,
+        "howler-2": 3
+      },
+      {
+        "shell": 36000,
+        "drip-2": 4,
+        "howler-2": 4
+      },
+      {
+        "shell": 48000,
+        "drip-3": 5,
+        "howler-3": 3
+      },
+      {
+        "shell": 72000,
+        "drip-3": 8,
+        "howler-3": 5
+      }
+    ],
+    "image": "./assets/weapons/21020053.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21020053",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "originite-type-ii",
+    "name": "Originite: Type II",
+    "type": "Sword",
+    "rarity": 3,
+    "enemy": "howler",
+    "forgery": "drip",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 6000,
+        "howler-0": 4
+      },
+      {
+        "shell": 12000,
+        "drip-0": 4,
+        "howler-1": 4
+      },
+      {
+        "shell": 24000,
+        "drip-1": 5,
+        "howler-2": 3
+      },
+      {
+        "shell": 36000,
+        "drip-2": 4,
+        "howler-2": 4
+      },
+      {
+        "shell": 48000,
+        "drip-3": 5,
+        "howler-3": 3
+      },
+      {
+        "shell": 72000,
+        "drip-3": 8,
+        "howler-3": 5
+      }
+    ],
+    "image": "./assets/weapons/21020023.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21020023",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "sword-of-night",
+    "name": "Sword of Night",
+    "type": "Sword",
+    "rarity": 3,
+    "enemy": "howler",
+    "forgery": "drip",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 6000,
+        "howler-0": 4
+      },
+      {
+        "shell": 12000,
+        "drip-0": 4,
+        "howler-1": 4
+      },
+      {
+        "shell": 24000,
+        "drip-1": 5,
+        "howler-2": 3
+      },
+      {
+        "shell": 36000,
+        "drip-2": 4,
+        "howler-2": 4
+      },
+      {
+        "shell": 48000,
+        "drip-3": 5,
+        "howler-3": 3
+      },
+      {
+        "shell": 72000,
+        "drip-3": 8,
+        "howler-3": 5
+      }
+    ],
+    "image": "./assets/weapons/21020013.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21020013",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "sword-of-voyager",
+    "name": "Sword of Voyager",
+    "type": "Sword",
+    "rarity": 3,
+    "enemy": "howler",
+    "forgery": "drip",
+    "maxLevel": 90,
+    "maxAscension": 6,
+    "ascensionCosts": [
+      {
+        "shell": 6000,
+        "howler-0": 4
+      },
+      {
+        "shell": 12000,
+        "drip-0": 4,
+        "howler-1": 4
+      },
+      {
+        "shell": 24000,
+        "drip-1": 5,
+        "howler-2": 3
+      },
+      {
+        "shell": 36000,
+        "drip-2": 4,
+        "howler-2": 4
+      },
+      {
+        "shell": 48000,
+        "drip-3": 5,
+        "howler-3": 3
+      },
+      {
+        "shell": 72000,
+        "drip-3": 8,
+        "howler-3": 5
+      }
+    ],
+    "image": "./assets/weapons/21020043.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21020043",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "tyro-sword",
+    "name": "Tyro Sword",
+    "type": "Sword",
+    "rarity": 2,
+    "enemy": "howler",
+    "forgery": "drip",
+    "maxLevel": 70,
+    "maxAscension": 4,
+    "ascensionCosts": [
+      {
+        "shell": 4000,
+        "howler-0": 3
+      },
+      {
+        "shell": 8000,
+        "drip-0": 3,
+        "howler-1": 3
+      },
+      {
+        "shell": 16000,
+        "drip-1": 4,
+        "howler-2": 2
+      },
+      {
+        "shell": 24000,
+        "drip-2": 3,
+        "howler-2": 3
+      }
+    ],
+    "image": "./assets/weapons/21020012.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21020012",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  },
+  {
+    "id": "training-sword",
+    "name": "Training Sword",
+    "type": "Sword",
+    "rarity": 1,
+    "enemy": "howler",
+    "forgery": "drip",
+    "maxLevel": 70,
+    "maxAscension": 4,
+    "ascensionCosts": [
+      {
+        "shell": 2000,
+        "howler-0": 2
+      },
+      {
+        "shell": 4000,
+        "drip-0": 2,
+        "howler-1": 2
+      },
+      {
+        "shell": 8000,
+        "drip-1": 2,
+        "howler-2": 1
+      },
+      {
+        "shell": 12000,
+        "drip-2": 2,
+        "howler-2": 2
+      }
+    ],
+    "image": "./assets/weapons/21020011.webp",
+    "sources": [
+      "weapon-skill-materials",
+      "weapon-21020011",
+      "weapon-xp-rarities"
+    ],
+    "ascensionVerified": true
+  }
+]

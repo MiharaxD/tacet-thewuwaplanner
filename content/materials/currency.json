@@ -1,0 +1,15 @@
+[
+  {
+    "id": "shell",
+    "name": "Shell Credit",
+    "category": "Moeda",
+    "rarity": null,
+    "origin": "Simulation Training: Shell Credit",
+    "activity": "simulation",
+    "sources": [
+      "wave"
+    ],
+    "verified": true,
+    "image": "./assets/materials/shell.webp"
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "id": "ciaccona",
+  "name": "Ciaccona",
+  "element": "Aero",
+  "weapon": "Pistols",
+  "rarity": 5,
+  "enemy": "tidal-residuum",
+  "forgery": "impure-phlogiston",
+  "flower": "golden-fleece",
+  "boss": "blazing-bone",
+  "weekly": "when-irises-bloom",
+  "image": "./assets/characters/icons/ciaccona.webp",
+  "sources": [
+    "assets-ciaccona",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/ciaccona.webp",
+    "banner": "./assets/characters/splash/ciaccona.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_37_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Ciaccona/Gallery",
+    "card": "./assets/characters/cards/ciaccona.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_xiakong_UI.webp",
+    "bannerSource": "https://static.wikia.nocookie.net/wutheringwaves/images/7/74/Ciaccona_Splash_Art.png/revision/latest?cb=20250611112502",
+    "bannerKind": "splash",
+    "bannerPosition": "50% 45%"
+  }
+}

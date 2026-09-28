@@ -1,0 +1,27 @@
+{
+  "id": "baizhi",
+  "name": "Baizhi",
+  "element": "Glacio",
+  "weapon": "Rectifier",
+  "rarity": 4,
+  "enemy": "howler",
+  "forgery": "helix",
+  "flower": "lanternberry",
+  "boss": "sound",
+  "weekly": "bell",
+  "image": "./assets/characters/icons/baizhi.webp",
+  "sources": [
+    "assets-baizhi",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/baizhi.webp",
+    "banner": "./assets/characters/cards/baizhi.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_6_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Baizhi/Gallery",
+    "card": "./assets/characters/cards/baizhi.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_bailian_UI.webp"
+  }
+}

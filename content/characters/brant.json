@@ -1,0 +1,30 @@
+{
+  "id": "brant",
+  "name": "Brant",
+  "element": "Fusion",
+  "weapon": "Sword",
+  "rarity": 5,
+  "enemy": "tidal-residuum",
+  "forgery": "drip",
+  "flower": "golden-fleece",
+  "boss": "blazing-bone",
+  "weekly": "the-netherworlds-stare",
+  "image": "./assets/characters/icons/brant.webp",
+  "sources": [
+    "assets-brant",
+    "wuwa-akademiya"
+  ],
+  "ascensionVerified": true,
+  "forteVerified": true,
+  "art": {
+    "icon": "./assets/characters/icons/brant.webp",
+    "banner": "./assets/characters/splash/brant.webp",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_44_UI.webp",
+    "gallery": "https://wutheringwaves.fandom.com/wiki/Brant/Gallery",
+    "card": "./assets/characters/cards/brant.webp",
+    "artSource": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRolePile/T_IconRole_Pile_Bulante_UI.webp",
+    "bannerSource": "https://static.wikia.nocookie.net/wutheringwaves/images/c/c9/Brant_Splash_Art.png/revision/latest?cb=20250213070907",
+    "bannerKind": "splash",
+    "bannerPosition": "50% 45%"
+  }
+}

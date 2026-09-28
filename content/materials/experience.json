@@ -1,0 +1,122 @@
+[
+  {
+    "id": "potion-0",
+    "name": "Basic Resonance Potion",
+    "category": "Experiência",
+    "rarity": 2,
+    "origin": "Simulation Training: Resonance Potion",
+    "activity": "simulation",
+    "sources": [
+      "potions"
+    ],
+    "verified": true,
+    "xp": 1000,
+    "xpKind": "potion",
+    "image": "./assets/materials/potion-0.webp"
+  },
+  {
+    "id": "potion-1",
+    "name": "Medium Resonance Potion",
+    "category": "Experiência",
+    "rarity": 3,
+    "origin": "Simulation Training: Resonance Potion",
+    "activity": "simulation",
+    "sources": [
+      "potions"
+    ],
+    "verified": true,
+    "xp": 3000,
+    "xpKind": "potion",
+    "image": "./assets/materials/potion-1.webp"
+  },
+  {
+    "id": "potion-2",
+    "name": "Advanced Resonance Potion",
+    "category": "Experiência",
+    "rarity": 4,
+    "origin": "Simulation Training: Resonance Potion",
+    "activity": "simulation",
+    "sources": [
+      "potions"
+    ],
+    "verified": true,
+    "xp": 8000,
+    "xpKind": "potion",
+    "image": "./assets/materials/potion-2.webp"
+  },
+  {
+    "id": "potion-3",
+    "name": "Premium Resonance Potion",
+    "category": "Experiência",
+    "rarity": 5,
+    "origin": "Simulation Training: Resonance Potion",
+    "activity": "simulation",
+    "sources": [
+      "potions"
+    ],
+    "verified": true,
+    "xp": 20000,
+    "xpKind": "potion",
+    "image": "./assets/materials/potion-3.webp"
+  },
+  {
+    "id": "energy-0",
+    "name": "Basic Energy Core",
+    "category": "Experiência",
+    "rarity": 2,
+    "origin": "Simulation Training: Energy Core",
+    "activity": "simulation",
+    "sources": [
+      "cores"
+    ],
+    "verified": true,
+    "xp": 1000,
+    "xpKind": "energy",
+    "image": "./assets/materials/energy-0.webp"
+  },
+  {
+    "id": "energy-1",
+    "name": "Medium Energy Core",
+    "category": "Experiência",
+    "rarity": 3,
+    "origin": "Simulation Training: Energy Core",
+    "activity": "simulation",
+    "sources": [
+      "cores"
+    ],
+    "verified": true,
+    "xp": 3000,
+    "xpKind": "energy",
+    "image": "./assets/materials/energy-1.webp"
+  },
+  {
+    "id": "energy-2",
+    "name": "Advanced Energy Core",
+    "category": "Experiência",
+    "rarity": 4,
+    "origin": "Simulation Training: Energy Core",
+    "activity": "simulation",
+    "sources": [
+      "cores"
+    ],
+    "verified": true,
+    "xp": 8000,
+    "xpKind": "energy",
+    "image": "./assets/materials/energy-2.webp"
+  },
+  {
+    "id": "energy-3",
+    "name": "Premium Energy Core",
+    "category": "Experiência",
+    "rarity": 5,
+    "origin": "Simulation Training: Energy Core",
+    "activity": "simulation",
+    "sources": [
+      "cores"
+    ],
+    "verified": true,
+    "xp": 20000,
+    "xpKind": "energy",
+    "image": "./assets/materials/energy-3.webp"
+  }
+]
