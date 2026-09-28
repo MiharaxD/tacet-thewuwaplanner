@@ -36,13 +36,22 @@ function refresh(tree){
 }
 let shown=null,anchor=null,hideTimer;
 function hide(){clearTimeout(hideTimer);if(shown?.isConnected&&shown.matches(':popover-open'))shown.hidePopover();shown=null;anchor=null;}
-function show(button){
- const tip=document.getElementById(button.getAttribute('aria-describedby'));if(!tip||shown===tip)return;hide();shown=tip;anchor=button;tip.showPopover();
+function positionDetail(tip,button){
+ tip.style.left='';tip.style.right='';tip.style.top='';tip.style.bottom='';tip.style.width='';
+ if(window.matchMedia('(max-width:700px)').matches){
+  tip.style.left='12px';tip.style.right='12px';tip.style.bottom='12px';tip.style.top='auto';tip.style.width='auto';
+  return;
+ }
  const rect=button.getBoundingClientRect(),box=tip.getBoundingClientRect();
  tip.style.left=Math.max(12,Math.min(innerWidth-box.width-12,rect.left+rect.width/2-box.width/2))+'px';
  tip.style.top=Math.max(12,Math.min(innerHeight-box.height-12,rect.bottom+12))+'px';
 }
+function show(button){
+ const tip=document.getElementById(button.getAttribute('aria-describedby'));if(!tip||shown===tip)return;hide();shown=tip;anchor=button;tip.showPopover();
+ positionDetail(tip,button);
+}
 document.addEventListener('click',event=>{
+ if(shown&&!shown.contains(event.target)&&!event.target.closest('[data-forte-column]'))hide();
  const modeButton=event.target.closest('[data-forte-mode]');
  if(modeButton){const panel=modeButton.closest('[role=tabpanel]'),tree=panel.querySelector('.forte-tree');tree.dataset.editMode=modeButton.dataset.forteMode;panel.querySelectorAll('[data-forte-mode]').forEach(b=>b.setAttribute('aria-pressed',String(b===modeButton)));refresh(tree);hide();return;}
  const button=event.target.closest('[data-forte-column]');if(!button)return;
@@ -50,8 +59,8 @@ document.addEventListener('click',event=>{
  for(const mode of ['current','target'])result[mode].forEach((v,i)=>tree.querySelector(`[name="unlock-${mode}-${i}"]`).value=v);
  refresh(tree);show(button);tree.querySelector('input').dispatchEvent(new Event('input',{bubbles:true}));
 });
-document.addEventListener('pointerover',e=>{const b=e.target.closest('[data-forte-column]');if(b){clearTimeout(hideTimer);show(b);}else if(shown?.contains(e.target))clearTimeout(hideTimer);});
-document.addEventListener('pointerout',e=>{if(shown&&(anchor?.contains(e.target)||shown.contains(e.target))&&!anchor?.contains(e.relatedTarget)&&!shown.contains(e.relatedTarget)){clearTimeout(hideTimer);hideTimer=setTimeout(hide,180);}});
+document.addEventListener('pointerover',e=>{if(e.pointerType==='touch')return;const b=e.target.closest('[data-forte-column]');if(b){clearTimeout(hideTimer);show(b);}else if(shown?.contains(e.target))clearTimeout(hideTimer);});
+document.addEventListener('pointerout',e=>{if(e.pointerType==='touch')return;if(shown&&(anchor?.contains(e.target)||shown.contains(e.target))&&!anchor?.contains(e.relatedTarget)&&!shown.contains(e.relatedTarget)){clearTimeout(hideTimer);hideTimer=setTimeout(hide,180);}});
 document.addEventListener('focusin',e=>{const b=e.target.closest('[data-forte-column]');if(b)show(b);else if(shown&&!shown.contains(e.target))hide();});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&shown){e.preventDefault();e.stopPropagation();hide();}},true);
 document.addEventListener('scroll',e=>{if(shown&&!shown.contains(e.target))hide();},true);

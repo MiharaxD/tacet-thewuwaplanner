@@ -30,7 +30,27 @@
 .planner-content .forte-levels .skill-field input{width:100%;height:40px;min-width:0;padding:8px 4px;text-align:center;font-size:14px}.forte-levels .level-options{bottom:calc(100% + 5px);top:auto}
 .forte-detail{position:fixed;inset:auto;margin:0;width:330px;max-width:calc(100vw - 24px);max-height:min(420px,calc(100dvh - 24px));overflow:auto;background:#172330;border:1px solid #768fa6;border-radius:12px;padding:18px;color:#ecf2f7;box-shadow:0 15px 60px #000a;z-index:2500}
 .forte-detail strong{font-size:16px;display:block}.forte-detail-type{display:block;font-size:13px;color:#dbbc81;margin:7px 0 12px}.forte-detail p{font-size:14px;line-height:1.6;white-space:pre-line;margin:0 0 14px;color:#d8e3ed}.forte-detail small{font-size:12px;color:#92a8bd;display:block;border-top:1px solid #354b60;padding-top:10px;line-height:1.5}
-@media(max-width:600px){.forte-toolbar{gap:12px}.forte-edit-mode{width:100%}.forte-edit-mode button{flex:1}.forte-tree{gap:18px}.forte-help:before{content:'Deslize a árvore para ver as cinco colunas. ';color:#e2c181}}
+@media(max-width:700px){
+ .planner-modal{max-width:calc(100vw - 24px)}
+ #planner-panel-forte{min-width:0;max-width:100%}
+ .forte-toolbar{gap:12px}
+ .forte-toolbar>div:first-child{width:100%;min-width:0}
+ .forte-edit-mode{width:100%;min-width:0}
+ .forte-edit-mode button{flex:1;min-width:0;min-height:44px}
+ .forte-legend{gap:5px 12px;margin-top:14px}
+ .forte-legend span{white-space:nowrap}
+ .forte-tree{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:82%;gap:12px;width:100%;max-width:100%;min-width:0;min-height:0;padding:14px 8px 18px;scroll-snap-type:x mandatory;scroll-padding-inline:8px;overscroll-behavior-inline:contain;scrollbar-width:none}
+ .forte-tree::-webkit-scrollbar{display:none}
+ .forte-branch,.forte-branch-1,.forte-branch-2,.forte-branch-3{box-sizing:border-box;min-width:0;padding:20px 12px 16px;background:#101b28;border:1px solid #34465b;border-radius:12px;scroll-snap-align:start}
+ .forte-path,.forte-branch-1 .forte-path,.forte-branch-2 .forte-path,.forte-branch-3 .forte-path{top:35px}
+ .forte-branch h4{max-width:100%;min-height:0;overflow-wrap:anywhere;justify-content:center;margin:10px 0 14px}
+ .forte-levels{min-width:0;gap:8px}
+ .forte-levels .level-field{min-width:0}
+ #planner-panel-forte .forte-levels .level-options{width:min(140px,calc(100vw - 80px));min-width:0;max-width:none;max-height:clamp(70px,10dvh,120px);grid-template-columns:repeat(2,minmax(0,1fr))}
+ #planner-panel-forte .forte-levels>div:first-child .level-options{left:0;right:auto}
+ .forte-detail{max-width:none;max-height:min(320px,48dvh);overscroll-behavior:contain}
+ .forte-help:before{content:'Deslize a árvore para ver as cinco colunas. ';color:#e2c181}
+}
 .planner-modal{width:min(760px,calc(100vw - 24px));border-radius:20px;background:#0c1119}
 .planner-modal[open]{display:flex;flex-direction:column;max-height:92dvh;overflow:hidden}
 .planner-modal #goal-form{display:flex;flex-direction:column;min-height:0}
@@ -116,3 +136,24 @@
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 
 button.goal-farm-item{width:100%;border:1px solid transparent;cursor:pointer}button.goal-farm-item:hover{border-color:#849fbd;background:#1b2b40}button.goal-farm-item:focus-visible{outline:2px solid #c5d9ef;outline-offset:2px}
+
+@media(max-width:600px){
+ .planner-modal .sequence-options{min-width:0;gap:2px}
+ .planner-modal .sequence-options label>span{width:clamp(28px,calc((100vw - 116px)/7),38px)}
+}
+
+@media(max-height:450px) and (orientation:landscape){
+ .planner-modal[open]:has(#planner-panel-forte:not([hidden])){max-height:calc(100dvh - 12px)}
+ .planner-modal:has(#planner-panel-forte:not([hidden])) .planner-hero{height:72px}
+ .planner-modal:has(#planner-panel-forte:not([hidden])) .planner-identity{padding:9px 18px;gap:10px}
+ .planner-modal:has(#planner-panel-forte:not([hidden])) .planner-avatar{width:48px;height:48px}
+ .planner-modal:has(#planner-panel-forte:not([hidden])) .planner-identity h2{font-size:1.1rem;margin:2px 0}
+ .planner-modal:has(#planner-panel-forte:not([hidden])) .planner-identity p{font-size:.7rem}
+ .planner-modal:has(#planner-panel-forte:not([hidden])) .planner-stars{margin-top:1px}
+ .planner-modal:has(#planner-panel-forte:not([hidden])) .sequence-bar{padding:8px 18px;gap:8px}
+ .planner-modal:has(#planner-panel-forte:not([hidden])) .sequence-bar>div>span{display:none}
+ .planner-modal:has(#planner-panel-forte:not([hidden])) .planner-tabs button{padding:7px 6px}
+ .planner-modal:has(#planner-panel-forte:not([hidden])) .planner-tabs img{width:22px;height:22px}
+ .planner-modal:has(#planner-panel-forte:not([hidden])) .modal-footer{padding:7px 16px}
+ .planner-modal:has(#planner-panel-forte:not([hidden])) .modal-footer button{padding:6px 10px}
+}
