@@ -8,8 +8,7 @@
       "icon": "assets/eventos/diaria.svg",
       "start": "2026-09-17T04:00:00-03:00",
       "reset": {
-        "anchor": "2026-09-17T04:00:00-03:00",
-        "everyHours": 24
+        "serverReset": "daily"
       },
       "permanent": true
     },
@@ -20,8 +19,7 @@
       "icon": "assets/eventos/diaria.svg",
       "start": "2026-09-14T04:00:00-03:00",
       "reset": {
-        "anchor": "2026-09-14T04:00:00-03:00",
-        "everyHours": 168
+        "serverReset": "weekly"
       },
       "permanent": true
     },
@@ -87,7 +85,7 @@
       "id": "whimperingwastes",
       "type": "recurring",
       "title": "Whimpering Wastes",
-      "icon": "assets/eventos/whimperingwastes.svg",
+      "icon": "assets/eventos/whimperingwastes.webp",
       "start": "2026-08-30T04:17:00-03:00",
       "reset": {
         "anchor": "2026-08-30T04:17:00-03:00",

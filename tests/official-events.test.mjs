@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {validateEventCatalog,officialEvents,eventDuration,setEventCompleted,eventCycle,isEventCompleted} from '../src/official-events.js';
 import {defaultState,validateState,parseBackup,mergeState,Store} from '../src/state.js';
-import {eventStatus} from '../src/time.js';
+import {eventStatus,nextReset} from '../src/time.js';
 const event={id:'test-event',title:'Evento de teste',start:'2026-09-20T10:00:00-03:00',end:'2026-10-04T10:00:00-03:00'};
 const catalog={version:1,events:[event]};
 test('permanent events need no end, stay active and recurring completion resets indefinitely',()=>{
@@ -174,4 +174,37 @@ test('recurrence accepts exactly one valid hours or days interval up to the exis
   {everyHours:0},{everyHours:87601},{everyDays:0},{everyDays:-1},{everyDays:3651},
   {everyHours:NaN},{everyHours:Infinity},{everyHours:'24'},{everyDays:NaN},{everyDays:Infinity},{everyDays:'40'}])invalid(reset);
  assert.throws(()=>validateEventCatalog({version:1,events:[{...entry,reset:{anchor:'2026-10-01T04:00:00',everyDays:40}}]}));
+});
+
+test('server reset cycles use each server offset and the configured hour, including the exact boundary',()=>{
+ const rules={dailyResetHour:4,weeklyResetDay:1,servers:{America:-5,Europe:1,Asia:8,SEA:8}};
+ const daily={id:'daily-server',title:'Diária',type:'recurring',start:'2026-09-01T00:00:00Z',permanent:true,reset:{serverReset:'daily'}};
+ assert.deepEqual(validateEventCatalog({version:1,events:[daily]}).events[0],daily);
+ for(const [server,boundary] of [['America','2026-09-28T09:00:00Z'],['Europe','2026-09-28T03:00:00Z'],['Asia','2026-09-27T20:00:00Z']]){
+  const at=Date.parse(boundary),context={server,rules},current=eventCycle(daily,at,context);
+  assert.deepEqual(current,{start:at,end:at+86400000});
+  assert.equal(eventCycle(daily,at-1,context).end,at);
+  const user={...defaultState(),settings:{...defaultState().settings,server}};
+  const done=setEventCompleted(user,{events:[daily]},daily.id,true,at-1,rules);
+  assert.equal(isEventCompleted(done,daily,at-1,rules),true);
+  assert.equal(isEventCompleted(done,daily,at,rules),false);
+ }
+ const at=Date.parse('2026-09-28T04:00:00Z');
+ assert.notEqual(eventCycle(daily,at,{server:'America',rules}).start,eventCycle(daily,at,{server:'Europe',rules}).start);
+});
+
+test('weekly server recurrence follows configured weekday and hour, while anchored cycles stay independent',()=>{
+ const rules={dailyResetHour:6,weeklyResetDay:2,servers:{America:-5,Europe:1,Asia:8,SEA:8}};
+ const weekly={id:'weekly-server',title:'Semanal',type:'recurring',start:'2026-09-01T00:00:00Z',permanent:true,reset:{serverReset:'weekly'}};
+ const boundary=Date.parse('2026-09-29T11:00:00Z'),context={server:'America',rules};
+ assert.equal(nextReset(boundary-1,-5,true,rules),boundary);
+ assert.deepEqual(eventCycle(weekly,boundary,context),{start:boundary,end:boundary+7*86400000});
+ const user=defaultState(),done=setEventCompleted(user,{events:[weekly]},weekly.id,true,boundary-1,rules);
+ assert.equal(isEventCompleted(done,weekly,boundary-1,rules),true);
+ assert.equal(isEventCompleted(done,weekly,boundary,rules),false);
+ const anchored={...weekly,reset:{anchor:'2026-09-01T00:00:00Z',everyDays:42}};
+ assert.equal(eventCycle(anchored,boundary,context).start,Date.parse(anchored.reset.anchor));
+ assert.throws(()=>validateEventCatalog({version:1,events:[{...weekly,reset:{serverReset:'weekly',anchor:anchored.reset.anchor,everyHours:168}}]}),/Reset de servidor inválido/);
+ for(const bad of [{serverReset:'month'},{serverReset:'daily',everyDays:1},{serverReset:'daily',anchor:anchored.reset.anchor}])
+  assert.throws(()=>validateEventCatalog({version:1,events:[{...weekly,reset:bad}]}));
 });

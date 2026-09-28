@@ -31,12 +31,12 @@ As listas de ascensão/Forte são custos **por etapa**, nunca totais cumulativos
 
 - O texto fornecido da Jinhsi tem totais corretos, mas a tabela por etapa foi copiada da Roccia. A importação usa os materiais corretos do resumo e a tabela previamente conferida da Jinhsi; o arquivo original foi preservado.
 - Rover usa um Mysterious Code em cada ascensão de 2 a 6 (cinco no total), em vez de 46 materiais de chefe. Nível/ascensão são compartilhados no planejamento por prioridade e sincronizados ao registrar evolução; Fortes permanecem separados. Metas dependentes aguardam o registro da evolução anterior.
-- Os totais de Forte dos textos incluem habilidades inerentes e bônus. O motor continua calculando os cinco Fortes por nível; não usa o total completo como custo de cada habilidade. Nós inerentes/bônus continuam sendo uma lacuna explícita.
+- Os totais de Forte dos textos incluem habilidades inerentes e bônus. O motor calcula os cinco Fortes por nível e os desbloqueios de passivas selecionados na árvore, com custos definidos em `data/rules.json`; não usa o total completo como custo de cada habilidade.
 
 - Uma imagem residual na página de Jinhsi indicava Gloom Slough; a página dedicada e a confirmação Game8 indicam Loong Pearl. O catálogo usa Loong Pearl e registra a divergência.
-- Nós inerentes/bônus apresentaram divergências de custos ou pré-requisitos. Seus aumentos geram `missingData` e bloqueiam a conclusão. Os valores atuais digitados pelo usuário são registros pessoais, não uma verificação dos pré-requisitos desses nós.
+- Os desbloqueios de passivas usam `unlockCosts` e `unlockAscensions` de `data/rules.json`. Se faltar uma entrada ou material vinculado, o cálculo gera `missingData` e bloqueia a conclusão.
 - Só duas receitas de síntese foram verificadas: LF → MF Howler/Whisperin, proporção 3:1. Não há conversões inversas, equivalências genéricas nem supostos custos adicionais.
-- Não há tabela automática de rendimento por Nível de União. O rendimento médio é uma premissa explícita do jogador. Custos de energia de atividades são separados de drops.
+- As estimativas de Farm usam médias padrão por atividade, independentes do Nível de União. Custos de energia das atividades são separados dos drops reais, que podem variar.
 - A estimativa semanal informa o limite compartilhado de três resgates; o número de dias calculado por energia não modela completamente o bloqueio por semanas.
 - Não há preenchimento com recompensas ou datas fictícias. Recompensas pessoais são sempre identificadas como informadas pelo jogador.
 
@@ -51,15 +51,13 @@ As listas de ascensão/Forte são custos **por etapa**, nunca totais cumulativos
 
 Use `node scripts/catalog.mjs --refresh` para consultar o Akademiya novamente e baixar imagens ausentes. Sem `--refresh`, a geração não acessa a rede. A importação exige quatro raridades por família, valida as seis etapas de ascensão e rejeita materiais sem imagem/referência. A exceção explícita da Jinhsi está documentada no importador. Os IDs originais e o formato de backup versão 1 foram preservados.
 
-Os desbloqueios ainda não têm um motor de custos. Confirmar suas fontes exige adicionar as tabelas, validação de pré-requisitos e cálculo em `engine.js`; trocar uma etiqueta da interface não basta.
+Os desbloqueios das passivas são validados e calculados em `src/engine.js` com as tabelas de `data/rules.json`. Alterações nos custos exigem conferir essas tabelas e os vínculos de materiais do catálogo.
 
 ## Eventos
 
-Ao editar um evento importado, o formulário apresenta todos os materiais de recompensa existentes, mesmo quando são mais de três. Eventos já resgatados mantêm as recompensas bloqueadas para edição.
+Os eventos publicados são cadastrados pelo desenvolvedor em `data/events.json`; jogadores podem marcar ou desmarcar a conclusão. O backup mantém essas conclusões e os eventos pessoais legados, sem editar o catálogo publicado.
 
-**Atualização disponível sem programação:** crie/edite um evento na página Eventos usando datas do servidor configurado. A interface converte para um instante UTC e exibe no fuso selecionado. Cadastre apenas recompensas que você conferir no jogo. O backup leva esses eventos para outro navegador.
-
-`data/events.json` permanece vazio como reserva de catálogo; preencher esse arquivo sozinho não publica eventos na interface atual. Para oferecer um catálogo oficial no futuro, adicione ingestão e validação de registros com fonte, data de consulta, servidor, início/fim com fuso e recompensas verificadas; mantenha o progresso do usuário separado dos registros oficiais e preserve a distinção visual `official`/`personal`. O estado atual aceita somente eventos pessoais para impedir que uma importação se passe por catálogo oficial. Não existe atualização automática nem API pública presumida.
+`data/events.json` contém a agenda publicada pelo desenvolvedor. `src/official-events.js` valida os registros; a interface mostra eventos pendentes no Resumo e na aba Eventos, e guarda as conclusões do jogador separadamente em `eventCompletions`. Eventos recorrentes podem usar um `anchor` com `everyHours` ou `everyDays`, ou o reset diário/semanal do servidor definido em `data/rules.json`. Não existe atualização automática da agenda nem API pública presumida.
 
 ## Retratos e ícones
 

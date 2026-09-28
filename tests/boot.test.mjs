@@ -27,9 +27,9 @@ test('the actual app boots and accepts inventory edits when the storage getter t
   document:{getElementById:id=>elements['#'+id]||null,querySelector:key=>elements[key]||null,querySelectorAll:()=>[],addEventListener:(name,fn)=>{if(name!=='click'||!listeners.has(name))listeners.set(name,fn);},activeElement:null},
   registerPlannerTools(tools){plannerTools=tools;},structuredClone,Intl,URL,crypto,Date:ClockDate,
   eventStatus:(e,now=clock)=>time.eventStatus(e,now),countdown:(end,now=clock)=>time.countdown(end,now),
-  officialEvents:(catalog,server,now=clock)=>official.officialEvents(catalog,server,now),
-  eventCycle:(e,now=clock)=>official.eventCycle(e,now),isEventCompleted:(s,e,now=clock)=>official.isEventCompleted(s,e,now),
-  setEventCompleted:(s,c,id,done,now=clock)=>official.setEventCompleted(s,c,id,done,now),
+  officialEvents:(catalog,server,now=clock,rules)=>official.officialEvents(catalog,server,now,rules),
+  eventCycle:(e,now=clock,context)=>official.eventCycle(e,now,context),isEventCompleted:(s,e,now=clock,rules)=>official.isEventCompleted(s,e,now,rules),
+  setEventCompleted:(s,c,id,done,now=clock,rules)=>official.setEventCompleted(s,c,id,done,now,rules),
   setInterval(fn,delay){timers.push({fn,delay});},setTimeout(fn,delay){const id=++timeoutId;timeouts.set(id,{fn,delay});return id;},clearTimeout(id){timeouts.delete(id);},
   fetch:async path=>{fetches.push(path);if(/character-fortes|weapon-stats/.test(path)){await plannerGate;if(failPlanner&&path.includes('character-fortes'))return {ok:false};}return {ok:true,json:async()=>JSON.parse(await readFile(new URL(`../${path}`,import.meta.url),'utf8'))};}
  });
@@ -59,6 +59,8 @@ test('the actual app boots and accepts inventory edits when the storage getter t
  listeners.get('change')({target:stockInput});await new Promise(resolve=>setImmediate(resolve));
  assert.equal(vm.runInContext('state().inventory.shell',context),12345);
  assert.equal(vm.runInContext('store.history.length',context),historyBefore+1);
+ assert.match(toast.textContent,/aplicada apenas em memória/);
+ assert.match(vm.runInContext('store.saveError',context),/Não foi possível salvar/);
  listeners.get('change')({target:stockInput});await new Promise(resolve=>setImmediate(resolve));
  assert.equal(vm.runInContext('store.history.length',context),historyBefore+1,'unchanged quantity adds no undo entry');
  vm.runInContext('store.undo()',context);assert.equal(vm.runInContext('state().inventory.shell||0',context),0);
@@ -70,6 +72,9 @@ test('the actual app boots and accepts inventory edits when the storage getter t
  vm.runInContext("let savedStock=null;store.storage={getItem:()=>savedStock,setItem:(key,value)=>{savedStock=value;}};store.snapshot=null;",context);
  listeners.get('change')({target:stockInput});await new Promise(resolve=>setImmediate(resolve));
  assert.equal(vm.runInContext('JSON.parse(savedStock).inventory.shell',context),12345);
+ assert.equal(vm.runInContext('store.saveError',context),null);
+ vm.runInContext("savedToast('Estoque atualizado.');",context);
+ assert.equal(toast.textContent,'Estoque atualizado.');
  vm.runInContext('store.undo()',context);
  assert.equal(vm.runInContext('JSON.parse(savedStock).inventory.shell||0',context),0);
 
@@ -130,6 +135,7 @@ test('the actual app boots and accepts inventory edits when the storage getter t
   assert.match(app.innerHTML,/id="inv-howler-1"[^>]*value="3"/);
   vm.runInContext(`const testGoal=newGoal(db.catalog.characters[0].id,'goal-farm-test');store.commit({...state(),goals:[testGoal],inventory:{}});route='summary';render();`,context);
   assert.match(app.innerHTML,/goal-farm-grid/);assert.match(app.innerHTML,/tentativas/);assert.match(app.innerHTML,/Waveplates/);
+ assert.equal(app.innerHTML.includes('Ver todos os materiais'),vm.runInContext('plan.itemTotals.length>6',context));
   vm.runInContext(`route='characters';render();`,context);assert.match(app.innerHTML,/goal-farm-grid/);
   const tiles=vm.runInContext('previewMaterials(plan.goals[0].itemRows)',context);assert.match(tiles,/tile-owned/);assert.match(tiles,/tile-needed/);assert.match(tiles,/edit-goal-stock/);
   const inventoryBeforeDelete=vm.runInContext('JSON.stringify(state().inventory)',context);
@@ -156,21 +162,22 @@ test('the actual app boots and accepts inventory edits when the storage getter t
   const distribution=app.innerHTML.split('<h2>Distribuição completa</h2>')[1];
   const tableAction=[...distribution.matchAll(/class="material-stock-button" data-action="edit-goal-stock" data-id="([^"]+)"/g)].find(([,id])=>!id.startsWith('xp-'));
   assert.ok(tableAction,'Farm distribution table exposes the existing stock action');
+ assert.match(distribution,new RegExp('data-stock-anchor="farm-table:'+tableAction[1]+'"'));
   context.tableMaterialId=tableAction[1];
   assert.ok(vm.runInContext('plan.itemTotals.some(r=>r.id===tableMaterialId)',context));
-  context.tableAnchor={dataset:{id:tableAction[1]},isConnected:false,focus(){}};
+  context.tableAnchor={dataset:{id:tableAction[1],stockAnchor:'farm-table:'+tableAction[1]},isConnected:false,focus(){}};
   vm.runInContext("actions['edit-goal-stock'](tableAnchor)",context);
   assert.equal(popup.opened,true);
   assert.match(popup.innerHTML,new RegExp('data-goal-stock="'+tableAction[1]+'"'));
   vm.runInContext('closeStockEditor()',context);
   assert.equal(popup.opened,false);
-  const farmActions=[...app.innerHTML.matchAll(/<button type="button" class="farm-stock-button" data-action="edit-goal-stock" data-id="([^"]+)" aria-label="Editar estoque de ([^"]+)">/g)];
+  const farmActions=[...app.innerHTML.matchAll(/<button type="button" class="farm-stock-button" data-action="edit-goal-stock" data-id="([^"]+)" data-stock-anchor="[^"]+" aria-label="Editar estoque de ([^"]+)">/g)];
   assert.ok(farmActions.length>0,'Farm offers material stock buttons');
   const normalAction=farmActions.find(([,id])=>!id.startsWith('xp-'));
   assert.ok(normalAction,'Farm includes a normal material');
   const normalId=normalAction[1],normalName=normalAction[2];
   assert.match(app.innerHTML,new RegExp('data-action="source" data-id="'+normalId+'"'));
-  context.farmAnchor={dataset:{id:normalId},isConnected:false,focus(){}};
+  context.farmAnchor={dataset:{id:normalId,stockAnchor:'farm-list:'+normalId},isConnected:false,focus(){}};
   vm.runInContext("actions['edit-goal-stock'](farmAnchor)",context);
   assert.equal(popup.opened,true);assert.match(popup.innerHTML,new RegExp('data-goal-stock="'+normalId+'"'));
   assert.match(popup.innerHTML,new RegExp('Editar estoque|'+normalName));
@@ -188,7 +195,7 @@ test('the actual app boots and accepts inventory edits when the storage getter t
   assert.match(app.innerHTML,/Hora de farmar/);
   const xpAction=farmActions.find(([,id])=>id==='xp-potion'||id==='xp-energy');
   assert.ok(xpAction,'Farm includes an aggregate EXP line');
-  context.farmAnchor={dataset:{id:xpAction[1]},isConnected:false,focus(){}};
+  context.farmAnchor={dataset:{id:xpAction[1],stockAnchor:'farm-list:'+xpAction[1]},isConnected:false,focus(){}};
   vm.runInContext("actions['edit-goal-stock'](farmAnchor)",context);
   assert.equal(popup.opened,true);
   const xpKind=xpAction[1]==='xp-potion'?'potion':'energy';
@@ -215,7 +222,7 @@ test('the actual app boots and accepts inventory edits when the storage getter t
   assert.equal(popup.opened,false);
   vm.runInContext("const synthesisGoal=newGoal('aalto','farm-synthesis');synthesisGoal.target={...synthesisGoal.target,level:90,ascension:6};store.commit({...state(),goals:[synthesisGoal],inventory:{'howler-0':30}});route='farm';render();",context);
   assert.match(app.innerHTML,/data-action="edit-goal-stock" data-id="howler-1"/);
-  context.farmAnchor={dataset:{id:'howler-1'},isConnected:false,focus(){}};
+  context.farmAnchor={dataset:{id:'howler-1',stockAnchor:'farm-list:howler-1'},isConnected:false,focus(){}};
   vm.runInContext("actions['edit-goal-stock'](farmAnchor)",context);
   assert.match(popup.innerHTML,/data-action="auto-synthesis" data-id="howler-1"/);
   popup.inputs=[];
@@ -225,6 +232,16 @@ test('the actual app boots and accepts inventory edits when the storage getter t
   assert.ok(vm.runInContext("state().inventory['howler-1']",context)>0);
   assert.equal(popup.opened,true,'synthesis reopens the same editor at the Farm material');
   vm.runInContext('closeStockEditor()',context);
+ vm.runInContext("store.commit({...state(),inventory:{...state().inventory,'howler-0':30}});render()",context);
+ context.tableAnchor={dataset:{id:'howler-1',stockAnchor:'farm-table:howler-1'},isConnected:false,focused:0,focus(){this.focused++;}};
+ vm.runInContext("actions['edit-goal-stock'](tableAnchor)",context);
+ context.document.querySelectorAll=selector=>selector==='[data-action=edit-goal-stock]'?[context.farmAnchor,context.tableAnchor]:[];
+ popup.inputs=[];
+ vm.runInContext("actions['auto-synthesis']({dataset:{id:'howler-1'}})",context);
+ assert.equal(vm.runInContext('stockAnchor.dataset.stockAnchor',context),'farm-table:howler-1');
+ popup.inputs=[{value:'2',valueAsNumber:2,dataset:{goalStock:'howler-1'}}];
+ vm.runInContext("actions['save-goal-stock']()",context);
+ assert.equal(context.tableAnchor.focused,1);
   context.document.querySelectorAll=()=>[];
  // Exercise the actual periodic callback with a controllable clock.
  assert.equal(timers.length,1);assert.equal(timers[0].delay,60000);
@@ -308,8 +325,8 @@ test('the actual app boots and accepts inventory edits when the storage getter t
  assert.equal(fetches.filter(p=>p.includes('character-fortes')).length,2,'one failed request plus one shared retry');
  assert.equal(fetches.filter(p=>p.includes('weapon-stats')).length,1,'successful or pending dataset is reused');
  assert.equal(modal.open,false);
- releasePlanner();const [opened]=await Promise.all([first,second]);assert.equal(opened.opened,true);assert.equal(opened.saved,false);assert.equal(opened.characterId,'jinhsi');
- assert.equal(modal.open,true);assert.match(modal.innerHTML,/id="goal-form"/);
+ releasePlanner();const [opened]=await Promise.all([first,second]);assert.equal(opened.opened,false);assert.equal(opened.saved,false);assert.equal(opened.characterId,'jinhsi');
+ assert.equal(modal.open,true);assert.match(modal.innerHTML,/id="goal-form"/);assert.match(modal.innerHTML,/Jiyan/);
  const cached=vm.runInContext("db['character-fortes']",context),requests=fetches.length;
  await plannerTools.startGoal('jinhsi');
  vm.runInContext("store.commit({...state(),goals:[newGoal('jinhsi','lazy-edit')]});",context);
@@ -317,6 +334,13 @@ test('the actual app boots and accepts inventory edits when the storage getter t
  await vm.runInContext("actions['edit-char']({dataset:{id:'jinhsi'}})",context);
  assert.equal(vm.runInContext("db['character-fortes']",context),cached);assert.equal(fetches.length,requests);
  vm.runInContext('closeModal()',context);
+ vm.runInContext("delete db['character-fortes'];",context);
+ plannerGate=new Promise(resolve=>{releasePlanner=resolve;});
+ const stalePlanner=plannerTools.startGoal('jinhsi');
+ await new Promise(resolve=>setImmediate(resolve));
+ context.location.hash='#inventory';windowListeners.get('hashchange')();
+ releasePlanner();assert.equal((await stalePlanner).opened,false);
+ assert.equal(modal.open,false,'navigation prevents the delayed planner from opening');
  // Only the last rapid search renders, preserving focus and selection.
  vm.runInContext("route='characters';search='';render();",context);
  const searchInput={id:'search',type:'search',tagName:'INPUT',dataset:{filter:'search'},value:'',selectionStart:2,selectionEnd:4,selectionDirection:'backward',closest:()=>null,focus(){context.document.activeElement=this;},setSelectionRange(...args){this.selection=args;}};
@@ -329,7 +353,9 @@ test('the actual app boots and accepts inventory edits when the storage getter t
  assert.equal(context.document.activeElement,searchInput);assert.deepEqual(searchInput.selection,[2,4,'backward']);
  assert.equal(vm.runInContext('filteredCharacters().length',context),1);
  listeners.get('input')({target:searchInput});
+ vm.runInContext('usedOnly=true',context);
  context.location.hash='#inventory';windowListeners.get('hashchange')();
+ assert.equal(vm.runInContext('usedOnly',context),false);
  assert.equal([...timeouts.values()].filter(t=>t.delay===125).length,0);
  const afterNavigation=renderCount;for(const t of timeouts.values())if(t.delay===125)t.fn();assert.equal(renderCount,afterNavigation);
  vm.runInContext("route='characters';search='';render();",context);
@@ -369,6 +395,24 @@ test('the actual app boots and accepts inventory edits when the storage getter t
  assert.equal(vm.runInContext("db.catalog.weapons.some(m=>m.name==='Fusion Accretion')",context),true);
  await plannerTools.startGoal('encore');assert.match(modal.innerHTML,/Fusion Accretion/);
  assert.match(modal.innerHTML,/<p>Térmico ·/);
+
+ vm.runInContext(`closeModal();const priorityOne=newGoal('jinhsi','priority-one'),priorityTwo=newGoal('aalto','priority-two');priorityOne.target.level=90;priorityOne.target.ascension=6;priorityTwo.target.level=90;priorityTwo.target.ascension=6;store.commit({...state(),goals:[priorityOne,priorityTwo],inventory:{}});route='summary';render();`,context);
+ const focusPanel=app.innerHTML.split('PRÓXIMA PRIORIDADE')[1].split('</section>')[0];
+ const expectedNames=vm.runInContext("resultFor(state().goals[0]).itemRows.filter(r=>r.missing>0).slice(0,3).map(r=>materialMeta(r.id,db).name)",context);
+ for(const name of expectedNames)assert.ok(focusPanel.includes(ui.escape(name)),'focus panel uses the first goal materials');
+ const otherName=vm.runInContext("resultFor(state().goals[1]).itemRows.filter(r=>r.missing>0&&!resultFor(state().goals[0]).itemRows.some(first=>first.id===r.id)).map(r=>materialMeta(r.id,db).name)[0]",context);
+ assert.ok(otherName);assert.ok(!focusPanel.includes(ui.escape(otherName)),'another goal material stays out of the focus panel');
+ assert.equal(app.innerHTML.includes('Ver todos os materiais'),vm.runInContext('plan.itemTotals.length>6',context));
+
+ let lockCalls=0;context.navigator.locks={request:async(_name,action)=>{lockCalls++;return action();}};
+ await clickAction('choose');assert.equal(lockCalls,0,'visual modal action never acquires a Web Lock');
+ await clickAction('move-down','priority-one');assert.equal(lockCalls,1,'goal mutation still acquires a Web Lock');
+ vm.runInContext("store.storage={getItem:()=>store.snapshot,setItem:()=>{throw Error('quota')}};commit({...state(),inventory:{...state().inventory,shell:7}},'Estoque atualizado.');",context);
+ assert.equal(vm.runInContext('state().inventory.shell',context),7);
+ assert.match(toast.textContent,/aplicada apenas em memória/);assert.doesNotMatch(toast.textContent,/Estoque atualizado/);
+ assert.match(app.innerHTML,/Falha ao salvar/);
+ vm.runInContext("store.storage={getItem:()=>store.snapshot,setItem:(key,value)=>{store.snapshot=value}};commit({...state(),inventory:{...state().inventory,shell:8}},'Estoque atualizado.');",context);
+ assert.equal(toast.textContent,'Estoque atualizado.');assert.equal(vm.runInContext('store.saveError',context),null);
 
 });
 

@@ -1,4 +1,11 @@
-# Verificação atual — manutenção Fase 3 (23/09/2026)
+# Verificação atual — revisão do Tacet Planner (28/09/2026)
+
+- `npm ci`: aprovado.
+- `npm test`: **119 testes aprovados, zero falhas**.
+- `npm run build`: aprovado; `dist/` validado com o ícone WebP atualizado.
+- Cobertura acrescentada: ciclos de reset por servidor e regra configurada, persistência apenas em memória, corrida na abertura do planner, identidade do editor de estoque, filtro do inventário, materiais do Resumo e escopo dos Web Locks.
+
+## Histórico — manutenção Fase 3 (23/09/2026)
 
 - Catálogo local: **57 personagens/formas, 120 armas e 153 materiais**, contados em `data/catalog.json`.
 - Antes e depois da manutenção: `npm test` — **110 testes aprovados, zero falhas**; `npm run build` — aprovado.

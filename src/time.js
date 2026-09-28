@@ -5,11 +5,11 @@ export function countdown(time,now=Date.now()){
  const delta=Math.max(0,Date.parse(time)-now),minutes=Math.ceil(delta/60000);
  return minutes>=1440?`${Math.floor(minutes/1440)}d ${Math.floor(minutes%1440/60)}h`:`${Math.floor(minutes/60)}h ${minutes%60}min`;
 }
-export function nextReset(now,offset,weekly=false){
+export function nextReset(now,offset,weekly=false,rules={}){
  const shifted=new Date(now+offset*3600000);
- let result=Date.UTC(shifted.getUTCFullYear(),shifted.getUTCMonth(),shifted.getUTCDate(),4)-offset*3600000;
+ let result=Date.UTC(shifted.getUTCFullYear(),shifted.getUTCMonth(),shifted.getUTCDate(),rules.dailyResetHour??4)-offset*3600000;
  if(result<=now)result+=86400000;
- if(weekly){while(new Date(result+offset*3600000).getUTCDay()!==1)result+=86400000;}
+ if(weekly){while(new Date(result+offset*3600000).getUTCDay()!==(rules.weeklyResetDay??1))result+=86400000;}
  return result;
 }
 export function serverDateToISO(value,offset){

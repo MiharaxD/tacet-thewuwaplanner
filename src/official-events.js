@@ -1,3 +1,4 @@
+import {nextReset} from './time.js';
 const validInstant=value=>typeof value==='string'&&/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(?::\d{2}(?:\.\d{1,3})?)?(Z|[+-]\d{2}:\d{2})$/.test(value)&&Number.isFinite(Date.parse(value));
 const resetIntervalMs=reset=>Object.hasOwn(reset,'everyDays')?reset.everyDays*86400000:reset.everyHours*3600000;
 export function validateEventCatalog(catalog){
@@ -11,14 +12,15 @@ export function validateEventCatalog(catalog){
   if(event.type!==undefined&&!['event','banner','recurring'].includes(event.type))throw Error('Tipo de evento inválido.');
   if(event.banners!==undefined&&(!Array.isArray(event.banners)||event.banners.length>20||event.banners.some(b=>!b||!imageOK(b.image)||typeof b.name!=='string'||!b.name.trim()||b.name.length>120)))throw Error('Imagens de banner inválidas.');
   if(event.type==='recurring'){
-   const reset=event.reset,days=reset&&Object.hasOwn(reset,'everyDays');
-   if(!reset||!validInstant(reset.anchor)||Object.hasOwn(reset,'everyHours')===days||!Number.isFinite(days?reset.everyDays:reset.everyHours)||(days?reset.everyDays<=0:reset.everyHours<1)||resetIntervalMs(reset)>87600*3600000)throw Error('Informe a referência e um intervalo de reset em horas ou dias.');
+   const reset=event.reset,serverMode=reset&&Object.hasOwn(reset,'serverReset'),days=reset&&Object.hasOwn(reset,'everyDays');
+   if(serverMode){if(!['daily','weekly'].includes(reset.serverReset)||Object.keys(reset).length!==1)throw Error('Reset de servidor inválido.');}
+   else if(!reset||!validInstant(reset.anchor)||Object.hasOwn(reset,'everyHours')===days||!Number.isFinite(days?reset.everyDays:reset.everyHours)||(days?reset.everyDays<=0:reset.everyHours<1)||resetIntervalMs(reset)>87600*3600000)throw Error('Informe a referência e um intervalo de reset em horas ou dias.');
   }
   ids.add(event.id);return {...event,title:event.title.trim()};
  })};
 }
-export function officialEvents(catalog,server,now=Date.now()){
- const remaining=e=>Math.max(0,(now<Date.parse(e.start)?Date.parse(e.start):eventCycle(e,now).end)-now);
+export function officialEvents(catalog,server,now=Date.now(),rules){
+ const remaining=e=>Math.max(0,(now<Date.parse(e.start)?Date.parse(e.start):eventCycle(e,now,{server,rules}).end)-now);
  return catalog.events.filter(e=>!e.servers||e.servers.includes(server)).sort((a,b)=>
   Number(b.type==='recurring')-Number(a.type==='recurring')||remaining(a)-remaining(b));
 }
@@ -27,22 +29,29 @@ export function eventDuration(event){
  const minutes=Math.ceil((Date.parse(event.end)-Date.parse(event.start))/60000),days=Math.floor(minutes/1440),hours=Math.floor(minutes%1440/60),rest=minutes%60;
  return [days?`${days} ${days===1?'dia':'dias'}`:'',hours?`${hours} ${hours===1?'hora':'horas'}`:'',rest?`${rest} min`:''].filter(Boolean).join(' e ');
 }
-export function eventCycle(event,now=Date.now()){
+export function eventCycle(event,now=Date.now(),context){
  const start=Date.parse(event.start),end=event.permanent?Infinity:Date.parse(event.end);
  if(event.type!=='recurring')return {start,end};
+ if(event.reset.serverReset){
+  const {server,rules}=context||{},offset=rules?.servers?.[server];
+  if(!Number.isFinite(offset))throw Error('Servidor e regras necessários para este reset.');
+  const weekly=event.reset.serverReset==='weekly',interval=(weekly?7:1)*86400000;
+  const boundary=nextReset(now,offset,weekly,rules);
+  return {start:Math.max(start,boundary-interval),end:Math.min(end,boundary)};
+ }
  const anchor=Date.parse(event.reset.anchor),interval=resetIntervalMs(event.reset);
  const boundary=anchor+Math.floor((now-anchor)/interval)*interval;
  return {start:Math.max(start,boundary),end:Math.min(end,boundary+interval)};
 }
-export function isEventCompleted(state,event,now=Date.now()){
+export function isEventCompleted(state,event,now=Date.now(),rules){
  if(now<Date.parse(event.start))return false;
  const value=state.eventCompletions?.[event.id];
  if(event.type!=='recurring')return value===true||typeof value==='string';
- const cycle=eventCycle(event,event.permanent?now:Math.min(now,Date.parse(event.end)-1));
+ const cycle=eventCycle(event,event.permanent?now:Math.min(now,Date.parse(event.end)-1),{server:state.settings.server,rules});
  return typeof value==='string'&&Date.parse(value)>=cycle.start&&Date.parse(value)<cycle.end;
 }
-export function setEventCompleted(state,catalog,id,completed,now=Date.now()){
- const event=officialEvents(catalog,state.settings.server,now).find(e=>e.id===id);
+export function setEventCompleted(state,catalog,id,completed,now=Date.now(),rules){
+ const event=officialEvents(catalog,state.settings.server,now,rules).find(e=>e.id===id);
  if(typeof completed!=='boolean'||!event)throw Error('Evento indisponível.');
  if(completed&&now<Date.parse(event.start))throw Error('Este evento ainda não começou.');
  return {...state,eventCompletions:{...(state.eventCompletions||{}),[id]:completed&&event.type==='recurring'?new Date(now).toISOString():completed}};
